@@ -34,8 +34,8 @@ jobs:
     if: github.event_name == 'push' && contains(github.ref, 'refs/tags')
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # Needed to combine changelog fragments into changelog file
-      pull-requests: write  # Needed to commit to the release branch/tag
+      contents: write # Needed to combine changelog fragments into changelog file
+      pull-requests: write # Needed to commit to the release branch/tag
     steps:
       - uses: ansys/actions/doc-deploy-changelog@36cd86710c966963f4dcec56a9670171618cf76a # v10.2.4
         with:
@@ -66,7 +66,7 @@ jobs:
         with:
           generate-summary: true
           token: ${{ secrets.GITHUB_TOKEN }}
-          auditing-level: 'high'
+          auditing-level: "high"
           trust-ansys-actions: true
 
   code-style:
@@ -80,6 +80,8 @@ jobs:
   doc-style:
     name: "Documentation style"
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: read # Needed for reviewdog
     steps:
       - uses: ansys/actions/doc-style@36cd86710c966963f4dcec56a9670171618cf76a # v10.2.4
         with:
@@ -349,7 +351,7 @@ jobs:
     needs: [smoke-tests, doc-build, set-matrix]
     runs-on: ubuntu-latest
     env:
-      CACHE_API_CODE_ENABLED: 'false'
+      CACHE_API_CODE_ENABLED: "false"
     strategy:
       matrix:
         include: ${{ fromJson(needs.set-matrix.outputs.matrix) }}
