@@ -1,0 +1,547 @@
+name: CI
+on:
+  pull_request:
+  workflow_dispatch:
+  push:
+    tags:
+      - "v*"
+    branches:
+      - main
+
+env:
+  ANSYSLMD_LICENSE_FILE: 1055@${{ secrets.LICENSE_SERVER }}
+  API_CODE_CACHE: 4
+  MAIN_PYTHON_VERSION: "3.10"
+  PYCFX_TIMEOUT_FORCE_EXIT: 30
+  PYCFX_LAUNCH_CONTAINER: 1
+  PYCFX_WATCHDOG_DEBUG: "OFF"
+  PYCFX_HIDE_LOG_SECRETS: 1
+  DOCUMENTATION_CNAME: "glowing-telegram-gqq3j3l.pages.github.io"
+  DOC_DEPLOYMENT_IMAGE_TAG: "v26.1.0"
+  LIBRARY_NAME: "ansys-cfx-core"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  packages: read # Needs access to the CFX docker image
+
+jobs:
+  update-changelog:
+    name: "Update CHANGELOG for new tag"
+    if: github.event_name == 'push' && contains(github.ref, 'refs/tags')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Needed to combine changelog fragments into changelog file
+      pull-requests: write  # Needed to commit to the release branch/tag
+    steps:
+      - uses: ansys/actions/doc-deploy-changelog@36cd86710c966963f4dcec56a9670171618cf76a # v10.2.4
+        with:
+          token: ${{ secrets.PYANSYS_CI_BOT_TOKEN }}
+          release-from-main: true
+          bot-user: ${{ secrets.PYANSYS_CI_BOT_USERNAME }}
+          bot-email: ${{ secrets.PYANSYS_CI_BOT_EMAIL }}
+
+  check-vulnerabilities:
+    name: "Check library vulnerabilities"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ansys/actions/check-vulnerabilities@main
+        with:
+          python-version: ${{ env.MAIN_PYTHON_VERSION }}
+          token: ${{ secrets.PYANSYS_CI_BOT_TOKEN }}
+          python-package-name: ${{ env.LIBRARY_NAME }}
+          dev-mode: ${{ github.ref != 'refs/heads/main' }}
+          upload-reports: True
+          hide-log: false
+          bandit-configfile: "pyproject.toml"
+
+  actions-security:
+    name: "Check actions security"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ansys/actions/check-actions-security@36cd86710c966963f4dcec56a9670171618cf76a # v10.2.4
+        with:
+          generate-summary: true
+          token: ${{ secrets.GITHUB_TOKEN }}
+          auditing-level: 'high'
+          trust-ansys-actions: true
+
+  code-style:
+    name: "Code style"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ansys/actions/code-style@36cd86710c966963f4dcec56a9670171618cf76a # v10.2.4
+        with:
+          python-version: ${{ env.MAIN_PYTHON_VERSION }}
+
+  doc-style:
+    name: "Documentation style"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ansys/actions/doc-style@36cd86710c966963f4dcec56a9670171618cf76a # v10.2.4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          vale-version: "3.4.1"
+
+  smoke-tests:
+    name: "Build and Smoke tests"
+    runs-on: ${{ matrix.os }}
+    needs: [code-style]
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python-version: ["3.10", "3.11", "3.12", "3.13"]
+    steps:
+      - name: Build wheelhouse and perform smoke test
+        uses: ansys/actions/build-wheelhouse@36cd86710c966963f4dcec56a9670171618cf76a # v10.2.4
+        with:
+          library-name: ${{ env.LIBRARY_NAME }}
+          operating-system: ${{ matrix.os }}
+          python-version: ${{ matrix.python-version }}
+
+  set-matrix:
+    name: "Set container image for tests"
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+    steps:
+      - name: Set image tag
+        id: set-matrix
+        run: |
+          echo "matrix=[{\"image-tag\":\"v25.2.3\",\"version\":\"252\"},{\"image-tag\":\"v26.1.0\",\"version\":\"261\"}]" >> $GITHUB_OUTPUT
+
+  tests:
+    name: Unit Testing
+    if: ${{ always() }}
+    needs: [set-matrix]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Required for updating the coverage badge
+      packages: read # Needs access to the CFX docker image
+    strategy:
+      fail-fast: false
+      matrix:
+        include: ${{ fromJson(needs.set-matrix.outputs.matrix) }}
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+          ref: ${{ github.head_ref }}
+
+      - name: Setup Python
+        if: ${{ !contains(github.event.pull_request.title, '[skip tests]') }}
+        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+        with:
+          python-version: ${{ env.MAIN_PYTHON_VERSION }}
+
+      - name: Add version information
+        if: ${{ !contains(github.event.pull_request.title, '[skip tests]') }}
+        run: make version-info
+
+      - name: Install PyCFX
+        if: ${{ !contains(github.event.pull_request.title, '[skip tests]') }}
+        run: |
+          make install
+          make install-test
+
+      - name: Retrieve PyCFX version
+        if: ${{ !contains(github.event.pull_request.title, '[skip tests]') }}
+        run: |
+          echo "PYCFX_VERSION=$(python -c "from ansys.cfx.core import __version__; print(); print(__version__)" | tail -1)" >> $GITHUB_OUTPUT
+          echo "PYCFX version is: $(python -c "from ansys.cfx.core import __version__; print(); print(__version__)" | tail -1)"
+        id: version
+
+      - name: Login to GitHub Container Registry
+        if: ${{ !contains(github.event.pull_request.title, '[skip tests]') }}
+        uses: docker/login-action@c94ce9fb468520275223c153574b00df6fe4bcc9 # v3.7.0
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pull CFX docker image
+        if: ${{ !contains(github.event.pull_request.title, '[skip tests]') }}
+        run: make docker-pull
+        env:
+          CFX_IMAGE_TAG: ${{ matrix.image-tag }}
+
+      - name: Run ${{matrix.version}} API codegen
+        if: ${{ !contains(github.event.pull_request.title, '[skip tests]') }}
+        run: make api-codegen
+        env:
+          CFX_IMAGE_TAG: ${{matrix.image-tag}}
+
+      - name: Print ${{matrix.version}} CFX version info
+        if: ${{ !contains(github.event.pull_request.title, '[skip tests]') }}
+        env:
+          CFX_VER: ${{ matrix.version }}
+        run: |
+          cat src/ansys/cfx/core/generated/cfx_version_${CFX_VER}.py
+          python -c "from ansys.cfx.core.generated.pre_processing.settings_${CFX_VER} import SHASH; print(f'SETTINGS_HASH = {SHASH}')"
+          python -c "from ansys.cfx.core.generated.post_processing.settings_${CFX_VER} import SHASH; print(f'SETTINGS_HASH = {SHASH}')"
+
+      - name: ${{matrix.version}} Unit Testing
+        if: ${{ !contains(github.event.pull_request.title, '[skip tests]') }}
+        run: |
+          # Format cfx-version
+          version="${CFX_VER:0:2}.${CFX_VER:2:1}"
+
+          python -m pytest --cfx-version=$version ${PYTEST_EXTRA} || python -m pytest --cfx-version=$version ${PYTESTRERUN}
+        env:
+          CFX_VER: ${{ matrix.version }}
+          CFX_IMAGE_TAG: ${{ matrix.image-tag }}
+          PYTEST_EXTRA: "--cache-clear --cov=ansys.cfx.core --cov-report=term --cov-report=html:.cov/html --cov-report=xml:.cov/xml --cov-report=json:.cov/cov.json"
+          PYTESTRERUN: "--last-failed --last-failed-no-failures none"
+
+      - name: Remove all docker images
+        if: always()
+        run: make docker-clean-images
+
+      - name: Update coverage badge
+        id: update-coverage-badge
+        if: ${{ !contains(github.event.pull_request.title, '[skip tests]') && matrix.image-tag == 'v26.1.0' }}
+        env:
+          BRANCH: ${{ github.event.pull_request.head.ref }}
+          COVERAGE_JSON_PATH: ".cov/cov.json"
+          COVERAGE_SVG_PATH: "coverage.svg"
+          COMMIT_USER_EMAIL: ${{ secrets.PYANSYS_CI_BOT_EMAIL }}
+          COMMIT_USER_NAME: ${{ secrets.PYANSYS_CI_BOT_USERNAME }}
+        run: |
+          push_needed=false
+          j="$COVERAGE_JSON_PATH"
+          echo Processing coverage from file $j:
+          p=$(jq '.totals.percent_covered_display | tonumber' $j)
+          echo Percent covered: $p
+          b="$COVERAGE_SVG_PATH"
+          echo Check coverage value in badge $b
+          c=$(grep -oP "<text id=\"percent\"[^>]*>\K[0-9]+" $b)
+          echo Current coverage value: $c
+          if [ ! $p -eq $c ]; then
+            update="increase"
+            if [ $c -gt $p ]; then
+              update="decrease"
+            fi
+            echo Updating value $update for badge $b
+            echo Updating badge $b
+            sed -i -r "s/(<text id=\"percent\"[^>]*>)([0-9]+)(%<\/text>)/\1$p\3/" $b
+            echo Setup commit identity
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            echo Committing changes to badge $b
+            git add $b
+            git commit -m "tests: update coverage badge value $update to $p percent" -m "Co-authored-by: $COMMIT_USER_NAME <$COMMIT_USER_EMAIL>" $b
+            push_needed=true
+          else
+            echo No need to update badge $b
+          fi
+          echo push_needed=$push_needed >> $GITHUB_OUTPUT
+
+      - name: Push changes
+        id: push-changes
+        if: ${{ !contains(github.event.pull_request.title, '[skip tests]') && steps.update-coverage-badge.outputs.push_needed == 'true' }}
+        env:
+          GITHUB_REPO: ${{ github.repository }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: ${{ github.event.pull_request.head.ref }}
+        run: |
+          # Ignore credentials warning - this step will be removed when we go public.
+          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git # zizmor:ignore
+          git push origin $BRANCH
+
+  doc-build:
+    name: "Build documentation"
+    runs-on: ubuntu-latest
+    needs: [doc-style]
+    env:
+      BUILD_ALL_DOCS: 1
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+          ref: ${{ github.head_ref }}
+
+      - name: Setup python
+        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+
+        with:
+          python-version: ${{ env.MAIN_PYTHON_VERSION }}
+
+      - name: Add version information
+        run: make version-info
+
+      - name: Install PyCFX
+        run: |
+          make install
+
+      - name: Retrieve PyCFX version
+        id: version
+        run: |
+          echo "PYCFX_VERSION=$(python -c "from ansys.cfx.core import __version__; print(); print(__version__)" | tail -1)" >> $GITHUB_OUTPUT
+          echo "PYCFX version is: $(python -c "from ansys.cfx.core import __version__; print(); print(__version__)" | tail -1)"
+
+      - name: Cache API Code
+        uses: actions/cache@cdf6c1fa76f9f475f3d7449005a359c84ca0f306 # v5.0.3
+        id: cache-api-code
+        with:
+          path: |
+            src/ansys/cfx/core/generated
+          key: API-Code-v${{ env.API_CODE_CACHE }}-${{ steps.version.outputs.PYCFX_VERSION }}-${{ env.DOC_DEPLOYMENT_IMAGE_TAG }}-${{ hashFiles('codegen/**') }}
+          lookup-only: false # zizmor: ignore[cache-poisoning]
+
+      - name: Login to GitHub container registry
+        if: steps.cache-api-code.outputs.cache-hit != 'true'
+        uses: docker/login-action@c94ce9fb468520275223c153574b00df6fe4bcc9 # v3.7.0
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pull CFX docker image
+        if: steps.cache-api-code.outputs.cache-hit != 'true'
+        run: make docker-pull
+        env:
+          CFX_IMAGE_TAG: ${{ env.DOC_DEPLOYMENT_IMAGE_TAG }}
+
+      - name: Run API codegen
+        if: steps.cache-api-code.outputs.cache-hit != 'true'
+        run: make api-codegen
+        env:
+          CFX_IMAGE_TAG: ${{ env.DOC_DEPLOYMENT_IMAGE_TAG }}
+
+      - name: Install again after codegen
+        run: |
+          rm -rf dist
+          make install > /dev/null
+
+      - name: Build source documentation
+        run: |
+          pip install -e .[doc]
+          make build-doc-source
+        env:
+          CFX_IMAGE_TAG: ${{ env.DOC_DEPLOYMENT_IMAGE_TAG }}
+
+      - name: Zip HTML documentation before upload
+        run: |
+          sudo apt install zip -y
+          pushd doc/_build/html
+          zip -r ../../../HTML-Documentation-tag-${DOC_DEPLOYMENT_IMAGE_TAG}.zip .
+          popd
+
+      - name: Upload HTML documentation
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6.0.0
+        with:
+          name: HTML-Documentation-tag-${{ env.DOC_DEPLOYMENT_IMAGE_TAG }}
+          path: HTML-Documentation-tag-${{ env.DOC_DEPLOYMENT_IMAGE_TAG }}.zip
+          retention-days: 7
+
+      - name: Remove all docker images
+        if: always()
+        run: make docker-clean-images
+
+  build:
+    name: Build
+    if: ${{ !contains(github.event.pull_request.title, '[skip tests]') }}
+    needs: [smoke-tests, doc-build, set-matrix]
+    runs-on: ubuntu-latest
+    env:
+      CACHE_API_CODE_ENABLED: 'false'
+    strategy:
+      matrix:
+        include: ${{ fromJson(needs.set-matrix.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Setup Python
+        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+        with:
+          python-version: ${{ env.MAIN_PYTHON_VERSION }}
+
+      - name: Cache pip
+        uses: actions/cache@cdf6c1fa76f9f475f3d7449005a359c84ca0f306 # v5.0.3
+        with:
+          path: ~/.cache/pip
+          key: Python-${{ runner.os }}-${{ env.MAIN_PYTHON_VERSION }}-${{ hashFiles('pyproject.toml') }}
+          restore-keys: |
+            Python-${{ runner.os }}-${{ env.MAIN_PYTHON_VERSION }}
+          lookup-only: false # zizmor: ignore[cache-poisoning]
+
+      - name: Add version information
+        run: make version-info
+
+      - name: Install PyCFX
+        run: |
+          make install
+          make install-test
+
+      - name: Retrieve PyCFX version
+        run: |
+          echo "PYCFX_VERSION=$(python -c "from ansys.cfx.core import __version__; print(); print(__version__)" | tail -1)" >> $GITHUB_OUTPUT
+          echo "PYCFX version is: $(python -c "from ansys.cfx.core import __version__; print(); print(__version__)" | tail -1)"
+        id: version
+
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@c94ce9fb468520275223c153574b00df6fe4bcc9 # v3.7.0
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Cache API Code
+        if: env.CACHE_API_CODE_ENABLED == 'true'
+        uses: actions/cache@cdf6c1fa76f9f475f3d7449005a359c84ca0f306 # v5.0.3
+        id: cache-api-code
+        with:
+          path: |
+            src/ansys/cfx/core/generated
+          # Combined cache key for all versions:
+          key: API-Code-v${{ env.API_CODE_CACHE }}-${{ steps.version.outputs.PYCFX_VERSION }}-${{ matrix.image-tag }}-${{ hashFiles('codegen/**') }}
+          lookup-only: false # zizmor: ignore[cache-poisoning]
+
+      - name: Check if generated directory exists
+        if: env.CACHE_API_CODE_ENABLED == 'true'
+        id: check_generated
+        env:
+          CFX_VER: ${{ matrix.version }}
+        run: |
+          if [ -d src/ansys/cfx/core/generated/pre_processing/settings_${CFX_VER} ] && [ -d src/ansys/cfx/core/generated/post_processing/settings_${CFX_VER} ]; then
+            echo "exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "exists=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Print cache and existence status
+        if: env.CACHE_API_CODE_ENABLED == 'true'
+        run: |
+          echo "Cache hit: ${STEPS_CACHE_API_CODE_OUTPUTS_CACHE_HIT}"
+          echo "Generated exists: ${STEPS_CHECK_GENERATED_OUTPUTS_EXISTS}"
+        env:
+          STEPS_CACHE_API_CODE_OUTPUTS_CACHE_HIT: ${{ steps.cache-api-code.outputs.cache-hit }}
+          STEPS_CHECK_GENERATED_OUTPUTS_EXISTS: ${{ steps.check_generated.outputs.exists }}
+
+      - name: Pull ${{ matrix.image-tag }} CFX docker image
+        if: steps.cache-api-code.outputs.cache-hit != 'true' || steps.check_generated.outputs.exists != 'true'
+        run: make docker-pull
+        env:
+          CFX_IMAGE_TAG: ${{ matrix.image-tag }}
+
+      - name: Run ${{ matrix.image-tag }} API codegen
+        if: steps.cache-api-code.outputs.cache-hit != 'true' || steps.check_generated.outputs.exists != 'true'
+        run: make api-codegen
+        env:
+          CFX_IMAGE_TAG: ${{ matrix.image-tag }}
+
+      - name: Print ${{ matrix.image-tag }} CFX version info
+        env:
+          CFX_VER: ${{ matrix.version }}
+        run: |
+          cat src/ansys/cfx/core/generated/cfx_version_${CFX_VER}.py
+          python -c "from ansys.cfx.core.generated.pre_processing.settings_${CFX_VER} import SHASH; print(f'SETTINGS_HASH = {SHASH}')"
+          python -c "from ansys.cfx.core.generated.post_processing.settings_${CFX_VER} import SHASH; print(f'SETTINGS_HASH = {SHASH}')"
+
+      - name: Remove all docker images # cleanup before next codegen due to github runner disk space limit (14GB per job)
+        if: always()
+        run: make docker-clean-images
+
+      - name: Install again after codegen
+        run: |
+          rm -rf dist
+          make install > /dev/null
+
+      - name: Check package
+        run: |
+          pip install twine
+          twine check dist/*
+
+      - name: Upload package
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6.0.0
+        with:
+          name: PyCFX-packages-${{ matrix.image-tag }}
+          path: |
+            dist/*.whl
+            dist/*.tar.gz
+          retention-days: 7
+
+  build-library:
+    name: "Build library basic example"
+    runs-on: ubuntu-latest
+    needs: [doc-build, tests]
+    steps:
+      - uses: ansys/actions/build-library@36cd86710c966963f4dcec56a9670171618cf76a # v10.2.4
+        with:
+          library-name: ${{ env.LIBRARY_NAME }}
+          python-version: ${{ env.MAIN_PYTHON_VERSION }}
+          validate-build: false
+
+  doc-deploy-dev:
+    name: "Deploy development documentation"
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Required to push to the documentation branch (gh-pages)
+    needs: [build-library]
+    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v') && contains(github.ref, 'dev')
+    steps:
+      - uses: ansys/actions/doc-deploy-dev@36cd86710c966963f4dcec56a9670171618cf76a # v10.2.4
+        with:
+          doc-artifact-name: "HTML-Documentation-tag-${{ env.DOC_DEPLOYMENT_IMAGE_TAG }}"
+          decompress-artifact: true
+          cname: ${{ env.DOCUMENTATION_CNAME }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          bot-user: ${{ secrets.PYANSYS_CI_BOT_USERNAME }}
+          bot-email: ${{ secrets.PYANSYS_CI_BOT_EMAIL }}
+
+  release:
+    name: Release
+    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v')
+    needs: [tests, build]
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write # Required for trusted publishing
+      contents: write # Required for GitHub release upload
+    steps:
+      - name: "Download the library artifacts from build-library step"
+        uses: actions/download-artifact@37930b1c2abaa49bbe596cd826c3c89aef350131 # v7.0.0
+        with:
+          name: PyCFX-packages
+          path: PyCFX-packages
+
+      - name: Display package file list
+        run: ls -R
+
+      - name: "Upload artifacts to PyPI using trusted publisher"
+        uses: pypa/gh-action-pypi-publish@ed0c53931b1dc9bd32cbe73a98c7f6766f8a527e # v1.13.0
+        with:
+          repository-url: "https://upload.pypi.org/legacy/"
+          print-hash: true
+          packages-dir: PyCFX-packages
+          skip-existing: false
+
+      - name: Release to GitHub releases
+        uses: softprops/action-gh-release@a06a81a03ee405af7f2048a818ed3f03bbf83c7b # v2.5.0
+        with:
+          files: |
+            ./**/*.whl
+            ./**/*.tar.gz
+            ./**/*-wheelhouse-*.zip
+
+  doc-deploy-stable:
+    name: "Deploy stable documentation"
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Required to push to the documentation branch (gh-pages)
+    needs: [release]
+    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v') && !contains(github.ref, 'dev')
+    steps:
+      - uses: ansys/actions/doc-deploy-stable@36cd86710c966963f4dcec56a9670171618cf76a # v10.2.4
+        with:
+          doc-artifact-name: HTML-Documentation-tag-${{ env.DOC_DEPLOYMENT_IMAGE_TAG }}
+          cname: ${{ env.DOCUMENTATION_CNAME }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          bot-user: ${{ secrets.PYANSYS_CI_BOT_USERNAME }}
+          bot-email: ${{ secrets.PYANSYS_CI_BOT_EMAIL }}

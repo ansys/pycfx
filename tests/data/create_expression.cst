@@ -1,0 +1,7 @@
+LIBRARY:
+  CEL:
+    EXPRESSIONS:
+      MyTime = 7 [s]
+    END
+  END
+END

@@ -1,0 +1,164 @@
+#!/usr/bin/env python
+"""Watchdog execution script, should not be manually executed or imported as a module.
+
+PyCFX will handle the Watchdog process, see ``launch_cfx`` documentation.
+"""
+
+if __name__ == "__main__":
+    try:
+        import os
+        import signal
+        import subprocess
+        import sys
+        import time
+
+        import psutil
+        from watchdog import IDLE_PERIOD, WATCHDOG_INIT_FILE
+
+        import ansys.cfx.core as pycfx
+        from ansys.cfx.core.cfx_connection import CFXConnection, get_container
+        from ansys.cfx.core.utils.execution import timeout_exec, timeout_loop
+
+        watchdog_id = sys.argv[5]
+
+        launcher_pid = int(sys.argv[1])
+
+        # Configure logger for Watchdog process
+        log_config = pycfx.logging.get_default_config()
+        log_config["handlers"]["pycfx_file"]["filename"] = f"pycfx_watchdog_{watchdog_id}.log"
+
+        logger = pycfx.logging.get_logger("pycfx.watchdog")
+
+        if os.getenv("PYCFX_WATCHDOG_DEBUG", "OFF").upper() in ("1", "ON"):
+            pycfx.logging.enable(custom_config=log_config)
+            logger.setLevel("DEBUG")
+            logger.handlers = pycfx.logging.get_logger(
+                "pycfx.general"
+            ).handlers  # using same handlers as already defined
+
+        def got_sig(signum, _):
+            """Warns about received signal."""
+            logger.warning(f"Received {signal.Signals(signum).name}, ignoring it")
+
+        signals = signal.valid_signals()
+        if os.name == "posix":
+            try:
+                signals.remove(signal.SIGCHLD)
+            except AttributeError:
+                pass
+
+        for sig in signals:
+            try:
+                logger.debug(f"Handling signal {sig}")
+                signal.signal(sig, got_sig)
+            except OSError:
+                logger.debug(f"Unable to handle signal {sig}")
+
+        logger.debug(f"Number of arguments: {len(sys.argv)} arguments.")
+        logger.debug(f"Argument list: {sys.argv}")
+        logger.debug(f"Watchdog pid: {os.getpid()}")
+        logger.debug(f"Python launcher pid: {launcher_pid}")
+
+        ip, port, password = sys.argv[2:5]
+
+        logger.debug(f"ip:{ip} port:{port} pass:{password}")
+
+        if ip == "None":
+            ip = None
+
+        logger.info("Attempting to connect to existing CFX session...")
+
+        kwargs = {
+            "ip": ip,
+            "port": int(port),
+            "password": password,
+            "launcher_args": None,
+            "start_transcript": False,
+            "cleanup_on_exit": True,
+        }
+
+        cfx = timeout_exec(CFXConnection, timeout=IDLE_PERIOD * 5, kwargs=kwargs)
+        if not cfx:
+            logger.error("CFX connection timeout.")
+            sys.exit()
+
+        if cfx._remote_instance:
+            logger.error("PyCFXWatchdog does not work with remote CFX instances.")
+            sys.exit()
+
+        logger.info("CFX connection successful")
+
+        open(WATCHDOG_INIT_FILE.format(watchdog_id), "w").close()
+
+        cfx_host_pid = cfx.connection_properties.cfx_host_pid
+        engine_pid = cfx.connection_properties.engine_pid
+        engine_host = cfx.connection_properties.engine_host
+
+        logger.debug(f"cfx_host_pid: {cfx_host_pid}")
+        logger.debug(f"engine_pid: {engine_pid}")
+        logger.debug(f"engine_host: {engine_host}")
+
+        down = []
+
+        def check_pid_down(pid, name):
+            """Check whether pid is down or not."""
+            if not psutil.pid_exists(pid):
+                logger.debug(name + " down")
+                down.append(name)
+
+        while True:
+            check_pid_down(launcher_pid, "Python launcher")
+            if not cfx.connection_properties.inside_container:
+                check_pid_down(engine_pid, "Engine")
+                check_pid_down(cfx_host_pid, "CFX")
+            else:
+                if not get_container(engine_host):
+                    logger.debug("CFX container down")
+                    down.append("CFX container")
+            if down:
+                break
+            logger.info("Waiting...")
+            time.sleep(IDLE_PERIOD)
+
+        logger.info(", ".join(down) + " not running anymore")
+
+        if not cfx.wait_process_finished(wait=IDLE_PERIOD * 5):
+            logger.info("CFX processes remain. Checking if CFX gRPC service is healthy...")
+            is_serving = timeout_exec(cfx.health_check_service.is_serving, timeout=IDLE_PERIOD * 3)
+
+            if is_serving:
+                logger.info("CFX client healthy, trying soft exit with timeout...")
+                cfx.exit(timeout=IDLE_PERIOD * 2, timeout_force=False)
+                if not cfx.wait_process_finished(wait=IDLE_PERIOD * 5):
+                    logger.info("CFX client or container remains...")
+                else:
+                    logger.info("Exit call succeeded.")
+            else:
+                logger.info("CFX client not healthy.")
+
+        if cfx.connection_properties.inside_container:
+            logger.info(
+                "Running CFX cleanup scripts inside container if they are still available..."
+            )
+            cfx.force_exit()
+            response = timeout_loop(
+                get_container,
+                IDLE_PERIOD * 3,
+                args=(engine_host,),
+                expected="falsy",
+            )
+            if response:
+                logger.info("CFX container still alive somehow, directly terminating it...")
+                subprocess.run(["docker", "kill", engine_host])
+            else:
+                logger.info("CFX container successfully shut down.")
+        else:
+            logger.info("Running local CFX cleanup scripts if they are still available...")
+            cfx.force_exit()
+
+        logger.info("Done.")
+
+    except Exception as exc:
+        with open("pycfx_watchdog.err", "w") as file:
+            file.write(f"{type(exc).__name__}: {exc}")
+        raise

@@ -1,0 +1,94 @@
+name: Container Test Run
+
+on:
+  workflow_dispatch:
+
+env:
+  ANSYSLMD_LICENSE_FILE: 1055@${{ secrets.LICENSE_SERVER }}
+  MAIN_PYTHON_VERSION: '3.10'
+  PYCFX_TIMEOUT_FORCE_EXIT: 30
+  PYCFX_LAUNCH_CONTAINER: 1
+  PYCFX_LOGGING: 'DEBUG'
+  PYCFX_WATCHDOG_DEBUG: 'OFF'
+  PYCFX_HIDE_LOG_SECRETS: 1
+  UV_PRERELEASE: "allow"
+  DOCKER_PACKAGE: ghcr.io/ansys/pycfx
+  DOC_DEPLOYMENT_IMAGE_TAG: "v25.2.3"
+
+jobs:
+  set-matrix:
+    name: "Set container image for tests"
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+    permissions:
+      contents: read
+    steps:
+      - name: Set image tag
+        id: set-matrix
+        run: |
+          echo "matrix=[{\"image-tag\":\"v25.2.3\",\"version\":\"252\"},{\"image-tag\":\"v26.1.0\",\"version\":\"261\"}]" >> $GITHUB_OUTPUT
+
+  test:
+    name: Unit Testing
+    needs: set-matrix
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include: ${{ fromJson(needs.set-matrix.outputs.matrix) }},
+        python-version: ['3.10']
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Setup Python
+        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Add version information
+        run: make version-info
+
+      - name: Install PyCFX
+        run: |
+          make install
+          make install-test
+
+      - name: Retrieve PyCFX version
+        id: version
+        run: |
+          echo "PYCFX_VERSION=$(python -c "from ansys.cfx.core import __version__; print(); print(__version__)" | tail -1)" >> $GITHUB_OUTPUT
+          echo "PYCFX version is: $(python -c "from ansys.cfx.core import __version__; print(); print(__version__)" | tail -1)"
+
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@c94ce9fb468520275223c153574b00df6fe4bcc9 # v3.7.0
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pull CFX docker image
+        run: make docker-pull
+        env:
+          CFX_IMAGE_TAG: ${{ matrix.image-tag }}
+
+      - name: Run ${{ matrix.version }} API codegen
+        run: make api-codegen
+        env:
+          CFX_IMAGE_TAG: ${{ matrix.image-tag }}
+
+      - name: Print ${{ matrix.version }} CFX version info
+        run: |
+          cat src/ansys/cfx/core/generated/cfx_version_${{ matrix.version }}.py
+          python -c "from ansys.cfx.core.generated.pre_processing.settings_${{ matrix.version }} import SHASH; print(f'SETTINGS_HASH = {SHASH}')"
+          python -c "from ansys.cfx.core.generated.post_processing.settings_${{ matrix.version }} import SHASH; print(f'SETTINGS_HASH = {SHASH}')"
+
+      - name: ${{ matrix.image-tag }} Unit Testing
+        run: make unittest-all-${{ matrix.version }}
+        env:
+          CFX_IMAGE_TAG: ${{ matrix.image-tag }}
+
+      - name: Remove all docker images
+        run: make docker-clean-images

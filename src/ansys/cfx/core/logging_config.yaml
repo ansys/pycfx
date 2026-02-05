@@ -1,0 +1,42 @@
+# Used to configure PyCFX logging to file
+# More logging examples and references:
+# https://docs.python.org/3/howto/logging.html
+# https://docs.python.org/3/howto/logging-cookbook.html
+# https://docs.python.org/3/library/logging.html#logging-levels
+# https://gist.github.com/kingspp/9451566a5555fb022215ca2b7b802f19
+
+version: 1
+disable_existing_loggers: no
+
+formatters:
+  logfile_fmt:
+    format: "%(asctime)s %(name)-21s %(levelname)-8s %(message)s"
+
+handlers:
+  pycfx_file:
+    class: logging.handlers.RotatingFileHandler
+    level: NOTSET #  no log level filtering on this handler, message log levels are managed by the loggers instead
+    formatter: logfile_fmt
+    filename: 'pycfx.log'
+    maxBytes: 10485760 # 10 Megabytes
+    backupCount: 9 # if .log file size > maxBytes, roll over to another file .log.1, then .log.2, and so on
+
+loggers:
+  pycfx.general:
+    level: DEBUG
+    handlers: [pycfx_file]
+  pycfx.launcher:
+    level: DEBUG
+    handlers: [pycfx_file]
+  pycfx.networking:
+    level: DEBUG
+    handlers: [pycfx_file]
+  pycfx.server_events:
+    level: DEBUG
+    handlers: [pycfx_file]
+  pycfx.settings_api:
+    level: DEBUG
+    handlers: [pycfx_file]
+  pycfx.solver_control:
+    level: DEBUG
+    handlers: [pycfx_file]
