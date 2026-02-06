@@ -1,0 +1,236 @@
+"""Provide a module to generate the documentation classes for the CFX settings trees.
+Running this module generates .rst files for the various PyCFX modules.
+
+settings classes. The out is placed at:
+- doc/source/api/{module}/_autosummary/settings
+Process
+-------
+    - From the settings API classes recursively generate the list of parents for the current class.
+    -- Populate a parent's dictionary with the current class file name (not class name) as key,
+       and list of parent's file names (not class names) as value.
+    - Recursively generate the rst files for classes starting with settings.root.
+    -- Add target reference as the file name for the given class. This is used by other classes to
+       generate hyperlinks.
+    -- Add properties like members, undoc-memebers, show-inheritence to the autoclass directive.
+    -- Generate the tables of children, commands, arguments, and parents.
+    --- Get access to the respective properties and members on the class with get_attr.
+    --- Use the file name of the child class to generate the hyperlink to that class.
+    --- Use the __doc__ property to generate the short summary for the corresponding child.
+    --- Use the previously generated parent's dict to populate the parent's table.
+Usage
+-----
+python <path to settings_rstgen.py>
+"""
+
+import importlib
+import os
+
+from ansys.cfx.core.utils.cfx_version import CFXVersion, get_version_for_file_name
+
+parents_dict = {}
+rst_list = []
+
+
+def _get_indent_str(indent):
+    return f"{' '*indent*4}"
+
+
+def _generate_table_for_rst(r, data_dict):
+    # Get dimensions for columns
+    key_max = len(max(data_dict.keys(), key=len))
+    val_max = len(max(data_dict.values(), key=len))
+    col_gap = 3
+    total = key_max + val_max + col_gap
+    # Top border
+    r.write(f'{"="*key_max}{" "*col_gap}{"="*val_max}\n\n')
+    header = True
+    for key, value in data_dict.items():
+        if header:
+            # Write header and border
+            r.write(f'{key}{" "*(total-len(key)-len(value))}{value}\n\n')
+            r.write(f'{"="*key_max}{" "*col_gap}{"="*val_max}\n')
+            header = False
+        else:
+            # actual data
+            r.write(f'{key}{" "*(total-len(key)-len(value))}{value}\n\n')
+    # Bottom border
+    r.write(f'{"="*key_max}{" "*col_gap}{"="*val_max}\n\n')
+
+
+def _populate_parents_list(cls):
+    if hasattr(cls, "child_names"):
+        for child in cls.child_names:
+            child_cls = cls._child_classes[child]
+            child_file = child_cls.__module__.split(".")[-1]
+            if not parents_dict.get(child_file):
+                parents_dict[child_file] = []
+            if not cls in parents_dict[child_file]:
+                parents_dict[child_file].append(cls)
+
+    if hasattr(cls, "command_names"):
+        for child in cls.command_names:
+            child_cls = cls._child_classes[child]
+            child_file = child_cls.__module__.split(".")[-1]
+            if not parents_dict.get(child_file):
+                parents_dict[child_file] = []
+            if not cls in parents_dict[child_file]:
+                parents_dict[child_file].append(cls)
+
+    if hasattr(cls, "argument_names"):
+        for child in cls.argument_names:
+            child_cls = cls._child_classes[child]
+            child_file = child_cls.__module__.split(".")[-1]
+            if not parents_dict.get(child_file):
+                parents_dict[child_file] = []
+            if not cls in parents_dict[child_file]:
+                parents_dict[child_file].append(cls)
+
+    if hasattr(cls, "child_object_type"):
+        child_cls = getattr(cls, "child_object_type")
+        child_file = child_cls.__module__.split(".")[-1]
+        if not parents_dict.get(child_file):
+            parents_dict[child_file] = []
+        if not cls in parents_dict[child_file]:
+            parents_dict[child_file].append(cls)
+
+    if hasattr(cls, "child_names"):
+        for child in cls.child_names:
+            _populate_parents_list(cls._child_classes[child])
+
+    if hasattr(cls, "command_names"):
+        for child in cls.command_names:
+            _populate_parents_list(cls._child_classes[child])
+
+    if hasattr(cls, "argument_names"):
+        for child in cls.argument_names:
+            _populate_parents_list(cls._child_classes[child])
+
+    if hasattr(cls, "child_object_type"):
+        _populate_parents_list(getattr(cls, "child_object_type"))
+
+
+def _populate_rst_from_settings(rst_dir, module, cls, version):
+    istr1 = _get_indent_str(1)
+    cls_name = cls.__name__
+    file_name = cls.__module__.split(".")[-1]
+    rstpath = os.path.normpath(os.path.join(rst_dir, file_name + ".rst"))
+    has_children = hasattr(cls, "child_names") and len(cls.child_names) > 0
+    has_commands = hasattr(cls, "command_names") and len(cls.command_names) > 0
+    has_arguments = hasattr(cls, "argument_names") and len(cls.argument_names) > 0
+    has_named_object = hasattr(cls, "child_object_type")
+    with open(rstpath, "w") as r:
+        # Populate initial rst
+        r.write(":orphan:\n\n")
+        if file_name == "root":
+            r.write(f".. _ref_{module}_{file_name}:\n\n")
+        else:
+            r.write(f".. _{module}_{file_name}:\n\n")
+        r.write(f"{cls_name}\n")
+        r.write(f'{"="*(len(cls_name))}\n\n')
+        r.write(
+            f".. autoclass:: ansys.cfx.core.generated.{module}.settings_{version}.{file_name}.{cls_name}\n"
+        )
+        r.write(f"{istr1}:show-inheritance:\n\n")
+
+        if has_children:
+            r.write(f".. rubric:: Attributes\n\n")
+            data_dict = {}
+            data_dict["Attribute"] = "Summary"
+            for child in cls.child_names:
+                child_cls = cls._child_classes[child]
+                ref_string = f":ref:`{child} <{module}_{child_cls.__module__.split('.')[-1]}>`"
+                data_dict[ref_string] = child_cls.__doc__.strip("\n").split("\n")[0]
+            _generate_table_for_rst(r, data_dict)
+
+        if has_commands:
+            r.write(f".. rubric:: Methods\n\n")
+            data_dict = {}
+            data_dict["Method"] = "Summary"
+            for child in cls.command_names:
+                child_cls = cls._child_classes[child]
+                ref_string = f":ref:`{child} <{module}_{child_cls.__module__.split('.')[-1]}>`"
+                data_dict[ref_string] = child_cls.__doc__.strip("\n").split("\n")[0]
+            _generate_table_for_rst(r, data_dict)
+
+        if has_arguments:
+            r.write(f".. rubric:: Arguments\n\n")
+            data_dict = {}
+            data_dict["Argument"] = "Summary"
+            for child in cls.argument_names:
+                child_cls = cls._child_classes[child]
+                ref_string = f":ref:`{child} <{module}_{child_cls.__module__.split('.')[-1]}>`"
+                data_dict[ref_string] = child_cls.__doc__.strip("\n").split("\n")[0]
+            _generate_table_for_rst(r, data_dict)
+
+        if has_named_object:
+            child_cls = getattr(cls, "child_object_type")
+            ref_string = (
+                f":ref:`{child_cls.__name__} <{module}_{child_cls.__module__.split('.')[-1]}>`"
+            )
+            data_dict = {}
+            data_dict[ref_string] = child_cls.__doc__.strip("\n").split("\n")[0]
+            r.write(f".. rubric:: Named object type\n\n")
+            r.write(f"{ref_string}\n\n\n")
+
+        if parents_dict.get(file_name):
+            r.write(f".. rubric:: Included in:\n\n")
+            data_dict = {}
+            data_dict["Parent"] = "Summary"
+            for parent in parents_dict.get(file_name):
+                parent_file = parent.__module__.split(".")[-1]
+                parent_ref = f"{module}_{parent_file}"
+                if parent_file == "root":
+                    parent_ref = "ref_" + parent_ref
+                ref_string = f":ref:`{parent.__name__} <{parent_ref}>`"
+
+                data_dict[ref_string] = parent.__doc__.strip("\n").split("\n")[0]
+            _generate_table_for_rst(r, data_dict)
+
+        if rstpath not in rst_list:
+            rst_list.append(rstpath)
+            if has_children:
+                for child in cls.child_names:
+                    _populate_rst_from_settings(rst_dir, module, cls._child_classes[child], version)
+
+            if has_commands:
+                for child in cls.command_names:
+                    _populate_rst_from_settings(rst_dir, module, cls._child_classes[child], version)
+
+            if has_arguments:
+                for child in cls.argument_names:
+                    _populate_rst_from_settings(rst_dir, module, cls._child_classes[child], version)
+
+            if has_named_object:
+                _populate_rst_from_settings(
+                    rst_dir, module, getattr(cls, "child_object_type"), version
+                )
+
+
+if __name__ == "__main__":
+    print("Generating rst files for settings API classes")
+    dirname = os.path.dirname(__file__)
+
+    image_tag = os.getenv("CFX_IMAGE_TAG", f"v{CFXVersion.current_release().value}")
+    version = get_version_for_file_name(image_tag.lstrip("v"))
+
+    for module in ["pre_processing", "post_processing"]:
+        rst_dir = os.path.normpath(
+            os.path.join(
+                dirname,
+                "source",
+                "api",
+                module,
+                "_autosummary",
+                "settings",
+            )
+        )
+
+        if not os.path.exists(rst_dir):
+            os.makedirs(rst_dir)
+
+        parents_dict = {}
+        rst_list = []
+
+        settings = importlib.import_module(f"ansys.cfx.core.generated.{module}.settings_{version}")
+        _populate_parents_list(settings.root)
+        _populate_rst_from_settings(rst_dir, module, settings.root, version)

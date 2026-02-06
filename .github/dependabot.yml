@@ -1,0 +1,27 @@
+version: 2
+updates:
+  # See: https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#package-ecosystem
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    labels:
+      - "maintenance"
+      - "dependencies"
+    commit-message:
+      prefix: "build(deps): pip"
+    ignore:
+      - dependency-name: "attrs"
+    cooldown:
+      default-days: 7
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    labels:
+      - "maintenance"
+    commit-message:
+      prefix: "build(deps): actions"
+    cooldown:
+      default-days: 7

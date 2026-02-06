@@ -1,0 +1,21 @@
+{
+    "cfx_debug": {
+        "type": "bool",
+        "default": "null",
+        "cfx_map": {
+            "true": " -debug",
+            "false": ""
+        },
+        "cfx_format": "{}"
+    },
+    "py": {
+        "type": "bool",
+        "default": "true",
+        "cfx_required": true,
+        "cfx_map": {
+            "true": " -py",
+            "false": ""
+        },
+        "cfx_format": "{}"
+    }
+}

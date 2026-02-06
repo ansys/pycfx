@@ -1,0 +1,17 @@
+COMMAND FILE:
+  CFX Post Version = 25.2
+END
+
+LIBRARY:
+  CEL:
+    EXPRESSIONS:
+      MyTime = 3 [s]
+    END
+  END
+END
+
+EXPRESSION EVALUATOR:
+  Evaluated Expression = MyTime
+END
+
+> forceupdate EXPRESSION EVALUATOR
