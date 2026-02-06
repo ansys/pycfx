@@ -16,7 +16,7 @@ env:
   PYCFX_LAUNCH_CONTAINER: 1
   PYCFX_WATCHDOG_DEBUG: "OFF"
   PYCFX_HIDE_LOG_SECRETS: 1
-  DOCUMENTATION_CNAME: "refactored-telegram-r651374.pages.github.io"
+  DOCUMENTATION_CNAME: "cfx.docs.pyansys.com"
   DOC_DEPLOYMENT_IMAGE_TAG: "v26.1.0"
   LIBRARY_NAME: "ansys-cfx-core"
 
