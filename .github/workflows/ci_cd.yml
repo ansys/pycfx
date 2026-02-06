@@ -16,7 +16,7 @@ env:
   PYCFX_LAUNCH_CONTAINER: 1
   PYCFX_WATCHDOG_DEBUG: "OFF"
   PYCFX_HIDE_LOG_SECRETS: 1
-  DOCUMENTATION_CNAME: "refactored-telegram-r651374.pages.github.io"
+  DOCUMENTATION_CNAME: "cfx.docs.pyansys.com"
   DOC_DEPLOYMENT_IMAGE_TAG: "v26.1.0"
   LIBRARY_NAME: "ansys-cfx-core"
 
@@ -488,7 +488,7 @@ jobs:
     permissions:
       contents: write # Required to push to the documentation branch (gh-pages)
     needs: [build-library]
-    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v') && contains(github.ref, 'dev')
+    if: github.ref == 'refs/heads/main'
     steps:
       - uses: ansys/actions/doc-deploy-dev@36cd86710c966963f4dcec56a9670171618cf76a # v10.2.4
         with:
