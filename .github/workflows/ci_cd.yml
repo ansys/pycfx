@@ -80,7 +80,6 @@ jobs:
   doc-style:
     name: "Documentation style"
     runs-on: ubuntu-latest
-    if: false # Temporarily disable doc style check for the first doc merge
     permissions:
       contents: read
       pull-requests: read # Needed for reviewdog
