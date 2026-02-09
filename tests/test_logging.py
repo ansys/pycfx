@@ -36,7 +36,7 @@ def test_set_logging_level(pytestconfig, caplog):
     with suppress(FileNotFoundError):
         os.remove(log_file_path)
 
-    assert pycfx.logging.is_active() == False
+    assert not pycfx.logging.is_active()
 
     config_dict = pycfx.logging.get_default_config()
     config_dict["handlers"]["pycfx_file"]["filename"] = log_file_path
@@ -47,7 +47,7 @@ def test_set_logging_level(pytestconfig, caplog):
     settings_logger.warning("ABC")
     assert len(caplog.records) == 1
 
-    assert pycfx.logging.is_active() == True
+    assert pycfx.logging.is_active()
 
     # Tidy up
     settings_logger.disabled = True

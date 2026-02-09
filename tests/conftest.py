@@ -52,6 +52,7 @@ def pytest_addoption(parser):
         metavar="VERSION",
         help="only run tests supported by CFX version VERSION.",
     )
+    parser.addoption("--nightly", action="store_true", default=False, help="run nightly tests")
 
 
 def pytest_runtest_setup(item: pytest.Item) -> None:
@@ -60,13 +61,15 @@ def pytest_runtest_setup(item: pytest.Item) -> None:
     ):
         pytest.skip()
 
+    is_nightly = item.config.getoption("--nightly")
+
     version_specs = []
     cfx_release_version = CFXVersion.current_release().value
     for mark in item.iter_markers(name="cfx_version"):
         spec = mark.args[0]
-        # if a test is marked as cfx_version("latest")
-        # run with dev and release CFX versions in nightly
-        # run with release CFX versions in PRs
+        # If a test is marked as cfx_version("latest"):
+        # - run with dev and release CFX versions in nightly runs
+        # - run with release CFX version in PRs
         if spec == "latest":
             spec = f">={cfx_release_version}" if is_nightly else f"=={cfx_release_version}"
         version_specs.append(SpecifierSet(spec))
