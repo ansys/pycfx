@@ -28,7 +28,7 @@ from typing import Any, List, Optional
 
 
 def closest_allowed_names(trial_name: str, allowed_names: str) -> List[str]:
-    """Checks if the 'trail_name' is closely matching the 'allowed_names'."""
+    """Checks if the 'trial_name' is closely matching the 'allowed_names'."""
     f = partial(difflib.get_close_matches, trial_name, allowed_names)
     return f(cutoff=0.6, n=5) or f(cutoff=0.3, n=1)
 

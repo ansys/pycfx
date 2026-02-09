@@ -24,6 +24,6 @@
 
 
 class PyCFXDeprecationWarning(FutureWarning):
-    """Provides the common warning class for all deprecated PyCFX feature."""
+    """Provides the common warning class for all deprecated PyCFX features."""
 
     pass
