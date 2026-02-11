@@ -625,11 +625,14 @@ def test_dynamic_parameters(pypost: PostProcessing, pytestconfig, capsys):
     except RuntimeError as e:
         if pypost.get_cfx_version() > CFXVersion.v252:
             msg = (
-                "Setting a value '440 [K]' for the object '/LIBRARY/CEL/EXPRESSIONS:InletTemp2' is "
-                "not allowed. Set the 'definition' parameter within the object instead."
+                "Setting a value '440 [K]' for the object '/LIBRARY/CEL/EXPRESSIONS:InletTemp2' "
+                "is not allowed. Set the 'definition' parameter within the object instead."
             )
         else:
-            msg = "DataCCLObject::setValue::Parameter 'EXPRESSIONS' is not recognized on object 'CEL'."
+            msg = (
+                "DataCCLObject::setValue::Parameter 'EXPRESSIONS' is not recognized on object "
+                "'CEL'."
+            )
         assert str(e) == msg
     else:
         assert False, "Expected RuntimeError"
@@ -723,11 +726,19 @@ def test_set_var(pypost: PostProcessing, pytestconfig, capsys):
         try:
             plane.number_of_contours = invalid_value
         except RuntimeError as e:
-            assert str(e) == (
-                "CCLAPI::validateCCLData::CCL validation failed with message:\n"
-                f"Error: Parameter /PLANE:Plane 1/Number of Contours = {err_str} must be "
-                "type Integer\n"
-            )
+            if pypost.get_cfx_version() > CFXVersion.v261:
+                msg = (
+                    "CCL validation failed with message:\n"
+                    f"Error: Parameter /PLANE:Plane 1/Number of Contours = {err_str} must be "
+                    "type Integer\n"
+                )
+            else:
+                msg = (
+                    "CCLAPI::validateCCLData::CCL validation failed with message:\n"
+                    f"Error: Parameter /PLANE:Plane 1/Number of Contours = {err_str} must be "
+                    "type Integer\n"
+                )
+            assert str(e) == msg
         else:
             assert False, f"Expected RuntimeError for {invalid_value}"
 
@@ -740,11 +751,19 @@ def test_set_var(pypost: PostProcessing, pytestconfig, capsys):
         try:
             plane.specular_lighting = invalid_value
         except RuntimeError as e:
-            assert str(e) == (
-                "CCLAPI::validateCCLData::CCL validation failed with message:\n"
-                f"Error: Parameter '/PLANE:Plane 1/Specular Lighting = {err_str}' must be "
-                "type Logical\n"
-            )
+            if pypost.get_cfx_version() > CFXVersion.v261:
+                msg = (
+                    "CCL validation failed with message:\n"
+                    f"Error: Parameter '/PLANE:Plane 1/Specular Lighting = {err_str}' must be "
+                    "type Logical\n"
+                )
+            else:
+                msg = (
+                    "CCLAPI::validateCCLData::CCL validation failed with message:\n"
+                    f"Error: Parameter '/PLANE:Plane 1/Specular Lighting = {err_str}' must be "
+                    "type Logical\n"
+                )
+            assert str(e) == msg
         else:
             assert False, f"Expected RuntimeError for {invalid_value}"
 
@@ -762,29 +781,45 @@ def test_set_var(pypost: PostProcessing, pytestconfig, capsys):
     try:
         plane.y = invalid_value
     except RuntimeError as e:
-        assert str(e) == "Quantity::convertTo::Unable to convert units from 'K' to 'm'."
+        if pypost.get_cfx_version() > CFXVersion.v261:
+            msg = "Unable to convert units from 'K' to 'm'."
+        else:
+            msg = "Quantity::convertTo::Unable to convert units from 'K' to 'm'."
+        assert str(e) == msg
     else:
         assert False, f"Expected RuntimeError for {invalid_value}"
     for invalid_value, err_str in [("MyBadExpr", "MyBadExpr"), (False, "False")]:
         try:
             plane.y = invalid_value
         except RuntimeError as e:
-            assert str(e) == (
-                "ExpressionEvaluator::geniEvalSingle::The following unrecognised name was "
-                f"referenced: {err_str}."
-            )
+            if pypost.get_cfx_version() > CFXVersion.v261:
+                msg = f"The following unrecognised name was referenced: {err_str}."
+            else:
+                msg = (
+                    "ExpressionEvaluator::geniEvalSingle::The following unrecognised name was "
+                    f"referenced: {err_str}."
+                )
+            assert str(e) == msg
         else:
             assert False, f"Expected RuntimeError for {invalid_value}"
     invalid_value = [6, 7, 8]
     try:
         plane.y = invalid_value
     except RuntimeError as e:
-        assert str(e) == (
-            "ExpressionEvaluator::geniEvalSingle::Syntax error detected in the expression "
-            "assigned to 'Y'.\n"
-            "Successfully read 1 characters:\n\t6\nthen error detected at:\n\t,7,8\n"
-            "Details - Invalid text after valid expression.\n"
-        )
+        if pypost.get_cfx_version() > CFXVersion.v261:
+            msg = (
+                "Syntax error detected in the expression assigned to 'Y'.\n"
+                "Successfully read 1 characters:\n\t6\nthen error detected at:\n\t,7,8\n"
+                "Details - Invalid text after valid expression.\n"
+            )
+        else:
+            msg = (
+                "ExpressionEvaluator::geniEvalSingle::Syntax error detected in the expression "
+                "assigned to 'Y'.\n"
+                "Successfully read 1 characters:\n\t6\nthen error detected at:\n\t,7,8\n"
+                "Details - Invalid text after valid expression.\n"
+            )
+        assert str(e) == msg
     else:
         assert False, f"Expected RuntimeError for {invalid_value}"
 
@@ -809,17 +844,25 @@ def test_set_var(pypost: PostProcessing, pytestconfig, capsys):
     try:
         plane.point = invalid_value
     except RuntimeError as e:
-        assert str(e) == "Quantity::convertTo::Unable to convert units from 's' to 'm'."
+        if pypost.get_cfx_version() > CFXVersion.v261:
+            msg = "Unable to convert units from 's' to 'm'."
+        else:
+            msg = "Quantity::convertTo::Unable to convert units from 's' to 'm'."
+        assert str(e) == msg
     else:
         assert False, f"Expected RuntimeError for {invalid_value}"
     for invalid_value, err_str in [("MyBadExpr", "MyBadExpr"), (False, "False")]:
         try:
             plane.point = invalid_value
         except RuntimeError as e:
-            assert (
-                str(e)
-                == f"ExpressionEvaluator::geniEvalSingle::The following unrecognised name was referenced: {err_str}."
-            )
+            if pypost.get_cfx_version() > CFXVersion.v261:
+                msg = f"The following unrecognised name was referenced: {err_str}."
+            else:
+                msg = (
+                    "ExpressionEvaluator::geniEvalSingle::The following unrecognised name "
+                    f"was referenced: {err_str}."
+                )
+            assert str(e) == msg
         else:
             assert False, f"Expected RuntimeError for {invalid_value}"
     for invalid_value in [
@@ -830,10 +873,14 @@ def test_set_var(pypost: PostProcessing, pytestconfig, capsys):
         try:
             plane.point = invalid_value
         except RuntimeError as e:
-            assert (
-                str(e)
-                == "PlaneCCLObject::processParameters::Parameter 'Point' must be defined by 3 float values."
-            )
+            if pypost.get_cfx_version() > CFXVersion.v261:
+                msg = "Parameter 'Point' must be defined by 3 float values."
+            else:
+                msg = (
+                    "PlaneCCLObject::processParameters::Parameter 'Point' must be defined by "
+                    "3 float values."
+                )
+            assert str(e) == msg
         else:
             assert False, f"Expected RuntimeError for {invalid_value}"
 
@@ -962,10 +1009,14 @@ def test_set_var(pypost: PostProcessing, pytestconfig, capsys):
     try:
         plane2.set_state(plane_state)
     except RuntimeError as e:
-        assert str(e) == (
-            "ExpressionEvaluator::geniEvalSingle::"
-            "The following unrecognised name was referenced: Bad Value."
-        )
+        if pypost.get_cfx_version() > CFXVersion.v261:
+            msg = "The following unrecognised name was referenced: Bad Value."
+        else:
+            msg = (
+                "ExpressionEvaluator::geniEvalSingle::"
+                "The following unrecognised name was referenced: Bad Value."
+            )
+        assert str(e) == msg
     else:
         assert False, f"Expected RuntimeError"
 
