@@ -24,6 +24,7 @@ import sys
 import traceback
 
 from ansys.cfx.core.session_post import PostProcessing
+from ansys.cfx.core.utils.cfx_version import CFXVersion
 
 
 def test_invalid_ccl_parameter(pypost: PostProcessing, capsys):
@@ -39,10 +40,13 @@ def test_invalid_ccl_parameter(pypost: PostProcessing, capsys):
 
     captured = capsys.readouterr()
     # Error from CCL API
-    assert (
-        "RuntimeError: CCLAPI::validateCCLData::CCL validation failed with message:"
-        in captured.out.strip()
-    )
+    if pypost.get_cfx_version() > CFXVersion.v261:
+        assert "CCL validation failed with message:" in captured.out.strip()
+    else:
+        assert (
+            "RuntimeError: CCLAPI::validateCCLData::CCL validation failed with message:"
+            in captured.out.strip()
+        )
     # Error from CCL perl parser
     assert (
         "Error: Parameter /HARDCOPY/Image Height = abc must be type Integer" in captured.out.strip()

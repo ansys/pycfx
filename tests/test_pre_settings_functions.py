@@ -67,10 +67,17 @@ def test_save_picture(pre_load_static_mixer_case: PreProcessing, pytestconfig, c
     try:
         pypre.file.save_picture(file_name=f"{generated_path_engine}/MyPicturePre.ps", format="none")
     except RuntimeError as e:
-        assert str(e) == (
-            "CCLAPI::validateCCLData::CCL validation failed with message:\n"
-            "Error: Invalid Option parameter 'none' in /HARDCOPY\n"
-        )
+        if pypre.get_cfx_version() > CFXVersion.v261:
+            msg = (
+                "CCL validation failed with message:\n"
+                "Error: Invalid Option parameter 'none' in /HARDCOPY\n"
+            )
+        else:
+            msg = (
+                "CCLAPI::validateCCLData::CCL validation failed with message:\n"
+                "Error: Invalid Option parameter 'none' in /HARDCOPY\n"
+            )
+        assert str(e) == msg
     else:
         assert False, "Expected RuntimeError"
 
@@ -200,10 +207,17 @@ def test_case_functions(pypre: PreProcessing, pytestconfig, capsys):
     try:
         pypre.file.new_case()
     except RuntimeError as e:
-        assert str(e) == (
-            "LoadExecutor::invoke::A simulation is already open! This must be closed before "
-            "opening a new simulation."
-        )
+        if pypre.get_cfx_version() > CFXVersion.v261:
+            msg = (
+                "A simulation is already open! This must be closed before "
+                "opening a new simulation."
+            )
+        else:
+            msg = (
+                "LoadExecutor::invoke::A simulation is already open! This must be closed before "
+                "opening a new simulation."
+            )
+        assert str(e) == msg
     else:
         assert False, "Expected RuntimeError"
 
@@ -241,9 +255,11 @@ def test_case_functions(pypre: PreProcessing, pytestconfig, capsys):
                 replace_flow_data=True,
             )
         except RuntimeError as e:
-            assert str(e) == (
-                "LoadDefFile::openIIFile::The file 'StaticMixer.cfx' could not be opened."
-            )
+            if pypre.get_cfx_version() > CFXVersion.v261:
+                msg = "The file 'StaticMixer.cfx' could not be opened."
+            else:
+                msg = "LoadDefFile::openIIFile::The file 'StaticMixer.cfx' could not be opened."
+            assert str(e) == msg
         else:
             assert False, "Expected RuntimeError"
 

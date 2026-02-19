@@ -69,10 +69,17 @@ def test_save_picture(pypost: PostProcessing, pytestconfig, capsys):
             file_name=f"{generated_path_engine}/MyPicturePost.ps", format="none"
         )
     except RuntimeError as e:
-        assert str(e) == (
-            "CCLAPI::validateCCLData::CCL validation failed with message:\n"
-            "Error: Invalid Option parameter 'none' in /HARDCOPY\n"
-        )
+        if pypost.get_cfx_version() > CFXVersion.v261:
+            msg = (
+                "CCL validation failed with message:\n"
+                "Error: Invalid Option parameter 'none' in /HARDCOPY\n"
+            )
+        else:
+            msg = (
+                "CCLAPI::validateCCLData::CCL validation failed with message:\n"
+                "Error: Invalid Option parameter 'none' in /HARDCOPY\n"
+            )
+        assert str(e) == msg
     else:
         assert False, "Expected RuntimeError"
 

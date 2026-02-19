@@ -788,11 +788,19 @@ def test_set_var(pre_load_static_mixer_case: PreProcessing, pytestconfig, capsys
         try:
             sc.convergence_control.maximum_number_of_iterations = invalid_value
         except RuntimeError as e:
-            assert str(e) == (
-                "CCLAPI::validateCCLData::CCL validation failed with message:\n"
-                "Error: Parameter /FLOW:Flow Analysis 1/SOLVER CONTROL/CONVERGENCE CONTROL/"
-                f"Maximum Number of Iterations = {err_str} must be type Integer\n"
-            )
+            if pypre.get_cfx_version() > CFXVersion.v261:
+                msg = (
+                    "CCL validation failed with message:\n"
+                    "Error: Parameter /FLOW:Flow Analysis 1/SOLVER CONTROL/CONVERGENCE CONTROL/"
+                    f"Maximum Number of Iterations = {err_str} must be type Integer\n"
+                )
+            else:
+                msg = (
+                    "CCLAPI::validateCCLData::CCL validation failed with message:\n"
+                    "Error: Parameter /FLOW:Flow Analysis 1/SOLVER CONTROL/CONVERGENCE CONTROL/"
+                    f"Maximum Number of Iterations = {err_str} must be type Integer\n"
+                )
+            assert str(e) == msg
         else:
             assert False, f"Expected RuntimeError for {invalid_value}"
 
@@ -860,11 +868,19 @@ def test_set_var(pre_load_static_mixer_case: PreProcessing, pytestconfig, capsys
         try:
             sc.dynamic_model_control.global_dynamic_model_control = invalid_value
         except RuntimeError as e:
-            assert str(e) == (
-                "CCLAPI::validateCCLData::CCL validation failed with message:\n"
-                "Error: Parameter '/FLOW:Flow Analysis 1/SOLVER CONTROL/DYNAMIC MODEL CONTROL/"
-                f"Global Dynamic Model Control = {err_str}' must be type Logical\n"
-            )
+            if pypre.get_cfx_version() > CFXVersion.v261:
+                msg = (
+                    "CCL validation failed with message:\n"
+                    "Error: Parameter '/FLOW:Flow Analysis 1/SOLVER CONTROL/DYNAMIC MODEL CONTROL/"
+                    f"Global Dynamic Model Control = {err_str}' must be type Logical\n"
+                )
+            else:
+                msg = (
+                    "CCLAPI::validateCCLData::CCL validation failed with message:\n"
+                    "Error: Parameter '/FLOW:Flow Analysis 1/SOLVER CONTROL/DYNAMIC MODEL CONTROL/"
+                    f"Global Dynamic Model Control = {err_str}' must be type Logical\n"
+                )
+            assert str(e) == msg
         else:
             assert False, f"Expected RuntimeError for {invalid_value}"
 
@@ -1067,11 +1083,19 @@ def test_set_var(pre_load_static_mixer_case: PreProcessing, pytestconfig, capsys
     try:
         in3.set_state(in_bc_state)
     except RuntimeError as e:
-        assert str(e) == (
-            "CCLAPI::validateCCLData::CCL validation failed with message:\n"
-            "Error: Invalid Option parameter 'Bad Option' in /FLOW:Flow Analysis 1/"
-            "DOMAIN:Default Domain/BOUNDARY:in3/BOUNDARY CONDITIONS/HEAT TRANSFER\n"
-        )
+        if pypre.get_cfx_version() > CFXVersion.v261:
+            msg = (
+                "CCL validation failed with message:\n"
+                "Error: Invalid Option parameter 'Bad Option' in /FLOW:Flow Analysis 1/"
+                "DOMAIN:Default Domain/BOUNDARY:in3/BOUNDARY CONDITIONS/HEAT TRANSFER\n"
+            )
+        else:
+            msg = (
+                "CCLAPI::validateCCLData::CCL validation failed with message:\n"
+                "Error: Invalid Option parameter 'Bad Option' in /FLOW:Flow Analysis 1/"
+                "DOMAIN:Default Domain/BOUNDARY:in3/BOUNDARY CONDITIONS/HEAT TRANSFER\n"
+            )
+        assert str(e) == msg
     else:
         assert False, f"Expected RuntimeError"
 
@@ -1092,11 +1116,19 @@ def test_set_var(pre_load_static_mixer_case: PreProcessing, pytestconfig, capsys
     try:
         user_line2.set_state(user_line_state)
     except RuntimeError as e:
-        assert str(e) == (
-            "CCLAPI::validateCCLData::CCL validation failed with message:\n"
-            "Error: Parameter '/LIBRARY/USER LOCATION DEFINITIONS/USER LINE:User Line 2/"
-            "Visibility = Bad Value' must be type Logical\n"
-        )
+        if pypre.get_cfx_version() > CFXVersion.v261:
+            msg = (
+                "CCL validation failed with message:\n"
+                "Error: Parameter '/LIBRARY/USER LOCATION DEFINITIONS/USER LINE:User Line 2/"
+                "Visibility = Bad Value' must be type Logical\n"
+            )
+        else:
+            msg = (
+                "CCLAPI::validateCCLData::CCL validation failed with message:\n"
+                "Error: Parameter '/LIBRARY/USER LOCATION DEFINITIONS/USER LINE:User Line 2/"
+                "Visibility = Bad Value' must be type Logical\n"
+            )
+        assert str(e) == msg
     else:
         assert False, f"Expected RuntimeError"
 
