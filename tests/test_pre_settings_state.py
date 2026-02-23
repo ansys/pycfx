@@ -366,7 +366,15 @@ def test_named_objects(pre_load_static_mixer_case: PreProcessing, capsys):
         assert False, "Expected RuntimeError"
 
     # For 25.2 and 26.1 this does not give an error (but the setup will have physics errors).
-    dom.fluid_models.additional_variable["MyAV"] = {"option": "Transport Equation"}
+    try:
+        dom.fluid_models.additional_variable["MyAV"] = {"option": "Transport Equation"}
+    except RuntimeError as e:
+        if pypre.get_cfx_version() > CFXVersion.v261:
+            assert str(e) == (
+                "Parameter value 'Transport Equation' for parameter 'Option' in object "
+                "'/FLOW:Flow Analysis 1/DOMAIN:Default Domain/FLUID MODELS/ADDITIONAL "
+                "VARIABLE:MyAV' was not set. This may not be physically valid."
+            )
 
     pypre.setup.library.additional_variable["MyAV"] = {}
     dom.fluid_models.additional_variable["MyAV"] = {}
@@ -722,8 +730,21 @@ def test_dynamic_parameters(pre_load_static_mixer_case: PreProcessing, capsys):
     )
     assert expr.list_properties() == ccl_string
 
+    expr.set_state({"InletTemp2": {"definition": None}, "InletTemp": {"definition": "550 [K]"}})
+    ccl_string = (
+        "LIBRARY:\n"
+        "  CEL:\n"
+        "    EXPRESSIONS:\n"
+        "      InletTemp = 550 [K]\n"
+        "      InletTempDup = 330 [K]\n"
+        "    END\n"
+        "  END\n"
+        "END\n"
+    )
+    assert expr.list_properties() == ccl_string
+
     if pypre.get_cfx_version() > CFXVersion.v252:
-        assert expr.get_object_names() == ["InletTemp", "InletTemp2", "InletTempDup"]
+        assert expr.get_object_names() == ["InletTemp", "InletTempDup"]
         expr.clear()
         assert expr.get_object_names() == []
         ccl_string = "LIBRARY:\n" "  CEL:\n" "    EXPRESSIONS:\n" "    END\n" "  END\n" "END\n"
@@ -746,6 +767,17 @@ def test_dynamic_parameters(pre_load_static_mixer_case: PreProcessing, capsys):
     user.rename("NewTemp2", old="Inlet Temperature")
     ccl_string = "USER:\n" "  NewTemp2 = 77 [K]\n" "END\n"
     assert user.list_properties() == ccl_string
+
+    if pypre.get_cfx_version() > CFXVersion.v261:
+        user.set_state(
+            {
+                "NewTemp3": {"definition": "99 [K]"},
+                "NewTemp2": {"definition": None},
+                "NewTemp4": {"definition": None},
+            }
+        )
+        ccl_string = "USER:\n" "  NewTemp3 = 99 [K]\n" "END\n"
+        assert user.list_properties() == ccl_string
 
 
 def test_set_var(pre_load_static_mixer_case: PreProcessing, pytestconfig, capsys):
@@ -1038,9 +1070,17 @@ def test_set_var(pre_load_static_mixer_case: PreProcessing, pytestconfig, capsys
     try:
         pypre.setup.flow["Flow Analysis 1"].analysis_type = "MyExpr2"
     except RuntimeError as e:
-        assert str(e) == (
-            "Parameter value 'ANALYSIS TYPE' for object '/FLOW:Flow Analysis 1' is not allowed."
-        )
+        if pypre.get_cfx_version() > CFXVersion.v261:
+            msg = (
+                "Setting parameter value 'MyExpr2' for parameter 'ANALYSIS TYPE' in object "
+                "'/FLOW:Flow Analysis 1' is not allowed."
+            )
+        else:
+            msg = (
+                "Parameter value 'ANALYSIS TYPE' for object '/FLOW:Flow Analysis 1' is not "
+                "allowed."
+            )
+        assert str(e) == msg
     else:
         assert False, f"Expected RuntimeError"
     captured = capsys.readouterr()
@@ -1088,6 +1128,9 @@ def test_set_var(pre_load_static_mixer_case: PreProcessing, pytestconfig, capsys
                 "CCL validation failed with message:\n"
                 "Error: Invalid Option parameter 'Bad Option' in /FLOW:Flow Analysis 1/"
                 "DOMAIN:Default Domain/BOUNDARY:in3/BOUNDARY CONDITIONS/HEAT TRANSFER\n"
+                "\nParameter value 'Bad Option' for parameter 'Option' in object "
+                "'/FLOW:Flow Analysis 1/DOMAIN:Default Domain/BOUNDARY:in3/BOUNDARY "
+                "CONDITIONS/HEAT TRANSFER' was not set. This may not be physically valid."
             )
         else:
             msg = (
@@ -1120,7 +1163,16 @@ def test_set_var(pre_load_static_mixer_case: PreProcessing, pytestconfig, capsys
             msg = (
                 "CCL validation failed with message:\n"
                 "Error: Parameter '/LIBRARY/USER LOCATION DEFINITIONS/USER LINE:User Line 2/"
-                "Visibility = Bad Value' must be type Logical\n"
+                "Visibility = Bad Value' must be type Logical\n\n"
+                "Some or all of the state settings were not applied. The first two omissions "
+                "are:\n"
+                "  'Parameter value '11' for parameter 'Number of Points' in object "
+                "'/LIBRARY/USER LOCATION DEFINITIONS/USER LINE:User Line 2' was not set. "
+                "This may not be physically valid.'\n"
+                "  'Parameter value 'Two Points' for parameter 'Option' in object "
+                "'/LIBRARY/USER LOCATION DEFINITIONS/USER LINE:User Line 2' was not set. "
+                "This may not be physically valid.'\n"
+                "Note that CCL validation errors prevent any state from being applied."
             )
         else:
             msg = (
