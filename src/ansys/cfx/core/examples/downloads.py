@@ -66,8 +66,8 @@ def _retrieve_file(
         save_path_obj = Path.cwd()
     else:
         save_path_obj = Path(save_path).resolve()
-    local_path = save_path_obj / file_name
-    local_path_no_zip = Path(re.sub(".zip$", "", str(local_path)))
+    local_path = str(save_path_obj / file_name)
+    local_path_no_zip = Path(re.sub(".zip$", "", local_path))
     file_name_no_zip = re.sub(".zip$", "", file_name)
     # First check if file has already been downloaded
     logger.info(f"Checking if {local_path_no_zip} already exists...")
@@ -89,15 +89,15 @@ def _retrieve_file(
     with open(local_path, "wb") as f:
         f.write(content)
 
-    if str(local_path).endswith(".zip"):
-        _decompress(str(local_path), str(save_path_obj))
-        local_path = local_path_no_zip
+    if local_path.endswith(".zip"):
+        _decompress(local_path, str(save_path_obj))
+        local_path = str(local_path_no_zip)
         file_name = file_name_no_zip
     logger.info("Download successful.")
     if return_without_path:
         return file_name
     else:
-        return str(local_path)
+        return local_path
 
 
 def download_file(

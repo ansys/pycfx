@@ -43,7 +43,7 @@ def _build_cfx_launch_args_string(**kwargs) -> str:
         CFX's launch arguments string.
     """
     all_options = None
-    with open(_OPTIONS_FILE, encoding="utf-8") as fp:
+    with _OPTIONS_FILE.open(encoding="utf-8") as fp:
         all_options = json.load(fp)
     launch_args_string = ""
     for k, v in all_options.items():

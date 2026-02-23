@@ -42,6 +42,7 @@ Examples
 """
 
 import logging
+import os
 from pathlib import Path
 from typing import Any, Dict, Optional, Union
 
@@ -203,8 +204,6 @@ class DockerLauncher:
 
             print("\nDocker container run configuration:\n")
             print("config_dict = ")
-            import os
-
             if os.getenv("PYCFX_HIDE_LOG_SECRETS") != "1":
                 pprint(config_dict)
             else:
@@ -251,8 +250,6 @@ class DockerLauncher:
         if self.start_watchdog is None and self.cleanup_on_exit:
             setattr(self, "start_watchdog", True)
         if self.start_watchdog:
-            import os
-
             logger.debug("Launching Watchdog for CFX container...")
             watchdog.launch(os.getpid(), port, password)
 
