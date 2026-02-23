@@ -110,7 +110,7 @@ def read_ccl_from_file(ccl_file_path: str) -> list[str]:
 def setup_write_dir(test_data_directory_path, files_to_remove=[]):
 
     # Make a temporary directory
-    generated_path_engine = f"{test_data_directory_path}/generated"
+    generated_path_engine = Path(test_data_directory_path) / "generated"
     generated_path_client = Path(__file__).parent.parent / "generated"
     generated_path_client.mkdir(parents=True, exist_ok=True)
 
@@ -128,4 +128,4 @@ def setup_write_dir(test_data_directory_path, files_to_remove=[]):
                     elif p.is_dir():
                         shutil.rmtree(p)
 
-    return generated_path_engine, str(generated_path_client)
+    return str(generated_path_engine), str(generated_path_client)
