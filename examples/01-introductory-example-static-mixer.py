@@ -22,28 +22,25 @@
 
 """.. _ref_static_mixer:
 
-Simulating flow in a static mixer using PyCFX
----------------------------------------------
+Simulate flow in a static mixer
+-------------------------------
 
-This basic example shows how to launch PyCFX, and then set up, run, and post-process the CFX Static
+This basic example shows how to launch PyCFX and then set up, run, and postprocess the CFX Static
 Mixer tutorial case in PyCFX.
 
 **Model overview**
 
-This example simulates a static mixer consisting of two inlet pipes delivering water into a
-mixing vessel; the water exits through an outlet pipe.
+This example simulates a static mixer with two inlet pipes delivering water into a mixing vessel. The water exits through an outlet pipe.
 
-Water enters through both pipes at the same rate but at different temperatures. The first entry
-is at a rate of 2 m/s and a temperature of 315 K and the second entry is at a rate of 2 m/s at a
-temperature of 285 K. The radius of the mixer is 2 m.
+Water enters through both pipes at the same rate but at different temperatures. The first entry is at a rate of 2 m/s and a temperature of 315 K. The second entry is at a rate of 2 m/s and a temperature of 285 K. The mixer radius is 2 m.
 
 **Workflow tasks**
 
-The Static Mixer example guides you through these tasks:
+The static mixer example guides you through these tasks:
 
-* Setting up a basic case in a PreProcessing session (CFX-Pre).
-* Running the CFX-Solver.
-* Basic post-processing in CFD-Post.
+* Set up a basic case in a PreProcessing session (CFX-Pre).
+* Run the CFX-Solver.
+* Perform basic postprocessing in CFD-Post.
 
 """
 
@@ -93,7 +90,7 @@ pypre.file.new_case()
 # Import a mesh
 # -------------
 #
-# The mesh file "StaticMixerMesh.gtm" should already have been downloaded to the current working
+# The ``StaticMixerMesh.gtm`` mesh file should already have been downloaded to the current working
 # directory earlier in this script.
 #
 pypre.file.import_mesh(file_name=mesh_file_name)
@@ -114,7 +111,7 @@ default_domain.fluid_models.turbulence_model.option = "k epsilon"
 # Set up the boundary conditions
 # ------------------------------
 #
-# Add the first inlet boundary, adding each setting in turn.
+# Add the first inlet boundary, specifying each setting in turn.
 #
 default_domain.boundary["in1"] = {}
 in1 = default_domain.boundary["in1"]
@@ -124,7 +121,7 @@ in1.boundary_conditions.mass_and_momentum.option = "Normal Speed"
 in1.boundary_conditions.mass_and_momentum.normal_speed = "2 [m s^-1]"
 in1.boundary_conditions.heat_transfer.static_temperature = "315 [K]"
 ###################################################################################################
-# Add the second inlet boundary, by duplicating the first.
+# Add the second inlet boundary by duplicating the first.
 #
 in1_state = default_domain.boundary["in1"].get_state()
 default_domain.boundary["in2"] = in1_state
@@ -145,7 +142,7 @@ out.boundary_conditions.mass_and_momentum.relative_pressure = "0 [Pa]"
 # Set up the solver
 # -----------------
 #
-# Add the solver control settings.
+# Configure the solver control settings.
 #
 solver_control = pypre.setup.flow["Flow Analysis 1"].solver_control
 solver_control.advection_scheme.option = "Upwind"
@@ -162,8 +159,7 @@ exec_control.solver_step_control.parallel_environment.maximum_number_of_processe
 # Check for errors
 # ----------------
 #
-# It is good practice to check for physics messages to ensure that the setup is consistent and
-# no required settings are missing.
+# Check for physics messages to ensure the setup is consistent and no required settings are missing.
 #
 physics_messages = pypre.setup.get_physics_messages(severity="All")
 if physics_messages:
@@ -174,13 +170,13 @@ if physics_messages:
 # -------------------------------
 #
 # This example illustrates a 'file-based' workflow, where each of the three PyCFX components
-# (PreProcessing, Solver and PostProcessing) are run independently, with each component being
+# (PreProcessing, Solver, and PostProcessing) are run independently, with each component being
 # initialized by a file written by the previous component where possible. This allows each
 # component to be run separately, potentially on a different machine configuration, at a different
-# time, or from a different python session. In contrast, the :ref:`ref_fourier_blade_flutter`
+# time, or from a different Python session. In contrast, the :ref:`ref_fourier_blade_flutter`
 # example shows a workflow where the PyCFX components interact more directly.
 #
-# Write the CFX-Solver input file and close the pre-processing session.
+# Write the CFX-Solver input file and close the preprocessing session.
 #
 solver_input_file_name = "static_mixer.def"
 pypre.file.write_solver_input_file(file_name=solver_input_file_name)
@@ -190,8 +186,7 @@ pypre.exit()
 # Start a Solver session and launch the CFX-Solver
 # ------------------------------------------------
 #
-# The CFX-Solver is launched using the execution control settings which were applied within the
-# pre-processing session. Only local CFX-Solver runs are currently supported.
+# Launch the CFX-Solver using the execution control settings applied in the preprocessing session. Only local CFX-Solver runs are supported.
 #
 pysolve = pycfx.Solver.from_install(solver_input_file_name=solver_input_file_name)
 pysolve.solution.start_run()
@@ -213,7 +208,7 @@ pysolve.exit()
 #
 pypost = pycfx.PostProcessing.from_install(results_file_name=results_file)
 ###################################################################################################
-# Find the name of the case object which is automatically
+# Find the name of the case object that is automatically
 # created.
 #
 case_names = pypost.results.data_reader.case.get_object_names()
@@ -243,7 +238,7 @@ default_boundary.show(view="/VIEW:View 1")
 # Create an image
 # ---------------
 #
-# First, set up the image.
+# Set up the image.
 #
 hardcopy = pypost.results.hardcopy
 hardcopy.hardcopy_format = "png"
@@ -251,7 +246,7 @@ hardcopy.image_height = 1200
 hardcopy.image_width = 1200
 hardcopy.use_screen_size = False
 ###################################################################################################
-# Then save the image. Hide the boundary again so that it is not visible in subsequent images.
+# Save the image. Hide the boundary again so that it is not visible in subsequent images.
 #
 pypost.file.save_picture(file_name="static_mixer_boundary.png")
 default_boundary.hide()
@@ -267,11 +262,7 @@ default_boundary.hide()
 # Create a plane
 # --------------
 #
-# By default, the plane geometry is re-calculated every time a setting is modified. When several
-# settings are going to be modified sequentially, the intermediate calculations are unnecessary
-# and can be expensive. By "suspending" the plane object after creation, these unnecessary
-# calculations can be avoided. However, the plane must be "unsuspended" when the setup is complete
-# to allow it to update to reflect the latest settings.
+# By default, the plane geometry recalculates every time a setting is modified. When modifying several settings sequentially, suspend the plane object to avoid unnecessary intermediate calculations. Unsuspend the plane after completing the setup to reflect the latest settings.
 #
 pypost.results.plane["Plane 1"] = {}
 plane = pypost.results.plane["Plane 1"]
@@ -284,7 +275,7 @@ plane.unsuspend()
 # Create a contour
 # ----------------
 #
-# Create a contour on the previously-defined plane, and then save the image.
+# Create a contour on the previously defined plane and save the image.
 #
 pypost.results.contour["Contour 1"] = {
     "colour_variable": "Pressure",
@@ -322,7 +313,7 @@ temperature_difference = expressions["Temperature Difference"].evaluate()
 print(f"Temperature difference: {temperature_difference}")
 
 ###################################################################################################
-# Close the post-processing session
+# Close the postprocessing session
 # ---------------------------------
 #
 pypost.exit()

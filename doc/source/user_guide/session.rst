@@ -1,22 +1,22 @@
 .. _ref_session_guide:
 
-Using PyCFX sessions
-====================
+Use PyCFX sessions
+==================
 
 PyCFX provides three types of session objects:
 
-- PreProcessing: provides a connection to CFX-Pre for setting up a simulation.
-- Solver: allows control of the CFX-Solver.
-- PostProcessing: provides a connection to CFD-Post for post-processing the simulation results.
+- PreProcessing: Connects to CFX-Pre to set up simulations.
+- Solver: Controls the CFX-Solver.
+- PostProcessing: Connects to CFD-Post to process simulation results.
 
-The :ref:`User Guide <ref_user_guide>` provides an overview of these session objects.
+For an overview of these session objects, see :ref:`User guide <ref_user_guide>`.
 
-Each PyCFX session object exposes a hierarchy of Python "settings objects" that provide access to the
+Each PyCFX session object exposes a hierarchy of Python *settings objects* that provide access to the
 underlying CFX setup and tools. For example, both the PreProcessing and PostProcessing session
-objects have a child ``setup`` object which contains the CFX setup in a hierarchy that corresponds
+objects have a child ``setup`` object, which contains the CFX setup in a hierarchy that corresponds
 to the CFX Command Language (CCL) structure of CFX-Pre or CFD-Post, respectively. They also have a
-child ``file`` object which provides actions that broadly correspond to the functions that can be
-accessed from the CFX-Pre or CFD-Post File menus.
+child ``file`` object, which provides actions that broadly correspond to the functions accessible
+from the CFX-Pre or CFD-Post File menus.
 
 Each settings object that is a child of the ``setup`` object represents a CCL object or parameter,
 or a related function. For example, ``pypre.setup.flow['Flow Analysis 1'].analysis_type.option``
@@ -31,22 +31,21 @@ represents the following CCL parameter:
   END
 
 When Python settings objects are created, their names are derived from the related CCL object
-types and parameter names by converting to lower case and replacing spaces with underscores. Note
-that named object names (for example, ``Flow Analysis 1``) and parameter values (for example,
-``Steady State``) are unchanged from CCL.
+types and parameter names by converting to lowercase and replacing spaces with underscores.
+Named object names (such as ``Flow Analysis 1``) and parameter values (such as ``Steady State``)
+remain unchanged from CCL.
 
-A uniform interface exists across all the settings objects. For instance, ``get_state()``,
-``set_state()`` and ``is_active()`` are ubiquitous methods for all settings objects, and
-``allowed_values()``, ``min()`` and ``max()`` are found on relevant settings objects that
-correspond to CCL parameters.
+All settings objects share a uniform interface with methods like ``get_state()``, ``set_state()``,
+and ``is_active()``. Additional methods such as ``allowed_values()``, ``min()``, and ``max()``
+are available for relevant objects.
 
-Here is some example usage. All the examples in the following sections assume that you have
+All examples in the following sections assume that you have
 initialized a PreProcessing session object named ``pypre`` with a suitable case (for example, the
 :ref:`Static Mixer <ref_static_mixer>` example).
 
 .. code-block:: python
 
-  # Calling the parameter object gets its value
+  # Retrieve the parameter value
   >>> pypre.setup.flow['Flow Analysis 1'].analysis_type.option()
   'Steady State'
 
@@ -67,13 +66,12 @@ initialized a PreProcessing session object named ``pypre`` with a suitable case 
     ...
   RuntimeError: Parameter value 'Option' for object '/FLOW:Flow Analysis 1/ANALYSIS TYPE' is not allowed.
 
-
 Some items in the settings object hierarchy are methods that you call to request a particular
 action in PyCFX:
 
 .. code-block:: python
 
-  >>> pypre.file.save_picture(file_name = "Image.png")
+  >>> pypre.file.save_picture(file_name="Image.png")
 
 Settings object types
 ---------------------
@@ -89,7 +87,7 @@ of container objects: :obj:`~ansys.cfx.core.solver.flobject.Group` and
 :obj:`~ansys.cfx.core.solver.flobject.NamedObject`.
 
 - The :obj:`~ansys.cfx.core.solver.flobject.Group` type is a static container with predefined
-  child objects that can be accessed as attributes, for example,
+  child objects that you can access as attributes, for example,
   ``pypre.setup.flow['Flow Analysis 1'].analysis_type`` or ``pypre.setup.flow['Flow Analysis 1']``.
   The names of the child objects of a group can be accessed via ``<Group>.child_names``. Within
   the PyCFX session ``setup`` object, Group objects correspond directly to CCL objects.
@@ -107,6 +105,7 @@ of container objects: :obj:`~ansys.cfx.core.solver.flobject.Group` and
 
 Object state
 ------------
+
 You can access the state of any object by "calling" it. This returns the state of the children
 as a dictionary for ``Group`` and ``NamedObject`` types.
 
@@ -141,7 +140,6 @@ unit. Setting the value as a float is not supported. For example:
 
   >>> pypre.setup.flow['Flow Analysis 1'].analysis_type.time_duration.total_time = "2.0 [s]"
 
-
 You can print the current state in a simple text format with the ``print_state`` method. For
 example:
 
@@ -161,7 +159,6 @@ example:
   time_steps : 
     option : Timesteps
     timesteps : -- Undefined --
-
 
 Expressions, expert parameters and user data
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -207,13 +204,12 @@ Other commands relating to expressions can be found by using ``dir()`` on the ``
 Similar behavior exists for other objects that have parameters that can be given a user-defined
 name; for example, the "EXPERT PARAMETERS" and "USER" CCL objects in CFX-Pre.
 
-
 Commands
 --------
 
 Commands are methods of settings objects that you use to modify the state of
 the session, for example, the ``open_case()`` method of the ``pypre.file`` object.
-The ``get_active_command_names`` method of a settings object
+The ``get_active_command_names()`` method of a settings object
 provides the names of the object's currently available commands.
 
 If keyword arguments are needed, you can use commands to pass them. To access a
@@ -234,9 +230,9 @@ list of valid arguments, use the ``argument_names`` attribute. If you do not spe
 an argument, its default value is used. Arguments are also settings objects
 and can be of either primitive or container type.
 
-
 Additional metadata
 -------------------
+
 Settings object methods are provided to access some additional attributes (metadata). There are
 a number of explicit methods and two generic methods: ``get_attr()`` and ``get_attrs()``.
 
@@ -258,7 +254,6 @@ otherwise.
   >>> pypre.setup.flow['Flow Analysis 1'].analysis_type.option.allowed_values()
   ['Steady State', 'Transient', 'Transient Blade Row']
 
-
 The following table contains attribute names, corresponding methods to access the attribute, whether
 the method can return None, applicable object types, and returned data types:
 
@@ -273,16 +268,14 @@ Attribute name      Method              Can return None    Type applicability   
 ``max``             ``max``             yes                ``int``, ``float``     ``int`` or ``float``
 ==================  ==================  =================  =====================  ====================
 
-
 Using the ``get_attr()`` method requires knowledge of attribute names, their applicability, and
 the ability to interpret the raw values of the attribute. You can avoid all these requirements by
 using the explicitly named methods. Note that the attribute values are dynamic, which means
 values can change based on the session state. A ``None`` value signifies that no value
 is currently designated for this attribute.
 
-
-Active objects, commands and queries
-------------------------------------
+Active objects, commands, and queries
+-------------------------------------
 
 Objects, commands, and queries can be active or inactive based on the session state.
 The ``is_active()`` method returns ``True`` if an object, command or query is currently active.
@@ -329,20 +322,19 @@ entire setup: ``pypre.setup.get_physics_messages()``. Or, to check a specific do
 ``pypre.setup.flow['Flow Analysis 1'].domain['Default Domain'].get_physics_messages()``.
 The messages returned can be filtered by severity level (All, Beta, Information, Warning, Error).
 
-
 Physics updates
 ~~~~~~~~~~~~~~~
 
-In a PreProcessing session, changing one value (for example, the Boundary Type) can require large
-numbers of dependent objects and parameters to be updated. In order for the PreProcessing session
-to be usable, the session incorporates "physics updates" which update the necessary dependent
+In a PreProcessing session, changing one value (for example, the boundary type) can require large
+numbers of dependent objects and parameters to be updated. For the PreProcessing session
+to be usable, the session incorporates *physics updates*, which update the necessary dependent
 objects when any parameter value or other change is made.
 
 .. vale Google.Quotes = NO
 
-So, for example, a case with a Turbulence Model set to "k-Epsilon" must have a Wall Function set
+So, for example, a case with a turbulence model set to "k-Epsilon" must have a Wall Function set
 to "Scalable" as this is the only valid Wall Function for the "k-Epsilon" model. If you later
-set the turbulence model to "Shear Stress Transport", the Wall Function needs to be updated
+set the turbulence model to "Shear Stress Transport", the Wall Function must be updated
 to "Automatic" as this is the only allowed Wall Function option for the Shear Stress
 Transport model. The physics updates in the PreProcessing session automatically makes this
 change.
@@ -356,10 +348,10 @@ the Wall Function option automatically updates to "Automatic" further down the p
 
 .. vale Google.Quotes = YES
 
-Physics updates are limited to the "top-level" objects. For example, changing a parameter in a
+Physics updates are limited to the *top-level* objects. For example, changing a parameter in a
 domain does not update a boundary condition object, only other dependent objects within the domain.
-"Top-level" objects are those which have their own editors in CFX-Pre; for example, domain,
-boundary, initial conditions, execution control, etc..
+Top-level objects are those that have their own editors in CFX-Pre; for example, domain,
+boundary, initial conditions, and execution control.
 
 .. code-block:: python
 
@@ -390,13 +382,12 @@ boundary, initial conditions, execution control, etc..
   combustion_model : 
     option : None
 
-The "turbulent_wall_functions" option was automatically updated from "Scalable" to "Automatic"
+The ``turbulent_wall_functions`` option was automatically updated from ``Scalable`` to ``Automatic``
 by the physics update.
 
 Note that if a state is supplied as a dictionary, the physics updates are not applied and the
 state is applied as-is. The PreProcessing session may be left in an invalid physical state
 following such an update, and you should check for any physics warnings or errors.
-
 
 Optional objects and parameters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -488,11 +479,10 @@ Note that if you use the ``set_state()`` function to apply the state as a dictio
 optional objects or parameters omitted from the dictionary are not removed from the PreProcessing
 state. You must explicitly remove them.
 
-
 Solver session details
 ----------------------
 
-For the initial release of PyCFX with Ansys CFX Release 2025 R2, the Solver object is very
+For the initial release of PyCFX with Ansys CFX 2025 R2, the Solver object is very
 limited and does not implement a hierarchy of settings objects.
 
 Solver-specific settings, such as parallel settings, precision settings and initial conditions,
@@ -560,16 +550,14 @@ parameters in a single dictionary when it is created:
   ...   "option": "ZX Plane",
   ...   "plane_type": "Slice"
   ... }
-  
+
+
 
 Active objects, commands and queries
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. vale Google.Quotes = NO
+For the initial release of PyCFX with Ansys CFX 2025 R2, all objects and parameters of the
+PostProcessing session are always active. For example, you can set the X parameter for a plane
+with the option set to XY, even though the Z parameter is the only relevant parameter for this option.
+Parameters and objects that are not relevant are ignored by CFD-Post.
 
-For the initial release of PyCFX with Ansys CFX Release 2025 R2, all objects and parameters of the
-PostProcessing session are always active. For example, you can set the "X" parameter for a plane
-with the option set to "XY", even though the "Z" parameter is the only relevant parameter for this option.
-Parameters and objects which are not relevant are ignored by CFD-Post.
-
-.. vale Google.Quotes = YES

@@ -43,8 +43,8 @@ metaclasses
 monitor
 MonitorsManager
 numpy
-pre-process
-post-process
+preprocess
+postprocess
 PIM
 py
 PyCFX

@@ -4,6 +4,8 @@
 Getting started
 ===============
 
+This section provides resources to help you get started with PyCFX, including installation instructions and answers to frequently asked questions.
+
 .. grid:: 3
 
    .. grid-item-card:: Installation guide

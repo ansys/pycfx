@@ -22,45 +22,45 @@
 
 """.. _ref_fourier_blade_flutter:
 
-Fourier Transformation method for a blade flutter case
-------------------------------------------------------
+Set up a Fourier transformation blade flutter case
+--------------------------------------------------
 
-This example shows how to set up a Fourier Transformation Blade Flutter case in PyCFX.
+This example shows how to set up a Fourier transformation blade flutter case in PyCFX.
 
 **Model overview**
 
-This example illustrates how to set up a transient blade row blade flutter simulation using
-both time integration and harmonic balance transient methods in combination with the Fourier
-Transformation pitch change model. The example setup is described in more detail in the
-CFX tutorial "Fourier Transformation Method for a Blade Flutter Case".
+This example sets up a transient blade row blade flutter simulation using
+both time integration and harmonic balance transient methods with the Fourier
+transformation pitch change model. The setup is described in detail in the
+CFX tutorial *ourier Transformation Method for a Blade Flutter Case*.
 
 The example uses an axial compressor geometry. The full geometry consists of one rotor containing
 36 blades.
 
 **Workflow tasks**
 
-The Fourier Blade Flutter example guides you through these tasks:
+The Fourier blade flutter example guides you through these tasks:
 
-* Using a PreProcessing session to set up a solver run without the transient blade row method
+* Use a PreProcessing session to set up a solver run without the transient blade row method
   to provide initial conditions.
-* Running the solver to generate the initial conditions.
-* Modifying the PreProcessing session to set up a solver run with the transient blade row time
+* Run the solver to generate the initial conditions.
+* Modify the PreProcessing session to set up a solver run with the transient blade row time
   integration method.
-* Running the solver to generate the time integration results.
-* Modifying the PreProcessing session to set up a solver run with the transient blade row harmonic
+* Run the solver to generate the time integration results.
+* Modify the PreProcessing session to set up a solver run with the transient blade row harmonic
   balance method.
-* Running the solver to generate the harmonic balance results.
-* Post-processing both the time integration and  harmonic balance results.
+* Run the solver to generate the harmonic balance results.
+* Postprocess both the time integration and  harmonic balance results.
 
-Some of the tasks can be executed while previous ones are still in progress e.g. there is no need
-to wait for a solver run to complete before modifying the setup for the next simulation.
+Some tasks can execute while previous ones are still in progress. This means
+you do not need to wait for a solver run to complete before modifying the setup for the next simulation.
 
 """
 
 ###################################################################################################
 # .. image:: ../_static/fourier_blade_flutter_overview.png
 #    :width: 400
-#    :alt: Model overview.
+#    :alt: Model overview
 #    :align: center
 #
 
@@ -189,7 +189,7 @@ pypre.execute_ccl(rotor_profile_ccl)
 # Initialize the inlet profile
 # ----------------------------
 #
-# The inlet profile file "R37_inlet.csv" should already have been downloaded to the
+# The inlet profile file, ``R37_inlet.csv`` should already have been downloaded to the
 # current working directory earlier in this script.
 #
 inlet_profile_ccl = f"""
@@ -201,7 +201,7 @@ pypre.execute_ccl(inlet_profile_ccl)
 # Set up the domain
 # -----------------
 #
-# The automatically-created domain needs to be deleted before a new domain with a more meaningful
+# The automatically-created domain must be deleted before a new domain with a more meaningful
 # name is created.
 #
 del pypre.setup.flow["Flow Analysis 1"].domain["Default Domain"]
@@ -314,7 +314,7 @@ r1_blade.location = "Entire Rotor BLADE"
 r1_blade.frame_type = "Rotating"
 r1_blade.boundary_conditions.mesh_motion.option = "Stationary"
 ##################################################################################################
-# Add the R1 tip gap interfaces.
+# Add the R1 Tip Gap interfaces.
 #
 pypre.setup.flow["Flow Analysis 1"].domain_interface["R1 Blade Tip Gap"] = {}
 r1_tipgap1 = pypre.setup.flow["Flow Analysis 1"].domain_interface["R1 Blade Tip Gap"]
@@ -331,7 +331,7 @@ r1_tipgap2.interface_region_list2 = "Rotor SHROUD TIP GGI SIDE 2 2"
 r1_tipgap2.interface_models.option = "General Connection"
 r1_tipgap2.mesh_connection.option = "GGI"
 ##################################################################################################
-# Add the Periodic interface.
+# Add the periodic interface.
 #
 pypre.setup.flow["Flow Analysis 1"].domain_interface[r1_periodic_name] = {}
 r1_periodic = pypre.setup.flow["Flow Analysis 1"].domain_interface[r1_periodic_name]
@@ -342,7 +342,7 @@ r1_periodic.interface_models.option = "Rotational Periodicity"
 r1_periodic.interface_models.axis_definition.rotation_axis = "Coord 0.3"
 r1_periodic.mesh_connection.option = "GGI"
 ##################################################################################################
-# Add the Sampling interface.
+# Add the sampling interface.
 #
 pypre.setup.flow["Flow Analysis 1"].domain_interface[r1_sampling_name] = {}
 r1_sampling = pypre.setup.flow["Flow Analysis 1"].domain_interface[r1_sampling_name]
@@ -352,7 +352,7 @@ r1_sampling.interface_region_list2 = "Rotor PER1 2"
 r1_sampling.interface_models.option = "General Connection"
 r1_sampling.mesh_connection.option = "GGI"
 ##################################################################################################
-# Modify the interface sides to set the mesh motion to Stationary.
+# Modify the interface sides to set the mesh motion to stationary.
 #
 interface_side_list = [
     "R1 to R1 Periodic Side 1",
@@ -395,7 +395,7 @@ if physics_messages:
 pypre.file.save_case(file_name="fourier_blade_flutter_ini.cfx")
 
 ###################################################################################################
-# The 'case_file_name' is only needed for CFX Release 25.2, as it can be deduced from the
+# The 'case_file_name' is only needed for CFX 2025 R2 as it can be deduced from the
 # PreProcessing case name in later releases.
 if pypre.get_cfx_version() > CFXVersion.v252:
     pysolve_ini = pycfx.Solver.from_session(pypre)
@@ -403,7 +403,7 @@ else:
     pysolve_ini = pycfx.Solver.from_session(pypre, case_file_name="fourier_blade_flutter_ini")
 
 ###################################################################################################
-# Start the solver run which will provide the initial values for the transient blade row method
+# Start the solver run, which provides the initial values for the transient blade row method
 # simulation. There is no need to wait for the solver run to finish before continuing with the
 # setup for the next part of the example.
 pysolve_ini.solution.start_run()
@@ -442,7 +442,7 @@ r1_blade_periodic_displacement = r1_blade.boundary_conditions.mesh_motion.period
 r1_blade_periodic_displacement.scaling = "ScalingFactor"
 r1_blade_periodic_displacement.phase_angle.nodal_diameter_magnitude = 4
 ###################################################################################################
-# Check the state of the R1 Blade boundary, to verify that the profile expressions have populated
+# Check the state of the R1 Blade boundary to verify that the profile expressions have populated
 # as expected.
 #
 r1_blade.print_state()
@@ -468,7 +468,7 @@ tbrm.transient_method.time_duration.option = "Number of Periods per Run"
 tbrm.transient_method.time_duration.number_of_periods_per_run = 10
 
 ###################################################################################################
-# Configure the Output Control
+# Configure the output control
 # ----------------------------
 #
 output_control = pypre.setup.flow["Flow Analysis 1"].output_control
@@ -534,7 +534,7 @@ for name, expression in monitor_expression_table.items():
     monitors.monitor_point[name].expression_value = expression
 
 ###################################################################################################
-# Aerodynamic monitors are set up differently in Release 25.2 compared to later releases.
+# Aerodynamic monitors are set up differently in 2025 R2 compared to later releases.
 #
 aerodynamic_damping_table = [
     ["Full Period Integration", "Rotor BLADE"],
@@ -598,7 +598,7 @@ tbrm.transient_method.option = "Harmonic Balance"
 tbrm.transient_method.number_of_modes = 3
 
 ###################################################################################################
-# Configure the Solver Control
+# Configure the solver control
 # ----------------------------
 #
 solver_control = pypre.setup.flow["Flow Analysis 1"].solver_control
@@ -637,8 +637,7 @@ if physics_messages:
 # Start the Solver session for the harmonic balance setup
 # -------------------------------------------------------
 #
-# The harmonic balance setup can use the same initial conditions as the time integration setup, so
-# these do not need to be set up again.
+# The harmonic balance setup can use the same initial conditions as the time integration setup. Thus, # these do not need to be set up again.
 #
 pypre.file.save_case(file_name="fourier_blade_flutter_harmonic.cfx")
 if pypre.get_cfx_version() > CFXVersion.v252:
@@ -651,18 +650,18 @@ pysolve_harmonic_balance.solution.start_run()
 
 
 ###################################################################################################
-# Post-processing the blade flutter results
-# -----------------------------------------
+# Postprocess the blade flutter results
+# -------------------------------------
 #
-# Set up some post-processing actions ready for when the solver runs have completed. These actions
-# follow the post-processing instructions for the CFX tutorial 'Fourier Transformation Method for
-# a Blade Flutter Case'.
+# Set up some postprocessing actions ready for when the solver runs have completed. These actions
+# follow the postprocessing instructions for the CFX tutorial *Fourier Transformation Method for
+# a Blade Flutter Case*.
 #
-# The 'do_postprocessing' function is broken down into separate functions for ease of
-# documentation. Note that animation is not available in PyCFX for Release 25.2.
+# The ``do_postprocessing()`` function is broken down into separate functions for ease of
+# documentation. Note that animation is not available in PyCFX 2025 R2.
 #
 def do_postprocessing(pypost: pycfx.PostProcessing, label: str):
-    """Performs post-processing actions on a PostProcessing session with a results file
+    """Performs postprocessing actions on a PostProcessing session with a results file
     already loaded."""
     create_variable(pypost)
     create_contour(pypost, label)
@@ -712,13 +711,13 @@ def create_contour(pypost: pycfx.PostProcessing, label: str):
 ###################################################################################################
 # Create an animation. The steps are:
 #
-# * Find the case object which is automatically created.
+# * Find the case object that is automatically created.
 # * Set up the TBR options ready for the animation.
 # * Set up the animation.
 # * Play the animation and save the MPEG4 file.
 #
 def create_animation(pypost: pycfx.PostProcessing, label: str):
-    """Creates an animation of the current view.
+    """Create an animation of the current view.
 
     Raises
     ------
@@ -751,15 +750,15 @@ def create_animation(pypost: pycfx.PostProcessing, label: str):
 
 
 ###################################################################################################
-# Execute the post-processing actions
+# Execute the postprocessing actions
 # -----------------------------------
 #
-# The harmonic balance simulation is quicker to run than the time integration simulation,
-# so execute the post-processing actions for the harmonic balance simulation first.
+# Because the harmonic balance simulation is quicker to run than the time integration simulation,
+# execute the postprocessing actions for the harmonic balance simulation first.
 #
 # Start CFD-Post and load the results for the harmonic balance run. There is no need to wait for
-# the solver run to complete; if the run is not already complete then the PostProcessing session
-# will wait for it to complete before reading the results.
+# the solver run to complete. If the run is not already complete, then the PostProcessing session
+# waits for it to complete before reading the results.
 #
 pypost_harmonic_balance = pycfx.PostProcessing.from_session(pysolve_harmonic_balance)
 do_postprocessing(pypost_harmonic_balance, "harmonic_balance")
@@ -773,7 +772,7 @@ do_postprocessing(pypost_harmonic_balance, "harmonic_balance")
 
 
 ###################################################################################################
-# Execute the post-processing for the time integration simulation.
+# Execute the postprocessing for the time integration simulation.
 #
 pypost_time_integration = pycfx.PostProcessing.from_session(pysolve_time_integration)
 do_postprocessing(pypost_time_integration, "time_integration")

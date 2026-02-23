@@ -1,13 +1,12 @@
 .. _ref_usability_features:
 
-
 Usability features
 ==================
 
 API search
 ----------
 
-The :ref:`API search <ref_search>` enables you to search for a word throughout PyCFX's object hierarchy.
+The :ref:`API search <ref_search>` lets you search for a word throughout PyCFX's object hierarchy.
 
 Examples
 ~~~~~~~~
@@ -31,9 +30,8 @@ Examples
    <search_root>.setup.case["<name>"].subdomain["<name>"] (Object)
    <search_root>.setup.data_reader.case["<name>"].subdomain["<name>"] (Object)
    >>>
-   >>> # Whole word search (doesn't match "subdomain")
+   >>> # Perform a whole word search (doesn't match "subdomain")
    >>> pycfx.search("domain", search_root=pypost, match_whole_word=True)
    <search_root>.setup.domain["<name>"] (Object)
    <search_root>.setup.case["<name>"].domain["<name>"] (Object)
    <search_root>.setup.data_reader.case["<name>"].domain["<name>"] (Object)
-
