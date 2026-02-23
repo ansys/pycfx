@@ -30,8 +30,8 @@ from ansys.cfx.core.launcher import launcher_utils
 from ansys.cfx.core.launcher.pycfx_enums import CFXMode
 from ansys.cfx.core.utils.cfx_version import CFXVersion
 
-_THIS_DIR = os.path.dirname(__file__)
-_OPTIONS_FILE = os.path.join(_THIS_DIR, "cfx_launcher_options.json")
+_THIS_DIR = Path(__file__).parent
+_OPTIONS_FILE = _THIS_DIR / "cfx_launcher_options.json"
 
 
 def _build_cfx_launch_args_string(**kwargs) -> str:

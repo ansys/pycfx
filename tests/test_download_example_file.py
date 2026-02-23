@@ -20,8 +20,8 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-import os
 import tempfile
+from pathlib import Path
 
 import pytest
 
@@ -35,37 +35,39 @@ def test_download_file(pytestconfig):
     mesh_filename = "StaticMixerMesh.gtm"
     mesh_subdir = "pycfx/static_mixer"
     dest_dir = tempfile.gettempdir()
-    mesh_file_path = os.path.join(dest_dir, mesh_filename)
+    mesh_file_path = Path(dest_dir) / mesh_filename
 
-    if os.path.exists(mesh_file_path):
-        os.remove(mesh_file_path)
+    if mesh_file_path.exists():
+        mesh_file_path.unlink()
 
     # Download the mesh file
-    mesh_file_path = examples.download_file(
+    mesh_file_path_str = examples.download_file(
         mesh_filename,
         mesh_subdir,
         dest_dir,
     )
+    mesh_file_path = Path(mesh_file_path_str)
 
     # Record modification time after first download
-    mtime_before = os.path.getmtime(mesh_file_path)
+    mtime_before = mesh_file_path.stat().st_mtime
 
-    assert os.path.isfile(mesh_file_path), f"Mesh file not found at {mesh_file_path}"
+    assert mesh_file_path.is_file(), f"Mesh file not found at {mesh_file_path}"
 
     # Download the same file again. Local copy should be used.
-    mesh_file_path_new = examples.download_file(
+    mesh_file_path_new_str = examples.download_file(
         mesh_filename,
         mesh_subdir,
         dest_dir,
     )
+    mesh_file_path_new = Path(mesh_file_path_new_str)
 
     # Record modification time after second download
-    mtime_after = os.path.getmtime(mesh_file_path_new)
+    mtime_after = mesh_file_path_new.stat().st_mtime
 
     assert mesh_file_path == mesh_file_path_new
     assert mtime_before == mtime_after, "File was overwritten during second download"
 
-    os.remove(mesh_file_path)
+    mesh_file_path.unlink()
 
 
 def test_download_non_exist_file():

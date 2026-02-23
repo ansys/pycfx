@@ -24,7 +24,7 @@
 
 from enum import Enum
 import logging
-import os
+from pathlib import Path
 import subprocess
 import time
 from typing import Iterator, List, Optional
@@ -94,13 +94,13 @@ class SolverController:
                     f"It is not valid to specify both the 'run_directory' and "
                     "'solver_input_file' arguments."
                 )
-            if not os.path.exists(run_directory):
+            if not Path(run_directory).exists():
                 raise RuntimeError(f"Provided run_directory {run_directory} does not exist.")
             self._run_directory = run_directory
             self._state = self.RunState.IN_PROGRESS
-            file_base_name, file_extension = os.path.splitext(run_directory)
-            self._run_prefix = file_base_name
-            if not file_extension:
+            file_path = Path(run_directory)
+            self._run_prefix = str(file_path.with_suffix(""))
+            if not file_path.suffix:
                 self._is_multiconfig_or_op = True
 
         results_file_name = self.argvals.get("results_file_name")
@@ -115,13 +115,13 @@ class SolverController:
                     f"It is not valid to specify both the 'results_file_name' and "
                     "'run_directory' arguments."
                 )
-            if not os.path.exists(results_file_name):
+            if not Path(results_file_name).exists():
                 raise RuntimeError(f"Provided file_name {results_file_name} does not exist.")
             self._results_file = results_file_name
             self._state = self.RunState.FINISHED
-            file_base_name, file_extension = os.path.splitext(results_file_name)
-            self._run_prefix = file_base_name
-            if file_extension == ".mdef" or file_extension == ".mres":
+            file_path = Path(results_file_name)
+            self._run_prefix = str(file_path.with_suffix(""))
+            if file_path.suffix in [".mdef", ".mres"]:
                 self._is_multiconfig_or_op = True
 
     def start_run(self) -> None:
@@ -162,7 +162,7 @@ class SolverController:
             if self._is_inside_container
             else input_file
         )
-        if not os.path.exists(input_file_host):
+        if not Path(input_file_host).exists():
             logger.error(f"Solver input file {input_file_host} does not exist.")
             raise RuntimeError(f"Solver input file {input_file_host} does not exist.")
         solver_stream: Iterator[str] = iter([])
@@ -212,7 +212,7 @@ class SolverController:
 
         """
         self._update_status()
-        if self._state == self.RunState.IN_PROGRESS and os.path.exists(self._run_directory):
+        if self._state == self.RunState.IN_PROGRESS and Path(self._run_directory).exists():
             stop_exe = self._get_cfx_solve_exe(self.argvals).replace("cfx5solve", "cfx5stop")
             launch_cmd = [stop_exe, "-directory", self._run_directory]
             proc = subprocess.Popen(launch_cmd)
@@ -311,19 +311,19 @@ class SolverController:
                 error_file = self._run_prefix + ".res.err"
 
             if (
-                not os.path.isdir(self._run_directory)
-                or os.path.exists(results_file)
-                or os.path.exists(error_file)
+                not Path(self._run_directory).is_dir()
+                or Path(results_file).exists()
+                or Path(error_file).exists()
             ):
                 # Wait in case the results file takes a few seconds to appear after the working
                 # directory is removed.
                 tries = 12
                 while tries > 0 and self._state == self.RunState.IN_PROGRESS:
-                    if os.path.exists(results_file):
+                    if Path(results_file).exists():
                         self._run_directory = None
                         self._results_file = results_file
                         self._state = self.RunState.FINISHED
-                    elif os.path.exists(error_file):
+                    elif Path(error_file).exists():
                         self._run_directory = None
                         self._results_file = results_file
                         self._state = self.RunState.ERROR
@@ -389,14 +389,14 @@ class SolverController:
             if self._is_inside_container
             else solver_input_file_name
         )
-        if not os.path.exists(solver_input_file_host_path):
+        if not Path(solver_input_file_host_path).exists():
             raise RuntimeError(
                 f"Provided solver input file '{solver_input_file_host_path}' does not exist."
             )
         self._solver_input_file = solver_input_file_name
         self._state = self.RunState.DEFINED
-        file_base_name, file_extension = os.path.splitext(solver_input_file_name)
-        if file_extension == ".mdef" or file_extension == ".mres":
+        file_path = Path(solver_input_file_name)
+        if file_path.suffix in [".mdef", ".mres"]:
             self._is_multiconfig_or_op = True
 
     def _start_cfx_container(

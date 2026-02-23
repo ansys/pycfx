@@ -23,7 +23,7 @@
 """Functions to download sample datasets from the Ansys example data repository."""
 
 import logging
-import os
+from pathlib import Path
 import re
 import zipfile
 
@@ -61,28 +61,27 @@ def _retrieve_file(
     return_without_path: bool = False,
 ) -> str:
     """Download specified file from specified URL."""
-    file_name = os.path.basename(file_name)
+    file_name = Path(file_name).name
     if save_path is None:
-        save_path = os.getcwd()
+        save_path_obj = Path.cwd()
     else:
-        save_path = os.path.abspath(save_path)
-    local_path = os.path.join(save_path, file_name)
-    local_path_no_zip = re.sub(".zip$", "", local_path)
+        save_path_obj = Path(save_path).resolve()
+    local_path = save_path_obj / file_name
+    local_path_no_zip = Path(re.sub(".zip$", "", str(local_path)))
     file_name_no_zip = re.sub(".zip$", "", file_name)
     # First check if file has already been downloaded
     logger.info(f"Checking if {local_path_no_zip} already exists...")
-    if os.path.isfile(local_path_no_zip) or os.path.isdir(local_path_no_zip):
+    if local_path_no_zip.is_file() or local_path_no_zip.is_dir():
         logger.info("File already exists.")
         if return_without_path:
             return file_name_no_zip
         else:
-            return local_path_no_zip
+            return str(local_path_no_zip)
 
     logger.info("File does not exist. Downloading specified file...")
 
     # Check if save path exists
-    if not os.path.exists(save_path):
-        os.makedirs(save_path)
+    save_path_obj.mkdir(parents=True, exist_ok=True)
 
     # Download file
     logger.info(f'Downloading URL: "{url}"')
@@ -90,15 +89,15 @@ def _retrieve_file(
     with open(local_path, "wb") as f:
         f.write(content)
 
-    if local_path.endswith(".zip"):
-        _decompress(local_path, save_path)
+    if str(local_path).endswith(".zip"):
+        _decompress(str(local_path), str(save_path_obj))
         local_path = local_path_no_zip
         file_name = file_name_no_zip
     logger.info("Download successful.")
     if return_without_path:
         return file_name
     else:
-        return local_path
+        return str(local_path)
 
 
 def download_file(

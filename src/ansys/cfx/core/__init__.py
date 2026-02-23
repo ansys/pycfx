@@ -58,10 +58,10 @@ from ansys.cfx.core.warnings import PyCFXDeprecationWarning  # noqa: F401
 _VERSION_INFO = None
 """Global variable indicating the version of the PyCFX package - Empty by default"""
 
-_THIS_DIRNAME = os.path.dirname(__file__)
-_README_FILE = os.path.normpath(os.path.join(_THIS_DIRNAME, "docs", "README.rst"))
+_THIS_DIRNAME = Path(__file__).parent
+_README_FILE = (_THIS_DIRNAME / "docs" / "README.rst").resolve()
 
-if os.path.exists(_README_FILE):
+if _README_FILE.exists():
     with open(_README_FILE, encoding="utf8") as f:
         __doc__ = f.read()
 
@@ -99,7 +99,7 @@ CFX_DEV_VERSION = "26.1.0"
 
 # Setup data directory
 USER_DATA_PATH = platformdirs.user_data_dir(appname="ansys_cfx_core", appauthor="Ansys")
-EXAMPLES_PATH = os.path.join(USER_DATA_PATH, "examples")
+EXAMPLES_PATH = str(Path(USER_DATA_PATH) / "examples")
 
 # Set this to False to stop automatically inferring and setting REMOTING_SERVER_ADDRESS
 INFER_REMOTING_IP = True
@@ -111,5 +111,5 @@ pydoc.text.docother = fldoc.docother.__get__(pydoc.text, pydoc.TextDoc)
 
 # Directory where API files are written out during codegen
 CODEGEN_OUTDIR = Path(
-    os.getenv("PYCFX_CODEGEN_OUTDIR", (Path(__file__) / ".." / "generated").resolve())
+    os.getenv("PYCFX_CODEGEN_OUTDIR", str((Path(__file__).parent / "generated").resolve()))
 )
