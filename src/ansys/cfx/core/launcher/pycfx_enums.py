@@ -25,6 +25,7 @@
 from enum import Enum
 from functools import total_ordering
 import os
+from pathlib import Path
 from typing import Optional, Union
 
 from ansys.cfx.core.cfx_connection import CFXConnection
@@ -235,7 +236,7 @@ def _get_cfx_launch_mode(start_container, container_dict, scheduler_options):
 
 
 def _get_standalone_launch_cfx_version(
-    product_version: Union[CFXVersion, str, None]
+    product_version: Union[CFXVersion, str, None],
 ) -> Optional[CFXVersion]:
     """
     Determine the CFX version during the execution of the ``launch_cfx()``
@@ -261,7 +262,7 @@ def _get_standalone_launch_cfx_version(
     # 2. (DEV) Find CFX version from PYCFX_CFX_ROOT environment variable if set
     cfx_root = os.getenv("PYCFX_CFX_ROOT")
     if cfx_root:
-        filename = os.path.join(cfx_root, "etc", "BuildInfo.log")
+        filename = Path(cfx_root) / "etc" / "BuildInfo.log"
         try:
             with open(filename, "r") as file:
                 for line in file:

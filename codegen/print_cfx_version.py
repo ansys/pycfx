@@ -20,13 +20,14 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-import os
+
+from pathlib import Path
 
 from ansys.cfx.core import CODEGEN_OUTDIR, CFXMode, launch_cfx
 from ansys.cfx.core.session import BaseSession
 from ansys.cfx.core.utils.cfx_version import get_version_for_file_name
 
-_THIS_DIR = os.path.dirname(__file__)
+_THIS_DIR = Path(__file__).parent
 
 
 def print_cfx_version(pycfx_path, sessions: dict[CFXMode, BaseSession]):

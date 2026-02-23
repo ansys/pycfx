@@ -24,6 +24,7 @@
 
 import logging.config
 import os
+from pathlib import Path
 from typing import Optional, Union
 
 import yaml
@@ -78,9 +79,9 @@ def get_default_config() -> dict:
                                           'level': 'DEBUG'}},
      'version': 1}
     """
-    file_name = os.path.abspath(__file__)
-    file_dir = os.path.dirname(file_name)
-    yaml_path = os.path.join(file_dir, "logging_config.yaml")
+    file_path = Path(__file__).resolve()
+    file_dir = file_path.parent
+    yaml_path = file_dir / "logging_config.yaml"
     with open(yaml_path, "rt") as f:
         config = yaml.safe_load(f)
     return config
@@ -136,7 +137,7 @@ def enable(level: Union[str, int] = "DEBUG", custom_config: Optional[dict] = Non
     logging.config.dictConfig(config)
     file_name = config["handlers"]["pycfx_file"]["filename"]
 
-    print(f"PyCFX logging file {os.path.join(os.getcwd(), file_name)}")
+    print(f"PyCFX logging file {Path.cwd() / file_name}")
 
     set_global_level(level)
 

@@ -20,8 +20,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-
-import os
+from pathlib import Path
 import time
 
 from util.common import read_ccl_from_file, setup_write_dir
@@ -41,27 +40,25 @@ def test_save_picture(pre_load_static_mixer_case: PreProcessing, pytestconfig, c
     pypre = pre_load_static_mixer_case
 
     # Basic test
-    client_picture_file = os.path.join(generated_path_client, "MyPicturePre.png")
+    client_picture_file = str(Path(generated_path_client) / "MyPicturePre.png")
 
     pypre.file.save_picture(file_name=f"{generated_path_engine}/MyPicturePre.png")
-    assert timeout_loop(os.path.exists, timeout=10.0, args=(client_picture_file,))
-    assert os.path.getsize(client_picture_file) > 0
-    os.remove(client_picture_file)
+    assert timeout_loop(Path(client_picture_file).exists, timeout=10.0)
+    assert Path(client_picture_file).stat().st_size > 0
+    Path(client_picture_file).unlink()
 
     # Test format argument
     pypre.file.save_picture(file_name=f"{generated_path_engine}/MyPicturePre.jpg", format="jpg")
-    assert timeout_loop(
-        os.path.exists, timeout=10.0, args=(f"{generated_path_client}/MyPicturePre.jpg",)
-    )
-    assert os.path.getsize(f"{generated_path_client}/MyPicturePre.jpg") > 0
-    os.remove(f"{generated_path_client}/MyPicturePre.jpg")
+    jpg_file = Path(generated_path_client) / "MyPicturePre.jpg"
+    assert timeout_loop(jpg_file.exists, timeout=10.0)
+    assert jpg_file.stat().st_size > 0
+    jpg_file.unlink()
 
     pypre.file.save_picture(file_name=f"{generated_path_engine}/MyPicturePre.ps", format="ps")
-    assert timeout_loop(
-        os.path.exists, timeout=10.0, args=(f"{generated_path_client}/MyPicturePre.ps",)
-    )
-    assert os.path.getsize(f"{generated_path_client}/MyPicturePre.ps") > 0
-    os.remove(f"{generated_path_client}/MyPicturePre.ps")
+    ps_file = Path(generated_path_client) / "MyPicturePre.ps"
+    assert timeout_loop(ps_file.exists, timeout=10.0)
+    assert ps_file.stat().st_size > 0
+    ps_file.unlink()
 
     # Test bad value for format argument
     try:
@@ -105,10 +102,9 @@ def test_save_picture(pre_load_static_mixer_case: PreProcessing, pytestconfig, c
         image_quality=55,
         tolerance=0.03,
     )
-    assert timeout_loop(
-        os.path.exists, timeout=10.0, args=(f"{generated_path_client}/MyPicturePre.jpg",)
-    )
-    os.remove(f"{generated_path_client}/MyPicturePre.jpg")
+    jpg_file = Path(generated_path_client) / "MyPicturePre.jpg"
+    assert timeout_loop(jpg_file.exists, timeout=10.0)
+    jpg_file.unlink()
 
     pypre.file.export_ccl(
         file_name=f"{generated_path_engine}/hardcopy_pre.ccl", objects="/HARDCOPY"
@@ -148,10 +144,9 @@ def test_save_picture(pre_load_static_mixer_case: PreProcessing, pytestconfig, c
         image_quality=55,
         tolerance=0.03,
     )
-    assert timeout_loop(
-        os.path.exists, timeout=10.0, args=(f"{generated_path_client}/MyPicturePre.png",)
-    )
-    os.remove(f"{generated_path_client}/MyPicturePre.png")
+    png_file = Path(generated_path_client) / "MyPicturePre.png"
+    assert timeout_loop(png_file.exists, timeout=10.0)
+    png_file.unlink()
 
     pypre.file.export_ccl(
         file_name=f"{generated_path_engine}/hardcopy_pre.ccl", objects="/HARDCOPY"
@@ -174,7 +169,7 @@ def test_save_picture(pre_load_static_mixer_case: PreProcessing, pytestconfig, c
     ccl_file_path = f"{generated_path_client}/hardcopy_pre.ccl"
     reduced_lines = read_ccl_from_file(ccl_file_path)
     assert reduced_lines == expected_ccl
-    os.remove(ccl_file_path)
+    Path(ccl_file_path).unlink()
 
 
 def test_case_functions(pypre: PreProcessing, pytestconfig, capsys):
@@ -227,9 +222,9 @@ def test_case_functions(pypre: PreProcessing, pytestconfig, capsys):
     pypre.file.save_case(file_name=empty_case_file_engine)
     # Test that case was successfully saved
     time.sleep(2)
-    assert os.path.exists(empty_case_file_client)
-    assert os.path.getsize(empty_case_file_client) > 0
-    os.remove(empty_case_file_client)
+    assert Path(empty_case_file_client).exists()
+    assert Path(empty_case_file_client).stat().st_size > 0
+    Path(empty_case_file_client).unlink()
 
     # Test close case. This is not available in 25.2.
     if pypre.get_cfx_version() > CFXVersion.v252:
@@ -363,19 +358,20 @@ def test_misc_functions(pypre: PreProcessing, pytestconfig, capsys):
         "  END",
         "END",
     ]
+
     ccl_file_path = f"{generated_path_client}/fluid1.ccl"
     reduced_lines = read_ccl_from_file(ccl_file_path)
     assert reduced_lines == expected_ccl
-    os.remove(ccl_file_path)
+    Path(ccl_file_path).unlink()
 
     # Test write_solver_file
     solver_file_engine = f"{generated_path_engine}/SmallCase.def"
     solver_file_client = f"{generated_path_client}/SmallCase.def"
     pypre.file.write_solver_input_file(file_name=solver_file_engine)
     time.sleep(2)
-    assert os.path.exists(solver_file_client)
-    assert os.path.getsize(solver_file_client) > 0
-    os.remove(solver_file_client)
+    assert Path(solver_file_client).exists()
+    assert Path(solver_file_client).stat().st_size > 0
+    Path(solver_file_client).unlink()
 
 
 def test_function_data(pypre: PreProcessing, pytestconfig, capsys):

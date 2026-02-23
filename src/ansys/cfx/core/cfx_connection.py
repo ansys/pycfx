@@ -28,6 +28,7 @@ import ipaddress
 import itertools
 import logging
 import os
+from pathlib import Path
 import socket
 import threading
 import time
@@ -294,7 +295,7 @@ def _get_tls_channel(
     key_file = f"{certificates_folder}/client.key"
     ca_file = f"{certificates_folder}/ca.crt"
 
-    missing = [f for f in (cert_file, key_file, ca_file) if not os.path.exists(f)]
+    missing = [f for f in (cert_file, key_file, ca_file) if not Path(f).exists()]
     if missing:
         raise RuntimeError(f"Missing required TLS file(s) for mutual TLS: {', '.join(missing)}")
 

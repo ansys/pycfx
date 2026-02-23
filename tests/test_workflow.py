@@ -20,7 +20,6 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-import os
 from pathlib import Path
 
 from util.common import setup_write_dir
@@ -118,7 +117,7 @@ def test_workflow(pypre: PreProcessing, pytestconfig):
         pysolve = pycfx.Solver.from_session(pypre, case_file_name=case_file_root)
 
     pypre.exit()
-    os.remove(mesh_file_path_client)
+    Path(mesh_file_path_client).unlink()
 
     pysolve.solution.start_run()
 
@@ -165,5 +164,5 @@ def test_workflow(pypre: PreProcessing, pytestconfig):
     output_file = results_file.replace(".res", ".out")
     assert Path(results_file).exists()
     assert Path(output_file).exists()
-    os.remove(results_file)
-    os.remove(output_file)
+    Path(results_file).unlink()
+    Path(output_file).unlink()

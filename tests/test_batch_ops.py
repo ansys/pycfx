@@ -20,7 +20,8 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-import os
+
+from pathlib import Path
 
 import ansys.cfx.core as pycfx
 from ansys.cfx.core.session_post import PostProcessing
@@ -36,12 +37,12 @@ def test_batch_ops_create_plane(pypost: PostProcessing, pytestconfig):
 
     # Assume the .def file is in the same directory as this test
     data_file_name = "StaticMixer.def"
-    data_file_engine_path = f"{pytestconfig.test_data_directory_path}/data/{data_file_name}"
-    data_file_client_path = f"{pytestconfig.test_home_directory_path}/data/{data_file_name}"
-    assert os.path.exists(data_file_client_path), "Data file missing for test"
+    data_file_engine_path = Path(pytestconfig.test_data_directory_path) / "data" / data_file_name
+    data_file_client_path = Path(pytestconfig.test_home_directory_path) / "data" / data_file_name
+    assert data_file_client_path.exists(), "Data file missing for test"
 
     with pycfx.BatchOps(pypost):
-        pypost.file.load_results(file_name=data_file_engine_path)
+        pypost.file.load_results(file_name=str(data_file_engine_path))
         pypost.results.plane["Plane 1"] = {}
 
     # Plane setup
@@ -64,10 +65,10 @@ def test_batch_ops_create_plane(pypost: PostProcessing, pytestconfig):
     contour = pypost.results.contour["Contour 1"]
     contour.show(view="/VIEW:View 1")
     image_file_name = "static_mixer_contour.png"
-    image_file_engine_path = f"{pytestconfig.test_data_directory_path}/{image_file_name}"
-    image_file_client_path = f"{pytestconfig.test_home_directory_path}/{image_file_name}"
-    if os.path.exists(image_file_client_path):
-        os.remove(image_file_client_path)
-    pypost.file.save_picture(file_name=image_file_engine_path)
-    assert os.path.exists(image_file_client_path)
-    os.remove(image_file_client_path)
+    image_file_engine_path = Path(pytestconfig.test_data_directory_path) / image_file_name
+    image_file_client_path = Path(pytestconfig.test_home_directory_path) / image_file_name
+    if image_file_client_path.exists():
+        image_file_client_path.unlink()
+    pypost.file.save_picture(file_name=str(image_file_engine_path))
+    assert image_file_client_path.exists()
+    image_file_client_path.unlink()

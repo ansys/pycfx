@@ -43,6 +43,7 @@ Examples
 
 import logging
 import os
+from pathlib import Path
 from typing import Any, Dict, Optional, Union
 
 from ansys.cfx.core.cfx_connection import CFXConnection
@@ -54,8 +55,8 @@ import ansys.cfx.core.launcher.watchdog as watchdog
 from ansys.cfx.core.session_solver import Solver
 from ansys.cfx.core.utils.file_transfer_service import PimFileTransferService
 
-_THIS_DIR = os.path.dirname(__file__)
-_OPTIONS_FILE = os.path.join(_THIS_DIR, "cfx_launcher_options.json")
+_THIS_DIR = Path(__file__).parent
+_OPTIONS_FILE = _THIS_DIR / "cfx_launcher_options.json"
 logger = logging.getLogger("pycfx.launcher")
 
 

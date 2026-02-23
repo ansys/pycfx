@@ -242,8 +242,8 @@ def configure_container_dict(
         )
         container_dict.pop("volumes")
 
-    if not os.path.exists(host_mount_path):
-        os.makedirs(host_mount_path)
+    host_mount_path_obj = Path(host_mount_path)
+    host_mount_path_obj.mkdir(parents=True, exist_ok=True)
 
     if not container_mount_path:
         container_mount_path = os.getenv("PYCFX_CONTAINER_MOUNT_PATH", DEFAULT_CONTAINER_MOUNT_PATH)

@@ -20,21 +20,19 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-from contextlib import suppress
 import logging
-import os
+from pathlib import Path
 
 import ansys.cfx.core as pycfx
 
 
 def test_set_logging_level(pytestconfig, caplog):
 
-    generated_path = os.path.join(os.path.dirname(__file__), "generated")
-    log_file_path = os.path.join(generated_path, "test.log")
+    generated_path = Path(__file__).parent / "generated"
+    log_file_path = generated_path / "test.log"
 
-    os.makedirs(generated_path, exist_ok=True)
-    with suppress(FileNotFoundError):
-        os.remove(log_file_path)
+    generated_path.mkdir(parents=True, exist_ok=True)
+    log_file_path.unlink(missing_ok=True)
 
     assert not pycfx.logging.is_active()
 

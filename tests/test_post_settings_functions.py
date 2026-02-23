@@ -20,7 +20,8 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-import os
+
+from pathlib import Path
 
 from util.common import read_ccl_from_file, setup_write_dir
 
@@ -40,28 +41,26 @@ def test_save_picture(pypost: PostProcessing, pytestconfig, capsys):
     )
 
     # Basic test
-    client_picture_file = os.path.join(generated_path_client, "MyPicturePost.png")
+    client_picture_file = str(Path(generated_path_client) / "MyPicturePost.png")
 
     pypost.file.save_picture(file_name=f"{generated_path_engine}/MyPicturePost.png")
 
-    assert timeout_loop(os.path.exists, timeout=10.0, args=(client_picture_file,))
-    assert os.path.getsize(client_picture_file) > 0
-    os.remove(client_picture_file)
+    assert timeout_loop(Path(client_picture_file).exists, timeout=10.0)
+    assert Path(client_picture_file).stat().st_size > 0
+    Path(client_picture_file).unlink()
 
     # Test format argument
     pypost.file.save_picture(file_name=f"{generated_path_engine}/MyPicturePost.jpg", format="jpg")
-    assert timeout_loop(
-        os.path.exists, timeout=10.0, args=(f"{generated_path_client}/MyPicturePost.jpg",)
-    )
-    assert os.path.getsize(f"{generated_path_client}/MyPicturePost.jpg") > 0
-    os.remove(f"{generated_path_client}/MyPicturePost.jpg")
+    jpg_file = Path(generated_path_client) / "MyPicturePost.jpg"
+    assert timeout_loop(jpg_file.exists, timeout=10.0)
+    assert jpg_file.stat().st_size > 0
+    jpg_file.unlink()
 
     pypost.file.save_picture(file_name=f"{generated_path_engine}/MyPicturePost.ps", format="ps")
-    assert timeout_loop(
-        os.path.exists, timeout=10.0, args=(f"{generated_path_client}/MyPicturePost.ps",)
-    )
-    assert os.path.getsize(f"{generated_path_client}/MyPicturePost.ps") > 0
-    os.remove(f"{generated_path_client}/MyPicturePost.ps")
+    ps_file = Path(generated_path_client) / "MyPicturePost.ps"
+    assert timeout_loop(ps_file.exists, timeout=10.0)
+    assert ps_file.stat().st_size > 0
+    ps_file.unlink()
 
     # Test bad value for format argument
     try:
@@ -107,10 +106,9 @@ def test_save_picture(pypost: PostProcessing, pytestconfig, capsys):
         image_quality=55,
         tolerance=0.03,
     )
-    assert timeout_loop(
-        os.path.exists, timeout=10.0, args=(f"{generated_path_client}/MyPicturePost.jpg",)
-    )
-    os.remove(f"{generated_path_client}/MyPicturePost.jpg")
+    jpg_file = Path(generated_path_client) / "MyPicturePost.jpg"
+    assert timeout_loop(jpg_file.exists, timeout=10.0)
+    jpg_file.unlink()
 
     state_file_name = f"{generated_path_engine}/hardcopy_post.ccl"
     save_hardcopy_ccl = f"""
@@ -162,10 +160,9 @@ def test_save_picture(pypost: PostProcessing, pytestconfig, capsys):
         image_quality=55,
         tolerance=0.03,
     )
-    assert timeout_loop(
-        os.path.exists, timeout=10.0, args=(f"{generated_path_client}/MyPicturePost.png",)
-    )
-    os.remove(f"{generated_path_client}/MyPicturePost.png")
+    png_file = Path(generated_path_client) / "MyPicturePost.png"
+    assert timeout_loop(png_file.exists, timeout=10.0)
+    png_file.unlink()
 
     pypost.execute_ccl(save_hardcopy_ccl)
     expected_ccl = [
@@ -191,7 +188,7 @@ def test_save_picture(pypost: PostProcessing, pytestconfig, capsys):
     ccl_file_path = f"{generated_path_client}/hardcopy_post.ccl"
     reduced_lines = read_ccl_from_file(ccl_file_path)
     assert reduced_lines == expected_ccl
-    os.remove(ccl_file_path)
+    Path(ccl_file_path).unlink()
 
 
 def test_case_functions(pypost: PostProcessing, pytestconfig, capsys):
@@ -227,8 +224,8 @@ def test_case_functions(pypost: PostProcessing, pytestconfig, capsys):
     >savestate
     """
     pypost.execute_ccl(save_state_ccl)
-    assert timeout_loop(os.path.exists, timeout=10.0, args=(state_file_client,))
-    assert os.path.getsize(state_file_client) > 0
+    assert timeout_loop(Path(state_file_client).exists, timeout=10.0)
+    assert Path(state_file_client).stat().st_size > 0
 
     # Close case. There is no function to do this, so use CCL submission.
     pypost.execute_ccl(">close")
@@ -237,8 +234,8 @@ def test_case_functions(pypost: PostProcessing, pytestconfig, capsys):
     # Load state to check it was correctly written
     pypost.file.load_state(file_name=state_file_engine, mode="overwrite")
     assert is_case_open()
-    try:  # os.remove sometimes can't remove the file. Make the test robust to this.
-        os.remove(state_file_client)
+    try:  # Path.unlink sometimes can't remove the file. Make the test robust to this.
+        Path(state_file_client).unlink()
     except FileNotFoundError:
         pass
 

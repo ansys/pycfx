@@ -23,6 +23,7 @@
 """Provides a module for file transfer service."""
 
 import os
+from pathlib import Path
 from typing import Any, Callable, Optional, Union  # noqa: F401
 
 import ansys.platform.instancemanagement as pypim
@@ -110,9 +111,10 @@ class PimFileTransferService:
         if not self.is_configured():
             raise PyPIMConfigurationError()
         elif self.file_service:
-            if os.path.isfile(file_name):
-                expanded_file_path = os.path.expandvars(file_name)
-                upload_file_name = remote_file_name or os.path.basename(expanded_file_path)
+            file_path = Path(file_name)
+            if file_path.is_file():
+                expanded_file_path = os.path.expandvars(str(file_path))
+                upload_file_name = remote_file_name or Path(expanded_file_path).name
                 self.file_service.upload_file(expanded_file_path, upload_file_name)
             else:
                 raise FileNotFoundError(f"{file_name} does not exist.")
@@ -132,10 +134,11 @@ class PimFileTransferService:
         files = [file_name] if isinstance(file_name, str) else file_name
         if self.is_configured():
             for file in files:
-                if os.path.isfile(file):
-                    if not self.file_service.file_exist(os.path.basename(file)):
+                file_path = Path(file)
+                if file_path.is_file():
+                    if not self.file_service.file_exist(file_path.name):
                         self.upload_file(file_name=file)
-                elif not self.file_service.file_exist(os.path.basename(file)):
+                elif not self.file_service.file_exist(file_path.name):
                     raise FileNotFoundError(f"{file} does not exist.")
 
     def download_file(self, file_name: str, local_directory: Optional[str] = None):
@@ -177,10 +180,11 @@ class PimFileTransferService:
         files = [file_name] if isinstance(file_name, str) else file_name
         if self.is_configured():
             for file in files:
-                if os.path.isfile(file):
+                file_path = Path(file)
+                if file_path.is_file():
                     print(f"\nFile already exists. File path:\n{file}\n")
                 else:
-                    self.download_file(file_name=os.path.basename(file), local_directory=".")
+                    self.download_file(file_name=file_path.name, local_directory=".")
 
     def __call__(self, pim_instance: Optional[Any] = None):
         self.pim_instance = pim_instance
