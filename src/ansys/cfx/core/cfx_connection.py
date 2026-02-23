@@ -28,13 +28,13 @@ import ipaddress
 import itertools
 import logging
 import os
+from pathlib import Path
 import socket
 import threading
 import time
 from typing import Any, Callable, Dict, List, Optional, Tuple, Union
 import warnings
 import weakref
-from pathlib import Path
 
 import docker
 from docker.models.containers import Container

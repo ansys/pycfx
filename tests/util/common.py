@@ -23,9 +23,8 @@
 from contextlib import suppress
 from enum import IntEnum
 import glob
-
-from pathlib import Path
 import os
+from pathlib import Path
 import re
 import shutil
 

@@ -246,8 +246,6 @@ def configure_container_dict(
     host_mount_path_obj.mkdir(parents=True, exist_ok=True)
 
     if not container_mount_path:
-        import os
-
         container_mount_path = os.getenv("PYCFX_CONTAINER_MOUNT_PATH", DEFAULT_CONTAINER_MOUNT_PATH)
     elif "volumes" in container_dict:
         logger.warning(

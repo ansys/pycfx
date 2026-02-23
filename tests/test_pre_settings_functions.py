@@ -20,8 +20,8 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-import time
 from pathlib import Path
+import time
 
 from util.common import read_ccl_from_file, setup_write_dir
 
