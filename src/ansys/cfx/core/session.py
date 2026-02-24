@@ -71,7 +71,7 @@ class BaseSession:
     Attributes
     ----------
     engine_eval: EngineEval
-        Instance of EngineEval to execute CFX's ccl code on.
+        Instance of EngineEval to execute CFX's CCL code on.
 
     Methods
     -------
@@ -244,7 +244,7 @@ class BaseSession:
         return sorted(dir_list)
 
     def execute_ccl(self, command: str, wait: bool = True) -> None:
-        """Execute a ccl command."""
+        """Execute a CCL command."""
         self.engine_eval.process_ccl([command], wait)
 
     def get_cfx_version(self) -> CFXVersion:
