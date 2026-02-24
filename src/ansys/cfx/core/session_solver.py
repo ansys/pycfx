@@ -20,7 +20,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-"""Module containing class encapsulating CFX connection."""
+"""Module containing a class encapsulating the CFX connection."""
 
 import logging
 from pathlib import Path
@@ -38,7 +38,7 @@ logger = logging.getLogger("pycfx.solver_control")
 class Solver(BaseSession):
     """Encapsulates a CFX solver session.
 
-    An object exposing the CFX-Solver in a Pythonic manner.
+    This object exposes the CFX-Solver in a Pythonic manner.
     """
 
     #: The 'solution' object is used to control the CFX-Solver. For example,
@@ -54,7 +54,7 @@ class Solver(BaseSession):
         self._temporary_directory = None
 
     def get_cfx_version(self) -> CFXVersion:
-        """Gets and returns the CFX version."""
+        """Get the CFX version."""
         return self.solution._get_cfx_version()
 
     def exit(self, **kwargs) -> None:
@@ -65,12 +65,12 @@ class Solver(BaseSession):
         pass
 
     def __getattr__(self, attr):
-        # This is necessary to override the base class function which relies on an engine
+        # This is necessary to override the base class function, which relies on an engine
         # connection to function correctly.
         raise RuntimeError(f"Attribute {attr} does not exist.")
 
     def __dir__(self):
-        # This is necessary to override the base class function which relies on an engine
+        # This is necessary to override the base class function, which relies on an engine
         # connection to function correctly.
         dir_list = set(list(self.__dict__.keys()) + dir(type(self)))
         return sorted(dir_list)
@@ -98,7 +98,7 @@ class Solver(BaseSession):
                 "The 'case_file_name' argument must be specified unless the PreProcessing "
                 "session already has a saved case name. "
                 "Note that the 'case_file_name' argument must always be specified for CFX "
-                "releases earlier than Release 26.1."
+                "releases earlier than 2026 R1."
             )
 
         # If a path is provided, only use the file name
@@ -146,15 +146,15 @@ class Solver(BaseSession):
 
     @classmethod
     def get_name(cls) -> str | None:
-        """Return session name."""
+        """Get the session name."""
         return "solver"
 
     @classmethod
     def get_cmd_name(cls) -> str | None:
-        """Return the CFX command name related to the session."""
+        """Get the CFX command name related to the session."""
         return "cfx5solve"
 
     @classmethod
     def has_remote_server(cls) -> bool:
-        """Return True if the session can connect to a remote server."""
+        """Check if the session can connect to a remote server."""
         return False

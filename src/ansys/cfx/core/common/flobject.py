@@ -22,13 +22,13 @@
 
 """Module for accessing and modifying hierarchy of CFX settings.
 
-The only useful method is '`get_root``, which returns the root object for
+The only useful method is ``get_root()``, which returns the root object for
 accessing CFX settings.
 
 Child objects can be generally accessed or modified using attribute access.
 Named child objects can be accessed or modified using index operators.
 
-Calling an object will return its current value.
+Calling an object returns its current value.
 
 Example
 -------
@@ -212,14 +212,14 @@ class Base:
         self._setattr("_flproxy", flproxy)
 
     def _set_file_transfer_service(self, file_transfer_service):
-        """Set file_transfer_service."""
+        """Set file transfer service."""
         self._setattr("_file_transfer_service", file_transfer_service)
 
     @property
     def flproxy(self):
         """Proxy object.
 
-        The proxy object is set at the root level and accessed via the parent for the
+        The proxy object is set at the root level and accessed using the parent for the
         child classes.
         """
         if self._flproxy is None:
@@ -284,7 +284,7 @@ class Base:
     def python_path(self) -> str:
         """Path of the object.
 
-        Constructed in python syntax from 'python_path' and the parents python path.
+        Constructed in python syntax from ``python_path`` and the parent's python path.
         """
         if self._parent is None:
             return "<session>"
@@ -309,14 +309,14 @@ class Base:
         Parameters
         ----------
         attr : str
-            attribute name
-        attr_type_or_types : type or tuple of type, optional
-            attribute type, by default None
+            Attribute name.
+        attr_type_or_types : type or tuple of type, default: None
+            Attribute type.
 
         Returns
         -------
         Any
-            attribute value
+            Attribute value.
 
         Raises
         ------
@@ -358,7 +358,7 @@ class Base:
         if not attr:
             warnings.warn(
                 f"The API feature at '{self.path}' is not stable. "
-                f"It is not guaranteed that it is fully validated and "
+                f"It is not guaranteed that it is fully validated, and "
                 f"there is no commitment to its backwards compatibility.",
                 UnstableSettingWarning,
             )
@@ -428,12 +428,12 @@ class Property(Base):
     """Exposes attribute accessor on settings object."""
 
     def default_value(self):
-        """Gets the default value of the object."""
+        """Get the default value of the object."""
         return self.get_attr(_InlineConstants.default_value)
 
 
 class Numerical(Property):
-    """Exposes attribute accessor on settings object - specific to numerical objects."""
+    """Exposes attribute accessor on settings object. This cass is specific to numerical objects."""
 
     def min(self):
         """Get the minimum value of the object."""
@@ -489,7 +489,7 @@ class RealNumerical(Numerical):
         Parameters
         ----------
         state
-            The type of state can be float, str (representing either
+            Type of state, which can be float, str (representing either
             an expression or a value with units), or an ansys.units.Quantity.
         kwargs : Any
             Keyword arguments.
@@ -520,7 +520,7 @@ class RealNumerical(Numerical):
 
 
 class Textual(Property):
-    """Exposes attribute accessor on settings object - specific to string objects."""
+    """Exposes attribute accessor on settings object. This class is specific to string objects."""
 
 
 class DeprecatedSettingWarning(FutureWarning):
@@ -573,7 +573,7 @@ class _Alias:
                 )
                 if not _Alias.once:
                     warnings.warn(
-                        "\nExecute the following code to suppress future warnings like the above:\n\n"
+                        "\nExecute the following code to suppress future warnings like the previous one:\n\n"
                         ">>> import warnings\n"
                         '>>> warnings.filterwarnings("ignore", category=DeprecatedSettingWarning)',
                         DeprecatedSettingWarning,
@@ -655,7 +655,7 @@ class SettingsBase(Base, Generic[StateT]):
         Raises
         ------
         NotImplementedError
-            If '..' is present in the alias path.
+            If ``..`` is present in the alias path.
         """
         if isinstance(value, collections.abc.Mapping):
             ret = {}
@@ -781,7 +781,7 @@ class Filename(SettingsBase[str], Textual):  # pragma: no cover (type not used)
 
 
 class FilenameList(SettingsBase[StringListType], Textual):  # pragma: no cover (type not used)
-    """A FilenameList object represents a list of file names."""
+    """A ``FilenameList`` object represents a list of file names."""
 
     _state_type = StringListType
 
@@ -856,7 +856,7 @@ class BooleanList(SettingsBase[BoolListType], Property):
 
 
 def _command_query_name_filter(parent, list_attr: str, prefix: str, excluded: List[str]) -> List:
-    """Auto completer info of commands and queries."""
+    """Auto completer information of commands and queries."""
     ret = []
     names = getattr(parent, list_attr)
     for name in names:
@@ -871,14 +871,14 @@ class Group(SettingsBase[DictStateType]):
     """A ``Group`` container object.
 
     A ``Group`` object is a container similar to a C++ structure object.
-    Child objects can be accessed via attribute access.
+    Child objects can be accessed with attribute access.
 
     Attributes
     ----------
     child_names: list[str]
-        Names of the child objects
+        Names of the child objects.
     command_names: list[str]
-        Names of the commands
+        Names of the commands.
     """
 
     _state_type = DictStateType
@@ -971,12 +971,12 @@ class Group(SettingsBase[DictStateType]):
         return ret
 
     def get_completer_info(self, prefix="", excluded=None) -> List[List[str]]:
-        """Get completer info of all children.
+        """Get completer information of all children.
 
         Returns
         -------
         List[List[str]]
-            Name, type and docstring of all children.
+            Name, type, and docstring of all children.
         """
         excluded = excluded or []
         ret = []
@@ -1070,7 +1070,7 @@ class Group(SettingsBase[DictStateType]):
 
 
 class WildcardPath(Group):  # pragma: no cover (wildcards not used)
-    """Class wrapping a wildcard path to perform get_var and set_var on flproxy."""
+    """Class wrapping a wildcard path to perform ``get_var()`` and ``set_var()`` on flproxy."""
 
     def __init__(self, flproxy, path: str, state_cls, settings_cls, parent):
         """__init__ of WildcardPath class."""
@@ -1142,7 +1142,7 @@ class WildcardPath(Group):  # pragma: no cover (wildcards not used)
 
 
 class NamedObjectWildcardPath(WildcardPath):  # pragma: no cover (wildcards not used)
-    """WildcardPath at a NamedObject path, so it can be looked up by wildcard again."""
+    """Wild card path at a ``NamedObject`` path, so it can be looked up by wildcard again."""
 
     def __getitem__(self, name: str):
         return WildcardPath(
@@ -1167,7 +1167,7 @@ class NamedObject(SettingsBase[DictStateType], Generic[ChildTypeT]):
     Attributes
     ----------
     command_names: list[str]
-        Names of the commands
+        Names of the commands.
     """
 
     # New objects could get inserted by other operations, so we cannot assume
@@ -1278,12 +1278,12 @@ class NamedObject(SettingsBase[DictStateType], Generic[ChildTypeT]):
         return obj_names_list
 
     def get_completer_info(self, prefix="", excluded=None) -> List[List[str]]:
-        """Get completer info of all children.
+        """Get completer information of all children.
 
         Returns
         -------
         List[List[str]]
-            Name, type and docstring of all children.
+            Name, type, and docstring of all children.
         """
         excluded = excluded or []
         ret = []
@@ -1338,7 +1338,7 @@ def _rename(obj: Union[NamedObject, _Alias], new: str, old: str):
     Parameters
     ----------
     obj: NamedObject
-        named-object to be renamed
+        Named object to rename.
     new: str
         New name.
     old : str
@@ -1415,7 +1415,7 @@ class ListObject(SettingsBase[ListStateType], Generic[ChildTypeT]):
         return iter(self._objects)
 
     def get_size(self) -> int:
-        """Return the number of elements in a list object.
+        """Get the number of elements in a list object.
 
         Returns
         -------
@@ -1476,13 +1476,15 @@ def _get_new_keywords(obj, args, kwds):
                 ccls = getattr(obj, k)
                 newkwds[ccls.cfx_name] = ccls.to_engine_keys(v)
             else:
-                raise RuntimeError("Argument '" + str(k) + "' is invalid")  # pragma: no cover (no \
+                raise RuntimeError(
+                    "Argument '" + str(k) + "' is invalid."
+                )  # pragma: no cover (no \
             # testable route to error)
     return newkwds
 
 
 class Action(Base):
-    """Intermediate Base class for Command and Query class."""
+    """Intermediate base class for the ``Command`` and ``Query`` classes."""
 
     _child_classes = {}
     _child_aliases = {}
@@ -1496,12 +1498,12 @@ class Action(Base):
                 self._setattr(argument, _create_child(cls, None, self))
 
     def get_completer_info(self, prefix="", excluded=None) -> List[List[str]]:
-        """Get completer info of all arguments.
+        """Get completer information of all arguments.
 
         Returns
         -------
         List[List[str]]
-            Name, type and docstring of all arguments.
+            Name, type, and docstring of all arguments.
         """
         excluded = excluded or []
         ret = []
@@ -1656,14 +1658,13 @@ class _ChildNamedObjectAccessorMixin(collections.abc.MutableMapping):  # pragma:
     # (inclusion of child named objects not used)
     """A mixin class to provide a dictionary interface at a Group class level if the
     Group has multiple named objects of a similar type. For example, boundary conditions
-    are grouped by type but quite often we want to access them without the type context.
+    are grouped by type but quite often you want to access them without the type context.
 
-    The following can be used:
+    The following can be used, even though actual boundary conditions are stored one
+    level lower to ``boundary_conditions``:
     for name, boundary in setup.boundary_conditions.items():
         print (name, boundary())
 
-    even though actual boundary conditions are stored one level lower to
-    boundary_conditions.
     """
 
     def __getitem__(self, name):
@@ -1767,7 +1768,7 @@ _bases_by_class = {}
 
 # pylint: disable=missing-raises-doc
 def get_cls(name, info, parent=None, version=None, is_postprocessing=False):
-    """Create a class for the object identified by "path"."""
+    """Create a class for the object identified by ``path``."""
     try:
         if name == "":
             pname = "root"
@@ -1968,19 +1969,19 @@ def get_root(
     Parameters
     ----------
     session_name: str
-        The name of a specific CFX session, i.e., "pre-processing", "solver" or "post-processing"
+        Name of a specific CFX session, such as ``pre-processing``, ``solver``, or ``post-processing``.
     flproxy: Proxy
         Object that interfaces with the CFX backend.
     file_transfer_service : optional
-        File transfer service. Uploads/downloads files to/from the server.
+        File transfer service. Uploads or downloads files to and from the server.
     info_query : Any
-        A gRPC service to execute Engine/CCL code.
+        gRPC service to execute Engine/CCL code.
     version : str
         CFX version.
 
     Returns
     -------
-    root object
+    Root object.
 
     Raises
     ------
@@ -2003,10 +2004,10 @@ def get_root(
         ):  # pragma: no cover (can never occur in testing environment)
             settings_logger.warning(
                 "Mismatch between generated file and server object "
-                "info. Dynamically created settings classes will "
+                "information. Dynamically created settings classes will "
                 "be used."
             )
-            raise RuntimeError("Mismatch in hash values")
+            raise RuntimeError("Mismatch in hash values.")
         cls = settings.root
     except Exception:
         cls, _ = get_cls(

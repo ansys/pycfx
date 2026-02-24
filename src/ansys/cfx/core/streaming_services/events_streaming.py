@@ -41,7 +41,7 @@ class EventsManager(StreamingService):
     Parameters
     ----------
     session : BaseSession
-        CFX session object
+        CFX session object.
 
     Attributes
     ----------
@@ -125,7 +125,7 @@ class EventsManager(StreamingService):
         InvalidArgument
             If event name is not valid.
         DisallowedValuesError
-            If an argument value not in the allowed values.
+            If an argument value is not in the allowed values.
         """
         if event_name is None or callback is None:
             raise InvalidArgument("'event_name' and 'callback' ")

@@ -37,15 +37,14 @@ class PyPIMConfigurationError(ConnectionError):
 
 
 class PimFileTransferService:
-    """Provides a file transfer service based on ``PyPIM<https://pypim.docs.pyansys.com/version/stable/>`` and ``simple_upload_server()``.
+    """Provides a file transfer service based on the ``PyPIM<https://pypim.docs.pyansys.com/version/stable/>`` and the ``simple_upload_server()`` functions.
 
     Attributes
     ----------
     pim_instance: PIM instance
-        Instance of PIM which supports upload server services.
-
+        Instance of PIM that supports upload server services.
     file_service: Client instance
-        Instance of Client which supports upload and download methods.
+        Instance of client that supports upload and download methods.
 
     Methods
     -------
@@ -89,7 +88,7 @@ class PimFileTransferService:
         return self.file_service
 
     def is_configured(self):
-        """Check pypim configuration."""
+        """Check if PyPIMy is configured."""
         return pypim.is_configured()
 
     def upload_file(self, file_name: str, remote_file_name: Optional[str] = None):
@@ -98,9 +97,9 @@ class PimFileTransferService:
         Parameters
         ----------
         file_name : str
-            file name
-        remote_file_name : str, optional
-            remote file name, by default None
+            File name.
+        remote_file_name : str, default: None
+            Remote file name.
         Raises
         ------
         FileNotFoundError
@@ -125,7 +124,7 @@ class PimFileTransferService:
         Parameters
         ----------
         file_name : str
-            File name
+            File name.
         Raises
         ------
         FileNotFoundError
@@ -147,9 +146,9 @@ class PimFileTransferService:
         Parameters
         ----------
         file_name : str
-            file name
-        local_directory : str, optional
-            local directory, by default None
+            File name.
+        local_directory : str, default: None
+            Local directory.
 
         Raises
         ------
@@ -175,7 +174,7 @@ class PimFileTransferService:
         Parameters
         ----------
         file_name : str
-            File name
+            File name.
         """
         files = [file_name] if isinstance(file_name, str) else file_name
         if self.is_configured():

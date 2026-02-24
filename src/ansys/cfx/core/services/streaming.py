@@ -26,14 +26,14 @@ from typing import Generator, List, Tuple
 
 
 class _StreamingServiceHelper:
-    """Helper Class providing API to start/stop gRPC streaming services of CFX.
+    """Helper class providing API to start and stop gRPC streaming services of CFX.
 
     Methods
     -------
     begin_streaming(request, started_evt)
         Begin streaming from CFX.
     end_streaming()
-        End streaming
+        End streaming from CFX.
     """
 
     def __init__(self, stub, metadata: List[Tuple[str, str]], stream_begin_method):
@@ -69,7 +69,7 @@ class StreamingService:
     begin_streaming(request, started_evt, ID, stream_begin_method)
         Begin streaming from CFX.
     end_streaming(ID, stream_begin_method)
-        End streaming
+        End streaming from CFX.
     """
 
     def __init__(self, stub, metadata: List[Tuple[str, str]]):

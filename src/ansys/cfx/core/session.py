@@ -37,7 +37,7 @@ logger = logging.getLogger("pycfx.general")
 
 
 def _parse_server_info_file(file_name: str):
-    """Parse server info file.
+    """Parse server information file.
     Returns (ip, port, password) or (unix_socket, password)"""
     with open(file_name, encoding="utf-8") as f:
         lines = f.readlines()
@@ -71,15 +71,14 @@ class BaseSession:
     Attributes
     ----------
     engine_eval: EngineEval
-        Instance of EngineEval on which CFX's ccl code can be
-        executed.
+        Instance of EngineEval to execute CFX's ccl code on.
 
     Methods
     -------
     create_from_server_info_file(
         server_info_file_name, cleanup_on_exit, start_transcript
         )
-        Create a Session instance from server-info file
+        Create a session instance from server information file.
 
     exit()
         Close the CFX connection and exit CFX.
@@ -142,12 +141,12 @@ class BaseSession:
             self._cfx_connection.register_finalizer_cb(obj.stop)
 
     def is_server_healthy(self) -> bool:
-        """Whether the current session is healthy (i.e. The server is 'SERVING')."""
+        """Whether the current session is healthy (that is the server is 'SERVING')."""
         return self.health_check_service.is_serving
 
     @property
     def id(self) -> str:
-        """Return the session ID."""
+        """Get the session ID."""
         return self._cfx_connection._id
 
     @classmethod
@@ -157,24 +156,23 @@ class BaseSession:
         file_transfer_service: Optional[Any] = None,
         **connection_kwargs,
     ):
-        """Create a Session instance from server-info file.
+        """Create a session instance from server information file.
 
         Parameters
         ----------
         server_info_file_name : str
-            Path to server-info file written out by CFX server
-        file_transfer_service : Optional
-            Support file upload and download.
-        **connection_kwargs : dict, optional
-            Additional keyword arguments may be specified, and they will be passed to the `CFXConnection`
-            being initialized. For example, ``cleanup_on_exit = True``, or ``start_transcript = True``.
-            See :func:`CFXConnection initialization <ansys.cfx.core.cfx_connection.CFXConnection.__init__>`
-            for more details and possible arguments.
+            Path to the server information file written out by the CFX server.
+        file_transfer_service : default: None
+            Support file to upload or download.
+        **connection_kwargs : dict
+            Additional keyword arguments to pass to the `CFXConnection` instance
+            being initialized. For example, ``cleanup_on_exit = True`` or ``start_transcript = True``.
+            For more information and possible arguments, see the :func:`CFXConnection initialization <ansys.cfx.core.cfx_connection.CFXConnection.__init__>` function.
 
         Returns
         -------
         Session
-            Session instance
+            Session instance.
         """
         values = _parse_server_info_file(server_info_file_name)
         if len(values) == 2:
@@ -193,12 +191,12 @@ class BaseSession:
 
     @classmethod
     def get_name(cls) -> str | None:
-        """Return session name."""
+        """Get the session name."""
         return None
 
     @classmethod
     def has_remote_server(cls) -> bool:
-        """Return True if the session can connect to a remote server."""
+        """Check if the session can connect to a remote server."""
         return True
 
     @property
@@ -246,20 +244,20 @@ class BaseSession:
         return sorted(dir_list)
 
     def execute_ccl(self, command: str, wait: bool = True) -> None:
-        """Executes a ccl command."""
+        """Execute a ccl command."""
         self.engine_eval.process_ccl([command], wait)
 
     def get_cfx_version(self) -> CFXVersion:
-        """Gets and returns the CFX version."""
+        """Get the CFX version."""
         return CFXVersion(self.engine_eval.version)
 
     def exit(self, **kwargs) -> None:
-        """Exit session."""
+        """Exit the session."""
         logger.debug("session.exit() called")
         self._cfx_connection.exit(**kwargs)
 
     def force_exit(self) -> None:
-        """Immediately terminates the CFX session, losing unsaved progress and
+        """Immediately terminate the CFX session, losing unsaved progress and
         data."""
         self._cfx_connection.force_exit()
 

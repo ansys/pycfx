@@ -20,7 +20,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-"""Module containing class encapsulating CFD-Post connection."""
+"""Module containing the class encapsulating the CFD-Post connection."""
 
 import logging
 from typing import Any, Optional
@@ -34,8 +34,8 @@ logger = logging.getLogger("pycfx.general")
 
 class PostProcessing(BaseSession):
     """Encapsulates a CFX post-processing session.
-    An object exposing the CFD-Post CCL and scripting (Power Syntax)
-    capabilities in a Pythonic manner"
+    This object exposes the CFD-Post CCL and scripting (Power Syntax)
+    capabilities in a Pythonic manner."
     """
 
     def __init__(
@@ -71,10 +71,10 @@ class PostProcessing(BaseSession):
 
     @classmethod
     def get_name(cls) -> str | None:
-        """Return session name."""
+        """Get session name."""
         return "post-processing"
 
     @classmethod
     def get_cmd_name(cls) -> str | None:
-        """Return the CFX command name related to the session."""
+        """Get the CFX command name related to the session."""
         return "cfdpost"

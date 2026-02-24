@@ -49,7 +49,7 @@ class StreamingService:
 
     @property
     def is_streaming(self):
-        """Checks whether it is streaming."""
+        """Flag indicating if streaming."""
         with self._lock:
             return self._streaming
 

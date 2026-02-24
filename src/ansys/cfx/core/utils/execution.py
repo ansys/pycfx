@@ -34,12 +34,12 @@ from ansys.cfx.core.exceptions import InvalidArgument
 
 def asynchronous(f: Callable) -> Callable:
     """Use for decorating functions that are to execute asynchronously. The decorated
-    function returns a `future`_ object. Calling `result()`_ on the future object
+    function returns a ``future``_ object. Calling the ``result()``_ method on the future object
     synchronizes the function execution.
 
     Examples
     --------
-    Asynchronous execution using @asynchronous decorator:
+    Asynchronous execution using an @asynchronous decorator:
 
     >>> import ansys.cfx.core as pycfx
     >>> pysolve = pycfx.Solver.from_install(solver_input_file_name = "<name1>")
@@ -55,7 +55,7 @@ def asynchronous(f: Callable) -> Callable:
     >>> asynchronous(pysolve.solution.start_run) # doctest: +ELLIPSIS
     <function SolverController.start_run at 0x...>
 
-    Synchronous execution of the above two calls:
+    Synchronous execution of the previous two calls:
 
     >>> asynchronous_solve(pysolve).result()
     >>> asynchronous(pysolve2.solution.start_run)().result()
@@ -73,8 +73,8 @@ def asynchronous(f: Callable) -> Callable:
 
 def timeout_exec(obj, timeout, args=None, kwargs=None):
     """Executes object with the timeout limit. Tries to return whatever the provided
-    object returns. If the object returns nothing, this function will return ``True``.
-    If it times out, returns ``False``.
+    object returns. If the object returns nothing, this function returns ``True``.
+    If it times out, it returns ``False``.
 
     Parameters
     ----------
@@ -83,9 +83,9 @@ def timeout_exec(obj, timeout, args=None, kwargs=None):
     timeout : float
         Time before cancelling execution and returning early.
     args : Any, optional
-        Arguments to be passed to the specified object.
+        Arguments to pass to the specified object.
     kwargs : Any, optional
-        Keyword arguments to be passed to the specified object.
+        Keyword arguments to pass to the specified object.
 
     Examples
     --------
@@ -131,7 +131,7 @@ def timeout_loop(
     """Loops while specified object does not return expected response. Timeouts after
     specified time has elapsed. Tries to return whatever is returned by the specified
     object. If nothing is returned before timeout, returns the opposite of the expected
-    value, i.e. ``True`` if ``expected == "falsy"`` and ``False`` if ``expected ==
+    value. For example, ``True`` if ``expected == "falsy"`` and ``False`` if ``expected ==
     "truthy"``.
 
     Parameters
@@ -140,15 +140,15 @@ def timeout_loop(
         Object to evaluate while looping if it does not return expected response.
     timeout : float
         Time before cancelling execution and returning early.
-    args : Any, optional
-        Arguments to be passed to the specified object.
-    kwargs : Any, optional
-        Keyword arguments to be passed to the specified object.
-    idle_period : float, optional
-        Time in seconds to wait between object evaluations, defaults to 0.2 seconds.
-    expected: str, optional
-        Possible values are ``"truthy"`` or ``"falsy"``, indicating what type of return is expected.
-        By default, expects a ``"truthy"`` return from the specified object.
+    args : Any, default: None
+        Arguments to pass to the specified object.
+    kwargs : Any, default: None
+        Keyword arguments to pass to the specified object.
+    idle_period : float, default: 0.2
+        Time in seconds to wait between object evaluations.
+    expected: str, default: "truthy"
+        What type of return is expected. Options are ``"truthy"`` or ``"falsy"``.
+        By default, ``"truthy"`` is the expected return from the specified object.
 
     Raises
     ------

@@ -145,9 +145,9 @@ class GrpcErrorInterceptor(grpc.UnaryUnaryClientInterceptor):
 
 
 class BatchedFuture(grpc.Future):
-    """Class implementing gRPC.Future interface.
+    """Class implementing ``gRPC.Future interface``.
 
-    An instance of BatchedFuture is returned if the gRPC method is queued to be executed
+    An instance of ``BatchedFuture`` is returned if the gRPC method is queued to be executed
     in batch later.
     """
 
@@ -156,23 +156,23 @@ class BatchedFuture(grpc.Future):
         self._result_cls = result_cls
 
     def cancel(self) -> bool:
-        """Attempts to cancel the computation."""
+        """Attempt to cancel the computation."""
         return False
 
     def cancelled(self) -> bool:
-        """Describes whether the computation was cancelled."""
+        """Describe whether the computation was cancelled."""
         return False
 
     def running(self) -> bool:
-        """Describes whether the computation is taking place."""
+        """Describe whether the computation is taking place."""
         return False
 
     def done(self) -> bool:
-        """Describes whether the computation has taken place."""
+        """Describe whether the computation has taken place."""
         return True
 
     def result(self, timeout=None) -> Any:
-        """Returns the result of the computation or raises its exception."""
+        """Return the result of the computation or raise its exception."""
         return self._result_cls()
 
     def exception(self, timeout=None) -> None:
@@ -184,7 +184,7 @@ class BatchedFuture(grpc.Future):
         return None
 
     def add_done_callback(self, fn) -> None:
-        """Adds a function to be called at completion of the computation."""
+        """Add a function to be called at completion of the computation."""
         pass
 
 

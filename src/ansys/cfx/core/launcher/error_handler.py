@@ -96,7 +96,7 @@ def _process_invalid_args(dry_run, cfx_launch_mode, argvals):
     ----------
     dry_run: bool
         Whether to dry run a container start.
-         If ``True``, the ``launch_cfx()`` will return the configured ``container_dict``.
+         If ``True``, the ``launch_cfx()`` method returns the configured ``container_dict``.
     cfx_launch_mode: LaunchMode
         CFX launch mode.
     argvals: dict
@@ -104,7 +104,7 @@ def _process_invalid_args(dry_run, cfx_launch_mode, argvals):
     """
     if dry_run and cfx_launch_mode != LaunchMode.CONTAINER:
         launcher_utils.logger.warning(
-            "'dry_run' argument for 'launch_cfx' currently is only "
+            "'dry_run' argument for 'launch_cfx' method currently is only "
             "supported when starting containers."
         )
     if cfx_launch_mode != LaunchMode.STANDALONE:

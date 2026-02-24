@@ -65,18 +65,18 @@ def _connect_to_server_with_retry(uds_address, options=None, max_retries=10, del
     Parameters
     ----------
     uds_address : str
-        The UDS address string (e.g., 'unix:/tmp/my_app.sock').
-    options : Any
+        UDS address string. For example, ``'unix:/tmp/my_app.sock'``.
+    options : Any, default: None
         Options for the gRPC connection.
-    max_retries : int, optional
-        The maximum number of connection attempts (default is 10).
-    delay_seconds : int, optional
-        The time to wait between retries in seconds (default is 1).
+    max_retries : int, default: 10
+        Maximum number of connection attempts.
+    delay_seconds : int, default: 1
+        Time to wait in seconds between retries.
 
     Returns
     -------
     grpc.Channel or None
-        A gRPC channel object if successful, otherwise None.
+        gRPC channel object if successful, otherwise ``None``.
     """
     for attempt in range(max_retries):
         try:
@@ -92,7 +92,7 @@ def _connect_to_server_with_retry(uds_address, options=None, max_retries=10, del
         except grpc.FutureTimeoutError:
             print(
                 f"Connection attempt {attempt + 1}/{max_retries} failed. "
-                f"Server not ready. Retrying in {delay_seconds} second(s)..."
+                f"Server not ready. Retrying in {delay_seconds} seconds..."
             )
             # Wait before the next attempt
             time.sleep(delay_seconds)
@@ -105,11 +105,11 @@ class PortNotProvided(ValueError):
     """Raised when port is not provided."""
 
     def __init__(self):
-        super().__init__("Provide the 'port' to connect to an existing CFX instance.")
+        super().__init__("Provide the port to connect to an existing CFX instance.")
 
 
 class UnsupportedRemoteCFXInstance(ValueError):
-    """Raised when 'wait_process_finished' does not support remote CFX session."""
+    """Raised when ``wait_process_finished`` does not support remote CFX session."""
 
     def __init__(self):
         super().__init__("Remote CFX instance is unsupported.")
@@ -128,7 +128,7 @@ def _get_max_c_int_limit() -> int:
     Returns
     -------
     int
-        The maximum limit of a C int
+        Maximum limit of a C int.
     """
     return 2 ** (sizeof(c_int) * 8 - 1) - 1
 
@@ -136,13 +136,13 @@ def _get_max_c_int_limit() -> int:
 class MonitorThread(threading.Thread):
     """A class used for monitoring a CFX session.
 
-    Daemon thread which will ensure cleanup of session objects, shutdown of
-    non-daemon threads etc.
+    A daemon thread that ensures cleanup of session objects and shut down of
+    non-daemon threads.
 
     Attributes
     ----------
     cbs : List[Callable]
-        Cleanup/shutdown functions
+        Cleanup and shutdown functions.
     """
 
     def __init__(self):
@@ -215,25 +215,25 @@ class ErrorState:
         return self._details
 
     def __init__(self, name: str = "", details: str = ""):
-        """Initializes the error state object.
+        """Initialize the error state object.
 
         Parameters
         ----------
-            name : str
-                The name of the error state, by default an empty string, indicating no errors.
-            details : str
-                Additional details of the error, by default an empty string.
+        name : str
+            Name of the error state, which is by default an empty string, indicating no errors.
+        details : str
+            Additional details of the error, which is by default an empty string.
         """
         self._name = name
         self._details = details
 
     def set(self, name: str, details: str):
-        """Method to set the error state name and details to new values."""
+        """Set the error state name and details to new values."""
         self._name = name
         self._details = details
 
     def clear(self):
-        """Method to clear the current error state, emptying the error name and details
+        """Clear the current error state, emptying the error name and details
         properties."""
         self._name = ""
         self._details = ""
@@ -241,9 +241,9 @@ class ErrorState:
 
 @dataclass(frozen=True)
 class CFXConnectionProperties:
-    """Stores CFX connection properties, including connection IP, port, uds address and
-    password; CFX Engine working directory, process ID and hostname; and whether CFX was
-    launched in a docker container.
+    """Stores CFX connection properties, including connection IP address, port, UDS address, and
+    password; CFX Engine working directory, process ID, and hostname; and whether CFX was
+    launched in a Docker container.
 
     Examples
     --------
@@ -268,11 +268,11 @@ class CFXConnectionProperties:
     inside_container: Optional[Union[bool, Container, None]] = None
 
     def list_names(self) -> list:
-        """Returns list with all property names."""
+        """Get a list of all property names."""
         return [k for k, _ in vars(self).items()]
 
     def list_values(self) -> dict:
-        """Returns dictionary with all property names and values."""
+        """Get a dictionary with all property names and values."""
         return vars(self)
 
 
@@ -297,7 +297,7 @@ def _get_tls_channel(
 
     missing = [f for f in (cert_file, key_file, ca_file) if not Path(f).exists()]
     if missing:
-        raise RuntimeError(f"Missing required TLS file(s) for mutual TLS: {', '.join(missing)}")
+        raise RuntimeError(f"Missing required TLS files for mutual TLS: {', '.join(missing)}")
 
     certificate_chain, private_key, root_certificates = (
         open(path, "rb").read() for path in (cert_file, key_file, ca_file)
@@ -347,8 +347,8 @@ def _get_channel(
                 )
             warnings.warn(
                 "The CFX session will be connected in insecure gRPC mode. "
-                "This mode is not recommended. For more details on the implications "
-                "and usage of insecure mode, refer to the CFX documentation.",
+                "This mode is not recommended. For more information on the implications "
+                "and usage of insecure mode, see the CFX documentation.",
                 InsecureGrpcWarning,
             )
             return grpc.insecure_channel(address, options=options)
@@ -404,50 +404,49 @@ class CFXConnection:
         launcher_args: Optional[Dict[str, Any]] = None,
         inside_container: Optional[bool] = None,
     ):
-        """Initialize a Session.
+        """Initialize a session.
 
         Parameters
         ----------
-        ip : str, optional
-            IP address to connect to existing CFX instance. Used only
-            when ``channel`` is ``None``.  Defaults to ``"127.0.0.1"``
-            and can also be set by the environment variable
-            ``PYCFX_CFX_IP=<ip>``.
-        port : int, optional
-            Port to connect to existing CFX instance. Used only
-            when ``channel`` is ``None``.  Defaults value can be set by
-            the environment variable ``PYCFX_CFX_PORT=<port>``.
-        address : str, optional
+        ip : str, default: None
+            IP address to connect to existing CFX instance. This parameter is
+            used only when ``channel`` is ``None``. When this parameter is ``None``,
+            ``"127.0.0.1"`` is used. The IP address can also be set by the ``PYCFX_CFX_IP=<ip>``
+            environment variable.
+        port : int, default: None
+            Port to connect to existing CFX instance. This parameter is used only
+            when ``channel`` is ``None``. The port can also be set by the ``PYCFX_CFX_PORT=<port>``
+            environment variable.
+        address : str, default: None
             Address to connect to existing CFX instance.
-        password : str, optional
+        password : str, default: None
             Password to connect to existing CFX instance.
-        channel : grpc.Channel, optional
-            Grpc channel to use to connect to existing CFX instance.
-            ip and port arguments will be ignored when channel is
+        channel : grpc.Channel, default: None
+            gRPC channel to use to connect to existing CFX instance.
+            The ``ip`` and ``port`` parameters are ignored when a gRPC channel is
             specified.
-        allow_remote_host : bool, optional
+        allow_remote_host : bool, default: False
             Whether to allow connecting to a remote CFX instance.
-        certificates_folder : str, optional
+        certificates_folder : str, default: None
             Path to the folder containing TLS certificates for CFX's gRPC server.
-        insecure_mode : bool, optional
-            If True, CFX's gRPC server will be connected in insecure mode without TLS.
-            This mode is not recommended. For more details on the implications
-            and usage of insecure mode, refer to the CFX documentation.
-        cleanup_on_exit : bool, optional
-            When True, the connected CFX session will be shut down
-            when PyCFX is exited or exit() is called on the session
-            instance, by default True.
-        start_transcript : bool, optional
-            The CFX transcript is started in the client only when
-            start_transcript is True. It can be started and stopped
-            subsequently via method calls on the Session object.
+        insecure_mode : bool, default: False
+            Whether to connect CFX's gRPC server in insecure mode without TLS.
+            This mode is not recommended. For more information on the implications
+            and usage of insecure mode, see the CFX documentation.
+        cleanup_on_exit : bool, default: True
+            Whether to shut down the connected CFX session when PyCFX is exited or
+            the exit() function is called on the session instance.
+        start_transcript : bool, default: False
+            Whether to start the CFX transcript in the client. The CFX transcript
+            can be started and stopped subsequently using method calls on the session
+            object.
         remote_instance : ansys.platform.instancemanagement.Instance
-            The corresponding remote instance when CFX is launched through
-            PyPIM. This instance will be deleted when calling
-            ``Session.exit()``.
-        inside_container: bool, optional
+           Corresponding remote instance when CFX is launched through
+            PyPIM. This instance is deleted when calling the
+            ``Session.exit()`` function.
+        inside_container: bool, default: None
             Whether the CFX session that is being connected to
-            is running inside a docker container.
+            is running inside a Docker container.
 
         Raises
         ------
@@ -507,8 +506,8 @@ class CFXConnection:
             logger.debug("Engine connection properties successfully obtained.")
         except _InactiveRpcError:
             logger.warning(
-                "CFX Engine properties unobtainable, force exit and other"
-                "methods are not going to work properly, proceeding..."
+                "CFX Engine properties unobtainable. Force exit and other"
+                "methods are not going to work properly. Proceeding..."
             )
             engine_host = None
             engine_pid = None
@@ -548,7 +547,7 @@ class CFXConnection:
 
         self._exit_event = threading.Event()
 
-        # session.exit() is handled in the daemon thread (MonitorThread) which ensures
+        # session.exit() is handled in the daemon thread (MonitorThread), which ensures
         # shutdown of non-daemon threads. A daemon thread is terminated abruptly
         # during interpreter exit, after all non-daemon threads are exited.
         # self._waiting_thread is a long-running thread which is exited
@@ -571,7 +570,7 @@ class CFXConnection:
 
     @property
     def cfx_build_info(self) -> str:
-        """Get CFX build info."""
+        """Get CFX build information."""
         build_time = self.engine_eval.info_query("Engine Build Time")
         build_id = self.engine_eval.info_query("Engine Build ID")
         rev = self.engine_eval.info_query("Engine Source Revision")
@@ -579,11 +578,11 @@ class CFXConnection:
         return f"Build Time: {build_time}  Build Id: {build_id}  Revision: {rev}  Branch: {branch}"
 
     def force_exit(self):
-        """Immediately terminates the CFX client, losing unsaved progress and data.
+        """Immediately terminate the CFX client, which results in losing unsaved progress and data.
 
         Notes
         -----
-        If the CFX session is responsive, prefer using :func:`exit()` instead.
+        If the CFX session is responsive, using the :func:`exit()` function is preferred.
 
         Examples
         --------
@@ -611,7 +610,7 @@ class CFXConnection:
                 cmd_list = ["bash"]
             else:
                 logger.error(
-                    "Unrecognized or unsupported operating system, cancelling CFX cleanup script execution."
+                    "Unrecognized or unsupported operating system. Cancelling CFX cleanup script execution."
                 )
                 return
             # TODO: Currently CFX does not generate a cleanup script. Needed by watchdog
@@ -631,7 +630,7 @@ class CFXConnection:
             #     logger.error("Could not find cleanup file.")
 
     def _force_exit_container(self):
-        """Immediately terminates the CFX client running inside a container, losing
+        """Immediately terminate the CFX client running inside a container, losing
         unsaved progress and data."""
         container = self.connection_properties.inside_container
         container_id = self.connection_properties.engine_host
@@ -644,7 +643,7 @@ class CFXConnection:
             except docker.errors.APIError as e:
                 logger.info(f"{type(e).__name__}: {e}")
                 logger.debug(
-                    "Caught Docker APIError, Docker container probably not running anymore."
+                    "Caught Docker APIError. Docker container probably not running anymore."
                 )
         else:
             logger.debug("Container not found, cancelling cleanup script execution.")
@@ -659,14 +658,14 @@ class CFXConnection:
         Parameters
         ----------
         service : Any
-            service class
-        args : Any, optional
-            additional arguments, by default empty
+            Service class.
+        args : Any
+            Additional arguments.
 
         Returns
         -------
         Any
-            service object
+            Service object.
         """
         return service(self._channel, self._metadata, *args)
 
@@ -678,8 +677,8 @@ class CFXConnection:
         Parameters
         ----------
         wait : float, int or bool, optional
-            How long to wait for processes to finish before returning, by default 60 seconds.
-            Can also be set to ``True``, which will result in waiting indefinitely.
+            How long to wait for processes to finish before returning. The default is 60 seconds.
+            This parameter ca also be set to ``True``, which results in waiting indefinitely.
 
         Raises
         ------
@@ -694,7 +693,7 @@ class CFXConnection:
             if wait:
                 wait = 60
             else:
-                logger.debug("Wait limit set to 'False', cancelling process wait.")
+                logger.debug("Wait limit set to 'False'. Cancelling process wait.")
                 return
         if isinstance(wait, (float, int)):
             logger.info(f"Waiting {wait} seconds for CFX processes to finish...")
@@ -729,31 +728,26 @@ class CFXConnection:
 
         Parameters
         ----------
-        timeout : float, optional
+        timeout : float, default: None
             Time in seconds before considering that the exit request has timed out.
-            If omitted or specified as None, then the request will not time out and will lock up the interpreter
-            while waiting for a response. Will return earlier if request succeeds earlier.
-        timeout_force : bool, optional
-            If not specified, defaults to ``True``. If ``True``, attempts to terminate the CFX process if
-            exit request reached timeout. If no timeout is set, this option is ignored.
-            Executes :func:`force_exit()` or :func:`force_exit_container()`,
+            If omitted or specified as ``None``, the request does not time out and locks up the interpreter while waiting for a response. The request returns earlier if it succeeds earlier.
+        timeout_force : bool, default: True
+            Whether to attempt to terminate the CFX process if the exit request reached timeout.
+            If no timeout is set, this option is ignored. Executes the :func:`force_exit()` or :func:`force_exit_container()` function to terminate the CFX process,
             depending on how CFX was launched.
-        wait : float, int or bool, optional
-            Specifies whether to wait for local CFX processes to finish completely before proceeding.
-            If omitted or specified as ``False``, will proceed as usual without
-            waiting for the CFX processes to finish.
-            Can be set to ``True`` which will wait for up to 60 seconds,
-            or set to a float or int value to specify the wait limit.
-            If wait limit is reached, will forcefully terminate the CFX process.
-            If set to wait, will return as soon as processes completely finish.
-            Does not work for remote CFX processes.
+        wait : float, int or bool, default: False
+            Whether to wait for local CFX processes to finish completely before proceeding.
+            If omitted or specified as ``False``, the request proceeds as usual without
+            waiting for the CFX processes to finish. If this parameter is set
+           to ``True`` the request waits for up to 60 seconds  by default.
+            The wait limit can be specified as a float or integer value.
+            If the wait limit is reached, the request forcefully terminate the CFX process.
+            If it is set to wait, it returns as soon as the processes completely finishes.
+            It does not work for the remote CFX processes.
 
         Notes
         -----
-        Can also set the ``PYCFX_TIMEOUT_FORCE_EXIT`` environment variable to specify the number of seconds and
-        alter the default ``timeout`` value. Setting this env var to a non-number value, such as ``OFF``,
-        will return this function to default behavior. Note that the environment variable will be ignored if
-        timeout is specified when calling this function.
+        The ``PYCFX_TIMEOUT_FORCE_EXIT`` environment variable can also be used to specify the number of seconds and alter the default ``timeout`` value. Setting this environment variable to a non-number value, such as ``OFF``, returns this function to the default behavior. Note that the environment variable is ignored if a timeout is specified when calling this function.
 
         Examples
         --------
@@ -772,13 +766,13 @@ class CFXConnection:
             env_timeout = os.getenv("PYCFX_TIMEOUT_FORCE_EXIT")
 
             if env_timeout:
-                logger.debug("Found PYCFX_TIMEOUT_FORCE_EXIT env var")
+                logger.debug("Found PYCFX_TIMEOUT_FORCE_EXIT environment variable.")
                 try:
                     timeout = float(env_timeout)
-                    logger.debug(f"Setting TIMEOUT_FORCE_EXIT to {timeout}")
+                    logger.debug(f"Setting TIMEOUT_FORCE_EXIT to {timeout}.")
                 except ValueError:
                     logger.debug(
-                        "Off or unrecognized PYCFX_TIMEOUT_FORCE_EXIT value, not enabling timeout force exit"
+                        "Off or unrecognized PYCFX_TIMEOUT_FORCE_EXIT value. Not enabling timeout force exit."
                     )
 
         if timeout is None:
@@ -788,7 +782,7 @@ class CFXConnection:
                 self.wait_process_finished(wait=wait)
         else:
             if not self.health_check_service.is_serving:
-                logger.debug("gRPC service not working, cancelling soft exit call.")
+                logger.debug("gRPC service not working. Cancelling soft exit call.")
             else:
                 logger.info("Attempting to send exit request to CFX...")
                 success = timeout_exec(self._finalizer, timeout)
@@ -806,15 +800,15 @@ class CFXConnection:
                     return
                 elif self.connection_properties.inside_container:
                     logger.debug(
-                        "CFX running inside container, cleaning up CFX inside container..."
+                        "CFX running inside container. Cleaning up CFX inside container..."
                     )
                     self.force_exit()
                 else:
-                    logger.debug("CFX running locally, cleaning up CFX processes...")
+                    logger.debug("CFX running locally. Cleaning up CFX processes...")
                     self.force_exit()
                 logger.debug("Done.")
             else:
-                logger.debug("Timeout and wait force exit disabled, returning...")
+                logger.debug("Timeout and wait force exit disabled. Returning...")
 
     @staticmethod
     def _exit(

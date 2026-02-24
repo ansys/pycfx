@@ -202,7 +202,7 @@ are shown below.
 Other commands relating to expressions can be found by using ``dir()`` on the ``expressions`` container.
 
 Similar behavior exists for other objects that have parameters that can be given a user-defined
-name; for example, the ``EXPERT PARAMETERS`` and ``USER`` CCL objects in CFX-Pre.
+name, for example, the ``EXPERT PARAMETERS`` and ``USER`` CCL objects in CFX-Pre.
 
 Commands
 --------

@@ -106,7 +106,7 @@ class CFXVersion(Enum):
 
     @classmethod
     def get_latest_installed(cls):
-        """Return the version member corresponding to the most recent, available Ansys
+        """Get the version member corresponding to the most recent, available Ansys
         installation.
 
         Returns
@@ -127,7 +127,7 @@ class CFXVersion(Enum):
 
     @classmethod
     def current_release(cls):
-        """Return the version member of the current release.
+        """Get the version member of the current release.
 
         Returns
         -------
@@ -138,7 +138,7 @@ class CFXVersion(Enum):
 
     @classmethod
     def current_dev(cls):
-        """Return the version member of the current development version.
+        """Get the version member of the current development version.
 
         Returns
         -------
@@ -166,5 +166,5 @@ class CFXVersion(Enum):
         return self.value
 
     def __str__(self) -> str:
-        """Return a string representation for the CFX version."""
+        """Get a string representation for the CFX version."""
         return f"Ansys CFX 20{self.value.split('.')[0]} R{self.value.split('.')[1]}"

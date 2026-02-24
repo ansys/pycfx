@@ -20,7 +20,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-"""Provides a module to search a word through the CFX's object hierarchy."""
+"""Provides a module to search for a word through the CFX's object hierarchy."""
 
 from collections.abc import Mapping
 from pathlib import Path
@@ -105,18 +105,18 @@ def search(
     Parameters
     ----------
     word : str
-        The word to search for.
-    match_whole_word : bool, optional
-        Whether to match whole word, by default False
-    match_case : bool, optional
-        Whether to match case, by default False
-    version : str, optional
-        CFX version to search in, by default None in which case
-        it will search in the latest version for which codegen was run.
-    search_root : Any, optional
-        The root object within which the search will be performed,
-        can be a session object or any API object within a session,
-        by default None in which case it will search everything.
+        Word to search for.
+    match_whole_word : bool, default: False
+        Whether to match the whole word.
+    match_case : bool, default: False
+        Whether to match the case.
+    version : str, default: None
+        CFX version to search in. The default is ``None``, in which case
+        it searches in the latest version for which codegen was run.
+    search_root : Any, default: None
+        Root object to perform the search in. It
+        can be a session object or any API object within a session. The
+        default is ``None``, in which case everything is searched.
 
     Examples
     --------

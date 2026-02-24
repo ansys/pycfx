@@ -84,14 +84,14 @@ class HealthCheckService:
         return HealthCheckService.Status(response.status)
 
     def wait_for_server(self, timeout: int) -> None:
-        """Keeps a watch on the health of the CFX connection.
+        """Keep a watch on the health of the CFX connection.
 
         Response changes only when the service's serving status changes.
 
         Parameters
         ----------
         timeout : int
-            timeout in seconds
+            Timeout in seconds.
 
         Raises
         ------
@@ -131,5 +131,5 @@ class HealthCheckService:
 
     @property
     def is_serving(self) -> bool:
-        """Checks whether CFX is serving."""
+        """Flag indicating if CFX is serving."""
         return self.status() == self.Status.SERVING

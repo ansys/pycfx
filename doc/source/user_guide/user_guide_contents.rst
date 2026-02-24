@@ -47,14 +47,14 @@ Work with session objects
 
 PyCFX session objects expose a hierarchy of Python objects for accessing the CFX setup and tools. For example:
 
-- The ``setup`` object contains the CFX setup as "settings objects" that mirror the CFX Command Language (CCL) structure.
+- The ``setup`` object contains the CFX setup as *settings objects* that mirror the CFX Command Language (CCL) structure.
 - The ``file`` object provides actions similar to the CFX-Pre or CFD-Post **File** menus.
 
 To explore available children, run the ``dir()`` function on objects, such as ``dir(pypre.setup)`` or ``dir(pypre.file)``, assuming ``pypre`` is a PreProcessing session. For deeper exploration, run the ``dir()`` function on child objects, such as ``dir(pypre.setup.flow["Flow Analysis 1"])``.
 
 Use the Python ``help()`` function to learn more about objects, for example, ``help(pypre.setup.flow["Flow Analysis 1"])``.
 
-Each session object corresponds to one instance of CFX-Pre, the CFX-Solver, or CFD-Post. Multiple sessions can exist in a Python session. Exit sessions individually using the ``exit()``function, for example, ``pypre.exit()``. Exiting a PreProcessing or PostProcessing session closes the associated instance, but exiting a Solver session does not stop the solver run.
+Each session object corresponds to one instance of CFX-Pre, the CFX-Solver, or CFD-Post. Multiple sessions can exist in a Python session. Exit sessions individually using the ``exit()`` function, for example, ``pypre.exit()``. Exiting a PreProcessing or PostProcessing session closes the associated instance, but exiting a Solver session does not stop the solver run.
 
 For more information on using session objects, see :ref:`Use PyCFX sessions <ref_session_guide>`.
 

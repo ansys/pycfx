@@ -105,13 +105,13 @@ def _await_cfx_launch(server_info_file_name: str, start_timeout: int, sifile_las
 def _confirm_watchdog_start(
     start_watchdog, cleanup_on_exit, cfx_connection
 ):  # pragma: no cover (watchdog not used)
-    """Confirm whether CFX is running locally, and whether the Watchdog should be
+    """Confirm whether CFX is running locally and whether the Watchdog should be
     started."""
     if start_watchdog is None and cleanup_on_exit:
         host = cfx_connection.connection_properties.engine_host
         if host == socket.gethostname():
             logger.debug(
-                "CFX running on the host machine and 'cleanup_on_exit' activated, will launch Watchdog."
+                "CFX running on the host machine and 'cleanup_on_exit' activated. Will launch Watchdog."
             )
             start_watchdog = True
     return start_watchdog

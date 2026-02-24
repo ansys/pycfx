@@ -40,7 +40,7 @@ from ansys.cfx.core.utils.cfx_version import CFXVersion
 class EngineEvalService:
     """Class wrapping the EngineEval gRPC service of CFX.
 
-    Using the methods from the EngineEval class is recommended.
+    Using the methods from the ``EngineEval`` class is recommended.
     """
 
     def __init__(
@@ -81,7 +81,7 @@ class Symbol:
     Attributes
     ----------
     str : str
-        Underlying string representation
+        Underlying string representation.
     """
 
     def __init__(self, str: str) -> None:
@@ -100,10 +100,10 @@ class EngineEval:
     process_ccl(ccl, wait, silent)
         Send CCL commands and settings to execute in the engine. Return output if any.
     info_query(query, args)
-        Evaluates a query in string format, returns string
+        Evaluates a query in string format. Returns string.
     eval_expression(input)
-        Evaluates a CCL expression in string format, returns Python
-        value
+        Evaluates a CCL expression in string format. Returns Python
+        value.
     """
 
     def __init__(self, service: EngineEvalService) -> None:
@@ -118,26 +118,26 @@ class EngineEval:
     def eval_expression(self, input: str) -> str:
         """Evaluates a CFX expression.
 
-        This function is not available in CFX versions earlier than Release 26.1.
+        This function is not available in CFX versions earlier than Release 2026 R1.
 
         Parameters
         ----------
         input : str
-            Input CFX expression represented as str
+            Input CFX expression represented as a string.
 
         Returns
         -------
         str
-            Output value in string format
+            Output value in string format.
 
         Raises
         ------
         RuntimeError
-            If a CFX version earlier than Release 26.1 is being used.
+            If a CFX version earlier than 2026 R1 is being used.
         """
         if CFXVersion(self.version) < CFXVersion.v261:
             raise RuntimeError(
-                "eval_expression is not supported before Release 26.1. "
+                "eval_expression is not supported before 2026 R1. "
                 "Expressions can be created and evaluated from the 'expressions' object."
             )
 
@@ -152,17 +152,16 @@ class EngineEval:
         Parameters
         ----------
         ccl : Sequence[str]
-            Sequence of CCL
-        wait : bool, optional
-            Specifies whether to wait until execution completes, by
-            default True
-        silent : bool, optional
-            Specifies whether to execute silently, by default True
+            Sequence of CCL.
+        wait : bool, default: True
+            Whether to wait until execution completes.
+        silent : bool, default: True
+            Whether to execute silently.
 
         Returns
         -------
         str
-           Output as string
+           Output as string.
         """
         request = EngineEvalProtoModule.ProcessCCLRequest()
         request.ccl.extend(ccl)
@@ -172,20 +171,20 @@ class EngineEval:
         return response.output
 
     def info_query(self, query: str, args: str = None) -> str:
-        """Query engine info in string format.
+        """Query engine information in string format.
 
         Parameters
         ----------
         query : str
-            Input query in string format
+            Input query in string format.
 
         args : str
-            Input query arguments in string format
+            Input query arguments in string format.
 
         Returns
         -------
         str
-            Output query value in string format
+            Output query value in string format.
         """
         request = EngineEvalProtoModule.InfoQueryRequest()
         request.query = query

@@ -28,7 +28,7 @@ from typing import Any, List, Optional
 
 
 def closest_allowed_names(trial_name: str, allowed_names: str) -> List[str]:
-    """Checks if the 'trial_name' is closely matching the 'allowed_names'."""
+    """Checks if the ''trial_name'' is closely matching the ''allowed_names''."""
     f = partial(difflib.get_close_matches, trial_name, allowed_names)
     return f(cutoff=0.6, n=5) or f(cutoff=0.3, n=1)
 
@@ -39,10 +39,10 @@ def allowed_name_error_message(
     trial_name: Optional[str] = None,
     message: Optional[str] = None,
 ) -> str:
-    """Provide an error message with the closest names matching the 'trial_name' from
-    the 'allowed_values' list."""
+    """Provide an error message with the closest names matching the ``trial_name`` from
+    the ``allowed_values`` list."""
     if not message:
-        message = f"'{context}' has no attribute '{trial_name}'"
+        message = f"'{context}' has no attribute '{trial_name}'."
     message += ".\n"
     matches = None
     if allowed_values:

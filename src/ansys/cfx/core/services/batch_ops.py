@@ -71,16 +71,16 @@ class BatchOps:
     ...     pypost.file.load_results(file_name="StaticMixer_001.res")
     ...     pypost.results.plane["Plane 1"] = {}
 
-    The above code will execute both operations through a single gRPC call upon exiting the
+    The preceding code executes both operations through a single gRPC call upon exiting the
     ``with`` block.
 
     Operations that perform queries in CFX are executed immediately, while others are
     queued for batch execution. Some queries are executed behind the scenes while
-    queuing an operation for batch execution, and we must ensure that they do not
+    queuing an operation for batch execution. Develoeprs must ensure that they do not
     depend on previously queued operations.
 
 
-    For example,
+    For example, the following code throws a ``KeyError`` as ``pypost.results.plane["Plane 1"]`` attempts to access the ``Plane 1`` named object which has not been created yet.t.
 
     >>> pypost = pycfx.PostProcessing.from_install()
     >>> with pycfx.BatchOps(pypost):
@@ -90,10 +90,6 @@ class BatchOps:
     Traceback (most recent call last):
       ...
     KeyError: "'plane' has no attribute 'Plane 1'.\\n"
-
-
-    will throw a ``KeyError`` as ``pypost.results.plane["Plane 1"]`` attempts to
-    access the ``Plane 1`` named object which has not been created yet.
     """
 
     _proto_files: list[ModuleType] | None = None
@@ -108,7 +104,7 @@ class BatchOps:
         Returns
         -------
         BatchOps
-            BatchOps instance
+            BatchOps instance.
         """
         return cls._instance()
 
@@ -199,30 +195,30 @@ class BatchOps:
                 self._ops[i].update_result(response.status, response.response_body)
 
     def add_op(self, package: str, service: str, method: str, request: Message) -> Op:
-        """Queue a single batch operation. Only the non-getter operations will be
+        """Queue a single batch operation. Only the non-getter operations is
         queued.
 
         Parameters
         ----------
         package : str
-            gRPC package name
+            gRPC package name.
         service : str
-            gRPC service name
+            gRPC service name.
         method : str
-            gRPC method name
+            gRPC method name.
         request : Any
-            gRPC request message
+            gRPC request message.
 
         Returns
         -------
         BatchOps.Op
-            BatchOps.Op object with a queued attribute which is true if the operation
+            BatchOps.Op object with a queued attribute that is ``True`` if the operation
             has been queued.
         """
         op = BatchOps.Op(package, service, method, request.SerializeToString())
         if op._supported:
             network_logger.debug(
-                f"Adding batch operation with package {package}, service {service} and method {method}"
+                f"Adding batch operation with package {package}, service {service}, and method {method}."
             )
             self._ops.append(op)
             op.queued = True

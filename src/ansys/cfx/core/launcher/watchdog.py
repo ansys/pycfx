@@ -22,8 +22,8 @@
 
 """Module to launch the PyCFX Watchdog to monitor PyCFX and the CFX server.
 
-Should not be used manually, PyCFX automatically manages it.
-See :func:`~ansys.cfx.core.launcher.launcher.launch_cfx()` `start_watchdog` argument for more details.
+This module should not be used manually. PyCFX automatically manages it.
+For more information, see the ``start_watchdog`` argument for the :func:`~ansys.cfx.core.launcher.launcher.launch_cfx()` function.
 """
 
 import os
@@ -51,7 +51,7 @@ class UnsuccessfulWatchdogLaunch(RuntimeError):
 
 
 def launch(main_pid: int, sv_port: int, sv_password: str, sv_ip: Optional[str] = None) -> None:
-    """Function to launch the Watchdog. Automatically used and managed by PyCFX.
+    """Function to launch the Watchdog. This function is automatically used and managed by PyCFX.
 
     Parameters
     ----------
@@ -62,7 +62,7 @@ def launch(main_pid: int, sv_port: int, sv_password: str, sv_ip: Optional[str] =
     sv_password : str
         CFX server password.
     sv_ip : str, optional
-        CFX server IP.
+        CFX server IP address.
 
     Raises
     ------
@@ -76,8 +76,8 @@ def launch(main_pid: int, sv_port: int, sv_password: str, sv_ip: Optional[str] =
     env_watchdog_debug = os.getenv("PYCFX_WATCHDOG_DEBUG", "off").upper()
     if env_watchdog_debug in ("1", "ON"):
         logger.debug(
-            f"PYCFX_WATCHDOG_DEBUG environment variable found, "
-            f"enabling debugging for watchdog ID {watchdog_id}..."
+            f"PYCFX_WATCHDOG_DEBUG environment variable found. "
+            f"Enabling debugging for watchdog ID {watchdog_id}..."
         )
 
     watchdog_env = os.environ.copy()
@@ -93,7 +93,7 @@ def launch(main_pid: int, sv_port: int, sv_password: str, sv_ip: Optional[str] =
 
     if not python_executable:
         logger.warning(
-            "Python executable not found, please verify Python environment. "
+            "Python executable not found. Verify Python environment. "
             "Cancelling PyCFX Watchdog monitoring."
         )
         return
@@ -129,7 +129,7 @@ def launch(main_pid: int, sv_port: int, sv_password: str, sv_ip: Optional[str] =
     ]
 
     if env_watchdog_debug in ("1", "ON"):
-        logger.debug(f"Starting Watchdog logging to directory {os.getcwd()}")
+        logger.debug(f"Starting Watchdog logging to directory {os.getcwd()}.")
 
     kwargs = {"env": watchdog_env, "stdin": subprocess.DEVNULL, "close_fds": True}
 
@@ -176,7 +176,7 @@ def launch(main_pid: int, sv_port: int, sv_password: str, sv_ip: Optional[str] =
 
     subprocess.Popen(cmd_send, **kwargs)
 
-    logger.info(f"Waiting for Watchdog to initialize, then proceeding...")
+    logger.info(f"Waiting for Watchdog to initialize, and then proceeding...")
     file_exists = timeout_loop(lambda: init_file.is_file() or watchdog_err.is_file(), 30.0)
 
     if file_exists and init_file.is_file():
@@ -192,6 +192,6 @@ def launch(main_pid: int, sv_port: int, sv_password: str, sv_ip: Optional[str] =
             if os.getenv("PYCFX_WATCHDOG_EXCEPTION_ON_ERROR"):
                 raise UnsuccessfulWatchdogLaunch(err_content)
 
-        logger.warning("PyCFX Watchdog did not initialize correctly, proceeding without it...")
+        logger.warning("PyCFX Watchdog did not initialize correctly. Proceeding without it...")
         if os.getenv("PYCFX_WATCHDOG_EXCEPTION_ON_ERROR"):
             raise UnsuccessfulWatchdogLaunch("PyCFX Watchdog did not initialize correctly.")
