@@ -385,9 +385,10 @@ boundary, initial conditions, and execution control.
 The ``turbulent_wall_functions`` option was automatically updated from ``Scalable`` to ``Automatic``
 by the physics update.
 
-Note that if a state is supplied as a dictionary, the physics updates are not applied and the
-state is applied as-is. The PreProcessing session may be left in an invalid physical state
-following such an update, and you should check for any physics warnings or errors.
+For CFX versions up to and including 2026 R1, note that if a state is supplied as a dictionary, 
+the physics updates are not applied and the state is applied as-is. The PreProcessing session 
+may be left in an invalid physical state following such an update, and you should check for any 
+physics warnings or errors.
 
 Optional objects and parameters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
