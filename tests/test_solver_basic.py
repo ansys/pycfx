@@ -20,7 +20,6 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-import os
 from pathlib import Path
 
 from ansys.cfx.core.session_solver import Solver
@@ -34,5 +33,5 @@ def test_solver_basic(pysolve: Solver, pytestconfig, capsys):
     output_file = results_file.replace(".res", ".out")
     assert Path(results_file).exists()
     assert Path(output_file).exists()
-    os.remove(results_file)
-    os.remove(output_file)
+    Path(results_file).unlink()
+    Path(output_file).unlink()

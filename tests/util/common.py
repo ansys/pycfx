@@ -24,6 +24,7 @@ from contextlib import suppress
 from enum import IntEnum
 import glob
 import os
+from pathlib import Path
 import re
 import shutil
 
@@ -109,22 +110,22 @@ def read_ccl_from_file(ccl_file_path: str) -> list[str]:
 def setup_write_dir(test_data_directory_path, files_to_remove=[]):
 
     # Make a temporary directory
-    generated_path_engine = f"{test_data_directory_path}/generated"
-    generated_path_client = os.path.join(os.path.dirname(__file__), "..", "generated")
-    if not os.path.exists(generated_path_client):
-        os.makedirs(generated_path_client)
+    generated_path_engine = Path(test_data_directory_path) / "generated"
+    generated_path_client = Path(__file__).parent.parent / "generated"
+    generated_path_client.mkdir(parents=True, exist_ok=True)
 
     # Remove files
     if files_to_remove:
         with suppress(FileNotFoundError):
             for pattern in files_to_remove:
-                for f in glob.glob(f"{generated_path_client}/{pattern}"):
-                    base = os.path.basename(f)
+                for f in glob.glob(str(generated_path_client / pattern)):
+                    p = Path(f)
+                    base = p.name
                     if base in (".", ".."):
                         continue
-                    if os.path.isfile(f):
-                        os.remove(f)
-                    elif os.path.isdir(f):
-                        shutil.rmtree(f)
+                    if p.is_file():
+                        p.unlink()
+                    elif p.is_dir():
+                        shutil.rmtree(p)
 
-    return generated_path_engine, generated_path_client
+    return str(generated_path_engine), str(generated_path_client)

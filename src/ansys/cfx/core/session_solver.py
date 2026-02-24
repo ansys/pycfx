@@ -23,7 +23,7 @@
 """Module containing class encapsulating CFX connection."""
 
 import logging
-import os
+from pathlib import Path
 import tempfile
 
 from ansys.cfx.core.launcher.cfx_container import _get_host_and_container_mount_paths
@@ -103,7 +103,7 @@ class Solver(BaseSession):
 
         # If a path is provided, only use the file name
         if case_name:
-            case_name = os.path.basename(case_name)
+            case_name = Path(case_name).name
 
         is_inside_container = (
             self.solution._is_inside_container and "volumes" in self.solution._container_dict
@@ -117,10 +117,10 @@ class Solver(BaseSession):
             self._temporary_directory = tempfile.TemporaryDirectory()
             self._host_temporary_directory_path = self._temporary_directory.name
 
-        temporary_case_path_host = os.path.join(self._host_temporary_directory_path, case_name)
+        temporary_case_path_host = str(Path(self._host_temporary_directory_path) / case_name)
         if is_inside_container:
-            temporary_case_path_engine = os.path.join(
-                self._container_temporary_directory_path, case_name
+            temporary_case_path_engine = str(
+                Path(self._container_temporary_directory_path) / case_name
             )
         else:
             temporary_case_path_engine = temporary_case_path_host
@@ -137,9 +137,9 @@ class Solver(BaseSession):
                 f"'{temporary_case_path_host}.mdef' could not be written."
             )
 
-        if os.path.exists(f"{temporary_case_path_host}.def"):
+        if Path(f"{temporary_case_path_host}.def").exists():
             temporary_solver_input_file = f"{temporary_case_path_engine}.def"
-        elif os.path.exists(f"{temporary_case_path_host}.mdef"):
+        elif Path(f"{temporary_case_path_host}.mdef").exists():
             temporary_solver_input_file = f"{temporary_case_path_engine}.mdef"
         logger.debug(f"Set solver input file: {temporary_solver_input_file}")
         self.solution._set_solver_input_file(temporary_solver_input_file)
