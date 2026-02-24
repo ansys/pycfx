@@ -42,7 +42,7 @@ in a Python virtual environment to prevent conflicts with
 Ansys Python packages.
 
 Alternatively, you can download any compatible Python version directly from
-the `Python downloads page <https://www.python.org/downloads/>`_. Run the
+the `Python downloads <https://www.python.org/downloads/>`_ page. Run the
 Python executable file as an administrator and select the
 **Add Python [version] to PATH** checkbox on the first wizard page before
 proceeding with the installation. On the last wizard page, which indicates that
@@ -92,7 +92,7 @@ decreasing order of precedence:
 
 How can I learn to use PyCFX?
 -----------------------------
-Depending on your learning preferences, you can use any or all of these methods to
+Depending on your preferences, you can use any or all of these methods to
 learn how to use PyCFX:
 
 - Review the examples in the :ref:`ref_example_gallery`.

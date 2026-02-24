@@ -64,7 +64,7 @@ Installation
 ------------
 PyCFX supports Python 3.10 through 3.13 on Windows and Linux.
 
-On release, you can install it from `PyPI`_ with this command:
+You can install it from `PyPI`_ with this command:
 
 .. code:: console
 

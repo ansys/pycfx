@@ -25,7 +25,7 @@ PyCFX provides three types of session objects:
 
 - PreProcessing: Connects to CFX-Pre to set up simulations.
 - Solver: Controls the CFX-Solver.
-- PostProcessing: Connects to CFD-Post to process simulation results.
+- PostProcessing: Connects to CFD-Post to postprocess simulation results.
 
 To set up, solve, and postprocess a CFD simulation with PyCFX, you create and modify instances of these session objects.
 

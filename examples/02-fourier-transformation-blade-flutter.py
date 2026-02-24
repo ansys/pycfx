@@ -22,24 +22,24 @@
 
 """.. _ref_fourier_blade_flutter:
 
-Set up a Fourier transformation blade flutter case
+Set up a Fourier Transformation Blade Flutter case
 --------------------------------------------------
 
-This example shows how to set up a Fourier transformation blade flutter case in PyCFX.
+This example shows how to set up a Fourier Transformation Blade Flutter case in PyCFX.
 
 **Model overview**
 
-This example sets up a transient blade row blade flutter simulation using
+This example sets up a Transient Blade Blade Flutter simulation using
 both time integration and harmonic balance transient methods with the Fourier
 transformation pitch change model. The setup is described in detail in the
-CFX tutorial *ourier Transformation Method for a Blade Flutter Case*.
+CFX tutorial *Fourier Transformation Method for a Blade Flutter Case*.
 
 The example uses an axial compressor geometry. The full geometry consists of one rotor containing
 36 blades.
 
 **Workflow tasks**
 
-The Fourier blade flutter example guides you through these tasks:
+The Fourier Transformation Blade Flutter example guides you through these tasks:
 
 * Use a PreProcessing session to set up a solver run without the transient blade row method
   to provide initial conditions.
@@ -331,7 +331,7 @@ r1_tipgap2.interface_region_list2 = "Rotor SHROUD TIP GGI SIDE 2 2"
 r1_tipgap2.interface_models.option = "General Connection"
 r1_tipgap2.mesh_connection.option = "GGI"
 ##################################################################################################
-# Add the periodic interface.
+# Add the Periodic interface.
 #
 pypre.setup.flow["Flow Analysis 1"].domain_interface[r1_periodic_name] = {}
 r1_periodic = pypre.setup.flow["Flow Analysis 1"].domain_interface[r1_periodic_name]
@@ -342,7 +342,7 @@ r1_periodic.interface_models.option = "Rotational Periodicity"
 r1_periodic.interface_models.axis_definition.rotation_axis = "Coord 0.3"
 r1_periodic.mesh_connection.option = "GGI"
 ##################################################################################################
-# Add the sampling interface.
+# Add the Sampling interface.
 #
 pypre.setup.flow["Flow Analysis 1"].domain_interface[r1_sampling_name] = {}
 r1_sampling = pypre.setup.flow["Flow Analysis 1"].domain_interface[r1_sampling_name]
@@ -352,7 +352,7 @@ r1_sampling.interface_region_list2 = "Rotor PER1 2"
 r1_sampling.interface_models.option = "General Connection"
 r1_sampling.mesh_connection.option = "GGI"
 ##################################################################################################
-# Modify the interface sides to set the mesh motion to stationary.
+# Modify the interface sides to set the mesh motion to Stationary.
 #
 interface_side_list = [
     "R1 to R1 Periodic Side 1",
@@ -468,7 +468,7 @@ tbrm.transient_method.time_duration.option = "Number of Periods per Run"
 tbrm.transient_method.time_duration.number_of_periods_per_run = 10
 
 ###################################################################################################
-# Configure the output control
+# Configure the Output Control
 # ----------------------------
 #
 output_control = pypre.setup.flow["Flow Analysis 1"].output_control
@@ -598,7 +598,7 @@ tbrm.transient_method.option = "Harmonic Balance"
 tbrm.transient_method.number_of_modes = 3
 
 ###################################################################################################
-# Configure the solver control
+# Configure the Solver Control
 # ----------------------------
 #
 solver_control = pypre.setup.flow["Flow Analysis 1"].solver_control
@@ -637,7 +637,8 @@ if physics_messages:
 # Start the Solver session for the harmonic balance setup
 # -------------------------------------------------------
 #
-# The harmonic balance setup can use the same initial conditions as the time integration setup. Thus, # these do not need to be set up again.
+# The harmonic balance setup can use the same initial conditions as the time integration setup.
+# Thus, these do not need to be set up again.
 #
 pypre.file.save_case(file_name="fourier_blade_flutter_harmonic.cfx")
 if pypre.get_cfx_version() > CFXVersion.v252:

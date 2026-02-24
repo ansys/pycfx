@@ -7,7 +7,7 @@ PyCFX provides three types of session objects:
 
 - PreProcessing: Connects to CFX-Pre to set up simulations.
 - Solver: Controls the CFX-Solver.
-- PostProcessing: Connects to CFD-Post to process simulation results.
+- PostProcessing: Connects to CFD-Post to postprocess simulation results.
 
 For an overview of these session objects, see :ref:`User guide <ref_user_guide>`.
 
@@ -71,7 +71,7 @@ action in PyCFX:
 
 .. code-block:: python
 
-  >>> pypre.file.save_picture(file_name="Image.png")
+  >>> pypre.file.save_picture(file_name = "Image.png")
 
 Settings object types
 ---------------------
@@ -202,7 +202,7 @@ are shown below.
 Other commands relating to expressions can be found by using ``dir()`` on the ``expressions`` container.
 
 Similar behavior exists for other objects that have parameters that can be given a user-defined
-name; for example, the "EXPERT PARAMETERS" and "USER" CCL objects in CFX-Pre.
+name; for example, the ``EXPERT PARAMETERS`` and ``USER`` CCL objects in CFX-Pre.
 
 Commands
 --------
@@ -278,7 +278,7 @@ Active objects, commands, and queries
 -------------------------------------
 
 Objects, commands, and queries can be active or inactive based on the session state.
-The ``is_active()`` method returns ``True`` if an object, command or query is currently active.
+The ``is_active()`` method returns ``True`` if an object, command, or query is currently active.
 
 For the PreProcessing session, objects become active or inactive depending on their physical
 availability. So, a turbulence model setting on a boundary is inactive if the domain does not
@@ -325,26 +325,28 @@ The messages returned can be filtered by severity level (All, Beta, Information,
 Physics updates
 ~~~~~~~~~~~~~~~
 
-In a PreProcessing session, changing one value (for example, the boundary type) can require large
+In a PreProcessing session, changing one value (for example, ``Boundary Type``) can require large
 numbers of dependent objects and parameters to be updated. For the PreProcessing session
 to be usable, the session incorporates *physics updates*, which update the necessary dependent
 objects when any parameter value or other change is made.
 
 .. vale Google.Quotes = NO
 
-So, for example, a case with a turbulence model set to "k-Epsilon" must have a Wall Function set
-to "Scalable" as this is the only valid Wall Function for the "k-Epsilon" model. If you later
-set the turbulence model to "Shear Stress Transport", the Wall Function must be updated
-to "Automatic" as this is the only allowed Wall Function option for the Shear Stress
-Transport model. The physics updates in the PreProcessing session automatically makes this
+So, for example, a case with ``Turbulence Model`` set to ``k-Epsilon`` must have a
+``Wall Function`` set to ``Scalable`` as this is the only valid ``Wall Function``
+for the ``k-Epsilon`` model. If you later set ``Turbulence Model`` to ``Shear Stress
+Transport``, the ``Wall Function`` must be updated to ``Automatic`` as this is
+the only allowed ``Wall Function`` option for the ``Shear Stress Transport`` model.
+The physics updates in the PreProcessing session automatically makes this
 change.
 
 If you are familiar with the CFX-Pre user interface, then the easiest way to understand the
-physics updates is to imagine opening the editor for the object that you want to change, and
-making the same parameter/object change. So, for example, if you open the Domain editor
-for a case with a turbulence model set to "k-Epsilon", then the Wall Function must be set to
-"Scalable". If you then change the turbulence model to "Shear Stress Transport", you can see that
-the Wall Function option automatically updates to "Automatic" further down the panel.
+physics updates is to imagine opening the editor for the object that you want to change and
+making the same parameter or object change. So, for example, if you open the Domain editor
+for a case with ``Turbulence Model`` set to ``k-Epsilon``, then the ``Wall Function`` must
+be set to ``Scalable``. If you then change ``Turbulence Model`` to ``Shear Stress Transport``,
+you can see that the ``Wall Function`` option automatically updates to ``Automatic`` further
+down the panel.
 
 .. vale Google.Quotes = YES
 
@@ -430,7 +432,7 @@ object:
 .. vale Google.WordList = NO
 
 To add or remove an optional object, it must be explicitly enabled or disabled. For example, to
-enable and then disable the "Boundary Contour" object for a boundary:
+enable and then disable the ``Boundary Contour`` object for a boundary:
 
 .. vale Google.WordList = YES
 
@@ -464,7 +466,7 @@ enable and then disable the "Boundary Contour" object for a boundary:
     ...
 
 Optional named objects are named objects that you can explicitly create but only with specific
-names, and are uncommon in the PreProcessing session. These named objects can be created
+names. They are uncommon in the PreProcessing session. These named objects can be created
 in the same way as other named objects, for example, by using the ``create()`` method of the parent
 ``NamedObject`` container. To remove an optional named object, use the Python ``del`` keyword.
 
@@ -489,7 +491,7 @@ limited and does not implement a hierarchy of settings objects.
 Solver-specific settings, such as parallel settings, precision settings and initial conditions,
 must be set up as Execution Control in the PreProcessing session.
 
-The only available settings object is ``solution`` which provides access to a minimal set of
+The only available settings object is ``solution``, which provides access to a minimal set of
 solver controls.
 
 .. code-block:: python
@@ -553,12 +555,10 @@ parameters in a single dictionary when it is created:
   ... }
 
 
-
 Active objects, commands and queries
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 For the initial release of PyCFX with Ansys CFX 2025 R2, all objects and parameters of the
-PostProcessing session are always active. For example, you can set the X parameter for a plane
-with the option set to XY, even though the Z parameter is the only relevant parameter for this option.
-Parameters and objects that are not relevant are ignored by CFD-Post.
+PostProcessing session are always active. For example, you can set the ``X`` parameter for a plane
+with the option set to ``XY``, even though the ``Z`` parameter is the only relevant parameter for this option. Parameters and objects that are not relevant are ignored by CFD-Post.
 
