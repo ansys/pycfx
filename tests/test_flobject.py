@@ -722,7 +722,7 @@ def test_aliases():
     )
     assert warning_log[1].message.args[0] == (
         "\n"
-        "Execute the following code to suppress future warnings like the above:\n"
+        "Execute the following code to suppress future warnings like the previous one:\n"
         "\n"
         ">>> import warnings\n"
         '>>> warnings.filterwarnings("ignore", category=DeprecatedSettingWarning)'
@@ -901,7 +901,7 @@ def test_miscellaneous_functions(pre_load_static_mixer_case: PreProcessing, caps
         )
     except KeyError as e:
         assert str(e) == (
-            "\"'boundary' has no attribute 'Bad Boundary'.\\n"
+            "\"'boundary' has no attribute 'Bad Boundary'.\n"
             "The allowed values are: ['Default Domain Default', 'in1', 'in2', 'out'].\""
         )
     else:
