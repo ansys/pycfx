@@ -34,7 +34,7 @@ from ansys.cfx.core.exceptions import InvalidArgument
 
 def asynchronous(f: Callable) -> Callable:
     """Use for decorating functions that are to execute asynchronously. The decorated
-    function returns a ``future``_ object. Calling the ``result()``_ method on the future object
+    function returns a `future`_ object. Calling the `result()`_ method on the future object
     synchronizes the function execution.
 
     Examples

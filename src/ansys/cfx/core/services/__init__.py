@@ -38,7 +38,7 @@ _service_cls_by_name = {
 
 
 class service_creator:
-    """gRPC service creator."""
+    """Creator for gRPC services."""
 
     def __init__(self, service_name: str):
         self._service_cls = _service_cls_by_name[service_name]
