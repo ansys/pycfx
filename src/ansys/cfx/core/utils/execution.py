@@ -33,8 +33,8 @@ from ansys.cfx.core.exceptions import InvalidArgument
 
 
 def asynchronous(f: Callable) -> Callable:
-    """Use for decorating functions that are to execute asynchronously. The decorated
-    function returns a ``future``_ object. Calling the ``result()``_ method on the future object
+    """Decorate functions that are to execute asynchronously. The decorated
+    function returns a future_ object. Calling the result()_ method on the future object
     synchronizes the function execution.
 
     Examples
@@ -72,7 +72,7 @@ def asynchronous(f: Callable) -> Callable:
 
 
 def timeout_exec(obj, timeout, args=None, kwargs=None):
-    """Executes object with the timeout limit. Tries to return whatever the provided
+    """Execute object with the timeout limit. This function tries to return whatever the provided
     object returns. If the object returns nothing, this function returns ``True``.
     If it times out, it returns ``False``.
 
@@ -128,16 +128,16 @@ def timeout_loop(
     idle_period: float = 0.2,
     expected: str = "truthy",
 ) -> Any:
-    """Loops while specified object does not return expected response. Timeouts after
-    specified time has elapsed. Tries to return whatever is returned by the specified
-    object. If nothing is returned before timeout, returns the opposite of the expected
-    value. For example, ``True`` if ``expected == "falsy"`` and ``False`` if ``expected ==
-    "truthy"``.
+    """Loop while the specified object does not return expected the response. A
+    timeout occurs after the specified time elapses. This function tries to return
+    whatever is returned by the specified object. If nothing is returned before the
+    timeout, it returns the opposite of the expected value. For example, it returns
+    ``True`` if ``expected == "falsy"`` and ``False`` if ``expected == "truthy"``.
 
     Parameters
     ----------
     obj : Any
-        Object to evaluate while looping if it does not return expected response.
+        Object to evaluate while looping if it does not return the expected response.
     timeout : float
         Time before cancelling execution and returning early.
     args : Any, default: None
@@ -157,13 +157,13 @@ def timeout_loop(
 
     Examples
     --------
-    Waiting 5 seconds to see if ``func("test")`` returns True:
+    Waiting 5 seconds to see if ``func("test")`` returns ``True``:
 
     >>> func("test")
     False
     >>> response = timeout_loop(func, timeout=5.0, args=("test",))
 
-    Waiting 5 seconds to see if ``func2("test",word="hello")`` returns False:
+    Waiting 5 seconds to see if ``func2("test",word="hello")`` returns ``False``:
 
     >>> func2("test", word="hello")
     True

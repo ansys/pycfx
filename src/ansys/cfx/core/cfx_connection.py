@@ -20,7 +20,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-"""Provides a module for CFX connection functionality."""
+"""Module for CFX connection functionality."""
 
 from ctypes import c_int, sizeof
 from dataclasses import dataclass
@@ -50,7 +50,7 @@ logger = logging.getLogger("pycfx.general")
 
 
 class InsecureGrpcWarning(Warning):
-    """Warning raised when gRPC connection is insecure."""
+    """Raised when gRPC connection is insecure."""
 
     pass
 
@@ -109,7 +109,7 @@ class PortNotProvided(ValueError):
 
 
 class UnsupportedRemoteCFXInstance(ValueError):
-    """Raised when ``wait_process_finished`` does not support remote CFX session."""
+    """Raised when the ``wait_process_finished`` method does not support remote CFX session."""
 
     def __init__(self):
         super().__init__("Remote CFX instance is unsupported.")
@@ -134,7 +134,7 @@ def _get_max_c_int_limit() -> int:
 
 
 class MonitorThread(threading.Thread):
-    """A class used for monitoring a CFX session.
+    """Monitors a CFX session.
 
     A daemon thread that ensures cleanup of session objects and shut down of
     non-daemon threads.
@@ -188,7 +188,7 @@ def get_container(container_id_or_name: str) -> Union[bool, Container, None]:
 
 
 class ErrorState:
-    """Object to indicate the error state of the connected CFX client.
+    """Indicates the error state of the connected CFX client.
 
     Examples
     --------
@@ -206,12 +206,12 @@ class ErrorState:
 
     @property
     def name(self):
-        """Get name."""
+        """Name of the error state."""
         return self._name
 
     @property
     def details(self):
-        """Get details."""
+        """Additoonal details of the error state."""
         return self._details
 
     def __init__(self, name: str = "", details: str = ""):
@@ -247,7 +247,7 @@ class CFXConnectionProperties:
 
     Examples
     --------
-    These properties are also available through the session object and can be accessed as:
+    These properties are also available through the session object and can be accessed:
 
     >>> import ansys.cfx.core as pycfx
     >>> session = pycfx.launch_cfx()
@@ -409,20 +409,20 @@ class CFXConnection:
         Parameters
         ----------
         ip : str, default: None
-            IP address to connect to existing CFX instance. This parameter is
+            IP address to connect to an existing CFX instance. This parameter is
             used only when ``channel`` is ``None``. When this parameter is ``None``,
             ``"127.0.0.1"`` is used. The IP address can also be set by the ``PYCFX_CFX_IP=<ip>``
             environment variable.
         port : int, default: None
-            Port to connect to existing CFX instance. This parameter is used only
+            Port to connect to an existing CFX instance. This parameter is used only
             when ``channel`` is ``None``. The port can also be set by the ``PYCFX_CFX_PORT=<port>``
             environment variable.
         address : str, default: None
-            Address to connect to existing CFX instance.
+            Address to connect to an existing CFX instance.
         password : str, default: None
-            Password to connect to existing CFX instance.
+            Password to connect to an existing CFX instance.
         channel : grpc.Channel, default: None
-            gRPC channel to use to connect to existing CFX instance.
+            gRPC channel to use to connect to an existing CFX instance.
             The ``ip`` and ``port`` parameters are ignored when a gRPC channel is
             specified.
         allow_remote_host : bool, default: False
@@ -441,7 +441,7 @@ class CFXConnection:
             can be started and stopped subsequently using method calls on the session
             object.
         remote_instance : ansys.platform.instancemanagement.Instance
-           Corresponding remote instance when CFX is launched through
+            Corresponding remote instance when CFX is launched through
             PyPIM. This instance is deleted when calling the
             ``Session.exit()`` function.
         inside_container: bool, default: None
@@ -570,7 +570,7 @@ class CFXConnection:
 
     @property
     def cfx_build_info(self) -> str:
-        """Get CFX build information."""
+        """CFX build information."""
         build_time = self.engine_eval.info_query("Engine Build Time")
         build_id = self.engine_eval.info_query("Engine Build ID")
         rev = self.engine_eval.info_query("Engine Source Revision")
@@ -578,7 +578,7 @@ class CFXConnection:
         return f"Build Time: {build_time}  Build Id: {build_id}  Revision: {rev}  Branch: {branch}"
 
     def force_exit(self):
-        """Immediately terminate the CFX client, which results in losing unsaved progress and data.
+        """Terminate the CFX client immediately, which results in losing unsaved progress and data.
 
         Notes
         -----
@@ -670,13 +670,13 @@ class CFXConnection:
         return service(self._channel, self._metadata, *args)
 
     def wait_process_finished(self, wait: Union[float, int, bool] = 60):
-        """Returns ``True`` if local CFX processes have finished, ``False`` if they
+        """Return ``True`` if local CFX processes have finished, ``False`` if they
         are still running when wait limit (default 60 seconds) is reached. Immediately
         cancels and returns ``None`` if ``wait`` is set to ``False``.
 
         Parameters
         ----------
-        wait : float, int or bool, optional
+        wait : float, int or bool, default: 60
             How long to wait for processes to finish before returning. The default is 60 seconds.
             This parameter can also be set to ``True``, which results in waiting indefinitely.
 

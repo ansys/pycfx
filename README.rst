@@ -110,7 +110,7 @@ To launch CFX from Python using a local installation, run these commands:
 
   import ansys.cfx.core as pycfx
   pypre = pycfx.PreProcessing.from_install()   # Start CFX-Pre
-  pysolve = pycfx.Solver.from_install()        # Start a solver session
+  pysolve = pycfx.Solver.from_install()        # Start a Solver session
   pypost = pycfx.PostProcessing.from_install() # Start CFD-Post
 
 Find examples in the `examples/` folder of the repository.

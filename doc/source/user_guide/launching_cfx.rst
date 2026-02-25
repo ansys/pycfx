@@ -3,7 +3,7 @@
 Launch CFX
 ==========
 
-This page explains how to launch Ansys CFX sessions using PyCFX, the Python interface for CFX.
+This page explains how to launch Ansys CFX sessions using PyCFX.
 
 The initial release of PyCFX with Ansys CFX 2025 R2 Service Pack 3 supports running CFX sessions
 only on the local machine (the same machine where the Python session runs).
@@ -19,7 +19,7 @@ to launch CFX with a locally installed version of Ansys CFX.
 
 Use this method when CFX is installed on your local machine and you want to run CFX only on the local machine.
 
-**Example function calls:**
+**Example calls:**
 
 .. code-block:: python
 
@@ -30,22 +30,22 @@ Use this method when CFX is installed on your local machine and you want to run 
   pysolve = pycfx.Solver.from_install(solver_input_file_name=solver_input_file_name)
 
 Useful arguments for the :meth:`from_install() <ansys.cfx.core.session_utilities.SessionBase.from_container>`
-method include:
+method follow:
 
 .. vale Google.Spacing = YES
 
-- ``product_version``: Specifies the CFX version to launch. If not specified, the method launches
+- ``product_version``: CFX version to launch. If not specified, the method launches
   the latest supported version.
-- ``case_file_name``: Specifies the path to a case file (.cfx) on the local file system to
+- ``case_file_name``: Path to a case file (.cfx) on the local file system to
   initialize a PreProcessing session.
-- ``solver_input_file_name``: Specifies the path to a CFX-Solver Input File (.def or .mdef) on the
+- ``solver_input_file_name``: Path to a CFX-Solver input file (.def or .mdef) on the
   local file system to initialize a Solver session.
-- ``run_directory``: Specifies the run directory (.dir) for an existing CFX-Solver run to initialize a
+- ``run_directory``: Run directory (.dir) for an existing CFX-Solver run to initialize a
   Solver session.
-- ``results_file_name``: Specifies the path to a results file (.res or .mres) on the local file
+- ``results_file_name``: Path to a results file (.res or .mres) on the local file
   system to initialize a Solver or PostProcessing session.
-- ``additional_arguments``: Specifies a list of additional command-line arguments to pass to the
-  ``cfx5pre``/``cfx5solve``/``cfdpost`` commands when launching the session or starting the
+- ``additional_arguments``:List of additional command-line arguments to pass to the
+  ``cfx5pre``, ``cfx5solve``, or ``cfdpost`` commands when launching the session or starting the
   CFX-Solver.
 
 Launch from an existing session
@@ -66,7 +66,7 @@ from the existing session. For example, if you start a PreProcessing session wit
 ``product_version`` argument, a new Solver session initialized from the PreProcessing session
 also uses that argument.
 
-**Example function calls:**
+**Example calls:**
 
 .. code-block:: python
 

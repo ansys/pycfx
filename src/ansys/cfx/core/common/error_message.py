@@ -20,7 +20,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-"""Provides a module to customize exception messages."""
+"""Module for customizing exception messages."""
 
 import difflib
 from functools import partial
@@ -28,7 +28,7 @@ from typing import Any, List, Optional
 
 
 def closest_allowed_names(trial_name: str, allowed_names: str) -> List[str]:
-    """Checks if the ''trial_name'' is closely matching the ''allowed_names''."""
+    """Check if the ``trial_name`` is closely matching the ``allowed_names``."""
     f = partial(difflib.get_close_matches, trial_name, allowed_names)
     return f(cutoff=0.6, n=5) or f(cutoff=0.3, n=1)
 

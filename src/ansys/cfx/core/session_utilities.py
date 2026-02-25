@@ -34,7 +34,7 @@ from ansys.cfx.core.utils.cfx_version import CFXVersion
 
 
 class SessionBase:
-    """Base class for CFX sessions.
+    """Provides the base class for CFX sessions.
 
     This class is not intended to be used directly. Instead, use one of the `from_install()`,
     `from_session()`, `from_connection()`, or `from_container()` methods to create a session.
@@ -344,18 +344,18 @@ class SessionBase:
 
 
 class PreProcessing(SessionBase):
-    """Encapsulates a CFX server for pre-processing session connection."""
+    """Encapsulates a CFX server for PreProcessing session connection."""
 
     pass
 
 
 class Solver(SessionBase):
-    """Encapsulates a CFX server for solver session connection."""
+    """Encapsulates a CFX server for Solver session connection."""
 
     pass
 
 
 class PostProcessing(SessionBase):
-    """Encapsulates a CFX server for post-processing session connection."""
+    """Encapsulates a CFX server for PostProcessing session connection."""
 
     pass

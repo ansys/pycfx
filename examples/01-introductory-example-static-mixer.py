@@ -169,11 +169,12 @@ if physics_messages:
 # Write the CFX-Solver input file
 # -------------------------------
 #
-# This example illustrates a 'file-based' workflow, where each of the three PyCFX components
+# This example uses a *file-based* workflow, where each of the three PyCFX components
 # (PreProcessing, Solver, and PostProcessing) are run independently, with each component being
 # initialized by a file written by the previous component where possible. This allows each
 # component to be run separately, potentially on a different machine configuration, at a different
-# time, or from a different Python session. In contrast, the :ref:`ref_fourier_blade_flutter`
+# time, or from a different Python session. In contrast, the
+# :ref:`Fourier Transformation Blade Flutter case <ref_fourier_blade_flutter>`
 # example shows a workflow where the PyCFX components interact more directly.
 #
 # Write the CFX-Solver input file and close the preprocessing session.

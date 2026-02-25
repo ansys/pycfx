@@ -125,7 +125,7 @@ class SolverController:
                 self._is_multiconfig_or_op = True
 
     def start_run(self) -> None:
-        """Command to start a CFX-Solver run.
+        """Start a CFX-Solver run.
 
         This command can also be used to restart from an existing results file if the Solver
         session has previously completed a successful run or if the Solver session was started
@@ -199,7 +199,7 @@ class SolverController:
         self._solver_input_file = input_file
 
     def stop_run(self, wait_for_run=True) -> None:
-        """Command to stop a CFX-Solver run currently in progress.
+        """Stop a CFX-Solver run currently in progress.
 
         If a run is not currently in progress, the command does nothing.
 

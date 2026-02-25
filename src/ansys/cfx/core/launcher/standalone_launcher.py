@@ -125,15 +125,17 @@ class StandaloneLauncher:
         env : dict[str, str], default: None
             Mapping to modify environment variables in CFX.
         start_container : bool, default: None
-            whether to launch a CFX Docker container image. For more information about containers, see
-            :mod:`~ansys.cfx.core.launcher.cfx_container`.
+            Whether to launch a CFX Docker container image. For more information about containers, see
+            the :mod:`~ansys.cfx.core.launcher.cfx_container` module.
         container_dict : dict, default: None
             Dictionary for CFX Docker container configuration. If specified,
             setting ``start_container = True`` is redundant.
             CFX launches inside a Docker container using the configuration changes specified.
-            See also :mod:`~ansys.cfx.core.launcher.cfx_container`.
+            See also the :mod:`~ansys.cfx.core.launcher.cfx_container` module.
         dry_run : bool, default: False
-            Whether to dry run a container start. If ``True``, CFX is not launched but the configuration information that would be used is printed as if CFX is being launched. If dry running a container start, the``launch_cfx()`` method returns the configured ``container_dict``.
+            Whether to dry run a container start. If ``True``, CFX is not launched but the configuration
+            information that would be used is printed as if CFX is being launched. If dry running a
+            container start, the ``launch_cfx()`` method returns the configured ``container_dict``.
         cleanup_on_exit : bool, default: True
             Whether to shut down the connected CFX session when PyCFX is
             exited, or the ``exit()`` method is called on the session instance,

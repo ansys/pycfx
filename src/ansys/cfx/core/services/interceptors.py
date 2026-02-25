@@ -52,10 +52,10 @@ def _truncate_grpc_str(message: Message) -> str:
 
 
 class TracingInterceptor(grpc.UnaryUnaryClientInterceptor):
-    """Interceptor class to trace gRPC calls."""
+    """Provides an interceptor class for tracing gRPC calls."""
 
     def __init__(self) -> None:
-        """__init__ method of TracingInterceptor class."""
+        """Initialize an instance of the ``TracingInterceptor`` class."""
         super().__init__()
 
     def _intercept_call(
@@ -86,11 +86,11 @@ class TracingInterceptor(grpc.UnaryUnaryClientInterceptor):
 
 
 class ErrorStateInterceptor(grpc.UnaryUnaryClientInterceptor):
-    """Interceptor class to check CFX server error state before gRPC calls are
+    """Provides an interceptor class for checking the CFX server error state before gRPC calls are
     made."""
 
     def __init__(self, cfx_error_state) -> None:
-        """__init__ method of ErrorStateInterceptor class."""
+        """Initialize an instance of the ``ErrorStateInterceptor`` class."""
         super().__init__()
         self._cfx_error_state = cfx_error_state
 
@@ -118,7 +118,7 @@ class ErrorStateInterceptor(grpc.UnaryUnaryClientInterceptor):
 
 
 class GrpcErrorInterceptor(grpc.UnaryUnaryClientInterceptor):
-    """Interceptor class to check CFX server gRPC call response for error state."""
+    """Provides an interceptor class for checking CFX server gRPC call response for an error state."""
 
     def _intercept_call(
         self,
@@ -145,14 +145,14 @@ class GrpcErrorInterceptor(grpc.UnaryUnaryClientInterceptor):
 
 
 class BatchedFuture(grpc.Future):
-    """Class implementing ``gRPC.Future interface``.
+    """Provides a class for implementing ``gRPC.Future interface``.
 
     An instance of ``BatchedFuture`` is returned if the gRPC method is queued to be executed
     in batch later.
     """
 
     def __init__(self, result_cls) -> None:
-        """__init__ method of BatchedFuture class."""
+        """Initialize an instance of the ``BatchedFuture`` class."""
         self._result_cls = result_cls
 
     def cancel(self) -> bool:
@@ -189,10 +189,10 @@ class BatchedFuture(grpc.Future):
 
 
 class BatchInterceptor(grpc.UnaryUnaryClientInterceptor):
-    """Interceptor class to batch gRPC calls."""
+    """Provides an interceptor class for batching gRPC calls."""
 
     def __init__(self) -> None:
-        """__init__ method of BatchInterceptor class."""
+        """Initialize an instance of the ``BatchInterceptor`` class."""
         super().__init__()
 
     def _intercept_call(

@@ -170,7 +170,7 @@ class CFXEnum(Enum):
 
 
 class UIMode(CFXEnum):
-    """Provides supported user interface mode of CFX."""
+    """Provides the supported user interface mode of CFX."""
 
     NO_GUI = ("batch",)
     HIDDEN_GUI = ("",)

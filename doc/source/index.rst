@@ -14,8 +14,8 @@ PyCFX documentation |version|
 
 Welcome to PyCFX
 -----------------
-PyCFX unlocks the power of Ansys CFX through a modern Python interface. It helps engineers and
-developers automate, customize, and streamline CFD workflows with greater flexibility.
+PyCFX provides a modern Python interface to unlock the full potential of Ansys CFX. It empowers
+engineers and developers to automate, customize, and streamline CFD workflows.
 
 Why use PyCFX?
 --------------

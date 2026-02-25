@@ -112,7 +112,7 @@ pypre.file.new_case()
 # Import a mesh
 # -------------
 #
-# The mesh file "R37ATM_60k.gtm" should already have been downloaded to the current working
+# The mesh file, ``R37ATM_60k.gtm``, should already have been downloaded to the current working
 # directory earlier in this script.
 #
 pypre.file.import_mesh(file_name=mesh_file_name)
@@ -121,11 +121,11 @@ pypre.file.import_mesh(file_name=mesh_file_name)
 # Transform the mesh
 # ------------------
 #
-# The imported mesh contains a single passage mesh. The Fourier Transformation method requires two
-# passages, so the mesh must be transformed.
+# The imported mesh contains a single passage mesh. Because the Fourier Transformation method requires two
+# passages, the mesh must be transformed.
 #
 # PyCFX currently requires mesh transformations to be performed using the CFX Command Language
-# (CCL). The 'Passages to Model' is set to 2 to duplicate the original mesh.
+# (CCL). ``Passages to Model`` is set to 2 to duplicate the original mesh.
 #
 mesh_transformation_ccl = """
 MESH TRANSFORMATION:
@@ -149,10 +149,10 @@ pypre.execute_ccl(mesh_transformation_ccl)
 # ------------------
 #
 # The profile describing the frequency and blade mode shape for one blade is provided. In
-# preparation for a two-passage Fourier Transformation setup, the profile needs expanding and
-# initializing to make it ready for use in the boundary condition specifications.
+# preparation for a two-passage Fourier Transformation setup, the profile must be expandedg and
+# initialized to make it ready for use in the boundary condition specifications.
 #
-# The single passage profile file "R37_mode1_1p.csv" should already have been downloaded to the
+# The single passage profile file, ``R37_mode1_1p.csv``, should already have been downloaded to the
 # current working directory earlier in this script.
 #
 # PyCFX currently requires profile expansion and initialization to be performed using the CFX
@@ -189,7 +189,7 @@ pypre.execute_ccl(rotor_profile_ccl)
 # Initialize the inlet profile
 # ----------------------------
 #
-# The inlet profile file, ``R37_inlet.csv`` should already have been downloaded to the
+# The inlet profile file, ``R37_inlet.csv``, should already have been downloaded to the
 # current working directory earlier in this script.
 #
 inlet_profile_ccl = f"""
@@ -201,7 +201,7 @@ pypre.execute_ccl(inlet_profile_ccl)
 # Set up the domain
 # -----------------
 #
-# The automatically-created domain must be deleted before a new domain with a more meaningful
+# The automatically created domain must be deleted before a new domain with a more meaningful
 # name is created.
 #
 del pypre.setup.flow["Flow Analysis 1"].domain["Default Domain"]
@@ -248,7 +248,7 @@ r1_inlet.boundary_type = "INLET"
 r1_inlet.location = "Entire Rotor INFLOW"
 r1_inlet.frame_type = "Stationary"
 ###################################################################################################
-# Use the "Generate Values" functionality to auto-fill some boundary condition settings from the
+# Use the functionality for generating values to auto-fill some boundary condition settings from the
 # profile.
 #
 r1_inlet.use_profile_data = True
@@ -389,13 +389,13 @@ if physics_messages:
 # Initialize a Solver session
 # ---------------------------
 #
-# This example illustrates a workflow where the three different PyCFX components (PreProcessing,
-# Solver and PostProcessing) interact directly, in contrast to the :ref:`ref_static_mixer`
+# This example uses a workflow where the three different PyCFX components (PreProcessing,
+# Solver and PostProcessing) interact directly, in contrast to the :ref:`Static mixer <ref_static_mixer>`
 # example, which shows a workflow based around writing files.
 pypre.file.save_case(file_name="fourier_blade_flutter_ini.cfx")
 
 ###################################################################################################
-# The 'case_file_name' is only needed for CFX 2025 R2 as it can be deduced from the
+# The ``case_file_name`` is only needed for CFX 2025 R2 as it can be deduced from the
 # PreProcessing case name in later releases.
 if pypre.get_cfx_version() > CFXVersion.v252:
     pysolve_ini = pycfx.Solver.from_session(pypre)
@@ -568,7 +568,7 @@ if physics_messages:
 # Start the Solver session for the time integration setup
 # -------------------------------------------------------
 #
-# To set up the initial conditions for the time integration run, the previously-started solver run
+# To set up the initial conditions for the time integration run, the previously started solver run
 # must have completed.
 pysolve_ini.solution.wait_for_run()
 initial_results_file = pysolve_ini.solution.get_results_file_name()
@@ -638,7 +638,7 @@ if physics_messages:
 # -------------------------------------------------------
 #
 # The harmonic balance setup can use the same initial conditions as the time integration setup.
-# Thus, these do not need to be set up again.
+# Thus, initial conditions do not need to be set up again.
 #
 pypre.file.save_case(file_name="fourier_blade_flutter_harmonic.cfx")
 if pypre.get_cfx_version() > CFXVersion.v252:

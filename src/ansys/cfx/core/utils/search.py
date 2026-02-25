@@ -20,7 +20,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-"""Provides a module to search for a word through the CFX's object hierarchy."""
+"""Module for searching for a word through the CFX's object hierarchy."""
 
 from collections.abc import Mapping
 from pathlib import Path
@@ -35,7 +35,7 @@ from ansys.cfx.core.utils.cfx_version import CFXVersion, get_version_for_file_na
 
 
 def get_api_tree_file_name(version: str, pycfx_path: str) -> Path:
-    """Get API tree file name."""
+    """Get the API tree file name."""
     from ansys.cfx.core import CODEGEN_OUTDIR
 
     return (CODEGEN_OUTDIR / f"api_tree_{version}.pickle").resolve()

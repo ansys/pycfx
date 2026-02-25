@@ -57,7 +57,7 @@ logger = logging.getLogger("pycfx.launcher")
 
 
 def create_launcher(cfx_launch_mode: LaunchMode = None, **kwargs):
-    """Factory function to create launcher for supported launch modes.
+    """Use a factory function to create a launcher for supported launch modes.
 
     Parameters
     ----------
@@ -120,7 +120,7 @@ def launch_cfx(
     file_transfer_service: Optional[Any] = None,
     **kwargs,
 ) -> Union[PreProcessing, Solver, PostProcessing, dict]:
-    """Launches CFX locally in server mode or connects to a running CFX server
+    """Launch CFX locally in server mode or connect to a running CFX server
     instance.
 
     Parameters
@@ -150,7 +150,10 @@ def launch_cfx(
         CFX launches inside a Docker container using the configuration changes specified.
         See also :mod:`~ansys.cfx.core.launcher.cfx_container`.
     dry_run : bool, default: False
-        Whether to dry run a container start. If ``True``, CFX is not launched but the configuration information that would be used is printed as if CFX is being launched. If dry running a container start, the``launch_cfx()`` method returns the configured ``container_dict``.
+        Whether to dry run a container start. If ``True``, CFX is not launched but the
+        configuration information that would be used is printed as if CFX is being launched.
+        If dry running a container start, the ``launch_cfx()`` method returns the
+        configured ``container_dict``.
     cleanup_on_exit : bool, default: True
         Whether to shut down the connected CFX session when PyCFX is
         exited, or the ``exit()`` method is called on the session instance,
@@ -182,7 +185,8 @@ def launch_cfx(
     start_watchdog : bool, default: None
         When ``cleanup_on_exit`` is ``True``, ``start_watchdog`` defaults to ``True``,
         which means an independent watchdog process is run to ensure
-        that any local GUI-less CFX sessions started by PyCFX are properly closed (or killed if frozen) when the current Python process ends.
+        that any local GUI-less CFX sessions started by PyCFX are properly closed (or
+        killed if frozen) when the current Python process ends.
     scheduler_options : dict, default: None
         Dictionary containing scheduler (such as Slurm scheduler) options.
     file_transfer_service : default: None
@@ -243,7 +247,7 @@ def connect_to_cfx(
     insecure_mode: bool = False,
     start_watchdog: Optional[bool] = None,
 ) -> Union[PreProcessing, Solver, PostProcessing]:
-    """Connects to an existing CFX server instance.
+    """Connect to an existing CFX server instance.
 
     Parameters
     ----------
@@ -258,17 +262,17 @@ def connect_to_cfx(
         value. The explicit value of the ``port`` parameter takes precedence over
         the ``PYCFX_CFX_PORT=<port>`` environment variable.
     address : str, default: None
-        Address to connect to existing CFX instance.
+        Address to connect to an existing CFX instance.
     cleanup_on_exit : bool, default: False
         Whether to shut down the connected CFX session when PyCFX is
-        exited, or the ``exit()`` method is called on the session instance,
+        exited, or if the ``exit()`` method is called on the session instance,
         or if the session instance becomes unreferenced.
     start_transcript : bool, default: False
         Whether to start streaming the CFX transcript in the client. You can
         stop and start the streaming of the CFX transcript subsequently using
         the ``transcript.start()`` and ``transcript.stop()`` methods on the session object.
     server_info_file_name: str, default: None
-        Path to THE server information file written out by CFX server. PyCFX uses
+        Path to the server information file written out by CFX server. PyCFX uses
         the connection information in the file to connect to a running CFX session.
     password : str, default: None
         Password to connect to an existing CFX instance.

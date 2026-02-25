@@ -51,26 +51,27 @@ length limit if you have long file paths.
 
 Where can I find source code and documentation?
 -----------------------------------------------
-All PyAnsys public libraries are available on the `PyAnsys GitHub account
-<https://github.com/pyansys>`_. The **Repositories** page displays the number of
+All PyAnsys public libraries are available on the `Ansys GitHub account
+<https://github.com/ansys>`_. The **Repositories** page displays the number of
 repositories, which you can search by name. For example, to find all PyCFX
 libraries, type ``pycfx`` in the search field.
 
-The ``README.md`` file for the PyAnsys GitHub account lists the public PyAnsys
-libraries. The links in this list lead to the documentation for the respective
-libraries. In addition to general usage information, the documentation for a
-library includes practical examples.
+The ``README.md`` file for the Ansys GitHub account lists the public PyAnsys
+libraries. The links in this list lead to the repositories for the respective
+libraries, where you can access their documentation. In addition to providing
+general usage information, the documentation for a library includes practical
+examples.
 
 .. _faqs_cfxloc:
 
 How does PyCFX find the location to launch CFX?
 -----------------------------------------------
-PyCFX locates installed Ansys versions based on environment variables of the form
+PyCFX locates installed Ansys versions based on environment variables in the form
 ``AWP_ROOT<version>``, where ``<version>`` is a release number such as ``252`` for
 Ansys 2025 R2. The corresponding environment variable is automatically configured on Windows
-systems when you install a new Ansys release. On Linux systems, you must configure
-``AWP_ROOT<version>`` to point to the absolute path of any Ansys installation that you want to use
-with PyCFX. For example:
+systems when you install a new Ansys release. On Linux systems, you must configure the
+``AWP_ROOT<version>`` environment variable to point to the absolute path of any
+Ansys installation that you want to use with PyCFX. For example:
 
 .. code-block:: console
 
@@ -95,13 +96,13 @@ How can I learn to use PyCFX?
 Depending on your preferences, you can use any or all of these methods to
 learn how to use PyCFX:
 
-- Review the examples in the :ref:`ref_example_gallery`.
+- Review :ref:`ref_example_gallery`.
 - Write scripts using capabilities such as these:
 
   - IntelliSense to show available options for any given command. For example,
     in `JupyterLab <https://jupyter.org/>`_, press the tab key.
   - Standard Python or PyAnsys tooling to print options related to a specified
-    object. For example, use ``dir (<object>)`` or ``help (<object>)``.
+    object. For example, use the ``dir (<object>)`` or ``help (<object>)`` functions.
 
 How do I set up JupyterLab for better code completion with PyCFX?
 -----------------------------------------------------------------
@@ -125,7 +126,7 @@ feature requests in their respective GitHub repositories.
 - For discussions about developer tools, engineering simulation, and physics for
   Ansys software, visit the `Ansys Developer Portal <https://developer.ansys.com/>`_.
 
-The `Ansys developer forum <https://discuss.ansys.com/>`_ page is where users, partners,
+The `Ansys developer forum <https://discuss.ansys.com/>`_ is where users, partners,
 students, and Ansys subject matter experts connect, share ideas, discuss the latest
 technologies, and ask questions to quickly get help and guidance. On this
 page, you can filter discussions by category or apply the **CFX** tag to view

@@ -34,6 +34,7 @@ logger = logging.getLogger("pycfx.general")
 
 class PostProcessing(BaseSession):
     """Encapsulates a CFX post-processing session.
+
     This object exposes the CFD-Post CCL and scripting (Power Syntax)
     capabilities in a Pythonic manner."
     """
@@ -43,7 +44,7 @@ class PostProcessing(BaseSession):
         cfx_connection: CFXConnection,
         file_transfer_service: Optional[Any] = None,
     ):
-        """PostProcessing session.
+        """Instantiate an instance of the ``PostProcessing`` class.
 
         Args:
             cfx_connection (:ref:`ref_cfx_connection`): Encapsulates a CFX connection.
