@@ -176,9 +176,7 @@ In CFX, expressions are CCL parameters:
     END
   END
 
-However, in PyCFX, each expression is a Group object within the ``expressions`` container. Expression
-values must be set with the ``definition`` attribute. Examples of creating and using expressions
-are shown below.
+However, in PyCFX, each expression is a ``Group`` object within the ``expressions`` container. Expression values must be set with the ``definition`` attribute. Examples of creating and using expressions follow.
 
 .. code-block:: python
 
