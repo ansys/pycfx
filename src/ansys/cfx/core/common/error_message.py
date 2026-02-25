@@ -43,7 +43,9 @@ def allowed_name_error_message(
     the ``allowed_values`` list."""
     if not message:
         message = f"'{context}' has no attribute '{trial_name}'."
-    message += ".\n"
+    if not message.endswith("."):
+        message += "."
+    message += "\n"
     matches = None
     if allowed_values:
         if isinstance(allowed_values, list) and isinstance(allowed_values[0], str):

@@ -127,8 +127,9 @@ class SolverController:
     def start_run(self) -> None:
         """Command to start a CFX-Solver run.
 
-        This command can also be used to restart from an existing results file if the Solver session has previously completed a successful run or if the Solver session was started with a
-        `'results_file_name`` argument.
+        This command can also be used to restart from an existing results file if the Solver
+        session has previously completed a successful run or if the Solver session was started
+        with a `'results_file_name`` argument.
 
         Execution control is read from the CFX-Solver input file.
 
@@ -205,7 +206,9 @@ class SolverController:
         Parameters
         ----------
         wait_for_run : bool, default: True
-            Whether not to run the command until the run has actually stopped. Depending on the problem setup, this could take a long time as the CFX-Solver must complete the iteration or timestep that is in progress and then write a results file.
+            Whether to wait for the run to complete before returning from the command, Depending
+            on the problem setup, this could take a long time as the CFX-Solver must complete
+            the iteration or timestep that is in progress and then write a results file.
 
         """
         self._update_status()
@@ -376,7 +379,7 @@ class SolverController:
     def _set_solver_input_file(self, solver_input_file_name):
         if self._state != self.RunState.NONE and self._state != self.RunState.DEFINED:
             raise RuntimeError(
-                "The solver input file cannot be set if the run is already in progress. Complete "
+                "The solver input file cannot be set if the run is already in progress, complete "
                 "or in an error state."
             )
         solver_input_file_host_path = (

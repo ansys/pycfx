@@ -901,7 +901,7 @@ def test_miscellaneous_functions(pre_load_static_mixer_case: PreProcessing, caps
         )
     except KeyError as e:
         assert str(e) == (
-            "\"'boundary' has no attribute 'Bad Boundary'.\n"
+            "\"'boundary' has no attribute 'Bad Boundary'.\\n"
             "The allowed values are: ['Default Domain Default', 'in1', 'in2', 'out'].\""
         )
     else:
@@ -914,7 +914,8 @@ def test_miscellaneous_functions(pre_load_static_mixer_case: PreProcessing, caps
     except AttributeError as e:
         msg = (
             "'boundary_conditions' object has no attribute 'option'.\n"
-            "The most similar names are: mesh_motion..\nThe most similar names are: mesh_motion."
+            "The most similar names are: mesh_motion.\n"
+            "The most similar names are: mesh_motion."
         )
         assert str(e) == msg
     else:

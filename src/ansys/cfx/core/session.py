@@ -78,7 +78,7 @@ class BaseSession:
     create_from_server_info_file(
         server_info_file_name, cleanup_on_exit, start_transcript
         )
-        Create a session instance from server information file.
+        Create a ``Session`` instance from server information file.
 
     exit()
         Close the CFX connection and exit CFX.
@@ -141,7 +141,7 @@ class BaseSession:
             self._cfx_connection.register_finalizer_cb(obj.stop)
 
     def is_server_healthy(self) -> bool:
-        """Whether the current session is healthy (that is the server is 'SERVING')."""
+        """Check if the current session is healthy."""
         return self.health_check_service.is_serving
 
     @property
@@ -156,7 +156,7 @@ class BaseSession:
         file_transfer_service: Optional[Any] = None,
         **connection_kwargs,
     ):
-        """Create a session instance from server information file.
+        """Create a ``Session`` instance from server information file.
 
         Parameters
         ----------

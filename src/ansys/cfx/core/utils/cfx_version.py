@@ -106,13 +106,13 @@ class CFXVersion(Enum):
 
     @classmethod
     def get_latest_installed(cls):
-        """Get the version member corresponding to the most recent, available Ansys
+        """Get the version corresponding to the most recent, available Ansys
         installation.
 
         Returns
         -------
         CFXVersion
-            CFXVersion member corresponding to the newest CFX version.
+            CFXVersion corresponding to the newest CFX version.
 
         Raises
         ------
@@ -127,23 +127,23 @@ class CFXVersion(Enum):
 
     @classmethod
     def current_release(cls):
-        """Get the version member of the current release.
+        """Get the version of the current release.
 
         Returns
         -------
         CFXVersion
-            CFXVersion member corresponding to the latest release.
+            CFXVersion corresponding to the latest release.
         """
         return cls(pycfx.CFX_RELEASE_VERSION)
 
     @classmethod
     def current_dev(cls):
-        """Get the version member of the current development version.
+        """Get the version of the current development version.
 
         Returns
         -------
         CFXVersion
-            CFXVersion member corresponding to the latest development version.
+            CFXVersion corresponding to the latest development version.
         """
         return cls(pycfx.CFX_DEV_VERSION)
 

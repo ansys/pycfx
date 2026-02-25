@@ -39,7 +39,7 @@ def asynchronous(f: Callable) -> Callable:
 
     Examples
     --------
-    Asynchronous execution using an @asynchronous decorator:
+    Asynchronous execution using the @asynchronous decorator:
 
     >>> import ansys.cfx.core as pycfx
     >>> pysolve = pycfx.Solver.from_install(solver_input_file_name = "<name1>")

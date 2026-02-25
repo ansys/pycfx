@@ -90,10 +90,14 @@ class SessionBase:
             Whether to shut down the connected CFX session when exiting PyCFX or calling
             the session's `exit()` method.
         dry_run : bool, default: False
-            Whether to dry run a container start. If ``True``, CFX is not launched but the configuration information that would be used is printed as if CFX is being launched. The `call()` method returns a tuple containing the launch string and name of the server information file.
+            Whether to dry run a container start. If ``True``, CFX is not launched but the
+            configuration information that would be used is printed as if CFX is being launched.
+            The `call()` method returns a tuple containing the launch string and name of the
+            server information file.
         start_transcript : bool, default: True
             Whether to start streaming the CFX transcript in the client.
-            Streaming can be controlled using the `transcript.start()` and `transcript.stop()` methods on the session object.
+            Streaming can be controlled using the `transcript.start()` and `transcript.stop()`
+            methods on the session object.
         case_file_name : str, default: None
             Name of the case file to read into a CFX-Pre session.
         run_directory : str, default: None
@@ -105,9 +109,12 @@ class SessionBase:
         cwd : str, default: None, default: None
             Working directory for the CFX client.
         topy : bool or str, default: None
-            A flag indicating whether to write equivalent Python journals from provided journal files. You can also specify a filename for a new Python journal.
+            A flag indicating whether to write equivalent Python journals from provided journal
+            files. You can also specify a filename for a new Python journal.
         start_watchdog : bool, default: None
-            When ``cleanup_on_exit`` is ``True``, this parameter defaults to ``True``. An independent watchdog process ensures that any local GUI-less CFX sessions started by PyCFX are properly closed when the current Python process ends.
+            When ``cleanup_on_exit`` is ``True``, this parameter defaults to ``True``. An
+            independent watchdog process ensures that any local GUI-less CFX sessions started by
+            PyCFX are properly closed when the current Python process ends.
         file_transfer_service : Any, default: None
             Service for uploading or downloading files to or from the server.
 
@@ -118,7 +125,8 @@ class SessionBase:
 
         Notes
         -----
-        In job scheduler environments (such as SLURM, LSF, PBS), resources and compute nodes are allocated, and core counts are queried from these environments before being passed to CFX.
+        In job scheduler environments (such as SLURM, LSF, PBS), resources and compute nodes are
+        allocated, and core counts are queried from these environments before being passed to CFX.
         """
         mode = cls._session_mode[cls.__name__]
         argvals = locals().copy()
@@ -150,7 +158,8 @@ class SessionBase:
             User interface mode for CFX. Options correspond to values in the ``UIMode`` enum.
         product_version :  CFXVersion or str or float or int, default: None
             Version of Ansys CFX to launch. For example, to use version 2025 R2, pass
-            any of ``CFXVersion.v252``, ``"25.2.0"``, ``"25.2"``, ``25.2``, or ``252``. The default is ``None``, in which case the newest installed version is launched.
+            any of ``CFXVersion.v252``, ``"25.2.0"``, ``"25.2"``, ``25.2``, or ``252``. The
+            default is ``None``, in which case the newest installed version is launched.
             which uses the newest installed version.
         start_timeout : int, default: 60
             Maximum allowable time in seconds for connecting to the CFX server.
@@ -160,15 +169,21 @@ class SessionBase:
             Configuration dictionary for launching CFX inside a Docker container. See also
             :mod:`~ansys.cfx.core.launcher.cfx_container`.
         dry_run : bool, default: False
-            Whether to dry run a container start. If ``True``, CFX is not launched but the configuration information that would be used is printed as if CFX is being launched. If dry running a container start, this method returnS the configured ``container_dict`` argument.
+            Whether to dry run a container start. If ``True``, CFX is not launched but the
+            configuration information that would be used is printed as if CFX is being launched.
+            If dry running a container start, this method returns the configured
+            ``container_dict`` argument.
         cleanup_on_exit : bool, default: True
             Whether to shut down the connected CFX session on exit or when calling
             the session's `exit()` method.
         start_transcript : bool, default: True
             Whether to start streaming the CFX transcript in the client.
-            streaming can be controlled using the `transcript.start()` and `transcript.stop()` methods on the session object.
+            streaming can be controlled using the `transcript.start()` and `transcript.stop()`
+            methods on the session object.
         start_watchdog : bool, default: None
-            If ``True`` and ``cleanup_on_exit`` is ``True``, an independent watchdog process is run to ensure that any local GUI-less CFX sessions started by PyCFX are properly closed when the current Python process ends.
+            If ``True`` and ``cleanup_on_exit`` is ``True``, an independent watchdog process
+            is run to ensure that any local GUI-less CFX sessions started by PyCFX are properly
+            closed when the current Python process ends.
         file_transfer_service : Any, default: None
             Service for uploading or downloading files to or from the server.
         solver_input_file_name : str, default: None
@@ -186,7 +201,9 @@ class SessionBase:
 
         Notes
         -----
-        In job scheduler environments (such as SLURM, LSF, and PBS), resources and compute nodes are allocated, and core counts are queried from these environments before being passed to CFX.
+        In job scheduler environments (such as SLURM, LSF, and PBS), resources and compute nodes
+        are allocated, and core counts are queried from these environments before being passed to
+        CFX.
         """
         mode = cls._session_mode[cls.__name__]
         argvals = locals().copy()

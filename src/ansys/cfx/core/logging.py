@@ -236,8 +236,10 @@ def configure_env_var() -> None:
     Notes
     -----
     The usual way to enable PyCFX logging to file is by using the :func:`enable()` function.
-    Settomg ``PYCFX_LOGGING`` to ``0`` or ``OFF`` is the same as if no environment variable was set.
-    If logging debug output to file by default is desired, without having to use the :func:`enable()` function every time, set the ``PYCFX_LOGGING`` environment variable to ``DEBUG``.
+    Setting ``PYCFX_LOGGING`` to ``0`` or ``OFF`` is the same as if no environment variable was
+    set. If logging debug output to file by default is desired, without having to use the
+    :func:`enable()` function every time, set the ``PYCFX_LOGGING`` environment variable to
+    ``DEBUG``.
     """
     env_logging_level = os.getenv("PYCFX_LOGGING")
     if env_logging_level:

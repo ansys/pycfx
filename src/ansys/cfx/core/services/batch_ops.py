@@ -76,11 +76,12 @@ class BatchOps:
 
     Operations that perform queries in CFX are executed immediately, while others are
     queued for batch execution. Some queries are executed behind the scenes while
-    queuing an operation for batch execution. Develoeprs must ensure that they do not
+    queuing an operation for batch execution. Developers must ensure that they do not
     depend on previously queued operations.
 
 
-    For example, the following code throws a ``KeyError`` as ``pypost.results.plane["Plane 1"]`` attempts to access the ``Plane 1`` named object which has not been created yet.t.
+    For example, the following code throws a ``KeyError`` as ``pypost.results.plane["Plane 1"]``
+    attempts to access the ``Plane 1`` named object which has not been created yet.
 
     >>> pypost = pycfx.PostProcessing.from_install()
     >>> with pycfx.BatchOps(pypost):
@@ -195,8 +196,7 @@ class BatchOps:
                 self._ops[i].update_result(response.status, response.response_body)
 
     def add_op(self, package: str, service: str, method: str, request: Message) -> Op:
-        """Queue a single batch operation. Only the non-getter operations is
-        queued.
+        """Queue a single batch operation. Only the non-getter operations are queued.
 
         Parameters
         ----------

@@ -678,7 +678,7 @@ class CFXConnection:
         ----------
         wait : float, int or bool, optional
             How long to wait for processes to finish before returning. The default is 60 seconds.
-            This parameter ca also be set to ``True``, which results in waiting indefinitely.
+            This parameter can also be set to ``True``, which results in waiting indefinitely.
 
         Raises
         ------
@@ -730,16 +730,19 @@ class CFXConnection:
         ----------
         timeout : float, default: None
             Time in seconds before considering that the exit request has timed out.
-            If omitted or specified as ``None``, the request does not time out and locks up the interpreter while waiting for a response. The request returns earlier if it succeeds earlier.
+            If omitted or specified as ``None``, the request does not time out and locks up the
+            interpreter while waiting for a response. The request returns earlier if it succeeds
+            earlier.
         timeout_force : bool, default: True
             Whether to attempt to terminate the CFX process if the exit request reached timeout.
-            If no timeout is set, this option is ignored. Executes the :func:`force_exit()` or :func:`force_exit_container()` function to terminate the CFX process,
+            If no timeout is set, this option is ignored. Executes the :func:`force_exit()` or
+            :func:`force_exit_container()` function to terminate the CFX process,
             depending on how CFX was launched.
         wait : float, int or bool, default: False
             Whether to wait for local CFX processes to finish completely before proceeding.
             If omitted or specified as ``False``, the request proceeds as usual without
             waiting for the CFX processes to finish. If this parameter is set
-           to ``True`` the request waits for up to 60 seconds  by default.
+            to ``True`` the request waits for up to 60 seconds by default.
             The wait limit can be specified as a float or integer value.
             If the wait limit is reached, the request forcefully terminate the CFX process.
             If it is set to wait, it returns as soon as the processes completely finishes.
@@ -747,7 +750,11 @@ class CFXConnection:
 
         Notes
         -----
-        The ``PYCFX_TIMEOUT_FORCE_EXIT`` environment variable can also be used to specify the number of seconds and alter the default ``timeout`` value. Setting this environment variable to a non-number value, such as ``OFF``, returns this function to the default behavior. Note that the environment variable is ignored if a timeout is specified when calling this function.
+        The ``PYCFX_TIMEOUT_FORCE_EXIT`` environment variable can also be used to specify the
+        number of seconds and alter the default ``timeout`` value. Setting this environment
+        variable to a non-number value, such as ``OFF``, returns this function to the default
+        behavior. Note that the environment variable is ignored if a timeout is specified when
+        calling this function.
 
         Examples
         --------

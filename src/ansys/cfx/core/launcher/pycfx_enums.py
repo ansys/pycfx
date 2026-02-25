@@ -117,7 +117,7 @@ class CFXMode(Enum):
 
     @staticmethod
     def is_post(mode: "CFXMode") -> bool:
-        """Check if the current mode is post-processing.
+        """Check if the current mode is postprocessing.
 
         Parameters
         ----------

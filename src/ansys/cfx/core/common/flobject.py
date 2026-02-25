@@ -433,7 +433,7 @@ class Property(Base):
 
 
 class Numerical(Property):
-    """Exposes attribute accessor on settings object. This cass is specific to numerical objects."""
+    """Exposes attribute accessor on settings object. This class is specific to numerical objects."""
 
     def min(self):
         """Get the minimum value of the object."""
@@ -488,9 +488,9 @@ class RealNumerical(Numerical):
 
         Parameters
         ----------
-        state
-            Type of state, which can be float, str (representing either
-            an expression or a value with units), or an ansys.units.Quantity.
+        state : float | str | ansys.units.Quantity
+            The parameter value to set. If a str is provided, it may contain either
+            an expression or a value with units.
         kwargs : Any
             Keyword arguments.
 
@@ -1478,8 +1478,7 @@ def _get_new_keywords(obj, args, kwds):
             else:
                 raise RuntimeError(
                     "Argument '" + str(k) + "' is invalid."
-                )  # pragma: no cover (no \
-            # testable route to error)
+                )  # pragma: no cover (no testable route to error)
     return newkwds
 
 
@@ -1657,14 +1656,7 @@ def _clean_helpinfo(helpinfo):
 class _ChildNamedObjectAccessorMixin(collections.abc.MutableMapping):  # pragma: no cover \
     # (inclusion of child named objects not used)
     """A mixin class to provide a dictionary interface at a Group class level if the
-    Group has multiple named objects of a similar type. For example, boundary conditions
-    are grouped by type but quite often you want to access them without the type context.
-
-    The following can be used, even though actual boundary conditions are stored one
-    level lower to ``boundary_conditions``:
-    for name, boundary in setup.boundary_conditions.items():
-        print (name, boundary())
-
+    Group has multiple named objects of a similar type.
     """
 
     def __getitem__(self, name):
