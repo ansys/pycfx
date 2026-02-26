@@ -42,7 +42,10 @@ def _update_first_level(d, u):
 @click.option(
     "--pycfx-path",
     "pycfx_path",
-    help="Specify the pycfx installation folder to patch, with a full path e.g. '/my-venv/Lib/site-packages'.",
+    help=(
+        "Specify the pycfx installation folder to patch, with a full path e.g. "
+        "'/my-venv/Lib/site-packages'."
+    ),
 )
 @click.option(
     "--ansys-version",

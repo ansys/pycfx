@@ -573,7 +573,8 @@ class _Alias:
                 )
                 if not _Alias.once:
                     warnings.warn(
-                        "\nExecute the following code to suppress future warnings like the above:\n\n"
+                        "\nExecute the following code to suppress future warnings like the "
+                        "above:\n\n"
                         ">>> import warnings\n"
                         '>>> warnings.filterwarnings("ignore", category=DeprecatedSettingWarning)',
                         DeprecatedSettingWarning,

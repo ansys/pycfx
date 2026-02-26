@@ -32,13 +32,17 @@ Running this module requires CFX to be installed.
 Process
 -------
     - Launch CFX and get static info. Parse the class with flobject.get_cls()
-    - Generate a dictionary of unique classes with their hash as a key and a tuple of cls, children hash, commands hash, arguments hash, child object type hash as value.
+    - Generate a dictionary of unique classes with their hash as a key and a tuple of cls, children
+      hash, commands hash, arguments hash, child object type hash as value.
     - - This eliminates reduandancy and only unique classes are written.
-    - Generate .py files for the classes in hash dictionary. Resolve named conflicts with integer suffix.
+    - Generate .py files for the classes in hash dictionary. Resolve named conflicts with integer
+      suffix.
     - - Populate files dictionary with hash as key and file name as value.
-    - - child_object_type handled specially to avoid a lot of files with same name and to provide more insight of the child.
+    - - child_object_type handled specially to avoid a lot of files with same name and to provide
+        more insight of the child.
     - Populate the classes.
-    - - For writing the import statements, get the hash of the child/command/argument/named object stored in the hash dict tuple value.
+    - - For writing the import statements, get the hash of the child/command/argument/named object
+        stored in the hash dict tuple value.
     - - Use that hash to locate the corresponding children file name in the hash dict.
 
 Usage
@@ -356,7 +360,8 @@ def _populate_classes(parent_dir):
             # class name
             class_def_str = (
                 f"\n{istr}class {cls_name}"
-                f'({", ".join(f"{c.__name__}[{hash_dict.get(object_hash)[0].__name__}]" if object_hash else c.__name__ for c in cls.__bases__)}):\n'
+                f'({", ".join(f"{c.__name__}[{hash_dict.get(object_hash)[0].__name__}]"
+                              if object_hash else c.__name__ for c in cls.__bases__)}):\n'
             )
             f.write(class_def_str)
             if stub_f:
