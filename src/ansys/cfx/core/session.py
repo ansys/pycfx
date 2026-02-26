@@ -89,7 +89,7 @@ class BaseSession:
         cfx_connection: CFXConnection,
         file_transfer_service: Optional[Any] = None,
     ):
-        """BaseSession.
+        """Instantiates an instance of the ``BaseSession`` class.
 
         Args:
             cfx_connection (:ref:`ref_cfx_connection`): Encapsulates a CFX connection.
@@ -106,7 +106,7 @@ class BaseSession:
         cfx_connection: CFXConnection,
         file_transfer_service: Optional[Any] = None,
     ):
-        """Build a BaseSession object from cfx_connection object."""
+        """Build a ``BaseSession`` object from a ``cfx_connection`` object."""
         self._cfx_connection = cfx_connection
         self._file_transfer_service = file_transfer_service
         self._error_state = cfx_connection._error_state
@@ -146,7 +146,7 @@ class BaseSession:
 
     @property
     def id(self) -> str:
-        """Get the session ID."""
+        """Session ID."""
         return self._cfx_connection._id
 
     @classmethod
@@ -257,7 +257,7 @@ class BaseSession:
         self._cfx_connection.exit(**kwargs)
 
     def force_exit(self) -> None:
-        """Immediately terminate the CFX session, losing unsaved progress and
+        """Terminate the CFX session immediately, losing unsaved progress and
         data."""
         self._cfx_connection.force_exit()
 

@@ -1,7 +1,7 @@
 .. _ref_logging_guide:
 
-Logging
-=======
+Configure logging
+=================
 
 PyCFX uses the logging API that the Python standard library provides. For more information, see `Logging -- Logging facility for Python`_ in the Python documentation.
 PyCFX includes multiple loggers and provides a ``logging_config.yaml`` file in the standard

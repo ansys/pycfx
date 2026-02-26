@@ -23,9 +23,9 @@ PyCFX sessions
 
 PyCFX provides three types of session objects:
 
-- PreProcessing: Connects to CFX-Pre to set up simulations.
-- Solver: Controls the CFX-Solver.
-- PostProcessing: Connects to CFD-Post to postprocess simulation results.
+- **PreProcessing**: Connects to CFX-Pre to set up simulations.
+- **Solver**: Controls the CFX-Solver.
+- **PostProcessing**: Connects to CFD-Post to postprocess simulation results.
 
 To set up, solve, and postprocess a CFD simulation with PyCFX, you create and modify instances of these session objects.
 
@@ -38,7 +38,7 @@ You can initialize session objects in three ways:
 - From files, such as opening a results file in a PostProcessing session.
 - From an existing session, such as starting a Solver session from a PreProcessing session.
 
-The :ref:`Static Mixer <ref_static_mixer>` example shows initialization from scratch or files. The :ref:`Fourier Blade Flutter <ref_fourier_blade_flutter>` example shows initialization from another session.
+The :ref:`Static mixer <ref_static_mixer>` example shows initialization from scratch or files. The :ref:`Fourier Blade Flutter <ref_fourier_blade_flutter>` example shows initialization from another session.
 
 For more information on starting a PyCFX session, see :ref:`Launch CFX <ref_launch_guide>`.
 

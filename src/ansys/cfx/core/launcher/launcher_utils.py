@@ -50,7 +50,7 @@ def is_windows():
 
 
 def check_docker_support():
-    """Check whether Python Docker SDK is supported by the current system."""
+    """Check if the Python Docker SDK is supported by the current system."""
     import docker
 
     try:

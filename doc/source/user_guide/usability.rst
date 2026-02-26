@@ -1,7 +1,7 @@
 .. _ref_usability_features:
 
-Usability features
-==================
+Explore usability features
+==========================
 
 API search
 ----------

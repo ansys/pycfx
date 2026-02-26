@@ -39,7 +39,7 @@ class PreProcessing(BaseSession):
         cfx_connection: CFXConnection,
         file_transfer_service: Optional[Any] = None,
     ):
-        """PreProcessing session.
+        """Instantiate an instance of the ``PreProcessing`` class.
 
         Args:
             cfx_connection (:ref:`ref_cfx_connection`): Encapsulates a CFX connection.

@@ -20,7 +20,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-"""Module to launch the PyCFX Watchdog to monitor PyCFX and the CFX server.
+"""Module for launching the PyCFX Watchdog to monitor the PyCFX and the CFX server.
 
 This module should not be used manually. PyCFX automatically manages it.
 For more information, see the ``start_watchdog`` argument for the :func:`~ansys.cfx.core.launcher.launcher.launch_cfx()` function.
@@ -45,7 +45,7 @@ WATCHDOG_INIT_FILE = "watchdog_{}_init"
 
 
 class UnsuccessfulWatchdogLaunch(RuntimeError):
-    """Raised when watchdog launch is unsuccessful."""
+    """Raised when Watchdog launch is unsuccessful."""
 
     pass
 

@@ -50,7 +50,7 @@ class EventsManager(StreamingService):
     """
 
     def __init__(self, session_events_service, cfx_error_state, session_id):
-        """__init__ method of EventsManager class."""
+        """Initialize an instance of the ``EventsManager`` class."""
         super().__init__(
             stream_begin_method="BeginStreaming",
             target=EventsManager._process_streaming,
@@ -158,7 +158,7 @@ class EventsManager(StreamingService):
 
     @property
     def events_list(self) -> List[str]:
-        """Get a list of supported events.
+        """List of supported events.
 
         Parameters
         ----------

@@ -29,14 +29,14 @@ from ansys.cfx.core.utils.cfx_version import CFXVersion
 
 
 class InvalidPassword(ValueError):
-    """Raised when password is invalid."""
+    """Raised when the password is invalid."""
 
     def __init__(self):
         super().__init__("Provide correct 'password'.")
 
 
 class IpPortNotProvided(ValueError):
-    """Raised when IP address and port are not specified."""
+    """Raised when the IP address and port are not specified."""
 
     def __init__(self):
         super().__init__("Provide either 'ip' and 'port' or 'server_info_file_name'.")
@@ -49,17 +49,17 @@ class UnexpectedKeywordArgument(TypeError):
 
 
 class DockerContainerLaunchNotSupported(SystemError):
-    """Raised when Docker container launch is not supported."""
+    """Raised when a Docker container launch is not supported."""
 
     def __init__(self):
         super().__init__("Python Docker SDK is unsupported on this system.")
 
 
 class LaunchCFXError(Exception):
-    """Exception class representing launch errors."""
+    """Raised when a CX launch error occurs."""
 
     def __init__(self, launch_string):
-        """__init__ method of LaunchCFXError class."""
+        """__init__ method of ``LaunchCFXError`` class."""
         details = "\n" + "CFX Launch string: " + launch_string
         super().__init__(details)
 

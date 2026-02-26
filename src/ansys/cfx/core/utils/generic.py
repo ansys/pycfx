@@ -31,7 +31,7 @@ loop = asyncio.get_event_loop()
 
 
 class SingletonMeta(type):
-    """Meta class for singleton type."""
+    """Provides a Meta class for the singleton type."""
 
     _single_instance = None
 
@@ -42,7 +42,7 @@ class SingletonMeta(type):
 
 
 class AbstractSingletonMeta(ABCMeta, SingletonMeta):
-    """Meta class for abstract singleton type."""
+    """Provides a Meta class for the abstract singleton type."""
 
     pass
 
@@ -68,7 +68,7 @@ def execute_in_event_loop(f):
 
 
 def in_notebook():
-    """Function to check if application is running in notebook."""
+    """Check if application is running in notebook."""
     try:
         from IPython import get_ipython
 

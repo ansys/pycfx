@@ -20,7 +20,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-"""Provides a module to get networking functionality."""
+"""Module for getting networking functionality."""
 
 from concurrent import futures
 import logging
@@ -36,7 +36,7 @@ network_logger = logging.getLogger("pycfx.networking")
 
 
 def get_free_port() -> int:
-    """Identifies a free port for establishing a new socket connection.
+    """Identify a free port for establishing a new socket connection.
 
     Returns
     -------

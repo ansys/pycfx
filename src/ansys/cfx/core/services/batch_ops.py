@@ -40,10 +40,10 @@ network_logger: logging.Logger = logging.getLogger("pycfx.networking")
 
 
 class BatchOpsService:
-    """Class wrapping methods in batch RPC service."""
+    """Provides class wrapping methods in the batch RPC service."""
 
     def __init__(self, channel: grpc.Channel, metadata: list[tuple[str, str]]) -> None:
-        """__init__ method of BatchOpsService class."""
+        """Initialize an instance of the ``BatchOpsService`` class."""
 
         from ansys.cfx.core.services.interceptors import GrpcErrorInterceptor
 
@@ -55,12 +55,12 @@ class BatchOpsService:
         self._metadata = metadata
 
     def execute(self, request: batch_ops_pb2.ExecuteRequest) -> batch_ops_pb2.ExecuteResponse:
-        """Execute RPC of BatchOps service."""
+        """Execute RPC of the ``BatchOps`` service."""
         return self._stub.Execute(request, metadata=self._metadata)
 
 
 class BatchOps:
-    """Class to execute operations in batch in CFX.
+    """Provides for executing operations in batch in CFX.
 
     Examples
     --------
@@ -100,7 +100,7 @@ class BatchOps:
 
     @classmethod
     def instance(cls) -> _TBatchOps | None:
-        """Get the BatchOps instance.
+        """Get the ``BatchOps`` instance.
 
         Returns
         -------
@@ -110,10 +110,10 @@ class BatchOps:
         return cls._instance()
 
     class Op:
-        """Class to create a single batch operation."""
+        """Provides for creating a single batch operation."""
 
         def __init__(self, package: str, service: str, method: str, request_body: bytes) -> None:
-            """__init__ method of Op class."""
+            """Initialize an instance of the ``Op`` class."""
             self._request = batch_ops_pb2.ExecuteRequest(
                 package=package,
                 service=service,

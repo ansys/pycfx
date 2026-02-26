@@ -20,7 +20,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-"""Wrappers over EngineEval gRPC service of CFX.
+"""Wrappers over the EngineEval gRPC service of CFX.
 """
 
 from typing import Sequence
@@ -38,7 +38,7 @@ from ansys.cfx.core.utils.cfx_version import CFXVersion
 
 
 class EngineEvalService:
-    """Class wrapping the EngineEval gRPC service of CFX.
+    """Wraps the EngineEval gRPC service of CFX.
 
     Using the methods from the ``EngineEval`` class is recommended.
     """
@@ -46,7 +46,7 @@ class EngineEvalService:
     def __init__(
         self, channel: grpc.Channel, metadata: list[tuple[str, str]], cfx_error_state
     ) -> None:
-        """__init__ method of EngineEvalService class."""
+        """Initialize an instance of the ``EngineEvalService`` class."""
         intercept_channel = grpc.intercept_channel(
             channel,
             ErrorStateInterceptor(cfx_error_state),
@@ -76,7 +76,7 @@ class EngineEvalService:
 
 
 class Symbol:
-    """Class representing the symbol datatype in CFX.
+    """Represents the symbol datatype in CFX.
 
     Attributes
     ----------
@@ -85,7 +85,7 @@ class Symbol:
     """
 
     def __init__(self, str: str) -> None:
-        """__init__ method of Symbol class."""
+        """Initialize an instance of the ``Symbol`` class."""
         self.str = str
 
     def __repr__(self) -> str:
@@ -93,30 +93,30 @@ class Symbol:
 
 
 class EngineEval:
-    """Class on which CFX's CCL code can be executed.
+    """Provides the class on which CFX's CCL code can be executed.
 
     Methods
     -------
     process_ccl(ccl, wait, silent)
         Send CCL commands and settings to execute in the engine. Return output if any.
     info_query(query, args)
-        Evaluates a query in string format. Returns string.
+        Evaluate a query in string format. Returns string.
     eval_expression(input)
-        Evaluates a CCL expression in string format. Returns Python
+        Evaluate a CCL expression in string format. Returns Python
         value.
     """
 
     def __init__(self, service: EngineEvalService) -> None:
-        """__init__ method of EngineEval class."""
+        """Initialize an instance of the ``EngineEval`` class."""
         self.service = service
         self.version = self.info_query("Engine Version")
 
     def get_engine_version(self) -> str:
-        """Return engine version number."""
+        """Get the engine version number."""
         return self.version
 
     def eval_expression(self, input: str) -> str:
-        """Evaluates a CFX expression.
+        """Evaluate a CFX expression.
 
         This function is not available in CFX versions earlier than Release 2026 R1.
 
@@ -147,7 +147,7 @@ class EngineEval:
         return response.output
 
     def process_ccl(self, ccl: Sequence[str], wait: bool = True, silent: bool = True) -> str:
-        """Executes CCL commands and settings. The CCL is in the form of a sequence of strings.
+        """Execute CCL commands and settings. The CCL is in the form of a sequence of strings.
 
         Parameters
         ----------

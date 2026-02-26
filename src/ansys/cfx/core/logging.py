@@ -101,18 +101,18 @@ def enable(level: Union[str, int] = "DEBUG", custom_config: Optional[dict] = Non
 
     Notes
     -----
-    See logging levels in https://docs.python.org/3/library/logging.html#logging-levels.
+    See `Logging Levels <https://docs.python.org/3/library/logging.html#logging-levels>`_ in the Python documentation.
 
     Examples
     --------
-    Using the default logging setup:
+    Usd the default logging setup:
 
     >>> import ansys.cfx.core as pycfx
     >>> pycfx.logging.enable() #doctest: +ELLIPSIS
     PyCFX logging file ...
     Setting PyCFX global logging level to DEBUG.
 
-    Customizing logging configuration (see also the :func:`get_default_config` function):
+    Customize the logging configuration (see also the :func:`get_default_config` function):
 
     >>> import ansys.cfx.core as pycfx
     >>> config_dict = pycfx.logging.get_default_config()
@@ -144,7 +144,7 @@ def enable(level: Union[str, int] = "DEBUG", custom_config: Optional[dict] = Non
 
 
 def get_logger(*args, **kwargs):
-    """Get logger.
+    """Geta  logger.
 
     Convenience wrapper for Python's :func:`logging.getLogger` function.
     """
@@ -161,7 +161,8 @@ def set_global_level(level: Union[str, int]):
 
     Notes
     -----
-    See logging levels in https://docs.python.org/3/library/logging.html#logging-levels.
+    See `Logging Levels <https://docs.python.org/3/library/logging.html#logging-levels>`_ in
+    the Python documentation.
 
     Examples
     --------
@@ -200,7 +201,8 @@ def list_loggers():
     Notes
     -----
     PyCFX loggers use the standard Python logging library. For more information,
-    see https://docs.python.org/3/library/logging.html#logger-objects.
+    see `Logger Objects <https://docs.python.org/3/library/logging.html#logger-objects>`_ in
+    the Python documentation.
 
     Examples
     --------
@@ -236,7 +238,7 @@ def configure_env_var() -> None:
     Notes
     -----
     The usual way to enable PyCFX logging to file is by using the :func:`enable()` function.
-    Setting ``PYCFX_LOGGING`` to ``0`` or ``OFF`` is the same as if no environment variable was
+    Setting ``PYCFX_LOGGING`` to ``0`` or ``OFF`` is the same as if no environment variable is
     set. If logging debug output to file by default is desired, without having to use the
     :func:`enable()` function every time, set the ``PYCFX_LOGGING`` environment variable to
     ``DEBUG``.

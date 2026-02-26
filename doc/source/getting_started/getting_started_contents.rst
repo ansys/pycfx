@@ -4,7 +4,9 @@
 Getting started
 ===============
 
-This section provides resources to help you get started with PyCFX, including installation instructions and answers to frequently asked questions.
+This section provides resources to help you get started with PyCFX, including
+:ref:`installation instructions <ref_installation>` and answers to
+:ref:`frequently asked questions <faqs>`.
 
 .. grid:: 3
 

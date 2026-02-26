@@ -21,7 +21,7 @@ The following contribution information is specific to PyCFX.
 
 Clone the repository
 --------------------
-Follow the steps in :ref:`dev_installation` to install PyCFX in development mode.
+Follow the steps in :ref:`dev_installation`.
 
 Run unit tests
 --------------

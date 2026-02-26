@@ -28,7 +28,7 @@ The PreProcessing :ref:`settings API <ref_pre_processing_root>` is the main inte
 
 Solution mode
 -------------
-The Solver :ref:`session<ref_session_solver>` is the main interface for running and controlling the
+The :ref:`Solver session<ref_session_solver>` is the main interface for running and controlling the
 CFX-Solver. This module offers very limited control in this first PyCFX release.
 
 

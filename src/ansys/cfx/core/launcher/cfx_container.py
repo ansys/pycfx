@@ -25,9 +25,10 @@
 Notes
 -----
 
-For configuration details, see :func:`configure_container_dict`, and for a list of additional Docker container run configuration options that can also be specified through the
-``container_dict`` argument for :func:`~ansys.cfx.core.launcher.launcher.launch_cfx()`,
-see documentation for `Docker run`_.
+For configuration information, see the :func:`configure_container_dict` function. For a
+list of additional Docker container run configuration options that can also be specified through the
+``container_dict`` argument for the :func:`~ansys.cfx.core.launcher.launcher.launch_cfx()` function,
+see `Docker run`_ in the *Docker SDK for Python* containers documentation
 
 For the CFX Docker container to be able to find license information, the license file or server needs to be specified
 through the ``ANSYSLMD_LICENSE_FILE`` environment variable,
@@ -37,13 +38,13 @@ or the ``license_server`` argument for the ``container_dict``. (See :func:`confi
 
 Examples
 --------
-Launch a CFX Docker container with system default configuration:
+Launch a CFX Docker container with the system default configuration:
 
 >>> import ansys.cfx.core as pycfx
 >>> session = pycfx.launch_cfx(start_container=True)
 
-Launch with custom configuration, using ``host_mount_path`` and ``cfx_image``,
-which are arguments for :func:`configure_container_dict`. ``auto_remove`` is
+Launch with a custom configuration, using ``cfx_image`` and ``host_mount_path``,
+which are arguments for the :func:`configure_container_dict` function. ``auto_remove`` is
 an argument for `Docker run`_:
 
 >>> import ansys.cfx.core as pycfx
@@ -51,7 +52,7 @@ an argument for `Docker run`_:
 >>> custom_config.update(cfx_image='custom_cfx:v25.2.3', host_mount_path='/testing', auto_remove=False)
 >>> session = pycfx.launch_cfx(container_dict=custom_config)
 
-Get default CFX Docker container configuration and then launch with customized configuration:
+Get the default CFX Docker container configuration and then launch with the customized configuration:
 
 >>> import ansys.cfx.core as pycfx
 >>> config_dict = pycfx.launch_cfx(start_container=True, dry_run=True)
@@ -93,7 +94,7 @@ DEFAULT_CONTAINER_MOUNT_PATH = "/mnt/pycfx"
 
 
 class CFXCommandNotSpecified(ValueError):
-    """Raised when CFX session command is not specified."""
+    """Raised when a CFX session command is not specified."""
 
     def __init__(self):
         super().__init__("Specify either 'cfx5pre' or 'cfx5solve' or 'cfdpost'.")
@@ -121,7 +122,7 @@ class LicenseServerNotSpecified(KeyError):
 
     def __init__(self):
         super().__init__(
-            "Specify license server using the 'ANSYSLMD_LICENSE_FILE' environment variable or "
+            "Specify a license server using the 'ANSYSLMD_LICENSE_FILE' environment variable or "
             "in the 'container_dict'."
         )
 
@@ -161,25 +162,25 @@ def configure_container_dict(
         Path inside the container where the host mount path is mounted to.
     timeout : int, default: None
         Time limit in seconds for the CFX container to start. When ``None``, 30 seconds is used.
-    port : int, optional
+    port : int, default: None
         Port for CFX container to use.
     license_server : str, default: None
         License server for Ansys CFX to use.
     container_server_info_file : Union[str, Path], default: None
-        Name of the server information file for CFX to write on the ``host_mount_path``.
+        Name of the server information file for CFX to write on the ``host_mount_path`` argument.
     remove_server_info_file : bool, default: True
         Whether to automatically delete the server information file after PyCFX has
         finished using it.
     has_remote_server : bool, default: True
         Whether to create a server information file for server and client communication setup.
-    cfx_image : str, optional
+    cfx_image : str, default: None
         Specifies full image name for Docker container run, with the format
-        ``"image_name:image_tag"``. ``image_tag`` and ``image_name`` are ignored if ``cfx_image``
-        has been specified.
+        ``"image_name:image_tag"``. The ``image_tag`` and ``image_name`` parameters
+        are ignored if the ``cfx_image``parameter has been specified.
     image_name : str, default: None
-        Ignored if ``cfx_image`` has been specified.
+        Ignored if the ``cfx_image`` parameter has been specified.
     image_tag : str, default: None
-        Ignored if ``cfx_image`` has been specified.
+        Ignored if the ``cfx_image`` parameter has been specified.
     **container_dict
         Additional keyword arguments that can be specified. They are treated as Docker container
         run options to be passed directly to the Docker run execution. See the following examples and
@@ -209,13 +210,13 @@ def configure_container_dict(
 
     Notes
     -----
-    This function should usually not be called directly. It is automatically used by
-    :func:`~ansys.cfx.core.launcher.launcher.launch_cfx()`.
+    This function should usually not be called directly. It is automatically used by the
+    :func:`~ansys.cfx.core.launcher.launcher.launch_cfx()` function.
 
     For a list of additional Docker container run configuration options that can also be specified
     using ``container_dict``, see `Docker run`_ documentation.
 
-    See also :func:`start_cfx_container`.
+    See also the :func:`start_cfx_container` function.
     """
 
     if "cfx_cmd" not in container_dict:
@@ -403,8 +404,8 @@ def start_cfx_container(args: List[str], container_dict: Optional[dict] = None) 
     -----
     Uses :func:`configure_container_dict` to parse the optional ``container_dict`` configuration.
 
-    This function should usually not be called directly. It is automatically used by
-    :func:`~ansys.cfx.core.launcher.launcher.launch_cfx()`.
+    This function should usually not be called directly. It is automatically used by the
+    :func:`~ansys.cfx.core.launcher.launcher.launch_cfx()` function.
     """
 
     if container_dict is None:
@@ -483,10 +484,10 @@ def extract_mount_paths(container_dict: dict) -> dict:
 
     Returns a dictionary with the following keys:
 
-    - "host_mount_path": Path on the host for the first volume (or ``None``).
-    - "container_mount_path": Path in the container for the first volume (or ``None``).
-    - "host_temporary_directory_path": Path on the host for the second volume (or ``None``).
-    - "container_temporary_directory_path": Path in the container for the second volume (or ``None``).
+    - ``host_mount_path``: Path on the host for the first volume (or ``None``).
+    - ``container_mount_path``: Path in the container for the first volume (or ``None``).
+    - ``host_temporary_directory_path``: Path on the host for the second volume (or ``None``).
+    - ``container_temporary_directory_path``: Path in the container for the second volume (or ``None``).
 
     Parameters
     ----------
@@ -528,10 +529,10 @@ def replace_container_path_with_host_path(line: str, mount_paths: dict[str, str]
     mount_paths : dict[str, str]
         Dictionary with keys:
 
-        - "container_mount_path"
-        - "host_mount_path"
-        - "container_temporary_directory_path"
-        - "host_temporary_directory_path"
+        - ``container_mount_path``
+        - ``host_mount_path``
+        - ``container_temporary_directory_path``
+        - ``host_temporary_directory_path``
 
     Returns
     -------
@@ -568,10 +569,10 @@ def replace_host_path_with_container_path(line: str, mount_paths: dict[str, str]
     mount_paths : dict[str, str])
         Dictionary with keys:
 
-        - "container_mount_path"
-        - "host_mount_path"
-        - "container_temporary_directory_path"
-        - "host_temporary_directory_path"
+        - ``container_mount_path``
+        - ``host_mount_path``
+        - ``container_temporary_directory_path``
+        - ``host_temporary_directory_path``
 
     Returns
     -------
