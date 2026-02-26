@@ -351,8 +351,8 @@ to ``Automatic``.
 
 Physics updates are limited to the *top-level* objects. For example, changing a parameter in a
 domain does not update a boundary condition object, only other dependent objects within the domain.
-Top-level objects are those that have their own editors in CFX-Pre, such as for the domain,
-boundary, initial conditions, and execution control.
+Top-level objects are those that have their own editors in CFX-Pre, such as for the **Domain**,
+**Boundary**, **Initial Conditions**, and **Execution Control**.
 
 .. code-block:: python
 
@@ -457,7 +457,7 @@ this code enables and then disables the ``Boundary Contour`` object for a bounda
     ...
   boundary_contour : 
     profile_variable : Normal Speed
-  >>> in1.boundary_contour.enabled = False # Disables the optional Boundary Contour object
+  >>> in1.boundary_contour.enabled = False # Disable the optional Boundary Contour object
   >>> in1.print_state() # doctest: +ELLIPSIS
   <BLANKLINE>
   interface_boundary : False

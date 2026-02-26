@@ -344,18 +344,18 @@ class SessionBase:
 
 
 class PreProcessing(SessionBase):
-    """Encapsulates a CFX server for PreProcessing session connection."""
+    """Encapsulates a CFX server for a PreProcessing session connection."""
 
     pass
 
 
 class Solver(SessionBase):
-    """Encapsulates a CFX server for Solver session connection."""
+    """Encapsulates a CFX server for a Solver session connection."""
 
     pass
 
 
 class PostProcessing(SessionBase):
-    """Encapsulates a CFX server for PostProcessing session connection."""
+    """Encapsulates a CFX server for a PostProcessing session connection."""
 
     pass

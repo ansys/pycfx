@@ -50,7 +50,7 @@ logger = logging.getLogger("pycfx.general")
 
 
 class InsecureGrpcWarning(Warning):
-    """Raised when gRPC connection is insecure."""
+    """Raised when the gRPC connection is insecure."""
 
     pass
 
@@ -211,7 +211,7 @@ class ErrorState:
 
     @property
     def details(self):
-        """Additoonal details of the error state."""
+        """Additional details of the error state."""
         return self._details
 
     def __init__(self, name: str = "", details: str = ""):

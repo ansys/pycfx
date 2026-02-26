@@ -33,7 +33,7 @@ from ansys.cfx.core.exceptions import InvalidArgument
 
 
 def asynchronous(f: Callable) -> Callable:
-    """Decorate functions that are to execute asynchronously. The decorated
+    """Decorator for functions that are to execute asynchronously. The decorated
     function returns a future_ object. Calling the result()_ method on the future object
     synchronizes the function execution.
 
@@ -128,7 +128,7 @@ def timeout_loop(
     idle_period: float = 0.2,
     expected: str = "truthy",
 ) -> Any:
-    """Loop while the specified object does not return expected the response. A
+    """Loop while the specified object does not return the expected response. A
     timeout occurs after the specified time elapses. This function tries to return
     whatever is returned by the specified object. If nothing is returned before the
     timeout, it returns the opposite of the expected value. For example, it returns

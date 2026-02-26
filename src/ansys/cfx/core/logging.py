@@ -144,7 +144,7 @@ def enable(level: Union[str, int] = "DEBUG", custom_config: Optional[dict] = Non
 
 
 def get_logger(*args, **kwargs):
-    """Geta  logger.
+    """Get the logger.
 
     Convenience wrapper for Python's :func:`logging.getLogger` function.
     """

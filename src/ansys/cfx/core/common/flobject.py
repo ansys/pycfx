@@ -624,7 +624,7 @@ class SettingsBase(Base, Generic[StateT]):
 
     @classmethod
     def to_engine_keys(cls, value: StateT) -> StateT:
-        """Convert a value to have keys with engine names.
+        """Convert the state in ``value`` to have keys with engine names.
 
         This is overridden in the ``Group``, ``NamedObject``, and
         ``ListObject`` classes.
@@ -633,7 +633,7 @@ class SettingsBase(Base, Generic[StateT]):
 
     @classmethod
     def to_python_keys(cls, value: StateT) -> StateT:
-        """Convert a value to have keys with Python names.
+        """Convert the state in ``value`` to have keys with Python names.
 
         This is overridden in the ``Group``, ``NamedObject``, and
         ``ListObject`` classes.
@@ -869,7 +869,7 @@ def _command_query_name_filter(parent, list_attr: str, prefix: str, excluded: Li
 class Group(SettingsBase[DictStateType]):
     """A ``Group`` container object.
 
-    This cocntainer object is similar to a C++ structure object.
+    This container object is similar to a C++ structure object.
     Child objects can be accessed with attribute access.
 
     Attributes
@@ -905,7 +905,7 @@ class Group(SettingsBase[DictStateType]):
 
     @classmethod
     def to_engine_keys(cls, value):
-        """Convert a value to have keys with engine names.
+        """Convert the state in ``value`` to have keys with engine names.
 
         Raises
         ------
@@ -926,7 +926,7 @@ class Group(SettingsBase[DictStateType]):
 
     @classmethod
     def to_python_keys(cls, value):
-        """Convert a value to have keys with Python names."""
+        """Convert the state in ``value`` to have keys with Python names."""
         if isinstance(value, collections.abc.Mapping):
             ret = {}
             undef = object()
@@ -1132,11 +1132,11 @@ class WildcardPath(Group):  # pragma: no cover (wildcards not used)
                 yield item
 
     def to_engine_keys(self, value):
-        """Convert a value to have keys with engine names."""
+        """Convert the state in ``value`` to have keys with engine names."""
         return self._state_cls.to_engine_keys(value)
 
     def to_python_keys(self, value):
-        """Convert a value to have keys with Python names."""
+        """Convert the state in ``value`` to have keys with Python names."""
         return self._state_cls.to_python_keys(value)
 
 
@@ -1189,7 +1189,7 @@ class NamedObject(SettingsBase[DictStateType], Generic[ChildTypeT]):
 
     @classmethod
     def to_engine_keys(cls, value):
-        """Convert a value to have keys with engine names."""
+        """Convert the state in ``value`` to have keys with engine names."""
         if isinstance(value, collections.abc.Mapping):
             ret = {}
             for k, v in value.items():
@@ -1200,7 +1200,7 @@ class NamedObject(SettingsBase[DictStateType], Generic[ChildTypeT]):
 
     @classmethod
     def to_python_keys(cls, value):
-        """Convert a value to have keys with Python names."""
+        """Convert the state in ``value`` to have keys with Python names."""
         if isinstance(value, collections.abc.Mapping):
             ret = {}
             for k, v in value.items():
@@ -1380,7 +1380,7 @@ class ListObject(SettingsBase[ListStateType], Generic[ChildTypeT]):
 
     @classmethod
     def to_engine_keys(cls, value):
-        """Convert a value to have keys with engine names."""
+        """Convert the state in ``value`` to have keys with engine names."""
         if isinstance(value, collections.abc.Sequence):
             return [cls.child_object_type.to_engine_keys(v) for v in value]
         else:
@@ -1388,7 +1388,7 @@ class ListObject(SettingsBase[ListStateType], Generic[ChildTypeT]):
 
     @classmethod
     def to_python_keys(cls, value):
-        """Convert a value to have keys with engine names."""
+        """Convert the state in ``value`` to have keys with Python names."""
         if isinstance(value, collections.abc.Sequence):
             return [cls.child_object_type.to_python_keys(v) for v in value]
         else:

@@ -199,7 +199,7 @@ class SolverController:
         self._solver_input_file = input_file
 
     def stop_run(self, wait_for_run=True) -> None:
-        """Stop a CFX-Solver run currently in progress.
+        """Stop the CFX-Solver run currently in progress.
 
         If a run is not currently in progress, the command does nothing.
 

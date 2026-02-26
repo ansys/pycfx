@@ -149,7 +149,7 @@ pypre.execute_ccl(mesh_transformation_ccl)
 # ------------------
 #
 # The profile describing the frequency and blade mode shape for one blade is provided. In
-# preparation for a two-passage Fourier Transformation setup, the profile must be expandedg and
+# preparation for a two-passage Fourier Transformation setup, the profile must be expanded and
 # initialized to make it ready for use in the boundary condition specifications.
 #
 # The single passage profile file, ``R37_mode1_1p.csv``, should already have been downloaded to the
