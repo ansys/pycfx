@@ -4,58 +4,60 @@
 Installation
 ============
 
-
-PyCFX Installation
----------------------
+Install PyCFX in user mode
+--------------------------
 
 PyCFX supports Python 3.10 through Python 3.13 on Windows and Linux.
 
-You can install PyCFX, along with all its optional dependencies, using:
+Install PyCFX with all optional dependencies in user mode using this command:
 
 .. code-block:: console
 
    pip install ansys-cfx-core
 
+.. _dev_installation:
 
-Development Installation
-------------------------
-The PyCFX source repository is available on GitHub. You can clone the repository and set up for local
-development with the following commands:
+Install PyCFX in developer mode
+-------------------------------
+
+The PyCFX source repository is available on GitHub. Clone the repository and set it up for local development with these commands:
 
 .. code-block:: console
 
    git clone https://github.com/ansys/pycfx
    cd pycfx
    pip install -e .[doc,tests,style]
-   python codegen/allapigen.py  # Generates the API files
+   python codegen/allapigen.py  # Generate API files
 
-Step-by-step explanation
-~~~~~~~~~~~~~~~~~~~~~~~~
+Step-by-step instructions
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Clone the repository
 ++++++++++++++++++++
 
+These commands clone the PyCFX repository from GitHub to your local machine and navigate to the repository directory:
+
 .. code-block:: console
 
    git clone https://github.com/ansys/pycfx
    cd pycfx
 
-These commands clone the PyCFX repository from GitHub to your local machine and navigate into
-the repository directory.
 
 Install PyCFX and dependencies
 ++++++++++++++++++++++++++++++
+
+This command installs PyCFX and all its dependencies:
 
 .. code-block:: console
 
    pip install -e .[doc,tests,style]
 
-These commands install pycfx and all of its dependencies. The 'doc', 'tests' and 'style' extras
-are necessary if you plan to build the documentation, run the unit tests, or check that the code
-style conforms to the style guide prior to contributing to the repository.
+The ``doc``, ``tests``, and ``style`` extras are necessary for building documentation, running unit tests, and checking code style before contributing.
 
 Set up a virtual environment
 ++++++++++++++++++++++++++++
+
+Activate a virtual environment for PyCFX development:
 
 .. code-block:: console
 
@@ -65,85 +67,73 @@ Set up a virtual environment
    # On Linux
    source .venv/bin/activate
 
-This command activates a virtual environment for PyCFX development.
 
-Generate required API classes
-+++++++++++++++++++++++++++++
+
+Generate API classes
+++++++++++++++++++++
+
+The full PyCFX package includes required API classes that are auto-generated instead of maintained under version control. This step requires an Ansys CFX installation.
+
+Run this command to generate these files:
 
 .. code-block:: console
 
    python codegen/allapigen.py     # Generate the API files silently
 
-The full PyCFX package includes some required API classes that are auto-generated rather
-than maintained under version control. The ``python codegen/allapigen.py`` command runs the
-auto-generation script included in the repository. Note that this step requires an Ansys CFX
-installation.
-
-Pass ``-v`` or ``--verbose`` to display the paths of the generated API files:
+Use the ``-v`` or ``--verbose`` flag to display the paths of the generated API files:
 
 .. code-block:: console
 
    python codegen/allapigen.py --verbose
 
-A note on pre-commit
-^^^^^^^^^^^^^^^^^^^^
+Install pre-commit
+^^^^^^^^^^^^^^^^^^
 
-The style checks take advantage of the `pre-commit`_ tool. If you want to contribute changes to the
-PyCFX project, you should install this tool using:
+The style checks use the `pre-commit`_ tool. To contribute changes to the PyCFX project, install ``pre-commit`` with this command:
 
 .. code-block:: console
 
     python -m pip install pre-commit && pre-commit install
 
-Run the tool on all modified files to check that your changes conform to the repository requirements:
+Run ``pre-commit`` on all modified files to ensure your changes conform to repository requirements:
 
 .. code-block:: console
 
     pre-commit run
 
+Build documentation
+-------------------
 
-Documentation
--------------
-
-For building documentation, you can run the usual rules provided in the
-`Sphinx`_ Makefile, such as:
+Build documentation using the rules provided in the `Sphinx`_ Makefile:
 
 .. code:: bash
 
     make -C doc/ html && your_browser_name doc/html/index.html
 
-However, the recommended way of checking documentation integrity is using:
+The recommended way to check documentation integrity is with this command:
 
 .. code:: bash
 
     tox -e doc && your_browser_name .tox/doc_out/index.html
 
+Install Ansys CFX
+-----------------
 
-CFX Installation
-----------------
-
-To benefit from using PyCFX, you must have a licensed copy of Ansys CFX installed.
-All versions of PyCFX support CFX 2025 R2 Service Pack 3 and later.
+To use PyCFX, you must have a licensed copy of Ansys CFX installed. PyCFX supports CFX 2025 R2 Service Pack 3 and later.
 
 PyCFX uses an environment variable to locate your Ansys installation.
 
-On Windows, the Ansys installer sets the environment variable. For instance, the Ansys 2025 R2
-installer sets the ``AWP_ROOT252`` environment variable to point to
-``C:\Program Files\ANSYS Inc\v252`` if you accept the default installation location.
+On Windows, the Ansys installer sets the environment variable. For example, the Ansys 2025 R2 installer sets the ``AWP_ROOT252`` environment variable to point to ``C:\Program Files\ANSYS Inc\v252`` if you accept the default installation location.
 
-**On Linux, the environment variable is not set automatically.** It can be set for the
-current user in the current shell session as follows:
+On Linux, the environment variable is not set automatically. Set it for the current user in the current shell session as follows:
 
 .. code-block:: console
 
     export AWP_ROOT252=/usr/ansys_inc/v252
 
-For this variable to persist between different shell sessions for the current user, the same
-export command can instead be added to the user's ``~/.profile`` file.
+To make this variable persist between shell sessions, add this same export command to the user's ``~/.profile`` file.
 
-For information on other ways of specifying the CFX location for PyCFX, see :ref:`faqs_cfxloc`
-in :ref:`faqs`.
-
+For other ways to specify the CFX location for PyCFX, see :ref:`faqs_cfxloc` in :ref:`faqs`.
 
 .. LINKS AND REFERENCES
 .. _pre-commit: https://pre-commit.com/

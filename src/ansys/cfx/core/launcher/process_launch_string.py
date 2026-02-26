@@ -87,7 +87,7 @@ def _generate_launch_string(
     additional_arguments: str,
     server_info_file_name: str,
 ):
-    """Generates the launch string to launch cfx."""
+    """Generates the launch string to launch CFX."""
     if launcher_utils.is_windows():
         exe_path = str(get_cfx_exe_path(**argvals))
         if " " in exe_path:
@@ -118,13 +118,13 @@ def get_cfx_exe_path(**launch_argvals) -> Path:
     """Get the path for the CFX executable file.
     The search for the path is performed in this order:
 
-    1. ``product_version`` parameter passed with the ``launch_cfx`` method.
-    2. The latest Ansys version from ``AWP_ROOTnnn``` environment variables.
+    1. ``product_version`` parameter passed with the ``launch_cfx()`` method.
+    2. The latest Ansys version from ``AWP_ROOTnnn`` environment variables.
 
     Returns
     -------
     Path
-        CFX executable path
+        CFX executable path.
     """
 
     def get_cfx_root(version: CFXVersion) -> Path:

@@ -20,7 +20,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-"""Provides a module for enums used in the PyCFX."""
+"""Provides a module for enums used in PyCFX."""
 
 from enum import Enum
 from functools import total_ordering
@@ -57,12 +57,12 @@ class CFXMode(Enum):
 
     @staticmethod
     def get_mode(mode: str) -> "CFXMode":
-        """Get the CFXMode based on the provided mode string.
+        """Get the CFX mode based on the provided mode string.
 
         Parameters
         ----------
         mode : str
-            Mode
+            Mode.
 
         Returns
         -------
@@ -83,12 +83,12 @@ class CFXMode(Enum):
 
     @staticmethod
     def is_pre(mode: "CFXMode") -> bool:
-        """Check if the current mode is pre-processing.
+        """Check if the current mode is preprocessing.
 
         Parameters
         ----------
         mode : CFXMode
-            mode
+            Mode.
 
         Returns
         -------
@@ -105,7 +105,7 @@ class CFXMode(Enum):
         Parameters
         ----------
         mode : CFXMode
-            mode
+            Mode.
 
         Returns
         -------
@@ -117,12 +117,12 @@ class CFXMode(Enum):
 
     @staticmethod
     def is_post(mode: "CFXMode") -> bool:
-        """Check if the current mode is post-processing.
+        """Check if the current mode is postprocessing.
 
         Parameters
         ----------
         mode : CFXMode
-            mode
+            Mode.
 
         Returns
         -------
@@ -158,7 +158,7 @@ class CFXEnum(Enum):
     def __lt__(self, other):
         if not isinstance(other, type(self)):
             raise TypeError(
-                f"Cannot compare between {type(self).__name__} and {type(other).__name__}"
+                f"Cannot compare between {type(self).__name__} and {type(other).__name__}."
             )
         if self == other:
             return False
@@ -170,7 +170,7 @@ class CFXEnum(Enum):
 
 
 class UIMode(CFXEnum):
-    """Provides supported user interface mode of CFX."""
+    """Provides the supported user interface mode of CFX."""
 
     NO_GUI = ("batch",)
     HIDDEN_GUI = ("",)
@@ -244,14 +244,14 @@ def _get_standalone_launch_cfx_version(
 
     The search for the version is performed in this order:
 
-    1. The ``product_version`` parameter passed with the ``launch_cfx`` method.
+    1. The ``product_version`` parameter passed with the ``launch_cfx()`` method.
     2. The CFX version from the ``PYCFX_CFX_ROOT`` environment variable, if set.
     3. The latest Ansys version from ``AWP_ROOTnnn`` environment variables.
 
     Returns
     -------
     CFXVersion, optional
-        CFX version or ``None``
+        CFX version or ``None``.
     """
 
     # Look for CFX version in the following order:

@@ -40,10 +40,10 @@ network_logger: logging.Logger = logging.getLogger("pycfx.networking")
 
 
 class BatchOpsService:
-    """Class wrapping methods in batch RPC service."""
+    """Provides class wrapping methods in the batch RPC service."""
 
     def __init__(self, channel: grpc.Channel, metadata: list[tuple[str, str]]) -> None:
-        """__init__ method of BatchOpsService class."""
+        """Initialize an instance of the ``BatchOpsService`` class."""
 
         from ansys.cfx.core.services.interceptors import GrpcErrorInterceptor
 
@@ -55,12 +55,12 @@ class BatchOpsService:
         self._metadata = metadata
 
     def execute(self, request: batch_ops_pb2.ExecuteRequest) -> batch_ops_pb2.ExecuteResponse:
-        """Execute RPC of BatchOps service."""
+        """Execute RPC of the ``BatchOps`` service."""
         return self._stub.Execute(request, metadata=self._metadata)
 
 
 class BatchOps:
-    """Class to execute operations in batch in CFX.
+    """Provides for executing operations in batch in CFX.
 
     Examples
     --------
@@ -71,16 +71,17 @@ class BatchOps:
     ...     pypost.file.load_results(file_name="StaticMixer_001.res")
     ...     pypost.results.plane["Plane 1"] = {}
 
-    The above code will execute both operations through a single gRPC call upon exiting the
+    The preceding code executes both operations through a single gRPC call upon exiting the
     ``with`` block.
 
     Operations that perform queries in CFX are executed immediately, while others are
     queued for batch execution. Some queries are executed behind the scenes while
-    queuing an operation for batch execution, and we must ensure that they do not
+    queuing an operation for batch execution. Developers must ensure that they do not
     depend on previously queued operations.
 
 
-    For example,
+    For example, the following code throws a ``KeyError`` as ``pypost.results.plane["Plane 1"]``
+    attempts to access the ``Plane 1`` named object which has not been created yet.
 
     >>> pypost = pycfx.PostProcessing.from_install()
     >>> with pycfx.BatchOps(pypost):
@@ -90,10 +91,6 @@ class BatchOps:
     Traceback (most recent call last):
       ...
     KeyError: "'plane' has no attribute 'Plane 1'.\\n"
-
-
-    will throw a ``KeyError`` as ``pypost.results.plane["Plane 1"]`` attempts to
-    access the ``Plane 1`` named object which has not been created yet.
     """
 
     _proto_files: list[ModuleType] | None = None
@@ -103,20 +100,20 @@ class BatchOps:
 
     @classmethod
     def instance(cls) -> _TBatchOps | None:
-        """Get the BatchOps instance.
+        """Get the ``BatchOps`` instance.
 
         Returns
         -------
         BatchOps
-            BatchOps instance
+            BatchOps instance.
         """
         return cls._instance()
 
     class Op:
-        """Class to create a single batch operation."""
+        """Provides for creating a single batch operation."""
 
         def __init__(self, package: str, service: str, method: str, request_body: bytes) -> None:
-            """__init__ method of Op class."""
+            """Initialize an instance of the ``Op`` class."""
             self._request = batch_ops_pb2.ExecuteRequest(
                 package=package,
                 service=service,
@@ -199,30 +196,29 @@ class BatchOps:
                 self._ops[i].update_result(response.status, response.response_body)
 
     def add_op(self, package: str, service: str, method: str, request: Message) -> Op:
-        """Queue a single batch operation. Only the non-getter operations will be
-        queued.
+        """Queue a single batch operation. Only the non-getter operations are queued.
 
         Parameters
         ----------
         package : str
-            gRPC package name
+            gRPC package name.
         service : str
-            gRPC service name
+            gRPC service name.
         method : str
-            gRPC method name
+            gRPC method name.
         request : Any
-            gRPC request message
+            gRPC request message.
 
         Returns
         -------
         BatchOps.Op
-            BatchOps.Op object with a queued attribute which is true if the operation
+            BatchOps.Op object with a queued attribute that is ``True`` if the operation
             has been queued.
         """
         op = BatchOps.Op(package, service, method, request.SerializeToString())
         if op._supported:
             network_logger.debug(
-                f"Adding batch operation with package {package}, service {service} and method {method}"
+                f"Adding batch operation with package {package}, service {service}, and method {method}."
             )
             self._ops.append(op)
             op.queued = True

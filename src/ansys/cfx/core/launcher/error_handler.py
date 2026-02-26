@@ -29,14 +29,14 @@ from ansys.cfx.core.utils.cfx_version import CFXVersion
 
 
 class InvalidPassword(ValueError):
-    """Raised when password is invalid."""
+    """Raised when the password is invalid."""
 
     def __init__(self):
         super().__init__("Provide correct 'password'.")
 
 
 class IpPortNotProvided(ValueError):
-    """Raised when IP address and port are not specified."""
+    """Raised when the IP address and port are not specified."""
 
     def __init__(self):
         super().__init__("Provide either 'ip' and 'port' or 'server_info_file_name'.")
@@ -49,17 +49,17 @@ class UnexpectedKeywordArgument(TypeError):
 
 
 class DockerContainerLaunchNotSupported(SystemError):
-    """Raised when Docker container launch is not supported."""
+    """Raised when a Docker container launch is not supported."""
 
     def __init__(self):
         super().__init__("Python Docker SDK is unsupported on this system.")
 
 
 class LaunchCFXError(Exception):
-    """Exception class representing launch errors."""
+    """Raised when a CX launch error occurs."""
 
     def __init__(self, launch_string):
-        """__init__ method of LaunchCFXError class."""
+        """__init__ method of ``LaunchCFXError`` class."""
         details = "\n" + "CFX Launch string: " + launch_string
         super().__init__(details)
 
@@ -96,7 +96,7 @@ def _process_invalid_args(dry_run, cfx_launch_mode, argvals):
     ----------
     dry_run: bool
         Whether to dry run a container start.
-         If ``True``, the ``launch_cfx()`` will return the configured ``container_dict``.
+         If ``True``, the ``launch_cfx()`` method returns the configured ``container_dict``.
     cfx_launch_mode: LaunchMode
         CFX launch mode.
     argvals: dict
@@ -104,7 +104,7 @@ def _process_invalid_args(dry_run, cfx_launch_mode, argvals):
     """
     if dry_run and cfx_launch_mode != LaunchMode.CONTAINER:
         launcher_utils.logger.warning(
-            "'dry_run' argument for 'launch_cfx' currently is only "
+            "'dry_run' argument for 'launch_cfx' method currently is only "
             "supported when starting containers."
         )
     if cfx_launch_mode != LaunchMode.STANDALONE:

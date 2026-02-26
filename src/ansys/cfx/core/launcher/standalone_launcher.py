@@ -108,59 +108,57 @@ class StandaloneLauncher:
             Launch mode of CFX to point to a specific session type.
         ui_mode : UIMode
             CFX user interface mode. Options are the values of the ``UIMode`` enum.
-        product_version : str, optional
+        product_version : str, default: None
             Version of Ansys CFX to launch. The string must be in a format like
             ``"25.2.0"`` (for 2025 R2), matching the documented version format in the
             CFXVersion class. The default is ``None``, in which case the newest installed
             version is used.
-        journal_file_names : str or list of str, optional
-            The string path to a CFX journal file, or a list of such paths. CFX will execute the
-            journal(s). The default is ``None``.
-        start_timeout : int, optional
+        journal_file_names : str or list of str, default: None
+            String path to a CFX journal file or a list of such paths. CFX executes the
+            journals.
+        start_timeout : int, default: 60
             Maximum allowable time in seconds for connecting to the CFX
-            server. The default is ``60``.
-        additional_arguments : str, optional
+            server.
+        additional_arguments : str, default: ""
             Additional arguments to send to CFX as a string in the same
             format they are normally passed to CFX on the command line.
-        env : dict[str, str], optional
-            Mapping to modify environment variables in CFX. The default
-            is ``None``.
-        start_container : bool, optional
-            Specifies whether to launch a CFX Docker container image. For more details about containers, see
-            :mod:`~ansys.cfx.core.launcher.cfx_container`.
-        container_dict : dict, optional
+        env : dict[str, str], default: None
+            Mapping to modify environment variables in CFX.
+        start_container : bool, default: None
+            Whether to launch a CFX Docker container image. For more information about containers, see
+            the :mod:`~ansys.cfx.core.launcher.cfx_container` module.
+        container_dict : dict, default: None
             Dictionary for CFX Docker container configuration. If specified,
-            setting ``start_container = True`` as well is redundant.
-            Will launch CFX inside a Docker container using the configuration changes specified.
-            See also :mod:`~ansys.cfx.core.launcher.cfx_container`.
-        dry_run : bool, optional
-            Defaults to False. If True, will not launch CFX, and will instead print configuration information
-            that would be used as if CFX was being launched. If dry running a container start,
-            ``launch_cfx()`` will return the configured ``container_dict``.
-        cleanup_on_exit : bool, optional
+            setting ``start_container = True`` is redundant.
+            CFX launches inside a Docker container using the configuration changes specified.
+            See also the :mod:`~ansys.cfx.core.launcher.cfx_container` module.
+        dry_run : bool, default: False
+            Whether to dry run a container start. If ``True``, CFX is not launched but the configuration
+            information that would be used is printed as if CFX is being launched. If dry running a
+            container start, the ``launch_cfx()`` method returns the configured ``container_dict``.
+        cleanup_on_exit : bool, default: True
             Whether to shut down the connected CFX session when PyCFX is
             exited, or the ``exit()`` method is called on the session instance,
-            or if the session instance becomes unreferenced. The default is ``True``.
-        case_file_name : str, optional
+            or if the session instance becomes unreferenced.
+        case_file_name : str, default: None
             Name of the case file to read into a CFX-Pre session.
-        run_directory : str, optional
+        run_directory : str, default: None
             Name of the run directory to monitor with a CFX-Solver or CFD-Post session.
-        results_file_name : str, optional
+        results_file_name : str, default: None
             Name of the results file to read into a CFD-Post session or start a CFX-Solver session,
-        solver_input_file_name : str, optional
+        solver_input_file_name : str, default: None
             Name of the solver input file to start a CFX-Solver session.
-        cwd : str, Optional
+        cwd : str, default: None
             Working directory for the CFX client.
-        topy : bool or str, optional
-            A boolean flag to write the equivalent Python journal(s) from the journal(s) passed.
-            Can optionally take the file name of the new python journal file.
-        start_watchdog : bool, optional
-            When ``cleanup_on_exit`` is True, ``start_watchdog`` defaults to True,
+        topy : bool or str, default: None
+            A Boolean flag to write the equivalent Python journals from the journals passed.
+            This parameter can optionally take the file name of a new Python journal file.
+        start_watchdog : bool, default: None
+            When ``cleanup_on_exit`` is ``True``, ``start_watchdog`` defaults to ``True``,
             which means an independent watchdog process is run to ensure
-            that any local GUI-less CFX sessions started by PyCFX are properly closed (or killed if frozen)
-            when the current Python process ends.
-        file_transfer_service : optional
-            File transfer service. Uploads/downloads files to/from the server.
+            that any local GUI-less CFX sessions started by PyCFX are properly closed (or killed if frozen) when the current Python process ends.
+        file_transfer_service : default: None
+            File transfer service. Uploads or downloads files to or from the server.
 
         Returns
         -------

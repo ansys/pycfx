@@ -20,7 +20,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-"""Provides a module to create gRPC services."""
+"""Provides a module for creating gRPC services."""
 
 from ansys.cfx.core.services.batch_ops import BatchOpsService
 from ansys.cfx.core.services.engine_eval import EngineEval
@@ -38,7 +38,7 @@ _service_cls_by_name = {
 
 
 class service_creator:
-    """A gRPC service creator."""
+    """Provides the gRPC service creator."""
 
     def __init__(self, service_name: str):
         self._service_cls = _service_cls_by_name[service_name]

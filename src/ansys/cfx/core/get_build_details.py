@@ -20,7 +20,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-"""Get the git build info."""
+"""Get the Git build information."""
 
 from collections import OrderedDict
 import subprocess

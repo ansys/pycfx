@@ -13,37 +13,26 @@ PyCFX documentation |version|
    changelog
 
 Welcome to PyCFX
-----------------
-PyCFX unlocks the power of Ansys CFX through a modern Python interface, allowing engineers and
-developers to automate, customize, and streamline CFD workflows with greater flexibility.
-
+-----------------
+PyCFX provides a modern Python interface to unlock the full potential of Ansys CFX. It empowers
+engineers and developers to automate, customize, and streamline CFD workflows.
 
 Why use PyCFX?
 --------------
-
-- **Automation**: Eliminate repetitive tasks and accelerate simulation workflows.
-- **Customization**: Control CFX behavior with Python for tailored solutions.
-- **Efficiency**: Reduce manual steps and improve reproducibility.
-- **Integration**: Seamlessly integrate with other Python libraries and tools.
-
+- **Automate**: Eliminate repetitive tasks and accelerate simulation workflows.
+- **Customize**: Control CFX behavior with Python for tailored solutions.
+- **Improve efficiency**: Reduce manual steps and improve reproducibility.
+- **Integrate**: Seamlessly work with other Python libraries and tools.
 
 How it works
 ------------
-PyCFX connects to Ansys CFX and allows programmatic interaction using a
+PyCFX connects to Ansys CFX and enables programmatic interaction using a
 modern Python API. It supports simulation setup, execution, and results
 extraction.
-
 
 Compatibility
 -------------
 PyCFX supports Ansys CFX 2025 R2 Service Pack 3 and later.
-
-
-Getting started
----------------
-
-Get started with PyCFX by following the steps in the :ref:`getting_started` guide.
-
 
 Resources
 ---------
@@ -52,11 +41,10 @@ Resources
 - `CFX documentation <https://ansyshelp.ansys.com/public/account/secured?returnurl=/Views/Secured/prod_page.html?pn=CFX>`_
 - `Ansys customer portal <https://support.ansys.com>`_
 
-
 Need help?
 ----------
 
-- `Submit a bug report <https://github.com/ansys/pycfx/issues>`_
-- `Contact support <https://support.ansys.com>`_
+- `Submit a bug report <https://github.com/ansys/pycfx/issues>`_.
+- `Contact support <https://support.ansys.com>`_.
 
-See :ref:`ref_contributing` for how to report issues or contribute via GitHub.
+For information on reporting issues or contributing via GitHub, see :ref:`ref_contributing`.

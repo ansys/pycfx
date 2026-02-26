@@ -41,7 +41,7 @@ logger: logging.Logger = logging.getLogger("pycfx.general")
 
 
 class HealthCheckService:
-    """Class wrapping the health check gRPC service of CFX.
+    """Wraps the health check gRPC service of CFX.
 
     Methods
     -------
@@ -60,7 +60,7 @@ class HealthCheckService:
     def __init__(
         self, channel: grpc.Channel, metadata: list[tuple[str, str]], cfx_error_state
     ) -> None:
-        """__init__ method of HealthCheckService class."""
+        """Initialize an instance of the ``HealthCheckService`` class."""
         intercept_channel = grpc.intercept_channel(
             channel,
             GrpcErrorInterceptor(),
@@ -84,14 +84,14 @@ class HealthCheckService:
         return HealthCheckService.Status(response.status)
 
     def wait_for_server(self, timeout: int) -> None:
-        """Keeps a watch on the health of the CFX connection.
+        """Keep a watch on the health of the CFX connection.
 
         Response changes only when the service's serving status changes.
 
         Parameters
         ----------
         timeout : int
-            timeout in seconds
+            Timeout in seconds.
 
         Raises
         ------
@@ -118,7 +118,7 @@ class HealthCheckService:
                 raise
 
     def status(self) -> Status:
-        """Check health of CFX connection."""
+        """Get the health status of the CFX connection."""
         if self._channel:
             try:
                 return self.check_health()
@@ -131,5 +131,5 @@ class HealthCheckService:
 
     @property
     def is_serving(self) -> bool:
-        """Checks whether CFX is serving."""
+        """Flag indicating if CFX is serving."""
         return self.status() == self.Status.SERVING

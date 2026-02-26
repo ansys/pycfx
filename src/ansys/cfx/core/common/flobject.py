@@ -20,15 +20,15 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-"""Module for accessing and modifying hierarchy of CFX settings.
+"""Module for accessing and modifying the hierarchy of CFX settings.
 
-The only useful method is '`get_root``, which returns the root object for
+The only useful method is ``get_root()``, which returns the root object for
 accessing CFX settings.
 
 Child objects can be generally accessed or modified using attribute access.
 Named child objects can be accessed or modified using index operators.
 
-Calling an object will return its current value.
+Calling an object returns its current value.
 
 Example
 -------
@@ -84,7 +84,7 @@ settings_logger = logging.getLogger("pycfx.settings_api")
 
 
 class InactiveObjectError(RuntimeError):
-    """Inactive object access."""
+    """Provides the inactive object access warning."""
 
     def __init__(self, python_path):
         super().__init__(f"'{python_path}' is currently inactive.")
@@ -125,7 +125,7 @@ StateType = Union[PrimitiveStateType, DictStateType, ListStateType]
 
 
 def check_type(val, tp):
-    """Check type of object."""
+    """Check the type of the object."""
     if hasattr(tp, "__supertype__"):
         return check_type(val, tp.__supertype__)
     if isinstance(tp, ForwardRef):
@@ -152,7 +152,7 @@ def check_type(val, tp):
 
 
 def assert_type(val, tp):
-    """Assert type.
+    """Provides the assert type warning.
 
     Raises
     ------
@@ -182,7 +182,7 @@ def to_python_name(cfx_name: str) -> str:
 
 
 class Base:
-    """Base class for settings and command objects.
+    """Provides a base class for settings and command objects.
 
     Parameters
     ----------
@@ -199,7 +199,7 @@ class Base:
     """
 
     def __init__(self, name: Optional[str] = None, parent=None):
-        """__init__ of Base class."""
+        """Initialize an instance of the ``Base`` class."""
         self._setattr("_parent", weakref.proxy(parent) if parent is not None else None)
         self._setattr("_flproxy", None)
         self._setattr("_file_transfer_service", None)
@@ -208,18 +208,18 @@ class Base:
         self._setattr("_child_alias_objs", {})
 
     def set_flproxy(self, flproxy):
-        """Set flproxy object."""
+        """Set the ``flproxy`` object."""
         self._setattr("_flproxy", flproxy)
 
     def _set_file_transfer_service(self, file_transfer_service):
-        """Set file_transfer_service."""
+        """Set file transfer service."""
         self._setattr("_file_transfer_service", file_transfer_service)
 
     @property
     def flproxy(self):
         """Proxy object.
 
-        The proxy object is set at the root level and accessed via the parent for the
+        The proxy object is set at the root level and accessed using the parent for the
         child classes.
         """
         if self._flproxy is None:
@@ -248,7 +248,7 @@ class Base:
 
     @property
     def obj_name(self) -> str:
-        """CFX engine/CCL name of this object.
+        """CFX engine/CCL name of the object.
 
         By default, this returns the object's static name. If the object is a child of a
         named object, the object's name is returned.
@@ -259,7 +259,7 @@ class Base:
 
     @property
     def python_name(self) -> str:
-        """Python name of this object.
+        """Python name of the object.
 
         By default, this returns the object's static name. If the object is a child of a
         named object, the object's name is returned.
@@ -270,7 +270,7 @@ class Base:
     def path(self) -> str:
         """Path of the object.
 
-        Constructed from the ``obj_name`` of self and the path of
+        The path is constructed from the ``obj_name`` of self and the path of
         parent.
         """
         if self._parent is None:
@@ -284,7 +284,7 @@ class Base:
     def python_path(self) -> str:
         """Path of the object.
 
-        Constructed in python syntax from 'python_path' and the parents python path.
+        The path is constructed in Python syntax from ``python_path`` and the parent's Python path.
         """
         if self._parent is None:
             return "<session>"
@@ -309,14 +309,14 @@ class Base:
         Parameters
         ----------
         attr : str
-            attribute name
-        attr_type_or_types : type or tuple of type, optional
-            attribute type, by default None
+            Attribute name.
+        attr_type_or_types : type or tuple of type, default: None
+            Attribute type.
 
         Returns
         -------
         Any
-            attribute value
+            Attribute value.
 
         Raises
         ------
@@ -345,12 +345,12 @@ class Base:
         return val
 
     def is_active(self) -> bool:
-        """Whether the object is active."""
+        """Check if the object is active."""
         attr = self.get_attr(_InlineConstants.is_active)
         return False if attr is False else True
 
     def _check_stable(self) -> None:  # pragma: no cover (attribute not used)
-        """Whether the object is stable."""
+        """Check if the object is stable."""
         if not self.is_active():
             return
         attr = self.get_attr(_InlineConstants.is_stable)
@@ -358,13 +358,13 @@ class Base:
         if not attr:
             warnings.warn(
                 f"The API feature at '{self.path}' is not stable. "
-                f"It is not guaranteed that it is fully validated and "
+                f"It is not guaranteed that it is fully validated, and "
                 f"there is no commitment to its backwards compatibility.",
                 UnstableSettingWarning,
             )
 
     def is_read_only(self) -> bool:
-        """Whether the object is read-only."""
+        """Check if the object is read-only."""
         attr = self.get_attr(_InlineConstants.is_read_only)
         return False if attr is None else attr
 
@@ -387,12 +387,12 @@ class Base:
         return obj
 
     def before_execute(self, value):  # pragma: no cover (remote file handling not used)
-        """Executes before command execution."""
+        """Execute before command execution."""
         if hasattr(self, "_do_before_execute"):
             self._do_before_execute(value)
 
     def after_execute(self, value):  # pragma: no cover (remote file handling not used)
-        """Executes after command execution."""
+        """Execute after command execution."""
         if hasattr(self, "_do_after_execute"):
             self._do_after_execute(value)
 
@@ -425,15 +425,15 @@ StateT = TypeVar("StateT")
 
 
 class Property(Base):
-    """Exposes attribute accessor on settings object."""
+    """Exposes the attribute accessor on a settings object."""
 
     def default_value(self):
-        """Gets the default value of the object."""
+        """Get the default value of the object."""
         return self.get_attr(_InlineConstants.default_value)
 
 
 class Numerical(Property):
-    """Exposes attribute accessor on settings object - specific to numerical objects."""
+    """Exposes the attribute accessor on a settings object. This class is specific to numerical objects."""
 
     def min(self):
         """Get the minimum value of the object."""
@@ -447,7 +447,7 @@ class Numerical(Property):
 
 
 class RealNumerical(Numerical):
-    """A ``RealNumerical`` object representing a real value setting, including single
+    """Provides an object representing a real value setting, including single
     real values and containers of real values, such as lists.
 
     Methods
@@ -488,9 +488,9 @@ class RealNumerical(Numerical):
 
         Parameters
         ----------
-        state
-            The type of state can be float, str (representing either
-            an expression or a value with units), or an ansys.units.Quantity.
+        state : float | str | ansys.units.Quantity
+            The parameter value to set. If a string is provided, it may contain either
+            an expression or a value with units.
         kwargs : Any
             Keyword arguments.
 
@@ -520,17 +520,17 @@ class RealNumerical(Numerical):
 
 
 class Textual(Property):
-    """Exposes attribute accessor on settings object - specific to string objects."""
+    """Exposes the attribute accessor on the settings object. This class is specific to string objects."""
 
 
 class DeprecatedSettingWarning(FutureWarning):
-    """Provides deprecated settings warning."""
+    """Provides the deprecated settings warning."""
 
     pass
 
 
 class UnstableSettingWarning(UserWarning):
-    """Provides unstable settings warning."""
+    """Provides the unstable settings warning."""
 
     pass
 
@@ -573,7 +573,7 @@ class _Alias:
                 )
                 if not _Alias.once:
                     warnings.warn(
-                        "\nExecute the following code to suppress future warnings like the above:\n\n"
+                        "\nExecute the following code to suppress future warnings like the previous one:\n\n"
                         ">>> import warnings\n"
                         '>>> warnings.filterwarnings("ignore", category=DeprecatedSettingWarning)',
                         DeprecatedSettingWarning,
@@ -611,7 +611,7 @@ def _create_child(cls, name, parent: weakref.CallableProxyType, alias_path=None)
 
 
 class SettingsBase(Base, Generic[StateT]):
-    """Base class for settings objects.
+    """Provides a base class for settings objects.
 
     Methods
     -------
@@ -624,7 +624,7 @@ class SettingsBase(Base, Generic[StateT]):
 
     @classmethod
     def to_engine_keys(cls, value: StateT) -> StateT:
-        """Convert value to have keys with engine names.
+        """Convert the state in ``value`` to have keys with engine names.
 
         This is overridden in the ``Group``, ``NamedObject``, and
         ``ListObject`` classes.
@@ -633,7 +633,7 @@ class SettingsBase(Base, Generic[StateT]):
 
     @classmethod
     def to_python_keys(cls, value: StateT) -> StateT:
-        """Convert value to have keys with Python names.
+        """Convert the state in ``value`` to have keys with Python names.
 
         This is overridden in the ``Group``, ``NamedObject``, and
         ``ListObject`` classes.
@@ -655,7 +655,7 @@ class SettingsBase(Base, Generic[StateT]):
         Raises
         ------
         NotImplementedError
-            If '..' is present in the alias path.
+            If ``..`` is present in the alias path.
         """
         if isinstance(value, collections.abc.Mapping):
             ret = {}
@@ -746,13 +746,13 @@ class SettingsBase(Base, Generic[StateT]):
 
 
 class Integer(SettingsBase[int], Numerical):
-    """An ``Integer`` object representing an integer value setting."""
+    """Provides an object representing an integer value setting."""
 
     _state_type = int
 
 
 class Real(SettingsBase[RealType], RealNumerical):
-    """A ``Real`` object representing a real value setting.
+    """Provides an object representing a real value setting.
 
     Some ``Real`` objects also accept string arguments representing
     expression values.
@@ -765,28 +765,28 @@ class Real(SettingsBase[RealType], RealNumerical):
 
 
 class String(SettingsBase[str], Textual):
-    """A ``String`` object representing a string value setting."""
+    """Provides an object representing a string value setting."""
 
     _state_type = str
 
 
 class Filename(SettingsBase[str], Textual):  # pragma: no cover (type not used)
-    """A ``Filename`` object representing a file name."""
+    """Provides an object representing a file name."""
 
     _state_type = str
 
     def file_purpose(self):
-        """Specifies whether this file is used as input or output by CFX."""
+        """Determine if CFX uses this file as an input or output."""
         return self.get_attr(_InlineConstants.file_purpose)
 
 
 class FilenameList(SettingsBase[StringListType], Textual):  # pragma: no cover (type not used)
-    """A FilenameList object represents a list of file names."""
+    """An object represents a list of file names."""
 
     _state_type = StringListType
 
     def file_purpose(self):
-        """Specifies whether this file is used as input or output by CFX."""
+        """Determine if CFX uses this file as an input or output."""
         return self.get_attr(_InlineConstants.file_purpose)
 
 
@@ -813,13 +813,13 @@ class _InOutFile(_InputFile, _OutputFile):
 
 
 class Boolean(SettingsBase[bool], Property):
-    """A ``Boolean`` object representing a Boolean value setting."""
+    """Provides an object representing a Boolean value setting."""
 
     _state_type = bool
 
 
 class RealList(SettingsBase[RealListType], RealNumerical):
-    """A ``RealList`` object representing a real list setting."""
+    """Provides an object representing a real list setting."""
 
     base_set_state = SettingsBase[RealListType].set_state
     set_state = RealNumerical.set_state
@@ -834,29 +834,28 @@ class IntegerList(SettingsBase[IntListType], Numerical):
 
 
 class RealVector(SettingsBase[RealVectorType], Numerical):
-    """An object representing a 3D vector.
+    """Provides an object representing a 3D vector.
 
-    A ``RealVector`` object representing a real vector setting
-    consisting of three real values.
+    A ``RealVector`` object consists of three real values.
     """
 
     _state_type = RealVectorType
 
 
 class StringList(SettingsBase[StringListType], Textual):
-    """A ``StringList`` object representing a string list setting."""
+    """Provides an object representing a string list setting."""
 
     _state_type = StringListType
 
 
 class BooleanList(SettingsBase[BoolListType], Property):
-    """A ``BooleanList`` object representing a Boolean list setting."""
+    """Provides an object representing a Boolean list setting."""
 
     _state_type = BoolListType
 
 
 def _command_query_name_filter(parent, list_attr: str, prefix: str, excluded: List[str]) -> List:
-    """Auto completer info of commands and queries."""
+    """Auto completer information of commands and queries."""
     ret = []
     names = getattr(parent, list_attr)
     for name in names:
@@ -870,21 +869,21 @@ def _command_query_name_filter(parent, list_attr: str, prefix: str, excluded: Li
 class Group(SettingsBase[DictStateType]):
     """A ``Group`` container object.
 
-    A ``Group`` object is a container similar to a C++ structure object.
-    Child objects can be accessed via attribute access.
+    This container object is similar to a C++ structure object.
+    Child objects can be accessed with attribute access.
 
     Attributes
     ----------
     child_names: list[str]
-        Names of the child objects
+        Names of the child objects.
     command_names: list[str]
-        Names of the commands
+        Names of the commands.
     """
 
     _state_type = DictStateType
 
     def __init__(self, name: Optional[str] = None, parent=None):
-        """__init__ of Group class."""
+        """Initialize an instance of the ``Group`` class."""
         super().__init__(name, parent)
         for child in self.child_names:
             cls = self.__class__._child_classes[child]
@@ -906,7 +905,7 @@ class Group(SettingsBase[DictStateType]):
 
     @classmethod
     def to_engine_keys(cls, value):
-        """Convert value to have keys with engine names.
+        """Convert the state in ``value`` to have keys with engine names.
 
         Raises
         ------
@@ -927,7 +926,7 @@ class Group(SettingsBase[DictStateType]):
 
     @classmethod
     def to_python_keys(cls, value):
-        """Convert value to have keys with Python names."""
+        """Convert the state in ``value`` to have keys with Python names."""
         if isinstance(value, collections.abc.Mapping):
             ret = {}
             undef = object()
@@ -947,7 +946,7 @@ class Group(SettingsBase[DictStateType]):
     _child_aliases = {}
 
     def get_active_child_names(self):
-        """Names of children that are currently active."""
+        """Get the names of currently active children."""
         ret = []
         for child in self.child_names:
             if getattr(self, child).is_active():
@@ -955,7 +954,7 @@ class Group(SettingsBase[DictStateType]):
         return ret
 
     def get_active_command_names(self):
-        """Names of commands that are currently active."""
+        """Get the names of currently active commands."""
         ret = []
         for command in self.command_names:
             if getattr(self, command).is_active():
@@ -971,12 +970,12 @@ class Group(SettingsBase[DictStateType]):
         return ret
 
     def get_completer_info(self, prefix="", excluded=None) -> List[List[str]]:
-        """Get completer info of all children.
+        """Get completer information of all children.
 
         Returns
         -------
         List[List[str]]
-            Name, type and docstring of all children.
+            Name, type, and docstring of all children.
         """
         excluded = excluded or []
         ret = []
@@ -1070,10 +1069,10 @@ class Group(SettingsBase[DictStateType]):
 
 
 class WildcardPath(Group):  # pragma: no cover (wildcards not used)
-    """Class wrapping a wildcard path to perform get_var and set_var on flproxy."""
+    """Wraps a wildcard path to perform ``get_var()`` and ``set_var()`` on flproxy."""
 
     def __init__(self, flproxy, path: str, state_cls, settings_cls, parent):
-        """__init__ of WildcardPath class."""
+        """Initialize an instance of the ``WildcardPath`` class."""
         self._setattr("_flproxy", flproxy)
         self._setattr("_path", path)
         # _state_cls is the settings class at which the state is constructed.
@@ -1122,7 +1121,7 @@ class WildcardPath(Group):  # pragma: no cover (wildcards not used)
             ) from ex
 
     def items(self):
-        """Items."""
+        """Get items."""
         for key, value in self._parent.items():
             if fnmatch.fnmatch(key, self._path.rsplit(sep="/", maxsplit=1)[-1]):
                 yield key, value
@@ -1133,16 +1132,16 @@ class WildcardPath(Group):  # pragma: no cover (wildcards not used)
                 yield item
 
     def to_engine_keys(self, value):
-        """Convert value to have keys with engine names."""
+        """Convert the state in ``value`` to have keys with engine names."""
         return self._state_cls.to_engine_keys(value)
 
     def to_python_keys(self, value):
-        """Convert value to have keys with Python names."""
+        """Convert the state in ``value`` to have keys with Python names."""
         return self._state_cls.to_python_keys(value)
 
 
 class NamedObjectWildcardPath(WildcardPath):  # pragma: no cover (wildcards not used)
-    """WildcardPath at a NamedObject path, so it can be looked up by wildcard again."""
+    """Provides the wild card path at a ``NamedObject`` path so it can be looked up by wildcard again."""
 
     def __getitem__(self, name: str):
         return WildcardPath(
@@ -1167,13 +1166,13 @@ class NamedObject(SettingsBase[DictStateType], Generic[ChildTypeT]):
     Attributes
     ----------
     command_names: list[str]
-        Names of the commands
+        Names of the commands.
     """
 
     # New objects could get inserted by other operations, so we cannot assume
     # that the local cache in self._objects is always up-to-date
     def __init__(self, name: Optional[str] = None, parent=None):
-        """__init__ of NamedObject class."""
+        """Initialize an instance of the ``NamedObject`` class."""
         super().__init__(name, parent)
         self._setattr("_objects", {})
         for cmd in self.command_names:
@@ -1190,7 +1189,7 @@ class NamedObject(SettingsBase[DictStateType], Generic[ChildTypeT]):
 
     @classmethod
     def to_engine_keys(cls, value):
-        """Convert value to have keys with engine names."""
+        """Convert the state in ``value`` to have keys with engine names."""
         if isinstance(value, collections.abc.Mapping):
             ret = {}
             for k, v in value.items():
@@ -1201,7 +1200,7 @@ class NamedObject(SettingsBase[DictStateType], Generic[ChildTypeT]):
 
     @classmethod
     def to_python_keys(cls, value):
-        """Convert value to have keys with Python names."""
+        """Convert the state in ``value`` to have keys with Python names."""
         if isinstance(value, collections.abc.Mapping):
             ret = {}
             for k, v in value.items():
@@ -1253,37 +1252,37 @@ class NamedObject(SettingsBase[DictStateType], Generic[ChildTypeT]):
         return iter(self._objects)
 
     def keys(self):
-        """Object names."""
+        """Get object names."""
         self._update_objects()
         return self._objects.keys()
 
     def values(self):
-        """Object values."""
+        """Get object values."""
         self._update_objects()
         return self._objects.values()
 
     def items(self):
-        """Items."""
+        """Get items."""
         self._update_objects()
         return self._objects.items()
 
     def user_creatable(self) -> bool:
-        """Whether the object is user-creatable."""
+        """Check if the object is user-creatable."""
         return self.get_attr(_InlineConstants.user_creatable, bool)
 
     def get_object_names(self):
-        """Object names."""
+        """Get object names."""
         obj_names = self.flproxy.get_object_names(self.path)
         obj_names_list = obj_names if isinstance(obj_names, list) else list(obj_names)
         return obj_names_list
 
     def get_completer_info(self, prefix="", excluded=None) -> List[List[str]]:
-        """Get completer info of all children.
+        """Get completer information of all children.
 
         Returns
         -------
         List[List[str]]
-            Name, type and docstring of all children.
+            Name, type, and docstring of all children.
         """
         excluded = excluded or []
         ret = []
@@ -1338,7 +1337,7 @@ def _rename(obj: Union[NamedObject, _Alias], new: str, old: str):
     Parameters
     ----------
     obj: NamedObject
-        named-object to be renamed
+        Named object to rename.
     new: str
         New name.
     old : str
@@ -1369,7 +1368,7 @@ class ListObject(SettingsBase[ListStateType], Generic[ChildTypeT]):
     # New objects could get inserted by other operations, so we cannot assume
     # that the local cache in self._objects is always up-to-date
     def __init__(self, name=None, parent=None):
-        """__init__ of ListObject class."""
+        """Initialize an instance of the ``ListObject`` class."""
         super().__init__(name, parent)
         self._setattr("_objects", [])
         for cmd in self.command_names:
@@ -1381,7 +1380,7 @@ class ListObject(SettingsBase[ListStateType], Generic[ChildTypeT]):
 
     @classmethod
     def to_engine_keys(cls, value):
-        """Convert value to have keys with engine names."""
+        """Convert the state in ``value`` to have keys with engine names."""
         if isinstance(value, collections.abc.Sequence):
             return [cls.child_object_type.to_engine_keys(v) for v in value]
         else:
@@ -1389,7 +1388,7 @@ class ListObject(SettingsBase[ListStateType], Generic[ChildTypeT]):
 
     @classmethod
     def to_python_keys(cls, value):
-        """Convert value to have keys with engine names."""
+        """Convert the state in ``value`` to have keys with Python names."""
         if isinstance(value, collections.abc.Sequence):
             return [cls.child_object_type.to_python_keys(v) for v in value]
         else:
@@ -1415,7 +1414,7 @@ class ListObject(SettingsBase[ListStateType], Generic[ChildTypeT]):
         return iter(self._objects)
 
     def get_size(self) -> int:
-        """Return the number of elements in a list object.
+        """Get the number of elements in a list object.
 
         Returns
         -------
@@ -1450,7 +1449,7 @@ class ListObject(SettingsBase[ListStateType], Generic[ChildTypeT]):
 
 
 class Map(SettingsBase[DictStateType]):
-    """A ``Map`` object representing key-value settings."""
+    """Provides an object representing key-value settings."""
 
 
 def _get_new_keywords(obj, args, kwds):
@@ -1476,19 +1475,20 @@ def _get_new_keywords(obj, args, kwds):
                 ccls = getattr(obj, k)
                 newkwds[ccls.cfx_name] = ccls.to_engine_keys(v)
             else:
-                raise RuntimeError("Argument '" + str(k) + "' is invalid")  # pragma: no cover (no \
-            # testable route to error)
+                raise RuntimeError(
+                    "Argument '" + str(k) + "' is invalid."
+                )  # pragma: no cover (no testable route to error)
     return newkwds
 
 
 class Action(Base):
-    """Intermediate Base class for Command and Query class."""
+    """Provides an intermediate base class for the ``Command`` and ``Query`` classes."""
 
     _child_classes = {}
     _child_aliases = {}
 
     def __init__(self, name: Optional[str] = None, parent=None):
-        """__init__ of Action class."""
+        """Initialize an instance of the ``Action`` class."""
         super().__init__(name, parent)
         if hasattr(self, "argument_names"):
             for argument in self.argument_names:
@@ -1496,12 +1496,12 @@ class Action(Base):
                 self._setattr(argument, _create_child(cls, None, self))
 
     def get_completer_info(self, prefix="", excluded=None) -> List[List[str]]:
-        """Get completer info of all arguments.
+        """Get completer information of all arguments.
 
         Returns
         -------
         List[List[str]]
-            Name, type and docstring of all arguments.
+            Name, type, and docstring of all arguments.
         """
         excluded = excluded or []
         ret = []
@@ -1533,7 +1533,7 @@ class Action(Base):
 
 
 class BaseCommand(Action):
-    """Executes command."""
+    """Provides for executing a command."""
 
     def execute_command(self, *args, **kwds):
         """Execute command."""
@@ -1556,7 +1556,7 @@ class BaseCommand(Action):
 
 
 class Command(BaseCommand):
-    """Command object."""
+    """Provides for executing a base command."""
 
     def _execute_command(self, **kwds):
         """Execute a command with the specified keyword arguments."""
@@ -1584,7 +1584,7 @@ class Command(BaseCommand):
 
 
 class CommandWithPositionalArgs(BaseCommand):
-    """Command Object."""
+    """Provides for executing a base with keyword arguments."""
 
     def _execute_command(self, *args, **kwds):
         """Execute a command with the specified keyword arguments."""
@@ -1612,7 +1612,7 @@ class CommandWithPositionalArgs(BaseCommand):
 
 
 class Query(Action):
-    """Query object."""
+    """Provides for querying objects."""
 
     def __call__(self, **kwds):
         """Call a query with the specified keyword arguments."""
@@ -1655,15 +1655,7 @@ def _clean_helpinfo(helpinfo):
 class _ChildNamedObjectAccessorMixin(collections.abc.MutableMapping):  # pragma: no cover \
     # (inclusion of child named objects not used)
     """A mixin class to provide a dictionary interface at a Group class level if the
-    Group has multiple named objects of a similar type. For example, boundary conditions
-    are grouped by type but quite often we want to access them without the type context.
-
-    The following can be used:
-    for name, boundary in setup.boundary_conditions.items():
-        print (name, boundary())
-
-    even though actual boundary conditions are stored one level lower to
-    boundary_conditions.
+    Group has multiple named objects of a similar type.
     """
 
     def __getitem__(self, name):
@@ -1767,7 +1759,7 @@ _bases_by_class = {}
 
 # pylint: disable=missing-raises-doc
 def get_cls(name, info, parent=None, version=None, is_postprocessing=False):
-    """Create a class for the object identified by "path"."""
+    """Create a class for the object identified by ``path``."""
     try:
         if name == "":
             pname = "root"
@@ -1968,19 +1960,19 @@ def get_root(
     Parameters
     ----------
     session_name: str
-        The name of a specific CFX session, i.e., "pre-processing", "solver" or "post-processing"
+        Name of a specific CFX session, such as ``pre-processing``, ``solver``, or ``post-processing``.
     flproxy: Proxy
         Object that interfaces with the CFX backend.
     file_transfer_service : optional
-        File transfer service. Uploads/downloads files to/from the server.
+        File transfer service. Uploads or downloads files to and from the server.
     info_query : Any
-        A gRPC service to execute Engine/CCL code.
+        gRPC service to execute Engine/CCL code.
     version : str
         CFX version.
 
     Returns
     -------
-    root object
+    Root object.
 
     Raises
     ------
@@ -2003,10 +1995,10 @@ def get_root(
         ):  # pragma: no cover (can never occur in testing environment)
             settings_logger.warning(
                 "Mismatch between generated file and server object "
-                "info. Dynamically created settings classes will "
+                "information. Dynamically created settings classes will "
                 "be used."
             )
-            raise RuntimeError("Mismatch in hash values")
+            raise RuntimeError("Mismatch in hash values.")
         cls = settings.root
     except Exception:
         cls, _ = get_cls(
@@ -2022,14 +2014,14 @@ def get_root(
 
 
 def find_children(obj, identifier="*"):
-    """Returns path of all the child objects matching an identifier.
+    """Get paths of all child objects matching an identifier.
 
     Parameters
     ----------
     obj: Object
-        Object whose children need to be queried.
+        Object whose children are to be queried.
     identifier: str
-        Identifier to find specific children.
+        Identifier for finding specific children.
 
     Returns
     -------

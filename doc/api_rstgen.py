@@ -18,26 +18,23 @@ API reference
 
 This API reference corresponds to {version}.
 
-This is the class and function reference for PyCFX. Please refer to the :ref:`ref_user_guide` for
-full guidelines on using PyCFX.
+This section provides the class and function reference for PyCFX. For comprehensive guidelines on using PyCFX, see the :ref:`ref_user_guide`.
 
-All the public APIs for PyCFX are listed in the left hand margin. Some key APIs are mentioned below.
+All public APIs for PyCFX appear in the left pane. Descriptions of some key APIs follow.
 
 PreProcessing mode
 ------------------
-The PreProcessing :ref:`settings API <ref_pre_processing_root>` is the main interface for using the CFX
-pre-processor, CFX-Pre.
+The PreProcessing :ref:`settings API <ref_pre_processing_root>` is the main interface for using the CFX preprocessor (CFX-Pre).
 
 Solution mode
 -------------
-The Solver :ref:`session<ref_session_solver>` is the main interface for running and controlling the
-CFX-Solver. This module offers very limited control in the first release of PyCFX.
+The :ref:`Solver session<ref_session_solver>` is the main interface for running and controlling the
+CFX-Solver. This module offers very limited control in this first PyCFX release.
 
 
 PostProcessing mode
 -------------------
-The PostProcessing :ref:`settings API <ref_post_processing_root>` is the main interface for using the CFX
-post-processor, CFD-Post.
+The PostProcessing :ref:`settings API <ref_post_processing_root>` is the main interface for using the CFX postprocessor (CFD-Post).
 
 
 .. toctree::

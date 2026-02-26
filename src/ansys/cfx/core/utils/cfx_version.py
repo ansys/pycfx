@@ -20,7 +20,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-"""Provides a module to get CFX version."""
+"""Module for getting the CFX version."""
 
 from enum import Enum
 from functools import total_ordering
@@ -32,7 +32,7 @@ import ansys.cfx.core as pycfx
 
 
 class AnsysVersionNotFound(RuntimeError):
-    """Raised when Ansys version is not found."""
+    """Raised when the Ansys version is not found."""
 
     pass
 
@@ -47,7 +47,7 @@ class ComparisonError(RuntimeError):
 
 
 def get_version(session=None):
-    """Get CFX version."""
+    """Get the CFX version."""
     if session is None:
         # for CI runs, get the version statically from env var set within CI
         image_tag = os.getenv("CFX_IMAGE_TAG")
@@ -59,7 +59,7 @@ def get_version(session=None):
 
 
 def get_version_for_file_name(version: Optional[str] = None, session=None):
-    """Get CFX version for file name."""
+    """Get the CFX version for the file name."""
     if version is None:
         version = get_version(session)
 
@@ -68,7 +68,7 @@ def get_version_for_file_name(version: Optional[str] = None, session=None):
 
 @total_ordering
 class CFXVersion(Enum):
-    """An enumeration over supported CFX versions.
+    """Provides an enumeration over supported CFX versions.
 
     Examples
     --------
@@ -106,13 +106,13 @@ class CFXVersion(Enum):
 
     @classmethod
     def get_latest_installed(cls):
-        """Return the version member corresponding to the most recent, available Ansys
-        installation.
+        """Get the version corresponding to the most recent Ansys
+        installation available.
 
         Returns
         -------
         CFXVersion
-            CFXVersion member corresponding to the newest CFX version.
+            CFXVersion corresponding to the newest CFX version.
 
         Raises
         ------
@@ -127,23 +127,23 @@ class CFXVersion(Enum):
 
     @classmethod
     def current_release(cls):
-        """Return the version member of the current release.
+        """Get the version of the current release.
 
         Returns
         -------
         CFXVersion
-            CFXVersion member corresponding to the latest release.
+            CFXVersion corresponding to the latest release.
         """
         return cls(pycfx.CFX_RELEASE_VERSION)
 
     @classmethod
     def current_dev(cls):
-        """Return the version member of the current development version.
+        """Get the version of the current development version.
 
         Returns
         -------
         CFXVersion
-            CFXVersion member corresponding to the latest development version.
+            CFXVersion corresponding to the latest development version.
         """
         return cls(pycfx.CFX_DEV_VERSION)
 
@@ -166,5 +166,5 @@ class CFXVersion(Enum):
         return self.value
 
     def __str__(self) -> str:
-        """Return a string representation for the CFX version."""
+        """Get a string representation for the CFX version."""
         return f"Ansys CFX 20{self.value.split('.')[0]} R{self.value.split('.')[1]}"

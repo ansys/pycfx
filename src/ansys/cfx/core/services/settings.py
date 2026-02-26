@@ -148,7 +148,7 @@ class SettingsService:
     """Service for accessing and modifying CFX settings."""
 
     def __init__(self, channel, metadata, engine_eval, cfx_error_state) -> None:
-        """__init__ method of SettingsService class."""
+        """Initialize an instance of the ``SettingsService`` class."""
         self._service_impl = _SettingsServiceImpl(channel, metadata, cfx_error_state)
         self.engine_eval = engine_eval
         self.engine_version = CFXVersion(self.engine_eval.get_engine_version())
@@ -305,7 +305,7 @@ class SettingsService:
 
     @_trace
     def get_static_info(self) -> dict[str, Any]:
-        """Get static-info for settings.
+        """Get static information for settings.
 
         Raises
         ------
@@ -365,12 +365,12 @@ class SettingsService:
 
     @_trace
     def has_wildcard(self, name: str) -> bool:
-        """Checks whether a name has a wildcard pattern."""
+        """Check if a name has a wildcard pattern."""
         # TODO: To be implemented in the Engine
         # return self.engine_eval.info_query(f'(has-fnmatch-wild-card? "{name}")')
         return False
 
     @_trace
     def is_interactive_mode(self) -> bool:
-        """Checks whether commands can be executed interactively."""
+        """Check if commands can be executed interactively."""
         return False

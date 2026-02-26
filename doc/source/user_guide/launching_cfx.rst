@@ -1,13 +1,12 @@
 .. _ref_launch_guide:
 
-Launching CFX
-=============
+Launch CFX
+==========
 
-This document provides a comprehensive guide for launching Ansys CFX sessions using PyCFX, the
-Python interface for CFX.
+This page explains how to launch Ansys CFX sessions using PyCFX.
 
 The initial release of PyCFX with Ansys CFX 2025 R2 Service Pack 3 supports running CFX sessions
-only on the local machine (the same machine on which the Python session is executing).
+only on the local machine (the same machine where the Python session runs).
 
 
 Launch from local installation
@@ -15,14 +14,12 @@ Launch from local installation
 
 .. vale Google.Spacing = NO
 
-The :meth:`from_install() <ansys.cfx.core.session_utilities.SessionBase.from_install>` method
-launches CFX using a locally installed version of Ansys CFX.
+Use the :meth:`from_install() <ansys.cfx.core.session_utilities.SessionBase.from_install>` method
+to launch CFX with a locally installed version of Ansys CFX.
 
-Use this method when:
+Use this method when CFX is installed on your local machine and you want to run CFX only on the local machine.
 
-- You have CFX installed on your local machine and want to run CFX only on the local machine.
-
-**Example function calls:**
+**Example calls:**
 
 .. code-block:: python
 
@@ -32,45 +29,44 @@ Use this method when:
 
   pysolve = pycfx.Solver.from_install(solver_input_file_name=solver_input_file_name)
 
-Useful arguments to the :meth:`from_install() <ansys.cfx.core.session_utilities.SessionBase.from_container>`
-method include:
+Useful arguments for the :meth:`from_install() <ansys.cfx.core.session_utilities.SessionBase.from_container>`
+method follow:
 
 .. vale Google.Spacing = YES
 
-- ``product_version``: Specifies the CFX version to launch. If not specified, the latest
-  supported version is launched.
-- ``case_file_name``: Specifies the path to a case file (.cfx) on the local file system to
+- ``product_version``: CFX version to launch. If not specified, the method launches
+  the latest supported version.
+- ``case_file_name``: Path to a case file (.cfx) on the local file system to
   initialize a PreProcessing session.
-- ``solver_input_file_name``: Specifies the path to a CFX-Solver Input File (.def or .mdef) on the
+- ``solver_input_file_name``: Path to a CFX-Solver input file (.def or .mdef) on the
   local file system to initialize a Solver session.
-- ``run_directory``: Specifies the run directory (.dir) for an existing CFX-Solver run to initialize a
+- ``run_directory``: Run directory (.dir) for an existing CFX-Solver run to initialize a
   Solver session.
-- ``results_file_name``: Specifies the path to a results file (.res or .mres) on the local file
+- ``results_file_name``: Path to a results file (.res or .mres) on the local file
   system to initialize a Solver or PostProcessing session.
-- ``additional_arguments``: Specifies a list of additional command-line arguments to pass to the
-  ``cfx5pre``/``cfx5solve``/``cfdpost`` commands when launching the session or starting the
+- ``additional_arguments``:List of additional command-line arguments to pass to the
+  ``cfx5pre``, ``cfx5solve``, or ``cfdpost`` commands when launching the session or starting the
   CFX-Solver.
 
+Launch from an existing session
+-------------------------------
 
-Launch from existing session
-----------------------------
+You can launch Solver and PostProcessing sessions from existing PyCFX sessions.
 
-The Solver and PostProcessing sessions can be launched from existing PyCFX sessions.
+- Launch a Solver session from an existing PreProcessing session. At the point of launch, the
+  Solver session captures and stores the existing model setup in CFX-Pre, ready to start the run.
+  You can continue editing the setup in the PreProcessing session without affecting the previously
+  launched Solver session.
+- Launch a PostProcessing session from an existing Solver session. If the CFX-Solver run is
+  complete, the results file opens. If the CFX-Solver run is not complete, the new PostProcessing
+  session waits for it to finish before reading the results.
 
-- The Solver session can be launched from an existing PreProcessing session. At the point where
-  the Solver session is launched, the existing model setup in CFX-Pre is captured and stored in the
-  Solver session, ready for starting the run. You can continue to edit the setup in the
-  PreProcessing session without affecting the Solver session previously launched.
-- The PostProcessing session can be launched from an existing Solver session. If the CFX-Solver run
-  is complete, the results file is opened. If the CFX-Solver run is not complete, the new
-  PostProcessing session waits for it to complete before reading the results.
-
-When starting a PyCFX session from another PyCFX session, the new session inherits settings
-from the existing session. For example, if a PreProcessing session is started with the
+When you start a PyCFX session from another PyCFX session, the new session inherits settings
+from the existing session. For example, if you start a PreProcessing session with the
 ``product_version`` argument, a new Solver session initialized from the PreProcessing session
 also uses that argument.
 
-**Example function calls:**
+**Example calls:**
 
 .. code-block:: python
 
@@ -78,11 +74,10 @@ also uses that argument.
 
   pypost = pycfx.PostProcessing.from_session(pysolve)
 
+Enable logging
+--------------
 
-Logging support
----------------
-PyCFX has an option to run with logging enabled.
-This command enables logging:
+PyCFX supports running with logging enabled. Use this code to enable logging:
 
 .. code-block:: python
 
@@ -91,5 +86,5 @@ This command enables logging:
   PyCFX logging file ...
   Setting PyCFX global logging level to DEBUG.
 
-For more details, see :ref:`ref_logging_guide`.
+For more information, see :ref:`ref_logging_guide`.
 

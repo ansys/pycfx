@@ -34,10 +34,10 @@ from ansys.cfx.core.utils.cfx_version import CFXVersion
 
 
 class SessionBase:
-    """Base class for CFX sessions.
+    """Provides the base class for CFX sessions.
 
-    This class is not intended to be used directly. Instead, use one of the `from_install`,
-    `from_session`, `from_connection` or `from_container` methods to create a session.
+    This class is not intended to be used directly. Instead, use one of the `from_install()`,
+    `from_session()`, `from_connection()`, or `from_container()` methods to create a session.
     """
 
     _session_mode = {
@@ -73,47 +73,50 @@ class SessionBase:
         Parameters
         ----------
         ui_mode : UIMode
-            Defines the user interface mode for CFX. Options correspond to values in the ``UIMode`` enum.
-        product_version : CFXVersion or str or float or int, optional
-            Indicates the version of Ansys CFX to launch. For example, to use version 2025 R2, pass
-            ``CFXVersion.v252``, ``"25.2.0"``, ``"25.2"``, ``25.2``, or ``252``. Defaults to ``None``,
-            which uses the newest installed version.
-        journal_file_names : str or list of str, optional
-            Path(s) to a CFX journal file(s) that CFX will execute. Defaults to ``None``.
-        start_timeout : int, optional
-            Maximum time in seconds allowed for connecting to the CFX server. Defaults to 60 seconds.
-        additional_arguments : str, optional
+            User interface mode for CFX. Options correspond to values in the ``UIMode`` enum.
+        product_version : CFXVersion or str or float or int, default None
+            Version of Ansys CFX to launch. For example, to use version 2025 R2, pass
+            ``CFXVersion.v252``, ``"25.2.0"``, ``"25.2"``, ``25.2``, or ``252``. The default
+            is ``None``, in which case the newest installed version is launched.
+        journal_file_names : str or list of str, default: None
+            Paths to CFX journal files that CFX is to execute.
+        start_timeout : int, default: 60
+            Maximum time in seconds allowed for connecting to the CFX server.
+        additional_arguments : str, default: ""
             Additional command-line arguments for CFX, formatted as they would be on the command line.
-        env : dict[str, str], optional
-            A mapping for modifying environment variables in CFX. Defaults to ``None``.
-        cleanup_on_exit : bool, optional
-            Determines whether to shut down the connected CFX session when exiting PyCFX or calling
-            the session's `exit()` method. Defaults to True.
-        dry_run : bool, optional
-            If True, does not launch CFX but prints configuration information instead. The `call()` method
-            returns a tuple containing the launch string and server info file name. Defaults to False.
-        start_transcript : bool, optional
-            Indicates whether to start streaming the CFX transcript in the client. Defaults to True;
-            streaming can be controlled via `transcript.start()` and `transcript.stop()` methods on the session object.
-        case_file_name : str, optional
-            Name of the case file to read into a CFX-Pre session. Defaults to None.
-        run_directory : str, optional
-            Name of the run directory to monitor with a CFX-Solver or CFD-Post session. Defaults to None.
-        results_file_name : str, optional
+        env : dict[str, str], default: {}
+            Mapping for modifying environment variables in CFX.
+        cleanup_on_exit : bool, default: True
+            Whether to shut down the connected CFX session when exiting PyCFX or calling
+            the session's `exit()` method.
+        dry_run : bool, default: False
+            Whether to dry run a container start. If ``True``, CFX is not launched but the
+            configuration information that would be used is printed as if CFX is being launched.
+            The `call()` method returns a tuple containing the launch string and name of the
+            server information file.
+        start_transcript : bool, default: True
+            Whether to start streaming the CFX transcript in the client.
+            Streaming can be controlled using the `transcript.start()` and `transcript.stop()`
+            methods on the session object.
+        case_file_name : str, default: None
+            Name of the case file to read into a CFX-Pre session.
+        run_directory : str, default: None
+            Name of the run directory to monitor with a CFX-Solver or CFD-Post session.
+        results_file_name : str, default: None
             Name of the results file to read into a CFD-Post session or start a CFX-Solver session.
-            Defaults to None.
-        solver_input_file_name : str, optional
-            Name of the solver input file to start a CFX-Solver session. Defaults to None.
-        cwd : str, optional
+        solver_input_file_name : str, default: None
+            Name of the solver input file to start a CFX-Solver session.
+        cwd : str, default: None, default: None
             Working directory for the CFX client.
-        topy :  bool or str, optional
-            A flag indicating whether to write equivalent Python journals from provided journal files; can also specify
-            a filename for the new Python journal.
-        start_watchdog : bool, optional
-            When `cleanup_on_exit` is True, defaults to True; an independent watchdog process ensures that any local
-            GUI-less CFX sessions started by PyCFX are properly closed when the current Python process ends.
-        file_transfer_service : Any
-            Service for uploading/downloading files to/from the server.
+        topy : bool or str, default: None
+            A flag indicating whether to write equivalent Python journals from provided journal
+            files. You can also specify a filename for a new Python journal.
+        start_watchdog : bool, default: None
+            When ``cleanup_on_exit`` is ``True``, this parameter defaults to ``True``. An
+            independent watchdog process ensures that any local GUI-less CFX sessions started by
+            PyCFX are properly closed when the current Python process ends.
+        file_transfer_service : Any, default: None
+            Service for uploading or downloading files to or from the server.
 
         Raises
         ------
@@ -122,8 +125,8 @@ class SessionBase:
 
         Notes
         -----
-        In job scheduler environments (e.g., SLURM, LSF, PBS), resources and compute nodes are allocated,
-        and core counts are queried from these environments before being passed to CFX.
+        In job scheduler environments (such as SLURM, LSF, PBS), resources and compute nodes are
+        allocated, and core counts are queried from these environments before being passed to CFX.
         """
         mode = cls._session_mode[cls.__name__]
         argvals = locals().copy()
@@ -151,39 +154,45 @@ class SessionBase:
 
         Parameters
         ----------
-        ui_mode : UIMode
-            Defines the user interface mode for CFX. Options correspond to values in the ``UIMode`` enum.
-        product_version :  CFXVersion or str or float or int, optional
-            Indicates the version of Ansys CFX to launch. For example, to use version 2025 R2, pass
-            any of ``CFXVersion.v252``, ``"25.2.0"``, ``"25.2"``, ``25.2``, or ``252``. Defaults to ``None``,
+        ui_mode : UIMode, default: None
+            User interface mode for CFX. Options correspond to values in the ``UIMode`` enum.
+        product_version :  CFXVersion or str or float or int, default: None
+            Version of Ansys CFX to launch. For example, to use version 2025 R2, pass
+            any of ``CFXVersion.v252``, ``"25.2.0"``, ``"25.2"``, ``25.2``, or ``252``. The
+            default is ``None``, in which case the newest installed version is launched.
             which uses the newest installed version.
-        start_timeout : int, optional
-            Maximum allowable time in seconds for connecting to the CFX server. Defaults to 60 seconds.
-        additional_arguments : str, optional
+        start_timeout : int, default: 60
+            Maximum allowable time in seconds for connecting to the CFX server.
+        additional_arguments : str, default: ""
             Additional command-line arguments for CFX, formatted as they would be on the command line.
-        container_dict : dict, optional
+        container_dict : dict, default: None
             Configuration dictionary for launching CFX inside a Docker container. See also
             :mod:`~ansys.cfx.core.launcher.cfx_container`.
-        dry_run : bool, optional
-            If True, does not launch CFX but prints configuration information instead. If dry running a
-            container start, this method will return the configured ``container_dict``. Defaults to False.
-        cleanup_on_exit : bool
-            Determines whether to shut down the connected CFX session upon exit or when calling
-            the session's `exit()` method. Defaults to True.
-        start_transcript : bool
-            Indicates whether to start streaming the CFX transcript in the client. Defaults to True;
-            streaming can be controlled via `transcript.start()` and `transcript.stop()` methods on the session object.
-        start_watchdog : bool, optional
-            If True and `cleanup_on_exit` is True, an independent watchdog process is run to ensure that any local
-            GUI-less CFX sessions started by PyCFX are properly closed when the current Python process ends.
-        file_transfer_service : Any, optional
-            Service for uploading/downloading files to/from the server.
-        solver_input_file_name : str, optional
-            Name of the solver input file to start a CFX-Solver session. Defaults to None.
+        dry_run : bool, default: False
+            Whether to dry run a container start. If ``True``, CFX is not launched but the
+            configuration information that would be used is printed as if CFX is being launched.
+            If dry running a container start, this method returns the configured
+            ``container_dict`` argument.
+        cleanup_on_exit : bool, default: True
+            Whether to shut down the connected CFX session on exit or when calling
+            the session's `exit()` method.
+        start_transcript : bool, default: True
+            Whether to start streaming the CFX transcript in the client.
+            streaming can be controlled using the `transcript.start()` and `transcript.stop()`
+            methods on the session object.
+        start_watchdog : bool, default: None
+            If ``True`` and ``cleanup_on_exit`` is ``True``, an independent watchdog process
+            is run to ensure that any local GUI-less CFX sessions started by PyCFX are properly
+            closed when the current Python process ends.
+        file_transfer_service : Any, default: None
+            Service for uploading or downloading files to or from the server.
+        solver_input_file_name : str, default: None
+            Name of the solver input file to start a CFX-Solver session.
+
         Returns
         -------
         Meshing | PureMeshing | Solver | SolverIcing | dict
-            Session object or configuration dictionary if ``dry_run`` is True.
+            Session object or configuration dictionary if the ``dry_run`` argument is ``True``.
 
         Raises
         ------
@@ -192,8 +201,9 @@ class SessionBase:
 
         Notes
         -----
-        In job scheduler environments (e.g., SLURM, LSF, PBS), resources and compute nodes are allocated,
-        and core counts are queried from these environments before being passed to CFX.
+        In job scheduler environments (such as SLURM, LSF, and PBS), resources and compute nodes
+        are allocated, and core counts are queried from these environments before being passed to
+        CFX.
         """
         mode = cls._session_mode[cls.__name__]
         argvals = locals().copy()
@@ -217,32 +227,29 @@ class SessionBase:
 
         Parameters
         ----------
-        ip : str, optional
-            IP address for connecting to an existing CFX instance. The
-            IP address defaults to ``"127.0.0.1"``. You can also use the environment
-            variable ``PYCFX_CFX_IP=<ip>`` to set this parameter.
-            The explicit value of ``ip`` takes precedence over ``PYCFX_CFX_IP=<ip>``.
-        port : int, optional
+        ip : str, default: None
+            IP address for connecting to an existing CFX instance. When ``None, theThe
+            ``"127.0.0.1"`` is used. You can also use the ``PYCFX_CFX_IP=<ip>`` environment
+            variable to set this parameter. The explicit value of ``ip`` takes precedence over the ``PYCFX_CFX_IP=<ip>`` environment variable.
+        port : int, default: None
             Port to listen on for an existing CFX instance. You can use the
-            environment variable ``PYCFX_CFX_PORT=<port>`` to set a default
-            value. The explicit value of ``port`` takes precedence over
-            ``PYCFX_CFX_PORT=<port>``.
-        address : str, optional
-            Address to connect to existing CFX instance.
-        server_info_file_name: str
-            Path to server-info file written out by CFX server. The default is
-            ``None``. PyCFX uses the connection information in the file to
-            connect to a running CFX session.
-        password : str, optional
-            Password to connect to existing CFX instance.
-        allow_remote_host : bool, optional
+            ``PYCFX_CFX_PORT=<port>`` environment variable to set a default
+            value. The explicit value of ``port`` takes precedence over the
+            ``PYCFX_CFX_PORT=<port>`` environment variable.
+        address : str, default: None
+            Address to connect to an existing CFX instance.
+        server_info_file_name: str, default: None
+            Path to the server information file written out by the CFX server. PyCFX uses the connection information in the file to connect to a running CFX session.
+        password : str, default: None
+            Password to connect to an existing CFX instance.
+        allow_remote_host : bool, default: False
             Whether to allow connecting to a remote CFX instance.
-        certificates_folder : str, optional
+        certificates_folder : str, default: None
             Path to the folder containing TLS certificates for CFX's gRPC server.
-        insecure_mode : bool, optional
-            If True, CFX's gRPC server will be connected in insecure mode without TLS.
-            This mode is not recommended. For more details on the implications
-            and usage of insecure mode, refer to the CFX documentation.
+        insecure_mode : bool, default: False
+            Whether to connect CFX's gRPC server in insecure mode without TLS.
+            This mode is not recommended. For more informationon the implications
+            and usage of insecure mode, see the CFX documentation.
 
         Raises
         ------
@@ -280,12 +287,11 @@ class SessionBase:
         ----------
         session : SessionBase
             Existing CFX session.
-
         case_file_name: str
-            The case file name to use when starting a Solver session from a PreProcessing session.
+            Name of the case file to use when starting a Solver session from a PreProcessing session.
             This is used to determine the run name for the CFX-Solver. It does not need to be
             supplied if a case file has already been saved by the PreProcessing session (for
-            Release 26.1 and later). The ".cfx" extension is not required and will be ignored if
+            CFX 2026 R1 and later). The ``.cfx`` extension is not required and is ignored if
             present.
 
         Raises
@@ -338,18 +344,18 @@ class SessionBase:
 
 
 class PreProcessing(SessionBase):
-    """Encapsulates a CFX server for pre-processing session connection."""
+    """Encapsulates a CFX server for a PreProcessing session connection."""
 
     pass
 
 
 class Solver(SessionBase):
-    """Encapsulates a CFX server for solver session connection."""
+    """Encapsulates a CFX server for a Solver session connection."""
 
     pass
 
 
 class PostProcessing(SessionBase):
-    """Encapsulates a CFX server for post-processing session connection."""
+    """Encapsulates a CFX server for a PostProcessing session connection."""
 
     pass
