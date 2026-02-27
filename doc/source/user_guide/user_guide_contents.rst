@@ -12,6 +12,7 @@ User guide
    session
    log
    usability
+   environment_variables
 
 This section explains how to use PyCFX to leverage Ansys CFX for CFD simulations.
 

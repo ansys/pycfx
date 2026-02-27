@@ -8,8 +8,6 @@ Contribute
    :maxdepth: 1
    :hidden:
 
-   environment_variables
-
 General guidance on contributing to a PyAnsys library appears in the
 `Contributing <https://dev.docs.pyansys.com/how-to/contributing.html>`_ topic
 in the *PyAnsys developer's guide*. Ensure that you are thoroughly familiar with
