@@ -72,13 +72,13 @@ def _get_server_info(
     password: str | None = None,
 ):
     """Get server connection information of an already running session.
-    Returns (ip, port, password) or (unix_socket, password)"""
+    Returns (ip, port, password) or (unix_socket, password)."""
 
     if not (ip and port) and not server_info_file_name:
         raise IpPortNotProvided()
     if (ip or port) and server_info_file_name:
         launcher_utils.logger.warning(
-            "The IP address and port are extracted from the server-info file "
+            "The IP address and port are extracted from the server info file, "
             "and their explicitly specified values are ignored."
         )
     else:

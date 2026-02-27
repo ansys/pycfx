@@ -20,7 +20,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-"""Module containing class encapsulating CFX-Pre connection."""
+"""Module containing the class encapsulating the CFX-Pre connection."""
 
 from typing import Any, Optional
 
@@ -30,8 +30,8 @@ from ansys.cfx.core.session import BaseSession
 
 class PreProcessing(BaseSession):
     """Encapsulates a CFX pre-processing session.
-    An object exposing the CFX-Pre CCL and scripting (Power Syntax)
-    capabilities in a Pythonic manner"
+    This object exposes the CFX-Pre CCL and scripting (Power Syntax)
+    capabilities in a Pythonic manner."
     """
 
     def __init__(
@@ -39,7 +39,7 @@ class PreProcessing(BaseSession):
         cfx_connection: CFXConnection,
         file_transfer_service: Optional[Any] = None,
     ):
-        """PreProcessing session.
+        """Instantiate an instance of the ``PreProcessing`` class.
 
         Args:
             cfx_connection (:ref:`ref_cfx_connection`): Encapsulates a CFX connection.
@@ -52,10 +52,10 @@ class PreProcessing(BaseSession):
 
     @classmethod
     def get_name(cls) -> str | None:
-        """Return session name."""
+        """Get the session name."""
         return "pre-processing"
 
     @classmethod
     def get_cmd_name(cls) -> str | None:
-        """Return the CFX command name related to the session."""
+        """Get the CFX command name related to the session."""
         return "cfx5pre"

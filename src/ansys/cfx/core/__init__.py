@@ -72,11 +72,11 @@ def version_info() -> str:
     Returns
     -------
     str
-        The PyCFX version being used.
+        PyCFX version being used.
 
     Notes
     -------
-    Only available in packaged versions. Otherwise it will return __version__.
+    Only available in packaged versions. Otherwise, __version__ is returned.
     """
     return _VERSION_INFO if _VERSION_INFO is not None else __version__
 

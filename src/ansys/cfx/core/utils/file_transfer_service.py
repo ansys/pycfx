@@ -20,7 +20,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-"""Provides a module for file transfer service."""
+"""Module for file transfer service."""
 
 import os
 from pathlib import Path
@@ -30,22 +30,21 @@ import ansys.platform.instancemanagement as pypim
 
 
 class PyPIMConfigurationError(ConnectionError):
-    """Raised when `PyPIM<https://pypim.docs.pyansys.com/version/stable/>` is not configured."""
+    """Raised when `PyPIM <https://pypim.docs.pyansys.com/version/stable/>`_ is not configured."""
 
     def __init__(self):
         super().__init__("PyPIM is not configured.")
 
 
 class PimFileTransferService:
-    """Provides a file transfer service based on ``PyPIM<https://pypim.docs.pyansys.com/version/stable/>`` and ``simple_upload_server()``.
+    """Provides a file transfer service based on `PyPIM <https://pypim.docs.pyansys.com/version/stable/>`_ and the ``simple_upload_server()`` function.
 
     Attributes
     ----------
     pim_instance: PIM instance
-        Instance of PIM which supports upload server services.
-
+        Instance of PIM that supports upload server services.
     file_service: Client instance
-        Instance of Client which supports upload and download methods.
+        Instance of the client that supports upload and download methods.
 
     Methods
     -------
@@ -89,18 +88,19 @@ class PimFileTransferService:
         return self.file_service
 
     def is_configured(self):
-        """Check pypim configuration."""
+        """Check if PyPIM is configured."""
         return pypim.is_configured()
 
     def upload_file(self, file_name: str, remote_file_name: Optional[str] = None):
-        """Upload a file to the server supported by `PyPIM<https://pypim.docs.pyansys.com/version/stable/>`.
+        """Upload a file to the server supported by `PyPIM <https://pypim.docs.pyansys.com/version/stable/>`_.
 
         Parameters
         ----------
         file_name : str
-            file name
-        remote_file_name : str, optional
-            remote file name, by default None
+            File name.
+        remote_file_name : str, default: None
+            Remote file name.
+
         Raises
         ------
         FileNotFoundError
@@ -125,7 +125,8 @@ class PimFileTransferService:
         Parameters
         ----------
         file_name : str
-            File name
+            File name.
+
         Raises
         ------
         FileNotFoundError
@@ -142,14 +143,14 @@ class PimFileTransferService:
                     raise FileNotFoundError(f"{file} does not exist.")
 
     def download_file(self, file_name: str, local_directory: Optional[str] = None):
-        """Download a file from the server supported by `PyPIM<https://pypim.docs.pyansys.com/version/stable/>`.
+        """Download a file from the server supported by `PyPIM <https://pypim.docs.pyansys.com/version/stable/>`_.
 
         Parameters
         ----------
         file_name : str
-            file name
-        local_directory : str, optional
-            local directory, by default None
+            File name.
+        local_directory : str, default: None
+            Local directory.
 
         Raises
         ------
@@ -175,7 +176,7 @@ class PimFileTransferService:
         Parameters
         ----------
         file_name : str
-            File name
+            File name.
         """
         files = [file_name] if isinstance(file_name, str) else file_name
         if self.is_configured():

@@ -20,7 +20,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-"""Provides a module to fix text documentation for a data object."""
+"""Module for fixing text documentation for a data object."""
 
 from io import StringIO
 

@@ -39,7 +39,7 @@ def test_eval_expression(pypre: PreProcessing, pytestconfig):
         result = str(e)
     if pypre.get_cfx_version() < CFXVersion.v261:
         msg = (
-            "eval_expression is not supported before Release 26.1. "
+            "eval_expression is not supported before 2026 R1. "
             "Expressions can be created and evaluated from the 'expressions' object."
         )
         assert result == msg

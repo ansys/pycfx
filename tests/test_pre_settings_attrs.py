@@ -727,7 +727,7 @@ def test_pre_attributes(pre_load_static_mixer_case: PreProcessing, pytestconfig,
     except AttributeError as e:
         assert str(e) == (
             "'mass_and_momentum' object has no attribute 'non-existent-attr'.\n"
-            "The most similar names are: axis_definition..\n"
+            "The most similar names are: axis_definition.\n"
             "The most similar names are: axis_definition."
         )
     else:
