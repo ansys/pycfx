@@ -23,7 +23,7 @@
 """.. _ref_fourier_blade_flutter:
 
 Set up a Fourier Transformation Blade Flutter case
---------------------------------------------------
+==================================================
 
 This example shows how to set up a Fourier Transformation Blade Flutter case in PyCFX.
 
@@ -65,6 +65,9 @@ you do not need to wait for a solver run to complete before modifying the setup 
 #
 
 ###################################################################################################
+# Initial setup
+# ~~~~~~~~~~~~~
+#
 # Perform required imports
 # ------------------------
 #
@@ -102,6 +105,9 @@ inlet_profile_file_name = examples.download_file(
 
 
 ###################################################################################################
+# Initial preprocessing
+# ~~~~~~~~~~~~~~~~~~~~~
+#
 # Start a PreProcessing session (CFX-Pre) and create a new case
 # --------------------------------------------------------------
 #
@@ -386,6 +392,9 @@ if physics_messages:
     print(f"Physics messages (initial values setup): {physics_messages}")
 
 ###################################################################################################
+# Run the solver for the initial conditions
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#
 # Initialize a Solver session
 # ---------------------------
 #
@@ -409,6 +418,9 @@ else:
 pysolve_ini.solution.start_run()
 
 ###################################################################################################
+# Preprocessing for the time integration setup
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#
 # Modify the setup to use Transient Blade Row analysis
 # ----------------------------------------------------
 #
@@ -565,6 +577,9 @@ if physics_messages:
     print(f"Physics messages (time integration setup): {physics_messages}")
 
 ###################################################################################################
+# Run the solver for the time integration setup
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#
 # Start the Solver session for the time integration setup
 # -------------------------------------------------------
 #
@@ -591,7 +606,10 @@ else:
 pysolve_time_integration.solution.start_run()
 
 ###################################################################################################
-# Modify the setup to use Harmonic Balance
+# Preprocessing for the harmonic balance setup
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#
+#  Modify the setup to use Harmonic Balance
 # ----------------------------------------
 #
 tbrm.transient_method.option = "Harmonic Balance"
@@ -634,6 +652,9 @@ if physics_messages:
     print(f"Physics messages (harmonic balance setup): {physics_messages}")
 
 ###################################################################################################
+# Run the solver for the harmonic balance setup
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#
 # Start the Solver session for the harmonic balance setup
 # -------------------------------------------------------
 #
@@ -651,6 +672,9 @@ pysolve_harmonic_balance.solution.start_run()
 
 
 ###################################################################################################
+# Postprocessing
+# ~~~~~~~~~~~~~~
+#
 # Postprocess the blade flutter results
 # -------------------------------------
 #
@@ -786,8 +810,10 @@ do_postprocessing(pypost_time_integration, "time_integration")
 #
 
 ###################################################################################################
-# Close the open sessions
-# -----------------------
+# Final actions
+# ~~~~~~~~~~~~~
+#
+# Close the open sessions.
 #
 pypre.exit()
 pysolve_time_integration.exit()
