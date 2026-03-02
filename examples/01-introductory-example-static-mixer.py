@@ -23,7 +23,7 @@
 """.. _ref_static_mixer:
 
 Simulate flow in a static mixer
--------------------------------
+===============================
 
 This basic example shows how to launch PyCFX and then set up, run, and postprocess the CFX Static
 Mixer tutorial case in PyCFX.
@@ -54,6 +54,9 @@ The static mixer example guides you through these tasks:
 
 
 ###################################################################################################
+# Initial setup
+# ~~~~~~~~~~~~~
+#
 # Perform required imports
 # ------------------------
 #
@@ -80,6 +83,9 @@ mesh_file_name = examples.download_file(
 
 
 ###################################################################################################
+# Preprocessing
+# ~~~~~~~~~~~~~
+#
 # Start a PreProcessing session (CFX-Pre) and create a new case
 # -------------------------------------------------------------
 #
@@ -184,6 +190,9 @@ pypre.file.write_solver_input_file(file_name=solver_input_file_name)
 pypre.exit()
 
 ###################################################################################################
+# Run the solver
+# ~~~~~~~~~~~~~~
+#
 # Start a Solver session and launch the CFX-Solver
 # ------------------------------------------------
 #
@@ -202,6 +211,9 @@ results_file = pysolve.solution.get_results_file_name()
 pysolve.exit()
 
 ###################################################################################################
+# Postprocessing
+# ~~~~~~~~~~~~~~
+#
 # Start a PostProcessing session (CFD-Post)
 # -----------------------------------------
 #
@@ -315,6 +327,6 @@ print(f"Temperature difference: {temperature_difference}")
 
 ###################################################################################################
 # Close the postprocessing session
-# ---------------------------------
+# --------------------------------
 #
 pypost.exit()
