@@ -187,7 +187,8 @@ pypre.exit()
 # Start a Solver session and launch the CFX-Solver
 # ------------------------------------------------
 #
-# Launch the CFX-Solver using the execution control settings applied in the preprocessing session. Only local CFX-Solver runs are supported.
+# Launch the CFX-Solver using the execution control settings applied in the preprocessing session.
+# Only local CFX-Solver runs are supported.
 #
 pysolve = pycfx.Solver.from_install(solver_input_file_name=solver_input_file_name)
 pysolve.solution.start_run()
@@ -263,7 +264,9 @@ default_boundary.hide()
 # Create a plane
 # --------------
 #
-# By default, the plane geometry recalculates every time a setting is modified. When modifying several settings sequentially, suspend the plane object to avoid unnecessary intermediate calculations. Unsuspend the plane after completing the setup to reflect the latest settings.
+# By default, the plane geometry recalculates every time a setting is modified. When modifying
+# several settings sequentially, suspend the plane object to avoid unnecessary intermediate
+# calculations. Unsuspend the plane after completing the setup to reflect the latest settings.
 #
 pypost.results.plane["Plane 1"] = {}
 plane = pypost.results.plane["Plane 1"]
@@ -276,7 +279,8 @@ plane.unsuspend()
 # Create a contour
 # ----------------
 #
-# Create a contour on the previously defined plane and save the image.
+# Create a contour on the previously defined plane and save the image. Supplying all the settings
+# at once by using a dictionary is another way to avoid unnecessary intermediate calculations.
 #
 pypost.results.contour["Contour 1"] = {
     "colour_variable": "Pressure",

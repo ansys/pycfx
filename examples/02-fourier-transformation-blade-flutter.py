@@ -331,7 +331,7 @@ r1_tipgap2.interface_region_list2 = "Rotor SHROUD TIP GGI SIDE 2 2"
 r1_tipgap2.interface_models.option = "General Connection"
 r1_tipgap2.mesh_connection.option = "GGI"
 ##################################################################################################
-# Add the Periodic interface.
+# Add the **Periodic** interface.
 #
 pypre.setup.flow["Flow Analysis 1"].domain_interface[r1_periodic_name] = {}
 r1_periodic = pypre.setup.flow["Flow Analysis 1"].domain_interface[r1_periodic_name]
@@ -342,7 +342,7 @@ r1_periodic.interface_models.option = "Rotational Periodicity"
 r1_periodic.interface_models.axis_definition.rotation_axis = "Coord 0.3"
 r1_periodic.mesh_connection.option = "GGI"
 ##################################################################################################
-# Add the Sampling interface.
+# Add the **Sampling** interface.
 #
 pypre.setup.flow["Flow Analysis 1"].domain_interface[r1_sampling_name] = {}
 r1_sampling = pypre.setup.flow["Flow Analysis 1"].domain_interface[r1_sampling_name]
@@ -352,7 +352,7 @@ r1_sampling.interface_region_list2 = "Rotor PER1 2"
 r1_sampling.interface_models.option = "General Connection"
 r1_sampling.mesh_connection.option = "GGI"
 ##################################################################################################
-# Modify the interface sides to set the mesh motion to Stationary.
+# Modify the interface sides to set the mesh motion to **Stationary**.
 #
 interface_side_list = [
     "R1 to R1 Periodic Side 1",
@@ -671,7 +671,7 @@ def do_postprocessing(pypost: pycfx.PostProcessing, label: str):
 
 
 ###################################################################################################
-# Define a variable to calculate the Total Wall Work.
+# Define a variable to calculate the **Total Wall Work**.
 #
 def create_variable(pypost: pycfx.PostProcessing):
     """Creates the Total Wall Work variable."""

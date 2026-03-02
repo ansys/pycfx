@@ -20,8 +20,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-"""Wrappers over the EngineEval gRPC service of CFX.
-"""
+"""Wrappers over the EngineEval gRPC service of CFX."""
 
 from typing import Sequence
 
@@ -75,36 +74,8 @@ class EngineEvalService:
         return self.__stub.ExpressionEval(request, metadata=self.__metadata)
 
 
-class Symbol:
-    """Represents the symbol datatype in CFX.
-
-    Attributes
-    ----------
-    str : str
-        Underlying string representation.
-    """
-
-    def __init__(self, str: str) -> None:
-        """Initialize an instance of the ``Symbol`` class."""
-        self.str = str
-
-    def __repr__(self) -> str:
-        return self.str
-
-
 class EngineEval:
-    """Provides the class on which CFX's CCL code can be executed.
-
-    Methods
-    -------
-    process_ccl(ccl, wait, silent)
-        Send CCL commands and settings to execute in the engine. Return output if any.
-    info_query(query, args)
-        Evaluate a query in string format. Returns string.
-    eval_expression(input)
-        Evaluate a CCL expression in string format. Returns Python
-        value.
-    """
+    """Provides functions to interact with the CFX engine."""
 
     def __init__(self, service: EngineEvalService) -> None:
         """Initialize an instance of the ``EngineEval`` class."""
@@ -112,7 +83,12 @@ class EngineEval:
         self.version = self.info_query("Engine Version")
 
     def get_engine_version(self) -> str:
-        """Get the engine version number."""
+        """Get the CFX engine version number.
+
+        Returns
+        -------
+        str
+            CFX engine version number in string format."""
         return self.version
 
     def eval_expression(self, input: str) -> str:
@@ -152,7 +128,8 @@ class EngineEval:
         Parameters
         ----------
         ccl : Sequence[str]
-            Sequence of CCL.
+            Sequence of CCL strings. Each one must be a complete CCL fragment that can be submitted
+            to the engine on its own. Newline characters can be included in the strings.
         wait : bool, default: True
             Whether to wait until execution completes.
         silent : bool, default: True

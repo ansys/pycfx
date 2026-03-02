@@ -112,7 +112,6 @@ hierarchy = {
         "launcher",
         "process_launch_string",
         "pycfx_enums",
-        "server_info",
         "standalone_launcher",
         "watchdog",
     ],

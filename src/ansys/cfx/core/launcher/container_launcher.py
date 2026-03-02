@@ -100,7 +100,7 @@ class DockerLauncher:
             ``"25.2.0"`` (for 2025 R2), matching the documented version format in the
             ``CFXVersion`` class. The default is ``None``, in which case the newest installed
             version is used.
-        journal_file_names : str or list of str, Default: None
+        journal_file_names : str | list[str] | None, Default: None
             String path to a CFX journal file or a list of such paths. CFX executes the
             one or more journals.
         start_timeout : int, default: 60
@@ -109,7 +109,7 @@ class DockerLauncher:
         additional_arguments : str, default: ``""``
             Additional arguments to send to CFX as a string in the same
             format they are normally passed to CFX on the command line.
-        env : dict[str, str], default: None
+        env : dict, default: None
             Mapping to modify environment variables in CFX.
         start_container : bool, default: None
             Whether to launch a CFX Docker container image. For more information about containers, see
@@ -147,7 +147,7 @@ class DockerLauncher:
             A Boolean flag to write the equivalent Python journals from the journals that
             are passed. This parameter can optionally take the file name of a new Python journal file.
         start_watchdog : bool, default: None
-            When ``cleanup_on_exit`` is ``True``, ``start_watchdog`` defaults to ``True``,
+            When ``cleanup_on_exit`` is ``True``, `start_watchdog` defaults to ``True``,
             which means an independent watchdog process is run to ensure
             that any local GUI-less CFX sessions started by PyCFX are properly closed (or killed if frozen) when the current Python process ends.
         file_transfer_service : default: None
