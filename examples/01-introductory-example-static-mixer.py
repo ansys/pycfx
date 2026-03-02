@@ -327,6 +327,6 @@ print(f"Temperature difference: {temperature_difference}")
 
 ###################################################################################################
 # Close the postprocessing session
-# ---------------------------------
+# --------------------------------
 #
 pypost.exit()
