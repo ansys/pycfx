@@ -31,7 +31,7 @@ from ansys.cfx.core.session import BaseSession
 class PreProcessing(BaseSession):
     """Encapsulates a CFX pre-processing session.
     This object exposes the CFX-Pre CCL and scripting (Power Syntax)
-    capabilities in a Pythonic manner."
+    capabilities in a Pythonic manner.
     """
 
     def __init__(

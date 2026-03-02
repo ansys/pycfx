@@ -130,8 +130,8 @@ hierarchy = {
     ],
     "utils": [
         "cfx_version",
+        "dictionary_operations",
         "execution",
-        "file_transfer_service",
         "fix_doc",
         "fldoc",
         "generic",
@@ -142,7 +142,6 @@ hierarchy = {
         "cfx_connection",
         "exceptions",
         "get_build_details",
-        "journaling",
         "logging",
         "post_processing",
         "pre_processing",

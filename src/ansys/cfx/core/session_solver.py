@@ -36,13 +36,13 @@ logger = logging.getLogger("pycfx.solver_control")
 
 
 class Solver(BaseSession):
-    """Encapsulates a CFX Solver session.
+    """Encapsulates a CFX-Solver session.
 
     This object exposes the CFX-Solver in a Pythonic manner.
     """
 
     #: The ``solution`` object is used to control the CFX-Solver. For example,
-    #: <Solver>.solution.start_run()
+    #: ``<Solver>.solution.start_run()`` will start a CFX-Solver run.
     solution: SolverController
 
     def __init__(self, **argvals):
