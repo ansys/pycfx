@@ -183,7 +183,7 @@ def launch_cfx(
         Boolean flag to write the equivalent Python journals from the journals passed.
         This parameter can optionally take the file name of a new Python journal file.
     start_watchdog : bool, default: None
-        When ``cleanup_on_exit`` is ``True``, `start_watchdog` defaults to ``True``,
+        When ``cleanup_on_exit`` is ``True``, ``start_watchdog`` defaults to ``True``,
         which means an independent watchdog process is run to ensure
         that any local GUI-less CFX sessions started by PyCFX are properly closed (or
         killed if frozen) when the current Python process ends.
