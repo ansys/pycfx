@@ -68,7 +68,7 @@ def get_version_for_file_name(version: Optional[str] = None, session=None):
 
 @total_ordering
 class CFXVersion(Enum):
-    """Provides an enumeration over supported CFX versions.
+    """Provide an enumeration over supported CFX versions.
 
     Examples
     --------
@@ -80,7 +80,9 @@ class CFXVersion(Enum):
     """
 
     v261 = "26.1.0"
+    """Version 2026 R1"""
     v252 = "25.2.0"
+    """Version 2025 R2"""
 
     @classmethod
     def _missing_(cls, version):

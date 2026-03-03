@@ -20,7 +20,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-"""Module for searching for a word through the CFX's object hierarchy."""
+"""Module for searching for a word through CFX's object hierarchy."""
 
 from collections.abc import Mapping
 from pathlib import Path

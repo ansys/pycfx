@@ -73,15 +73,6 @@ class BaseSession:
     engine_eval: EngineEval
         Instance of EngineEval to execute CFX's CCL code on.
 
-    Methods
-    -------
-    create_from_server_info_file(
-        server_info_file_name, cleanup_on_exit, start_transcript
-        )
-        Create a ``Session`` instance from server information file.
-
-    exit()
-        Close the CFX connection and exit CFX.
     """
 
     def __init__(

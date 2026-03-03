@@ -36,7 +36,7 @@ class PostProcessing(BaseSession):
     """Encapsulates a CFX post-processing session.
 
     This object exposes the CFD-Post CCL and scripting (Power Syntax)
-    capabilities in a Pythonic manner."
+    capabilities in a Pythonic manner.
     """
 
     def __init__(
@@ -72,7 +72,7 @@ class PostProcessing(BaseSession):
 
     @classmethod
     def get_name(cls) -> str | None:
-        """Get session name."""
+        """Get the session name."""
         return "post-processing"
 
     @classmethod

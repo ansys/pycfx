@@ -28,7 +28,7 @@ import tempfile
 
 from ansys.cfx.core.cfx_connection import PortNotProvided
 from ansys.cfx.core.launcher import launcher_utils
-from ansys.cfx.core.launcher.error_handler import IpPortNotProvided
+from ansys.cfx.core.launcher.error_handler import InvalidIpPort, IpPortNotProvided
 from ansys.cfx.core.session import _parse_server_info_file
 
 

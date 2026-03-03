@@ -32,7 +32,7 @@ represents the following CCL parameter:
 
 When Python settings objects are created, their names are derived from the related CCL object
 types and parameter names by converting to lowercase and replacing spaces with underscores.
-Named object names (such as ``Flow Analysis 1``) and parameter values (such as ``Steady State``)
+Named object names (such as **Flow Analysis 1**) and parameter values (such as **Steady State**)
 remain unchanged from CCL.
 
 All settings objects share a uniform interface with methods like ``get_state()``, ``set_state()``,
@@ -89,7 +89,7 @@ of container objects: :obj:`~ansys.cfx.core.solver.flobject.Group` and
   child objects that you can access as attributes, for example,
   ``pypre.setup.flow['Flow Analysis 1'].analysis_type`` or ``pypre.setup.flow['Flow Analysis 1']``.
   The names of the child objects of a group can be accessed via ``<Group>.child_names``. Within
-  the PyCFX session ``setup`` object, Group objects correspond directly to CCL objects.
+  the PyCFX session ``setup`` object, ``Group`` objects correspond directly to CCL objects.
 
 - The :obj:`~ansys.cfx.core.solver.flobject.NamedObject` type is a container holding
   dynamically created named ``Group`` objects. For a given ``NamedObject`` container, each contained
@@ -200,7 +200,7 @@ Other commands relating to expressions can be found by using the ``dir()`` funct
 ``expressions`` container.
 
 Similar behavior exists for other objects that have parameters that can be given a user-defined
-name, for example, the ``EXPERT PARAMETERS`` and ``USER`` CCL objects in CFX-Pre.
+name, for example, the **EXPERT PARAMETERS** and **USER** CCL objects in CFX-Pre.
 
 Commands
 --------
@@ -324,28 +324,28 @@ and Error).
 Physics updates
 ~~~~~~~~~~~~~~~
 
-In a PreProcessing session, changing one value (for example, ``Boundary Type``) can require large
+In a PreProcessing session, changing one value (for example, **Boundary Type**) can require large
 numbers of dependent objects and parameters to be updated. For the PreProcessing session
 to be usable, the session incorporates *physics updates*, which update the necessary dependent
 objects when any parameter value or other change is made.
 
 .. vale Google.Quotes = NO
 
-For example, a case with ``Turbulence Model`` set to ``k-Epsilon`` must have a
-``Wall Function`` set to ``Scalable`` as this is the only valid ``Wall Function``
-for the ``k-Epsilon`` model. If you later set ``Turbulence Model`` to ``Shear Stress
-Transport``, the ``Wall Function`` must be updated to ``Automatic`` as this is
-the only allowed ``Wall Function`` option for the ``Shear Stress Transport`` model.
+For example, a case with **Turbulence Model** set to **k-Epsilon** must have a
+**Wall Function** set to **Scalable** as this is the only valid **Wall Function**
+for the **k-Epsilon** model. If you later set **Turbulence Model** to **Shear Stress
+Transport**, the **Wall Function** must be updated to **Automatic** as this is
+the only allowed **Wall Function** option for the **Shear Stress Transport** model.
 The physics updates in the PreProcessing session automatically makes this
 change.
 
 If you are familiar with the CFX-Pre user interface, then the easiest way to understand the
 physics updates is to imagine opening the editor for the object that you want to change and
-making the same parameter or object change. For example, if you open the Domain editor
-for a case with ``Turbulence Model`` set to ``k-Epsilon``, then the ``Wall Function`` must
-be set to ``Scalable``. If you then change ``Turbulence Model`` to ``Shear Stress Transport``,
-you can see that the ``Wall Function`` option, further down the panel, automatically updates
-to ``Automatic``.
+making the same parameter or object change. For example, if you open the **Domain** editor
+for a case with **Turbulence Model** set to **k-Epsilon**, then the **Wall Function** must
+be set to **Scalable**. If you then change **Turbulence Model** to **Shear Stress Transport**,
+you can see that the **Wall Function** option, further down the panel, automatically updates
+to **Automatic**.
 
 .. vale Google.Quotes = YES
 
@@ -400,8 +400,8 @@ types. Some parameters and objects are optional, and their existence (or lack th
 the setup.
 
 To add an optional parameter, simply set its value to the desired value. To remove an optional
-parameter, set the value to ``None``. For example, this code adds and then removes the ``Coord Frame``
-parameter in a boundary object:
+parameter, set the value to ``None``. For example, this code adds and then removes the
+**Coord Frame** parameter in a boundary object:
 
 .. code-block:: python
 
@@ -433,7 +433,7 @@ parameter in a boundary object:
 .. vale Google.WordList = NO
 
 To add or remove an optional object, it must be explicitly enabled or disabled. For example,
-this code enables and then disables the ``Boundary Contour`` object for a boundary:
+this code enables and then disables the **Boundary Contour** object for a boundary:
 
 .. vale Google.WordList = YES
 
@@ -562,6 +562,7 @@ Active objects, commands, and queries
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 For the initial release of PyCFX with Ansys CFX 2025 R2, all objects and parameters of the
-PostProcessing session are always active. For example, you can set the ``X`` parameter for a plane
-with the option set to ``XY``, even though the ``Z`` parameter is the only relevant parameter for this option. Parameters and objects that are not relevant are ignored by CFD-Post.
+PostProcessing session are always active. For example, you can set the **X** parameter for a plane
+with the option set to **XY**, even though the **Z** parameter is the only relevant parameter for
+this option. Parameters and objects that are not relevant are ignored by CFD-Post.
 

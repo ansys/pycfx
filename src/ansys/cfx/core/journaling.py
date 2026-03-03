@@ -23,10 +23,13 @@
 """Module for controlling the writing of CFX Python journals."""
 
 
+from ansys.cfx.core.services.engine_eval import EngineEval
+
+
 class Journal:
     """Control the writing of CFX Python journals."""
 
-    def __init__(self, engine_eval):
+    def __init__(self, engine_eval: EngineEval):
         """Initialize an instance of the ``Journal`` class."""
         self.engine_eval = engine_eval
 

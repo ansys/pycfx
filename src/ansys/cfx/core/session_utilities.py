@@ -248,7 +248,7 @@ class SessionBase:
             Path to the folder containing TLS certificates for CFX's gRPC server.
         insecure_mode : bool, default: False
             Whether to connect CFX's gRPC server in insecure mode without TLS.
-            This mode is not recommended. For more informationon the implications
+            This mode is not recommended. For more information on the implications
             and usage of insecure mode, see the CFX documentation.
 
         Raises

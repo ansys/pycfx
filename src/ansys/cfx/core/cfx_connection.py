@@ -102,14 +102,14 @@ def _connect_to_server_with_retry(uds_address, options=None, max_retries=10, del
 
 
 class PortNotProvided(ValueError):
-    """Raised when port is not provided."""
+    """Raised when the port is not provided."""
 
     def __init__(self):
         super().__init__("Provide the port to connect to an existing CFX instance.")
 
 
 class UnsupportedRemoteCFXInstance(ValueError):
-    """Raised when the ``wait_process_finished`` method does not support remote CFX session."""
+    """Raised when the ``wait_process_finished`` method does not support a remote CFX session."""
 
     def __init__(self):
         super().__init__("Remote CFX instance is unsupported.")
@@ -146,11 +146,12 @@ class MonitorThread(threading.Thread):
     """
 
     def __init__(self):
+        """Initialize an instance of the ``MonitorThread`` class."""
         super().__init__(daemon=True)
         self.cbs: List[Callable] = []
 
     def run(self) -> None:
-        """Run monitor thread."""
+        """Run the monitor thread."""
         main_thread = threading.main_thread()
         main_thread.join()
         for cb in self.cbs:
@@ -258,14 +259,23 @@ class CFXConnectionProperties:
     """
 
     ip: Optional[str] = None
+    """The IP address of the connected CFX session."""
     port: Optional[int] = None
+    """The port of the connected CFX session."""
     address: Optional[str] = None
+    """The UDS address of the connected CFX session."""
     password: Optional[str] = None
+    """The password used to connect to the CFX session."""
     engine_pwd: Optional[str] = None
+    """The CFX engine working directory."""
     engine_pid: Optional[int] = None
+    """The process ID of the CFX engine (same as `cfx_host_pid`)."""
     engine_host: Optional[str] = None
+    """The hostname of the machine where the CFX engine is running."""
     cfx_host_pid: Optional[int] = None
+    """The process ID of the CFX engine (same as `engine_pid`)."""
     inside_container: Optional[Union[bool, Container, None]] = None
+    """Whether the connected CFX session is running inside a Docker container."""
 
     def list_names(self) -> list:
         """Get a list of all property names."""
