@@ -20,7 +20,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-"""Get the git build info."""
+"""Get the Git build information."""
 
 from collections import OrderedDict
 import subprocess
@@ -29,7 +29,7 @@ import ansys.cfx.core as pycfx
 
 
 def get_build_version():
-    """Get build version."""
+    """Get the build version."""
     build_details = OrderedDict()
     try:
         last_commit_time = (
@@ -55,5 +55,5 @@ def get_build_version():
 
 
 def get_build_version_string():
-    """Get build version string."""
+    """Get the build version string."""
     return "  ".join([f"{k}: {v}" for k, v in get_build_version().items()])

@@ -55,17 +55,17 @@ class SolverController:
         ERROR = 4
 
     def __init__(self, **kwargs):
-        """Sets up a CFX-Solver session.
+        """Set up a CFX-Solver session.
 
         Parameters
         ----------
         processed_args : dict
-            Contains arguments initially passed to a Solver.from_install() function.
+            Contains arguments initially passed to a ``Solver.from_install()`` function.
 
         Raises
         ------
         RuntimeError
-            If the provided arguments in process_args are not consistent or any necessary files do not exist.
+            If the provided arguments in ``process_args`` are not consistent or any necessary files do not exist.
         """
         self._solver_input_file = None
         self._run_directory = None
@@ -116,7 +116,7 @@ class SolverController:
                     "'run_directory' arguments."
                 )
             if not Path(results_file_name).exists():
-                raise RuntimeError(f"Provided file_name {results_file_name} does not exist.")
+                raise RuntimeError(f"Provided file name {results_file_name} does not exist.")
             self._results_file = results_file_name
             self._state = self.RunState.FINISHED
             file_path = Path(results_file_name)
@@ -125,11 +125,11 @@ class SolverController:
                 self._is_multiconfig_or_op = True
 
     def start_run(self) -> None:
-        """Command to start a CFX-Solver run.
+        """Start a CFX-Solver run.
 
-        This can also be used to restart from an existing results file if the Solver session has
-        previously completed a successful run or if the Solver session was started with a
-        'results_file_name' argument.
+        This command can also be used to restart from an existing results file if the Solver
+        session has previously completed a successful run or if the Solver session was started
+        with a `'results_file_name`` argument.
 
         Execution control is read from the CFX-Solver input file.
 
@@ -189,7 +189,7 @@ class SolverController:
                 msg_list = "\n".join(messages)
                 raise RuntimeError(f"Starting CFX run failed:\n{msg_list}")
             else:
-                raise RuntimeError("Starting CFX run failed")
+                raise RuntimeError("Starting CFX run failed.")
 
         logger.debug(f"Run setup is: {run_setup}")
         self._state = self.RunState.IN_PROGRESS
@@ -199,15 +199,15 @@ class SolverController:
         self._solver_input_file = input_file
 
     def stop_run(self, wait_for_run=True) -> None:
-        """Command to stop a CFX-Solver run currently in progress.
+        """Stop the CFX-Solver run currently in progress.
 
-        If the run is not currently in progress, then the command will do nothing.
+        If a run is not currently in progress, the command does nothing.
 
         Parameters
         ----------
-        wait_for_run : bool
-            If True, the command does not return until the run has actually stopped. Depending on
-            the problem setup, this could take a long time as the CFX-Solver will need to complete
+        wait_for_run : bool, default: True
+            Whether to wait for the run to complete before returning from the command, Depending
+            on the problem setup, this could take a long time as the CFX-Solver must complete
             the iteration or timestep that is in progress and then write a results file.
 
         """
@@ -225,29 +225,29 @@ class SolverController:
             logger.warning(f"Stop command not executed as run did not seem to be in progress.")
 
     def is_running(self) -> bool:
-        """Returns True if a CFX-Solver run is in progress.
+        """Check if a CFX-Solver run is in progress.
 
         Returns
         -------
         bool
-            True if a CFX-Solver run is in progress.
+            ``True`` if a CFX-Solver run is in progress.
         """
         self._update_status()
         return self._state == self.RunState.IN_PROGRESS
 
     def wait_for_run(self, interval=10, timeout=86400) -> None:
-        """Waits for a CFX-Solver run in progress to complete.
+        """Wait for a CFX-Solver run in progress to complete.
 
         Note that run completion is indicated by the removal of the working directory and/or the
         presence of the results file or results error file. Some CFX-Solver failures may not
-        trigger the "run complete" condition, and in this case, the wait_for_run function will
-        raise an exception after the specified timeout.
+        trigger the "run complete" condition. In this case, the ``wait_for_run()`` function
+        raises an exception after the specified timeout.
 
         Parameters
         ----------
-        interval : int
+        interval : int, default: 10
             Time interval in seconds between each check of the CFX-Solver status.
-        timeout : int
+        timeout : int, default: 86400
             Maximum number of seconds to wait for the run to finish. If the run has not finished
             within this time limit, an exception is raised.
 
@@ -266,23 +266,23 @@ class SolverController:
         logger.debug("Waiting complete")
 
     def get_run_state(self) -> RunState:
-        """Returns the CFX-Solver run state.
+        """Get the CFX-Solver run state.
 
         Returns
         -------
         RunState
-            The current CFX-Solver run state.
+            Current CFX-Solver run state.
         """
         self._update_status()
         return self._state
 
     def get_results_file_name(self, use_engine_path: bool = False) -> str | None:
-        """Returns the results file name associated with the current session.
+        """Get the name of the results file associated with the current session.
 
         Returns
         -------
         str | None
-            The current results file name, or None if no results file is associated with the
+            Current results file name or ``None`` if no results file is associated with the
             current session.
         """
         self._update_status()
@@ -402,20 +402,20 @@ class SolverController:
     def _start_cfx_container(
         self, args: List[str], container_dict: Optional[dict] = None
     ) -> Iterator[str]:
-        """Starts a CFX container with the specified arguments.
+        """Start a CFX container with the specified arguments.
 
         Parameters
         ----------
         args : List[str]
             List of arguments to pass to the CFX-Solver executable inside the container.
-        container_dict : Optional[dict]
+        container_dict : Optional[dict], default: None
             Dictionary containing container configuration options such as image name, volumes,
-            environment variables, etc.
+            and environment variables.
 
         Returns
         -------
         Iterator[str]
-            A stream of output lines from the container.
+            Stream of output lines from the container.
 
         Raises
         ------
@@ -427,12 +427,12 @@ class SolverController:
 
         client = docker.from_env()
 
-        logger.debug("Starting CFX docker container...")
+        logger.debug("Starting CFX Docker container...")
 
         try:
             image = config_dict.pop("cfx_image")
         except KeyError:
-            raise ValueError("Missing 'cfx_image' in config_dict")
+            raise ValueError("Missing 'cfx_image' in config_dict.")
         detach = config_dict.pop("detach", True)
 
         try:
@@ -469,7 +469,7 @@ class SolverController:
         Yield lines from the stdout of a subprocess as decoded UTF-8 strings.
 
         Args:
-            proc (Popen): The subprocess whose stdout will be read.
+            proc (Popen): Subprocess whose stdout is to be read.
 
         Yields:
             str: Each line from the subprocess's stdout, decoded and stripped.

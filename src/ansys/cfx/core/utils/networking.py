@@ -20,7 +20,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-"""Provides a module to get networking functionality."""
+"""Module for getting networking functionality."""
 
 from concurrent import futures
 import logging
@@ -36,12 +36,12 @@ network_logger = logging.getLogger("pycfx.networking")
 
 
 def get_free_port() -> int:
-    """Identifies a free port to which a new socket connection can be established.
+    """Identify a free port for establishing a new socket connection.
 
     Returns
     -------
     int
-        port number
+        Port number.
     """
     with socket.socket() as s:
         s.bind(("localhost", 0))
@@ -72,13 +72,13 @@ class _GrpcServer:
 
 
 def find_remoting_ip() -> str:
-    """Find an ip address at which a gRPC connection can be established by looping over
-    getaddrinfo output.
+    """Find an IP address for establishing a gRPC connection by looping over
+    ``getaddrinfo`` output.
 
     Returns
     -------
     str
-        remoting ip address
+        Remoting IP address.
     """
     from ansys.cfx.core import INFER_REMOTING_IP_TIMEOUT_PER_IP
 
@@ -115,17 +115,17 @@ def check_url_exists(url: str) -> bool:
     Parameters
     ----------
     url : str
-        URL to check
+        URL to check.
 
     Returns
     -------
     bool
-        True if the URL exists, False otherwise
+        ``True`` if the URL exists, ``False`` otherwise.
 
     Raises
     ------
     ssl.SSLError
-        If there is an SSL error while checking the URL
+        If there is an SSL error while checking the URL.
     """
     try:
         with urllib.request.urlopen(url) as response:
@@ -143,12 +143,12 @@ def get_url_content(url: str) -> str:
     Parameters
     ----------
     url : str
-        URL to get content from
+        URL to get content from.
 
     Returns
     -------
     str
-        content of the URL
+        Content of the URL.
     """
     with urllib.request.urlopen(url) as response:
         return response.read()

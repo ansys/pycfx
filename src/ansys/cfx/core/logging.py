@@ -33,7 +33,7 @@ _logging_file_enabled = False
 
 
 def root_config():
-    """Sets up the root PyCFX logger that outputs messages to stdout, but not to
+    """Set up the root PyCFX logger that outputs messages to stdout, but not to
     files."""
     logger = logging.getLogger("pycfx")
     logger.setLevel("WARNING")
@@ -46,12 +46,12 @@ def root_config():
 
 
 def is_active() -> bool:
-    """Returns whether PyCFX logging to file is active."""
+    """Check whether PyCFX logging to file is active."""
     return _logging_file_enabled
 
 
 def get_default_config() -> dict:
-    """Returns the default configuration dictionary obtained from parsing from the
+    """Get the default configuration dictionary obtained from parsing from the
     PyCFX ``logging_config.yaml`` file.
 
     Examples
@@ -88,30 +88,31 @@ def get_default_config() -> dict:
 
 
 def enable(level: Union[str, int] = "DEBUG", custom_config: Optional[dict] = None):
-    """Enables PyCFX logging to file.
+    """Enable PyCFX logging to file.
 
     Parameters
     ----------
-    level : str or int, optional
-        Specified logging level to set PyCFX loggers to. If omitted, level is set to DEBUG.
-    custom_config : dict, optional
-        Used to provide a customized logging configuration file that will be used instead
-        of the ``logging_config.yaml`` file (see also :func:`get_default_config`).
+    level : str or int, default: "DEBUG"
+        Logging level to set PyCFX loggers to.
+    custom_config : dict, default: None
+        Customized logging configuration file to use instead
+        of the ``logging_config.yaml`` file. (See also the :func:`get_default_config`
+        function.)
 
     Notes
     -----
-    See logging levels in https://docs.python.org/3/library/logging.html#logging-levels
+    See `Logging Levels <https://docs.python.org/3/library/logging.html#logging-levels>`_ in the Python documentation.
 
     Examples
     --------
-    Using the default logging setup:
+    Usd the default logging setup:
 
     >>> import ansys.cfx.core as pycfx
     >>> pycfx.logging.enable() #doctest: +ELLIPSIS
     PyCFX logging file ...
     Setting PyCFX global logging level to DEBUG.
 
-    Customizing logging configuration (see also :func:`get_default_config`):
+    Customize the logging configuration (see also the :func:`get_default_config` function):
 
     >>> import ansys.cfx.core as pycfx
     >>> config_dict = pycfx.logging.get_default_config()
@@ -124,7 +125,7 @@ def enable(level: Union[str, int] = "DEBUG", custom_config: Optional[dict] = Non
     global _logging_file_enabled
 
     if _logging_file_enabled:
-        print("PyCFX logging to file is already active, overwriting previous configuration...")
+        print("PyCFX logging to file is already active. Overwriting previous configuration...")
 
     _logging_file_enabled = True
 
@@ -143,7 +144,7 @@ def enable(level: Union[str, int] = "DEBUG", custom_config: Optional[dict] = Non
 
 
 def get_logger(*args, **kwargs):
-    """Retrieves logger.
+    """Get the logger.
 
     Convenience wrapper for Python's :func:`logging.getLogger` function.
     """
@@ -151,16 +152,17 @@ def get_logger(*args, **kwargs):
 
 
 def set_global_level(level: Union[str, int]):
-    """Changes the levels of all PyCFX loggers that write to log file.
+    """Set the levels of all PyCFX loggers that write to the log file.
 
     Parameters
     ----------
     level : str or int
-        Specified logging level to set PyCFX loggers to.
+        Logging level to set PyCFX loggers to.
 
     Notes
     -----
-    See logging levels in https://docs.python.org/3/library/logging.html#logging-levels
+    See `Logging Levels <https://docs.python.org/3/library/logging.html#logging-levels>`_ in
+    the Python documentation.
 
     Examples
     --------
@@ -173,7 +175,7 @@ def set_global_level(level: Union[str, int]):
 
     """
     if not is_active():
-        print("Logging is not active, enable it first.")
+        print("Logging is not active. Enable it first.")
         return
     if isinstance(level, str):
         if level.isdigit():
@@ -194,12 +196,13 @@ def list_loggers():
     -------
     list of str
         Each list element is a PyCFX logger name that can be individually controlled
-        through :func:`ansys.cfx.core.logging.get_logger`.
+        through the :func:`ansys.cfx.core.logging.get_logger` function.
 
     Notes
     -----
-    PyCFX loggers use the standard Python logging library, for more details
-    see https://docs.python.org/3/library/logging.html#logger-objects
+    PyCFX loggers use the standard Python logging library. For more information,
+    see `Logger Objects <https://docs.python.org/3/library/logging.html#logger-objects>`_ in
+    the Python documentation.
 
     Examples
     --------
@@ -229,15 +232,16 @@ def list_loggers():
 
 
 def configure_env_var() -> None:
-    """Verifies whether ``PYCFX_LOGGING`` environment variable was defined in the
-    system. Executed once automatically on PyCFX initialization.
+    """Check if a ``PYCFX_LOGGING`` environment variable is defined in the
+    system. This function is executed once automatically on PyCFX initialization.
 
     Notes
     -----
-    The usual way to enable PyCFX logging to file is through :func:`enable()`.
-    ``PYCFX_LOGGING`` set to ``0`` or ``OFF`` is the same as if no environment variable was set.
-    If logging debug output to file by default is desired, without having to use :func:`enable()` every time,
-    set environment variable ``PYCFX_LOGGING`` to ``DEBUG``.
+    The usual way to enable PyCFX logging to file is by using the :func:`enable()` function.
+    Setting ``PYCFX_LOGGING`` to ``0`` or ``OFF`` is the same as if no environment variable is
+    set. If logging debug output to file by default is desired, without having to use the
+    :func:`enable()` function every time, set the ``PYCFX_LOGGING`` environment variable to
+    ``DEBUG``.
     """
     env_logging_level = os.getenv("PYCFX_LOGGING")
     if env_logging_level:
@@ -246,5 +250,5 @@ def configure_env_var() -> None:
         else:
             env_logging_level = env_logging_level.upper()
         if not is_active() and env_logging_level not in [0, "OFF"]:
-            print("PYCFX_LOGGING environment variable specified, enabling logging...")
+            print("PYCFX_LOGGING environment variable specified. Enabling logging...")
             enable(env_logging_level)

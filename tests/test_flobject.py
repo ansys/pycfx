@@ -722,7 +722,7 @@ def test_aliases():
     )
     assert warning_log[1].message.args[0] == (
         "\n"
-        "Execute the following code to suppress future warnings like the above:\n"
+        "Execute the following code to suppress future warnings like the previous one:\n"
         "\n"
         ">>> import warnings\n"
         '>>> warnings.filterwarnings("ignore", category=DeprecatedSettingWarning)'
@@ -914,7 +914,8 @@ def test_miscellaneous_functions(pre_load_static_mixer_case: PreProcessing, caps
     except AttributeError as e:
         msg = (
             "'boundary_conditions' object has no attribute 'option'.\n"
-            "The most similar names are: mesh_motion..\nThe most similar names are: mesh_motion."
+            "The most similar names are: mesh_motion.\n"
+            "The most similar names are: mesh_motion."
         )
         assert str(e) == msg
     else:

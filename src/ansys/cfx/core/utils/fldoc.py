@@ -20,7 +20,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-"""Provides a module to produce text documentation for a data object."""
+"""Module for producing text documentation for a data object."""
 
 import pprint
 import pydoc

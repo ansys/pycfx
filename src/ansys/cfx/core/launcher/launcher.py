@@ -57,7 +57,7 @@ logger = logging.getLogger("pycfx.launcher")
 
 
 def create_launcher(cfx_launch_mode: LaunchMode = None, **kwargs):
-    """Factory function to create launcher for supported launch modes.
+    """Use a factory function to create a launcher for supported launch modes.
 
     Parameters
     ----------
@@ -66,10 +66,12 @@ def create_launcher(cfx_launch_mode: LaunchMode = None, **kwargs):
         and ``"LaunchMode.STANDALONE"``.
     kwargs : Any
         Keyword arguments.
+
     Returns
     -------
     launcher: Union[DockerLauncher, StandaloneLauncher]
         Session launcher.
+
     Raises
     ------
     DisallowedValuesError
@@ -118,79 +120,77 @@ def launch_cfx(
     file_transfer_service: Optional[Any] = None,
     **kwargs,
 ) -> Union[PreProcessing, Solver, PostProcessing, dict]:
-    """Launches CFX locally in server mode or connects to a running CFX server
+    """Launch CFX locally in server mode or connect to a running CFX server
     instance.
 
     Parameters
     ----------
-    product_version : str, optional
+    product_version : str, default: None
         Version of Ansys CFX to launch. The string must be in a format like
         ``"25.2.0"`` (for 2025 R2), matching the documented version format in the
         CFXVersion class. The default is ``None``, in which case the newest installed
         version is used.
-    journal_file_names : str or list of str, optional
-        The string path to a CFX journal file, or a list of such paths. CFX will execute the
-        journal(s). The default is ``None``.
-    start_timeout : int, optional
+    journal_file_names : str | list[str], default: None
+        String path to a CFX journal file or a list of such paths. CFX executes the
+        journals.
+    start_timeout : int, default: None
         Maximum allowable time in seconds for connecting to the CFX
-        server. The default is ``60`` if CFX is launched outside a Slurm environment,
-        no timeout if CFX is launched within a Slurm environment.
-    additional_arguments : str, optional
+        server. The default is ``None``, in which case 60 seconds is used if CFX is launched outside a Slurm environment. No timeout occurs if CFX is launched within a Slurm environment.
+    additional_arguments : str, default: ""
         Additional arguments to send to CFX as a string in the same
         format they are normally passed to CFX on the command line.
-    env : dict[str, str], optional
-        Mapping to modify environment variables in CFX. The default
-        is ``None``.
-    start_container : bool, optional
-        Specifies whether to launch a CFX Docker container image. For more details about containers, see
+    env : dict, default: None
+        Mapping to modify environment variables in CFX.
+    start_container : bool, default: None
+        Whether to launch a CFX Docker container image. For more information about containers, see
         :mod:`~ansys.cfx.core.launcher.cfx_container`.
-    container_dict : dict, optional
+    container_dict : dict, default: None
         Dictionary for CFX Docker container configuration. If specified,
-        setting ``start_container = True`` as well is redundant.
-        Will launch CFX inside a Docker container using the configuration changes specified.
+        setting ``start_container = True`` is redundant.
+        CFX launches inside a Docker container using the configuration changes specified.
         See also :mod:`~ansys.cfx.core.launcher.cfx_container`.
-    dry_run : bool, optional
-        Defaults to False. If True, will not launch CFX, and will instead print configuration information
-        that would be used as if CFX was being launched. If dry running a container start,
-        ``launch_cfx()`` will return the configured ``container_dict``.
-    cleanup_on_exit : bool, optional
+    dry_run : bool, default: False
+        Whether to dry run a container start. If ``True``, CFX is not launched but the
+        configuration information that would be used is printed as if CFX is being launched.
+        If dry running a container start, the ``launch_cfx()`` method returns the
+        configured ``container_dict``.
+    cleanup_on_exit : bool, default: True
         Whether to shut down the connected CFX session when PyCFX is
         exited, or the ``exit()`` method is called on the session instance,
-        or if the session instance becomes unreferenced. The default is ``True``.
-    start_transcript : bool, optional
-        Whether to start streaming the CFX transcript in the client. The
-        default is ``True``. You can stop and start the streaming of the
-        CFX transcript subsequently via the method calls, ``transcript.start()``
-        and ``transcript.stop()`` on the session object.
-    ui_mode : UIMode or str, optional
+        or if the session instance becomes unreferenced.
+    start_transcript : bool, default: False
+        Whether to start streaming the CFX transcript in the client. You can
+        stop and start the streaming of the CFX transcript subsequently using the
+        ``transcript.start()`` and ``transcript.stop()`` methods on the session object.
+    ui_mode : UIMode or str, default: None
         CFX user interface mode. Options are either the values of the ``UIMode``
-        enum or any of ``"no_gui"``, ``"hidden_gui"`` or ``"gui"``.
-        The default is ``UIMode.HIDDEN_GUI``.
-    case_file_name : str, optional
+        enum or any of ``"no_gui"``, ``"hidden_gui"``, or ``"gui"``.
+        When ``None``, ``UIMode.HIDDEN_GUI`` is used.
+    case_file_name : str, default: None
         Name of the case file to read into a CFX-Pre session.
-    run_directory : str, optional
+    run_directory : str, default: None
         Name of the run directory to monitor with a CFX-Solver or CFD-Post session.
-    results_file_name : str, optional
+    results_file_name : str, default: None
         Name of the results file to read into a CFD-Post session or start a CFX-Solver session.
-    solver_input_file_name : str, optional
+    solver_input_file_name : str, default: None
         Name of the solver input file to start a CFX-Solver session.
-    mode : str, optional
+    mode : str, default: None
         Launch mode of CFX to point to a specific session type.
-        The default value is ``None``. Options are ``"pre-processing"``, ``"solver"`` and ``"post-processing"``.
-    cwd : str, Optional
+        Options are ``"pre-processing"``, ``"solver"``, and ``"post-processing"``.
+    cwd : str, default: None
         Working directory for the CFX client.
-    topy : bool or str, optional
-        A boolean flag to write the equivalent Python journal(s) from the journal(s) passed.
-        Can optionally take the file name of the new python journal file.
-    start_watchdog : bool, optional
-        When ``cleanup_on_exit`` is True, ``start_watchdog`` defaults to True,
+    topy : bool or str, default: None
+        Boolean flag to write the equivalent Python journals from the journals passed.
+        This parameter can optionally take the file name of a new Python journal file.
+    start_watchdog : bool, default: None
+        When ``cleanup_on_exit`` is ``True``, ``start_watchdog`` defaults to ``True``,
         which means an independent watchdog process is run to ensure
-        that any local GUI-less CFX sessions started by PyCFX are properly closed (or killed if frozen)
-        when the current Python process ends.
-    scheduler_options : dict, optional
-        Dictionary containing scheduler (i.e., Slurm scheduler) options. Default is None.
-    file_transfer_service : optional
-        File transfer service. Uploads/downloads files to/from the server.
+        that any local GUI-less CFX sessions started by PyCFX are properly closed (or
+        killed if frozen) when the current Python process ends.
+    scheduler_options : dict, default: None
+        Dictionary containing scheduler (such as Slurm scheduler) options.
+    file_transfer_service : default: None
+        File transfer service. Uploads or downloads files to or from the server.
     kwargs : Any
         Keyword arguments.
 
@@ -210,7 +210,7 @@ def launch_cfx(
 
     Notes
     -----
-    Job scheduler environments such as SLURM, LSF, PBS, etc. allocate resources / compute nodes.
+    Job scheduler environments such as SLURM, LSF, and PBS allocate resources and compute nodes.
     The allocated machines and core counts are queried from the scheduler environment and
     passed to CFX.
     """
@@ -247,49 +247,48 @@ def connect_to_cfx(
     insecure_mode: bool = False,
     start_watchdog: Optional[bool] = None,
 ) -> Union[PreProcessing, Solver, PostProcessing]:
-    """Connects to an existing CFX server instance.
+    """Connect to an existing CFX server instance.
 
     Parameters
     ----------
-    ip : str, optional
-        IP address for connecting to an existing CFX instance. The
-        IP address defaults to ``"127.0.0.1"``. You can also use the environment
-        variable ``PYCFX_CFX_IP=<ip>`` to set this parameter.
-        The explicit value of ``ip`` takes precedence over ``PYCFX_CFX_IP=<ip>``.
-    port : int, optional
-        Port to listen on for an existing CFX instance. You can use the
-        environment variable ``PYCFX_CFX_PORT=<port>`` to set a default
-        value. The explicit value of ``port`` takes precedence over
-        ``PYCFX_CFX_PORT=<port>``.
-    address : str, optional
-        Address to connect to existing CFX instance.
-    cleanup_on_exit : bool, optional
+    ip : str, default: None
+        IP address for connecting to an existing CFX instance. When ``None``, the
+        IP address defaults to ``"127.0.0.1"``. You can also use the ``PYCFX_CFX_IP=<ip>``
+        environment variable to set this parameter. The explicit value of the ``ip``
+        parameter  takes precedence over the ``PYCFX_CFX_IP=<ip>`` environment variable.
+    port : int, default: None
+        Port to listen on for an existing CFX instance. You can also use the
+        ``PYCFX_CFX_PORT=<port>`` environment variable  to set a default
+        value. The explicit value of the ``port`` parameter takes precedence over
+        the ``PYCFX_CFX_PORT=<port>`` environment variable.
+    address : str, default: None
+        Address to connect to an existing CFX instance.
+    cleanup_on_exit : bool, default: False
         Whether to shut down the connected CFX session when PyCFX is
-        exited, or the ``exit()`` method is called on the session instance,
-        or if the session instance becomes unreferenced. The default is ``False``.
-    start_transcript : bool, optional
-        Whether to start streaming the CFX transcript in the client. The
-        default is ``True``. You can stop and start the streaming of the
-        CFX transcript subsequently via the method calls, ``transcript.start()``
-        and ``transcript.stop()`` on the session object.
-    server_info_file_name: str
-        Path to server-info file written out by CFX server. The default is
-        ``None``. PyCFX uses the connection information in the file to
-        connect to a running CFX session.
-    password : str, optional
-        Password to connect to existing CFX instance.
-    allow_remote_host : bool, optional
+        exited, or if the ``exit()`` method is called on the session instance,
+        or if the session instance becomes unreferenced.
+    start_transcript : bool, default: False
+        Whether to start streaming the CFX transcript in the client. You can
+        stop and start the streaming of the CFX transcript subsequently using
+        the ``transcript.start()`` and ``transcript.stop()`` methods on the session object.
+    server_info_file_name: str, default: None
+        Path to the server information file written out by CFX server. PyCFX uses
+        the connection information in the file to connect to a running CFX session.
+    password : str, default: None
+        Password to connect to an existing CFX instance.
+    allow_remote_host : bool, default: False
         Whether to allow connecting to a remote CFX instance.
-    certificates_folder : str, optional
+    certificates_folder : str, default: None
         Path to the folder containing TLS certificates for CFX's gRPC server.
-    insecure_mode : bool, optional
-        If True, CFX's gRPC server will be connected in insecure mode without TLS.
-        This mode is not recommended. For more details on the implications
-        and usage of insecure mode, refer to the CFX documentation.
-    start_watchdog: bool, optional
-        When ``cleanup_on_exit`` is True, ``start_watchdog`` defaults to True,
+    insecure_mode : bool, default: False
+        Whether to connect CFX's gRPC server in insecure mode without TLS.
+        This mode is not recommended. For more information on the implications
+        and usage of insecure mode, see the CFX documentation.
+    start_watchdog: bool, default: None
+        When ``cleanup_on_exit`` is ``True``, ``start_watchdog`` defaults to ``True``,
         which means an independent watchdog process is run to ensure
-        that any local CFX connections are properly closed (or terminated if frozen) when Python process ends.
+        that any local CFX connections are properly closed (or terminated if frozen) when
+        the Python process ends.
 
     Returns
     -------
@@ -299,12 +298,12 @@ def connect_to_cfx(
         Session object.
 
     Raises
-    -------
+    ------
     ValueError
-        Raised when neither `certificates_folder` nor `insecure_mode` are set while `allow_remote_host` is True.
-        Raised when both `certificates_folder` and `insecure_mode` are set simultaneously.
-        Raised when `certificates_folder` is set but `allow_remote_host` is False.
-        Raised when `insecure_mode` is set but `allow_remote_host` is False.
+        Raised when neither ``certificates_folder`` nor ``insecure_mode`` are set while ``allow_remote_host`` is ``True``.
+        Raised when both ``certificates_folder`` and ``insecure_mode`` are set simultaneously.
+        Raised when ``certificates_folder`` is set but ``allow_remote_host`` is ``False``.
+        Raised when ``insecure_mode`` is set but ``allow_remote_host`` is ``False``.
     """
     if allow_remote_host:
         if certificates_folder is None and not insecure_mode:
@@ -315,9 +314,9 @@ def connect_to_cfx(
             )
     else:
         if certificates_folder is not None:
-            raise ValueError("To set `certificates_folder`, `allow_remote_host` must be True.")
+            raise ValueError("To set `certificates_folder`, `allow_remote_host` must be `True`.")
         if insecure_mode:
-            raise ValueError("To set `insecure_mode`, `allow_remote_host` must be True.")
+            raise ValueError("To set `insecure_mode`, `allow_remote_host` must be `True`.")
 
     if address is None and (ip is None or port is None):
         values = _get_server_info(server_info_file_name, ip, port, password)

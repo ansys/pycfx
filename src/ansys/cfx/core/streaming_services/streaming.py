@@ -36,7 +36,7 @@ class StreamingService:
     _service_id = itertools.count()
 
     def __init__(self, stream_begin_method, target, streaming_service):
-        """__init__ method of StreamingService class."""
+        """Initialize an instance of the ``StreamingService`` class."""
         self._lock: threading.RLock = threading.RLock()
         self._streaming: bool = False
         self._id = f"stream-{next(StreamingService._service_id)}"
@@ -49,7 +49,7 @@ class StreamingService:
 
     @property
     def is_streaming(self):
-        """Checks whether it is streaming."""
+        """Flag indicating if streaming."""
         with self._lock:
             return self._streaming
 

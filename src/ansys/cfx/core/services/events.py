@@ -31,10 +31,10 @@ from ansys.cfx.core.services.streaming import StreamingService
 
 
 class EventsService(StreamingService):
-    """Class wrapping the events gRPC service of CFX."""
+    """Wraps the events gRPC service of CFX."""
 
     def __init__(self, channel: grpc.Channel, metadata: List[Tuple[str, str]]):
-        """__init__ method of EventsService class."""
+        """Initialize an instance of the ``EventsService`` class."""
         super().__init__(
             stub=EventsGrpcModule.EventsStub(channel),
             metadata=metadata,

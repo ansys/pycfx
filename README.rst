@@ -40,18 +40,17 @@ PyCFX
 
 Overview
 --------
-PyCFX is a Python wrapper for Ansys CFX, the industry leading CFD software for turbomachinery
-applications. Its features include:
+PyCFX is a Python wrapper for Ansys CFX, the industry-leading CFD software for turbomachinery
+applications. You can use it to perform these tasks:
 
-- Launching CFX from a local Ansys installation.
-- Creating, modifying, and running CFX simulations from a Python environment.
-- Post-processing simulation results.
-
+- Launch CFX from a local Ansys installation.
+- Create, modify, and run CFX simulations in a Python environment.
+- Postprocess simulation results.
 
 Documentation and issues
 ------------------------
 Documentation for the latest stable release of PyCFX is hosted at
-`PyCFX Documentation`_.
+`PyCFX documentation`_.
 
 In the upper right corner of the documentation's title bar, there is an option for switching from
 viewing the documentation for the latest stable release to viewing the documentation for the
@@ -63,9 +62,9 @@ For general PyAnsys support, email `pyansys.core@ansys.com <pyansys.core@ansys.c
 
 Installation
 ------------
-The ``ansys-cfx-core`` package supports Python 3.10 through Python 3.13 on Windows and Linux.
+PyCFX supports Python 3.10 through 3.13 on Windows and Linux.
 
-On release, it can be installed from `PyPI`_ with:
+You can install it from `PyPI`_ with this command:
 
 .. code:: console
 
@@ -74,7 +73,7 @@ On release, it can be installed from `PyPI`_ with:
 For developers
 ^^^^^^^^^^^^^^
 If you plan on doing local *development* of PyCFX with Git, install
-the latest release with:
+the latest release with these commands:
 
 .. code:: console
 
@@ -86,46 +85,35 @@ the latest release with:
    pip install -e .[doc,tests,style]
    python codegen/allapigen.py  # Generates the API files
 
-Further details can be found in the `PyCFX Documentation`_.
-
-
 Dependencies
 ------------
-You must have a licensed copy of Ansys CFX installed locally. PyCFX
-supports CFX 2025 R2 Service Pack 3 and later. The Windows installation of Ansys CFX automatically
-sets the required environment variables so that PyCFX can find the Ansys CFX
-installation. Using CFX 2025 R2 (or 25.2) installed in the default directory as an
-example, the installer automatically sets the ``AWP_ROOT252`` environment variable to point
-to ``C:\Program Files\ANSYS Inc\v252``.
+You must have a licensed copy of Ansys CFX installed locally. PyCFX supports CFX 2025 R2 Service Pack 3 and later.
 
-On Linux, the required environment variable is not set automatically, and can be set for the
-current user in the current shell session, using CFX 2025 R2 in the default installation
-directory as an example, before running PyCFX, with:
+On Windows, the Ansys CFX installer automatically sets the required environment variables. For example, using CFX 2025 R2 installed in the default directory, the installer sets the ``AWP_ROOT252`` environment variable to ``C:\Program Files\ANSYS Inc\v252``.
+
+On Linux, you must set the required environment variable manually. For example, using CFX 2025 R2 in the default directory, run this command:
 
 .. code:: console
 
     export AWP_ROOT252=/usr/ansys_inc/v252
 
-For this setting to persist between different shell sessions for the current user, the same
-export command can instead be added to the user's ``~/.profile`` file or equivalent.
-
+To make this setting persistent for the current user, add this same export command to the ``~/.profile`` file or equivalent.
 
 Getting started
 ---------------
 
-Launching CFX
-^^^^^^^^^^^^^
-To launch CFX from Python using a local installation, use the following commands:
+Launch CFX
+^^^^^^^^^^
+To launch CFX from Python using a local installation, run these commands:
 
 .. code:: python
 
   import ansys.cfx.core as pycfx
   pypre = pycfx.PreProcessing.from_install()   # Start CFX-Pre
-  pysolve = pycfx.Solver.from_install()        # Start a solver session
+  pysolve = pycfx.Solver.from_install()        # Start a Solver session
   pypost = pycfx.PostProcessing.from_install() # Start CFD-Post
 
-Further details can be found in the `PyCFX Documentation`_. Examples are provided in the
-`examples/` folder of the repository.
+Find examples in the `examples/` folder of the repository.
 
 
 License and acknowledgments
@@ -142,6 +130,6 @@ For more information on CFX, see the `Ansys CFX`_ page on the Ansys website.
 
 .. LINKS AND REFERENCES
 .. _Ansys CFX: https://www.ansys.com/products/fluids/ansys-cfx
-.. _PyCFX Documentation: https://glowing-telegram-gqq3j3l.pages.github.io/
+.. _PyCFX documentation: https://glowing-telegram-gqq3j3l.pages.github.io/
 .. _PyCFX Issues: https://github.com/ansys/pycfx/issues
 .. _PyPI: https://pypi.org/project/ansys-cfx-core/

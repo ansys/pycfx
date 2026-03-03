@@ -48,6 +48,7 @@ extensions = [
     "sphinx_copybutton",
     "sphinx_jinja",
     "sphinx_gallery.gen_gallery",
+    "sphinx_design",
 ]
 
 sphinx_gallery_conf = {
@@ -105,7 +106,7 @@ html_static_path = ["_static"]
 templates_path = ["_templates"]
 
 # The suffix(es) of source filenames.
-source_suffix = ".rst"
+source_suffix = {".rst": "restructuredtext"}
 
 # The master toctree document.
 master_doc = "index"

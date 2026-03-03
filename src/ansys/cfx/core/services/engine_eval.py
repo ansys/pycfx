@@ -20,8 +20,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-"""Wrappers over EngineEval gRPC service of CFX.
-"""
+"""Wrappers over the EngineEval gRPC service of CFX."""
 
 from typing import Sequence
 
@@ -38,15 +37,15 @@ from ansys.cfx.core.utils.cfx_version import CFXVersion
 
 
 class EngineEvalService:
-    """Class wrapping the EngineEval gRPC service of CFX.
+    """Wraps the EngineEval gRPC service of CFX.
 
-    Using the methods from the EngineEval class is recommended.
+    Using the methods from the ``EngineEval`` class is recommended.
     """
 
     def __init__(
         self, channel: grpc.Channel, metadata: list[tuple[str, str]], cfx_error_state
     ) -> None:
-        """__init__ method of EngineEvalService class."""
+        """Initialize an instance of the ``EngineEvalService`` class."""
         intercept_channel = grpc.intercept_channel(
             channel,
             ErrorStateInterceptor(cfx_error_state),
@@ -75,69 +74,46 @@ class EngineEvalService:
         return self.__stub.ExpressionEval(request, metadata=self.__metadata)
 
 
-class Symbol:
-    """Class representing the symbol datatype in CFX.
-
-    Attributes
-    ----------
-    str : str
-        Underlying string representation
-    """
-
-    def __init__(self, str: str) -> None:
-        """__init__ method of Symbol class."""
-        self.str = str
-
-    def __repr__(self) -> str:
-        return self.str
-
-
 class EngineEval:
-    """Class on which CFX's CCL code can be executed.
-
-    Methods
-    -------
-    process_ccl(ccl, wait, silent)
-        Send CCL commands and settings to execute in the engine. Return output if any.
-    info_query(query, args)
-        Evaluates a query in string format, returns string
-    eval_expression(input)
-        Evaluates a CCL expression in string format, returns Python
-        value
-    """
+    """Provides functions to interact with the CFX engine."""
 
     def __init__(self, service: EngineEvalService) -> None:
-        """__init__ method of EngineEval class."""
+        """Initialize an instance of the ``EngineEval`` class."""
         self.service = service
         self.version = self.info_query("Engine Version")
 
     def get_engine_version(self) -> str:
-        """Return engine version number."""
-        return self.version
-
-    def eval_expression(self, input: str) -> str:
-        """Evaluates a CFX expression.
-
-        This function is not available in CFX versions earlier than Release 26.1.
-
-        Parameters
-        ----------
-        input : str
-            Input CFX expression represented as str
+        """Get the CFX engine version number.
 
         Returns
         -------
         str
-            Output value in string format
+            CFX engine version number in string format."""
+        return self.version
+
+    def eval_expression(self, input: str) -> str:
+        """Evaluate a CFX expression.
+
+        This function is not available in CFX versions earlier than Release 2026 R1.
+
+        Parameters
+        ----------
+        input : str
+            Input CFX expression represented as a string.
+
+        Returns
+        -------
+        str
+            Output value in string format.
 
         Raises
         ------
         RuntimeError
-            If a CFX version earlier than Release 26.1 is being used.
+            If a CFX version earlier than 2026 R1 is being used.
         """
         if CFXVersion(self.version) < CFXVersion.v261:
             raise RuntimeError(
-                "eval_expression is not supported before Release 26.1. "
+                "eval_expression is not supported before 2026 R1. "
                 "Expressions can be created and evaluated from the 'expressions' object."
             )
 
@@ -147,22 +123,22 @@ class EngineEval:
         return response.output
 
     def process_ccl(self, ccl: Sequence[str], wait: bool = True, silent: bool = True) -> str:
-        """Executes CCL commands and settings. The CCL is in the form of a sequence of strings.
+        """Execute CCL commands and settings. The CCL is in the form of a sequence of strings.
 
         Parameters
         ----------
         ccl : Sequence[str]
-            Sequence of CCL
-        wait : bool, optional
-            Specifies whether to wait until execution completes, by
-            default True
-        silent : bool, optional
-            Specifies whether to execute silently, by default True
+            Sequence of CCL strings. Each one must be a complete CCL fragment that can be submitted
+            to the engine on its own. Newline characters can be included in the strings.
+        wait : bool, default: True
+            Whether to wait until execution completes.
+        silent : bool, default: True
+            Whether to execute silently.
 
         Returns
         -------
         str
-           Output as string
+           Output as string.
         """
         request = EngineEvalProtoModule.ProcessCCLRequest()
         request.ccl.extend(ccl)
@@ -172,20 +148,20 @@ class EngineEval:
         return response.output
 
     def info_query(self, query: str, args: str = None) -> str:
-        """Query engine info in string format.
+        """Query engine information in string format.
 
         Parameters
         ----------
         query : str
-            Input query in string format
+            Input query in string format.
 
         args : str
-            Input query arguments in string format
+            Input query arguments in string format.
 
         Returns
         -------
         str
-            Output query value in string format
+            Output query value in string format.
         """
         request = EngineEvalProtoModule.InfoQueryRequest()
         request.query = query

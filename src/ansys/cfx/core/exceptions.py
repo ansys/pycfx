@@ -20,7 +20,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-"""Custom common higher level exceptions."""
+"""Custom common higher-level exceptions."""
 
 from typing import Any, Optional
 
@@ -47,10 +47,3 @@ class InvalidArgument(ValueError):
     """Raised when an argument value is inappropriate."""
 
     pass
-
-
-class SurfaceSpecificationError(ValueError):
-    """Raised when both ``surface_ids`` and ``surface_names`` are provided."""
-
-    def __init__(self):
-        super().__init__("Provide either 'surface_ids' or 'surface_names'.")
