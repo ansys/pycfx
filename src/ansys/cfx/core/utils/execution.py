@@ -42,8 +42,8 @@ def asynchronous(f: Callable) -> Callable:
     Asynchronous execution using the @asynchronous decorator:
 
     >>> import ansys.cfx.core as pycfx
-    >>> pysolve = pycfx.Solver.from_install(solver_input_file_name = "<name1>")
-    >>> pysolve2 = pycfx.Solver.from_install(solver_input_file_name = "<name2>")
+    >>> pysolve = pycfx.Solver.from_install(solver_input_file_name = <name1>)
+    >>> pysolve2 = pycfx.Solver.from_install(solver_input_file_name = <name2>)
     >>> @asynchronous
     ... def asynchronous_solve(solver_session):
     ...     solver_session.solution.start_run()
@@ -159,12 +159,18 @@ def timeout_loop(
     --------
     Waiting 5 seconds to see if ``func("test")`` returns ``True``:
 
+    >>> import time
+    >>> from ansys.cfx.core.utils.execution import timeout_loop
+    >>> def func(name):
+    ...     return False
     >>> func("test")
     False
     >>> response = timeout_loop(func, timeout=5.0, args=("test",))
 
     Waiting 5 seconds to see if ``func2("test",word="hello")`` returns ``False``:
 
+    >>> def func2(name1, word="name2"):
+    ...     return True
     >>> func2("test", word="hello")
     True
     >>> response = timeout_loop(func2, timeout=5.0, expected="falsy", args=("test",), kwargs={"word":"hello",})
