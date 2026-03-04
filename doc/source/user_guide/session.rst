@@ -44,6 +44,10 @@ named ``pypre`` with a suitable case (for example, the :ref:`Static mixer <ref_s
 
 .. code-block:: python
 
+  >>> import ansys.cfx.core as pycfx
+  >>> pypre = pycfx.PreProcessing.from_install()
+  >>> pypre.file.open_case(file_name = <case_name>)
+
   # Retrieve the parameter value
   >>> pypre.setup.flow['Flow Analysis 1'].analysis_type.option()
   'Steady State'
@@ -526,8 +530,11 @@ Suppose you create a plane with this code:
 
 .. code-block:: python
 
-  >>> pypost.setup.plane["Plane 1"] = {}
-  >>> plane1 = pypost.setup.plane["Plane 1"]
+  >>> pypost = pycfx.PostProcessing.from_install()
+  >>> pypost.file.load_results(file_name=<results_name>)
+  >>> pypost.results.plane.create("Plane 1") #doctest: +ELLIPSIS
+  <ansys.cfx.core... object at 0x...>
+  >>> plane1 = pypost.results.plane["Plane 1"]
   >>> plane1.option = "ZX Plane"
   >>> plane1.plane_type = "Slice"
 
@@ -540,8 +547,9 @@ the plane object until it is complete:
 
 .. code-block:: python
 
-  >>> pypost.setup.plane["Plane 1"] = {}
-  >>> plane1 = pypost.setup.plane["Plane 1"]
+  >>> pypost.results.plane.create("Plane 2") # doctest: +ELLIPSIS
+  <ansys.cfx.core... object at 0x...>
+  >>> plane1 = pypost.results.plane["Plane 2"]
   >>> plane1.suspend()  # Suspend update calculations for the plane
   >>> plane1.option = "ZX Plane"
   >>> plane1.plane_type = "Slice"
@@ -552,11 +560,10 @@ parameters in a single dictionary when it is created:
 
 .. code-block:: python
 
-  >>> pypost.setup.plane["Plane 1"] = {
+  >>> pypost.results.plane["Plane 3"] = {
   ...   "option": "ZX Plane",
   ...   "plane_type": "Slice"
   ... }
-
 
 Active objects, commands, and queries
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

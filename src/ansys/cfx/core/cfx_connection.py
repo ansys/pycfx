@@ -253,7 +253,7 @@ class CFXConnectionProperties:
     >>> import ansys.cfx.core as pycfx
     >>> session = pycfx.launch_cfx()
     >>> session.connection_properties.list_names()
-    ['ip', 'port', 'password', 'engine_pwd', 'engine_pid', 'engine_host', 'cfx_host_pid', 'inside_container']
+    ['ip', 'port', 'address', 'password', 'engine_pwd', 'engine_pid', 'engine_host', 'cfx_host_pid', 'inside_container']
     >>> session.connection_properties.ip
     'localhost'
     """

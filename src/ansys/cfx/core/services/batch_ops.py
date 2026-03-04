@@ -68,7 +68,7 @@ class BatchOps:
     >>> import ansys.cfx.core as pycfx
     >>> pypost = pycfx.PostProcessing.from_install()
     >>> with pycfx.BatchOps(pypost):
-    ...     pypost.file.load_results(file_name="StaticMixer_001.res")
+    ...     pypost.file.load_results(file_name=<results_name>)
     ...     pypost.results.plane["Plane 1"] = {}
 
     The preceding code executes both operations through a single gRPC call upon exiting the
