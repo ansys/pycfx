@@ -125,17 +125,18 @@ class StandaloneLauncher:
         env : dict, default: None
             Mapping to modify environment variables in CFX.
         start_container : bool, default: None
-            Whether to launch a CFX Docker container image. For more information about containers, see
-            the :mod:`~ansys.cfx.core.launcher.cfx_container` module.
+            Whether to launch a CFX Docker container image. For more information about containers,
+            see the :mod:`~ansys.cfx.core.launcher.cfx_container` module.
         container_dict : dict, default: None
             Dictionary for CFX Docker container configuration. If specified,
             setting ``start_container = True`` is redundant.
             CFX launches inside a Docker container using the configuration changes specified.
             See also the :mod:`~ansys.cfx.core.launcher.cfx_container` module.
         dry_run : bool, default: False
-            Whether to dry run a container start. If ``True``, CFX is not launched but the configuration
-            information that would be used is printed as if CFX is being launched. If dry running a
-            container start, the ``launch_cfx()`` method returns the configured ``container_dict``.
+            Whether to dry run a container start. If ``True``, CFX is not launched but the
+            configuration information that would be used is printed as if CFX is being launched.
+            If dry running a container start, the ``launch_cfx()`` method returns the configured
+            ``container_dict``.
         cleanup_on_exit : bool, default: True
             Whether to shut down the connected CFX session when PyCFX is
             exited, or the ``exit()`` method is called on the session instance,
@@ -156,7 +157,8 @@ class StandaloneLauncher:
         start_watchdog : bool, default: None
             When ``cleanup_on_exit`` is ``True``, ``start_watchdog`` defaults to ``True``,
             which means an independent watchdog process is run to ensure
-            that any local GUI-less CFX sessions started by PyCFX are properly closed (or killed if frozen) when the current Python process ends.
+            that any local GUI-less CFX sessions started by PyCFX are properly closed (or killed
+            if frozen) when the current Python process ends.
         file_transfer_service : default: None
             File transfer service. Uploads or downloads files to or from the server.
 
@@ -234,7 +236,10 @@ class StandaloneLauncher:
             # impact server functionality and the underlying issue has been addressed in v261.
             findstr_path = shutil.which("findstr.exe")
             if findstr_path:
-                launch_cmd = f'{launch_string} 2>&1 | "{findstr_path}" /V "WNUA: Client is NOT same Windows user - ACCESS DENIED"'
+                launch_cmd = (
+                    f'{launch_string} 2>&1 | "{findstr_path}" /V "WNUA: Client is NOT '
+                    'same Windows user - ACCESS DENIED"'
+                )
             else:
                 launch_cmd = launch_string
         else:
@@ -332,7 +337,8 @@ class StandaloneLauncher:
                     pass
                 else:
                     logger.warning(
-                        f"The 'solver_input_file_name' argument is only used for a CFX-Solver session."
+                        "The 'solver_input_file_name' argument is only used for a CFX-Solver "
+                        "session."
                     )
 
             return session

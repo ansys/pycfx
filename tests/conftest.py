@@ -86,7 +86,8 @@ TEST_HOME_DIRECTORY_PATH = Path(__file__).resolve().parent
 def pytest_configure(config):
     config.test_home_directory_path = TEST_HOME_DIRECTORY_PATH
     if is_containerized_mode(config):
-        # In containerized mode, the test data directory is mounted to the container working directory.
+        # In containerized mode, the test data directory is mounted to the container working
+        # directory.
         config.test_data_directory_path = CONTAINER_WORKING_DIR
     else:
         # In direct mode, the test data directory is the same as the test directory.

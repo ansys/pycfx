@@ -135,7 +135,9 @@ def launch_cfx(
         journals.
     start_timeout : int, default: None
         Maximum allowable time in seconds for connecting to the CFX
-        server. The default is ``None``, in which case 60 seconds is used if CFX is launched outside a Slurm environment. No timeout occurs if CFX is launched within a Slurm environment.
+        server. The default is ``None``, in which case 60 seconds is used if CFX is launched
+        outside a Slurm environment. No timeout occurs if CFX is launched within a Slurm
+        environment.
     additional_arguments : str, default: ""
         Additional arguments to send to CFX as a string in the same
         format they are normally passed to CFX on the command line.
@@ -300,7 +302,8 @@ def connect_to_cfx(
     Raises
     ------
     ValueError
-        Raised when neither ``certificates_folder`` nor ``insecure_mode`` are set while ``allow_remote_host`` is ``True``.
+        Raised when neither ``certificates_folder`` nor ``insecure_mode`` are set while
+        ``allow_remote_host`` is ``True``.
         Raised when both ``certificates_folder`` and ``insecure_mode`` are set simultaneously.
         Raised when ``certificates_folder`` is set but ``allow_remote_host`` is ``False``.
         Raised when ``insecure_mode`` is set but ``allow_remote_host`` is ``False``.

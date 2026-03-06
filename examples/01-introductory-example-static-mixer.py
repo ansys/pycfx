@@ -30,9 +30,12 @@ Mixer tutorial case in PyCFX.
 
 **Model overview**
 
-This example simulates a static mixer with two inlet pipes delivering water into a mixing vessel. The water exits through an outlet pipe.
+This example simulates a static mixer with two inlet pipes delivering water into a mixing vessel.
+The water exits through an outlet pipe.
 
-Water enters through both pipes at the same rate but at different temperatures. The first entry is at a rate of 2 m/s and a temperature of 315 K. The second entry is at a rate of 2 m/s and a temperature of 285 K. The mixer radius is 2 m.
+Water enters through both pipes at the same rate but at different temperatures. The first entry
+is at a rate of 2 m/s and a temperature of 315 K. The second entry is at a rate of 2 m/s and a
+temperature of 285 K. The mixer radius is 2 m.
 
 **Workflow tasks**
 

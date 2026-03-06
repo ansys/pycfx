@@ -65,7 +65,8 @@ class SolverController:
         Raises
         ------
         RuntimeError
-            If the provided arguments in ``process_args`` are not consistent or any necessary files do not exist.
+            If the provided arguments in ``process_args`` are not consistent or any necessary
+            files do not exist.
         """
         self._solver_input_file = None
         self._run_directory = None
@@ -445,7 +446,8 @@ class SolverController:
             )
             container.start()
             logger.debug(
-                f"""Container '{container.id[:10]}' started with command: {config_dict["command"]}. Streaming output..."""
+                f"Container '{container.id[:10]}' started with command: "
+                f'{config_dict["command"]}. Streaming output...'
             )
 
             # Get the raw stream object

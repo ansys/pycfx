@@ -18,13 +18,15 @@ API reference
 
 This API reference corresponds to {version}.
 
-This section provides the class and function reference for PyCFX. For comprehensive guidelines on using PyCFX, see the :ref:`ref_user_guide`.
+This section provides the class and function reference for PyCFX. For comprehensive guidelines on
+using PyCFX, see the :ref:`ref_user_guide`.
 
 All public APIs for PyCFX appear in the left pane. Descriptions of some key APIs follow.
 
 PreProcessing mode
 ------------------
-The PreProcessing :ref:`settings API <ref_pre_processing_root>` is the main interface for using the CFX preprocessor (CFX-Pre).
+The PreProcessing :ref:`settings API <ref_pre_processing_root>` is the main interface for using
+the CFX preprocessor (CFX-Pre).
 
 Solution mode
 -------------
@@ -34,7 +36,8 @@ CFX-Solver. This module offers very limited control in this first PyCFX release.
 
 PostProcessing mode
 -------------------
-The PostProcessing :ref:`settings API <ref_post_processing_root>` is the main interface for using the CFX postprocessor (CFD-Post).
+The PostProcessing :ref:`settings API <ref_post_processing_root>` is the main interface for using
+the CFX postprocessor (CFD-Post).
 
 
 .. toctree::
@@ -173,7 +176,8 @@ def _generate_settings_root(module: str, rst):
     rst.write(f"{module}\n")
     rst.write(f'{"="*(len(module))}\n\n')
     rst.write(
-        f"The {module} :ref:`ref_{module}_root` is the top-level {session_name} object. It contains all\n"
+        f"The {module} :ref:`ref_{module}_root` is the top-level {session_name} object. "
+        "It contains all\n"
     )
     rst.write("other settings objects in a hierarchical structure.\n")
 
