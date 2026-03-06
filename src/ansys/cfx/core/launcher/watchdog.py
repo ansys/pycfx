@@ -23,7 +23,8 @@
 """Module for launching the PyCFX Watchdog to monitor the PyCFX and the CFX server.
 
 This module should not be used manually. PyCFX automatically manages it.
-For more information, see the ``start_watchdog`` argument for the :func:`~ansys.cfx.core.launcher.launcher.launch_cfx()` function.
+For more information, see the ``start_watchdog`` argument for the
+:func:`~ansys.cfx.core.launcher.launcher.launch_cfx()` function.
 """
 
 import os

@@ -122,12 +122,18 @@ def search(
     --------
     >>> import ansys.cfx.core as pycfx
     >>> pycfx.search("injection_region")
-    <pre_processing_session>.setup.flow["<name>"].domain["<name>"].particle_injection_region["<name>"] (Object)
-    <pre_processing_session>.setup.flow["<name>"].domain["<name>"].injection_region["<name>"] (Object)
-    <pre_processing_session>.setup.flow["<name>"].domain["<name>"].injection_region["<name>"].injection_region_type (Parameter)
-    <pre_processing_session>.setup.flow["<name>"].domain["<name>"].injection_region["<name>"].injection_region_contour (Object)
-    <pre_processing_session>.setup.flow["<name>"].domain["<name>"].injection_region["<name>"].injection_region_vector (Object)
-    <pre_processing_session>.setup.flow["<name>"].output_control.transient_particle_diagnostics["<name>"].penetration_origin_and_direction.particle_injection_region (Parameter)
+    <pre_processing_session>.setup.flow["<name>"].domain["<name>"].particle_injection_region\
+["<name>"] (Object)
+    <pre_processing_session>.setup.flow["<name>"].domain["<name>"].injection_region["<name>"] \
+(Object)
+    <pre_processing_session>.setup.flow["<name>"].domain["<name>"].injection_region["<name>"]\
+.injection_region_type (Parameter)
+    <pre_processing_session>.setup.flow["<name>"].domain["<name>"].injection_region["<name>"]\
+.injection_region_contour (Object)
+    <pre_processing_session>.setup.flow["<name>"].domain["<name>"].injection_region["<name>"]\
+.injection_region_vector (Object)
+    <pre_processing_session>.setup.flow["<name>"].output_control.transient_particle_diagnostics\
+["<name>"].penetration_origin_and_direction.particle_injection_region (Parameter)
     <post_processing_session>.results.internal_particle_injection_region["<name>"] (Object)
     <post_processing_session>.results.injection_region["<name>"] (Object)
     """

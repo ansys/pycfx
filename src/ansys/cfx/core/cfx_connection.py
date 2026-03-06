@@ -172,7 +172,8 @@ def get_container(container_id_or_name: str) -> Union[bool, Container, None]:
     -----
     See `Docker container`_ for more information.
 
-    .. _Docker container: https://docker-py.readthedocs.io/en/stable/containers.html#docker.models.containers.Container
+    .. _Docker container: https://docker-py.readthedocs.io/en/stable/containers.html#docker.models\
+    .containers.Container
     """
 
     if not isinstance(container_id_or_name, str):
@@ -253,7 +254,8 @@ class CFXConnectionProperties:
     >>> import ansys.cfx.core as pycfx
     >>> session = pycfx.launch_cfx()
     >>> session.connection_properties.list_names()
-    ['ip', 'port', 'address', 'password', 'engine_pwd', 'engine_pid', 'engine_host', 'cfx_host_pid', 'inside_container']
+    ['ip', 'port', 'address', 'password', 'engine_pwd', 'engine_pid', 'engine_host', \
+'cfx_host_pid', 'inside_container']
     >>> session.connection_properties.ip
     'localhost'
     """
@@ -365,7 +367,8 @@ def _get_channel(
         else:
             if certificates_folder is None:
                 raise ValueError(
-                    "Specify 'certificates_folder' containing TLS certificates to connect to remote host."
+                    "Specify 'certificates_folder' containing TLS certificates to connect to "
+                    "remote host."
                 )
             return _get_tls_channel(address, certificates_folder, options=options)
     else:
@@ -620,7 +623,8 @@ class CFXConnection:
                 cmd_list = ["bash"]
             else:
                 logger.error(
-                    "Unrecognized or unsupported operating system. Cancelling CFX cleanup script execution."
+                    "Unrecognized or unsupported operating system. Cancelling CFX cleanup script "
+                    "execution."
                 )
                 return
             # TODO: Currently CFX does not generate a cleanup script. Needed by watchdog
@@ -789,7 +793,8 @@ class CFXConnection:
                     logger.debug(f"Setting TIMEOUT_FORCE_EXIT to {timeout}.")
                 except ValueError:
                     logger.debug(
-                        "Off or unrecognized PYCFX_TIMEOUT_FORCE_EXIT value. Not enabling timeout force exit."
+                        "Off or unrecognized PYCFX_TIMEOUT_FORCE_EXIT value. Not enabling "
+                        "timeout force exit."
                     )
 
         if timeout is None:

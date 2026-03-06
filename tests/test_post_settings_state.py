@@ -913,7 +913,8 @@ def test_set_var(pypost: PostProcessing, pytestconfig, capsys):
         except ValueError as e:
             assert (
                 str(e) == f"'option' has no attribute '{invalid_value}'.\n"
-                "The allowed values are: ['Point and Normal', 'Three Points', 'XY Plane', 'YZ Plane', 'ZX Plane']."
+                "The allowed values are: ['Point and Normal', 'Three Points', 'XY Plane', "
+                "'YZ Plane', 'ZX Plane']."
             )
         else:
             assert False, f"Expected ValueError for {invalid_value}"

@@ -111,7 +111,8 @@ def _confirm_watchdog_start(
         host = cfx_connection.connection_properties.engine_host
         if host == socket.gethostname():
             logger.debug(
-                "CFX running on the host machine and 'cleanup_on_exit' activated. Will launch Watchdog."
+                "CFX running on the host machine and 'cleanup_on_exit' activated. Will launch "
+                "Watchdog."
             )
             start_watchdog = True
     return start_watchdog

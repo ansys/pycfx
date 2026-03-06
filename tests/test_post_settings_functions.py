@@ -300,13 +300,13 @@ def test_misc_functions(pypost: PostProcessing, pytestconfig):
     plane1.show()
     plane2.show(view="/VIEW:View 1")
     assert (
-        view1vis()
-        == "/DEFAULT LEGEND:Default Legend View 1,/PLANE:Plane 1,/PLANE:Plane 2,/WIREFRAME:Wireframe"
+        view1vis() == "/DEFAULT LEGEND:Default Legend View 1,/PLANE:Plane 1,/PLANE:Plane 2,"
+        "/WIREFRAME:Wireframe"
     )
     plane1.hide(view="/VIEW:View 3")
     assert (
-        view1vis()
-        == "/DEFAULT LEGEND:Default Legend View 1,/PLANE:Plane 1,/PLANE:Plane 2,/WIREFRAME:Wireframe"
+        view1vis() == "/DEFAULT LEGEND:Default Legend View 1,/PLANE:Plane 1,/PLANE:Plane 2,"
+        "/WIREFRAME:Wireframe"
     )
     plane1.hide(view="/VIEW:View 1")
     plane2.hide()

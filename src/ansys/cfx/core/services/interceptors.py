@@ -46,7 +46,8 @@ def _truncate_grpc_str(message: Message) -> str:
     else:
         network_logger.debug(
             f"GRPC_TRACE: message partially hidden, {message_bytes} bytes > "
-            f"{log_bytes_limit} bytes limit. To see the full message, set PYCFX_GRPC_LOG_BYTES_LIMIT to 0."
+            f"{log_bytes_limit} bytes limit. To see the full message, set "
+            "PYCFX_GRPC_LOG_BYTES_LIMIT to 0."
         )
         return f"{message_str[:truncate_len]} < ... > {message_str[-truncate_len:]}"
 
@@ -65,7 +66,8 @@ class TracingInterceptor(grpc.UnaryUnaryClientInterceptor):
         request: Any,
     ) -> Any:
         network_logger.debug(
-            f"GRPC_TRACE: RPC = {client_call_details.method}, request = {_truncate_grpc_str(request)}"
+            f"GRPC_TRACE: RPC = {client_call_details.method}, request = "
+            f"{_truncate_grpc_str(request)}"
         )
         response = continuation(client_call_details, request)
         if not response.exception():
@@ -100,7 +102,8 @@ class ErrorStateInterceptor(grpc.UnaryUnaryClientInterceptor):
         client_call_details: grpc.ClientCallDetails,
         request: Any,
     ) -> Any:
-        # Let internal engine commands pass at all times, i.e., so we could shutdown engine gracefully.
+        # Let internal engine commands pass at all times, i.e., so we could shutdown engine
+        # gracefully.
         if not isinstance(request, EngineEvalProtoModule.ProcessCCLRequest):
             if self._cfx_error_state.name == "fatal":
                 details = self._cfx_error_state.details
@@ -118,7 +121,8 @@ class ErrorStateInterceptor(grpc.UnaryUnaryClientInterceptor):
 
 
 class GrpcErrorInterceptor(grpc.UnaryUnaryClientInterceptor):
-    """Provides an interceptor class for checking CFX server gRPC call response for an error state."""
+    """Provides an interceptor class for checking CFX server gRPC call response for an error
+    state."""
 
     def _intercept_call(
         self,

@@ -37,7 +37,9 @@ class PyPIMConfigurationError(ConnectionError):
 
 
 class PimFileTransferService:
-    """Provides a file transfer service based on `PyPIM <https://pypim.docs.pyansys.com/version/stable/>`_ and the ``simple_upload_server()`` function.
+    """Provides a file transfer service based on
+    `PyPIM <https://pypim.docs.pyansys.com/version/stable/>`_ and the ``simple_upload_server()``
+    function.
 
     Attributes
     ----------
@@ -92,7 +94,8 @@ class PimFileTransferService:
         return pypim.is_configured()
 
     def upload_file(self, file_name: str, remote_file_name: Optional[str] = None):
-        """Upload a file to the server supported by `PyPIM <https://pypim.docs.pyansys.com/version/stable/>`_.
+        """Upload a file to the server supported by
+        `PyPIM <https://pypim.docs.pyansys.com/version/stable/>`_.
 
         Parameters
         ----------
@@ -143,7 +146,8 @@ class PimFileTransferService:
                     raise FileNotFoundError(f"{file} does not exist.")
 
     def download_file(self, file_name: str, local_directory: Optional[str] = None):
-        """Download a file from the server supported by `PyPIM <https://pypim.docs.pyansys.com/version/stable/>`_.
+        """Download a file from the server supported by
+        `PyPIM <https://pypim.docs.pyansys.com/version/stable/>`_.
 
         Parameters
         ----------
