@@ -83,7 +83,8 @@ class SessionBase:
         start_timeout : int, default: 60
             Maximum time in seconds allowed for connecting to the CFX server.
         additional_arguments : str, default: ""
-            Additional command-line arguments for CFX, formatted as they would be on the command line.
+            Additional command-line arguments for CFX, formatted as they would be on the command
+            line.
         env : dict[str, str], default: {}
             Mapping for modifying environment variables in CFX.
         cleanup_on_exit : bool, default: True
@@ -171,7 +172,8 @@ class SessionBase:
         start_timeout : int, default: 60
             Maximum allowable time in seconds for connecting to the CFX server.
         additional_arguments : str, default: ""
-            Additional command-line arguments for CFX, formatted as they would be on the command line.
+            Additional command-line arguments for CFX, formatted as they would be on the command
+            line.
         container_dict : dict, default: None
             Configuration dictionary for launching CFX inside a Docker container. See also
             :mod:`~ansys.cfx.core.launcher.cfx_container`.
@@ -239,7 +241,8 @@ class SessionBase:
         ip : str, default: None
             IP address for connecting to an existing CFX instance. When ``None, theThe
             ``"127.0.0.1"`` is used. You can also use the ``PYCFX_CFX_IP=<ip>`` environment
-            variable to set this parameter. The explicit value of ``ip`` takes precedence over the ``PYCFX_CFX_IP=<ip>`` environment variable.
+            variable to set this parameter. The explicit value of ``ip`` takes precedence over the
+            ``PYCFX_CFX_IP=<ip>`` environment variable.
         port : int, default: None
             Port to listen on for an existing CFX instance. You can use the
             ``PYCFX_CFX_PORT=<port>`` environment variable to set a default
@@ -248,7 +251,8 @@ class SessionBase:
         address : str, default: None
             Address to connect to an existing CFX instance.
         server_info_file_name: str, default: None
-            Path to the server information file written out by the CFX server. PyCFX uses the connection information in the file to connect to a running CFX session.
+            Path to the server information file written out by the CFX server. PyCFX uses the
+            connection information in the file to connect to a running CFX session.
         password : str, default: None
             Password to connect to an existing CFX instance.
         allow_remote_host : bool, default: False
@@ -304,9 +308,9 @@ class SessionBase:
         session : SessionBase
             Existing CFX session.
         case_file_name: str
-            Name of the case file to use when starting a Solver session from a PreProcessing session.
-            This is used to determine the run name for the CFX-Solver. It does not need to be
-            supplied if a case file has already been saved by the PreProcessing session (for
+            Name of the case file to use when starting a Solver session from a PreProcessing
+            session. This is used to determine the run name for the CFX-Solver. It does not need
+            to be supplied if a case file has already been saved by the PreProcessing session (for
             CFX 2026 R1 and later). The ``.cfx`` extension is not required and is ignored if
             present.
 

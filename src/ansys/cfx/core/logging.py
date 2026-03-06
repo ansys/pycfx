@@ -101,7 +101,8 @@ def enable(level: Union[str, int] = "DEBUG", custom_config: Optional[dict] = Non
 
     Notes
     -----
-    See `Logging Levels <https://docs.python.org/3/library/logging.html#logging-levels>`_ in the Python documentation.
+    See `Logging Levels <https://docs.python.org/3/library/logging.html#logging-levels>`_ in the
+    Python documentation.
 
     Examples
     --------

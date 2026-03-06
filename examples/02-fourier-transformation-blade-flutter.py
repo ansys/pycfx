@@ -52,8 +52,8 @@ The Fourier Transformation Blade Flutter example guides you through these tasks:
 * Run the solver to generate the harmonic balance results.
 * Postprocess both the time integration and  harmonic balance results.
 
-Some tasks can execute while previous ones are still in progress. This means
-you do not need to wait for a solver run to complete before modifying the setup for the next simulation.
+Some tasks can execute while previous ones are still in progress. This means you do not need to
+wait for a solver run to complete before modifying the setup for the next simulation.
 
 """
 
@@ -127,8 +127,8 @@ pypre.file.import_mesh(file_name=mesh_file_name)
 # Transform the mesh
 # ------------------
 #
-# The imported mesh contains a single passage mesh. Because the Fourier Transformation method requires two
-# passages, the mesh must be transformed.
+# The imported mesh contains a single passage mesh. Because the Fourier Transformation method
+# requires two passages, the mesh must be transformed.
 #
 # PyCFX currently requires mesh transformations to be performed using the CFX Command Language
 # (CCL). ``Passages to Model`` is set to 2 to duplicate the original mesh.
@@ -399,8 +399,9 @@ if physics_messages:
 # ---------------------------
 #
 # This example uses a workflow where the three different PyCFX components (PreProcessing,
-# Solver and PostProcessing) interact directly, in contrast to the :ref:`Static mixer <ref_static_mixer>`
-# example, which shows a workflow based around writing files.
+# Solver and PostProcessing) interact directly, in contrast to the
+# :ref:`Static mixer <ref_static_mixer>` example, which shows a workflow based around writing
+# files.
 pypre.file.save_case(file_name="fourier_blade_flutter_ini.cfx")
 
 ###################################################################################################

@@ -388,13 +388,14 @@ def test_named_objects(pre_load_static_mixer_case: PreProcessing, capsys):
     except RuntimeError as e:
         if pypre.get_cfx_version() > CFXVersion.v252:
             assert str(e) == (
-                "Object '/FLOW:Flow Analysis 1/DOMAIN:Default Domain/BOUNDARY:in1/BOUNDARY CONDITIONS/"
-                "ADDITIONAL VARIABLE:BadAVName' was not created as it is not physically valid."
+                "Object '/FLOW:Flow Analysis 1/DOMAIN:Default Domain/BOUNDARY:in1/"
+                "BOUNDARY CONDITIONS/ADDITIONAL VARIABLE:BadAVName' was not created as it is not "
+                "physically valid."
             )
         else:
             assert str(e) == (
-                "Object '/FLOW:Flow Analysis 1/DOMAIN:Default Domain/BOUNDARY:in1/BOUNDARY CONDITIONS/"
-                "ADDITIONAL VARIABLE:BadAVName' was not created."
+                "Object '/FLOW:Flow Analysis 1/DOMAIN:Default Domain/BOUNDARY:in1/"
+                "BOUNDARY CONDITIONS/ADDITIONAL VARIABLE:BadAVName' was not created."
             )
     else:
         assert False, "Expected RuntimeError"
@@ -1087,7 +1088,8 @@ def test_set_var(pre_load_static_mixer_case: PreProcessing, pytestconfig, capsys
     assert (
         captured.out == "\n"
         " allowed_values can be accessed from the following paths: \n\n"
-        '    <session>.setup.flow["Flow Analysis 1"].analysis_type.external_solver_coupling.option.allowed_values\n\n'
+        '    <session>.setup.flow["Flow Analysis 1"].analysis_type.external_solver_coupling.'
+        "option.allowed_values\n\n"
         " allowed_values can be accessed from the following paths: \n\n"
         '    <session>.setup.flow["Flow Analysis 1"].analysis_type.option.allowed_values\n'
     )

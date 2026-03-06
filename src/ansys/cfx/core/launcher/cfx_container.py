@@ -26,15 +26,17 @@ Notes
 -----
 
 For configuration information, see the :func:`configure_container_dict` function. For a
-list of additional Docker container run configuration options that can also be specified through the
-``container_dict`` argument for the :func:`~ansys.cfx.core.launcher.launcher.launch_cfx()` function,
-see `Docker run`_ in the *Docker SDK for Python* containers documentation
+list of additional Docker container run configuration options that can also be specified
+through the ``container_dict`` argument for the
+:func:`~ansys.cfx.core.launcher.launcher.launch_cfx()` function, see `Docker run`_ in the *Docker
+SDK for Python* containers documentation
 
-For the CFX Docker container to be able to find license information, the license file or server needs to be specified
-through the ``ANSYSLMD_LICENSE_FILE`` environment variable,
-or the ``license_server`` argument for the ``container_dict`` (see :func:`configure_container_dict`).
+For the CFX Docker container to be able to find license information, the license file or server
+needs to be specified through the ``ANSYSLMD_LICENSE_FILE`` environment variable, or the
+``license_server`` argument for the ``container_dict`` (see :func:`configure_container_dict`).
 
-.. _Docker run: https://docker-py.readthedocs.io/en/stable/containers.html#docker.models.containers.ContainerCollection.run
+.. _Docker run: https://docker-py.readthedocs.io/en/stable/containers.html#docker.models.\
+containers.ContainerCollection.run
 
 Examples
 --------
@@ -49,10 +51,12 @@ an argument for `Docker run`_:
 
 >>> import ansys.cfx.core as pycfx
 >>> custom_config = {}
->>> custom_config.update(cfx_image='custom_cfx:v25.2.3', host_mount_path='/testing', auto_remove=False)
+>>> custom_config.update(cfx_image='custom_cfx:v25.2.3', host_mount_path='/testing',
+...   auto_remove=False)
 >>> session = pycfx.launch_cfx(container_dict=custom_config)
 
-Get the default CFX Docker container configuration and then launch with the customized configuration:
+Get the default CFX Docker container configuration and then launch with the customized
+configuration:
 
 >>> import ansys.cfx.core as pycfx
 >>> config_dict = pycfx.launch_cfx(start_container=True, dry_run=True)
@@ -112,8 +116,8 @@ class ServerInfoFileError(ValueError):
 
     def __init__(self):
         super().__init__(
-            "Specify server information file using the 'container_server_info_file' argument or in "
-            "the 'container_dict'."
+            "Specify server information file using the 'container_server_info_file' argument or "
+            "in the 'container_dict'."
         )
 
 
@@ -183,8 +187,8 @@ def configure_container_dict(
         Ignored if the ``cfx_image`` parameter has been specified.
     **container_dict
         Additional keyword arguments that can be specified. They are treated as Docker container
-        run options to be passed directly to the Docker run execution. See the following examples and
-        `Docker run`_ documentation.
+        run options to be passed directly to the Docker run execution. See the following examples
+        and `Docker run`_ documentation.
 
     Returns
     -------
@@ -289,7 +293,8 @@ def configure_container_dict(
             port = get_free_port()
         container_dict.update(ports={str(port): port})  # container port : host port
     else:
-        # take the specified 'port', OR the first port value from the specified 'ports', for CFX to use
+        # Take the specified 'port', OR the first port value from the specified 'ports', for
+        # CFX to use.
         if not port:
             port = next(iter(container_dict["ports"].values()))
 
@@ -487,7 +492,8 @@ def extract_mount_paths(container_dict: dict) -> dict:
     - ``host_mount_path``: Path on the host for the first volume (or ``None``).
     - ``container_mount_path``: Path in the container for the first volume (or ``None``).
     - ``host_temporary_directory_path``: Path on the host for the second volume (or ``None``).
-    - ``container_temporary_directory_path``: Path in the container for the second volume (or ``None``).
+    - ``container_temporary_directory_path``: Path in the container for the second volume
+      (or ``None``).
 
     Parameters
     ----------
@@ -520,7 +526,8 @@ def extract_mount_paths(container_dict: dict) -> dict:
 
 def replace_container_path_with_host_path(line: str, mount_paths: dict[str, str]) -> str:
     """
-    Replace the first occurrence of a container path in the given line with its corresponding host path.
+    Replace the first occurrence of a container path in the given line with its corresponding host
+    path.
 
     Parameters
     ----------
@@ -560,7 +567,8 @@ def replace_container_path_with_host_path(line: str, mount_paths: dict[str, str]
 
 def replace_host_path_with_container_path(line: str, mount_paths: dict[str, str]) -> str:
     """
-    Replace the first occurrence of a host path in the given line with its corresponding container path.
+    Replace the first occurrence of a host path in the given line with its corresponding container
+    path.
 
     Parameters
     ----------

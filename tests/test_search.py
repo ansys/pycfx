@@ -49,38 +49,38 @@ def test_search(capsys):
     pycfx.search("axis_definition")
     lines = capsys.readouterr().out.splitlines()
     assert (
-        '<pre_processing_session>.setup.flow["<name>"].domain_interface["<name>"].interface_models.pitch_change.axis_definition (Object)'
-        in lines
+        '<pre_processing_session>.setup.flow["<name>"].domain_interface["<name>"].'
+        "interface_models.pitch_change.axis_definition (Object)" in lines
     )
     assert (
-        '<pre_processing_session>.setup.library.transformation_definitions.transformation["<name>"].rotation_axis_definition (Object)'
-        in lines
+        "<pre_processing_session>.setup.library.transformation_definitions."
+        'transformation["<name>"].rotation_axis_definition (Object)' in lines
     )
 
     pycfx.search("axis_definition", match_whole_word=True)
     lines = capsys.readouterr().out.splitlines()
     assert (
-        '<pre_processing_session>.setup.flow["<name>"].domain_interface["<name>"].interface_models.pitch_change.axis_definition (Object)'
-        in lines
+        '<pre_processing_session>.setup.flow["<name>"].domain_interface["<name>"].'
+        "interface_models.pitch_change.axis_definition (Object)" in lines
     )
     assert (
-        '<pre_processing_session>.setup.library.transformation_definitions.transformation["<name>"].rotation_axis_definition (Object)'
-        not in lines
+        "<pre_processing_session>.setup.library.transformation_definitions."
+        'transformation["<name>"].rotation_axis_definition (Object)' not in lines
     )
 
     pycfx.search("rotation_axis")
     lines = capsys.readouterr().out.splitlines()
     assert (
-        '<pre_processing_session>.setup.flow["<name>"].domain_interface["<name>"].interface_models.axis_definition.rotation_axis (Parameter)'
-        in lines
+        '<pre_processing_session>.setup.flow["<name>"].domain_interface["<name>"].'
+        "interface_models.axis_definition.rotation_axis (Parameter)" in lines
     )
     assert (
-        '<pre_processing_session>.setup.flow["<name>"].domain_interface["<name>"].interface_models.axis_definition.rotation_axis_from (Parameter)'
-        in lines
+        '<pre_processing_session>.setup.flow["<name>"].domain_interface["<name>"].'
+        "interface_models.axis_definition.rotation_axis_from (Parameter)" in lines
     )
     assert (
-        '<pre_processing_session>.setup.flow["<name>"].domain_interface["<name>"].interface_models.axis_definition.rotation_axis_to (Parameter)'
-        in lines
+        '<pre_processing_session>.setup.flow["<name>"].domain_interface["<name>"].'
+        "interface_models.axis_definition.rotation_axis_to (Parameter)" in lines
     )
     assert (
         "<post_processing_session>.results.object_view_transform.rotation_axis_from (Parameter)"
@@ -108,8 +108,8 @@ def test_search_pre_case_tree(pre_load_static_mixer_case: PreProcessing, capsys)
         "<search_root>.boundary_conditions.thermal_radiation.diffuse_fraction (Parameter)" in lines
     )
     assert (
-        '<search_root>.fluid["<name>"].boundary_conditions.thermal_radiation.diffuse_fraction (Parameter)'
-        in lines
+        '<search_root>.fluid["<name>"].boundary_conditions.thermal_radiation.diffuse_fraction '
+        "(Parameter)" in lines
     )
 
 

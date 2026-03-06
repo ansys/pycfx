@@ -433,7 +433,8 @@ class Property(Base):
 
 
 class Numerical(Property):
-    """Exposes the attribute accessor on a settings object. This class is specific to numerical objects."""
+    """Exposes the attribute accessor on a settings object. This class is specific to numerical
+    objects."""
 
     def min(self):
         """Get the minimum value of the object."""
@@ -520,7 +521,8 @@ class RealNumerical(Numerical):
 
 
 class Textual(Property):
-    """Exposes the attribute accessor on the settings object. This class is specific to string objects."""
+    """Exposes the attribute accessor on the settings object. This class is specific to string
+    objects."""
 
 
 class DeprecatedSettingWarning(FutureWarning):
@@ -573,7 +575,8 @@ class _Alias:
                 )
                 if not _Alias.once:
                     warnings.warn(
-                        "\nExecute the following code to suppress future warnings like the previous one:\n\n"
+                        "\nExecute the following code to suppress future warnings like the "
+                        "previous one:\n\n"
                         ">>> import warnings\n"
                         '>>> warnings.filterwarnings("ignore", category=DeprecatedSettingWarning)',
                         DeprecatedSettingWarning,
@@ -1141,7 +1144,8 @@ class WildcardPath(Group):  # pragma: no cover (wildcards not used)
 
 
 class NamedObjectWildcardPath(WildcardPath):  # pragma: no cover (wildcards not used)
-    """Provides the wild card path at a ``NamedObject`` path so it can be looked up by wildcard again."""
+    """Provides the wild card path at a ``NamedObject`` path so it can be looked up by wildcard
+    again."""
 
     def __getitem__(self, name: str):
         return WildcardPath(
@@ -1960,7 +1964,8 @@ def get_root(
     Parameters
     ----------
     session_name: str
-        Name of a specific CFX session, such as ``pre-processing``, ``solver``, or ``post-processing``.
+        Name of a specific CFX session, such as ``pre-processing``, ``solver``, or
+        ``post-processing``.
     flproxy: Proxy
         Object that interfaces with the CFX backend.
     file_transfer_service : optional
