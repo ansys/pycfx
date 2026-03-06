@@ -358,11 +358,15 @@ def _populate_classes(parent_dir):
                     stub_f.write(import_str)
 
             # class name
-            class_def_str = (
-                f"\n{istr}class {cls_name}"
-                f'({", ".join(f"{c.__name__}[{hash_dict.get(object_hash)[0].__name__}]"
-                              if object_hash else c.__name__ for c in cls.__bases__)}):\n'
-            )
+            base_classes = [
+                (
+                    f"{c.__name__}[{hash_dict.get(object_hash)[0].__name__}]"
+                    if object_hash
+                    else c.__name__
+                )
+                for c in cls.__bases__
+            ]
+            class_def_str = f'\n{istr}class {cls_name}({", ".join(base_classes)}):\n'
             f.write(class_def_str)
             if stub_f:
                 stub_f.write(class_def_str)

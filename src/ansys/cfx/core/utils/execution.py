@@ -173,7 +173,8 @@ def timeout_loop(
     ...     return True
     >>> func2("test", word="hello")
     True
-    >>> response = timeout_loop(func2, timeout=5.0, expected="falsy", args=("test",), kwargs={"word":"hello",})
+    >>> response = timeout_loop(func2, timeout=5.0, expected="falsy", args=("test",),
+    ...                         kwargs={"word":"hello",})
     """
     if args is None:
         args = ()

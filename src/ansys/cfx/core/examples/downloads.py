@@ -113,8 +113,8 @@ def download_file(
     file_name : str
         File to download.
     directory : str, default: None
-        Ansys example data repository directory where the specified file is located. If not specified,
-        looks for the file in the root directory of the repository.
+        Ansys example data repository directory where the specified file is located. If not
+        specified, looks for the file in the root directory of the repository.
     save_path : str, default: None
         Path to download the specified file to.
     return_without_path : bool, default: False

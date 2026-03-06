@@ -218,7 +218,8 @@ class BatchOps:
         op = BatchOps.Op(package, service, method, request.SerializeToString())
         if op._supported:
             network_logger.debug(
-                f"Adding batch operation with package {package}, service {service}, and method {method}."
+                f"Adding batch operation with package {package}, service {service}, and method "
+                f"{method}."
             )
             self._ops.append(op)
             op.queued = True

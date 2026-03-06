@@ -113,7 +113,8 @@ class HealthCheckService:
                     break
                 if e.code() == grpc.StatusCode.DEADLINE_EXCEEDED:
                     raise TimeoutError(
-                        f"The connection to the CFX server could not be established within the configurable {timeout} second time limit."
+                        "The connection to the CFX server could not be established within the "
+                        f"configurable {timeout} second time limit."
                     )
                 raise
 

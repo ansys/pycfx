@@ -128,7 +128,8 @@ def _populate_rst_from_settings(rst_dir, module, cls, version):
         r.write(f"{cls_name}\n")
         r.write(f'{"="*(len(cls_name))}\n\n')
         r.write(
-            f".. autoclass:: ansys.cfx.core.generated.{module}.settings_{version}.{file_name}.{cls_name}\n"
+            f".. autoclass:: ansys.cfx.core.generated.{module}.settings_{version}.{file_name}."
+            f"{cls_name}\n"
         )
         r.write(f"{istr1}:show-inheritance:\n\n")
 

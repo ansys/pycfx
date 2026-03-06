@@ -58,12 +58,14 @@ def _build_cfx_launch_args_string(**kwargs) -> str:
                     old_argval = argval
                     argval = default
                     launcher_utils.logger.warning(
-                        f"Specified value '{old_argval}' for argument '{k}' is not an allowed value ({allowed_values})."
-                        f" Default value '{argval}' is going to be used instead."
+                        f"Specified value '{old_argval}' for argument '{k}' is not an allowed "
+                        f"value ({allowed_values}). Default value '{argval}' is going to be used "
+                        "instead."
                     )
                 else:
                     launcher_utils.logger.warning(
-                        f"{k} = {argval} is discarded as it is not an allowed value. Allowed values: {allowed_values}"
+                        f"{k} = {argval} is discarded as it is not an allowed value. Allowed "
+                        f"values: {allowed_values}"
                     )
                     continue
             cfx_map = v.get("cfx_map")

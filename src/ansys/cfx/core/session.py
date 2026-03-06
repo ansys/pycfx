@@ -157,8 +157,9 @@ class BaseSession:
             Support file to upload or download.
         **connection_kwargs : dict
             Additional keyword arguments to pass to the `CFXConnection` instance
-            being initialized. For example, ``cleanup_on_exit = True`` or ``start_transcript = True``.
-            For more information and possible arguments, see the :func:`CFXConnection initialization <ansys.cfx.core.cfx_connection.CFXConnection.__init__>` function.
+            being initialized. For example, ``cleanup_on_exit = True`` or ``start_transcript =
+            True``. For more information and possible arguments, see the :func:`CFXConnection
+            initialization <ansys.cfx.core.cfx_connection.CFXConnection.__init__>` function.
 
         Returns
         -------
