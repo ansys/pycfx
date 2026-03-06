@@ -173,8 +173,8 @@ class BatchOps:
     def __new__(cls, session) -> _TBatchOps:
         if cls.instance() is None:
             instance = super(BatchOps, cls).__new__(cls)
-            instance._service: BatchOpsService = session._batch_ops_service
-            instance._ops: list[BatchOps.Op] = []
+            instance._service = session._batch_ops_service
+            instance._ops = []
             instance.batching = False
             cls._instance = weakref.ref(instance)
         return cls.instance()

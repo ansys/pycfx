@@ -32,7 +32,7 @@ see `Docker run`_ in the *Docker SDK for Python* containers documentation
 
 For the CFX Docker container to be able to find license information, the license file or server needs to be specified
 through the ``ANSYSLMD_LICENSE_FILE`` environment variable,
-or the ``license_server`` argument for the ``container_dict``. (See :func:`configure_container_dict`.)
+or the ``license_server`` argument for the ``container_dict`` (see :func:`configure_container_dict`).
 
 .. _Docker run: https://docker-py.readthedocs.io/en/stable/containers.html#docker.models.containers.ContainerCollection.run
 
@@ -127,7 +127,7 @@ class LicenseServerNotSpecified(KeyError):
         )
 
 
-def _get_host_and_container_mount_paths(volumes_string: str) -> (str, str):
+def _get_host_and_container_mount_paths(volumes_string: str) -> tuple[str, str]:
     # Split from the right at the first colon
     if ":" not in volumes_string:
         raise ValueError("Invalid volume string: missing ':' separator")
@@ -149,7 +149,7 @@ def configure_container_dict(
     image_tag: Optional[str] = None,
     has_remote_server: bool = True,
     **container_dict,
-) -> (dict, int, int, Path, bool):
+) -> tuple[dict, int, int, Path, bool]:
     """Parse the following parameters and set up the container configuration file.
 
     Parameters
@@ -176,7 +176,7 @@ def configure_container_dict(
     cfx_image : str, default: None
         Specifies full image name for Docker container run, with the format
         ``"image_name:image_tag"``. The ``image_tag`` and ``image_name`` parameters
-        are ignored if the ``cfx_image``parameter has been specified.
+        are ignored if the ``cfx_image`` parameter has been specified.
     image_name : str, default: None
         Ignored if the ``cfx_image`` parameter has been specified.
     image_tag : str, default: None
@@ -377,7 +377,7 @@ def configure_container_dict(
     )
 
 
-def start_cfx_container(args: List[str], container_dict: Optional[dict] = None) -> (int, str):
+def start_cfx_container(args: List[str], container_dict: Optional[dict] = None) -> tuple[int, str]:
     """Start a CFX container.
 
     Parameters

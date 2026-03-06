@@ -609,7 +609,7 @@ pysolve_time_integration.solution.start_run()
 # Preprocessing for the harmonic balance setup
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #
-#  Modify the setup to use Harmonic Balance
+# Modify the setup to use Harmonic Balance
 # ----------------------------------------
 #
 tbrm.transient_method.option = "Harmonic Balance"

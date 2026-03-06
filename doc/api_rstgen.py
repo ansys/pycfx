@@ -51,7 +51,6 @@ The PostProcessing :ref:`settings API <ref_post_processing_root>` is the main in
     cfx_connection
     exceptions
     get_build_details
-    journaling
     logging
     post_processing
     pre_processing

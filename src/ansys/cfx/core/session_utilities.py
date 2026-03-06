@@ -88,7 +88,7 @@ class SessionBase:
             Mapping for modifying environment variables in CFX.
         cleanup_on_exit : bool, default: True
             Whether to shut down the connected CFX session when exiting PyCFX or calling
-            the session's `exit()` method.
+            the session's ``exit()`` method.
         dry_run : bool, default: False
             Whether to dry run a container start. If ``True``, CFX is not launched but the
             configuration information that would be used is printed as if CFX is being launched.
@@ -96,7 +96,7 @@ class SessionBase:
             server information file.
         start_transcript : bool, default: True
             Whether to start streaming the CFX transcript in the client.
-            Streaming can be controlled using the `transcript.start()` and `transcript.stop()`
+            Streaming can be controlled using the ``transcript.start()`` and ``transcript.stop()``
             methods on the session object.
         case_file_name : str, default: None
             Name of the case file to read into a CFX-Pre session.
@@ -117,6 +117,13 @@ class SessionBase:
             PyCFX are properly closed when the current Python process ends.
         file_transfer_service : Any, default: None
             Service for uploading or downloading files to or from the server.
+
+        Returns
+        -------
+        :obj:`~typing.Union` [:class:`~ansys.cfx.core.session_pre.PreProcessing`, \
+        :class:`~ansys.cfx.core.session_solver.Solver`, \
+        :class:`~ansys.cfx.core.session_post.PostProcessing`, dict]
+            Session object or configuration dictionary if ``dry_run = True``.
 
         Raises
         ------
@@ -175,10 +182,10 @@ class SessionBase:
             ``container_dict`` argument.
         cleanup_on_exit : bool, default: True
             Whether to shut down the connected CFX session on exit or when calling
-            the session's `exit()` method.
+            the session's ``exit()`` method.
         start_transcript : bool, default: True
             Whether to start streaming the CFX transcript in the client.
-            streaming can be controlled using the `transcript.start()` and `transcript.stop()`
+            streaming can be controlled using the ``transcript.start()`` and ``transcript.stop()``
             methods on the session object.
         start_watchdog : bool, default: None
             If ``True`` and ``cleanup_on_exit`` is ``True``, an independent watchdog process
@@ -191,8 +198,10 @@ class SessionBase:
 
         Returns
         -------
-        Meshing | PureMeshing | Solver | SolverIcing | dict
-            Session object or configuration dictionary if the ``dry_run`` argument is ``True``.
+        :obj:`~typing.Union` [:class:`~ansys.cfx.core.session_pre.PreProcessing`, \
+        :class:`~ansys.cfx.core.session_solver.Solver`, \
+        :class:`~ansys.cfx.core.session_post.PostProcessing`, dict]
+            Session object or configuration dictionary if ``dry_run = True``.
 
         Raises
         ------
@@ -251,6 +260,13 @@ class SessionBase:
             This mode is not recommended. For more information on the implications
             and usage of insecure mode, see the CFX documentation.
 
+        Returns
+        -------
+        :obj:`~typing.Union` [:class:`~ansys.cfx.core.session_pre.PreProcessing`, \
+        :class:`~ansys.cfx.core.session_solver.Solver`, \
+        :class:`~ansys.cfx.core.session_post.PostProcessing`, dict]
+            Session object or configuration dictionary if ``dry_run = True``.
+
         Raises
         ------
         TypeError
@@ -293,6 +309,13 @@ class SessionBase:
             supplied if a case file has already been saved by the PreProcessing session (for
             CFX 2026 R1 and later). The ``.cfx`` extension is not required and is ignored if
             present.
+
+        Returns
+        -------
+        :obj:`~typing.Union` [:class:`~ansys.cfx.core.session_pre.PreProcessing`, \
+        :class:`~ansys.cfx.core.session_solver.Solver`, \
+        :class:`~ansys.cfx.core.session_post.PostProcessing`]
+            Session object.
 
         Raises
         ------
