@@ -1088,8 +1088,8 @@ def test_set_var(pre_load_static_mixer_case: PreProcessing, pytestconfig, capsys
     assert (
         captured.out == "\n"
         " allowed_values can be accessed from the following paths: \n\n"
-        '    <session>.setup.flow["Flow Analysis 1"].analysis_type.external_solver_coupling."'
-        '"option.allowed_values\n\n'
+        '    <session>.setup.flow["Flow Analysis 1"].analysis_type.external_solver_coupling.'
+        "option.allowed_values\n\n"
         " allowed_values can be accessed from the following paths: \n\n"
         '    <session>.setup.flow["Flow Analysis 1"].analysis_type.option.allowed_values\n'
     )
