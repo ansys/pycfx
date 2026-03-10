@@ -463,7 +463,7 @@ class RealNumerical(Numerical):
         Get the units string.
     """
 
-    def as_quantity(self) -> Optional[units.Quantity]:
+    def as_quantity(self) -> Optional[ansys_units.Quantity]:
         """Get the state of the object as an ansys.units.Quantity."""
         raise NotImplementedError("This function is not fully implemented.")
         error = None
