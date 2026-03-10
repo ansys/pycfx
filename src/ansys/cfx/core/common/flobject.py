@@ -73,10 +73,7 @@ from typing import (
 import warnings
 import weakref
 
-try:
-    import ansys.units as ansys_units
-except ImportError:  # pragma: no cover (ansys_units is always available in testing environment)
-    ansys_units = None
+import ansys.units
 
 from .error_message import allowed_name_error_message, allowed_values_error
 
@@ -463,18 +460,16 @@ class RealNumerical(Numerical):
         Get the units string.
     """
 
-    def as_quantity(self) -> Optional[ansys_units.Quantity]:
+    def as_quantity(self) -> Optional[ansys.units.Quantity]:
         """Get the state of the object as an ansys.units.Quantity."""
         raise NotImplementedError("This function is not fully implemented.")
         error = None
-        if not ansys_units:
-            error = "Code not configured to support units."
         if not error:
-            # TODO: Assume CFX returns proper units for each objects in SI units
+            # TODO: Assume CFX returns proper units for each object in SI units
             units = self.get_attr("units")
             if units is not None:
                 try:
-                    return ansys_units.Quantity(
+                    return ansys.units.Quantity(
                         value=self.get_state(),
                         units=units,
                     )
@@ -504,14 +499,9 @@ class RealNumerical(Numerical):
         # Handle ansys.units.Quantity without using the units attribute.
         # This will leave units errors to be handled by the engine instead of
         # catching them here.
-        if ansys_units and isinstance(state, (ansys_units.Quantity, tuple)):
-            state = ansys_units.Quantity(*state) if isinstance(state, tuple) else state
+        if isinstance(state, (ansys.units.Quantity, tuple)):
+            state = ansys.units.Quantity(*state) if isinstance(state, tuple) else state
             state = "".join((str(state.value), " ", "[", state.units.name, "]"))
-        elif isinstance(state, tuple):
-            raise NotImplementedError(  # pragma: no cover (ansys_units is always available in \
-                # testing environment)
-                "State cannot be set as a tuple if ansys.units is not available."
-            )
 
         return self.base_set_state(state=state, **kwargs)
 
@@ -692,7 +682,7 @@ class SettingsBase(Base, Generic[StateT]):
     def set_state(self, state: Optional[StateT] = None, **kwargs):
         """Set the state of the object."""
         with self._while_setting_state():
-            if isinstance(state, (tuple, ansys_units.Quantity)) and hasattr(self, "value"):
+            if isinstance(state, (tuple, ansys.units.Quantity)) and hasattr(self, "value"):
                 self.value.set_state(state, **kwargs)  # pragma: no cover (not used)
             else:
                 state = self._unalias(kwargs or state)
