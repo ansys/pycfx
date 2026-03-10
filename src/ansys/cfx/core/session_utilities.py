@@ -269,7 +269,7 @@ class SessionBase:
         :obj:`~typing.Union` [:class:`~ansys.cfx.core.session_pre.PreProcessing`, \
         :class:`~ansys.cfx.core.session_solver.Solver`, \
         :class:`~ansys.cfx.core.session_post.PostProcessing`, dict]
-            Session object or configuration dictionary if ``dry_run = True``.
+            Session object.
 
         Raises
         ------
