@@ -92,10 +92,10 @@ def _set_container_image_env_vars():
 _set_container_image_env_vars()
 
 # Latest released CFX version
-CFX_RELEASE_VERSION = "25.2.0"
+CFX_RELEASE_VERSION = "26.1.0"
 
 # Current dev CFX version
-CFX_DEV_VERSION = "26.1.0"
+CFX_DEV_VERSION = "27.1.0"
 
 # Setup data directory
 USER_DATA_PATH = platformdirs.user_data_dir(appname="ansys_cfx_core", appauthor="Ansys")
