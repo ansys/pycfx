@@ -33,7 +33,7 @@ This section provides resources to help you get started with PyCFX, including
 
    .. grid-item-card::  API reference :fa:`book-bookmark`
       :padding: 2 2 2 2
-      :link: api/index
+      :link: ../api/api_contents
       :link-type: doc
 
       Navigate the Python API's classes and functions.
