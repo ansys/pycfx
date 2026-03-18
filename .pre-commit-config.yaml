@@ -14,7 +14,6 @@ repos:
     rev: 7.3.0
     hooks:
       - id: flake8
-        additional_dependencies: ["flake8-annotations==3.0.1"]
         args:
           [
             --select,

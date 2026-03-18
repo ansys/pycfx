@@ -50,7 +50,7 @@ def in_notebook():
 
         if "IPKernelApp" not in get_ipython().config:
             return False
-    except (ImportError, AttributeError):
+    except ImportError, AttributeError:
         return False
     return True
 

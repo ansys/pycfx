@@ -270,7 +270,7 @@ def _get_standalone_launch_cfx_version(
                     if line.startswith("CFX Internal Revision:"):
                         cfx_version = line.split(":")[1].strip().replace("'", "")
                         return CFXVersion(cfx_version)
-        except (FileNotFoundError, PermissionError, OSError):
+        except FileNotFoundError, PermissionError, OSError:
             return None
         return None
 

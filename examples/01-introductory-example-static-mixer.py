@@ -47,7 +47,6 @@ The static mixer example guides you through these tasks:
 
 """
 
-
 ###################################################################################################
 # .. image:: ../_static/static_mixer_model_setup.png
 #    :width: 400
