@@ -22,7 +22,6 @@
 
 """Module for controlling the writing of CFX Python journals."""
 
-
 from ansys.cfx.core.services.engine_eval import EngineEval
 
 

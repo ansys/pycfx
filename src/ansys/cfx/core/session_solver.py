@@ -110,7 +110,7 @@ class Solver(BaseSession):
         )
         if is_inside_container:
             volumes_string = self.solution._container_dict["volumes"][1]
-            (self._host_temporary_directory_path, self._container_temporary_directory_path) = (
+            self._host_temporary_directory_path, self._container_temporary_directory_path = (
                 _get_host_and_container_mount_paths(volumes_string)
             )
         else:

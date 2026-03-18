@@ -23,11 +23,7 @@
 """Module providing generic functionality."""
 
 from abc import ABCMeta
-import asyncio
-from functools import partial
 import time
-
-loop = asyncio.get_event_loop()
 
 
 class SingletonMeta(type):
@@ -45,26 +41,6 @@ class AbstractSingletonMeta(ABCMeta, SingletonMeta):
     """Provides a meta class for the abstract singleton type."""
 
     pass
-
-
-def execute_in_event_loop_threadsafe(f):
-    """Decorator to execute function in an event loop from another thread."""
-
-    def cb(*args, **kwargs):
-        par = partial(f, *args, **kwargs)
-        loop.call_soon_threadsafe(par)
-
-    return cb
-
-
-def execute_in_event_loop(f):
-    """Decorator to execute function in an event loop."""
-
-    def cb(*args, **kwargs):
-        par = partial(f, *args, **kwargs)
-        loop.call_soon(par)
-
-    return cb
 
 
 def in_notebook():

@@ -30,7 +30,7 @@ Engineers, product designers, consultants, and academia use PyCFX.
 
 Which Python version should I use?
 ----------------------------------
-PyCFX supports Python 3.10 through Python 3.13 on Windows and Linux.
+PyCFX supports Python 3.10 through Python 3.14 on Windows and Linux.
 
 You can use a suitable Python version from your Ansys installation. Python 3.10 ships with
 Ansys 2023 R2 and later. For example, in a 2025 R2 Windows installation, the

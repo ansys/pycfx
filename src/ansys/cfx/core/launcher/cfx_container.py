@@ -282,9 +282,7 @@ def configure_container_dict(
                 "Using the first mount as the working directory for CFX."
             )
         volumes_string = container_dict["volumes"][0]
-        (host_mount_path, container_mount_path) = _get_host_and_container_mount_paths(
-            volumes_string
-        )
+        host_mount_path, container_mount_path = _get_host_and_container_mount_paths(volumes_string)
         logger.debug(f"host_mount_path: {host_mount_path}")
         logger.debug(f"container_mount_path: {container_mount_path}")
 
@@ -465,7 +463,7 @@ def start_cfx_container(args: List[str], container_dict: Optional[dict] = None) 
             if len(values) == 2:
                 # Server address is a Unix domain socket file
                 volumes_string = mapped_volumes[0]
-                (host_mount_path, container_mount_path) = _get_host_and_container_mount_paths(
+                host_mount_path, container_mount_path = _get_host_and_container_mount_paths(
                     volumes_string
                 )
                 # Replace container path with host path in the server address

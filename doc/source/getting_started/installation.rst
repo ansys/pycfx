@@ -7,7 +7,7 @@ Installation
 Install PyCFX in user mode
 --------------------------
 
-PyCFX supports Python 3.10 through Python 3.13 on Windows and Linux.
+PyCFX supports Python 3.10 through Python 3.14 on Windows and Linux.
 
 Install PyCFX with all optional dependencies in user mode using this command:
 

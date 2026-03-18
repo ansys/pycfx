@@ -62,7 +62,7 @@ For general PyAnsys support, email `pyansys.core@ansys.com <pyansys.core@ansys.c
 
 Installation
 ------------
-PyCFX supports Python 3.10 through 3.13 on Windows and Linux.
+PyCFX supports Python 3.10 through 3.14 on Windows and Linux.
 
 You can install it from `PyPI`_ with this command:
 
