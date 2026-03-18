@@ -54,7 +54,6 @@ the CFX postprocessor (CFD-Post).
     cfx_connection
     exceptions
     get_build_details
-    journaling
     logging
     post_processing
     pre_processing

@@ -29,7 +29,7 @@ This example shows how to set up a Fourier Transformation Blade Flutter case in 
 
 **Model overview**
 
-This example sets up a Transient Blade Blade Flutter simulation using
+This example sets up a Transient Blade Flutter simulation using
 both time integration and harmonic balance transient methods with the Fourier
 transformation pitch change model. The setup is described in detail in the
 CFX tutorial *Fourier Transformation Method for a Blade Flutter Case*.
@@ -610,7 +610,7 @@ pysolve_time_integration.solution.start_run()
 # Preprocessing for the harmonic balance setup
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #
-#  Modify the setup to use Harmonic Balance
+# Modify the setup to use Harmonic Balance
 # ----------------------------------------
 #
 tbrm.transient_method.option = "Harmonic Balance"
