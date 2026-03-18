@@ -57,6 +57,7 @@ session_post
 session_pre
 session_solver
 Slurm
+THIRDPARTY
 transcript
 turbulent_wall_functions
 venv
