@@ -1402,7 +1402,7 @@ def test_undefined_parameters(pre_load_static_mixer_case: PreProcessing, pytestc
         assert expr.list_properties() == ccl_string_330
 
 
-def test_mesh_objects(pre_load_static_mixer_case: PreProcessing):
+def test_mesh_objects(pre_load_static_mixer_case: PreProcessing, pytestconfig):
     """Test for the handling of the mesh object."""
 
     pypre = pre_load_static_mixer_case
@@ -1413,7 +1413,9 @@ def test_mesh_objects(pre_load_static_mixer_case: PreProcessing):
 
     assert pypre.setup.mesh.get_object_names() == ["StaticMixerMesh"]
 
-    pypre.file.import_mesh(file_name="tests/data/StaticMixer.def")
+    pypre.file.import_mesh(
+        file_name=f"{pytestconfig.test_data_directory_path}/data/StaticMixer.def"
+    )
     assert pypre.setup.mesh.get_object_names() == ["StaticMixer", "StaticMixerMesh"]
 
     pypre.setup.mesh["StaticMixer"].rename("MeshFromDefFile")
@@ -1479,20 +1481,18 @@ def test_mesh_objects(pre_load_static_mixer_case: PreProcessing):
 
     mesh2_state = pypre.setup.mesh["MeshFromDefFile"].get_state()
     assert len(mesh2_state) == 1
-    assert mesh2_state["file_path"].endswith("data/StaticMixer.def") or mesh2_state[
-        "file_path"
-    ].endswith("data\\StaticMixer.def")
+    mesh2_file_path = mesh2_state["file_path"].replace("\\", "/")
+    assert mesh2_file_path.endswith("data/StaticMixer.def")
 
     param_state = pypre.setup.mesh["MeshFromDefFile"].file_path.get_state()
     assert len(param_state) == 1
-    assert param_state[0].endswith("data/StaticMixer.def") or param_state[0].endswith(
-        "data\\StaticMixer.def"
-    )
+    param_state_file_path = param_state[0].replace("\\", "/")
+    assert param_state_file_path.endswith("data/StaticMixer.def")
+
     param_value = pypre.setup.mesh["MeshFromDefFile"].file_path()
     assert len(param_value) == 1
-    assert param_value[0].endswith("data/StaticMixer.def") or param_value[0].endswith(
-        "data\\StaticMixer.def"
-    )
+    param_value_file_path = param_value[0].replace("\\", "/")
+    assert param_value_file_path.endswith("data/StaticMixer.def")
 
     try:
         pypre.setup.mesh["MeshFromDefFile"].file_path = "new/path/to/StaticMixer.def"
