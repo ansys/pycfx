@@ -22,6 +22,8 @@
 
 import copy
 
+import pytest
+
 from ansys.cfx.core.session_pre import PreProcessing
 from ansys.cfx.core.utils.cfx_version import CFXVersion
 import ansys.units as ansys_units
@@ -1408,8 +1410,7 @@ def test_mesh_objects(pre_load_static_mixer_case: PreProcessing, pytestconfig):
     pypre = pre_load_static_mixer_case
 
     if pypre.get_cfx_version() < CFXVersion.v271:
-        # Mesh objects are not supported in Release 26.1 and earlier.
-        return
+        pytest.skip("Mesh objects are not supported in Release 26.1 and earlier.")
 
     assert pypre.setup.mesh.get_object_names() == ["StaticMixerMesh"]
 
