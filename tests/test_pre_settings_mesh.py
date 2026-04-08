@@ -200,7 +200,7 @@ Use Multiple Copy = Off
 Z Pos = 2.0
 END
 > update
->gtmTransform B1.P3
+> gtmTransform B1.P3
 """
     pypre.execute_ccl(mesh_transformation_ccl)
 
