@@ -326,13 +326,6 @@ jobs:
         env:
           CFX_IMAGE_TAG: ${{ env.DOC_DEPLOYMENT_IMAGE_TAG }}
 
-      # - name: Zip HTML documentation before upload
-      #   run: |
-      #     sudo apt install zip -y
-      #     pushd doc/_build/html
-      #     zip -r ../../../HTML-Documentation-tag-${DOC_DEPLOYMENT_IMAGE_TAG}.zip .
-      #     popd
-
       - name: Upload HTML documentation
         uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f # v7.0.0
         with:
