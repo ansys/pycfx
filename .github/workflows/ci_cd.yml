@@ -352,8 +352,8 @@ jobs:
     env:
       CACHE_API_CODE_ENABLED: "false"
     permissions:
-      contents: write
-      packages: read
+      contents: write # Required to upload the package as an artifact for the release job
+      packages: read # Needs access to the CFX docker image
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
