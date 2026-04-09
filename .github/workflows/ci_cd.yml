@@ -347,13 +347,13 @@ jobs:
   build:
     name: Build
     if: ${{ !contains(github.event.pull_request.title, '[skip tests]') }}
-    needs: [smoke-tests, doc-build, set-matrix]
+    needs: [smoke-tests, doc-build]
     runs-on: ubuntu-latest
     env:
       CACHE_API_CODE_ENABLED: "false"
-    strategy:
-      matrix:
-        include: ${{ fromJson(needs.set-matrix.outputs.matrix) }}
+    permissions:
+      contents: write # Required to upload the package as an artifact for the release job
+      packages: read # Needs access to the CFX docker image
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
@@ -402,16 +402,14 @@ jobs:
           path: |
             src/ansys/cfx/core/generated
           # Combined cache key for all versions:
-          key: API-Code-v${{ env.API_CODE_CACHE }}-${{ steps.version.outputs.PYCFX_VERSION }}-${{ matrix.image-tag }}-${{ hashFiles('codegen/**') }}
+          key: API-Code-v${{ env.API_CODE_CACHE }}-${{ steps.version.outputs.PYCFX_VERSION }}-v25.2.3-v26.1.0-${{ hashFiles('codegen/**') }}
           lookup-only: false # zizmor: ignore[cache-poisoning]
 
       - name: Check if generated directory exists
         if: env.CACHE_API_CODE_ENABLED == 'true'
         id: check_generated
-        env:
-          CFX_VER: ${{ matrix.version }}
         run: |
-          if [ -d src/ansys/cfx/core/generated/pre_processing/settings_${CFX_VER} ] && [ -d src/ansys/cfx/core/generated/post_processing/settings_${CFX_VER} ]; then
+          if [ -d src/ansys/cfx/core/generated/pre_processing/settings_252 ] && [ -d src/ansys/cfx/core/generated/post_processing/settings_252 ]; then
             echo "exists=true" >> $GITHUB_OUTPUT
           else
             echo "exists=false" >> $GITHUB_OUTPUT
@@ -426,27 +424,47 @@ jobs:
           STEPS_CACHE_API_CODE_OUTPUTS_CACHE_HIT: ${{ steps.cache-api-code.outputs.cache-hit }}
           STEPS_CHECK_GENERATED_OUTPUTS_EXISTS: ${{ steps.check_generated.outputs.exists }}
 
-      - name: Pull ${{ matrix.image-tag }} CFX docker image
+      - name: Pull 25.2 CFX docker image
         if: steps.cache-api-code.outputs.cache-hit != 'true' || steps.check_generated.outputs.exists != 'true'
         run: make docker-pull
         env:
-          CFX_IMAGE_TAG: ${{ matrix.image-tag }}
+          CFX_IMAGE_TAG: v25.2.3
 
-      - name: Run ${{ matrix.image-tag }} API codegen
+      - name: Run 25.2 API codegen
         if: steps.cache-api-code.outputs.cache-hit != 'true' || steps.check_generated.outputs.exists != 'true'
         run: make api-codegen
         env:
-          CFX_IMAGE_TAG: ${{ matrix.image-tag }}
+          CFX_IMAGE_TAG: v25.2.3
 
-      - name: Print ${{ matrix.image-tag }} CFX version info
-        env:
-          CFX_VER: ${{ matrix.version }}
+      - name: Print 25.2 CFX version info
         run: |
-          cat src/ansys/cfx/core/generated/cfx_version_${CFX_VER}.py
-          python -c "from ansys.cfx.core.generated.pre_processing.settings_${CFX_VER} import SHASH; print(f'SETTINGS_HASH = {SHASH}')"
-          python -c "from ansys.cfx.core.generated.post_processing.settings_${CFX_VER} import SHASH; print(f'SETTINGS_HASH = {SHASH}')"
+          cat src/ansys/cfx/core/generated/cfx_version_252.py
+          python -c "from ansys.cfx.core.generated.pre_processing.settings_252 import SHASH; print(f'SETTINGS_HASH = {SHASH}')"
+          python -c "from ansys.cfx.core.generated.post_processing.settings_252 import SHASH; print(f'SETTINGS_HASH = {SHASH}')"
 
       - name: Remove all docker images # cleanup before next codegen due to github runner disk space limit (14GB per job)
+        if: always()
+        run: make docker-clean-images
+
+      - name: Pull 26.1 CFX docker image
+        if: steps.cache-api-code.outputs.cache-hit != 'true' || steps.check_generated.outputs.exists != 'true'
+        run: make docker-pull
+        env:
+          CFX_IMAGE_TAG: v26.1.0
+
+      - name: Run 26.1 API codegen
+        if: steps.cache-api-code.outputs.cache-hit != 'true' || steps.check_generated.outputs.exists != 'true'
+        run: make api-codegen
+        env:
+          CFX_IMAGE_TAG: v26.1.0
+
+      - name: Print 26.1 CFX version info
+        run: |
+          cat src/ansys/cfx/core/generated/cfx_version_261.py
+          python -c "from ansys.cfx.core.generated.pre_processing.settings_261 import SHASH; print(f'SETTINGS_HASH = {SHASH}')"
+          python -c "from ansys.cfx.core.generated.post_processing.settings_261 import SHASH; print(f'SETTINGS_HASH = {SHASH}')"
+
+      - name: Remove all docker images
         if: always()
         run: make docker-clean-images
 
@@ -463,7 +481,7 @@ jobs:
       - name: Upload package
         uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f # v7.0.0
         with:
-          name: PyCFX-packages-${{ matrix.image-tag }}
+          name: PyCFX-packages
           path: |
             dist/*.whl
             dist/*.tar.gz
