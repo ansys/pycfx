@@ -118,7 +118,6 @@ jobs:
 
   tests:
     name: Unit Testing
-    if: ${{ always() }}
     needs: [set-matrix]
     runs-on: ubuntu-latest
     permissions:
