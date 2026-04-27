@@ -199,6 +199,11 @@ jobs:
           PYTEST_EXTRA: "--cache-clear --cov=ansys.cfx.core --cov-report=term --cov-report=html:.cov/html --cov-report=xml:.cov/xml --cov-report=json:.cov/cov.json"
           PYTESTRERUN: "--last-failed --last-failed-no-failures none"
 
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@57e3a136b779b570ffcdbf80b3bdc90e7fab3de2 # v6.0.0
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+
       - name: Remove all docker images
         if: always()
         run: make docker-clean-images
