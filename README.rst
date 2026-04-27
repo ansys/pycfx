@@ -126,6 +126,6 @@ For more information on CFX, see the `Ansys CFX`_ page on the Ansys website.
 
 .. LINKS AND REFERENCES
 .. _Ansys CFX: https://www.ansys.com/products/fluids/ansys-cfx
-.. _PyCFX documentation: https://glowing-telegram-gqq3j3l.pages.github.io/
+.. _PyCFX documentation: https://cfx.docs.pyansys.com/
 .. _PyCFX Issues: https://github.com/ansys/pycfx/issues
 .. _PyPI: https://pypi.org/project/ansys-cfx-core/
