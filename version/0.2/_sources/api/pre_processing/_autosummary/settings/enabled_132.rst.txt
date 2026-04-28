@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_132:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_132.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   ======================================================
+
+Parent                                                                                                     Summary
+
+=========================================================   ======================================================
+:ref:`pressure_profile <pre_processing_pressure_profile>`   Specifies pressure profile information for outlet BCs.
+
+=========================================================   ======================================================
+

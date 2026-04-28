@@ -1,0 +1,60 @@
+:orphan:
+
+.. _pre_processing_execution_control:
+
+execution_control
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.execution_control.execution_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================================   ========================================
+
+Attribute                                                                                                          Summary
+
+===============================================================================   ========================================
+:ref:`enabled <pre_processing_enabled_241>`                                           Enable the EXECUTION CONTROL object.
+
+:ref:`quit_cfxpre <pre_processing_quit_cfxpre>`                                                   'Quit CFXPre' parameter.
+
+:ref:`write_system_coupling_input <pre_processing_write_system_coupling_input>`   'Write System Coupling Input' parameter.
+
+:ref:`run_definition <pre_processing_run_definition>`                                             'RUN DEFINITION' object.
+
+:ref:`solver_step_control <pre_processing_solver_step_control_1>`                            'SOLVER STEP CONTROL' object.
+
+:ref:`partitioner_step_control <pre_processing_partitioner_step_control_1>`             'PARTITIONER STEP CONTROL' object.
+
+:ref:`interpolator_step_control <pre_processing_interpolator_step_control>`            'INTERPOLATOR STEP CONTROL' object.
+
+:ref:`executable_selection <pre_processing_executable_selection>`                           'EXECUTABLE SELECTION' object.
+
+:ref:`topology_simplification <pre_processing_topology_simplification>`                  'TOPOLOGY SIMPLIFICATION' object.
+
+:ref:`mesh_options <pre_processing_mesh_options>`                                                   'MESH OPTIONS' object.
+
+:ref:`operating_point_control <pre_processing_operating_point_control>`                  'OPERATING POINT CONTROL' object.
+
+:ref:`cclsetup_step_control <pre_processing_cclsetup_step_control>`                        'CCLSETUP STEP CONTROL' object.
+
+:ref:`refiner_step_control <pre_processing_refiner_step_control>`                           'REFINER STEP CONTROL' object.
+
+:ref:`mfx_run_control <pre_processing_mfx_run_control>`                                          'MFX RUN CONTROL' object.
+
+:ref:`parallel_host_library <pre_processing_parallel_host_library>`                        'PARALLEL HOST LIBRARY' object.
+
+===============================================================================   ========================================
+
+.. rubric:: Included in:
+
+=============================================================   =============================================
+
+Parent                                                                                                Summary
+
+=============================================================   =============================================
+:ref:`simulation_control <pre_processing_simulation_control>`   Container for all Simulation definition data.
+
+=============================================================   =============================================
+

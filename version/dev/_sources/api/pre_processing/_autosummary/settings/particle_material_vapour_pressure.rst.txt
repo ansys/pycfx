@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_particle_material_vapour_pressure:
+
+particle_material_vapour_pressure
+=================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.particle_material_vapour_pressure.particle_material_vapour_pressure
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================================   ===============================================
+
+Attribute                                                                                                                 Summary
+
+===============================================================================   ===============================================
+:ref:`option <pre_processing_option_219>`                                         The 'Particle Material Vapour Pressure' option.
+
+:ref:`injection_total_temperature <pre_processing_injection_total_temperature>`          'Injection Total Temperature' parameter.
+
+:ref:`vapour_pressure <pre_processing_vapour_pressure>`                                              'Vapour Pressure' parameter.
+
+===============================================================================   ===============================================
+
+.. rubric:: Included in:
+
+=========================================================================   =======================================================================
+
+Parent                                                                                                                                      Summary
+
+=========================================================================   =======================================================================
+:ref:`particle_primary_breakup <pre_processing_particle_primary_breakup>`   Defines the primary break-up model used to determine spray atomization.
+
+=========================================================================   =======================================================================
+

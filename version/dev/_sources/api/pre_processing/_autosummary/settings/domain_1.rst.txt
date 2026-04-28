@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_domain_1:
+
+domain
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.domain_1.domain
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================   =====================
+
+Parent                                                          Summary
+
+===============================================   =====================
+:ref:`time_period <pre_processing_time_period>`   'TIME PERIOD' object.
+
+===============================================   =====================
+

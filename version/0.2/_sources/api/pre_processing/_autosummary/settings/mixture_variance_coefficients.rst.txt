@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_mixture_variance_coefficients:
+
+mixture_variance_coefficients
+=============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.mixture_variance_coefficients.mixture_variance_coefficients
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================   =============================================================
+
+Attribute                                                                                                                     Summary
+
+=====================================================================   =============================================================
+:ref:`enabled <pre_processing_enabled_79>`                                           Enable the MIXTURE VARIANCE COEFFICIENTS object.
+
+:ref:`cxi_coefficient <pre_processing_cxi_coefficient>`                                      Cxi Scalar Dissipation Rate coefficient.
+
+:ref:`turbulent_flux_closure <pre_processing_turbulent_flux_closure>`   Controls the turbulent flux closure for a transport equation.
+
+=====================================================================   =============================================================
+
+.. rubric:: Included in:
+
+===========================================================   ========================================
+
+Parent                                                                                         Summary
+
+===========================================================   ========================================
+:ref:`combustion_model <pre_processing_combustion_model_1>`   Defines the combustion model to be used.
+
+===========================================================   ========================================
+

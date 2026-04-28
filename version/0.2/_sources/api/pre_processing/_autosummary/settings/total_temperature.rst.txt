@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_total_temperature:
+
+total_temperature
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.total_temperature.total_temperature
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================   =================================================
+
+Parent                                                                                            Summary
+
+=====================================================   =================================================
+:ref:`heat_transfer <pre_processing_heat_transfer>`     Specifies heat transfer conditions at a boundary.
+
+:ref:`heat_transfer <pre_processing_heat_transfer_2>`   Specifies heat transfer conditions at a boundary.
+
+:ref:`heat_transfer <pre_processing_heat_transfer_4>`   Specifies heat transfer conditions at a boundary.
+
+=====================================================   =================================================
+

@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_fuel_tracer_1:
+
+fuel_tracer
+===========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fuel_tracer_1.fuel_tracer
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================   =========================
+
+Attribute                                                           Summary
+
+===============================================   =========================
+:ref:`option <pre_processing_option_330>`         The 'Fuel Tracer' option.
+
+:ref:`fuel_tracer <pre_processing_fuel_tracer>`    'Fuel Tracer' parameter.
+
+===============================================   =========================
+
+.. rubric:: Included in:
+
+===============================================================   ===============================================================================
+
+Parent                                                                                                                                    Summary
+
+===============================================================   ===============================================================================
+:ref:`initial_conditions <pre_processing_initial_conditions>`     Holds the details of initial condition specification for one or more equations.
+
+:ref:`initial_conditions <pre_processing_initial_conditions_1>`   Holds the details of initial condition specification for one or more equations.
+
+:ref:`initial_conditions <pre_processing_initial_conditions_5>`   Holds the details of initial condition specification for one or more equations.
+
+===============================================================   ===============================================================================
+

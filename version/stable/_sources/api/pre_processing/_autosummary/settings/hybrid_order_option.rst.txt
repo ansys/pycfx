@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_hybrid_order_option:
+
+hybrid_order_option
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.hybrid_order_option.hybrid_order_option
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`hybrid_order_option_child <pre_processing_hybrid_order_option_child>`
+
+
+.. rubric:: Included in:
+
+=======================================   ===============================================================================
+
+Parent                                                                                                            Summary
+
+=======================================   ===============================================================================
+:ref:`library <pre_processing_library>`   Stores common object descriptions for reference in the main problem definition.
+
+=======================================   ===============================================================================
+

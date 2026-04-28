@@ -1,0 +1,23 @@
+:orphan:
+
+.. _post_processing_contour_range:
+
+contour_range
+=============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.contour_range.contour_range
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+======================================================================   ========================================
+
+Parent                                                                                                    Summary
+
+======================================================================   ========================================
+:ref:`contour_child <post_processing_contour_child>`                              'child_object_type' of contour.
+
+:ref:`internal_contour_child <post_processing_internal_contour_child>`   'child_object_type' of internal_contour.
+
+======================================================================   ========================================
+

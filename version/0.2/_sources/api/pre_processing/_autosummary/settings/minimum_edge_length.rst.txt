@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_minimum_edge_length:
+
+minimum_edge_length
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.minimum_edge_length.minimum_edge_length
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================   =========================
+
+Parent                                                                      Summary
+
+=======================================================   =========================
+:ref:`adaption_method <pre_processing_adaption_method>`   'ADAPTION METHOD' object.
+
+=======================================================   =========================
+

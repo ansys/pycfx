@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_file_type:
+
+file_type
+=========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.file_type.file_type
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==========================================================================   ==========================================
+
+Parent                                                                                                          Summary
+
+==========================================================================   ==========================================
+:ref:`external_names_map_child <post_processing_external_names_map_child>`   'child_object_type' of external_names_map.
+
+==========================================================================   ==========================================
+

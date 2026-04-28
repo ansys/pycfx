@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_source_point:
+
+source_point
+============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.source_point.source_point
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`source_point_child <pre_processing_source_point_child>`
+
+
+.. rubric:: Included in:
+
+=================================================   ==============================
+
+Parent                                                                     Summary
+
+=================================================   ==============================
+:ref:`domain_child <pre_processing_domain_child>`   'child_object_type' of domain.
+
+=================================================   ==============================
+

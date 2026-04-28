@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_464:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_464.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ============================
+
+Parent                                                                               Summary
+
+=============================================================   ============================
+:ref:`simulation_changes <pre_processing_simulation_changes>`   'SIMULATION CHANGES' object.
+
+=============================================================   ============================
+

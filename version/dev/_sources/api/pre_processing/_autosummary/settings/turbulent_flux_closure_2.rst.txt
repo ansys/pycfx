@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_turbulent_flux_closure_2:
+
+turbulent_flux_closure
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.turbulent_flux_closure_2.turbulent_flux_closure
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================================   ==============================================================================================
+
+Attribute                                                                                                                                                                            Summary
+
+===========================================================================================   ==============================================================================================
+:ref:`enabled <pre_processing_enabled_48>`                                                                                                         Enable the TURBULENT FLUX CLOSURE object.
+
+:ref:`option <pre_processing_option_122>`                                                                                                               The 'Turbulent Flux Closure' option.
+
+:ref:`turbulent_prandtl_number <pre_processing_turbulent_prandtl_number>`                                                                               Turbulent Prandtl number for energy.
+
+:ref:`anisotropic_diffusion_coefficient <pre_processing_anisotropic_diffusion_coefficient>`                      Coefficient for anisotropic turbulent diffusion for Turbulent Flux Closure.
+
+:ref:`cross_derivative_weighting <pre_processing_cross_derivative_weighting>`                 Weighting of cross derivatives for anisotropic turbulent diffusion for Turbulent Flux Closure.
+
+===========================================================================================   ==============================================================================================
+
+.. rubric:: Included in:
+
+=======================================================================   ===============================================================================
+
+Parent                                                                                                                                            Summary
+
+=======================================================================   ===============================================================================
+:ref:`turbulent_heat_transfer <pre_processing_turbulent_heat_transfer>`   Singleton holding model interactions among Turbulence and Heat Transfer Models.
+
+=======================================================================   ===============================================================================
+

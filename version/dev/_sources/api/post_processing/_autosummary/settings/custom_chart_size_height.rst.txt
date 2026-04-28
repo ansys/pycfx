@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_custom_chart_size_height:
+
+custom_chart_size_height
+========================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.custom_chart_size_height.custom_chart_size_height
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+========================================================   ===============================
+
+Parent                                                                             Summary
+
+========================================================   ===============================
+:ref:`output_settings <post_processing_output_settings>`   Defines options for the Report.
+
+========================================================   ===============================
+

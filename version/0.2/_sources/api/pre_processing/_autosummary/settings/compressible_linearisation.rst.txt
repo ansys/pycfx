@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_compressible_linearisation:
+
+compressible_linearisation
+==========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.compressible_linearisation.compressible_linearisation
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   =======================================================================
+
+Parent                                                                                                                                    Summary
+
+=======================================================================   =======================================================================
+:ref:`compressibility_control <pre_processing_compressibility_control>`   Holds parameters that affect solver convergence for compressible flows.
+
+=======================================================================   =======================================================================
+

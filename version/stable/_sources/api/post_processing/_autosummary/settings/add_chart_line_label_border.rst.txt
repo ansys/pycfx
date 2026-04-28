@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_add_chart_line_label_border:
+
+add_chart_line_label_border
+===========================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.add_chart_line_label_border.add_chart_line_label_border
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==============================================================   ====================================
+
+Parent                                                                                        Summary
+
+==============================================================   ====================================
+:ref:`chart_series_child <post_processing_chart_series_child>`   'child_object_type' of chart_series.
+
+==============================================================   ====================================
+

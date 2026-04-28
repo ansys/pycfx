@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_add_sample_vertex_normals:
+
+add_sample_vertex_normals
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.add_sample_vertex_normals.add_sample_vertex_normals
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==========================================================   ==================================
+
+Parent                                                                                  Summary
+
+==========================================================   ==================================
+:ref:`streamline_child <post_processing_streamline_child>`   'child_object_type' of streamline.
+
+==========================================================   ==================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_input_variable:
+
+input_variable
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.input_variable.input_variable
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ========================================================
+
+Parent                                                                                                         Summary
+
+===========================================================   ========================================================
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum>`   Specifies conditions on Mass and Momentum at a boundary.
+
+===========================================================   ========================================================
+

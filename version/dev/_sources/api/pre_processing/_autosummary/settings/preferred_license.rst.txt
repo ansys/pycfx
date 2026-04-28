@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_preferred_license:
+
+preferred_license
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.preferred_license.preferred_license
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================   ======================================
+
+Parent                                                                                             Summary
+
+=================================================================   ======================================
+:ref:`gt_suite_model_child <pre_processing_gt_suite_model_child>`   'child_object_type' of gt_suite_model.
+
+:ref:`license_control <pre_processing_license_control>`                          'LICENSE CONTROL' object.
+
+=================================================================   ======================================
+

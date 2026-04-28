@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_weight:
+
+weight
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.weight.weight
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================   ================================
+
+Parent                                                                           Summary
+
+=====================================================   ================================
+:ref:`gray_gas_child <pre_processing_gray_gas_child>`   'child_object_type' of gray_gas.
+
+=====================================================   ================================
+

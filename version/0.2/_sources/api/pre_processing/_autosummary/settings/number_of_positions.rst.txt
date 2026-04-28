@@ -1,0 +1,42 @@
+:orphan:
+
+.. _pre_processing_number_of_positions:
+
+number_of_positions
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.number_of_positions.number_of_positions
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================================================   ====================================================
+
+Attribute                                                                                                                                              Summary
+
+=======================================================================================================   ====================================================
+:ref:`option <pre_processing_option_216>`                                                                                    The 'Number Of Positions' option.
+
+:ref:`number <pre_processing_number>`                                                                                                      'Number' parameter.
+
+:ref:`number_per_unit_time <pre_processing_number_per_unit_time>`                                                            'Number per Unit Time' parameter.
+
+:ref:`number_per_unit_mass_flow_rate <pre_processing_number_per_unit_mass_flow_rate>`                              'Number per Unit Mass Flow Rate' parameter.
+
+:ref:`number_per_unit_time_and_mass_flow_rate <pre_processing_number_per_unit_time_and_mass_flow_rate>`   'Number per Unit Time and Mass Flow Rate' parameter.
+
+=======================================================================================================   ====================================================
+
+.. rubric:: Included in:
+
+===========================================================   ===================================================================
+
+Parent                                                                                                                    Summary
+
+===========================================================   ===================================================================
+:ref:`injection_method <pre_processing_injection_method>`                                           Defines the injection method.
+
+:ref:`particle_position <pre_processing_particle_position>`   Defines how particle positions are to be distributed on a boundary.
+
+===========================================================   ===================================================================
+

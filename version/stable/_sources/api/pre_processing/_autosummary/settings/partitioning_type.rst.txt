@@ -1,0 +1,56 @@
+:orphan:
+
+.. _pre_processing_partitioning_type:
+
+partitioning_type
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.partitioning_type.partitioning_type
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================================   =========================================================================================================
+
+Attribute                                                                                                                                                                               Summary
+
+===================================================================================   =========================================================================================================
+:ref:`option <pre_processing_option_455>`                                                                                                                       The 'Partitioning Type' option.
+
+:ref:`partitioning_direction <pre_processing_partitioning_direction>`                 User-specified partitioning direction vector, given as a Real List of 3 components in the absolute frame.
+
+:ref:`partition_size_rule <pre_processing_partition_size_rule>`                                                                                                'Partition Size Rule' parameter.
+
+:ref:`metis_type <pre_processing_metis_type>`                                                                                                                          MeTiS partitioning type.
+
+:ref:`number_of_refinement_levels <pre_processing_number_of_refinement_levels>`                                                   Number of levels to refine bisection blocks for partitioning.
+
+:ref:`number_of_directions <pre_processing_number_of_directions>`                                                                          Number of directions to check in a 90 degree sector.
+
+:ref:`multipass_partitioning_option <pre_processing_multipass_partitioning_option>`                                                                              Multipass Partitioning Option.
+
+:ref:`master_partition_number <pre_processing_master_partition_number>`                                                                                    'Master Partition Number' parameter.
+
+:ref:`partition_weight_factors <pre_processing_partition_weight_factors>`                                                        Weight factors corresponding to current hosts-processors list.
+
+:ref:`axis_definition <pre_processing_axis_definition>`                                 Defines the axis for a cylindrical coordinate system or variables defined using cylindrical components.
+
+:ref:`projection_control <pre_processing_projection_control>`                                                                                                      'PROJECTION CONTROL' object.
+
+===================================================================================   =========================================================================================================
+
+.. rubric:: Included in:
+
+===========================================================================   ===========================================
+
+Parent                                                                                                            Summary
+
+===========================================================================   ===========================================
+:ref:`partitioner_step_control <pre_processing_partitioner_step_control>`              'PARTITIONER STEP CONTROL' object.
+
+:ref:`partitioning_domain_child <pre_processing_partitioning_domain_child>`   'child_object_type' of partitioning_domain.
+
+:ref:`partitioner_step_control <pre_processing_partitioner_step_control_1>`            'PARTITIONER STEP CONTROL' object.
+
+===========================================================================   ===========================================
+

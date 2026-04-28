@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_114:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_114.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================================   =================================================================================================
+
+Parent                                                                                                                                                                            Summary
+
+=====================================================================================   =================================================================================================
+:ref:`shell_and_tube_interface_model <pre_processing_shell_and_tube_interface_model>`   Specifies shell and tube interface models. Note that only heat transfer source terms are coupled.
+
+=====================================================================================   =================================================================================================
+

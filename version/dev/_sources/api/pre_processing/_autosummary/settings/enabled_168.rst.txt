@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_168:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_168.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================   ====================================================
+
+Parent                                                                                                             Summary
+
+===================================================================   ====================================================
+:ref:`stabilisation_control <pre_processing_stabilisation_control>`   Determines what action to take if a time step fails.
+
+===================================================================   ====================================================
+

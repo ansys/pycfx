@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_fluid_pair_4:
+
+fluid_pair
+==========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fluid_pair_4.fluid_pair
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`fluid_pair_child <pre_processing_fluid_pair_child_4>`
+
+
+.. rubric:: Included in:
+
+=======================================================   =================================
+
+Parent                                                                              Summary
+
+=======================================================   =================================
+:ref:`subdomain_child <pre_processing_subdomain_child>`   'child_object_type' of subdomain.
+
+=======================================================   =================================
+

@@ -1,0 +1,32 @@
+:orphan:
+
+.. _post_processing_library:
+
+library
+=======
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.library.library
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+================================   ============
+
+Attribute                               Summary
+
+================================   ============
+:ref:`cel <post_processing_cel>`   'cel' child.
+
+================================   ============
+
+.. rubric:: Included in:
+
+========================================   =========================================
+
+Parent                                                                       Summary
+
+========================================   =========================================
+:ref:`results <post_processing_results>`   Encapsulates a CFX post-processing setup.
+
+========================================   =========================================
+

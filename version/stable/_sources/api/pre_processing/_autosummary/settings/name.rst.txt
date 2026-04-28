@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_name:
+
+name
+====
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.name.name
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================   ====================
+
+Parent                                                   Summary
+
+=========================================   ====================
+:ref:`create_1 <pre_processing_create_1>`   Create a new object.
+
+=========================================   ====================
+

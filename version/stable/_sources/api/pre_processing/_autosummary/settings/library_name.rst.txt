@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_library_name:
+
+library_name
+============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.library_name.library_name
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ====================================
+
+Parent                                                                                       Summary
+
+=============================================================   ====================================
+:ref:`user_routine_child <pre_processing_user_routine_child>`   'child_object_type' of user_routine.
+
+=============================================================   ====================================
+

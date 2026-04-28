@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_q_factor:
+
+q_factor
+========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.q_factor.q_factor
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================================   =====================================================================================
+
+Parent                                                                                                                                                          Summary
+
+===============================================================================   =====================================================================================
+:ref:`turbulent_burning_velocity <pre_processing_turbulent_burning_velocity_1>`   Defines the turbulent burning velocity for premixed or partially premixed combustion.
+
+===============================================================================   =====================================================================================
+

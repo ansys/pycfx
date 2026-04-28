@@ -1,0 +1,32 @@
+:orphan:
+
+.. _pre_processing_custom_point_2:
+
+custom_point_2
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.custom_point_2.custom_point_2
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================   ====================================
+
+Attribute                                                                      Summary
+
+===============================================   ====================================
+:ref:`field_value <pre_processing_field_value>`   A container for Field Value objects.
+
+===============================================   ====================================
+
+.. rubric:: Included in:
+
+=========================================================   ==========================
+
+Parent                                                                         Summary
+
+=========================================================   ==========================
+:ref:`point_definition <pre_processing_point_definition>`   'POINT DEFINITION' object.
+
+=========================================================   ==========================
+

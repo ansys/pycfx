@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_144:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_144.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================================   ===============================================================================================
+
+Parent                                                                                                                                                                  Summary
+
+=============================================================================   ===============================================================================================
+:ref:`reaction_progress_variable <pre_processing_reaction_progress_variable>`   Defines the primitive reaction progress variable for premixed or partially premixed combustion.
+
+=============================================================================   ===============================================================================================
+

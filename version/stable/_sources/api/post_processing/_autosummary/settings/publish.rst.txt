@@ -1,0 +1,59 @@
+:orphan:
+
+.. _post_processing_publish:
+
+publish
+=======
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.publish.publish
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+======================================================================================   ===========================================================================================================================================================================================================================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Summary
+
+======================================================================================   ===========================================================================================================================================================================================================================================================================================================================================================================================================
+:ref:`default_report_name <post_processing_default_report_name>`                                                                                                                                                                                                             Specifies the default name to use for this report if a name is not specified. This is most important when generating reports in batch mode where the user may only enter an output directory without specifying a name.
+
+:ref:`generate_3d_viewer_files <post_processing_generate_3d_viewer_files>`               Indicates whether to generate ANSYS Viewer Files for figures that are included in a report. When generating report, an AVZ file for each figure will be generated. Both AVZ and ARZ files can be displayed in stand alone ANSYS Viewer. It should be noted that when generating HTML reports that the ANSYS Viewer Files cannot be directly accessed from the report when viewed in a standard Web Browser.
+
+:ref:`report_format <post_processing_report_format>`                                                                                                                                                                                                                                                                                                                                                                                                   Specifies the format to export the Report in.
+
+:ref:`report_path <post_processing_report_path>`                                                                                                                                                                                                                                                                                                                                                                                                      Specifies the file path to save the report to.
+
+:ref:`save_images_in_separate_folder <post_processing_save_images_in_separate_folder>`                                                                                                                                                                                                                                                                                     Indicates whether to save the generated images in an automatically generated subdirectory of the report directory or not.
+
+:ref:`this_exists <post_processing_this_exists>`                                                                                                                                                                                                                                                                                                                                                                                                        Indicates whether this object exists or not.
+
+:ref:`output_settings <post_processing_output_settings>`                                                                                                                                                                                                                                                                                                                                                                                                             Defines options for the Report.
+
+======================================================================================   ===========================================================================================================================================================================================================================================================================================================================================================================================================
+
+.. rubric:: Methods
+
+============================================   ========================================
+
+Method                                                                          Summary
+
+============================================   ========================================
+:ref:`suspend <post_processing_suspend>`       Suspend immediate update for the object.
+
+:ref:`unsuspend <post_processing_unsuspend>`   Restore immediate update for the object.
+
+============================================   ========================================
+
+.. rubric:: Included in:
+
+========================================   =========================================
+
+Parent                                                                       Summary
+
+========================================   =========================================
+:ref:`results <post_processing_results>`   Encapsulates a CFX post-processing setup.
+
+:ref:`report <post_processing_report>`                           Defines the Report.
+
+========================================   =========================================
+

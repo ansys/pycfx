@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_allow_large_group_coalescence:
+
+allow_large_group_coalescence
+=============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.allow_large_group_coalescence.allow_large_group_coalescence
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ========================================================
+
+Parent                                                                                                         Summary
+
+===========================================================   ========================================================
+:ref:`coalescence_model <pre_processing_coalescence_model>`   Defines the coalescence model for a polydispersed fluid.
+
+===========================================================   ========================================================
+

@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_volume_range:
+
+volume_range
+============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.volume_range.volume_range
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================   ===========================
+
+Attribute                                                                   Summary
+
+=====================================================   ===========================
+:ref:`minimum_volume <pre_processing_minimum_volume>`   'Minimum Volume' parameter.
+
+:ref:`maximum_volume <pre_processing_maximum_volume>`   'Maximum Volume' parameter.
+
+=====================================================   ===========================
+
+.. rubric:: Included in:
+
+===========================================================================   ===========================================
+
+Parent                                                                                                            Summary
+
+===========================================================================   ===========================================
+:ref:`polydispersed_fluid_child <pre_processing_polydispersed_fluid_child>`   'child_object_type' of polydispersed_fluid.
+
+===========================================================================   ===========================================
+

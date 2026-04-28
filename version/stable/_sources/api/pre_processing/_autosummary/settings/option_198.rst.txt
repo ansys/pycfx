@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_198:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_198.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================================================   =============================================================
+
+Parent                                                                                                                                                    Summary
+
+=================================================================================================   =============================================================
+:ref:`enhanced_turbulence_production_model <pre_processing_enhanced_turbulence_production_model>`   Model settings for multiphase enhanced turbulence production.
+
+=================================================================================================   =============================================================
+

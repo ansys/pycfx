@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_drhodp_t:
+
+drhodp_t
+========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.drhodp_t.drhodp_t
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ================================
+
+Parent                                                                                   Summary
+
+=============================================================   ================================
+:ref:`equation_of_state <pre_processing_equation_of_state_1>`   Specifies the equation of state.
+
+=============================================================   ================================
+

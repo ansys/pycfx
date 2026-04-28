@@ -1,0 +1,60 @@
+:orphan:
+
+.. _pre_processing_wall_boiling_model_1:
+
+wall_boiling_model
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.wall_boiling_model_1.wall_boiling_model
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================================================================   =============================================================================================================
+
+Attribute                                                                                                                                                                                                                 Summary
+
+=================================================================================================================   =============================================================================================================
+:ref:`option <pre_processing_option_253>`                                                                                                                                                        The 'Wall Boiling Model' option.
+
+:ref:`disperse_phase_particle_source <pre_processing_disperse_phase_particle_source>`                                                                                                  Specifies mass source generates particles.
+
+:ref:`bubble_diameter_influence_factor <pre_processing_bubble_diameter_influence_factor>`                            Multiplies the departure bubble diameter when calculating the wall area fraction for the wall boiling model.
+
+:ref:`maximum_area_fraction_of_bubble_influence <pre_processing_maximum_area_fraction_of_bubble_influence>`                                  Maximum wall area fraction, influenced by vapour bubbles for the wall boiling model.
+
+:ref:`onset_of_boiling_superheating <pre_processing_onset_of_boiling_superheating>`                                                                                                    'Onset of Boiling Superheating' parameter.
+
+:ref:`mass_source_under_relaxation <pre_processing_mass_source_under_relaxation>`                                                                                 Mass source under-relaxation factor for the wall boiling model.
+
+:ref:`wall_superheating_under_relaxation <pre_processing_wall_superheating_under_relaxation>`                                                               Wall Superheating under-relaxation factor for the wall boiling model.
+
+:ref:`wall_heat_flux_partitioning_under_relaxation <pre_processing_wall_heat_flux_partitioning_under_relaxation>`                                 Wall Heat Flux Partitioning under-relaxation factor for the wall boiling model.
+
+:ref:`bubble_departure_diameter <pre_processing_bubble_departure_diameter_1>`                                                                                     Specifies bubble departure diameter for the wall boiling model.
+
+:ref:`bubble_departure_temperature <pre_processing_bubble_departure_temperature_1>`                                                                            Specifies bubble departure temperature for the wall boiling model.
+
+:ref:`wall_nucleation_site_density <pre_processing_wall_nucleation_site_density_1>`                                                                     Specifies number of nuclei per unit wall area for the wall boiling model.
+
+:ref:`bubble_detachment_frequency <pre_processing_bubble_detachment_frequency_1>`                                                     Specifies frequency of bubble detachment from a nucleation site for the wall boiling model.
+
+:ref:`bubble_waiting_time <pre_processing_bubble_waiting_time_1>`                                                                            Specifies waiting time between release of bubble to start of next bubble nucleation.
+
+:ref:`liquid_quenching_heat_transfer_coefficient <pre_processing_liquid_quenching_heat_transfer_coefficient>`       Specifies contribution of quenching to the liquid phase heat transfer coefficient for the wall boiling model.
+
+=================================================================================================================   =============================================================================================================
+
+.. rubric:: Included in:
+
+===========================================================   ==================================
+
+Parent                                                                                   Summary
+
+===========================================================   ==================================
+:ref:`fluid_pair_child <pre_processing_fluid_pair_child_1>`   'child_object_type' of fluid_pair.
+
+:ref:`fluid_pair_child <pre_processing_fluid_pair_child_2>`   'child_object_type' of fluid_pair.
+
+===========================================================   ==================================
+

@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_roughness_height_for_particle_wall_interaction:
+
+roughness_height_for_particle_wall_interaction
+==============================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.roughness_height_for_particle_wall_interaction.roughness_height_for_particle_wall_interaction
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================================   =========================================
+
+Parent                                                                                                            Summary
+
+=============================================================================   =========================================
+:ref:`particle_rough_wall_model <pre_processing_particle_rough_wall_model>`     Particle rough wall (virtual wall) model.
+
+:ref:`particle_rough_wall_model <pre_processing_particle_rough_wall_model_1>`   Particle rough wall (virtual wall) model.
+
+=============================================================================   =========================================
+

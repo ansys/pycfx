@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_tube_heat_transfer:
+
+tube_heat_transfer
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.tube_heat_transfer.tube_heat_transfer
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================   ================================
+
+Attribute                                                                              Summary
+
+===========================================================   ================================
+:ref:`option <pre_processing_option_304>`                     The 'Tube Heat Transfer' option.
+
+:ref:`fixed_temperature <pre_processing_fixed_temperature>`     'Fixed Temperature' parameter.
+
+===========================================================   ================================
+
+.. rubric:: Included in:
+
+=================================================================   =============================================================
+
+Parent                                                                                                                    Summary
+
+=================================================================   =============================================================
+:ref:`boundary_conditions <pre_processing_boundary_conditions_4>`   Specifies boundary conditions for all equations being solved.
+
+=================================================================   =============================================================
+

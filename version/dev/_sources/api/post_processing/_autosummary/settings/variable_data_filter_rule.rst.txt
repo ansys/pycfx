@@ -1,0 +1,26 @@
+:orphan:
+
+.. _post_processing_variable_data_filter_rule:
+
+variable_data_filter_rule
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.variable_data_filter_rule.variable_data_filter_rule
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`variable_data_filter_rule_child <post_processing_variable_data_filter_rule_child>`
+
+
+.. rubric:: Included in:
+
+========================================   =========================================
+
+Parent                                                                       Summary
+
+========================================   =========================================
+:ref:`results <post_processing_results>`   Encapsulates a CFX post-processing setup.
+
+========================================   =========================================
+

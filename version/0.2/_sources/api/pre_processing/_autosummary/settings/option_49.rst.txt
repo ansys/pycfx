@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_49:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_49.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================   ===============================
+
+Parent                                                                                        Summary
+
+===================================================================   ===============================
+:ref:`forward_reaction_rate <pre_processing_forward_reaction_rate>`   'FORWARD REACTION RATE' object.
+
+===================================================================   ===============================
+

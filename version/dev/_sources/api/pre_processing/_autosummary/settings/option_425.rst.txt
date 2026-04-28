@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_425:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_425.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================   ==============================================
+
+Parent                                                                                         Summary
+
+=====================================================   ==============================================
+:ref:`centre_of_mass <pre_processing_centre_of_mass>`   Defines the initial rigid body centre of mass.
+
+=====================================================   ==============================================
+

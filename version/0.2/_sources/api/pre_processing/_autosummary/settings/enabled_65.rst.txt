@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_65:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_65.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   =================================================================
+
+Parent                                                                                                                  Summary
+
+===========================================================   =================================================================
+:ref:`sbes_coefficients <pre_processing_sbes_coefficients>`   Controls blending between LES and RANS for SBES turbulence model.
+
+===========================================================   =================================================================
+

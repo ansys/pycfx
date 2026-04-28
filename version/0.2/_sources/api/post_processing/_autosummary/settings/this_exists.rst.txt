@@ -1,0 +1,35 @@
+:orphan:
+
+.. _post_processing_this_exists:
+
+this_exists
+===========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.this_exists.this_exists
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==========================================================================   =================================
+
+Parent                                                                                                 Summary
+
+==========================================================================   =================================
+:ref:`file_information_options <post_processing_file_information_options>`   'file_information_options' child.
+
+:ref:`mesh_statistics_options <post_processing_mesh_statistics_options>`      'mesh_statistics_options' child.
+
+:ref:`physics_summary_options <post_processing_physics_summary_options>`      'physics_summary_options' child.
+
+:ref:`solution_summary_options <post_processing_solution_summary_options>`   'solution_summary_options' child.
+
+:ref:`operating_maps <post_processing_operating_maps>`                                 'operating_maps' child.
+
+:ref:`output_settings <post_processing_output_settings>`                       Defines options for the Report.
+
+:ref:`publish <post_processing_publish>`                                                   Defines the Report.
+
+:ref:`preview <post_processing_preview>`                                                   Defines the Report.
+
+==========================================================================   =================================
+

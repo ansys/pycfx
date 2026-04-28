@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_139:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_139.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================   ===========================================================================
+
+Parent                                                                                                                        Summary
+
+=======================================================   ===========================================================================
+:ref:`boundary_source <pre_processing_boundary_source>`   Stores sources and other local modifications on a specific boundary object.
+
+=======================================================   ===========================================================================
+

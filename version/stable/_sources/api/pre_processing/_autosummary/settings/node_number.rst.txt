@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_node_number:
+
+node_number
+===========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.node_number.node_number
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================   =====================================
+
+Parent                                                                                          Summary
+
+===============================================================   =====================================
+:ref:`monitor_point_child <pre_processing_monitor_point_child>`   'child_object_type' of monitor_point.
+
+===============================================================   =====================================
+

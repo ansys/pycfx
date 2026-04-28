@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_control_condition_1:
+
+control_condition
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.control_condition_1.control_condition
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`control_condition_child <pre_processing_control_condition_child_1>`
+
+
+.. rubric:: Included in:
+
+===============================================================   ===================================
+
+Parent                                                                                        Summary
+
+===============================================================   ===================================
+:ref:`termination_control <pre_processing_termination_control>`   Termination conditions for context.
+
+===============================================================   ===================================
+

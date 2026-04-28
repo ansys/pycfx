@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_critical_velocity_gradient:
+
+critical_velocity_gradient
+==========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.critical_velocity_gradient.critical_velocity_gradient
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================   ====================================================
+
+Parent                                                                                             Summary
+
+===================================================   ====================================================
+:ref:`flame_stretch <pre_processing_flame_stretch>`   Flame stretch effect for turbulent burning velocity.
+
+===================================================   ====================================================
+

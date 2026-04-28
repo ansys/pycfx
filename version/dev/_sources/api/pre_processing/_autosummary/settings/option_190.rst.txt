@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_190:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_190.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   ===================================================================================================
+
+Parent                                                                                                                                                                Summary
+
+=======================================================================   ===================================================================================================
+:ref:`pressure_gradient_force <pre_processing_pressure_gradient_force>`   Specifies that pressure mass force should be included in momentum transfer models for a fluid pair.
+
+=======================================================================   ===================================================================================================
+

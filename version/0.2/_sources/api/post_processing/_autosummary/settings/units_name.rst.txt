@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_units_name:
+
+units_name
+==========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.units_name.units_name
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==========================================================================   ==========================================
+
+Parent                                                                                                          Summary
+
+==========================================================================   ==========================================
+:ref:`units_quantity_map_child <post_processing_units_quantity_map_child>`   'child_object_type' of units_quantity_map.
+
+==========================================================================   ==========================================
+

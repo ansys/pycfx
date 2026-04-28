@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_material_amount_option:
+
+material_amount_option
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.material_amount_option.material_amount_option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================   ================================
+
+Parent                                                                           Summary
+
+=====================================================   ================================
+:ref:`reaction_child <pre_processing_reaction_child>`   'child_object_type' of reaction.
+
+=====================================================   ================================
+

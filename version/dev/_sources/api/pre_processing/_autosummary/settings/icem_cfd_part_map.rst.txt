@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_icem_cfd_part_map:
+
+icem_cfd_part_map
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.icem_cfd_part_map.icem_cfd_part_map
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`icem_cfd_part_map_child <pre_processing_icem_cfd_part_map_child>`
+
+
+.. rubric:: Included in:
+
+===========================================================================   ===========================================
+
+Parent                                                                                                            Summary
+
+===========================================================================   ===========================================
+:ref:`icem_cfd_geometry_control <pre_processing_icem_cfd_geometry_control>`   Add geometry controls for ICEM CFD meshing.
+
+===========================================================================   ===========================================
+

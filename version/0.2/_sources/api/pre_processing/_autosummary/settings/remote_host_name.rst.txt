@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_remote_host_name:
+
+remote_host_name
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.remote_host_name.remote_host_name
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================   =======================================
+
+Parent                                                                                                Summary
+
+===================================================================   =======================================
+:ref:`host_definition_child <pre_processing_host_definition_child>`   'child_object_type' of host_definition.
+
+===================================================================   =======================================
+

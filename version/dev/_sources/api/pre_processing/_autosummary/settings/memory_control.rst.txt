@@ -1,0 +1,54 @@
+:orphan:
+
+.. _pre_processing_memory_control:
+
+memory_control
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.memory_control.memory_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================================   =============================================
+
+Attribute                                                                                                                         Summary
+
+=========================================================================================   =============================================
+:ref:`enabled <pre_processing_enabled_228>`                                                             Enable the MEMORY CONTROL object.
+
+:ref:`option <pre_processing_option_450>`                                                                    The 'Memory Control' option.
+
+:ref:`memory_allocation_factor <pre_processing_memory_allocation_factor>`                           'Memory Allocation Factor' parameter.
+
+:ref:`real_memory_override <pre_processing_real_memory_override>`                                       'Real Memory Override' parameter.
+
+:ref:`integer_memory_override <pre_processing_integer_memory_override>`                              'Integer Memory Override' parameter.
+
+:ref:`character_memory_override <pre_processing_character_memory_override>`                        'Character Memory Override' parameter.
+
+:ref:`double_precision_memory_override <pre_processing_double_precision_memory_override>`   'Double Precision Memory Override' parameter.
+
+:ref:`logical_memory_override <pre_processing_logical_memory_override>`                              'Logical Memory Override' parameter.
+
+:ref:`catalogue_size_override <pre_processing_catalogue_size_override>`                              'Catalogue Size Override' parameter.
+
+=========================================================================================   =============================================
+
+.. rubric:: Included in:
+
+===========================================================================   ===================================
+
+Parent                                                                                                    Summary
+
+===========================================================================   ===================================
+:ref:`solver_step_control <pre_processing_solver_step_control>`                     'SOLVER STEP CONTROL' object.
+
+:ref:`partitioner_step_control <pre_processing_partitioner_step_control>`      'PARTITIONER STEP CONTROL' object.
+
+:ref:`interpolator_step_control <pre_processing_interpolator_step_control>`   'INTERPOLATOR STEP CONTROL' object.
+
+:ref:`cclsetup_step_control <pre_processing_cclsetup_step_control>`               'CCLSETUP STEP CONTROL' object.
+
+===========================================================================   ===================================
+

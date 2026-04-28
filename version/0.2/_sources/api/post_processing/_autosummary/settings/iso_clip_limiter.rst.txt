@@ -1,0 +1,28 @@
+:orphan:
+
+.. _post_processing_iso_clip_limiter:
+
+iso_clip_limiter
+================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.iso_clip_limiter.iso_clip_limiter
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`iso_clip_limiter_child <post_processing_iso_clip_limiter_child>`
+
+
+.. rubric:: Included in:
+
+======================================================   =========================================
+
+Parent                                                                                     Summary
+
+======================================================   =========================================
+:ref:`results <post_processing_results>`                 Encapsulates a CFX post-processing setup.
+
+:ref:`iso_clip_child <post_processing_iso_clip_child>`            'child_object_type' of iso_clip.
+
+======================================================   =========================================
+

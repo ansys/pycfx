@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_signal_motion:
+
+signal_motion
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.signal_motion.signal_motion
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================   =============================================================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                               Summary
+
+===============================================   =============================================================================================================================================================================================================================================
+:ref:`option <pre_processing_option_435>`                                                                                                                                                                                                                           The 'Signal Motion' option.
+
+:ref:`coord_frame <pre_processing_coord_frame>`   Local coordinate frame for computing expressions. The default at the top level of the command data structure is Coord 0, that is no transformation. The default at lower levels is to inherit the value from objects higher up the structure.
+
+===============================================   =============================================================================================================================================================================================================================================
+
+.. rubric:: Included in:
+
+=================================================================================   ==============================================
+
+Parent                                                                                                                     Summary
+
+=================================================================================   ==============================================
+:ref:`fourier_transformation_child <pre_processing_fourier_transformation_child>`   'child_object_type' of fourier_transformation.
+
+:ref:`time_transformation_child <pre_processing_time_transformation_child>`            'child_object_type' of time_transformation.
+
+=================================================================================   ==============================================
+

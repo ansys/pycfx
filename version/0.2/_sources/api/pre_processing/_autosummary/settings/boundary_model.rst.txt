@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_boundary_model:
+
+boundary_model
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.boundary_model.boundary_model
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================   =================================================
+
+Attribute                                                                                               Summary
+
+===========================================================   =================================================
+:ref:`enabled <pre_processing_enabled_155>`                                   Enable the BOUNDARY MODEL object.
+
+:ref:`option <pre_processing_option_346>`                                          The 'Boundary Model' option.
+
+:ref:`forcing_type <pre_processing_forcing_type>`             Sets forcing type for modeling immersed boundary.
+
+:ref:`boundary_tracking <pre_processing_boundary_tracking>`      Defines the immersed boundary tracking option.
+
+===========================================================   =================================================
+
+.. rubric:: Included in:
+
+=====================================================================   ============================================================================
+
+Parent                                                                                                                                       Summary
+
+=====================================================================   ============================================================================
+:ref:`immersed_solid_control <pre_processing_immersed_solid_control>`   Holds advanced parameters to control the details of Immersed solid handling.
+
+=====================================================================   ============================================================================
+

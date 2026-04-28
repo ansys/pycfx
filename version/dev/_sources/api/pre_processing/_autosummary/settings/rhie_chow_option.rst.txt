@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_rhie_chow_option:
+
+rhie_chow_option
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.rhie_chow_option.rhie_chow_option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================================   ==============================================================
+
+Parent                                                                                                                                 Summary
+
+=============================================================================   ==============================================================
+:ref:`velocity_pressure_coupling <pre_processing_velocity_pressure_coupling>`   Defines discretization details for velocity/pressure coupling.
+
+=============================================================================   ==============================================================
+

@@ -1,0 +1,35 @@
+:orphan:
+
+.. _pre_processing_redistribute_in_rhie_chow:
+
+redistribute_in_rhie_chow
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.redistribute_in_rhie_chow.redistribute_in_rhie_chow
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================================   ==================================================================================================================================================================================================================
+
+Parent                                                                                                                                                                                                                                                                                     Summary
+
+=============================================================================   ==================================================================================================================================================================================================================
+:ref:`domain_motion <pre_processing_domain_motion>`                             Defines the motion of a mesh relative to a stationary coordinate frame. NOTE - Speed and Direction, Specified Displacement and General Motion Options are not supported for domains other than the immersed solid.
+
+:ref:`buoyancy_model <pre_processing_buoyancy_model>`                                                                                                                                                                               Defines type of buoyancy model and gravity vector in a domain.
+
+:ref:`solid_pressure_model <pre_processing_solid_pressure_model>`                                                                                                                                                Sets the model to be used for solids pressure forces in a multiphase calculation.
+
+:ref:`drag_force <pre_processing_drag_force_1>`                                                                                                                                                                                                           Specifies drag force between two phases.
+
+:ref:`virtual_mass_force <pre_processing_virtual_mass_force>`                                                                                                                                   Specifies that virtual mass force should be included in momentum transfer models for a fluid pair.
+
+:ref:`turbulent_dispersion_force <pre_processing_turbulent_dispersion_force>`                                                                                                                 Specifies that turbulent dispersion should be included in momentum transfer models for a fluid pair.
+
+:ref:`surface_tension_model <pre_processing_surface_tension_model>`                                                                                                                                      Sets parameters that control the surface tension force model at a free surface interface.
+
+:ref:`general_momentum_source <pre_processing_general_momentum_source>`                                                                                                                                                                    Defines a general momentum source term and coefficient.
+
+=============================================================================   ==================================================================================================================================================================================================================
+

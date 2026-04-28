@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_150:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_150.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================   =============================
+
+Parent                                                                                    Summary
+
+=================================================================   =============================
+:ref:`knock_reaction_rate <pre_processing_knock_reaction_rate_1>`   'KNOCK REACTION RATE' object.
+
+=================================================================   =============================
+

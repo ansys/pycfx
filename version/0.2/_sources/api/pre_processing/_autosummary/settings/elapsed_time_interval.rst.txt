@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_elapsed_time_interval:
+
+elapsed_time_interval
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.elapsed_time_interval.elapsed_time_interval
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   ======================================================================================================
+
+Parent                                                                                                                                                     Summary
+
+=========================================================   ======================================================================================================
+:ref:`output_frequency <pre_processing_output_frequency>`   Holds options for controlling the frequency with which backup and transient results files are written.
+
+=========================================================   ======================================================================================================
+

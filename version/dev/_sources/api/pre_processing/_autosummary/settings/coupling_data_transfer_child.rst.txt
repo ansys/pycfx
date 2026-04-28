@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_coupling_data_transfer_child:
+
+coupling_data_transfer_child
+============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.coupling_data_transfer_child.coupling_data_transfer_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================================   ==============================================
+
+Attribute                                                                                                                Summary
+
+===============================================================================   ==============================================
+:ref:`option <pre_processing_option_262>`                                                   The 'Coupling Data Transfer' option.
+
+:ref:`cfx_variable <pre_processing_cfx_variable>`                                                      'CFX Variable' parameter.
+
+:ref:`coupling_data_transfer_type <pre_processing_coupling_data_transfer_type>`   Type of transfer used to handle mesh mismatch.
+
+:ref:`ansys_variable <pre_processing_ansys_variable>`                                                'ANSYS Variable' parameter.
+
+:ref:`ansys_interface <pre_processing_ansys_interface>`                                             'ANSYS Interface' parameter.
+
+===============================================================================   ==============================================
+
+.. rubric:: Included in:
+
+=====================================================================   ===============================================
+
+Parent                                                                                                          Summary
+
+=====================================================================   ===============================================
+:ref:`coupling_data_transfer <pre_processing_coupling_data_transfer>`   A container for Coupling Data Transfer objects.
+
+=====================================================================   ===============================================
+

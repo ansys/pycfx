@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_kappa_coefficient:
+
+kappa_coefficient
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.kappa_coefficient.kappa_coefficient
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================================   =====================================================
+
+Parent                                                                                                                      Summary
+
+===========================================================================   =====================================================
+:ref:`turbulent_wall_functions <pre_processing_turbulent_wall_functions>`     Sets the turbulent near-wall treatment at a boundary.
+
+:ref:`turbulent_wall_functions <pre_processing_turbulent_wall_functions_1>`   Sets the turbulent near-wall treatment at a boundary.
+
+===========================================================================   =====================================================
+

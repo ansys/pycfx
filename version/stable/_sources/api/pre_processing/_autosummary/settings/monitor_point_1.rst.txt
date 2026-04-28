@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_monitor_point_1:
+
+monitor_point
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.monitor_point_1.monitor_point
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================================   ===============================================
+
+Parent                                                                                                                        Summary
+
+===================================================================================   ===============================================
+:ref:`icem_cfd_part_parameter_child <pre_processing_icem_cfd_part_parameter_child>`   'child_object_type' of icem_cfd_part_parameter.
+
+:ref:`scalar_parameter_child <pre_processing_scalar_parameter_child>`                        'child_object_type' of scalar_parameter.
+
+===================================================================================   ===============================================
+

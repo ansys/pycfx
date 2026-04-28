@@ -1,0 +1,54 @@
+:orphan:
+
+.. _pre_processing_domain_interface_child:
+
+domain_interface_child
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.domain_interface_child.domain_interface_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================================   =================================================================================
+
+Attribute                                                                                                                                                   Summary
+
+===============================================================================   =================================================================================
+:ref:`interface_type <pre_processing_interface_type>`                                                                                   'Interface Type' parameter.
+
+:ref:`filter_domain_list1 <pre_processing_filter_domain_list1>`                    A filter for the list of regions used on the first side of the domain interface.
+
+:ref:`interface_region_list1 <pre_processing_interface_region_list1>`                             A list of regions used on the first side of the domain interface.
+
+:ref:`filter_domain_list2 <pre_processing_filter_domain_list2>`                   A filter for the list of regions used on the second side of the domain interface.
+
+:ref:`interface_region_list2 <pre_processing_interface_region_list2>`                            A list of regions used on the second side of the domain interface.
+
+:ref:`boundary_list1 <pre_processing_boundary_list1>`                                                     The list of boundaries on side one of a domain interface.
+
+:ref:`boundary_list2 <pre_processing_boundary_list2>`                                                     The list of boundaries on side two of a domain interface.
+
+:ref:`interface_models <pre_processing_interface_models>`                                                  Holds the definition of models specific to an interface.
+
+:ref:`additional_interface_models <pre_processing_additional_interface_models>`                                A container for Additional Interface Models objects.
+
+:ref:`solid_interface_models <pre_processing_solid_interface_models>`                                      Holds the definition of models specific to an interface.
+
+:ref:`tube_interface_models <pre_processing_tube_interface_models>`                                                                 'TUBE INTERFACE MODELS' object.
+
+:ref:`mesh_connection <pre_processing_mesh_connection>`                                                 Defines how the meshes on a domain interface are connected.
+
+===============================================================================   =================================================================================
+
+.. rubric:: Included in:
+
+=========================================================   =========================================
+
+Parent                                                                                        Summary
+
+=========================================================   =========================================
+:ref:`domain_interface <pre_processing_domain_interface>`   A container for Domain Interface objects.
+
+=========================================================   =========================================
+

@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_minimum_diameter:
+
+minimum_diameter
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.minimum_diameter.minimum_diameter
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================================   ============================================================
+
+Parent                                                                                                                                       Summary
+
+=====================================================================================   ============================================================
+:ref:`particle_diameter_distribution <pre_processing_particle_diameter_distribution>`            Defines the size distribution for a particle group.
+
+:ref:`size_group_distribution <pre_processing_size_group_distribution>`                           Defines the size groups for a polydispersed fluid.
+
+:ref:`particle_termination_control <pre_processing_particle_termination_control>`       Sets details of the particle tracking integration algorithm.
+
+=====================================================================================   ============================================================
+

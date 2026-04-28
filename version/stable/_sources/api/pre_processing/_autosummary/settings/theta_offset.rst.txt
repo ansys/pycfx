@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_theta_offset:
+
+theta_offset
+============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.theta_offset.theta_offset
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================   =============================================================================================
+
+Parent                                                                                                                                                  Summary
+
+===============================================================   =============================================================================================
+:ref:`replication_control <pre_processing_replication_control>`   Defines how the replicated components are connected to the properly aligned source component.
+
+===============================================================   =============================================================================================
+

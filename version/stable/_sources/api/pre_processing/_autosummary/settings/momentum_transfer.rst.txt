@@ -1,0 +1,44 @@
+:orphan:
+
+.. _pre_processing_momentum_transfer:
+
+momentum_transfer
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.momentum_transfer.momentum_transfer
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================================   ======================================================================================================
+
+Attribute                                                                                                                                                                      Summary
+
+=============================================================================   ======================================================================================================
+:ref:`drag_force <pre_processing_drag_force_1>`                                                                                               Specifies drag force between two phases.
+
+:ref:`lift_force <pre_processing_lift_force_1>`                                             Specifies that lift force should be included in momentum transfer models for a fluid pair.
+
+:ref:`virtual_mass_force <pre_processing_virtual_mass_force>`                       Specifies that virtual mass force should be included in momentum transfer models for a fluid pair.
+
+:ref:`pressure_gradient_force <pre_processing_pressure_gradient_force>`            Specifies that pressure mass force should be included in momentum transfer models for a fluid pair.
+
+:ref:`wall_lubrication_force <pre_processing_wall_lubrication_force>`           Specifies that wall lubrication force should be included in momentum transfer models for a fluid pair.
+
+:ref:`turbulent_dispersion_force <pre_processing_turbulent_dispersion_force>`     Specifies that turbulent dispersion should be included in momentum transfer models for a fluid pair.
+
+:ref:`particle_user_source <pre_processing_particle_user_source>`                                                                                       'PARTICLE USER SOURCE' object.
+
+=============================================================================   ======================================================================================================
+
+.. rubric:: Included in:
+
+=========================================================   ==================================
+
+Parent                                                                                 Summary
+
+=========================================================   ==================================
+:ref:`fluid_pair_child <pre_processing_fluid_pair_child>`   'child_object_type' of fluid_pair.
+
+=========================================================   ==================================
+

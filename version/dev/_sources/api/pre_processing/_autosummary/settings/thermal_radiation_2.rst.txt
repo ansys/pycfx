@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_thermal_radiation_2:
+
+thermal_radiation
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.thermal_radiation_2.thermal_radiation
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================   ====================================
+
+Attribute                                                                                Summary
+
+=========================================================   ====================================
+:ref:`enabled <pre_processing_enabled_158>`                 Enable the THERMAL RADIATION object.
+
+:ref:`option <pre_processing_option_285>`                        The 'Thermal Radiation' option.
+
+:ref:`emissivity <pre_processing_emissivity>`                                Surface Emissivity.
+
+:ref:`diffuse_fraction <pre_processing_diffuse_fraction>`          'Diffuse Fraction' parameter.
+
+=========================================================   ====================================
+
+.. rubric:: Included in:
+
+===========================================================================================   ========================================================
+
+Parent                                                                                                                                         Summary
+
+===========================================================================================   ========================================================
+:ref:`interface_models <pre_processing_interface_models>`                                     Holds the definition of models specific to an interface.
+
+:ref:`additional_interface_models_child <pre_processing_additional_interface_models_child>`        'child_object_type' of additional_interface_models.
+
+===========================================================================================   ========================================================
+

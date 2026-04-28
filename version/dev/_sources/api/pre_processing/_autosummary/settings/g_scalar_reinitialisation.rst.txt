@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_g_scalar_reinitialisation:
+
+g_scalar_reinitialisation
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.g_scalar_reinitialisation.g_scalar_reinitialisation
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================   ===================================================
+
+Attribute                                                                                                         Summary
+
+===================================================================   ===================================================
+:ref:`enabled <pre_processing_enabled_205>`                                  Enable the G SCALAR REINITIALISATION object.
+
+:ref:`option <pre_processing_option_382>`                                         The 'G Scalar Reinitialisation' option.
+
+:ref:`reinitialise_at_start <pre_processing_reinitialise_at_start>`   Flag for G-scalar reinitialization at start of run.
+
+===================================================================   ===================================================
+
+.. rubric:: Included in:
+
+=======================================================   ====================================================================================
+
+Parent                                                                                                                                 Summary
+
+=======================================================   ====================================================================================
+:ref:`solver_control <pre_processing_solver_control_1>`   Holds all objects that control discretization and execution of the solution process.
+
+=======================================================   ====================================================================================
+

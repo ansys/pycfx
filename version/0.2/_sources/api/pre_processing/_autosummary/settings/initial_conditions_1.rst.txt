@@ -1,0 +1,70 @@
+:orphan:
+
+.. _pre_processing_initial_conditions_1:
+
+initial_conditions
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.initial_conditions_1.initial_conditions
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================================   =====================================================================================
+
+Attribute                                                                                                                                                               Summary
+
+=======================================================================================   =====================================================================================
+:ref:`velocity_type <pre_processing_velocity_type>`                                       Specifies if we are using Cartesian or Cylindrical components for initial conditions.
+
+:ref:`cartesian_velocity_components <pre_processing_cartesian_velocity_components_1>`                           Defines the initialization of velocity by Cartesian components.
+
+:ref:`cylindrical_velocity_components <pre_processing_cylindrical_velocity_components>`                       Defines the initialization of velocity by Cylindrical components.
+
+:ref:`temperature <pre_processing_temperature_1>`                                                                                    Defines the initialization of Temperature.
+
+:ref:`additional_variable <pre_processing_additional_variable_4>`                                                                  A container for Additional Variable objects.
+
+:ref:`component <pre_processing_component_2>`                                                                                                A container for Component objects.
+
+:ref:`radiation_intensity <pre_processing_radiation_intensity_1>`                                                            Defines the initialization of radiation intensity.
+
+:ref:`soot <pre_processing_soot_1>`                                                                                                         Defines the initialization of Soot.
+
+:ref:`soot_nuclei <pre_processing_soot_nuclei>`                                                                                      Defines the initialization of Soot Nuclei.
+
+:ref:`reaction_progress <pre_processing_reaction_progress_2>`                                                     Defines the initialization of the reaction progress variable.
+
+:ref:`g_scalar <pre_processing_g_scalar_2>`                                                                                   Sets boundary or initial conditions for G Scalar.
+
+:ref:`g_variance <pre_processing_g_variance_1>`                                                                                         Sets initial conditions for G Variance.
+
+:ref:`flame_surface_density <pre_processing_flame_surface_density_2>`                                            Sets boundary or initial conditions for Flame Surface Density.
+
+:ref:`fuel_tracer <pre_processing_fuel_tracer_1>`                                                      Sets initial conditions for Fuel Tracer for the residual material model.
+
+:ref:`mixture_fraction <pre_processing_mixture_fraction_1>`                                                                     Defines the initialization of mixture fraction.
+
+:ref:`mixture_fraction_variance <pre_processing_mixture_fraction_variance_1>`                                          Defines the initialization of mixture fraction variance.
+
+:ref:`volume_fraction <pre_processing_volume_fraction_1>`                                                      Sets boundary condition or initial condition on volume fraction.
+
+:ref:`size_group <pre_processing_size_group_1>`                                                                                             A container for Size Group objects.
+
+:ref:`droplet_number <pre_processing_droplet_number_2>`                                                                  Specifies droplet number equation boundary conditions.
+
+:ref:`turbulence_initial_conditions <pre_processing_turbulence_initial_conditions>`                                                      Sets initial conditions on turbulence.
+
+=======================================================================================   =====================================================================================
+
+.. rubric:: Included in:
+
+==================================================   =============================
+
+Parent                                                                     Summary
+
+==================================================   =============================
+:ref:`fluid_child <pre_processing_fluid_child_10>`   'child_object_type' of fluid.
+
+==================================================   =============================
+

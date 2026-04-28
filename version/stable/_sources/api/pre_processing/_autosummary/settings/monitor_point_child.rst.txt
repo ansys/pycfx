@@ -1,0 +1,64 @@
+:orphan:
+
+.. _pre_processing_monitor_point_child:
+
+monitor_point_child
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.monitor_point_child.monitor_point_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================   =============================================================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                                                           Summary
+
+===========================================================================   =============================================================================================================================================================================================================================================
+:ref:`option <pre_processing_option_410>`                                                                                                                                                                                                                                                       The 'Monitor Point' option.
+
+:ref:`output_variables_list <pre_processing_output_variables_list>`                                                                                                                                                                                                                      'Output Variables List' parameter.
+
+:ref:`expression_value <pre_processing_expression_value>`                                                                                                                                                                                                                                     Single valued CEL expression.
+
+:ref:`cartesian_coordinates <pre_processing_cartesian_coordinates>`                                                                                                                                                                                                     Position <x,y,z> specified by cartesian components.
+
+:ref:`position_axial_component <pre_processing_position_axial_component>`                                                                                                                                                                                                           Position vector cylindrical components.
+
+:ref:`position_r_component <pre_processing_position_r_component>`                                                                                                                                                                                                                   Position vector cylindrical components.
+
+:ref:`position_theta_component <pre_processing_position_theta_component>`                                                                                                                                                                                                           Position vector cylindrical components.
+
+:ref:`coord_frame <pre_processing_coord_frame>`                               Local coordinate frame for computing expressions. The default at the top level of the command data structure is Coord 0, that is no transformation. The default at lower levels is to inherit the value from objects higher up the structure.
+
+:ref:`mode_shape <pre_processing_mode_shape_1>`                                                                                                                                                                                                                                                Refers to Mode Shape object.
+
+:ref:`domain_name <pre_processing_domain_name>`                                                                                                                                                                                                                                                    'Domain Name' parameter.
+
+:ref:`node_number <pre_processing_node_number>`                                                                                                                                                                                                                                                    'Node Number' parameter.
+
+:ref:`monitor_location_control <pre_processing_monitor_location_control>`                                                                                                                                                                                                                'MONITOR LOCATION CONTROL' object.
+
+:ref:`position_update_frequency <pre_processing_position_update_frequency>`                                                                                                                                                                                                             'POSITION UPDATE FREQUENCY' object.
+
+:ref:`location_type <pre_processing_location_type_1>`                                                                                                                                                                                Defines the type of location, physics or mesh regions, to compute aerodynamic damping.
+
+:ref:`integration_option <pre_processing_integration_option>`                                                                                                                                                                                                                                  'INTEGRATION OPTION' object.
+
+:ref:`pressure_definition <pre_processing_pressure_definition>`                                                                                                                                                                                                                               'PRESSURE DEFINITION' object.
+
+:ref:`monitor_statistics <pre_processing_monitor_statistics>`                                                                                                                                                                                                              Defines the transient statistics of the monitor.
+
+===========================================================================   =============================================================================================================================================================================================================================================
+
+.. rubric:: Included in:
+
+===================================================   ======================================
+
+Parent                                                                               Summary
+
+===================================================   ======================================
+:ref:`monitor_point <pre_processing_monitor_point>`   A container for Monitor Point objects.
+
+===================================================   ======================================
+

@@ -1,0 +1,46 @@
+:orphan:
+
+.. _pre_processing_porosity_models:
+
+porosity_models
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.porosity_models.porosity_models
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================   ============================================================================================
+
+Attribute                                                                                                                                                          Summary
+
+===========================================================================   ============================================================================================
+:ref:`area_porosity <pre_processing_area_porosity>`                                                                                                'AREA POROSITY' object.
+
+:ref:`volume_porosity <pre_processing_volume_porosity_1>`                                                                                        'VOLUME POROSITY' object.
+
+:ref:`loss_model <pre_processing_loss_model>`                                                                                    Describes loss model for a porous domain.
+
+:ref:`contact_area_model <pre_processing_contact_area_model>`                                                        Specifies fluid-solid contact area for a given fluid.
+
+:ref:`fluid_solid_area_density <pre_processing_fluid_solid_area_density>`     Specifies heat transfer model between the solid and the fluid phases inside a porous domain.
+
+:ref:`fluid_solid_heat_transfer <pre_processing_fluid_solid_heat_transfer>`   Specifies heat transfer model between the solid and the fluid phases inside a porous domain.
+
+:ref:`additional_variable_pair <pre_processing_additional_variable_pair_1>`                                              A container for Additional Variable Pair objects.
+
+:ref:`fluid <pre_processing_fluid_2>`                                                                                                       A container for Fluid objects.
+
+===========================================================================   ============================================================================================
+
+.. rubric:: Included in:
+
+=================================================   ==============================
+
+Parent                                                                     Summary
+
+=================================================   ==============================
+:ref:`domain_child <pre_processing_domain_child>`   'child_object_type' of domain.
+
+=================================================   ==============================
+

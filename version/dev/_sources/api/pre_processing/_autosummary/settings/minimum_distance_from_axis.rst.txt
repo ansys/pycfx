@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_minimum_distance_from_axis:
+
+minimum_distance_from_axis
+==========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.minimum_distance_from_axis.minimum_distance_from_axis
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ===================================================================
+
+Parent                                                                                                                    Summary
+
+===========================================================   ===================================================================
+:ref:`particle_position <pre_processing_particle_position>`   Defines how particle positions are to be distributed on a boundary.
+
+===========================================================   ===================================================================
+

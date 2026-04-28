@@ -1,0 +1,83 @@
+:orphan:
+
+.. _post_processing_view_child:
+
+view_child
+==========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.view_child.view_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+======================================================================   ===================================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                            Summary
+
+======================================================================   ===================================================================================================================================================================================================================
+:ref:`angular_coord_shift <post_processing_angular_coord_shift>`                                                                                                                                                     The angular shift value. The shift is used in adjusting Turbo B2B view.
+
+:ref:`auto_center <post_processing_auto_center>`                                                                                                                                                                                                     Toggle automatic centering of the view.
+
+:ref:`axis_visibility <post_processing_axis_visibility>`                                                                                                                                                                                        Toggles the axis visibility in the viewport.
+
+:ref:`border_visibility <post_processing_border_visibility>`                                                                                                                                                                         Toggles the viewport border visibility in the viewport.
+
+:ref:`camera_mode <post_processing_camera_mode>`                         Defines the current viewer camera mode. It can be either Standard (specified by Standard View parameter) or User Specified, in which case a CAMERA object has to be defined and specified in User Camera parameter.
+
+:ref:`clip_plane <post_processing_clip_plane_1>`                                                                                                                                                                              Defines the CLIP PLANE object that is used for scene clipping.
+
+:ref:`clip_scene <post_processing_clip_scene>`                                                                                                                                                                                               Toggles the scene clipping plane in the viewer.
+
+:ref:`coord_transform <post_processing_coord_transform>`                                                                                                                                             Specifies the coordinate transformation to apply to all objects shown in this viewport.
+
+:ref:`hide_difference_case <post_processing_hide_difference_case>`                                                                                                                                                  Case reference to limit the rendering to in view, for filtering by case.
+
+:ref:`highlight_type <post_processing_highlight_type>`                                                                                                                                                                                       Specifies the highlight type used when picking.
+
+:ref:`is_a_figure <post_processing_is_a_figure>`                                                                                                                                                                  Set for a view that is not intended to be a figure to be shown in Reports.
+
+:ref:`light_angle <post_processing_light_angle>`                                                                                            Defines the viewer light angles in degrees. The first angle goes from right (0) to left (180), and the second goes from bottom (0) to top (180).
+
+:ref:`local_object_list <post_processing_local_object_list>`                                                                                                                                                        Stores the list of objects that were created specifically for this view.
+
+:ref:`object_visibility_list <post_processing_object_visibility_list>`                                                                                                                                                                     Specifies the list of objects shown in this view.
+
+:ref:`projection <post_processing_projection>`                                                                                                                                              Defines the current projection mode in the viewer. It can be either Perspective or Orthographic.
+
+:ref:`ruler_visibility <post_processing_ruler_visibility>`                                                                                                                                                                                     Toggles the ruler visibility in the viewport.
+
+:ref:`standard_view <post_processing_standard_view>`                                                                                                    Defines one of the standard views in the viewer (Note that Camera Mode has to be set to Standard for this parameter to have effect).
+
+:ref:`valid_case <post_processing_valid_case>`                                                                                                                                                                      Case reference to limit the rendering to in view, for filtering by case.
+
+:ref:`camera <post_processing_camera>`                                                                                                                                                                       Defines a camera that can be used to specify the current view in a VIEW object.
+
+:ref:`object_report_options <post_processing_object_report_options>`                                                                                                                                                                Defines options for the Report, specific to each object.
+
+======================================================================   ===================================================================================================================================================================================================================
+
+.. rubric:: Methods
+
+============================================   ========================================
+
+Method                                                                          Summary
+
+============================================   ========================================
+:ref:`suspend <post_processing_suspend>`       Suspend immediate update for the object.
+
+:ref:`unsuspend <post_processing_unsuspend>`   Restore immediate update for the object.
+
+============================================   ========================================
+
+.. rubric:: Included in:
+
+====================================   =============
+
+Parent                                       Summary
+
+====================================   =============
+:ref:`view <post_processing_view_1>`   'view' child.
+
+====================================   =============
+

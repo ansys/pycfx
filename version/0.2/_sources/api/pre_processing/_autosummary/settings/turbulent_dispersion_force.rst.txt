@@ -1,0 +1,42 @@
+:orphan:
+
+.. _pre_processing_turbulent_dispersion_force:
+
+turbulent_dispersion_force
+==========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.turbulent_dispersion_force.turbulent_dispersion_force
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================================   ==============================================================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                                                                          Summary
+
+=========================================================================================   ==============================================================================================================================================================================================================================================
+:ref:`option <pre_processing_option_193>`                                                                                                                                                                                                                                                         The 'Turbulent Dispersion Force' option.
+
+:ref:`turbulent_dispersion_coefficient <pre_processing_turbulent_dispersion_coefficient>`                                                                                                                                                                      Coefficient for turbulent dispersion force in interfluid momentum transfer.
+
+:ref:`redistribute_in_rhie_chow <pre_processing_redistribute_in_rhie_chow>`                                                                                                                                                                                                            Indicates whether momentum source is redistributed.
+
+:ref:`volume_fraction_gradient_option <pre_processing_volume_fraction_gradient_option>`                                                                                                               Specifies if the Lopez de Bertodano turbulence dispersion model is based on continuous or dispersed phase volume fraction gradients.
+
+:ref:`eddy_viscosity_ratio_limit <pre_processing_eddy_viscosity_ratio_limit>`               Used by turbulent dispersion model for particle tracking and by turbulence forcing model. Specify (Turb / Molecular) viscosity ratio limit, below which no turbulent tracking is performed, or no forcing of resolved turbulence is performed.
+
+:ref:`false_timestep_linearisation <pre_processing_false_timestep_linearisation>`                                                                                                                                                                                            Defines false timestep linearisation options for body forces.
+
+=========================================================================================   ==============================================================================================================================================================================================================================================
+
+.. rubric:: Included in:
+
+===========================================================   ====================================================
+
+Parent                                                                                                     Summary
+
+===========================================================   ====================================================
+:ref:`momentum_transfer <pre_processing_momentum_transfer>`   Specifies momentum transfer models for a fluid pair.
+
+===========================================================   ====================================================
+

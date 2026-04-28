@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_zero_pressure_a4:
+
+zero_pressure_a4
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.zero_pressure_a4.zero_pressure_a4
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================================   ====================================================================================
+
+Parent                                                                                                                                                       Summary
+
+=============================================================================   ====================================================================================
+:ref:`specific_heat_capacity <pre_processing_specific_heat_capacity_1>`                                          Specifies how specific heat capacity is calculated.
+
+:ref:`zero_pressure_coefficients <pre_processing_zero_pressure_coefficients>`   Specifies ideal gas specific heat capacity for use with real gas equations of state.
+
+=============================================================================   ====================================================================================
+

@@ -1,0 +1,54 @@
+:orphan:
+
+.. _pre_processing_transitional_turbulence:
+
+transitional_turbulence
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.transitional_turbulence.transitional_turbulence
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================================   =============================================================================================================================
+
+Attribute                                                                                                                                                                                                         Summary
+
+=========================================================================================   =============================================================================================================================
+:ref:`enabled <pre_processing_enabled_46>`                                                                                                                                     Enable the TRANSITIONAL TURBULENCE object.
+
+:ref:`option <pre_processing_option_120>`                                                                                                                                           The 'Transitional Turbulence' option.
+
+:ref:`intermittency <pre_processing_intermittency>`                                                                                                                                     Turbulence Intermittency (Gamma).
+
+:ref:`transition_onset_reynolds_number <pre_processing_transition_onset_reynolds_number>`                                                               Transition onset momentum thickness Reynolds number (Re_theta,c).
+
+:ref:`transition_model_revision <pre_processing_transition_model_revision>`                                                                 Revision number of the transition model (0=original model, 1=first revision).
+
+:ref:`transition_onset_correlation <pre_processing_transition_onset_correlation>`                                                                                        Defines the correlation for onset of transition.
+
+:ref:`intermittency_coefficients <pre_processing_intermittency_coefficients>`                                                                      Controls model coefficients for the turbulence intermittency equation.
+
+:ref:`rethetat_coefficients <pre_processing_rethetat_coefficients>`                         Controls model coefficients for the transport equation of the turbulence transition onset momentum thickness Reynolds number.
+
+:ref:`roughness_correlation <pre_processing_roughness_correlation>`                                                                                     Defines the correlation for onset of transition due to roughness.
+
+:ref:`intermittency_model_coefficients <pre_processing_intermittency_model_coefficients>`                                                          Controls model coefficients for the turbulence intermittency equation.
+
+:ref:`crossflow_transition <pre_processing_crossflow_transition>`                                                                                                                          'CROSSFLOW TRANSITION' object.
+
+=========================================================================================   =============================================================================================================================
+
+.. rubric:: Included in:
+
+===========================================================   ===========================================================================
+
+Parent                                                                                                                            Summary
+
+===========================================================   ===========================================================================
+:ref:`turbulence_model <pre_processing_turbulence_model>`     Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+:ref:`turbulence_model <pre_processing_turbulence_model_1>`   Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+===========================================================   ===========================================================================
+

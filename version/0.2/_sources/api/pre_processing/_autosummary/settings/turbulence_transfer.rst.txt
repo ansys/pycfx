@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_turbulence_transfer:
+
+turbulence_transfer
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.turbulence_transfer.turbulence_transfer
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================================================   =============================================================
+
+Attribute                                                                                                                                                 Summary
+
+=================================================================================================   =============================================================
+:ref:`enhanced_turbulence_production_model <pre_processing_enhanced_turbulence_production_model>`   Model settings for multiphase enhanced turbulence production.
+
+:ref:`free_surface_damping_model <pre_processing_free_surface_damping_model>`                            Model settings for turbulence damping at a free surface.
+
+=================================================================================================   =============================================================
+
+.. rubric:: Included in:
+
+=========================================================   ==================================
+
+Parent                                                                                 Summary
+
+=========================================================   ==================================
+:ref:`fluid_pair_child <pre_processing_fluid_pair_child>`   'child_object_type' of fluid_pair.
+
+=========================================================   ==================================
+

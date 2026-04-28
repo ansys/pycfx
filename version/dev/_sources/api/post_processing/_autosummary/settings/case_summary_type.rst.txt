@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_case_summary_type:
+
+case_summary_type
+=================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.case_summary_type.case_summary_type
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+======================================   ===========================================================================
+
+Parent                                                                                                       Summary
+
+======================================   ===========================================================================
+:ref:`export <post_processing_export>`   Holds parameters which control the export of data to an external text file.
+
+======================================   ===========================================================================
+

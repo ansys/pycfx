@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_face_search_tolerance_factor:
+
+face_search_tolerance_factor
+============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.face_search_tolerance_factor.face_search_tolerance_factor
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================   =============================================================================
+
+Parent                                                                                                                                      Summary
+
+===================================================================   =============================================================================
+:ref:`intersection_control <pre_processing_intersection_control>`     Holds advanced parameters to control the details of interface discretization.
+
+:ref:`intersection_control <pre_processing_intersection_control_1>`   Holds advanced parameters to control the details of interface discretization.
+
+===================================================================   =============================================================================
+

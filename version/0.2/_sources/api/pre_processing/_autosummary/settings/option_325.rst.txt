@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_325:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_325.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================================   =================================================================
+
+Parent                                                                                                                                              Summary
+
+=======================================================================================   =================================================================
+:ref:`cylindrical_velocity_components <pre_processing_cylindrical_velocity_components>`   Defines the initialization of velocity by Cylindrical components.
+
+=======================================================================================   =================================================================
+

@@ -1,0 +1,23 @@
+:orphan:
+
+.. _post_processing_filter_on_track_selection:
+
+filter_on_track_selection
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.filter_on_track_selection.filter_on_track_selection
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==========================================================================   ==========================================
+
+Parent                                                                                                          Summary
+
+==========================================================================   ==========================================
+:ref:`particle_track_child <post_processing_particle_track_child>`               'child_object_type' of particle_track.
+
+:ref:`res_particle_track_child <post_processing_res_particle_track_child>`   'child_object_type' of res_particle_track.
+
+==========================================================================   ==========================================
+

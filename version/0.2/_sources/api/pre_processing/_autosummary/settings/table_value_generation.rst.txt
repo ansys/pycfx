@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_table_value_generation:
+
+table_value_generation
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.table_value_generation.table_value_generation
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================   =========================================
+
+Attribute                                                                                       Summary
+
+===========================================================   =========================================
+:ref:`enabled <pre_processing_enabled_4>`                     Enable the TABLE VALUE GENERATION object.
+
+:ref:`option <pre_processing_option_8>`                            The 'Table Value Generation' option.
+
+:ref:`sample_definition <pre_processing_sample_definition>`                 'SAMPLE DEFINITION' object.
+
+===========================================================   =========================================
+
+.. rubric:: Included in:
+
+=====================================================   ================================
+
+Parent                                                                           Summary
+
+=====================================================   ================================
+:ref:`function_child <pre_processing_function_child>`   'child_object_type' of function.
+
+=====================================================   ================================
+

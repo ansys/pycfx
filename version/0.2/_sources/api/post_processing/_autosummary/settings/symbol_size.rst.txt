@@ -1,0 +1,43 @@
+:orphan:
+
+.. _post_processing_symbol_size:
+
+symbol_size
+===========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.symbol_size.symbol_size
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==============================================================================   ============================================
+
+Parent                                                                                                                Summary
+
+==============================================================================   ============================================
+:ref:`streamline_child <post_processing_streamline_child>`                                 'child_object_type' of streamline.
+
+:ref:`point_child <post_processing_point_child>`                                                'child_object_type' of point.
+
+:ref:`point_cloud_child <post_processing_point_cloud_child>`                              'child_object_type' of point_cloud.
+
+:ref:`particle_cloud_child <post_processing_particle_cloud_child>`                     'child_object_type' of particle_cloud.
+
+:ref:`particle_track_child <post_processing_particle_track_child>`                     'child_object_type' of particle_track.
+
+:ref:`res_particle_track_child <post_processing_res_particle_track_child>`         'child_object_type' of res_particle_track.
+
+:ref:`vector_child <post_processing_vector_child>`                                             'child_object_type' of vector.
+
+:ref:`coordinate_frame_child <post_processing_coordinate_frame_child>`               'child_object_type' of coordinate_frame.
+
+:ref:`symbol_control <post_processing_symbol_control>`                                                'symbol_control' child.
+
+:ref:`internal_vector_child <post_processing_internal_vector_child>`                  'child_object_type' of internal_vector.
+
+:ref:`internal_point_child <post_processing_internal_point_child>`                     'child_object_type' of internal_point.
+
+:ref:`internal_point_cloud_child <post_processing_internal_point_cloud_child>`   'child_object_type' of internal_point_cloud.
+
+==============================================================================   ============================================
+

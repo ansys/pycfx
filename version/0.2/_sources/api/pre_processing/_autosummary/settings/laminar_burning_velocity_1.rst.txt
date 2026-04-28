@@ -1,0 +1,46 @@
+:orphan:
+
+.. _pre_processing_laminar_burning_velocity_1:
+
+laminar_burning_velocity
+========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.laminar_burning_velocity_1.laminar_burning_velocity
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================================   ============================================================
+
+Attribute                                                                                                                                    Summary
+
+=====================================================================================   ============================================================
+:ref:`enabled <pre_processing_enabled_24>`                                                               Enable the LAMINAR BURNING VELOCITY object.
+
+:ref:`option <pre_processing_option_52>`                                                                      The 'Laminar Burning Velocity' option.
+
+:ref:`laminar_burning_velocity <pre_processing_laminar_burning_velocity>`                                      'Laminar Burning Velocity' parameter.
+
+:ref:`carbon_index <pre_processing_carbon_index>`                                                                Count of atomic carbon in the fuel.
+
+:ref:`reference_burning_velocity <pre_processing_reference_burning_velocity>`                       Laminar burning velocity at reference condition.
+
+:ref:`preheat_temperature_dependency <pre_processing_preheat_temperature_dependency>`   Preheat temperature dependency for laminar burning velocity.
+
+:ref:`pressure_dependency <pre_processing_pressure_dependency>`                                    Pressure dependency for laminar burning velocity.
+
+:ref:`residual_material_dependency <pre_processing_residual_material_dependency>`         Residual material dependency for laminar burning velocity.
+
+=====================================================================================   ============================================================
+
+.. rubric:: Included in:
+
+=====================================================   ================================
+
+Parent                                                                           Summary
+
+=====================================================   ================================
+:ref:`reaction_child <pre_processing_reaction_child>`   'child_object_type' of reaction.
+
+=====================================================   ================================
+

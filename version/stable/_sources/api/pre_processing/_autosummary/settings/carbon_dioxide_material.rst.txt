@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_carbon_dioxide_material:
+
+carbon_dioxide_material
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.carbon_dioxide_material.carbon_dioxide_material
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================   ==========================================================================
+
+Parent                                                                                                               Summary
+
+===============================================   ==========================================================================
+:ref:`gas_mixture <pre_processing_gas_mixture>`   Material names for components of gas phase used by hydrocarbon fuel model.
+
+===============================================   ==========================================================================
+

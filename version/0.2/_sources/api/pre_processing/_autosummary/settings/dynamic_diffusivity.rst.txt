@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_dynamic_diffusivity:
+
+dynamic_diffusivity
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.dynamic_diffusivity.dynamic_diffusivity
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================================   ====================================
+
+Parent                                                                                                   Summary
+
+=========================================================================   ====================================
+:ref:`laminar_flame_thickness <pre_processing_laminar_flame_thickness_1>`   Defines the laminar flame thickness.
+
+=========================================================================   ====================================
+

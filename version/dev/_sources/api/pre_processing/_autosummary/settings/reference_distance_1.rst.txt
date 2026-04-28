@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_reference_distance_1:
+
+reference_distance
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.reference_distance_1.reference_distance
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================   ================================
+
+Attribute                                                                                Summary
+
+=============================================================   ================================
+:ref:`option <pre_processing_option_108>`                       The 'Reference Distance' option.
+
+:ref:`reference_distance <pre_processing_reference_distance>`    'Reference Distance' parameter.
+
+=============================================================   ================================
+
+.. rubric:: Included in:
+
+=======================================================   =============================
+
+Parent                                                                          Summary
+
+=======================================================   =============================
+:ref:`mesh_stiffness <pre_processing_mesh_stiffness_1>`   Defines mesh stiffness model.
+
+=======================================================   =============================
+

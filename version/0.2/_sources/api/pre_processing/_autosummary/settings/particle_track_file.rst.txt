@@ -1,0 +1,48 @@
+:orphan:
+
+.. _pre_processing_particle_track_file:
+
+particle_track_file
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.particle_track_file.particle_track_file
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================   ======================================
+
+Attribute                                                                                                Summary
+
+=======================================================================   ======================================
+:ref:`enabled <pre_processing_enabled_212>`                               Enable the PARTICLE TRACK FILE object.
+
+:ref:`option <pre_processing_option_424>`                                      The 'Particle Track File' option.
+
+:ref:`track_position_interval <pre_processing_track_position_interval>`     'Track Position Interval' parameter.
+
+:ref:`track_distance_spacing <pre_processing_track_distance_spacing>`        'Track Distance Spacing' parameter.
+
+:ref:`track_time_spacing <pre_processing_track_time_spacing>`                    'Track Time Spacing' parameter.
+
+:ref:`track_positions <pre_processing_track_positions>`                             'Track Positions' parameter.
+
+:ref:`track_printing_interval <pre_processing_track_printing_interval>`     'Track Printing Interval' parameter.
+
+:ref:`track_file_format <pre_processing_track_file_format>`                       'Track File Format' parameter.
+
+:ref:`keep_track_file <pre_processing_keep_track_file>`                             'Keep Track File' parameter.
+
+=======================================================================   ======================================
+
+.. rubric:: Included in:
+
+=====================================================   ==============================================================================
+
+Parent                                                                                                                         Summary
+
+=====================================================   ==============================================================================
+:ref:`output_control <pre_processing_output_control>`   Holds object definitions that control output from the solver during execution.
+
+=====================================================   ==============================================================================
+

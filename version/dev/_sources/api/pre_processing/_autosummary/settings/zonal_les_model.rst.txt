@@ -1,0 +1,48 @@
+:orphan:
+
+.. _pre_processing_zonal_les_model:
+
+zonal_les_model
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.zonal_les_model.zonal_les_model
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================================   ==============================================================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                                                              Summary
+
+=============================================================================   ==============================================================================================================================================================================================================================================
+:ref:`enabled <pre_processing_enabled_75>`                                                                                                                                                                                                                                                  Enable the ZONAL LES MODEL object.
+
+:ref:`option <pre_processing_option_132>`                                                                                                                                                                                                                                                        The 'Zonal Les Model' option.
+
+:ref:`zone_marker <pre_processing_zone_marker>`                                                                                                                                                                                       Real function to mark the forcing region: values > 0.5 mean forcing On, otherwise - Off.
+
+:ref:`start_timestep_number <pre_processing_start_timestep_number>`                                                                                                                                                                                                                         'Start Timestep Number' parameter.
+
+:ref:`smagorinsky_model_constant <pre_processing_smagorinsky_model_constant>`                                                                                                                                                                                                          'Smagorinsky Model Constant' parameter.
+
+:ref:`hfg_length_scale_factor <pre_processing_hfg_length_scale_factor>`                                                                                                                                                                              Parameter of the harmonic flow generator of the turbulence forcing model.
+
+:ref:`hfg_time_scale_factor <pre_processing_hfg_time_scale_factor>`                                                                                                                                                                                  Parameter of the harmonic flow generator of the turbulence forcing model.
+
+:ref:`eddy_viscosity_ratio_limit <pre_processing_eddy_viscosity_ratio_limit>`   Used by turbulent dispersion model for particle tracking and by turbulence forcing model. Specify (Turb / Molecular) viscosity ratio limit, below which no turbulent tracking is performed, or no forcing of resolved turbulence is performed.
+
+=============================================================================   ==============================================================================================================================================================================================================================================
+
+.. rubric:: Included in:
+
+===========================================================   ===========================================================================
+
+Parent                                                                                                                            Summary
+
+===========================================================   ===========================================================================
+:ref:`turbulence_model <pre_processing_turbulence_model>`     Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+:ref:`turbulence_model <pre_processing_turbulence_model_1>`   Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+===========================================================   ===========================================================================
+

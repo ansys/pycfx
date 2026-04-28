@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_pressure_dependency:
+
+pressure_dependency
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.pressure_dependency.pressure_dependency
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================   ===============================
+
+Attribute                                                                               Summary
+
+=============================================================   ===============================
+:ref:`reference_pressure <pre_processing_reference_pressure>`   'Reference Pressure' parameter.
+
+:ref:`b0_coefficient <pre_processing_b0_coefficient>`                     B0 model coefficient.
+
+:ref:`b1_coefficient <pre_processing_b1_coefficient>`                     B1 model coefficient.
+
+:ref:`b2_coefficient <pre_processing_b2_coefficient>`                     B2 model coefficient.
+
+=============================================================   ===============================
+
+.. rubric:: Included in:
+
+===========================================================================   ===================================================================================
+
+Parent                                                                                                                                                    Summary
+
+===========================================================================   ===================================================================================
+:ref:`laminar_burning_velocity <pre_processing_laminar_burning_velocity_1>`   Defines the laminar burning velocity for premixed or partially premixed combustion.
+
+===========================================================================   ===================================================================================
+

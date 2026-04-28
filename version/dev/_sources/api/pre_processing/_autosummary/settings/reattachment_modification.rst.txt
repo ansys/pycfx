@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_reattachment_modification:
+
+reattachment_modification
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.reattachment_modification.reattachment_modification
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================   ==============================================================================
+
+Attribute                                                                                                                        Summary
+
+=======================================================   ==============================================================================
+:ref:`enabled <pre_processing_enabled_73>`                                                  Enable the REATTACHMENT MODIFICATION object.
+
+:ref:`option <pre_processing_option_130>`                                                        The 'Reattachment Modification' option.
+
+:ref:`clr_coefficient <pre_processing_clr_coefficient>`   Coefficient for Low-Reynolds correction for the SST reattachment modification.
+
+=======================================================   ==============================================================================
+
+.. rubric:: Included in:
+
+===========================================================   ===========================================================================
+
+Parent                                                                                                                            Summary
+
+===========================================================   ===========================================================================
+:ref:`turbulence_model <pre_processing_turbulence_model>`     Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+:ref:`turbulence_model <pre_processing_turbulence_model_1>`   Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+===========================================================   ===========================================================================
+

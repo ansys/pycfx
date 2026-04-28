@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_23:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_23.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ==============================================
+
+Parent                                                                                               Summary
+
+===========================================================   ==============================================
+:ref:`refractive_index <pre_processing_refractive_index_1>`   Specifies how the refractive index calculated.
+
+===========================================================   ==============================================
+

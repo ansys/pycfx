@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_kernel_radius:
+
+kernel_radius
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.kernel_radius.kernel_radius
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================   ==================================
+
+Parent                                                                             Summary
+
+=====================================================   ==================================
+:ref:`spark_ignition <pre_processing_spark_ignition>`   Controls the spark ignition model.
+
+=====================================================   ==================================
+

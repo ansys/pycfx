@@ -1,0 +1,70 @@
+:orphan:
+
+.. _pre_processing_fluid_child:
+
+fluid_child
+===========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fluid_child.fluid_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================================================   ============================================================================================
+
+Attribute                                                                                                                                                                            Summary
+
+=============================================================================================   ============================================================================================
+:ref:`heat_transfer_model <pre_processing_heat_transfer_model_1>`                                                                  Specifies the Heat Transfer Model to be used in a domain.
+
+:ref:`fluid_buoyancy_model <pre_processing_fluid_buoyancy_model>`                                       Sets the buoyancy model to be used for a specific fluid in a multiphase calculation.
+
+:ref:`turbulence_model <pre_processing_turbulence_model_1>`                                                      Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+:ref:`turbulent_wall_functions <pre_processing_turbulent_wall_functions>`                                                              Sets the turbulent near-wall treatment at a boundary.
+
+:ref:`turbulent_heat_transfer <pre_processing_turbulent_heat_transfer>`                                      Singleton holding model interactions among Turbulence and Heat Transfer Models.
+
+:ref:`turbulent_volume_fraction_transfer <pre_processing_turbulent_volume_fraction_transfer>`                Singleton holding model interactions among Turbulence and Heat Transfer Models.
+
+:ref:`combustion_model <pre_processing_combustion_model_1>`                                                                                         Defines the combustion model to be used.
+
+:ref:`kinetic_theory_model <pre_processing_kinetic_theory_model>`                                                                      Specifies kinetic theory model for a dispersed solid.
+
+:ref:`solid_pressure_model <pre_processing_solid_pressure_model>`                                          Sets the model to be used for solids pressure forces in a multiphase calculation.
+
+:ref:`wall_condensation_model <pre_processing_wall_condensation_model>`                                                    Specifies the wall condensation model for multi-component vapour.
+
+:ref:`component <pre_processing_component_1>`                                                                                                             A container for Component objects.
+
+:ref:`thermal_radiation_model <pre_processing_thermal_radiation_model_1>`                                                      Defines the Thermal Radiation model to be used in the domain.
+
+:ref:`solid_shear_viscosity <pre_processing_solid_shear_viscosity_1>`                                      Sets the model to be used for solids shear viscosity in a multiphase calculation.
+
+:ref:`solid_bulk_viscosity <pre_processing_solid_bulk_viscosity_1>`                                         Sets the model to be used for solids bulk viscosity in a multiphase calculation.
+
+:ref:`erosion_model <pre_processing_erosion_model>`                                                                                                                  Particle erosion model.
+
+:ref:`particle_rough_wall_model <pre_processing_particle_rough_wall_model>`                                                                        Particle rough wall (virtual wall) model.
+
+:ref:`additional_variable <pre_processing_additional_variable_2>`                                                                               A container for Additional Variable objects.
+
+:ref:`dilatational_stress <pre_processing_dilatational_stress>`                                 Sets the treatment to be used to account for dilatational contributions of viscous stresses.
+
+:ref:`nucleation_model <pre_processing_nucleation_model>`                                                                                 Specifies the nucleation model for small droplets.
+
+:ref:`particle_additional_variable_model <pre_processing_particle_additional_variable_model>`                                              Specifies the particle additional variable model.
+
+=============================================================================================   ============================================================================================
+
+.. rubric:: Included in:
+
+===================================   ==============================
+
+Parent                                                       Summary
+
+===================================   ==============================
+:ref:`fluid <pre_processing_fluid>`   A container for Fluid objects.
+
+===================================   ==============================
+

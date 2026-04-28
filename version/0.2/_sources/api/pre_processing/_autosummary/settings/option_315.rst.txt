@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_315:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_315.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================   ==================================================================
+
+Parent                                                                                                             Summary
+
+=====================================================   ==================================================================
+:ref:`auxiliary_axis <pre_processing_auxiliary_axis>`   Defines the second reference direction used for Injection Regions.
+
+=====================================================   ==================================================================
+

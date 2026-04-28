@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_streamline_maximum_segments:
+
+streamline_maximum_segments
+===========================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.streamline_maximum_segments.streamline_maximum_segments
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==========================================================   ==================================
+
+Parent                                                                                  Summary
+
+==========================================================   ==================================
+:ref:`streamline_child <post_processing_streamline_child>`   'child_object_type' of streamline.
+
+==========================================================   ==================================
+

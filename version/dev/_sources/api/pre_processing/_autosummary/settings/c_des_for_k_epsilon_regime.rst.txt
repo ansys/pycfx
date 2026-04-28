@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_c_des_for_k_epsilon_regime:
+
+c_des_for_k_epsilon_regime
+==========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.c_des_for_k_epsilon_regime.c_des_for_k_epsilon_regime
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   ================================================================
+
+Parent                                                                                                               Summary
+
+=========================================================   ================================================================
+:ref:`des_coefficients <pre_processing_des_coefficients>`   Controls blending between LES and RANS for DES turbulence model.
+
+=========================================================   ================================================================
+

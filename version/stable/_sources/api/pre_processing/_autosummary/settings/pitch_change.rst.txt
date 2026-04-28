@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_pitch_change:
+
+pitch_change
+============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.pitch_change.pitch_change
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================   =======================================================================================================
+
+Attribute                                                                                                                                                     Summary
+
+===========================================================   =======================================================================================================
+:ref:`option <pre_processing_option_352>`                                                                                                  The 'Pitch Change' option.
+
+:ref:`pitch_angle_side1 <pre_processing_pitch_angle_side1>`                                                             Pitch angle on first side of a GGI interface.
+
+:ref:`pitch_angle_side2 <pre_processing_pitch_angle_side2>`                                                            Pitch angle on second side of a GGI interface.
+
+:ref:`pitch_ratio <pre_processing_pitch_ratio>`                                      Gives the fractional change in area from side 1 to side 2 of a domain interface.
+
+:ref:`axis_definition <pre_processing_axis_definition>`       Defines the axis for a cylindrical coordinate system or variables defined using cylindrical components.
+
+===========================================================   =======================================================================================================
+
+.. rubric:: Included in:
+
+=========================================================   ========================================================
+
+Parent                                                                                                       Summary
+
+=========================================================   ========================================================
+:ref:`interface_models <pre_processing_interface_models>`   Holds the definition of models specific to an interface.
+
+=========================================================   ========================================================
+

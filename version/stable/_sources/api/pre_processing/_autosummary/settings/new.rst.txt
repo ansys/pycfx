@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_new:
+
+new
+===
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.new.new
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================   ============================
+
+Parent                                                             Summary
+
+===========================================   ============================
+:ref:`duplicate <pre_processing_duplicate>`   Create a copy of the object.
+
+===========================================   ============================
+

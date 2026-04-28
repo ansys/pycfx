@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_monitor_point:
+
+monitor_point
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.monitor_point.monitor_point
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`monitor_point_child <pre_processing_monitor_point_child>`
+
+
+.. rubric:: Included in:
+
+=======================================================   =========================
+
+Parent                                                                      Summary
+
+=======================================================   =========================
+:ref:`monitor_objects <pre_processing_monitor_objects>`   'MONITOR OBJECTS' object.
+
+=======================================================   =========================
+

@@ -1,0 +1,12 @@
+[
+  {
+    "name": "dev",
+    "version": "dev",
+    "url": "https://cfx.docs.pyansys.com/version/dev/"
+  },
+  {
+    "name": "0.2 (stable)",
+    "version": "0.2",
+    "url": "https://cfx.docs.pyansys.com/version/0.2/"
+  }
+]

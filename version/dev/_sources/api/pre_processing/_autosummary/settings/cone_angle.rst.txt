@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_cone_angle:
+
+cone_angle
+==========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.cone_angle.cone_angle
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================   ============================================
+
+Parent                                                                                                 Summary
+
+===============================================================   ============================================
+:ref:`cone_angle <pre_processing_cone_angle_1>`                   Defines the initial droplet injection angle.
+
+:ref:`injection_velocity <pre_processing_injection_velocity>`                     'INJECTION VELOCITY' object.
+
+:ref:`injection_velocity <pre_processing_injection_velocity_1>`                   'INJECTION VELOCITY' object.
+
+===============================================================   ============================================
+

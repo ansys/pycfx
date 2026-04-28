@@ -1,0 +1,44 @@
+:orphan:
+
+.. _pre_processing_particle_control:
+
+particle_control
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.particle_control.particle_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================================   =============================================================================
+
+Attribute                                                                                                                                                           Summary
+
+===========================================================================================   =============================================================================
+:ref:`particle_integration <pre_processing_particle_integration>`                                              Sets details of the particle tracking integration algorithm.
+
+:ref:`particle_under_relaxation_factors <pre_processing_particle_under_relaxation_factors>`                     Sets under relaxation factors on particle tracking sources.
+
+:ref:`particle_ignition <pre_processing_particle_ignition>`                                                                                     'PARTICLE IGNITION' object.
+
+:ref:`particle_source_smoothing <pre_processing_particle_source_smoothing>`                                                             'PARTICLE SOURCE SMOOTHING' object.
+
+:ref:`particle_source_control <pre_processing_particle_source_control>`                       Set details of the particle source term bounding and robustness improvements.
+
+:ref:`particle_termination_control <pre_processing_particle_termination_control>`                              Sets details of the particle tracking integration algorithm.
+
+:ref:`vertex_variable_smoothing <pre_processing_vertex_variable_smoothing>`                                                             'VERTEX VARIABLE SMOOTHING' object.
+
+===========================================================================================   =============================================================================
+
+.. rubric:: Included in:
+
+=======================================================   ====================================================================================
+
+Parent                                                                                                                                 Summary
+
+=======================================================   ====================================================================================
+:ref:`solver_control <pre_processing_solver_control_1>`   Holds all objects that control discretization and execution of the solution process.
+
+=======================================================   ====================================================================================
+

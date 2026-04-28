@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_damping_coefficient:
+
+damping_coefficient
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.damping_coefficient.damping_coefficient
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   ===========================
+
+Parent                                                                          Summary
+
+=========================================================   ===========================
+:ref:`particle_breakup <pre_processing_particle_breakup>`   Defines the breakup method.
+
+=========================================================   ===========================
+

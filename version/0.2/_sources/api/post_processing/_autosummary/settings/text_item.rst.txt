@@ -1,0 +1,28 @@
+:orphan:
+
+.. _post_processing_text_item:
+
+text_item
+=========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.text_item.text_item
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`text_item_child <post_processing_text_item_child>`
+
+
+.. rubric:: Included in:
+
+==============================================   =========================================
+
+Parent                                                                             Summary
+
+==============================================   =========================================
+:ref:`results <post_processing_results>`         Encapsulates a CFX post-processing setup.
+
+:ref:`text_child <post_processing_text_child>`                'child_object_type' of text.
+
+==============================================   =========================================
+

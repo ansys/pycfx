@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_fluid2_interphase_heat_transfer:
+
+fluid2_interphase_heat_transfer
+===============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fluid2_interphase_heat_transfer.fluid2_interphase_heat_transfer
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================================   ====================================================
+
+Attribute                                                                                                                                Summary
+
+=========================================================================================   ====================================================
+:ref:`option <pre_processing_option_196>`                                                          The 'Fluid2 Interphase Heat Transfer' option.
+
+:ref:`fluid2_nusselt_number <pre_processing_fluid2_nusselt_number>`                         Fluid 2 Nusselt Number for interfluid heat transfer.
+
+:ref:`fluid2_heat_transfer_coefficient <pre_processing_fluid2_heat_transfer_coefficient>`                     Fluid 2 heat transfer coefficient.
+
+=========================================================================================   ====================================================
+
+.. rubric:: Included in:
+
+=========================================================================   ===================================================
+
+Parent                                                                                                                  Summary
+
+=========================================================================   ===================================================
+:ref:`interphase_heat_transfer <pre_processing_interphase_heat_transfer>`   Specifies heat transfer model between a fluid pair.
+
+=========================================================================   ===================================================
+

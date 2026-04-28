@@ -1,0 +1,51 @@
+:orphan:
+
+.. _post_processing_colour_map_child:
+
+colour_map_child
+================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.colour_map_child.colour_map_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+========================================================================   ==================================================================================================================
+
+Attribute                                                                                                                                                                             Summary
+
+========================================================================   ==================================================================================================================
+:ref:`colour_map_colours <post_processing_colour_map_colours>`             List of sets containing interpolation value, red, green, blue, and alpha values in real that make up a colour map.
+
+:ref:`colour_map_divisions <post_processing_colour_map_divisions>`                                       When Colour Map Type is Zebra, this value determines the number of gradient stripes.
+
+:ref:`colour_map_storage_type <post_processing_colour_map_storage_type>`                                                      This determines the type of storage this colour map comes from.
+
+:ref:`colour_map_type <post_processing_colour_map_type>`                                                                                     Sets the type of colour map (Gradient or Zebra).
+
+========================================================================   ==================================================================================================================
+
+.. rubric:: Methods
+
+============================================   ========================================
+
+Method                                                                          Summary
+
+============================================   ========================================
+:ref:`suspend <post_processing_suspend>`       Suspend immediate update for the object.
+
+:ref:`unsuspend <post_processing_unsuspend>`   Restore immediate update for the object.
+
+============================================   ========================================
+
+.. rubric:: Included in:
+
+================================================   ===================
+
+Parent                                                         Summary
+
+================================================   ===================
+:ref:`colour_map <post_processing_colour_map_1>`   'colour_map' child.
+
+================================================   ===================
+

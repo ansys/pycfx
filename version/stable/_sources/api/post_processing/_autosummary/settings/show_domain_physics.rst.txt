@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_show_domain_physics:
+
+show_domain_physics
+===================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.show_domain_physics.show_domain_physics
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+========================================================================   ================================
+
+Parent                                                                                              Summary
+
+========================================================================   ================================
+:ref:`physics_summary_options <post_processing_physics_summary_options>`   'physics_summary_options' child.
+
+========================================================================   ================================
+

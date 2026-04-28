@@ -1,0 +1,54 @@
+:orphan:
+
+.. _pre_processing_injection_trajectory:
+
+injection_trajectory
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.injection_trajectory.injection_trajectory
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================================   ========================================
+
+Attribute                                                                                                          Summary
+
+===============================================================================   ========================================
+:ref:`option <pre_processing_option_317>`                                               The 'Injection Trajectory' option.
+
+:ref:`relative_reference_y <pre_processing_relative_reference_y>`                        'Relative Reference Y' parameter.
+
+:ref:`relative_reference_z <pre_processing_relative_reference_z>`                        'Relative Reference Z' parameter.
+
+:ref:`relative_offset_y <pre_processing_relative_offset_y>`                                 'Relative Offset Y' parameter.
+
+:ref:`effective_elevation_angle <pre_processing_effective_elevation_angle>`         'Effective Elevation Angle' parameter.
+
+:ref:`effective_azimuthal_angle <pre_processing_effective_azimuthal_angle>`         'Effective Azimuthal Angle' parameter.
+
+:ref:`a_coefficient_y <pre_processing_a_coefficient_y>`                                       'A Coefficient Y' parameter.
+
+:ref:`b_coefficient_y <pre_processing_b_coefficient_y>`                                       'B Coefficient Y' parameter.
+
+:ref:`a_coefficient_z <pre_processing_a_coefficient_z>`                                       'A Coefficient Z' parameter.
+
+:ref:`b_coefficient_z <pre_processing_b_coefficient_z>`                                       'B Coefficient Z' parameter.
+
+:ref:`number_of_trajectory_points <pre_processing_number_of_trajectory_points>`   'Number of Trajectory Points' parameter.
+
+:ref:`minimum_elevation_angle <pre_processing_minimum_elevation_angle>`               'Minimum Elevation Angle' parameter.
+
+===============================================================================   ========================================
+
+.. rubric:: Included in:
+
+=====================================================================   ================================
+
+Parent                                                                                           Summary
+
+=====================================================================   ================================
+:ref:`injection_distribution <pre_processing_injection_distribution>`   'INJECTION DISTRIBUTION' object.
+
+=====================================================================   ================================
+

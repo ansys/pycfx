@@ -1,0 +1,52 @@
+:orphan:
+
+.. _pre_processing_mixture:
+
+mixture
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.mixture.mixture
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================================================   =======================================================
+
+Attribute                                                                                                                                         Summary
+
+===============================================================================================   =======================================================
+:ref:`option <pre_processing_option_290>`                                                                                           The 'Mixture' option.
+
+:ref:`mixture_fraction <pre_processing_mixture_fraction>`                                                                   'Mixture Fraction' parameter.
+
+:ref:`mixture_fraction_variance <pre_processing_mixture_fraction_variance>`                                        'Mixture Fraction Variance' parameter.
+
+:ref:`equivalence_ratio <pre_processing_equivalence_ratio>`                                                                'Equivalence Ratio' parameter.
+
+:ref:`fresh_material_equivalence_ratio <pre_processing_fresh_material_equivalence_ratio>`                   'Fresh Material Equivalence Ratio' parameter.
+
+:ref:`residual_mass_fraction <pre_processing_residual_mass_fraction>`                             Residual mass fraction for Residual Material/EGR model.
+
+:ref:`residual_material_equivalence_ratio <pre_processing_residual_material_equivalence_ratio>`          'Residual Material Equivalence Ratio' parameter.
+
+:ref:`fuel_tracer <pre_processing_fuel_tracer>`                                                                                  'Fuel Tracer' parameter.
+
+:ref:`fresh_material_mixture_fraction <pre_processing_fresh_material_mixture_fraction>`                      'Fresh Material Mixture Fraction' parameter.
+
+:ref:`residual_material_mixture_fraction <pre_processing_residual_material_mixture_fraction>`             'Residual Material Mixture Fraction' parameter.
+
+===============================================================================================   =======================================================
+
+.. rubric:: Included in:
+
+=================================================================   =============================================================
+
+Parent                                                                                                                    Summary
+
+=================================================================   =============================================================
+:ref:`boundary_conditions <pre_processing_boundary_conditions>`     Specifies boundary conditions for all equations being solved.
+
+:ref:`boundary_conditions <pre_processing_boundary_conditions_2>`   Specifies boundary conditions for all equations being solved.
+
+=================================================================   =============================================================
+

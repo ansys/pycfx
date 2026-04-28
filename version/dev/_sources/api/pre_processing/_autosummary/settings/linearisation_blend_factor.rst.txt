@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_linearisation_blend_factor:
+
+linearisation_blend_factor
+==========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.linearisation_blend_factor.linearisation_blend_factor
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================   ========================================
+
+Parent                                                                             Summary
+
+===============================================   ========================================
+:ref:`drag_force <pre_processing_drag_force_1>`   Specifies drag force between two phases.
+
+===============================================   ========================================
+

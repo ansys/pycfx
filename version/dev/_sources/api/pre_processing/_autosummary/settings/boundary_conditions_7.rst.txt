@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_boundary_conditions_7:
+
+boundary_conditions
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.boundary_conditions_7.boundary_conditions
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================   =================================================
+
+Attribute                                                                                                     Summary
+
+=================================================================   =================================================
+:ref:`heat_transfer <pre_processing_heat_transfer_3>`               Specifies heat transfer conditions at a boundary.
+
+:ref:`electric_field <pre_processing_electric_field>`                                        'ELECTRIC FIELD' object.
+
+:ref:`magnetic_field <pre_processing_magnetic_field>`                                        'MAGNETIC FIELD' object.
+
+:ref:`additional_variable <pre_processing_additional_variable_6>`        A container for Additional Variable objects.
+
+=================================================================   =================================================
+
+.. rubric:: Included in:
+
+=================================================   =============================
+
+Parent                                                                    Summary
+
+=================================================   =============================
+:ref:`solid_child <pre_processing_solid_child_1>`   'child_object_type' of solid.
+
+=================================================   =============================
+

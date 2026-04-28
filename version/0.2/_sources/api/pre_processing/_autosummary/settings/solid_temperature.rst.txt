@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_solid_temperature:
+
+solid_temperature
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.solid_temperature.solid_temperature
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================   =========================================================
+
+Parent                                                                                                                Summary
+
+=================================================================   =========================================================
+:ref:`heat_transfer_model <pre_processing_heat_transfer_model_2>`   Specifies the Heat Transfer Model to be used in a domain.
+
+=================================================================   =========================================================
+

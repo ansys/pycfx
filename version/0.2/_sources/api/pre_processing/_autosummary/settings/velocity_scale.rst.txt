@@ -1,0 +1,29 @@
+:orphan:
+
+.. _pre_processing_velocity_scale:
+
+velocity_scale
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.velocity_scale.velocity_scale
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================================   ===========================================================================
+
+Parent                                                                                                                                                        Summary
+
+=======================================================================================   ===========================================================================
+:ref:`turbulence_model <pre_processing_turbulence_model>`                                 Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+:ref:`turbulence_model <pre_processing_turbulence_model_1>`                               Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+:ref:`cartesian_velocity_components <pre_processing_cartesian_velocity_components>`                   Defines the initialization of velocity by Cartesian components.
+
+:ref:`cylindrical_velocity_components <pre_processing_cylindrical_velocity_components>`             Defines the initialization of velocity by Cylindrical components.
+
+:ref:`cartesian_velocity_components <pre_processing_cartesian_velocity_components_1>`                 Defines the initialization of velocity by Cartesian components.
+
+=======================================================================================   ===========================================================================
+

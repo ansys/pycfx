@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_reference_material:
+
+reference_material
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.reference_material.reference_material
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================================   ========================================================
+
+Parent                                                                                                                               Summary
+
+=================================================================================   ========================================================
+:ref:`heat_release <pre_processing_heat_release>`                                   Holds heat release information for multiphase reactions.
+
+:ref:`particle_diameter_change <pre_processing_particle_diameter_change>`                              Defines the particle diameter change.
+
+:ref:`interphase_thermal_radiation <pre_processing_interphase_thermal_radiation>`          Specifies radiative heat transfer between fluids.
+
+=================================================================================   ========================================================
+

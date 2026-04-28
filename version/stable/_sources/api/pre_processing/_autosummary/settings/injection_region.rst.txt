@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_injection_region:
+
+injection_region
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.injection_region.injection_region
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`injection_region_child <pre_processing_injection_region_child>`
+
+
+.. rubric:: Included in:
+
+=================================================   ==============================
+
+Parent                                                                     Summary
+
+=================================================   ==============================
+:ref:`domain_child <pre_processing_domain_child>`   'child_object_type' of domain.
+
+=================================================   ==============================
+

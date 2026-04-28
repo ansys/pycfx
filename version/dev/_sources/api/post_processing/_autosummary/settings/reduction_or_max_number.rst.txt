@@ -1,0 +1,29 @@
+:orphan:
+
+.. _post_processing_reduction_or_max_number:
+
+reduction_or_max_number
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.reduction_or_max_number.reduction_or_max_number
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==============================================================================   ============================================
+
+Parent                                                                                                                Summary
+
+==============================================================================   ============================================
+:ref:`streamline_child <post_processing_streamline_child>`                                 'child_object_type' of streamline.
+
+:ref:`turbo_line_child <post_processing_turbo_line_child>`                                 'child_object_type' of turbo_line.
+
+:ref:`point_cloud_child <post_processing_point_cloud_child>`                              'child_object_type' of point_cloud.
+
+:ref:`internal_point_cloud_child <post_processing_internal_point_cloud_child>`   'child_object_type' of internal_point_cloud.
+
+:ref:`internal_turbo_line_child <post_processing_internal_turbo_line_child>`      'child_object_type' of internal_turbo_line.
+
+==============================================================================   ============================================
+

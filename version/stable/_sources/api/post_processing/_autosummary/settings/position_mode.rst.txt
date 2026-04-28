@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_position_mode:
+
+position_mode
+=============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.position_mode.position_mode
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==============================================   ============================
+
+Parent                                                                Summary
+
+==============================================   ============================
+:ref:`text_child <post_processing_text_child>`   'child_object_type' of text.
+
+==============================================   ============================
+

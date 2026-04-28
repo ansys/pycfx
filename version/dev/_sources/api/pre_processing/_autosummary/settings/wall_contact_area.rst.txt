@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_wall_contact_area:
+
+wall_contact_area
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.wall_contact_area.wall_contact_area
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================   ===========================================
+
+Attribute                                                                                 Summary
+
+===================================================   ===========================================
+:ref:`option <pre_processing_option_299>`                         The 'Wall Contact Area' option.
+
+:ref:`area_fraction <pre_processing_area_fraction>`   Contact area fraction of a phase at a wall.
+
+===================================================   ===========================================
+
+.. rubric:: Included in:
+
+=================================================================   =============================================================
+
+Parent                                                                                                                    Summary
+
+=================================================================   =============================================================
+:ref:`boundary_conditions <pre_processing_boundary_conditions_2>`   Specifies boundary conditions for all equations being solved.
+
+:ref:`boundary_conditions <pre_processing_boundary_conditions_6>`   Specifies boundary conditions for all equations being solved.
+
+=================================================================   =============================================================
+

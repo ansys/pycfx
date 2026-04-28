@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_boundary_layer_liquid_temperature_1:
+
+boundary_layer_liquid_temperature
+=================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.boundary_layer_liquid_temperature_1.boundary_layer_liquid_temperature
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================================   =========================================================================================================
+
+Attribute                                                                                                                                                                                       Summary
+
+===========================================================================================   =========================================================================================================
+:ref:`enabled <pre_processing_enabled_122>`                                                                                                        Enable the BOUNDARY LAYER LIQUID TEMPERATURE object.
+
+:ref:`option <pre_processing_option_261>`                                                                                                               The 'Boundary Layer Liquid Temperature' option.
+
+:ref:`fixed_yplus_for_liquid_subcooling <pre_processing_fixed_yplus_for_liquid_subcooling>`                                                              'Fixed Yplus for Liquid Subcooling' parameter.
+
+:ref:`user_line_cloud <pre_processing_user_line_cloud_1>`                                                                                                                  'User Line Cloud' parameter.
+
+:ref:`boundary_layer_liquid_temperature <pre_processing_boundary_layer_liquid_temperature>`   Liquid temperature to be used for boundary layer dependent wall boiling model quantities, e.g. quenching.
+
+===========================================================================================   =========================================================================================================
+
+.. rubric:: Included in:
+
+===============================================================   =================================
+
+Parent                                                                                      Summary
+
+===============================================================   =================================
+:ref:`wall_boiling_model <pre_processing_wall_boiling_model_2>`   Specifies the wall boiling model.
+
+===============================================================   =================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_filter_condition:
+
+filter_condition
+================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.filter_condition.filter_condition
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+========================================================================================   =================================================
+
+Parent                                                                                                                               Summary
+
+========================================================================================   =================================================
+:ref:`variable_data_filter_rule_child <post_processing_variable_data_filter_rule_child>`   'child_object_type' of variable_data_filter_rule.
+
+========================================================================================   =================================================
+

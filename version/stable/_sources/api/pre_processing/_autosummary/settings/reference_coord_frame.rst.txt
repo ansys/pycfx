@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_reference_coord_frame:
+
+reference_coord_frame
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.reference_coord_frame.reference_coord_frame
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================   ========================================
+
+Parent                                                                                                   Summary
+
+=====================================================================   ========================================
+:ref:`function_child <pre_processing_function_child>`                           'child_object_type' of function.
+
+:ref:`coordinate_frame_child <pre_processing_coordinate_frame_child>`   'child_object_type' of coordinate_frame.
+
+=====================================================================   ========================================
+

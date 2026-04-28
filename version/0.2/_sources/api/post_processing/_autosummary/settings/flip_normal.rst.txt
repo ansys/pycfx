@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_flip_normal:
+
+flip_normal
+===========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.flip_normal.flip_normal
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==========================================================   ==================================
+
+Parent                                                                                  Summary
+
+==========================================================   ==================================
+:ref:`clip_plane_child <post_processing_clip_plane_child>`   'child_object_type' of clip_plane.
+
+==========================================================   ==================================
+

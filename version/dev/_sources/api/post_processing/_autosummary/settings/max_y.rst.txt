@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_max_y:
+
+max_y
+=====
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.max_y.max_y
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+================================================   =============================
+
+Parent                                                                   Summary
+
+================================================   =============================
+:ref:`chart_child <post_processing_chart_child>`   'child_object_type' of chart.
+
+================================================   =============================
+

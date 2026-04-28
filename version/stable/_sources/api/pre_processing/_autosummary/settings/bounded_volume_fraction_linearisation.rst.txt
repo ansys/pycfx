@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_bounded_volume_fraction_linearisation:
+
+bounded_volume_fraction_linearisation
+=====================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.bounded_volume_fraction_linearisation.bounded_volume_fraction_linearisation
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================   ======================================
+
+Parent                                                                               Summary
+
+===================================================   ======================================
+:ref:`mass_transfer <pre_processing_mass_transfer>`   Mass transfer models for a fluid pair.
+
+===================================================   ======================================
+

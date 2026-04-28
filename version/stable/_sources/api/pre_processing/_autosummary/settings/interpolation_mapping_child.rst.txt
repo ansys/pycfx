@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_interpolation_mapping_child:
+
+interpolation_mapping_child
+===========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.interpolation_mapping_child.interpolation_mapping_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================================   =============================================================================================
+
+Attribute                                                                                                                                                                   Summary
+
+===================================================================================   =============================================================================================
+:ref:`source_location <pre_processing_source_location>`                                                                                A locator contains a list of source domains.
+
+:ref:`target_location <pre_processing_target_location>`                                                                                              A locator for a target domain.
+
+:ref:`alignment_transformation_list <pre_processing_alignment_transformation_list>`                                                   Contains a list of alignment transformations.
+
+:ref:`replication_control <pre_processing_replication_control>`                       Defines how the replicated components are connected to the properly aligned source component.
+
+===================================================================================   =============================================================================================
+
+.. rubric:: Included in:
+
+===================================================================   ==============================================
+
+Parent                                                                                                       Summary
+
+===================================================================   ==============================================
+:ref:`interpolation_mapping <pre_processing_interpolation_mapping>`   A container for Interpolation Mapping objects.
+
+===================================================================   ==============================================
+

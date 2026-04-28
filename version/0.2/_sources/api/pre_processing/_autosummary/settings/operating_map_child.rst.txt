@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_operating_map_child:
+
+operating_map_child
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.operating_map_child.operating_map_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================   =======================
+
+Attribute                                                       Summary
+
+=============================================   =======================
+:ref:`x_variable <pre_processing_x_variable>`   'x Variable' parameter.
+
+:ref:`y_variable <pre_processing_y_variable>`   'y Variable' parameter.
+
+=============================================   =======================
+
+.. rubric:: Included in:
+
+===================================================   ======================================
+
+Parent                                                                               Summary
+
+===================================================   ======================================
+:ref:`operating_map <pre_processing_operating_map>`   A container for Operating Map objects.
+
+===================================================   ======================================
+

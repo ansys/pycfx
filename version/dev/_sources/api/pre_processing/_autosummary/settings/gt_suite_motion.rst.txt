@@ -1,0 +1,32 @@
+:orphan:
+
+.. _pre_processing_gt_suite_motion:
+
+gt_suite_motion
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.gt_suite_motion.gt_suite_motion
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================   =======================================================================================================
+
+Attribute                                                                                                                                                 Summary
+
+=======================================================   =======================================================================================================
+:ref:`axis_definition <pre_processing_axis_definition>`   Defines the axis for a cylindrical coordinate system or variables defined using cylindrical components.
+
+=======================================================   =======================================================================================================
+
+.. rubric:: Included in:
+
+=====================================================   ================================
+
+Parent                                                                           Summary
+
+=====================================================   ================================
+:ref:`function_child <pre_processing_function_child>`   'child_object_type' of function.
+
+=====================================================   ================================
+

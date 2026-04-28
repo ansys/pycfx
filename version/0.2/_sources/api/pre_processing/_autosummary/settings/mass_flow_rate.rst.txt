@@ -1,0 +1,33 @@
+:orphan:
+
+.. _pre_processing_mass_flow_rate:
+
+mass_flow_rate
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.mass_flow_rate.mass_flow_rate
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================================   =================================================================================================================================================================
+
+Parent                                                                                                                                                                                                                                Summary
+
+=========================================================================   =================================================================================================================================================================
+:ref:`particle_mass_flow_rate <pre_processing_particle_mass_flow_rate>`                                                                                                                  Defines the mass flow rate for a group of particles.
+
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum>`                                                                                                                          Specifies conditions on Mass and Momentum at a boundary.
+
+:ref:`mass_flow_excitation <pre_processing_mass_flow_excitation>`           Specifies mass flow excitation at a non-reflecting mass flow boundary condition. The direction is assumed to be the same as that of the specified mass flow rate.
+
+:ref:`velocity <pre_processing_velocity>`                                                                                                                                         Sets velocity part of mass and momentum boundary condition.
+
+:ref:`particle_mass_flow_rate <pre_processing_particle_mass_flow_rate_1>`                                                                                                                Defines the mass flow rate for a group of particles.
+
+:ref:`tube_pressure <pre_processing_tube_pressure_1>`                                                                                                                        Defines either boundary or initial conditions for tube pressure.
+
+:ref:`momentum_interface_model <pre_processing_momentum_interface_model>`                                                                                                                    Momentum transfer models for a domain interface.
+
+=========================================================================   =================================================================================================================================================================
+

@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_blending_control:
+
+blending_control
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.blending_control.blending_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+==========================================   ======================================================
+
+Attribute                                                                                   Summary
+
+==========================================   ======================================================
+:ref:`enabled <pre_processing_enabled_63>`                      Enable the BLENDING CONTROL object.
+
+:ref:`option <pre_processing_option_126>`                            The 'Blending Control' option.
+
+:ref:`blending <pre_processing_blending>`    Blending function controlling the calculation of Fmix.
+
+==========================================   ======================================================
+
+.. rubric:: Included in:
+
+===========================================================   ====================================================================
+
+Parent                                                                                                                     Summary
+
+===========================================================   ====================================================================
+:ref:`geko_coefficients <pre_processing_geko_coefficients>`   Provides auxiliary model coefficients for the GEKO turbulence model.
+
+===========================================================   ====================================================================
+

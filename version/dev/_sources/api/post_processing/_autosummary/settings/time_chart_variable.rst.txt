@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_time_chart_variable:
+
+time_chart_variable
+===================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.time_chart_variable.time_chart_variable
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==============================================================   ====================================
+
+Parent                                                                                        Summary
+
+==============================================================   ====================================
+:ref:`chart_series_child <post_processing_chart_series_child>`   'child_object_type' of chart_series.
+
+==============================================================   ====================================
+

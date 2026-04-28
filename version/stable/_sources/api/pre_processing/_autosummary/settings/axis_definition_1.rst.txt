@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_axis_definition_1:
+
+axis_definition
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.axis_definition_1.axis_definition
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================   ===========================================================================================
+
+Attribute                                                                                                                                           Summary
+
+=============================================================   ===========================================================================================
+:ref:`enabled <pre_processing_enabled_128>`                                                                              Enable the AXIS DEFINITION object.
+
+:ref:`option <pre_processing_option_1>`                                                                                       The 'Axis Definition' option.
+
+:ref:`rotation_axis <pre_processing_rotation_axis>`             Coordinate Frame Axis for rotating domains or cylindrical boundary condition specification.
+
+:ref:`rotation_axis_from <pre_processing_rotation_axis_from>`                                                   First <x,y,z> position for a rotation axis.
+
+:ref:`rotation_axis_to <pre_processing_rotation_axis_to>`                                                      Second <x,y,z> position for a rotation axis.
+
+=============================================================   ===========================================================================================
+
+.. rubric:: Included in:
+
+===============================================================   ==============================================================================
+
+Parent                                                                                                                                   Summary
+
+===============================================================   ==============================================================================
+:ref:`velocity_excitation <pre_processing_velocity_excitation>`   Specifies velocity excitation at a non-reflecting velocity boundary condition.
+
+===============================================================   ==============================================================================
+

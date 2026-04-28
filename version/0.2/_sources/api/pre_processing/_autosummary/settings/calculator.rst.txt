@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_calculator:
+
+calculator
+==========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.calculator.calculator
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================   ====================================
+
+Attribute                                                                                              Summary
+
+=======================================================================   ====================================
+:ref:`function <pre_processing_function_1>`                                              'Function' parameter.
+
+:ref:`argument_variables_list <pre_processing_argument_variables_list>`   'Argument Variables List' parameter.
+
+=======================================================================   ====================================
+
+.. rubric:: Included in:
+
+=====================================================================   ========================================
+
+Parent                                                                                                   Summary
+
+=====================================================================   ========================================
+:ref:`monitor_gt_suite_child <pre_processing_monitor_gt_suite_child>`   'child_object_type' of monitor_gt_suite.
+
+=====================================================================   ========================================
+

@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_external_torque_child:
+
+external_torque_child
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.external_torque_child.external_torque_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================   ======================================================================
+
+Attribute                                                                                                                                    Summary
+
+===========================================================================   ======================================================================
+:ref:`option <pre_processing_option_96>`                                                                               The 'External Torque' option.
+
+:ref:`torsional_spring_origin <pre_processing_torsional_spring_origin>`       Defines the origin of the torsional spring as applied to a rigid body.
+
+:ref:`torsional_spring_constant <pre_processing_torsional_spring_constant>`        Defines the torsional spring constant as applied to a rigid body.
+
+:ref:`torque <pre_processing_torque>`                                                      Defines a general explicit force applied to a rigid body.
+
+===========================================================================   ======================================================================
+
+.. rubric:: Included in:
+
+=======================================================   ========================================
+
+Parent                                                                                     Summary
+
+=======================================================   ========================================
+:ref:`external_torque <pre_processing_external_torque>`   A container for External Torque objects.
+
+=======================================================   ========================================
+

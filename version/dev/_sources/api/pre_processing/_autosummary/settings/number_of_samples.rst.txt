@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_number_of_samples:
+
+number_of_samples
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.number_of_samples.number_of_samples
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ===========================
+
+Parent                                                                            Summary
+
+===========================================================   ===========================
+:ref:`sample_definition <pre_processing_sample_definition>`   'SAMPLE DEFINITION' object.
+
+===========================================================   ===========================
+

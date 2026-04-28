@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_23:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_23.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================   ===========================================================
+
+Parent                                                                                                        Summary
+
+=======================================================   ===========================================================
+:ref:`third_body_term <pre_processing_third_body_term>`   Sets the Third Body (catalyst) term in a chemical reaction.
+
+=======================================================   ===========================================================
+

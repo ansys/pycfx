@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_438:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_438.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================================   ====================================
+
+Parent                                                                                                       Summary
+
+=============================================================================   ====================================
+:ref:`time_transformation_side_2 <pre_processing_time_transformation_side_2>`   'TIME TRANSFORMATION SIDE 2' object.
+
+=============================================================================   ====================================
+

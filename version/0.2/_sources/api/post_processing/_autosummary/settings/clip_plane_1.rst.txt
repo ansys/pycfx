@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_clip_plane_1:
+
+clip_plane
+==========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.clip_plane_1.clip_plane
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==============================================   ============================
+
+Parent                                                                Summary
+
+==============================================   ============================
+:ref:`view_child <post_processing_view_child>`   'child_object_type' of view.
+
+==============================================   ============================
+

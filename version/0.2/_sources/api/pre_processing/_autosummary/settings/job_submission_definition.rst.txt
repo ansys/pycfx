@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_job_submission_definition:
+
+job_submission_definition
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.job_submission_definition.job_submission_definition
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`job_submission_definition_child <pre_processing_job_submission_definition_child>`
+
+
+.. rubric:: Included in:
+
+===================================================================   =======================================
+
+Parent                                                                                                Summary
+
+===================================================================   =======================================
+:ref:`host_definition_child <pre_processing_host_definition_child>`   'child_object_type' of host_definition.
+
+===================================================================   =======================================
+

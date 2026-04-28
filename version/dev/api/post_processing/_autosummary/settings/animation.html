@@ -1,0 +1,946 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>animation &#8212; PyCFX</title>
+  
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/styles/ansys-sphinx-theme.css?v=a23b20f3" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sg_gallery.css?v=fd6457a4" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sg_gallery-binder.css?v=f4aeca0c" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sg_gallery-rendered-html.css?v=1277b6f3" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/styles/ansys-sphinx-theme.css?v=a23b20f3" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://www.nerdfonts.com/assets/css/webfont.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+
+  <!-- Include desired assets -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  
+
+  
+    <link href="../../../../_static/css/breadcrumbs.css" rel="stylesheet" />
+  
+    <script src="../../../../_static/documentation_options.js?v=c66a0e83"></script>
+    <script src="../../../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../../_static/sg-tags.js?v=d80f6fa4"></script>
+    <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+    <script src="../../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'api/post_processing/_autosummary/settings/animation';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://cfx.docs.pyansys.com/versions.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'dev';
+        DOCUMENTATION_OPTIONS.show_version_warning_banner =
+            false;
+        </script>
+    <link rel="icon" href="../../../../_static/ansys-favicon.png"/>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.3.dev0" />
+  <link rel="canonical" href="https://cfx.docs.pyansys.com/version/stable/api/post_processing/_autosummary/settings/animation.html" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../../_static/pyansys_logo_transparent_black.png" class="logo__image only-light" alt="PyCFX - Home"/>
+    <img src="../../../../_static/pyansys_logo_transparent_white.png" class="logo__image only-dark pst-js-only" alt="PyCFX - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../../index.html" title="PyCFX home">Home</a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../../getting_started/getting_started_contents.html">
+    Getting started
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../../user_guide/user_guide_contents.html">
+    User guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../../examples/index.html">
+    Examples
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../api_contents.html">
+    API reference
+  </a>
+</li>
+
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false"
+                aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../../../../contributing/contributing_contents.html">
+    Contribute
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../../../../changelog.html">
+    Release notes
+  </a>
+</li>
+
+                </ul>
+            </li>
+            
+  </ul>
+</nav>
+</div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+      
+        <div class="navbar-item">
+<div class="search-bar pst-js-only" id="search-bar">
+  <form class="bd-search d-flex align-items-center" action="../../../../search.html" method="get">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <input type="search" class="form-control" name="q" placeholder="Search the docs ..."
+      aria-label="Search the docs ..." autocomplete="off" autocorrect="off"
+      autocapitalize="off" spellcheck="false" />
+    <span class="search-button__kbd-shortcut">
+      <kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd>
+    </span>
+  </form>
+  
+  <div id="static-search-results" class="static-search-results" style="display:none;" tabindex="0"></div>
+  
+</div></div>
+      
+        <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-2"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-2"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-2"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-2">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/ansys/pycfx" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+  
+    
+<!--
+  Announcement Version Loader
+  Dynamically loads the announcement.html content into the announcement_msg div.
+-->
+<div id="announcement_msg" aria-live="polite"></div>
+<script>
+  // Fetch and inject the announcement HTML content
+  fetch("announcement.html")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`HTTP error: ${response.status} Announcement.html file not found, Please ignore this, if you are in dev/stable documentation`);
+      }
+      return response.text();
+    })
+    .then((text) => {
+      var msgDiv = document.getElementById("announcement_msg");
+      if (msgDiv) {
+        msgDiv.innerHTML = text;
+      }
+    })
+    .catch((error) => {
+      // Log only unexpected fetch errors
+      if (!(error.message && error.message.startsWith("HTTP error: 404"))) {
+        console.error(`Fetch problem: ${error.message} Announcement.html could not be loaded.`);
+      }
+    });
+</script>
+  
+
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../../index.html" title="PyCFX home">Home</a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../../getting_started/getting_started_contents.html">
+    Getting started
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../../user_guide/user_guide_contents.html">
+    User guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../../examples/index.html">
+    Examples
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../api_contents.html">
+    API reference
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../../contributing/contributing_contents.html">
+    Contribute
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../../changelog.html">
+    Release notes
+  </a>
+</li>
+
+  </ul>
+</nav>
+</div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<div class="search-bar pst-js-only" id="search-bar">
+  <form class="bd-search d-flex align-items-center" action="../../../../search.html" method="get">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <input type="search" class="form-control" name="q" placeholder="Search the docs ..."
+      aria-label="Search the docs ..." autocomplete="off" autocorrect="off"
+      autocapitalize="off" spellcheck="false" />
+    <span class="search-button__kbd-shortcut">
+      <kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd>
+    </span>
+  </form>
+  
+  <div id="static-search-results" class="static-search-results" style="display:none;" tabindex="0"></div>
+  
+</div></div>
+        
+          <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-3"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-3"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-3"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-3">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/ansys/pycfx" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+<nav aria-label="Breadcrumb">
+  <ul class="bd-breadcrumbs">
+         
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="https://docs.pyansys.com/" class="nav-link">PyAnsys</a>
+    </li>
+     
+    <li class="breadcrumb-item">
+      <a
+        href="../../../../index.html"
+        class="nav-link"
+        aria-label="Home"
+      >
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+      
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">animation</span></li>
+    
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="animation">
+<span id="post-processing-animation"></span><h1>animation<a class="headerlink" href="#animation" title="Link to this heading">#</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="ansys.cfx.core.generated.post_processing.settings_261.animation.animation">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">ansys.cfx.core.generated.post_processing.settings_261.animation.</span></span><span class="sig-name descname"><span class="pre">animation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.cfx.core.generated.post_processing.settings_261.animation.animation" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../../../common/flobject.html#ansys.cfx.core.common.flobject.Group" title="ansys.cfx.core.common.flobject.Group"><code class="xref py py-class docutils literal notranslate"><span class="pre">Group</span></code></a></p>
+<p>Defines a Keyframe animation sequence. A list of KEYFRAME objects indicate the states between which to interpolate.</p>
+</dd></dl>
+
+<p class="rubric">Attributes</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Attribute</p></th>
+<th class="head"><p>Summary</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="animate_camera.html#post-processing-animate-camera"><span class="std std-ref">animate_camera</span></a></p></td>
+<td><p>Indicates whether to animate the camera (flythrough) along with the other objects, or leave the camera at the current position.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="animation_bit_rate.html#post-processing-animation-bit-rate"><span class="std std-ref">animation_bit_rate</span></a></p></td>
+<td><p>The number of Bits per Second maximum rate.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="animation_filename.html#post-processing-animation-filename"><span class="std std-ref">animation_filename</span></a></p></td>
+<td><p>The name of the file to save this animation to.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="animation_frame_pattern.html#post-processing-animation-frame-pattern"><span class="std std-ref">animation_frame_pattern</span></a></p></td>
+<td><p>The MPEG frame type pattern. This must be a list of B, P and I characters. If any of the characters are not B, P or I, then the default value will be used. I (“intra-frame”) encoded frames are complete frames (i.e. contain all the data to completely render themselves). P (“predicted”) encoded frames use data from previous frames to render themselves. B (“bi-directional”) frames use data from previous and following frames to render themselves.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="animation_frame_rate.html#post-processing-animation-frame-rate"><span class="std std-ref">animation_frame_rate</span></a></p></td>
+<td><p>The Frame Rate at which to generate the Animation MPEG.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="animation_hardcopy_filename.html#post-processing-animation-hardcopy-filename"><span class="std std-ref">animation_hardcopy_filename</span></a></p></td>
+<td><p>The path of the file to save a hardcopy to.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="animation_name.html#post-processing-animation-name"><span class="std std-ref">animation_name</span></a></p></td>
+<td><p>The name of this animation.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="animation_quality.html#post-processing-animation-quality"><span class="std std-ref">animation_quality</span></a></p></td>
+<td><p>Modifies the Frame Pattern to one of three predefined values providing a variety of quality settings. If ‘Custom’ is selected, then users may enter their own pattern via the ‘Animation Frame Pattern’ parameter.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="animation_speed_factor.html#post-processing-animation-speed-factor"><span class="std std-ref">animation_speed_factor</span></a></p></td>
+<td><p>Specifies the amount of scaling that should apply to the speed of the animation. Whether the speed is reduced or increased depends on the Speed Adjustment Selection parameter.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="antialiasing.html#post-processing-antialiasing"><span class="std std-ref">antialiasing</span></a></p></td>
+<td><p>Enables the antialiasing of the graphics (smooth edges).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="drop_last_mpeg_frame.html#post-processing-drop-last-mpeg-frame"><span class="std std-ref">drop_last_mpeg_frame</span></a></p></td>
+<td><p>When creating looping animations, it may be desirable to drop the last frame in the animation from the generated MPEG since it may be the same as the first frame, and that would not create a smooth looping animation.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="frame_increment.html#post-processing-frame-increment"><span class="std std-ref">frame_increment</span></a></p></td>
+<td><p>DEPRECATED The number of frames to increment the frame counter by when incrementing to go to the next frame.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="hardcopy_tolerance_1.html#post-processing-hardcopy-tolerance-1"><span class="std std-ref">hardcopy_tolerance</span></a></p></td>
+<td><p>‘hardcopy_tolerance’ child.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="intermediate_file_format.html#post-processing-intermediate-file-format"><span class="std std-ref">intermediate_file_format</span></a></p></td>
+<td><p>The format in which to save intermediate files when generating animation MPEGs.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="keep_intermediate_files.html#post-processing-keep-intermediate-files"><span class="std std-ref">keep_intermediate_files</span></a></p></td>
+<td><p>Boolean indicating whether or not CFD-Post should delete the intermediate files after the MPEG generation is complete.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="keyframe_list.html#post-processing-keyframe-list"><span class="std std-ref">keyframe_list</span></a></p></td>
+<td><p>An ordered list of keyframe names to be used for this animation.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="local_output_directory.html#post-processing-local-output-directory"><span class="std std-ref">local_output_directory</span></a></p></td>
+<td><p>Animation frame images will be saved to this directory if ‘Output to User Directory’ parameter is set. This is the local (GUI) directory in remote server mode. ‘Output Directory’ contains the remote (engine) directory.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="looping.html#post-processing-looping"><span class="std std-ref">looping</span></a></p></td>
+<td><p>Indicates the type of looping to perform for the animation.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="looping_cycles.html#post-processing-looping-cycles"><span class="std std-ref">looping_cycles</span></a></p></td>
+<td><p>Indicates the number of cycles that the Animation loop should complete before stopping automatically. A value of -1 will repeat the cycles forever.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mpeg_height.html#post-processing-mpeg-height"><span class="std std-ref">mpeg_height</span></a></p></td>
+<td><p>The image height (used when MPEG Size is set to Use Screen Size).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mpeg_scale.html#post-processing-mpeg-scale"><span class="std std-ref">mpeg_scale</span></a></p></td>
+<td><p>The amount to scale the viewer image for the Animation MPEG output.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mpeg_size.html#post-processing-mpeg-size"><span class="std std-ref">mpeg_size</span></a></p></td>
+<td><p>Selects which size to create the MPEG.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mpeg_width.html#post-processing-mpeg-width"><span class="std std-ref">mpeg_width</span></a></p></td>
+<td><p>The image width (used when MPEG Size is set to Use Screen Size).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="output_directory.html#post-processing-output-directory"><span class="std std-ref">output_directory</span></a></p></td>
+<td><p>Animation frame images will be saved to this directory if ‘Output to User Directory’ parameter is set.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="output_to_user_directory.html#post-processing-output-to-user-directory"><span class="std std-ref">output_to_user_directory</span></a></p></td>
+<td><p>If set, the frame image files will be output to the directory specified in ‘Output Directory’ parameter. Otherwise, they will saved to TEMP directory.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="qanim_frames.html#post-processing-qanim-frames"><span class="std std-ref">qanim_frames</span></a></p></td>
+<td><p>The number of frames per Quick Animation loop.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="qanim_looping.html#post-processing-qanim-looping"><span class="std std-ref">qanim_looping</span></a></p></td>
+<td><p>Indicates the type of looping to perform for the quick animation.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="qanim_looping_cycles.html#post-processing-qanim-looping-cycles"><span class="std std-ref">qanim_looping_cycles</span></a></p></td>
+<td><p>Indicates the number of cycles that the quick animation loop should complete before stopping automatically. A value of -1 will repeat the cycles forever.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="qanim_mpeg_filename.html#post-processing-qanim-mpeg-filename"><span class="std std-ref">qanim_mpeg_filename</span></a></p></td>
+<td><p>The filename of the Quick Animation MPEG to create.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="qanim_object_list.html#post-processing-qanim-object-list"><span class="std std-ref">qanim_object_list</span></a></p></td>
+<td><p>The list of named objects to Quick Animate.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="qanim_override_symbol.html#post-processing-qanim-override-symbol"><span class="std std-ref">qanim_override_symbol</span></a></p></td>
+<td><p>Indicates whether to override the object Symbol settings when animating Streamlines or Particle Tracks.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="qanim_save_mpeg.html#post-processing-qanim-save-mpeg"><span class="std std-ref">qanim_save_mpeg</span></a></p></td>
+<td><p>Indicates whether to create an MPEG file out of the Quick Animation.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="qanim_symbol_size.html#post-processing-qanim-symbol-size"><span class="std std-ref">qanim_symbol_size</span></a></p></td>
+<td><p>A scaling factor for the Streamline or Particle Track Symbol size.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="qanim_symbol_spacing.html#post-processing-qanim-symbol-spacing"><span class="std std-ref">qanim_symbol_spacing</span></a></p></td>
+<td><p>The proportional spacing to provide.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="qanim_symbol_type.html#post-processing-qanim-symbol-type"><span class="std std-ref">qanim_symbol_type</span></a></p></td>
+<td><p>Name of streamline symbol to be used for plot.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="save_hardcopy.html#post-processing-save-hardcopy"><span class="std std-ref">save_hardcopy</span></a></p></td>
+<td><p>Boolean indicating whether to save the current animation to a file, as it progresses. A filename needs to be specified.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="speed_adjustment_selection.html#post-processing-speed-adjustment-selection"><span class="std std-ref">speed_adjustment_selection</span></a></p></td>
+<td><p>Indicates how to interpret the Animation Speed Factor.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="speed_scaling_method.html#post-processing-speed-scaling-method"><span class="std std-ref">speed_scaling_method</span></a></p></td>
+<td><p>The ‘Pad or Clip MPEG Frames’ option only applies the scaling to the generated MPEG frames, reducing the number of frames or reusing some of the frames to generate the MPEG animation. For this option, no visible changes will occur in Post as you run through the animation. The ‘Distribute Frames Smoothly’ option will scale the number of frames that exist between keyframes by the given factor. As the animation plays, you will see more or fewer frames in the animation. The scaling will occur whether or not an MPEG will be generated.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="timeanim_control_case.html#post-processing-timeanim-control-case"><span class="std std-ref">timeanim_control_case</span></a></p></td>
+<td><p>Case used to control the timestep animation available timesteps.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="timeanim_control_variable.html#post-processing-timeanim-control-variable"><span class="std std-ref">timeanim_control_variable</span></a></p></td>
+<td><p>Variable used to control timestep selection for animation.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="timeanim_crank_angle_interval.html#post-processing-timeanim-crank-angle-interval"><span class="std std-ref">timeanim_crank_angle_interval</span></a></p></td>
+<td><p>‘timeanim_crank_angle_interval’ child.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="timeanim_end_crank_angle.html#post-processing-timeanim-end-crank-angle"><span class="std std-ref">timeanim_end_crank_angle</span></a></p></td>
+<td><p>‘timeanim_end_crank_angle’ child.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="timeanim_end_time.html#post-processing-timeanim-end-time"><span class="std std-ref">timeanim_end_time</span></a></p></td>
+<td><p>‘timeanim_end_time’ child.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="timeanim_end_timestep.html#post-processing-timeanim-end-timestep"><span class="std std-ref">timeanim_end_timestep</span></a></p></td>
+<td><p>‘timeanim_end_timestep’ child.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="timeanim_frame_interval.html#post-processing-timeanim-frame-interval"><span class="std std-ref">timeanim_frame_interval</span></a></p></td>
+<td><p>‘timeanim_frame_interval’ child.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="timeanim_frame_rate.html#post-processing-timeanim-frame-rate"><span class="std std-ref">timeanim_frame_rate</span></a></p></td>
+<td><p>The desired Frame Rate at which to play animation.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="timeanim_frame_spacing.html#post-processing-timeanim-frame-spacing"><span class="std std-ref">timeanim_frame_spacing</span></a></p></td>
+<td><p>‘timeanim_frame_spacing’ child.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="timeanim_looping_cycles.html#post-processing-timeanim-looping-cycles"><span class="std std-ref">timeanim_looping_cycles</span></a></p></td>
+<td><p>Indicates the number of cycles that the Timestep Animation loop should complete before stopping automatically. A value of -1 will repeat the cycles forever.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="timeanim_mpeg_filename.html#post-processing-timeanim-mpeg-filename"><span class="std std-ref">timeanim_mpeg_filename</span></a></p></td>
+<td><p>The filename of the Timestep Animation MPEG to create.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="timeanim_number_of_frames.html#post-processing-timeanim-number-of-frames"><span class="std std-ref">timeanim_number_of_frames</span></a></p></td>
+<td><p>‘timeanim_number_of_frames’ child.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="timeanim_object_list.html#post-processing-timeanim-object-list"><span class="std std-ref">timeanim_object_list</span></a></p></td>
+<td><p>The list of named objects to Timestep Animate.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="timeanim_save_mpeg.html#post-processing-timeanim-save-mpeg"><span class="std std-ref">timeanim_save_mpeg</span></a></p></td>
+<td><p>Indicates whether to create an MPEG file out of the Timestep Animation.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="timeanim_specify_range.html#post-processing-timeanim-specify-range"><span class="std std-ref">timeanim_specify_range</span></a></p></td>
+<td><p>‘timeanim_specify_range’ child.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="timeanim_speed_control.html#post-processing-timeanim-speed-control"><span class="std std-ref">timeanim_speed_control</span></a></p></td>
+<td><p>Option to enable control of the timestep animation play speed.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="timeanim_speed_control_method.html#post-processing-timeanim-speed-control-method"><span class="std std-ref">timeanim_speed_control_method</span></a></p></td>
+<td><p>Method used to control time animation play speed.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="timeanim_start_crank_angle.html#post-processing-timeanim-start-crank-angle"><span class="std std-ref">timeanim_start_crank_angle</span></a></p></td>
+<td><p>‘timeanim_start_crank_angle’ child.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="timeanim_start_phase_position.html#post-processing-timeanim-start-phase-position"><span class="std std-ref">timeanim_start_phase_position</span></a></p></td>
+<td><p>‘timeanim_start_phase_position’ child.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="timeanim_start_time.html#post-processing-timeanim-start-time"><span class="std std-ref">timeanim_start_time</span></a></p></td>
+<td><p>‘timeanim_start_time’ child.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="timeanim_start_timestep.html#post-processing-timeanim-start-timestep"><span class="std std-ref">timeanim_start_timestep</span></a></p></td>
+<td><p>‘timeanim_start_timestep’ child.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="timeanim_time_interval.html#post-processing-timeanim-time-interval"><span class="std std-ref">timeanim_time_interval</span></a></p></td>
+<td><p>‘timeanim_time_interval’ child.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="timeanim_timestep_interval.html#post-processing-timeanim-timestep-interval"><span class="std std-ref">timeanim_timestep_interval</span></a></p></td>
+<td><p>‘timeanim_timestep_interval’ child.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="timeanim_total_play_time.html#post-processing-timeanim-total-play-time"><span class="std std-ref">timeanim_total_play_time</span></a></p></td>
+<td><p>The desired total time for playing an animation cycle.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="timeanim_viewer_animation.html#post-processing-timeanim-viewer-animation"><span class="std std-ref">timeanim_viewer_animation</span></a></p></td>
+<td><p>If true, execute timestep animation in the viewer.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="timeanim_viewer_animation_type.html#post-processing-timeanim-viewer-animation-type"><span class="std std-ref">timeanim_viewer_animation_type</span></a></p></td>
+<td><p>Control object selection for viewer animation.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="timestep_interpolation_method.html#post-processing-timestep-interpolation-method"><span class="std std-ref">timestep_interpolation_method</span></a></p></td>
+<td><p>Indicates what timestep information to interpolate if timesteps are to be animated.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="transparent_background.html#post-processing-transparent-background"><span class="std std-ref">transparent_background</span></a></p></td>
+<td><p>Toggles if hardcopy output is produced on a transparent or CFX viewer background.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="use_screen_mpeg_size.html#post-processing-use-screen-mpeg-size"><span class="std std-ref">use_screen_mpeg_size</span></a></p></td>
+<td><p>DEPRECATED When set to On, the current screen size is used as the MPEG size.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="variable_bit_rate.html#post-processing-variable-bit-rate"><span class="std std-ref">variable_bit_rate</span></a></p></td>
+<td><p>Boolean indicating whether to apply the specified Bit Rate. If this parameter is ‘false’, then a specified Bit Rate will not be sent to the encoder which will then use a variable bit rate.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="video_format.html#post-processing-video-format"><span class="std std-ref">video_format</span></a></p></td>
+<td><p>The video format to encode the animation in.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="white_background.html#post-processing-white-background"><span class="std std-ref">white_background</span></a></p></td>
+<td><p>Toggles if hardcopy output is produced on a white or CFX viewer background.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="rubric">Methods</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Method</p></th>
+<th class="head"><p>Summary</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="suspend.html#post-processing-suspend"><span class="std std-ref">suspend</span></a></p></td>
+<td><p>Suspend immediate update for the object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="unsuspend.html#post-processing-unsuspend"><span class="std std-ref">unsuspend</span></a></p></td>
+<td><p>Restore immediate update for the object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="rubric">Included in:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Parent</p></th>
+<th class="head"><p>Summary</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="results.html#post-processing-results"><span class="std std-ref">results</span></a></p></td>
+<td><p>Encapsulates a CFX post-processing setup.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ansys.cfx.core.generated.post_processing.settings_261.animation.animation"><code class="docutils literal notranslate"><span class="pre">animation</span></code></a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  <div role="note" aria-label="source link">
+    <ul class="this-page-menu">
+      <li><a href="../../../../_sources/api/post_processing/_autosummary/settings/animation.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+
+  <!-- Include desired assets -->
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.7/require.min.js"></script>
+
+<script>
+// Passing the search options to the search.js file
+const SEARCH_OPTIONS = JSON.parse('{"keys": ["title", "text", "objectID"], "limit": 10, "threshold": 0.2}');
+const SEARCH_FILE = "../../../../_static/search.json";
+const ADVANCE_SEARCH_PATH = "../../../../search.html";
+const EXTRA_SOURCES = JSON.parse('""');
+</script>
+
+
+<script src="../../../../_static/js/search.js"></script>
+
+  
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright (c) 2026 ANSYS, Inc. All rights reserved.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<!--
+  Theme Version Footer
+  Displays the Sphinx theme version and the last updated date.
+  Accessibility and semantic improvements included.
+-->
+<footer class="theme-version" aria-label="Theme version and last update">
+  <span>
+    
+      Built with the
+      <a href="https://sphinxdocs.ansys.com/version/stable/index.html" target="_blank" rel="noopener noreferrer">
+        Ansys Sphinx Theme
+      </a>
+      1.7.2.
+    
+  </span>
+  <br />
+  <span>Last updated on <time id="ast_build_date"></time></span>
+</footer>
+<script>
+  // Set the last updated date in a readable format
+  (function() {
+    var options = { day: "numeric", month: "long", year: "numeric" };
+    var ast_lastModifiedDate = new Date(document.lastModified);
+    var ast_build_date = ast_lastModifiedDate.toLocaleDateString("en-US", options);
+    var dateElem = document.getElementById("ast_build_date");
+    if (dateElem) {
+      dateElem.textContent = ast_build_date;
+    }
+  })();
+</script></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

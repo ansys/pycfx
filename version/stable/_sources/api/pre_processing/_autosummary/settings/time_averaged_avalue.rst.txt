@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_time_averaged_avalue:
+
+time_averaged_avalue
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.time_averaged_avalue.time_averaged_avalue
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================   ==============================================================================
+
+Parent                                                                                                                                   Summary
+
+===============================================================   ==============================================================================
+:ref:`velocity_excitation <pre_processing_velocity_excitation>`   Specifies velocity excitation at a non-reflecting velocity boundary condition.
+
+===============================================================   ==============================================================================
+

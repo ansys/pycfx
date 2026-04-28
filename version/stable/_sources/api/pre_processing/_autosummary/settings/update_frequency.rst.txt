@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_update_frequency:
+
+update_frequency
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.update_frequency.update_frequency
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================================================   =======================================
+
+Parent                                                                                                                          Summary
+
+=============================================================================================   =======================================
+:ref:`rigid_body_solver_coupling_control <pre_processing_rigid_body_solver_coupling_control>`   Control the rigid body solver coupling.
+
+=============================================================================================   =======================================
+

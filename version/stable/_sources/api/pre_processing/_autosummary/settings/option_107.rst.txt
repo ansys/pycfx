@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_107:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_107.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   =============================================
+
+Parent                                                                                              Summary
+
+===========================================================   =============================================
+:ref:`reference_volume <pre_processing_reference_volume_1>`   Defines reference volume for stiffness model.
+
+===========================================================   =============================================
+

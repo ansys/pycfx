@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_60:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_60.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================   =====================================================================
+
+Parent                                                                                                                Summary
+
+=====================================================   =====================================================================
+:ref:`k_omega_regime <pre_processing_k_omega_regime>`   Controls Menter turbulence model coefficients for the k-Omega regime.
+
+=====================================================   =====================================================================
+

@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_option_306:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_306.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================   =============================================================
+
+Parent                                                                                                Summary
+
+=============================================   =============================================================
+:ref:`direction <pre_processing_direction>`     Defines the direction used for radiation boundary conditions.
+
+:ref:`direction <pre_processing_direction_1>`   Defines the direction used for radiation boundary conditions.
+
+=============================================   =============================================================
+

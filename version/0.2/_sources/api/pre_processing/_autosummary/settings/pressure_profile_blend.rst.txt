@@ -1,0 +1,29 @@
+:orphan:
+
+.. _pre_processing_pressure_profile_blend:
+
+pressure_profile_blend
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.pressure_profile_blend.pressure_profile_blend
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   =============================================================================================================================================================================================================================================================================================================================================================================================
+
+Parent                                                                                                                                                                                                                                                                                                                                                                                                                                                Summary
+
+=============================================================   =============================================================================================================================================================================================================================================================================================================================================================================================
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum>`                                                                                                                                                                                                                                                                                                                                          Specifies conditions on Mass and Momentum at a boundary.
+
+:ref:`mass_flow_update <pre_processing_mass_flow_update>`       Determines how the solver enforces the mass flow rate specified on an outflow boundary condition. Shift pressure updates the average pressure level on the boundary to give the required mass flow rate, Scale Mass Flows multiplies the solver computed mass flows by a factor to give the set value, and Constant Flux distributes the set value by area weighting over the boundary patch.
+
+:ref:`pressure_profile <pre_processing_pressure_profile>`                                                                                                                                                                                                                                                                                                                                              Specifies pressure profile information for outlet BCs.
+
+:ref:`pressure_averaging <pre_processing_pressure_averaging>`                                                                                                                                                                                                                                                                                                                                    Controls details of how pressure is averaged over an outlet.
+
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum_2>`                                                                                                                                                                                                                                                                                                                                        Specifies conditions on Mass and Momentum at a boundary.
+
+=============================================================   =============================================================================================================================================================================================================================================================================================================================================================================================
+

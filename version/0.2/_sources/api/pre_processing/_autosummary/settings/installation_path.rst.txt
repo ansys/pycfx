@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_installation_path:
+
+installation_path
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.installation_path.installation_path
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================   ======================================
+
+Parent                                                                                             Summary
+
+=================================================================   ======================================
+:ref:`gt_suite_model_child <pre_processing_gt_suite_model_child>`   'child_object_type' of gt_suite_model.
+
+=================================================================   ======================================
+

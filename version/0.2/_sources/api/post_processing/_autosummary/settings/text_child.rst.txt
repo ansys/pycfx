@@ -1,0 +1,71 @@
+:orphan:
+
+.. _post_processing_text_child:
+
+text_child
+==========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.text_child.text_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+==========================================================   ========================================================================================================================
+
+Attribute                                                                                                                                                                     Summary
+
+==========================================================   ========================================================================================================================
+:ref:`colour <post_processing_colour_1>`                                                                                                                              'colour' child.
+
+:ref:`font <post_processing_font>`                                                                                                                 The font name for an item of text.
+
+:ref:`overlay_size <post_processing_overlay_size>`                                                                  A factor by which to scale the size of a two-dimensional overlay.
+
+:ref:`position_mode <post_processing_position_mode>`         Defines whether a text item is attached to two-dimensional screen coordinate, or a three-dimensional spatial coordinate.
+
+:ref:`text_colour_mode <post_processing_text_colour_mode>`                                                                              Determines where to get the text colour from.
+
+:ref:`text_height <post_processing_text_height>`                                                                    The height an item of text should be, proportional to the screen.
+
+:ref:`text_position <post_processing_text_position>`                                                                                   The location an item of text should be placed.
+
+:ref:`text_rotation <post_processing_text_rotation>`                                                            Counter-clockwise rotation, in degrees, to be applied to a text item.
+
+:ref:`visibility <post_processing_visibility>`                                           Toggles the visibility of this graphics object in the viewer. THIS PARAMETER IS DEPRECATED!.
+
+:ref:`x_justification <post_processing_x_justification>`                                                            Specifies the horizontal justification of a text or overlay item.
+
+:ref:`y_justification <post_processing_y_justification>`                                                              Specifies the vertical justification of a text or overlay item.
+
+:ref:`text_item <post_processing_text_item>`                                                                                                                       'text_item' child.
+
+==========================================================   ========================================================================================================================
+
+.. rubric:: Methods
+
+============================================   ========================================
+
+Method                                                                          Summary
+
+============================================   ========================================
+:ref:`hide <post_processing_hide>`                  Hide the object in a given view(s).
+
+:ref:`show <post_processing_show>`                  Show the object in a given view(s).
+
+:ref:`suspend <post_processing_suspend>`       Suspend immediate update for the object.
+
+:ref:`unsuspend <post_processing_unsuspend>`   Restore immediate update for the object.
+
+============================================   ========================================
+
+.. rubric:: Included in:
+
+==================================   =============
+
+Parent                                     Summary
+
+==================================   =============
+:ref:`text <post_processing_text>`   'text' child.
+
+==================================   =============
+

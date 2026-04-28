@@ -1,0 +1,23 @@
+:orphan:
+
+.. _post_processing_external_name:
+
+external_name
+=============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.external_name.external_name
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==========================================================================   ==========================================
+
+Parent                                                                                                          Summary
+
+==========================================================================   ==========================================
+:ref:`units_quantity_map_child <post_processing_units_quantity_map_child>`   'child_object_type' of units_quantity_map.
+
+:ref:`variable_name_map_child <post_processing_variable_name_map_child>`      'child_object_type' of variable_name_map.
+
+==========================================================================   ==========================================
+

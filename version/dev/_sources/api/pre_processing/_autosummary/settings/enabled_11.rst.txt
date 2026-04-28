@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_11:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_11.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   =======================================================
+
+Parent                                                                                                                    Summary
+
+=======================================================================   =======================================================
+:ref:`absorption_coefficient <pre_processing_absorption_coefficient_1>`   Specifies how the absorption coefficient is calculated.
+
+=======================================================================   =======================================================
+

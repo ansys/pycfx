@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_197:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_197.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   =================================================
+
+Parent                                                                                                    Summary
+
+=============================================================   =================================================
+:ref:`rigid_body_control <pre_processing_rigid_body_control>`   Holds objects that control the rigid body solver.
+
+=============================================================   =================================================
+

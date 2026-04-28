@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_report_template_name:
+
+report_template_name
+====================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.report_template_name.report_template_name
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+============================================================   ==========================
+
+Parent                                                                            Summary
+
+============================================================   ==========================
+:ref:`report_properties <post_processing_report_properties>`   'report_properties' child.
+
+============================================================   ==========================
+

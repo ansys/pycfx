@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_render_type:
+
+render_type
+===========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.render_type.render_type
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================   ========================================
+
+Parent                                                                                                   Summary
+
+=====================================================================   ========================================
+:ref:`function_child <pre_processing_function_child>`                           'child_object_type' of function.
+
+:ref:`injection_region_child <pre_processing_injection_region_child>`   'child_object_type' of injection_region.
+
+=====================================================================   ========================================
+

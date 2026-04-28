@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_283:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_283.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================   =================================================
+
+Parent                                                                                            Summary
+
+=====================================================   =================================================
+:ref:`wall_roughness <pre_processing_wall_roughness>`   Sets wall roughness on a wall boundary condition.
+
+=====================================================   =================================================
+

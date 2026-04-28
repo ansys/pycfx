@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_add_node_mapping_status_variable:
+
+add_node_mapping_status_variable
+================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.add_node_mapping_status_variable.add_node_mapping_status_variable
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================   =========================
+
+Parent                                                                      Summary
+
+=======================================================   =========================
+:ref:`mapping_control <pre_processing_mapping_control>`   'MAPPING CONTROL' object.
+
+=======================================================   =========================
+

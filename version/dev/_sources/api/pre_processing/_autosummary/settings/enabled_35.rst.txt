@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_35:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_35.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================   ==================================================
+
+Parent                                                                                           Summary
+
+===================================================   ==================================================
+:ref:`analysis_type <pre_processing_analysis_type>`   Controls if the simulation is Steady or Transient.
+
+===================================================   ==================================================
+

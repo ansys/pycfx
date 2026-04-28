@@ -1,0 +1,29 @@
+:orphan:
+
+.. _pre_processing_iteration_interval:
+
+iteration_interval
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.iteration_interval.iteration_interval
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================================   ======================================================================================================
+
+Parent                                                                                                                                                                       Summary
+
+===========================================================================   ======================================================================================================
+:ref:`thermal_radiation_control <pre_processing_thermal_radiation_control>`                             Holds parameters and objects that control the solution of Thermal Radiation.
+
+:ref:`ray_tracing_control <pre_processing_ray_tracing_control>`                                            Controls details of the ray tracing algorithms for Monte Carlo radiation.
+
+:ref:`output_frequency <pre_processing_output_frequency>`                     Holds options for controlling the frequency with which backup and transient results files are written.
+
+:ref:`export_frequency <pre_processing_export_frequency>`                                                                                                 'EXPORT FREQUENCY' object.
+
+:ref:`output_frequency <pre_processing_output_frequency_2>`                   Holds options for controlling the frequency with which backup and transient results files are written.
+
+===========================================================================   ======================================================================================================
+

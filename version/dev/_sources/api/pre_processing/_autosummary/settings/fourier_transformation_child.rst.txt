@@ -1,0 +1,60 @@
+:orphan:
+
+.. _pre_processing_fourier_transformation_child:
+
+fourier_transformation_child
+============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fourier_transformation_child.fourier_transformation_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================================================   =====================================================
+
+Attribute                                                                                                                                                 Summary
+
+=========================================================================================================   =====================================================
+:ref:`option <pre_processing_option_432>`                                                                                    The 'Fourier Transformation' option.
+
+:ref:`domain_interface <pre_processing_domain_interface_1>`                                                                         'Domain Interface' parameter.
+
+:ref:`phase_corrected_interface <pre_processing_phase_corrected_interface>`                                                'Phase Corrected Interface' parameter.
+
+:ref:`sampling_domain_interface <pre_processing_sampling_domain_interface>`                                                'Sampling Domain Interface' parameter.
+
+:ref:`signal_speed <pre_processing_signal_speed>`                                                                                       'Signal Speed' parameter.
+
+:ref:`pitch_length <pre_processing_pitch_length>`                                                                                                   Pitch length.
+
+:ref:`number_of_passages <pre_processing_number_of_passages>`                                                                     'Number of Passages' parameter.
+
+:ref:`external_pitch_length <pre_processing_external_pitch_length>`                                                                                 Pitch length.
+
+:ref:`external_number_of_passages <pre_processing_external_number_of_passages>`                                          'External Number of Passages' parameter.
+
+:ref:`external_number_of_passages_in_360 <pre_processing_external_number_of_passages_in_360>`                     'External Number of Passages in 360' parameter.
+
+:ref:`external_number_of_passages_in_component <pre_processing_external_number_of_passages_in_component>`   'External Number of Passages in Component' parameter.
+
+:ref:`blade_boundary <pre_processing_blade_boundary>`                                                                                 'Blade Boundary' parameter.
+
+:ref:`fourier_transformation_side_1 <pre_processing_fourier_transformation_side_1>`                                       'FOURIER TRANSFORMATION SIDE 1' object.
+
+:ref:`fourier_transformation_side_2 <pre_processing_fourier_transformation_side_2>`                                       'FOURIER TRANSFORMATION SIDE 2' object.
+
+:ref:`signal_motion <pre_processing_signal_motion>`                                                                                       'SIGNAL MOTION' object.
+
+=========================================================================================================   =====================================================
+
+.. rubric:: Included in:
+
+=====================================================================   ===============================================
+
+Parent                                                                                                          Summary
+
+=====================================================================   ===============================================
+:ref:`fourier_transformation <pre_processing_fourier_transformation>`   A container for Fourier Transformation objects.
+
+=====================================================================   ===============================================
+

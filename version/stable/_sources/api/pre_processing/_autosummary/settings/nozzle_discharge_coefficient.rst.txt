@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_nozzle_discharge_coefficient:
+
+nozzle_discharge_coefficient
+============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.nozzle_discharge_coefficient.nozzle_discharge_coefficient
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================   ==========================================
+
+Attribute                                                                                                Summary
+
+===================================================================   ==========================================
+:ref:`option <pre_processing_option_220>`                             The 'Nozzle Discharge Coefficient' option.
+
+:ref:`discharge_coefficient <pre_processing_discharge_coefficient>`           'Discharge Coefficient' parameter.
+
+===================================================================   ==========================================
+
+.. rubric:: Included in:
+
+=========================================================================   =======================================================================
+
+Parent                                                                                                                                      Summary
+
+=========================================================================   =======================================================================
+:ref:`particle_primary_breakup <pre_processing_particle_primary_breakup>`   Defines the primary break-up model used to determine spray atomization.
+
+=========================================================================   =======================================================================
+

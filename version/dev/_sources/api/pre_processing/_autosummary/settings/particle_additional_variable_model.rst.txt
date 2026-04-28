@@ -1,0 +1,42 @@
+:orphan:
+
+.. _pre_processing_particle_additional_variable_model:
+
+particle_additional_variable_model
+==================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.particle_additional_variable_model.particle_additional_variable_model
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================================================================================   ===============================================================
+
+Attribute                                                                                                                                                                               Summary
+
+=============================================================================================================================   ===============================================================
+:ref:`enabled <pre_processing_enabled_97>`                                                                                                Enable the PARTICLE ADDITIONAL VARIABLE MODEL object.
+
+:ref:`option <pre_processing_option_172>`                                                                                                      The 'Particle Additional Variable Model' option.
+
+:ref:`particle_user_routine <pre_processing_particle_user_routine>`                                                                                                   Name of the user routine.
+
+:ref:`argument_variables_list <pre_processing_argument_variables_list>`                                                                                    'Argument Variables List' parameter.
+
+:ref:`particle_additional_variable_return_variables_list <pre_processing_particle_additional_variable_return_variables_list>`   'Particle Additional Variable Return Variables List' parameter.
+
+:ref:`particle_additional_variables_solution_order <pre_processing_particle_additional_variables_solution_order>`                     'Particle Additional Variables Solution Order' parameter.
+
+=============================================================================================================================   ===============================================================
+
+.. rubric:: Included in:
+
+===============================================   =============================
+
+Parent                                                                  Summary
+
+===============================================   =============================
+:ref:`fluid_child <pre_processing_fluid_child>`   'child_object_type' of fluid.
+
+===============================================   =============================
+

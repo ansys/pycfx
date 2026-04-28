@@ -1,0 +1,32 @@
+:orphan:
+
+.. _pre_processing_monitor_particles:
+
+monitor_particles
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.monitor_particles.monitor_particles
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================   ===============================
+
+Attribute                                                           Summary
+
+=========================================   ===============================
+:ref:`option <pre_processing_option_409>`   The 'Monitor Particles' option.
+
+=========================================   ===============================
+
+.. rubric:: Included in:
+
+=======================================================   =========================
+
+Parent                                                                      Summary
+
+=======================================================   =========================
+:ref:`monitor_objects <pre_processing_monitor_objects>`   'MONITOR OBJECTS' object.
+
+=======================================================   =========================
+

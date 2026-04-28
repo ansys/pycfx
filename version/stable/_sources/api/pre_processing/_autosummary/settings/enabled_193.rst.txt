@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_193:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_193.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ==========================================
+
+Parent                                                                                             Summary
+
+=============================================================   ==========================================
+:ref:`multiphase_control <pre_processing_multiphase_control>`   Defines multiphase solver control details.
+
+=============================================================   ==========================================
+

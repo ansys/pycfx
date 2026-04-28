@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_magnetic_vector_potential:
+
+magnetic_vector_potential
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.magnetic_vector_potential.magnetic_vector_potential
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================================   ===========================================
+
+Attribute                                                                                                                   Summary
+
+=====================================================================================   ===========================================
+:ref:`option <pre_processing_option_334>`                                                   The 'Magnetic Vector Potential' option.
+
+:ref:`magnetic_potential_x_component <pre_processing_magnetic_potential_x_component>`   'Magnetic Potential X Component' parameter.
+
+:ref:`magnetic_potential_y_component <pre_processing_magnetic_potential_y_component>`   'Magnetic Potential Y Component' parameter.
+
+:ref:`magnetic_potential_z_component <pre_processing_magnetic_potential_z_component>`   'Magnetic Potential Z Component' parameter.
+
+=====================================================================================   ===========================================
+
+.. rubric:: Included in:
+
+===============================================================   ===============================================================================
+
+Parent                                                                                                                                    Summary
+
+===============================================================   ===============================================================================
+:ref:`initial_conditions <pre_processing_initial_conditions>`     Holds the details of initial condition specification for one or more equations.
+
+:ref:`initial_conditions <pre_processing_initial_conditions_2>`   Holds the details of initial condition specification for one or more equations.
+
+===============================================================   ===============================================================================
+

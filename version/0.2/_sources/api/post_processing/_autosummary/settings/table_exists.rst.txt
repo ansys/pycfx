@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_table_exists:
+
+table_exists
+============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.table_exists.table_exists
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+================================================   =============================
+
+Parent                                                                   Summary
+
+================================================   =============================
+:ref:`table_child <post_processing_table_child>`   'child_object_type' of table.
+
+================================================   =============================
+

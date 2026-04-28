@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_conditional_connection_control:
+
+conditional_connection_control
+==============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.conditional_connection_control.conditional_connection_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================   ============================================================
+
+Attribute                                                                                                            Summary
+
+=============================================================   ============================================================
+:ref:`enabled <pre_processing_enabled_161>`                                Enable the CONDITIONAL CONNECTION CONTROL object.
+
+:ref:`option <pre_processing_option_358>`                                       The 'Conditional Connection Control' option.
+
+:ref:`logical_expression <pre_processing_logical_expression>`   A logical CEL expression that evaluates in the range 0 to 1.
+
+:ref:`initial_state <pre_processing_initial_state>`                                               'Initial State' parameter.
+
+=============================================================   ============================================================
+
+.. rubric:: Included in:
+
+=========================================================   ========================================================
+
+Parent                                                                                                       Summary
+
+=========================================================   ========================================================
+:ref:`interface_models <pre_processing_interface_models>`   Holds the definition of models specific to an interface.
+
+=========================================================   ========================================================
+

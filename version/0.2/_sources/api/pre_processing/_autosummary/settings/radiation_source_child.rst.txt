@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_radiation_source_child:
+
+radiation_source_child
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.radiation_source_child.radiation_source_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================   =============================================================================
+
+Attribute                                                                                                                                           Summary
+
+===========================================================================   =============================================================================
+:ref:`option <pre_processing_option_305>`                                                                                    The 'Radiation Source' option.
+
+:ref:`radiation_flux <pre_processing_radiation_flux>`                                                                           'Radiation Flux' parameter.
+
+:ref:`multiply_by_porosity <pre_processing_multiply_by_porosity>`             Defines whether the source terms in porous domains is multiplied by porosity.
+
+:ref:`external_refractive_index <pre_processing_external_refractive_index>`                                          'External Refractive Index' parameter.
+
+:ref:`direction <pre_processing_direction>`                                                   Defines the direction used for radiation boundary conditions.
+
+===========================================================================   =============================================================================
+
+.. rubric:: Included in:
+
+=========================================================   =========================================
+
+Parent                                                                                        Summary
+
+=========================================================   =========================================
+:ref:`radiation_source <pre_processing_radiation_source>`   A container for Radiation Source objects.
+
+=========================================================   =========================================
+

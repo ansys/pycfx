@@ -1,0 +1,42 @@
+:orphan:
+
+.. _pre_processing_transformation_child:
+
+transformation_child
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.transformation_child.transformation_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================   ===========================================
+
+Attribute                                                                                                         Summary
+
+===========================================================================   ===========================================
+:ref:`option <pre_processing_option_68>`                                                     The 'Transformation' option.
+
+:ref:`rotation_axis_definition <pre_processing_rotation_axis_definition>`     Defines how the rotation axis is specified.
+
+:ref:`rotation_angle_definition <pre_processing_rotation_angle_definition>`      Defines how rotation angle is specified.
+
+:ref:`translation_definition <pre_processing_translation_definition>`               Defines how translation is specified.
+
+:ref:`scale_definition <pre_processing_scale_definition>`                               Defines how scaling is specified.
+
+:ref:`reflection_definition <pre_processing_reflection_definition>`                                 Defines a reflection.
+
+===========================================================================   ===========================================
+
+.. rubric:: Included in:
+
+=====================================================   =======================================
+
+Parent                                                                                  Summary
+
+=====================================================   =======================================
+:ref:`transformation <pre_processing_transformation>`   A container for Transformation objects.
+
+=====================================================   =======================================
+

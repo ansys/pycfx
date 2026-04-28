@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_71:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_71.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================   =====================================
+
+Parent                                                                                                Summary
+
+=====================================================================   =====================================
+:ref:`translation_definition <pre_processing_translation_definition>`   Defines how translation is specified.
+
+=====================================================================   =====================================
+

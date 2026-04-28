@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_icem_cfd_part_parameter:
+
+icem_cfd_part_parameter
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.icem_cfd_part_parameter.icem_cfd_part_parameter
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`icem_cfd_part_parameter_child <pre_processing_icem_cfd_part_parameter_child>`
+
+
+.. rubric:: Included in:
+
+===================================================================   =======================================
+
+Parent                                                                                                Summary
+
+===================================================================   =======================================
+:ref:`icem_cfd_mesh_control <pre_processing_icem_cfd_mesh_control>`   Add mesh controls for ICEM CFD meshing.
+
+===================================================================   =======================================
+

@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_boundary_models:
+
+boundary_models
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.boundary_models.boundary_models
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================   ===================================
+
+Attribute                                                                                   Summary
+
+=============================================================   ===================================
+:ref:`wall_boiling_model <pre_processing_wall_boiling_model>`     Specifies the wall boiling model.
+
+:ref:`fluid_pair <pre_processing_fluid_pair_1>`                 A container for Fluid Pair objects.
+
+:ref:`fluid <pre_processing_fluid_3>`                                A container for Fluid objects.
+
+=============================================================   ===================================
+
+.. rubric:: Included in:
+
+=================================================   ==============================
+
+Parent                                                                     Summary
+
+=================================================   ==============================
+:ref:`domain_child <pre_processing_domain_child>`   'child_object_type' of domain.
+
+=================================================   ==============================
+

@@ -1,0 +1,28 @@
+:orphan:
+
+.. _pre_processing_solid_5:
+
+solid
+=====
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.solid_5.solid
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`solid_child <pre_processing_solid_child_5>`
+
+
+.. rubric:: Included in:
+
+=======================================================   ===================================================
+
+Parent                                                                                                Summary
+
+=======================================================   ===================================================
+:ref:`initialisation <pre_processing_initialisation>`     Defines the initialisation of flow-field variables.
+
+:ref:`initialisation <pre_processing_initialisation_1>`   Defines the initialisation of flow-field variables.
+
+=======================================================   ===================================================
+

@@ -1,0 +1,58 @@
+:orphan:
+
+.. _pre_processing_monitor_objects:
+
+monitor_objects
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.monitor_objects.monitor_objects
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================================================   ==========================================================================================
+
+Attribute                                                                                                                                                                              Summary
+
+=================================================================================================   ==========================================================================================
+:ref:`enabled <pre_processing_enabled_209>`                                                                                                                 Enable the MONITOR OBJECTS object.
+
+:ref:`monitor_coefficient_loop_convergence <pre_processing_monitor_coefficient_loop_convergence>`   Logical specifying if coefficient loop convergence should be recorded in the monitor file.
+
+:ref:`monitor_balances <pre_processing_monitor_balances>`                                                            Defines the extent of equation balance data recorded in the monitor file.
+
+:ref:`monitor_forces <pre_processing_monitor_forces>`                                                                           Defines the extent of force data recorded in the monitor file.
+
+:ref:`monitor_residuals <pre_processing_monitor_residuals>`                                                         Defines the extent of equation residual data recorded in the monitor file.
+
+:ref:`monitor_totals <pre_processing_monitor_totals>`                                                           Defines the extent of total flow and source data recorded in the monitor file.
+
+:ref:`monitor_particles <pre_processing_monitor_particles>`                                                         Defines the extent of particle tracking data recorded in the monitor file.
+
+:ref:`monitor_point <pre_processing_monitor_point>`                                                                                                     A container for Monitor Point objects.
+
+:ref:`monitor_surface <pre_processing_monitor_surface>`                                                                                               A container for Monitor Surface objects.
+
+:ref:`monitor_line_cloud <pre_processing_monitor_line_cloud>`                                                                                      A container for Monitor Line Cloud objects.
+
+:ref:`monitor_data_retention <pre_processing_monitor_data_retention>`                                                            Controls how dynamic monitoring data files are deleted/saved.
+
+:ref:`monitor_gt_suite <pre_processing_monitor_gt_suite>`                                                                                            A container for Monitor Gt Suite objects.
+
+:ref:`radiometer <pre_processing_radiometer>`                                                                                                              A container for Radiometer objects.
+
+:ref:`efficiency_output <pre_processing_efficiency_output>`                                                                       Defines the type of efficiency computed during a solver run.
+
+=================================================================================================   ==========================================================================================
+
+.. rubric:: Included in:
+
+=====================================================   ==============================================================================
+
+Parent                                                                                                                         Summary
+
+=====================================================   ==============================================================================
+:ref:`output_control <pre_processing_output_control>`   Holds object definitions that control output from the solver during execution.
+
+=====================================================   ==============================================================================
+

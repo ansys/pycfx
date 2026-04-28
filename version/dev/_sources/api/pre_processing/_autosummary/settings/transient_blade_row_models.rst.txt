@@ -1,0 +1,46 @@
+:orphan:
+
+.. _pre_processing_transient_blade_row_models:
+
+transient_blade_row_models
+==========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.transient_blade_row_models.transient_blade_row_models
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================================   ============================================================
+
+Attribute                                                                                                                                    Summary
+
+=====================================================================================   ============================================================
+:ref:`enabled <pre_processing_enabled_220>`                                                            Enable the TRANSIENT BLADE ROW MODELS object.
+
+:ref:`option <pre_processing_option_431>`                                                                   The 'Transient Blade Row Models' option.
+
+:ref:`inflow_boundary <pre_processing_inflow_boundary>`                                                                     Inflow boundary regions.
+
+:ref:`outflow_boundary <pre_processing_outflow_boundary>`                                                                           Outflow regions.
+
+:ref:`fourier_transformation <pre_processing_fourier_transformation>`                                A container for Fourier Transformation objects.
+
+:ref:`time_transformation <pre_processing_time_transformation>`                                         A container for Time Transformation objects.
+
+:ref:`transient_method <pre_processing_transient_method>`                               Defines the discretization algorithm for the transient term.
+
+:ref:`fourier_transformation_control <pre_processing_fourier_transformation_control>`         Holds all objects that control Fourier Transformation.
+
+=====================================================================================   ============================================================
+
+.. rubric:: Included in:
+
+=============================================   ============================
+
+Parent                                                               Summary
+
+=============================================   ============================
+:ref:`flow_child <pre_processing_flow_child>`   'child_object_type' of flow.
+
+=============================================   ============================
+

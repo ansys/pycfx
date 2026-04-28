@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_droplet_number_2:
+
+droplet_number
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.droplet_number_2.droplet_number
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================   ============================
+
+Attribute                                                                    Summary
+
+=====================================================   ============================
+:ref:`option <pre_processing_option_301>`               The 'Droplet Number' option.
+
+:ref:`droplet_number <pre_processing_droplet_number>`    'Droplet Number' parameter.
+
+=====================================================   ============================
+
+.. rubric:: Included in:
+
+===============================================================   ===============================================================================
+
+Parent                                                                                                                                    Summary
+
+===============================================================   ===============================================================================
+:ref:`initial_conditions <pre_processing_initial_conditions_1>`   Holds the details of initial condition specification for one or more equations.
+
+:ref:`initial_conditions <pre_processing_initial_conditions_5>`   Holds the details of initial condition specification for one or more equations.
+
+===============================================================   ===============================================================================
+

@@ -1,0 +1,1508 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Set up a Fourier Transformation Blade Flutter case &#8212; PyCFX</title>
+  
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/ansys-sphinx-theme.css?v=a23b20f3" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css?v=d2d258e8" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-binder.css?v=f4aeca0c" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-dataframe.css?v=2082cf3c" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-rendered-html.css?v=1277b6f3" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/ansys-sphinx-theme.css?v=a23b20f3" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://www.nerdfonts.com/assets/css/webfont.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+
+  <!-- Include desired assets -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  
+
+  
+    <link href="../_static/css/breadcrumbs.css" rel="stylesheet" />
+  
+    <script src="../_static/documentation_options.js?v=95e61db4"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'examples/02-fourier-transformation-blade-flutter';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://cfx.docs.pyansys.com/versions.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.2';
+        DOCUMENTATION_OPTIONS.show_version_warning_banner =
+            false;
+        </script>
+    <link rel="icon" href="../_static/ansys-favicon.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="API reference" href="../api/api_contents.html" />
+    <link rel="prev" title="Simulate flow in a static mixer" href="01-introductory-example-static-mixer.html" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.2.0" />
+  <link rel="canonical" href="https://cfx.docs.pyansys.com/version/stable/examples/02-fourier-transformation-blade-flutter.html" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/pyansys_logo_transparent_black.png" class="logo__image only-light" alt="PyCFX - Home"/>
+    <img src="../_static/pyansys_logo_transparent_white.png" class="logo__image only-dark pst-js-only" alt="PyCFX - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../index.html" title="PyCFX home">Home</a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../getting_started/getting_started_contents.html">
+    Getting started
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../user_guide/user_guide_contents.html">
+    User guide
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="index.html">
+    Examples
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../api/api_contents.html">
+    API reference
+  </a>
+</li>
+
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false"
+                aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../contributing/contributing_contents.html">
+    Contribute
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../changelog.html">
+    Release notes
+  </a>
+</li>
+
+                </ul>
+            </li>
+            
+  </ul>
+</nav>
+</div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+      
+        <div class="navbar-item">
+<div class="search-bar pst-js-only" id="search-bar">
+  <form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <input type="search" class="form-control" name="q" placeholder="Search the docs ..."
+      aria-label="Search the docs ..." autocomplete="off" autocorrect="off"
+      autocapitalize="off" spellcheck="false" />
+    <span class="search-button__kbd-shortcut">
+      <kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd>
+    </span>
+  </form>
+  
+  <div id="static-search-results" class="static-search-results" style="display:none;" tabindex="0"></div>
+  
+</div></div>
+      
+        <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-2"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-2"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-2"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-2">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/ansys/pycfx" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+  
+    
+<!--
+  Announcement Version Loader
+  Dynamically loads the announcement.html content into the announcement_msg div.
+-->
+<div id="announcement_msg" aria-live="polite"></div>
+<script>
+  // Fetch and inject the announcement HTML content
+  fetch("announcement.html")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`HTTP error: ${response.status} Announcement.html file not found, Please ignore this, if you are in dev/stable documentation`);
+      }
+      return response.text();
+    })
+    .then((text) => {
+      var msgDiv = document.getElementById("announcement_msg");
+      if (msgDiv) {
+        msgDiv.innerHTML = text;
+      }
+    })
+    .catch((error) => {
+      // Log only unexpected fetch errors
+      if (!(error.message && error.message.startsWith("HTTP error: 404"))) {
+        console.error(`Fetch problem: ${error.message} Announcement.html could not be loaded.`);
+      }
+    });
+</script>
+  
+
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../index.html" title="PyCFX home">Home</a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../getting_started/getting_started_contents.html">
+    Getting started
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../user_guide/user_guide_contents.html">
+    User guide
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="index.html">
+    Examples
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../api/api_contents.html">
+    API reference
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../contributing/contributing_contents.html">
+    Contribute
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../changelog.html">
+    Release notes
+  </a>
+</li>
+
+  </ul>
+</nav>
+</div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<div class="search-bar pst-js-only" id="search-bar">
+  <form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <input type="search" class="form-control" name="q" placeholder="Search the docs ..."
+      aria-label="Search the docs ..." autocomplete="off" autocorrect="off"
+      autocapitalize="off" spellcheck="false" />
+    <span class="search-button__kbd-shortcut">
+      <kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd>
+    </span>
+  </form>
+  
+  <div id="static-search-results" class="static-search-results" style="display:none;" tabindex="0"></div>
+  
+</div></div>
+        
+          <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-3"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-3"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-3"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-3">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/ansys/pycfx" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="01-introductory-example-static-mixer.html">Simulate flow in a static mixer</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Set up a Fourier Transformation Blade Flutter case</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+<nav aria-label="Breadcrumb">
+  <ul class="bd-breadcrumbs">
+         
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="https://docs.pyansys.com/" class="nav-link">PyAnsys</a>
+    </li>
+     
+    <li class="breadcrumb-item">
+      <a
+        href="../index.html"
+        class="nav-link"
+        aria-label="Home"
+      >
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+     
+    <li class="breadcrumb-item">
+      <a href="index.html" class="nav-link">Examples</a>
+    </li>
+      
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Set up a Fourier Transformation Blade Flutter case</span></li>
+    
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div class="sphx-glr-download-link-note admonition note">
+<p class="admonition-title">Note</p>
+<p><a class="reference internal" href="#sphx-glr-download-examples-02-fourier-transformation-blade-flutter-py"><span class="std std-ref">Go to the end</span></a>
+to download the full example code.</p>
+</div>
+<section class="sphx-glr-example-title" id="set-up-a-fourier-transformation-blade-flutter-case">
+<span id="ref-fourier-blade-flutter"></span><span id="sphx-glr-examples-02-fourier-transformation-blade-flutter-py"></span><h1>Set up a Fourier Transformation Blade Flutter case<a class="headerlink" href="#set-up-a-fourier-transformation-blade-flutter-case" title="Link to this heading">#</a></h1>
+<p>This example shows how to set up a Fourier Transformation Blade Flutter case in PyCFX.</p>
+<p><strong>Model overview</strong></p>
+<p>This example sets up a Transient Blade Flutter simulation using
+both time integration and harmonic balance transient methods with the Fourier
+transformation pitch change model. The setup is described in detail in the
+CFX tutorial <em>Fourier Transformation Method for a Blade Flutter Case</em>.</p>
+<p>The example uses an axial compressor geometry. The full geometry consists of one rotor containing
+36 blades.</p>
+<p><strong>Workflow tasks</strong></p>
+<p>The Fourier Transformation Blade Flutter example guides you through these tasks:</p>
+<ul class="simple">
+<li><p>Use a PreProcessing session to set up a solver run without the transient blade row method
+to provide initial conditions.</p></li>
+<li><p>Run the solver to generate the initial conditions.</p></li>
+<li><p>Modify the PreProcessing session to set up a solver run with the transient blade row time
+integration method.</p></li>
+<li><p>Run the solver to generate the time integration results.</p></li>
+<li><p>Modify the PreProcessing session to set up a solver run with the transient blade row harmonic
+balance method.</p></li>
+<li><p>Run the solver to generate the harmonic balance results.</p></li>
+<li><p>Postprocess both the time integration and  harmonic balance results.</p></li>
+</ul>
+<p>Some tasks can execute while previous ones are still in progress. This means you do not need to
+wait for a solver run to complete before modifying the setup for the next simulation.</p>
+<a class="reference internal image-reference" href="../_images/fourier_blade_flutter_overview.png"><img alt="Model overview" class="align-center" src="../_images/fourier_blade_flutter_overview.png" width="400" />
+</a>
+<section id="initial-setup">
+<h2>Initial setup<a class="headerlink" href="#initial-setup" title="Link to this heading">#</a></h2>
+<section id="perform-required-imports">
+<h3>Perform required imports<a class="headerlink" href="#perform-required-imports" title="Link to this heading">#</a></h3>
+<p>Perform the required imports. It is assumed that the <code class="docutils literal notranslate"><span class="pre">ansys-cfx-core</span></code> package has been
+installed.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">ansys.cfx.core</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pycfx</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">ansys.cfx.core</span><span class="w"> </span><span class="kn">import</span> <span class="n">examples</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">ansys.cfx.core.utils.cfx_version</span><span class="w"> </span><span class="kn">import</span> <span class="n">CFXVersion</span>
+</pre></div>
+</div>
+</section>
+<section id="download-required-files">
+<h3>Download required files<a class="headerlink" href="#download-required-files" title="Link to this heading">#</a></h3>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">mesh_file_name</span> <span class="o">=</span> <span class="n">examples</span><span class="o">.</span><span class="n">download_file</span><span class="p">(</span>
+    <span class="s2">&quot;R37ATM_60k.gtm&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;pycfx/fourier_blade_flutter&quot;</span><span class="p">,</span>
+    <span class="n">save_path</span><span class="o">=</span><a href="https://docs.python.org/3/library/os.html#os.getcwd" title="os.getcwd" class="sphx-glr-backref-module-os sphx-glr-backref-type-py-function"><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span></a><span class="p">(),</span>
+<span class="p">)</span>
+<span class="n">mode_profile_file_name</span> <span class="o">=</span> <span class="n">examples</span><span class="o">.</span><span class="n">download_file</span><span class="p">(</span>
+    <span class="s2">&quot;R37_mode1_1p.csv&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;pycfx/fourier_blade_flutter&quot;</span><span class="p">,</span>
+    <span class="n">save_path</span><span class="o">=</span><a href="https://docs.python.org/3/library/os.html#os.getcwd" title="os.getcwd" class="sphx-glr-backref-module-os sphx-glr-backref-type-py-function"><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span></a><span class="p">(),</span>
+<span class="p">)</span>
+<span class="n">inlet_profile_file_name</span> <span class="o">=</span> <span class="n">examples</span><span class="o">.</span><span class="n">download_file</span><span class="p">(</span>
+    <span class="s2">&quot;R37_inlet.csv&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;pycfx/fourier_blade_flutter&quot;</span><span class="p">,</span>
+    <span class="n">save_path</span><span class="o">=</span><a href="https://docs.python.org/3/library/os.html#os.getcwd" title="os.getcwd" class="sphx-glr-backref-module-os sphx-glr-backref-type-py-function"><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span></a><span class="p">(),</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="initial-preprocessing">
+<h2>Initial preprocessing<a class="headerlink" href="#initial-preprocessing" title="Link to this heading">#</a></h2>
+<section id="start-a-preprocessing-session-cfx-pre-and-create-a-new-case">
+<h3>Start a PreProcessing session (CFX-Pre) and create a new case<a class="headerlink" href="#start-a-preprocessing-session-cfx-pre-and-create-a-new-case" title="Link to this heading">#</a></h3>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">pypre</span> <span class="o">=</span> <span class="n">pycfx</span><span class="o">.</span><span class="n">PreProcessing</span><span class="o">.</span><span class="n">from_install</span><span class="p">()</span>
+<span class="n">pypre</span><span class="o">.</span><span class="n">file</span><span class="o">.</span><span class="n">new_case</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="import-a-mesh">
+<h3>Import a mesh<a class="headerlink" href="#import-a-mesh" title="Link to this heading">#</a></h3>
+<p>The mesh file, <code class="docutils literal notranslate"><span class="pre">R37ATM_60k.gtm</span></code>, should already have been downloaded to the current working
+directory earlier in this script.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">pypre</span><span class="o">.</span><span class="n">file</span><span class="o">.</span><span class="n">import_mesh</span><span class="p">(</span><span class="n">file_name</span><span class="o">=</span><span class="n">mesh_file_name</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="transform-the-mesh">
+<h3>Transform the mesh<a class="headerlink" href="#transform-the-mesh" title="Link to this heading">#</a></h3>
+<p>The imported mesh contains a single passage mesh. Because the Fourier Transformation method
+requires two passages, the mesh must be transformed.</p>
+<p>PyCFX currently requires mesh transformations to be performed using the CFX Command Language
+(CCL). <code class="docutils literal notranslate"><span class="pre">Passages</span> <span class="pre">to</span> <span class="pre">Model</span></code> is set to 2 to duplicate the original mesh.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">mesh_transformation_ccl</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">MESH TRANSFORMATION:</span>
+<span class="s2">  Delete Original = Off</span>
+<span class="s2">  Number of Copies = 1</span>
+<span class="s2">  Option = Turbo Rotation</span>
+<span class="s2">  Passages in 360 = 36</span>
+<span class="s2">  Passages per Mesh = 1</span>
+<span class="s2">  Passages to Model = 2</span>
+<span class="s2">  Principal Axis = Z</span>
+<span class="s2">  Rotation Angle Option = Semi-Automatic</span>
+<span class="s2">  Rotation Option = Principal Axis</span>
+<span class="s2">  Target Location = Rotor Passage Main</span>
+<span class="s2">END</span>
+<span class="s2">&gt; gtmTransform Rotor Passage Main</span>
+<span class="s2">&quot;&quot;&quot;</span>
+<span class="n">pypre</span><span class="o">.</span><span class="n">execute_ccl</span><span class="p">(</span><span class="n">mesh_transformation_ccl</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="expand-the-profile">
+<h3>Expand the profile<a class="headerlink" href="#expand-the-profile" title="Link to this heading">#</a></h3>
+<p>The profile describing the frequency and blade mode shape for one blade is provided. In
+preparation for a two-passage Fourier Transformation setup, the profile must be expanded and
+initialized to make it ready for use in the boundary condition specifications.</p>
+<p>The single passage profile file, <code class="docutils literal notranslate"><span class="pre">R37_mode1_1p.csv</span></code>, should already have been downloaded to the
+current working directory earlier in this script.</p>
+<p>PyCFX currently requires profile expansion and initialization to be performed using the CFX
+Command Language (CCL).</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">rotor_profile_1p_file_name</span> <span class="o">=</span> <span class="n">mode_profile_file_name</span>
+<span class="n">rotor_profile_36p_file_name</span> <span class="o">=</span> <span class="s2">&quot;./R37_mode1_36p.csv&quot;</span>
+<span class="n">rotor_profile_ccl</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">&amp;replace TRANSFORM PROFILE DEFINITION:</span>
+<span class="s2">  Initialise Target Profile = On</span>
+<span class="s2">  Source Profile = </span><span class="si">{</span><span class="n">rotor_profile_1p_file_name</span><span class="si">}</span>
+<span class="s2">  Target Profile = </span><span class="si">{</span><span class="n">rotor_profile_36p_file_name</span><span class="si">}</span>
+<span class="s2">  Transformation Order = Transformation 1</span>
+<span class="s2">  PROFILE TRANSFORMATION:Transformation 1</span>
+<span class="s2">    Option = Expansion</span>
+<span class="s2">    EXPANSION DEFINITION:</span>
+<span class="s2">      Option = Expand to Full Circle</span>
+<span class="s2">      Passages in 360 = 36</span>
+<span class="s2">      Passages in Profile = 1</span>
+<span class="s2">      Theta Offset = 0 [degree]</span>
+<span class="s2">      Use Profile Instancing = Off</span>
+<span class="s2">      ROTATION AXIS DEFINITION:</span>
+<span class="s2">        Option = Principal Axis</span>
+<span class="s2">        Principal Axis = Z</span>
+<span class="s2">      END</span>
+<span class="s2">    END</span>
+<span class="s2">  END</span>
+<span class="s2">END</span>
+<span class="s2">&gt; transformProfileData</span>
+<span class="s2">&quot;&quot;&quot;</span>
+<span class="n">pypre</span><span class="o">.</span><span class="n">execute_ccl</span><span class="p">(</span><span class="n">rotor_profile_ccl</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="initialize-the-inlet-profile">
+<h3>Initialize the inlet profile<a class="headerlink" href="#initialize-the-inlet-profile" title="Link to this heading">#</a></h3>
+<p>The inlet profile file, <code class="docutils literal notranslate"><span class="pre">R37_inlet.csv</span></code>, should already have been downloaded to the
+current working directory earlier in this script.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">inlet_profile_ccl</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">&gt; initialiseProfileData File Name=</span><span class="si">{</span><span class="n">inlet_profile_file_name</span><span class="si">}</span><span class="s2">, Generate CCL=True, Embed Data=False</span>
+<span class="s2">&quot;&quot;&quot;</span>
+<span class="n">pypre</span><span class="o">.</span><span class="n">execute_ccl</span><span class="p">(</span><span class="n">inlet_profile_ccl</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="set-up-the-domain">
+<h3>Set up the domain<a class="headerlink" href="#set-up-the-domain" title="Link to this heading">#</a></h3>
+<p>The automatically created domain must be deleted before a new domain with a more meaningful
+name is created.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="k">del</span> <span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s2">&quot;Flow Analysis 1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">domain</span><span class="p">[</span><span class="s2">&quot;Default Domain&quot;</span><span class="p">]</span>
+<span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s2">&quot;Flow Analysis 1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">domain</span><span class="p">[</span><span class="s2">&quot;R1&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">r1_domain</span> <span class="o">=</span> <span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s2">&quot;Flow Analysis 1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">domain</span><span class="p">[</span><span class="s2">&quot;R1&quot;</span><span class="p">]</span>
+<span class="n">r1_domain</span><span class="o">.</span><span class="n">location</span> <span class="o">=</span> <span class="s2">&quot;Entire Rotor Passage&quot;</span>
+<span class="n">r1_domain</span><span class="o">.</span><span class="n">fluid_definition</span><span class="p">[</span><span class="s2">&quot;Fluid 1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">material</span> <span class="o">=</span> <span class="s2">&quot;Air Ideal Gas&quot;</span>
+<span class="n">r1_domain</span><span class="o">.</span><span class="n">domain_models</span><span class="o">.</span><span class="n">reference_pressure</span><span class="o">.</span><span class="n">reference_pressure</span> <span class="o">=</span> <span class="s2">&quot;0 [atm]&quot;</span>
+</pre></div>
+</div>
+<p>Set up the domain motion and deformation.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">r1_domain</span><span class="o">.</span><span class="n">domain_models</span><span class="o">.</span><span class="n">domain_motion</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;Rotating&quot;</span>
+<span class="n">r1_domain</span><span class="o">.</span><span class="n">domain_models</span><span class="o">.</span><span class="n">domain_motion</span><span class="o">.</span><span class="n">angular_velocity</span> <span class="o">=</span> <span class="s2">&quot;-1800 [radian s^-1]&quot;</span>
+<span class="n">r1_domain</span><span class="o">.</span><span class="n">domain_models</span><span class="o">.</span><span class="n">domain_motion</span><span class="o">.</span><span class="n">alternate_rotation_model</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">r1_domain</span><span class="o">.</span><span class="n">domain_models</span><span class="o">.</span><span class="n">mesh_deformation</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;Regions of Motion Specified&quot;</span>
+<span class="n">r1_domain</span><span class="o">.</span><span class="n">domain_models</span><span class="o">.</span><span class="n">mesh_deformation</span><span class="o">.</span><span class="n">displacement_relative_to</span> <span class="o">=</span> <span class="s2">&quot;Initial Mesh&quot;</span>
+<span class="n">r1_domain</span><span class="o">.</span><span class="n">domain_models</span><span class="o">.</span><span class="n">mesh_deformation</span><span class="o">.</span><span class="n">mesh_motion_model</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;Displacement Diffusion&quot;</span>
+</pre></div>
+</div>
+<p>Set up the remaining physical models on the domain.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">r1_domain</span><span class="o">.</span><span class="n">fluid_models</span><span class="o">.</span><span class="n">heat_transfer_model</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;Total Energy&quot;</span>
+<span class="n">r1_domain</span><span class="o">.</span><span class="n">fluid_models</span><span class="o">.</span><span class="n">turbulence_model</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;SST&quot;</span>
+<span class="n">r1_domain</span><span class="o">.</span><span class="n">fluid_models</span><span class="o">.</span><span class="n">turbulent_wall_functions</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;Automatic&quot;</span>
+<span class="n">r1_domain</span><span class="o">.</span><span class="n">fluid_models</span><span class="o">.</span><span class="n">turbulence_model</span><span class="o">.</span><span class="n">reattachment_modification</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;Reattachment Production&quot;</span>
+</pre></div>
+</div>
+</section>
+<section id="set-up-the-boundary-conditions">
+<h3>Set up the boundary conditions<a class="headerlink" href="#set-up-the-boundary-conditions" title="Link to this heading">#</a></h3>
+<p>Define some boundary condition names so that they can be used in multiple places.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">r1_inlet_name</span> <span class="o">=</span> <span class="s2">&quot;R1 Inlet&quot;</span>
+<span class="n">r1_outlet_name</span> <span class="o">=</span> <span class="s2">&quot;R1 Outlet&quot;</span>
+<span class="n">r1_blade_name</span> <span class="o">=</span> <span class="s2">&quot;R1 Blade&quot;</span>
+<span class="n">r1_periodic_name</span> <span class="o">=</span> <span class="s2">&quot;R1 to R1 Periodic&quot;</span>
+<span class="n">r1_sampling_name</span> <span class="o">=</span> <span class="s2">&quot;R1 Sampling Interface&quot;</span>
+</pre></div>
+</div>
+<p>Add the R1 Inlet boundary.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s2">&quot;Flow Analysis 1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">domain</span><span class="p">[</span><span class="s2">&quot;R1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">boundary</span><span class="p">[</span><span class="n">r1_inlet_name</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">r1_inlet</span> <span class="o">=</span> <span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s2">&quot;Flow Analysis 1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">domain</span><span class="p">[</span><span class="s2">&quot;R1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">boundary</span><span class="p">[</span><span class="n">r1_inlet_name</span><span class="p">]</span>
+<span class="n">r1_inlet</span><span class="o">.</span><span class="n">boundary_type</span> <span class="o">=</span> <span class="s2">&quot;INLET&quot;</span>
+<span class="n">r1_inlet</span><span class="o">.</span><span class="n">location</span> <span class="o">=</span> <span class="s2">&quot;Entire Rotor INFLOW&quot;</span>
+<span class="n">r1_inlet</span><span class="o">.</span><span class="n">frame_type</span> <span class="o">=</span> <span class="s2">&quot;Stationary&quot;</span>
+</pre></div>
+</div>
+<p>Use the functionality for generating values to auto-fill some boundary condition settings from the
+profile.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">r1_inlet</span><span class="o">.</span><span class="n">use_profile_data</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">r1_inlet</span><span class="o">.</span><span class="n">boundary_profile</span><span class="o">.</span><span class="n">profile_name</span> <span class="o">=</span> <span class="s2">&quot;Inflow&quot;</span>
+<span class="n">r1_inlet</span><span class="o">.</span><span class="n">boundary_profile</span><span class="o">.</span><span class="n">generate_values</span> <span class="o">=</span> <span class="kc">True</span>
+</pre></div>
+</div>
+<p>Complete the R1 Inlet boundary settings.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">r1_inlet</span><span class="o">.</span><span class="n">boundary_conditions</span><span class="o">.</span><span class="n">mesh_motion</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;Stationary&quot;</span>
+<span class="n">r1_inlet</span><span class="o">.</span><span class="n">boundary_conditions</span><span class="o">.</span><span class="n">flow_direction</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;Cylindrical Components&quot;</span>
+<span class="n">r1_inlet</span><span class="o">.</span><span class="n">boundary_conditions</span><span class="o">.</span><span class="n">flow_direction</span><span class="o">.</span><span class="n">unit_vector_axial_component</span> <span class="o">=</span> <span class="s2">&quot;Inflow.Velocity Axial(r)&quot;</span>
+<span class="n">r1_inlet</span><span class="o">.</span><span class="n">boundary_conditions</span><span class="o">.</span><span class="n">flow_direction</span><span class="o">.</span><span class="n">unit_vector_r_component</span> <span class="o">=</span> <span class="s2">&quot;Inflow.Velocity Radial(r)&quot;</span>
+<span class="n">r1_inlet</span><span class="o">.</span><span class="n">boundary_conditions</span><span class="o">.</span><span class="n">flow_direction</span><span class="o">.</span><span class="n">unit_vector_theta_component</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="s2">&quot;Inflow.Velocity Circumferential(r)&quot;</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<p>Add the R1 Outlet boundary.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s2">&quot;Flow Analysis 1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">domain</span><span class="p">[</span><span class="s2">&quot;R1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">boundary</span><span class="p">[</span><span class="n">r1_outlet_name</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">r1_outlet</span> <span class="o">=</span> <span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s2">&quot;Flow Analysis 1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">domain</span><span class="p">[</span><span class="s2">&quot;R1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">boundary</span><span class="p">[</span><span class="n">r1_outlet_name</span><span class="p">]</span>
+<span class="n">r1_outlet</span><span class="o">.</span><span class="n">boundary_type</span> <span class="o">=</span> <span class="s2">&quot;OUTLET&quot;</span>
+<span class="n">r1_outlet</span><span class="o">.</span><span class="n">location</span> <span class="o">=</span> <span class="s2">&quot;Entire Rotor OUTFLOW&quot;</span>
+<span class="n">r1_outlet</span><span class="o">.</span><span class="n">frame_type</span> <span class="o">=</span> <span class="s2">&quot;Stationary&quot;</span>
+<span class="n">r1_outlet</span><span class="o">.</span><span class="n">boundary_conditions</span><span class="o">.</span><span class="n">mesh_motion</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;Stationary&quot;</span>
+<span class="n">r1_outlet</span><span class="o">.</span><span class="n">boundary_conditions</span><span class="o">.</span><span class="n">mass_and_momentum</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;Average Static Pressure&quot;</span>
+<span class="n">r1_outlet</span><span class="o">.</span><span class="n">boundary_conditions</span><span class="o">.</span><span class="n">mass_and_momentum</span><span class="o">.</span><span class="n">relative_pressure</span> <span class="o">=</span> <span class="s2">&quot;138 [kPa]&quot;</span>
+<span class="n">r1_outlet</span><span class="o">.</span><span class="n">boundary_conditions</span><span class="o">.</span><span class="n">mass_and_momentum</span><span class="o">.</span><span class="n">pressure_profile_blend</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">r1_outlet</span><span class="o">.</span><span class="n">boundary_conditions</span><span class="o">.</span><span class="n">pressure_averaging</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;Radial Equilibrium&quot;</span>
+<span class="n">r1_outlet</span><span class="o">.</span><span class="n">boundary_conditions</span><span class="o">.</span><span class="n">pressure_averaging</span><span class="o">.</span><span class="n">radial_reference_position</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="s2">&quot;Specified Radius&quot;</span>
+<span class="p">)</span>
+<span class="n">r1_outlet</span><span class="o">.</span><span class="n">boundary_conditions</span><span class="o">.</span><span class="n">pressure_averaging</span><span class="o">.</span><span class="n">radial_reference_position</span><span class="o">.</span><span class="n">specified_radius</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="s2">&quot;0.215699 [m]&quot;</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<p>Add the R1 Hub boundary.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s2">&quot;Flow Analysis 1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">domain</span><span class="p">[</span><span class="s2">&quot;R1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">boundary</span><span class="p">[</span><span class="s2">&quot;R1 Hub&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">r1_hub</span> <span class="o">=</span> <span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s2">&quot;Flow Analysis 1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">domain</span><span class="p">[</span><span class="s2">&quot;R1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">boundary</span><span class="p">[</span><span class="s2">&quot;R1 Hub&quot;</span><span class="p">]</span>
+<span class="n">r1_hub</span><span class="o">.</span><span class="n">boundary_type</span> <span class="o">=</span> <span class="s2">&quot;WALL&quot;</span>
+<span class="n">r1_hub</span><span class="o">.</span><span class="n">location</span> <span class="o">=</span> <span class="s2">&quot;Entire Rotor HUB&quot;</span>
+<span class="n">r1_hub</span><span class="o">.</span><span class="n">frame_type</span> <span class="o">=</span> <span class="s2">&quot;Rotating&quot;</span>
+<span class="n">r1_hub</span><span class="o">.</span><span class="n">boundary_conditions</span><span class="o">.</span><span class="n">mesh_motion</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;Stationary&quot;</span>
+</pre></div>
+</div>
+<p>Add the R1 Shroud boundary.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s2">&quot;Flow Analysis 1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">domain</span><span class="p">[</span><span class="s2">&quot;R1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">boundary</span><span class="p">[</span><span class="s2">&quot;R1 Shroud&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">r1_shroud</span> <span class="o">=</span> <span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s2">&quot;Flow Analysis 1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">domain</span><span class="p">[</span><span class="s2">&quot;R1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">boundary</span><span class="p">[</span><span class="s2">&quot;R1 Shroud&quot;</span><span class="p">]</span>
+<span class="n">r1_shroud</span><span class="o">.</span><span class="n">boundary_type</span> <span class="o">=</span> <span class="s2">&quot;WALL&quot;</span>
+<span class="n">r1_shroud</span><span class="o">.</span><span class="n">location</span> <span class="o">=</span> <span class="s2">&quot;Entire Rotor SHROUD&quot;</span>
+<span class="n">r1_shroud</span><span class="o">.</span><span class="n">frame_type</span> <span class="o">=</span> <span class="s2">&quot;Rotating&quot;</span>
+<span class="n">r1_shroud</span><span class="o">.</span><span class="n">boundary_conditions</span><span class="o">.</span><span class="n">mesh_motion</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;Surface of Revolution&quot;</span>
+<span class="n">r1_shroud</span><span class="o">.</span><span class="n">boundary_conditions</span><span class="o">.</span><span class="n">mesh_motion</span><span class="o">.</span><span class="n">axis_definition</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;Coordinate Axis&quot;</span>
+<span class="n">r1_shroud</span><span class="o">.</span><span class="n">boundary_conditions</span><span class="o">.</span><span class="n">mesh_motion</span><span class="o">.</span><span class="n">axis_definition</span><span class="o">.</span><span class="n">rotation_axis</span> <span class="o">=</span> <span class="s2">&quot;Coord 0.3&quot;</span>
+<span class="n">r1_shroud</span><span class="o">.</span><span class="n">boundary_conditions</span><span class="o">.</span><span class="n">mass_and_momentum</span><span class="o">.</span><span class="n">wall_velocity</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;Counter Rotating Wall&quot;</span>
+</pre></div>
+</div>
+<p>Add the R1 Blade boundary.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s2">&quot;Flow Analysis 1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">domain</span><span class="p">[</span><span class="s2">&quot;R1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">boundary</span><span class="p">[</span><span class="n">r1_blade_name</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">r1_blade</span> <span class="o">=</span> <span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s2">&quot;Flow Analysis 1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">domain</span><span class="p">[</span><span class="s2">&quot;R1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">boundary</span><span class="p">[</span><span class="n">r1_blade_name</span><span class="p">]</span>
+<span class="n">r1_blade</span><span class="o">.</span><span class="n">boundary_type</span> <span class="o">=</span> <span class="s2">&quot;WALL&quot;</span>
+<span class="n">r1_blade</span><span class="o">.</span><span class="n">location</span> <span class="o">=</span> <span class="s2">&quot;Entire Rotor BLADE&quot;</span>
+<span class="n">r1_blade</span><span class="o">.</span><span class="n">frame_type</span> <span class="o">=</span> <span class="s2">&quot;Rotating&quot;</span>
+<span class="n">r1_blade</span><span class="o">.</span><span class="n">boundary_conditions</span><span class="o">.</span><span class="n">mesh_motion</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;Stationary&quot;</span>
+</pre></div>
+</div>
+<p>Add the R1 Tip Gap interfaces.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s2">&quot;Flow Analysis 1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">domain_interface</span><span class="p">[</span><span class="s2">&quot;R1 Blade Tip Gap&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">r1_tipgap1</span> <span class="o">=</span> <span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s2">&quot;Flow Analysis 1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">domain_interface</span><span class="p">[</span><span class="s2">&quot;R1 Blade Tip Gap&quot;</span><span class="p">]</span>
+<span class="n">r1_tipgap1</span><span class="o">.</span><span class="n">interface_type</span> <span class="o">=</span> <span class="s2">&quot;Fluid Fluid&quot;</span>
+<span class="n">r1_tipgap1</span><span class="o">.</span><span class="n">interface_region_list1</span> <span class="o">=</span> <span class="s2">&quot;Rotor SHROUD TIP GGI SIDE 1&quot;</span>
+<span class="n">r1_tipgap1</span><span class="o">.</span><span class="n">interface_region_list2</span> <span class="o">=</span> <span class="s2">&quot;Rotor SHROUD TIP GGI SIDE 2&quot;</span>
+<span class="n">r1_tipgap1</span><span class="o">.</span><span class="n">interface_models</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;General Connection&quot;</span>
+<span class="n">r1_tipgap1</span><span class="o">.</span><span class="n">mesh_connection</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;GGI&quot;</span>
+<span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s2">&quot;Flow Analysis 1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">domain_interface</span><span class="p">[</span><span class="s2">&quot;R1 Blade Tip Gap 2&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">r1_tipgap2</span> <span class="o">=</span> <span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s2">&quot;Flow Analysis 1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">domain_interface</span><span class="p">[</span><span class="s2">&quot;R1 Blade Tip Gap 2&quot;</span><span class="p">]</span>
+<span class="n">r1_tipgap2</span><span class="o">.</span><span class="n">interface_type</span> <span class="o">=</span> <span class="s2">&quot;Fluid Fluid&quot;</span>
+<span class="n">r1_tipgap2</span><span class="o">.</span><span class="n">interface_region_list1</span> <span class="o">=</span> <span class="s2">&quot;Rotor SHROUD TIP GGI SIDE 1 2&quot;</span>
+<span class="n">r1_tipgap2</span><span class="o">.</span><span class="n">interface_region_list2</span> <span class="o">=</span> <span class="s2">&quot;Rotor SHROUD TIP GGI SIDE 2 2&quot;</span>
+<span class="n">r1_tipgap2</span><span class="o">.</span><span class="n">interface_models</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;General Connection&quot;</span>
+<span class="n">r1_tipgap2</span><span class="o">.</span><span class="n">mesh_connection</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;GGI&quot;</span>
+</pre></div>
+</div>
+<p>Add the <strong>Periodic</strong> interface.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s2">&quot;Flow Analysis 1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">domain_interface</span><span class="p">[</span><span class="n">r1_periodic_name</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">r1_periodic</span> <span class="o">=</span> <span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s2">&quot;Flow Analysis 1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">domain_interface</span><span class="p">[</span><span class="n">r1_periodic_name</span><span class="p">]</span>
+<span class="n">r1_periodic</span><span class="o">.</span><span class="n">interface_type</span> <span class="o">=</span> <span class="s2">&quot;Fluid Fluid&quot;</span>
+<span class="n">r1_periodic</span><span class="o">.</span><span class="n">interface_region_list1</span> <span class="o">=</span> <span class="s2">&quot;Rotor PER1&quot;</span>
+<span class="n">r1_periodic</span><span class="o">.</span><span class="n">interface_region_list2</span> <span class="o">=</span> <span class="s2">&quot;Rotor PER2 2&quot;</span>
+<span class="n">r1_periodic</span><span class="o">.</span><span class="n">interface_models</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;Rotational Periodicity&quot;</span>
+<span class="n">r1_periodic</span><span class="o">.</span><span class="n">interface_models</span><span class="o">.</span><span class="n">axis_definition</span><span class="o">.</span><span class="n">rotation_axis</span> <span class="o">=</span> <span class="s2">&quot;Coord 0.3&quot;</span>
+<span class="n">r1_periodic</span><span class="o">.</span><span class="n">mesh_connection</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;GGI&quot;</span>
+</pre></div>
+</div>
+<p>Add the <strong>Sampling</strong> interface.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s2">&quot;Flow Analysis 1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">domain_interface</span><span class="p">[</span><span class="n">r1_sampling_name</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">r1_sampling</span> <span class="o">=</span> <span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s2">&quot;Flow Analysis 1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">domain_interface</span><span class="p">[</span><span class="n">r1_sampling_name</span><span class="p">]</span>
+<span class="n">r1_sampling</span><span class="o">.</span><span class="n">interface_type</span> <span class="o">=</span> <span class="s2">&quot;Fluid Fluid&quot;</span>
+<span class="n">r1_sampling</span><span class="o">.</span><span class="n">interface_region_list1</span> <span class="o">=</span> <span class="s2">&quot;Rotor PER2&quot;</span>
+<span class="n">r1_sampling</span><span class="o">.</span><span class="n">interface_region_list2</span> <span class="o">=</span> <span class="s2">&quot;Rotor PER1 2&quot;</span>
+<span class="n">r1_sampling</span><span class="o">.</span><span class="n">interface_models</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;General Connection&quot;</span>
+<span class="n">r1_sampling</span><span class="o">.</span><span class="n">mesh_connection</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;GGI&quot;</span>
+</pre></div>
+</div>
+<p>Modify the interface sides to set the mesh motion to <strong>Stationary</strong>.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">interface_side_list</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;R1 to R1 Periodic Side 1&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;R1 to R1 Periodic Side 2&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;R1 Sampling Interface Side 1&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;R1 Sampling Interface Side 2&quot;</span><span class="p">,</span>
+<span class="p">]</span>
+<span class="k">for</span> <span class="n">side</span> <span class="ow">in</span> <span class="n">interface_side_list</span><span class="p">:</span>
+    <span class="n">r1_domain</span><span class="o">.</span><span class="n">boundary</span><span class="p">[</span><span class="n">side</span><span class="p">]</span><span class="o">.</span><span class="n">boundary_conditions</span><span class="o">.</span><span class="n">mesh_motion</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;Stationary&quot;</span>
+</pre></div>
+</div>
+</section>
+<section id="set-up-the-cfx-solver">
+<h3>Set up the CFX-Solver<a class="headerlink" href="#set-up-the-cfx-solver" title="Link to this heading">#</a></h3>
+<p>Set up the CFX-Solver to run in parallel and double precision using execution control.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">exec_control</span> <span class="o">=</span> <span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">simulation_control</span><span class="o">.</span><span class="n">execution_control</span>
+<span class="n">exec_control</span><span class="o">.</span><span class="n">solver_step_control</span><span class="o">.</span><span class="n">parallel_environment</span><span class="o">.</span><span class="n">start_method</span> <span class="o">=</span> <span class="s2">&quot;Intel MPI Local Parallel&quot;</span>
+<span class="n">exec_control</span><span class="o">.</span><span class="n">solver_step_control</span><span class="o">.</span><span class="n">parallel_environment</span><span class="o">.</span><span class="n">maximum_number_of_processes</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">exec_control</span><span class="o">.</span><span class="n">executable_selection</span><span class="o">.</span><span class="n">double_precision</span> <span class="o">=</span> <span class="kc">True</span>
+</pre></div>
+</div>
+</section>
+<section id="check-for-errors">
+<h3>Check for errors<a class="headerlink" href="#check-for-errors" title="Link to this heading">#</a></h3>
+<p>It is good practice to check for physics messages to ensure that the setup is consistent and
+no required settings are missing.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">physics_messages</span> <span class="o">=</span> <span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">get_physics_messages</span><span class="p">(</span><span class="n">severity</span><span class="o">=</span><span class="s2">&quot;All&quot;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">physics_messages</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Physics messages (initial values setup): </span><span class="si">{</span><span class="n">physics_messages</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="run-the-solver-for-the-initial-conditions">
+<h2>Run the solver for the initial conditions<a class="headerlink" href="#run-the-solver-for-the-initial-conditions" title="Link to this heading">#</a></h2>
+<section id="initialize-a-solver-session">
+<h3>Initialize a Solver session<a class="headerlink" href="#initialize-a-solver-session" title="Link to this heading">#</a></h3>
+<p>This example uses a workflow where the three different PyCFX components (PreProcessing,
+Solver and PostProcessing) interact directly, in contrast to the
+<a class="reference internal" href="01-introductory-example-static-mixer.html#ref-static-mixer"><span class="std std-ref">Static mixer</span></a> example, which shows a workflow based around writing
+files.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">pypre</span><span class="o">.</span><span class="n">file</span><span class="o">.</span><span class="n">save_case</span><span class="p">(</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;fourier_blade_flutter_ini.cfx&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">case_file_name</span></code> is only needed for CFX 2025 R2 as it can be deduced from the
+PreProcessing case name in later releases.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">pypre</span><span class="o">.</span><span class="n">get_cfx_version</span><span class="p">()</span> <span class="o">&gt;</span> <span class="n">CFXVersion</span><span class="o">.</span><span class="n">v252</span><span class="p">:</span>
+    <span class="n">pysolve_ini</span> <span class="o">=</span> <span class="n">pycfx</span><span class="o">.</span><span class="n">Solver</span><span class="o">.</span><span class="n">from_session</span><span class="p">(</span><span class="n">pypre</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">pysolve_ini</span> <span class="o">=</span> <span class="n">pycfx</span><span class="o">.</span><span class="n">Solver</span><span class="o">.</span><span class="n">from_session</span><span class="p">(</span><span class="n">pypre</span><span class="p">,</span> <span class="n">case_file_name</span><span class="o">=</span><span class="s2">&quot;fourier_blade_flutter_ini&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Start the solver run, which provides the initial values for the transient blade row method
+simulation. There is no need to wait for the solver run to finish before continuing with the
+setup for the next part of the example.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">pysolve_ini</span><span class="o">.</span><span class="n">solution</span><span class="o">.</span><span class="n">start_run</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="preprocessing-for-the-time-integration-setup">
+<h2>Preprocessing for the time integration setup<a class="headerlink" href="#preprocessing-for-the-time-integration-setup" title="Link to this heading">#</a></h2>
+<section id="modify-the-setup-to-use-transient-blade-row-analysis">
+<h3>Modify the setup to use Transient Blade Row analysis<a class="headerlink" href="#modify-the-setup-to-use-transient-blade-row-analysis" title="Link to this heading">#</a></h3>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s2">&quot;Flow Analysis 1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">analysis_type</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;Transient Blade Row&quot;</span>
+<span class="n">r1_domain</span><span class="o">.</span><span class="n">domain_models</span><span class="o">.</span><span class="n">passage_definition</span><span class="o">.</span><span class="n">number_of_passages_in_360</span> <span class="o">=</span> <span class="mi">36</span>
+<span class="n">r1_domain</span><span class="o">.</span><span class="n">domain_models</span><span class="o">.</span><span class="n">passage_definition</span><span class="o">.</span><span class="n">number_of_passages_in_component</span> <span class="o">=</span> <span class="mi">2</span>
+</pre></div>
+</div>
+</section>
+<section id="set-up-the-expressions">
+<h3>Set up the expressions<a class="headerlink" href="#set-up-the-expressions" title="Link to this heading">#</a></h3>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">library</span><span class="o">.</span><span class="n">cel</span><span class="o">.</span><span class="n">expressions</span><span class="p">[</span><span class="s2">&quot;VibrationFrequency&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;definition&quot;</span><span class="p">:</span> <span class="s2">&quot;1152.13 [Hz]&quot;</span><span class="p">}</span>
+<span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">library</span><span class="o">.</span><span class="n">cel</span><span class="o">.</span><span class="n">expressions</span><span class="p">[</span><span class="s2">&quot;MaxPeriodicDisplacement&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;definition&quot;</span><span class="p">:</span> <span class="s2">&quot;0.0015 [m]&quot;</span><span class="p">}</span>
+<span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">library</span><span class="o">.</span><span class="n">cel</span><span class="o">.</span><span class="n">expressions</span><span class="p">[</span><span class="s2">&quot;ScalingFactor&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;definition&quot;</span><span class="p">:</span> <span class="s2">&quot;MaxPeriodicDisplacement/0.00129 [m]&quot;</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="modify-the-r1-blade-boundary">
+<h3>Modify the R1 Blade boundary<a class="headerlink" href="#modify-the-r1-blade-boundary" title="Link to this heading">#</a></h3>
+<p>Set up the R1 Blade boundary to use profile functions.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">r1_blade</span><span class="o">.</span><span class="n">use_profile_data</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">r1_blade</span><span class="o">.</span><span class="n">boundary_profile</span><span class="o">.</span><span class="n">profile_name</span> <span class="o">=</span> <span class="s2">&quot;mode1&quot;</span>
+<span class="n">r1_blade</span><span class="o">.</span><span class="n">boundary_profile</span><span class="o">.</span><span class="n">generate_values</span> <span class="o">=</span> <span class="kc">True</span>
+</pre></div>
+</div>
+<p>Make the remaining changes to the R1 Blade boundary.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">r1_blade_periodic_displacement</span> <span class="o">=</span> <span class="n">r1_blade</span><span class="o">.</span><span class="n">boundary_conditions</span><span class="o">.</span><span class="n">mesh_motion</span><span class="o">.</span><span class="n">periodic_displacement</span>
+<span class="n">r1_blade_periodic_displacement</span><span class="o">.</span><span class="n">scaling</span> <span class="o">=</span> <span class="s2">&quot;ScalingFactor&quot;</span>
+<span class="n">r1_blade_periodic_displacement</span><span class="o">.</span><span class="n">phase_angle</span><span class="o">.</span><span class="n">nodal_diameter_magnitude</span> <span class="o">=</span> <span class="mi">4</span>
+</pre></div>
+</div>
+<p>Check the state of the R1 Blade boundary to verify that the profile expressions have populated
+as expected.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">r1_blade</span><span class="o">.</span><span class="n">print_state</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="set-up-the-transient-blade-row-models">
+<h3>Set up the Transient Blade Row Models<a class="headerlink" href="#set-up-the-transient-blade-row-models" title="Link to this heading">#</a></h3>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">tbrm</span> <span class="o">=</span> <span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s2">&quot;Flow Analysis 1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">transient_blade_row_models</span>
+<span class="n">tbrm</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;Fourier Transformation&quot;</span>
+<span class="n">tbrm</span><span class="o">.</span><span class="n">fourier_transformation</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="s2">&quot;Fourier Transformation 1&quot;</span><span class="p">)</span>
+<span class="n">ft1</span> <span class="o">=</span> <span class="n">tbrm</span><span class="o">.</span><span class="n">fourier_transformation</span><span class="p">[</span><span class="s2">&quot;Fourier Transformation 1&quot;</span><span class="p">]</span>
+<span class="n">ft1</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;Blade Flutter&quot;</span>
+<span class="n">ft1</span><span class="o">.</span><span class="n">phase_corrected_interface</span> <span class="o">=</span> <span class="n">r1_periodic_name</span>
+<span class="n">ft1</span><span class="o">.</span><span class="n">sampling_domain_interface</span> <span class="o">=</span> <span class="n">r1_sampling_name</span>
+<span class="n">ft1</span><span class="o">.</span><span class="n">blade_boundary</span> <span class="o">=</span> <span class="n">r1_blade_name</span>
+<span class="n">tbrm</span><span class="o">.</span><span class="n">transient_method</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;Time Integration&quot;</span>
+<span class="n">tbrm</span><span class="o">.</span><span class="n">transient_method</span><span class="o">.</span><span class="n">time_period</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;Value&quot;</span>
+<span class="n">tbrm</span><span class="o">.</span><span class="n">transient_method</span><span class="o">.</span><span class="n">time_period</span><span class="o">.</span><span class="n">period</span> <span class="o">=</span> <span class="s2">&quot;1/VibrationFrequency&quot;</span>
+<span class="n">tbrm</span><span class="o">.</span><span class="n">transient_method</span><span class="o">.</span><span class="n">time_steps</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;Number of Timesteps per Period&quot;</span>
+<span class="n">tbrm</span><span class="o">.</span><span class="n">transient_method</span><span class="o">.</span><span class="n">time_steps</span><span class="o">.</span><span class="n">number_of_timesteps_per_period</span> <span class="o">=</span> <span class="mi">72</span>
+<span class="n">tbrm</span><span class="o">.</span><span class="n">transient_method</span><span class="o">.</span><span class="n">time_duration</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;Number of Periods per Run&quot;</span>
+<span class="n">tbrm</span><span class="o">.</span><span class="n">transient_method</span><span class="o">.</span><span class="n">time_duration</span><span class="o">.</span><span class="n">number_of_periods_per_run</span> <span class="o">=</span> <span class="mi">10</span>
+</pre></div>
+</div>
+</section>
+<section id="configure-the-output-control">
+<h3>Configure the Output Control<a class="headerlink" href="#configure-the-output-control" title="Link to this heading">#</a></h3>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">output_control</span> <span class="o">=</span> <span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s2">&quot;Flow Analysis 1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">output_control</span>
+<span class="n">output_control</span><span class="o">.</span><span class="n">transient_blade_row_output</span><span class="o">.</span><span class="n">extra_output_variables_list</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;Total Pressure&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Total Temperature&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Total Mesh Displacement&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Wall Work Density&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Wall Power Density&quot;</span><span class="p">,</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>Set up the efficiency monitor.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">monitors</span> <span class="o">=</span> <span class="n">output_control</span><span class="o">.</span><span class="n">monitor_objects</span>
+<span class="n">monitors</span><span class="o">.</span><span class="n">enabled</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">monitors</span><span class="o">.</span><span class="n">efficiency_output</span><span class="o">.</span><span class="n">enabled</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">monitors</span><span class="o">.</span><span class="n">efficiency_output</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;Output To Solver Monitor&quot;</span>
+<span class="n">monitors</span><span class="o">.</span><span class="n">efficiency_output</span><span class="o">.</span><span class="n">inflow_boundary</span> <span class="o">=</span> <span class="n">r1_inlet_name</span>
+<span class="n">monitors</span><span class="o">.</span><span class="n">efficiency_output</span><span class="o">.</span><span class="n">outflow_boundary</span> <span class="o">=</span> <span class="n">r1_outlet_name</span>
+<span class="n">monitors</span><span class="o">.</span><span class="n">efficiency_output</span><span class="o">.</span><span class="n">efficiency_type</span> <span class="o">=</span> <span class="s2">&quot;Compression&quot;</span>
+<span class="n">monitors</span><span class="o">.</span><span class="n">efficiency_output</span><span class="o">.</span><span class="n">efficiency_calculation_method</span> <span class="o">=</span> <span class="s2">&quot;Total to Total&quot;</span>
+</pre></div>
+</div>
+<p>Set up the monitor points.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">monitor_point_table</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;LE1pass1&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0 [m]&quot;</span><span class="p">,</span> <span class="s2">&quot;0.23 [m]&quot;</span><span class="p">,</span> <span class="s2">&quot;-7.5 [degree]&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;LE1pass2&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0 [m]&quot;</span><span class="p">,</span> <span class="s2">&quot;0.23 [m]&quot;</span><span class="p">,</span> <span class="s2">&quot;2.5 [degree]&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;LE2pass1&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0 [m]&quot;</span><span class="p">,</span> <span class="s2">&quot;0.23 [m]&quot;</span><span class="p">,</span> <span class="s2">&quot;-2.5 [degree]&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;LE2pass2&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0 [m]&quot;</span><span class="p">,</span> <span class="s2">&quot;0.23 [m]&quot;</span><span class="p">,</span> <span class="s2">&quot;7.5 [degree]&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;TE1pass1&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0.05 [m]&quot;</span><span class="p">,</span> <span class="s2">&quot;0.23 [m]&quot;</span><span class="p">,</span> <span class="s2">&quot;0 [degree]&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;TE1pass2&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0.05 [m]&quot;</span><span class="p">,</span> <span class="s2">&quot;0.23 [m]&quot;</span><span class="p">,</span> <span class="s2">&quot;10 [degree]&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;TE2pass1&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0.05 [m]&quot;</span><span class="p">,</span> <span class="s2">&quot;0.23 [m]&quot;</span><span class="p">,</span> <span class="s2">&quot;5 [degree]&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;TE2pass2&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0.05 [m]&quot;</span><span class="p">,</span> <span class="s2">&quot;0.23 [m]&quot;</span><span class="p">,</span> <span class="s2">&quot;15 [degree]&quot;</span><span class="p">],</span>
+<span class="p">}</span>
+<span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">position</span> <span class="ow">in</span> <span class="n">monitor_point_table</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="n">monitors</span><span class="o">.</span><span class="n">monitor_point</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+    <span class="n">monitors</span><span class="o">.</span><span class="n">monitor_point</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;Cylindrical Coordinates&quot;</span>
+    <span class="n">monitors</span><span class="o">.</span><span class="n">monitor_point</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">output_variables_list</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s2">&quot;Pressure&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Temperature&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Total Pressure&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Total Temperature&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Velocity&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Velocity in Stn Frame&quot;</span><span class="p">,</span>
+    <span class="p">]</span>
+    <span class="n">monitors</span><span class="o">.</span><span class="n">monitor_point</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">position_axial_component</span> <span class="o">=</span> <span class="n">position</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">monitors</span><span class="o">.</span><span class="n">monitor_point</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">position_r_component</span> <span class="o">=</span> <span class="n">position</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">monitors</span><span class="o">.</span><span class="n">monitor_point</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">position_theta_component</span> <span class="o">=</span> <span class="n">position</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+
+<span class="n">monitor_expression_table</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;Force on Blade&quot;</span><span class="p">:</span> <span class="s2">&quot;force()@REGION:Rotor BLADE&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Force on Blade 2&quot;</span><span class="p">:</span> <span class="s2">&quot;force()@REGION:Rotor BLADE 2&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Max Displ Blade&quot;</span><span class="p">:</span> <span class="s2">&quot;maxVal(Total Mesh Displacement)@REGION:Rotor BLADE&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Max Displ Blade 2&quot;</span><span class="p">:</span> <span class="s2">&quot;maxVal(Total Mesh Displacement)@REGION:Rotor BLADE 2&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Power on Blade&quot;</span><span class="p">:</span> <span class="s2">&quot;areaInt(Wall Power Density)@REGION:Rotor BLADE&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Power on Blade 2&quot;</span><span class="p">:</span> <span class="s2">&quot;areaInt(Wall Power Density)@REGION:Rotor BLADE 2&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Work on Blade&quot;</span><span class="p">:</span> <span class="s2">&quot;areaInt(Wall Work Density)@REGION:Rotor BLADE&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Work on Blade 2&quot;</span><span class="p">:</span> <span class="s2">&quot;areaInt(Wall Work Density)@REGION:Rotor BLADE 2&quot;</span><span class="p">,</span>
+<span class="p">}</span>
+<span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">expression</span> <span class="ow">in</span> <span class="n">monitor_expression_table</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="n">monitors</span><span class="o">.</span><span class="n">monitor_point</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+    <span class="n">monitors</span><span class="o">.</span><span class="n">monitor_point</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;Expression&quot;</span>
+    <span class="n">monitors</span><span class="o">.</span><span class="n">monitor_point</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">expression_value</span> <span class="o">=</span> <span class="n">expression</span>
+</pre></div>
+</div>
+<p>Aerodynamic monitors are set up differently in 2025 R2 compared to later releases.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">aerodynamic_damping_table</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">[</span><span class="s2">&quot;Full Period Integration&quot;</span><span class="p">,</span> <span class="s2">&quot;Rotor BLADE&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;Full Period Integration&quot;</span><span class="p">,</span> <span class="s2">&quot;Rotor BLADE 2&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;Moving Integration Interval&quot;</span><span class="p">,</span> <span class="s2">&quot;Rotor BLADE&quot;</span><span class="p">],</span>
+<span class="p">]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s2">&quot;Aerodynamic Damping&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)])</span>
+    <span class="k">if</span> <span class="n">pypre</span><span class="o">.</span><span class="n">get_cfx_version</span><span class="p">()</span> <span class="o">&gt;</span> <span class="n">CFXVersion</span><span class="o">.</span><span class="n">v252</span><span class="p">:</span>
+        <span class="n">monitors</span><span class="o">.</span><span class="n">monitor_point</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+        <span class="n">monitors</span><span class="o">.</span><span class="n">monitor_point</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;Aerodynamic Damping&quot;</span>
+        <span class="n">monitors</span><span class="o">.</span><span class="n">monitor_point</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">integration_option</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="n">aerodynamic_damping_table</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">monitors</span><span class="o">.</span><span class="n">monitor_point</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">location_type</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;Mesh Regions&quot;</span>
+        <span class="n">monitors</span><span class="o">.</span><span class="n">monitor_point</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">location_type</span><span class="o">.</span><span class="n">location</span> <span class="o">=</span> <span class="n">aerodynamic_damping_table</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">monitors</span><span class="o">.</span><span class="n">aerodynamic_damping</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+        <span class="n">monitors</span><span class="o">.</span><span class="n">aerodynamic_damping</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="n">aerodynamic_damping_table</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">monitors</span><span class="o">.</span><span class="n">aerodynamic_damping</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">location_type</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;Mesh Regions&quot;</span>
+        <span class="n">monitors</span><span class="o">.</span><span class="n">aerodynamic_damping</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">location_type</span><span class="o">.</span><span class="n">location</span> <span class="o">=</span> <span class="n">aerodynamic_damping_table</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+</div>
+</section>
+<section id="check-for-physics-messages">
+<h3>Check for physics messages<a class="headerlink" href="#check-for-physics-messages" title="Link to this heading">#</a></h3>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">physics_messages</span> <span class="o">=</span> <span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">get_physics_messages</span><span class="p">(</span><span class="n">severity</span><span class="o">=</span><span class="s2">&quot;All&quot;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">physics_messages</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Physics messages (time integration setup): </span><span class="si">{</span><span class="n">physics_messages</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="run-the-solver-for-the-time-integration-setup">
+<h2>Run the solver for the time integration setup<a class="headerlink" href="#run-the-solver-for-the-time-integration-setup" title="Link to this heading">#</a></h2>
+<section id="start-the-solver-session-for-the-time-integration-setup">
+<h3>Start the Solver session for the time integration setup<a class="headerlink" href="#start-the-solver-session-for-the-time-integration-setup" title="Link to this heading">#</a></h3>
+<p>To set up the initial conditions for the time integration run, the previously started solver run
+must have completed.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">pysolve_ini</span><span class="o">.</span><span class="n">solution</span><span class="o">.</span><span class="n">wait_for_run</span><span class="p">()</span>
+<span class="n">initial_results_file</span> <span class="o">=</span> <span class="n">pysolve_ini</span><span class="o">.</span><span class="n">solution</span><span class="o">.</span><span class="n">get_results_file_name</span><span class="p">()</span>
+<span class="n">pysolve_ini</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+<span class="n">initial_values_spec</span> <span class="o">=</span> <span class="n">exec_control</span><span class="o">.</span><span class="n">run_definition</span><span class="o">.</span><span class="n">initial_values_specification</span>
+<span class="n">initial_values_spec</span><span class="o">.</span><span class="n">initial_values</span><span class="p">[</span><span class="s2">&quot;Initial Values 1&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">initial_values_spec</span><span class="o">.</span><span class="n">initial_values</span><span class="p">[</span><span class="s2">&quot;Initial Values 1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;Results File&quot;</span>
+<span class="n">initial_values_spec</span><span class="o">.</span><span class="n">initial_values</span><span class="p">[</span><span class="s2">&quot;Initial Values 1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">file_name</span> <span class="o">=</span> <span class="n">initial_results_file</span>
+</pre></div>
+</div>
+<p>Start the solver for the time integration run.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">pypre</span><span class="o">.</span><span class="n">file</span><span class="o">.</span><span class="n">save_case</span><span class="p">(</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;fourier_blade_flutter_time.cfx&quot;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">pypre</span><span class="o">.</span><span class="n">get_cfx_version</span><span class="p">()</span> <span class="o">&gt;</span> <span class="n">CFXVersion</span><span class="o">.</span><span class="n">v252</span><span class="p">:</span>
+    <span class="n">pysolve_time_integration</span> <span class="o">=</span> <span class="n">pycfx</span><span class="o">.</span><span class="n">Solver</span><span class="o">.</span><span class="n">from_session</span><span class="p">(</span><span class="n">pypre</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">pysolve_time_integration</span> <span class="o">=</span> <span class="n">pycfx</span><span class="o">.</span><span class="n">Solver</span><span class="o">.</span><span class="n">from_session</span><span class="p">(</span>
+        <span class="n">pypre</span><span class="p">,</span> <span class="n">case_file_name</span><span class="o">=</span><span class="s2">&quot;fourier_blade_flutter_time&quot;</span>
+    <span class="p">)</span>
+<span class="n">pysolve_time_integration</span><span class="o">.</span><span class="n">solution</span><span class="o">.</span><span class="n">start_run</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="preprocessing-for-the-harmonic-balance-setup">
+<h2>Preprocessing for the harmonic balance setup<a class="headerlink" href="#preprocessing-for-the-harmonic-balance-setup" title="Link to this heading">#</a></h2>
+<section id="modify-the-setup-to-use-harmonic-balance">
+<h3>Modify the setup to use Harmonic Balance<a class="headerlink" href="#modify-the-setup-to-use-harmonic-balance" title="Link to this heading">#</a></h3>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">tbrm</span><span class="o">.</span><span class="n">transient_method</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;Harmonic Balance&quot;</span>
+<span class="n">tbrm</span><span class="o">.</span><span class="n">transient_method</span><span class="o">.</span><span class="n">number_of_modes</span> <span class="o">=</span> <span class="mi">3</span>
+</pre></div>
+</div>
+</section>
+<section id="configure-the-solver-control">
+<h3>Configure the Solver Control<a class="headerlink" href="#configure-the-solver-control" title="Link to this heading">#</a></h3>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">solver_control</span> <span class="o">=</span> <span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s2">&quot;Flow Analysis 1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">solver_control</span>
+<span class="n">solver_control</span><span class="o">.</span><span class="n">transient_scheme</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;Harmonic Balance&quot;</span>
+<span class="n">solver_control</span><span class="o">.</span><span class="n">convergence_control</span><span class="o">.</span><span class="n">minimum_number_of_iterations</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">solver_control</span><span class="o">.</span><span class="n">convergence_control</span><span class="o">.</span><span class="n">maximum_number_of_iterations</span> <span class="o">=</span> <span class="mi">200</span>
+<span class="n">solver_control</span><span class="o">.</span><span class="n">convergence_control</span><span class="o">.</span><span class="n">timescale_control</span> <span class="o">=</span> <span class="s2">&quot;Physical Timescale&quot;</span>
+<span class="n">solver_control</span><span class="o">.</span><span class="n">convergence_control</span><span class="o">.</span><span class="n">physical_timescale</span> <span class="o">=</span> <span class="s2">&quot;1/(15*VibrationFrequency)&quot;</span>
+<span class="n">solver_control</span><span class="o">.</span><span class="n">convergence_criteria</span><span class="o">.</span><span class="n">residual_type</span> <span class="o">=</span> <span class="s2">&quot;RMS&quot;</span>
+<span class="n">solver_control</span><span class="o">.</span><span class="n">convergence_criteria</span><span class="o">.</span><span class="n">residual_target</span> <span class="o">=</span> <span class="mf">1e-5</span>
+</pre></div>
+</div>
+</section>
+<section id="update-the-aerodynamic-damping-monitors">
+<h3>Update the Aerodynamic Damping monitors<a class="headerlink" href="#update-the-aerodynamic-damping-monitors" title="Link to this heading">#</a></h3>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s2">&quot;Aerodynamic Damping&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)])</span>
+    <span class="k">if</span> <span class="n">pypre</span><span class="o">.</span><span class="n">get_cfx_version</span><span class="p">()</span> <span class="o">&gt;</span> <span class="n">CFXVersion</span><span class="o">.</span><span class="n">v252</span><span class="p">:</span>
+        <span class="n">monitors</span><span class="o">.</span><span class="n">monitor_point</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">integration_option</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;Fourier Integration&quot;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">monitors</span><span class="o">.</span><span class="n">aerodynamic_damping</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;Fourier Integration&quot;</span>
+<span class="k">if</span> <span class="n">pypre</span><span class="o">.</span><span class="n">get_cfx_version</span><span class="p">()</span> <span class="o">&gt;</span> <span class="n">CFXVersion</span><span class="o">.</span><span class="n">v252</span><span class="p">:</span>
+    <span class="k">del</span> <span class="n">monitors</span><span class="o">.</span><span class="n">monitor_point</span><span class="p">[</span><span class="s2">&quot;Aerodynamic Damping 3&quot;</span><span class="p">]</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">del</span> <span class="n">monitors</span><span class="o">.</span><span class="n">aerodynamic_damping</span><span class="p">[</span><span class="s2">&quot;Aerodynamic Damping 3&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</section>
+<section id="id1">
+<h3>Check for physics messages<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">physics_messages</span> <span class="o">=</span> <span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">get_physics_messages</span><span class="p">(</span><span class="n">severity</span><span class="o">=</span><span class="s2">&quot;All&quot;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">physics_messages</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Physics messages (harmonic balance setup): </span><span class="si">{</span><span class="n">physics_messages</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="run-the-solver-for-the-harmonic-balance-setup">
+<h2>Run the solver for the harmonic balance setup<a class="headerlink" href="#run-the-solver-for-the-harmonic-balance-setup" title="Link to this heading">#</a></h2>
+<section id="start-the-solver-session-for-the-harmonic-balance-setup">
+<h3>Start the Solver session for the harmonic balance setup<a class="headerlink" href="#start-the-solver-session-for-the-harmonic-balance-setup" title="Link to this heading">#</a></h3>
+<p>The harmonic balance setup can use the same initial conditions as the time integration setup.
+Thus, initial conditions do not need to be set up again.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">pypre</span><span class="o">.</span><span class="n">file</span><span class="o">.</span><span class="n">save_case</span><span class="p">(</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;fourier_blade_flutter_harmonic.cfx&quot;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">pypre</span><span class="o">.</span><span class="n">get_cfx_version</span><span class="p">()</span> <span class="o">&gt;</span> <span class="n">CFXVersion</span><span class="o">.</span><span class="n">v252</span><span class="p">:</span>
+    <span class="n">pysolve_harmonic_balance</span> <span class="o">=</span> <span class="n">pycfx</span><span class="o">.</span><span class="n">Solver</span><span class="o">.</span><span class="n">from_session</span><span class="p">(</span><span class="n">pypre</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">pysolve_harmonic_balance</span> <span class="o">=</span> <span class="n">pycfx</span><span class="o">.</span><span class="n">Solver</span><span class="o">.</span><span class="n">from_session</span><span class="p">(</span>
+        <span class="n">pypre</span><span class="p">,</span> <span class="n">case_file_name</span><span class="o">=</span><span class="s2">&quot;fourier_blade_flutter_harmonic&quot;</span>
+    <span class="p">)</span>
+<span class="n">pysolve_harmonic_balance</span><span class="o">.</span><span class="n">solution</span><span class="o">.</span><span class="n">start_run</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="postprocessing">
+<h2>Postprocessing<a class="headerlink" href="#postprocessing" title="Link to this heading">#</a></h2>
+<section id="postprocess-the-blade-flutter-results">
+<h3>Postprocess the blade flutter results<a class="headerlink" href="#postprocess-the-blade-flutter-results" title="Link to this heading">#</a></h3>
+<p>Set up some postprocessing actions ready for when the solver runs have completed. These actions
+follow the postprocessing instructions for the CFX tutorial <em>Fourier Transformation Method for
+a Blade Flutter Case</em>.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">do_postprocessing()</span></code> function is broken down into separate functions for ease of
+documentation. Note that animation is not available in PyCFX 2025 R2.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">do_postprocessing</span><span class="p">(</span><span class="n">pypost</span><span class="p">:</span> <span class="n">pycfx</span><span class="o">.</span><span class="n">PostProcessing</span><span class="p">,</span> <span class="n">label</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Performs postprocessing actions on a PostProcessing session with a results file</span>
+<span class="sd">    already loaded.&quot;&quot;&quot;</span>
+    <span class="n">create_variable</span><span class="p">(</span><span class="n">pypost</span><span class="p">)</span>
+    <span class="n">create_contour</span><span class="p">(</span><span class="n">pypost</span><span class="p">,</span> <span class="n">label</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">pypost</span><span class="o">.</span><span class="n">get_cfx_version</span><span class="p">()</span> <span class="o">&gt;</span> <span class="n">CFXVersion</span><span class="o">.</span><span class="n">v252</span><span class="p">:</span>
+        <span class="n">create_animation</span><span class="p">(</span><span class="n">pypost</span><span class="p">,</span> <span class="n">label</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Define a variable to calculate the <strong>Total Wall Work</strong>.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">create_variable</span><span class="p">(</span><span class="n">pypost</span><span class="p">:</span> <span class="n">pycfx</span><span class="o">.</span><span class="n">PostProcessing</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Creates the Total Wall Work variable.&quot;&quot;&quot;</span>
+    <span class="n">pypost</span><span class="o">.</span><span class="n">results</span><span class="o">.</span><span class="n">user_scalar_variable</span><span class="p">[</span><span class="s2">&quot;Total Wall Work&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;recipe&quot;</span><span class="p">:</span> <span class="s2">&quot;Expression&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;expression&quot;</span><span class="p">:</span> <span class="s2">&quot;Wall Work Density * Area&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;calculate_global_range&quot;</span><span class="p">:</span> <span class="s2">&quot;On&quot;</span><span class="p">,</span>
+    <span class="p">}</span>
+</pre></div>
+</div>
+<p>Create a contour plot for the Total Wall Work on the blade and save an image to file.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">create_contour</span><span class="p">(</span><span class="n">pypost</span><span class="p">:</span> <span class="n">pycfx</span><span class="o">.</span><span class="n">PostProcessing</span><span class="p">,</span> <span class="n">label</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Creates a contour of Total Wall Work on the R1 Blade boundary.&quot;&quot;&quot;</span>
+    <span class="n">pypost</span><span class="o">.</span><span class="n">results</span><span class="o">.</span><span class="n">contour</span><span class="p">[</span><span class="s2">&quot;Contour 1&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;location_list&quot;</span><span class="p">:</span> <span class="s2">&quot;R1 Blade&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;colour_variable&quot;</span><span class="p">:</span> <span class="s2">&quot;Total Wall Work&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;contour_range&quot;</span><span class="p">:</span> <span class="s2">&quot;Local&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;number_of_contours&quot;</span><span class="p">:</span> <span class="mi">21</span><span class="p">,</span>
+        <span class="s2">&quot;draw_contours&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+        <span class="s2">&quot;constant_contour_colour&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+        <span class="s2">&quot;line_colour_mode&quot;</span><span class="p">:</span> <span class="s2">&quot;Default&quot;</span><span class="p">,</span>
+    <span class="p">}</span>
+    <span class="n">contour</span> <span class="o">=</span> <span class="n">pypost</span><span class="o">.</span><span class="n">results</span><span class="o">.</span><span class="n">contour</span><span class="p">[</span><span class="s2">&quot;Contour 1&quot;</span><span class="p">]</span>
+    <span class="n">contour</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">view</span><span class="o">=</span><span class="s2">&quot;/VIEW:View 1&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Set the view to show the contour better.</span>
+    <span class="n">pypost</span><span class="o">.</span><span class="n">results</span><span class="o">.</span><span class="n">view</span><span class="p">[</span><span class="s2">&quot;View 1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">camera_mode</span> <span class="o">=</span> <span class="s2">&quot;User Specified&quot;</span>
+    <span class="n">pypost</span><span class="o">.</span><span class="n">results</span><span class="o">.</span><span class="n">view</span><span class="p">[</span><span class="s2">&quot;View 1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">camera</span><span class="o">.</span><span class="n">pivot_point</span> <span class="o">=</span> <span class="s2">&quot;0.21, 0.021, 0.025&quot;</span>
+    <span class="n">pypost</span><span class="o">.</span><span class="n">results</span><span class="o">.</span><span class="n">view</span><span class="p">[</span><span class="s2">&quot;View 1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">camera</span><span class="o">.</span><span class="n">rotation_quaternion</span> <span class="o">=</span> <span class="s2">&quot;0.048, -0.19, 0.040, 0.98&quot;</span>
+    <span class="n">pypost</span><span class="o">.</span><span class="n">results</span><span class="o">.</span><span class="n">view</span><span class="p">[</span><span class="s2">&quot;View 1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">camera</span><span class="o">.</span><span class="n">scale</span> <span class="o">=</span> <span class="mf">12.0</span>
+
+    <span class="c1"># Save the picture.</span>
+    <span class="n">pypost</span><span class="o">.</span><span class="n">file</span><span class="o">.</span><span class="n">save_picture</span><span class="p">(</span><span class="n">file_name</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;fourier_blade_flutter_</span><span class="si">{</span><span class="n">label</span><span class="si">}</span><span class="s2">_contour.png&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Create an animation. The steps are:</p>
+<ul class="simple">
+<li><p>Find the case object that is automatically created.</p></li>
+<li><p>Set up the TBR options ready for the animation.</p></li>
+<li><p>Set up the animation.</p></li>
+<li><p>Play the animation and save the MPEG4 file.</p></li>
+</ul>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">create_animation</span><span class="p">(</span><span class="n">pypost</span><span class="p">:</span> <span class="n">pycfx</span><span class="o">.</span><span class="n">PostProcessing</span><span class="p">,</span> <span class="n">label</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Create an animation of the current view.</span>
+
+<span class="sd">    Raises</span>
+<span class="sd">    ------</span>
+<span class="sd">    RuntimeError</span>
+<span class="sd">        If the results were not loaded successfully.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Find the name of the case object</span>
+    <span class="n">case_names</span> <span class="o">=</span> <span class="n">pypost</span><span class="o">.</span><span class="n">results</span><span class="o">.</span><span class="n">data_reader</span><span class="o">.</span><span class="n">case</span><span class="o">.</span><span class="n">get_object_names</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">case_names</span><span class="p">:</span>
+        <span class="n">current_case</span> <span class="o">=</span> <span class="n">case_names</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;Loading results failed; no cases defined.&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Set up the case ready to generate an animation.</span>
+    <span class="n">pypost</span><span class="o">.</span><span class="n">results</span><span class="o">.</span><span class="n">data_reader</span><span class="o">.</span><span class="n">case</span><span class="p">[</span><span class="n">current_case</span><span class="p">]</span><span class="o">.</span><span class="n">tbr_options</span><span class="o">.</span><span class="n">timestep_sampling</span> <span class="o">=</span> <span class="s2">&quot;Uniform&quot;</span>
+    <span class="c1"># Changing the timestep is currently only available in the CFX Command Language.</span>
+    <span class="n">pypost</span><span class="o">.</span><span class="n">execute_ccl</span><span class="p">(</span><span class="s2">&quot;&gt;load timestep=0&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Set up the animation</span>
+    <span class="n">pypost</span><span class="o">.</span><span class="n">results</span><span class="o">.</span><span class="n">animation</span><span class="o">.</span><span class="n">timeanim_control_variable</span> <span class="o">=</span> <span class="s2">&quot;Timestep&quot;</span>
+    <span class="n">pypost</span><span class="o">.</span><span class="n">results</span><span class="o">.</span><span class="n">animation</span><span class="o">.</span><span class="n">timeanim_end_timestep</span> <span class="o">=</span> <span class="mi">10</span>
+    <span class="n">pypost</span><span class="o">.</span><span class="n">results</span><span class="o">.</span><span class="n">animation</span><span class="o">.</span><span class="n">timeanim_specify_range</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="n">pypost</span><span class="o">.</span><span class="n">results</span><span class="o">.</span><span class="n">animation</span><span class="o">.</span><span class="n">timeanim_start_timestep</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">pypost</span><span class="o">.</span><span class="n">results</span><span class="o">.</span><span class="n">animation</span><span class="o">.</span><span class="n">timeanim_save_mpeg</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="n">pypost</span><span class="o">.</span><span class="n">results</span><span class="o">.</span><span class="n">animation</span><span class="o">.</span><span class="n">video_format</span> <span class="o">=</span> <span class="s2">&quot;mp4&quot;</span>
+    <span class="n">pypost</span><span class="o">.</span><span class="n">results</span><span class="o">.</span><span class="n">animation</span><span class="o">.</span><span class="n">timeanim_mpeg_filename</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;fourier_blade_flutter_</span><span class="si">{</span><span class="n">label</span><span class="si">}</span><span class="s2">_animation.mp4&quot;</span>
+
+    <span class="c1"># Play the animation. This is only available in the CFX Command Language.</span>
+    <span class="n">pypost</span><span class="o">.</span><span class="n">execute_ccl</span><span class="p">(</span><span class="s2">&quot;&gt;animate timestepAnimate&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="execute-the-postprocessing-actions">
+<h3>Execute the postprocessing actions<a class="headerlink" href="#execute-the-postprocessing-actions" title="Link to this heading">#</a></h3>
+<p>Because the harmonic balance simulation is quicker to run than the time integration simulation,
+execute the postprocessing actions for the harmonic balance simulation first.</p>
+<p>Start CFD-Post and load the results for the harmonic balance run. There is no need to wait for
+the solver run to complete. If the run is not already complete, then the PostProcessing session
+waits for it to complete before reading the results.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">pypost_harmonic_balance</span> <span class="o">=</span> <span class="n">pycfx</span><span class="o">.</span><span class="n">PostProcessing</span><span class="o">.</span><span class="n">from_session</span><span class="p">(</span><span class="n">pysolve_harmonic_balance</span><span class="p">)</span>
+<span class="n">do_postprocessing</span><span class="p">(</span><span class="n">pypost_harmonic_balance</span><span class="p">,</span> <span class="s2">&quot;harmonic_balance&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/fourier_blade_flutter_harmonic_balance_contour.png"><img alt="Static mixer with boundary plot." class="align-center" src="../_images/fourier_blade_flutter_harmonic_balance_contour.png" style="width: 400pt;" />
+</a>
+<p>Execute the postprocessing for the time integration simulation.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">pypost_time_integration</span> <span class="o">=</span> <span class="n">pycfx</span><span class="o">.</span><span class="n">PostProcessing</span><span class="o">.</span><span class="n">from_session</span><span class="p">(</span><span class="n">pysolve_time_integration</span><span class="p">)</span>
+<span class="n">do_postprocessing</span><span class="p">(</span><span class="n">pypost_time_integration</span><span class="p">,</span> <span class="s2">&quot;time_integration&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/fourier_blade_flutter_time_integration_contour.png"><img alt="Static mixer with boundary plot." class="align-center" src="../_images/fourier_blade_flutter_time_integration_contour.png" style="width: 400pt;" />
+</a>
+</section>
+</section>
+<section id="final-actions">
+<h2>Final actions<a class="headerlink" href="#final-actions" title="Link to this heading">#</a></h2>
+<p>Close the open sessions.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">pypre</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+<span class="n">pysolve_time_integration</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+<span class="n">pysolve_harmonic_balance</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+<span class="n">pypost_time_integration</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+<span class="n">pypost_harmonic_balance</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-examples-02-fourier-transformation-blade-flutter-py">
+<div class="sphx-glr-download sphx-glr-download-jupyter docutils container">
+<p><a class="reference download internal" download="" href="../_downloads/d9a14fc1ca8f3b7b6d2f1e47fff515af/02-fourier-transformation-blade-flutter.ipynb"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Jupyter</span> <span class="pre">notebook:</span> <span class="pre">02-fourier-transformation-blade-flutter.ipynb</span></code></a></p>
+</div>
+<div class="sphx-glr-download sphx-glr-download-python docutils container">
+<p><a class="reference download internal" download="" href="../_downloads/d8fb298f99222932dc96df0b047c3c92/02-fourier-transformation-blade-flutter.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">02-fourier-transformation-blade-flutter.py</span></code></a></p>
+</div>
+<div class="sphx-glr-download sphx-glr-download-zip docutils container">
+<p><a class="reference download internal" download="" href="../_downloads/45c6b7fb8a8d6c148017f2f55d075e30/02-fourier-transformation-blade-flutter.zip"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">zipped:</span> <span class="pre">02-fourier-transformation-blade-flutter.zip</span></code></a></p>
+</div>
+</div>
+<p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#initial-setup">Initial setup</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#perform-required-imports">Perform required imports</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#download-required-files">Download required files</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#initial-preprocessing">Initial preprocessing</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#start-a-preprocessing-session-cfx-pre-and-create-a-new-case">Start a PreProcessing session (CFX-Pre) and create a new case</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#import-a-mesh">Import a mesh</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transform-the-mesh">Transform the mesh</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#expand-the-profile">Expand the profile</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#initialize-the-inlet-profile">Initialize the inlet profile</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-up-the-domain">Set up the domain</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-up-the-boundary-conditions">Set up the boundary conditions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-up-the-cfx-solver">Set up the CFX-Solver</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#check-for-errors">Check for errors</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#run-the-solver-for-the-initial-conditions">Run the solver for the initial conditions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#initialize-a-solver-session">Initialize a Solver session</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocessing-for-the-time-integration-setup">Preprocessing for the time integration setup</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modify-the-setup-to-use-transient-blade-row-analysis">Modify the setup to use Transient Blade Row analysis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-up-the-expressions">Set up the expressions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modify-the-r1-blade-boundary">Modify the R1 Blade boundary</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-up-the-transient-blade-row-models">Set up the Transient Blade Row Models</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configure-the-output-control">Configure the Output Control</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#check-for-physics-messages">Check for physics messages</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#run-the-solver-for-the-time-integration-setup">Run the solver for the time integration setup</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#start-the-solver-session-for-the-time-integration-setup">Start the Solver session for the time integration setup</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocessing-for-the-harmonic-balance-setup">Preprocessing for the harmonic balance setup</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modify-the-setup-to-use-harmonic-balance">Modify the setup to use Harmonic Balance</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configure-the-solver-control">Configure the Solver Control</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#update-the-aerodynamic-damping-monitors">Update the Aerodynamic Damping monitors</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Check for physics messages</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#run-the-solver-for-the-harmonic-balance-setup">Run the solver for the harmonic balance setup</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#start-the-solver-session-for-the-harmonic-balance-setup">Start the Solver session for the harmonic balance setup</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#postprocessing">Postprocessing</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#postprocess-the-blade-flutter-results">Postprocess the blade flutter results</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#execute-the-postprocessing-actions">Execute the postprocessing actions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#final-actions">Final actions</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  <div role="note" aria-label="source link">
+    <ul class="this-page-menu">
+      <li><a href="../_sources/examples/02-fourier-transformation-blade-flutter.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+
+  <!-- Include desired assets -->
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.7/require.min.js"></script>
+
+<script>
+// Passing the search options to the search.js file
+const SEARCH_OPTIONS = JSON.parse('{"keys": ["title", "text", "objectID"], "limit": 10, "threshold": 0.2}');
+const SEARCH_FILE = "../_static/search.json";
+const ADVANCE_SEARCH_PATH = "../search.html";
+const EXTRA_SOURCES = JSON.parse('""');
+</script>
+
+
+<script src="../_static/js/search.js"></script>
+
+  
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright (c) 2026 ANSYS, Inc. All rights reserved.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<!--
+  Theme Version Footer
+  Displays the Sphinx theme version and the last updated date.
+  Accessibility and semantic improvements included.
+-->
+<footer class="theme-version" aria-label="Theme version and last update">
+  <span>
+    
+      Built with the
+      <a href="https://sphinxdocs.ansys.com/version/stable/index.html" target="_blank" rel="noopener noreferrer">
+        Ansys Sphinx Theme
+      </a>
+      1.7.2.
+    
+  </span>
+  <br />
+  <span>Last updated on <time id="ast_build_date"></time></span>
+</footer>
+<script>
+  // Set the last updated date in a readable format
+  (function() {
+    var options = { day: "numeric", month: "long", year: "numeric" };
+    var ast_lastModifiedDate = new Date(document.lastModified);
+    var ast_build_date = ast_lastModifiedDate.toLocaleDateString("en-US", options);
+    var dateElem = document.getElementById("ast_build_date");
+    if (dateElem) {
+      dateElem.textContent = ast_build_date;
+    }
+  })();
+</script></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

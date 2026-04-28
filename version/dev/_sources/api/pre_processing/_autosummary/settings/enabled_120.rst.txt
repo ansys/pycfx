@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_120:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_120.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================================================================   =============================================================================================================
+
+Parent                                                                                                                                                                                                                Summary
+
+=============================================================================================================   =============================================================================================================
+:ref:`liquid_quenching_heat_transfer_coefficient <pre_processing_liquid_quenching_heat_transfer_coefficient>`   Specifies contribution of quenching to the liquid phase heat transfer coefficient for the wall boiling model.
+
+=============================================================================================================   =============================================================================================================
+

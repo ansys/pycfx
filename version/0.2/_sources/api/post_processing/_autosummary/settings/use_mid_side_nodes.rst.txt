@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_use_mid_side_nodes:
+
+use_mid_side_nodes
+==================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.use_mid_side_nodes.use_mid_side_nodes
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==============================================================   ====================================
+
+Parent                                                                                        Summary
+
+==============================================================   ====================================
+:ref:`user_surface_child <post_processing_user_surface_child>`   'child_object_type' of user_surface.
+
+==============================================================   ====================================
+

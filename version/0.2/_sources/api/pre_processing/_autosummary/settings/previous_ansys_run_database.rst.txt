@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_previous_ansys_run_database:
+
+previous_ansys_run_database
+===========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.previous_ansys_run_database.previous_ansys_run_database
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ============================
+
+Parent                                                                               Summary
+
+=============================================================   ============================
+:ref:`mfx_run_definition <pre_processing_mfx_run_definition>`   'MFX RUN DEFINITION' object.
+
+=============================================================   ============================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_young_beta:
+
+young_beta
+==========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.young_beta.young_beta
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   ========================================================
+
+Parent                                                                                                                     Summary
+
+=======================================================================   ========================================================
+:ref:`thermal_diffusion_model <pre_processing_thermal_diffusion_model>`   Model to be used for thermal transfer to small droplets.
+
+=======================================================================   ========================================================
+

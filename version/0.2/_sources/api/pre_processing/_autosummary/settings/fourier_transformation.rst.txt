@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_fourier_transformation:
+
+fourier_transformation
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fourier_transformation.fourier_transformation
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`fourier_transformation_child <pre_processing_fourier_transformation_child>`
+
+
+.. rubric:: Included in:
+
+=============================================================================   ====================================
+
+Parent                                                                                                       Summary
+
+=============================================================================   ====================================
+:ref:`transient_blade_row_models <pre_processing_transient_blade_row_models>`   'TRANSIENT BLADE ROW MODELS' object.
+
+=============================================================================   ====================================
+

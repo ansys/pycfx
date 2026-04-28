@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_convergence_conditions:
+
+convergence_conditions
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.convergence_conditions.convergence_conditions
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================   ====================================
+
+Attribute                                                                            Summary
+
+=====================================================   ====================================
+:ref:`option <pre_processing_option_368>`               The 'Convergence Conditions' option.
+
+:ref:`condition_list <pre_processing_condition_list>`            'Condition List' parameter.
+
+=====================================================   ====================================
+
+.. rubric:: Included in:
+
+===========================================================   ===============================================================
+
+Parent                                                                                                                Summary
+
+===========================================================   ===============================================================
+:ref:`interrupt_control <pre_processing_interrupt_control>`   Container for control conditions that cause the solver to stop.
+
+===========================================================   ===============================================================
+

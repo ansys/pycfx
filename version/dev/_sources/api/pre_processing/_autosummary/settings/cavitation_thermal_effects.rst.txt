@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_cavitation_thermal_effects:
+
+cavitation_thermal_effects
+==========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.cavitation_thermal_effects.cavitation_thermal_effects
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================================   =======================================================================================
+
+Attribute                                                                                                                                                                     Summary
+
+===========================================================================================   =======================================================================================
+:ref:`enabled <pre_processing_enabled_100>`                                                                                             Enable the CAVITATION THERMAL EFFECTS object.
+
+:ref:`option <pre_processing_option_182>`                                                                                                    The 'Cavitation Thermal Effects' option.
+
+:ref:`cavitation_freestream_temperature <pre_processing_cavitation_freestream_temperature>`                   Freestream temperature used for the Taylor approximation thermal model.
+
+:ref:`cavitation_thermal_coefficient <pre_processing_cavitation_thermal_coefficient>`         Coefficient for the Taylor approximation thermal correction of the saturation pressure.
+
+===========================================================================================   =======================================================================================
+
+.. rubric:: Included in:
+
+=========================================================   ===============================
+
+Parent                                                                              Summary
+
+=========================================================   ===============================
+:ref:`cavitation_model <pre_processing_cavitation_model>`   Specifies the cavitation model.
+
+=========================================================   ===============================
+

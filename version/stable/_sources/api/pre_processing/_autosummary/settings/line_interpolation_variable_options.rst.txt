@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_line_interpolation_variable_options:
+
+line_interpolation_variable_options
+===================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.line_interpolation_variable_options.line_interpolation_variable_options
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`line_interpolation_variable_options_child <pre_processing_line_interpolation_variable_options_child>`
+
+
+.. rubric:: Included in:
+
+=============================================================   =======================================================================
+
+Parent                                                                                                                          Summary
+
+=============================================================   =======================================================================
+:ref:`line_interpolation <pre_processing_line_interpolation>`   Sets parameters that control line point interpolation to mesh vertices.
+
+=============================================================   =======================================================================
+

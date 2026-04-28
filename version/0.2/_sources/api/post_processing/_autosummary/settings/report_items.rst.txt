@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_report_items:
+
+report_items
+============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.report_items.report_items
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+======================================   ===================
+
+Parent                                               Summary
+
+======================================   ===================
+:ref:`report <post_processing_report>`   Defines the Report.
+
+======================================   ===================
+

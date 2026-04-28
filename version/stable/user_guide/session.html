@@ -1,0 +1,1245 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Use PyCFX sessions &#8212; PyCFX</title>
+  
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/ansys-sphinx-theme.css?v=a23b20f3" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css?v=d2d258e8" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-binder.css?v=f4aeca0c" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-dataframe.css?v=2082cf3c" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-rendered-html.css?v=1277b6f3" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/ansys-sphinx-theme.css?v=a23b20f3" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://www.nerdfonts.com/assets/css/webfont.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+
+  <!-- Include desired assets -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  
+
+  
+    <link href="../_static/css/breadcrumbs.css" rel="stylesheet" />
+  
+    <script src="../_static/documentation_options.js?v=95e61db4"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'user_guide/session';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://cfx.docs.pyansys.com/versions.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.2';
+        DOCUMENTATION_OPTIONS.show_version_warning_banner =
+            false;
+        </script>
+    <link rel="icon" href="../_static/ansys-favicon.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Configure logging" href="log.html" />
+    <link rel="prev" title="Launch CFX" href="launching_cfx.html" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.2.0" />
+  <link rel="canonical" href="https://cfx.docs.pyansys.com/version/stable/user_guide/session.html" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/pyansys_logo_transparent_black.png" class="logo__image only-light" alt="PyCFX - Home"/>
+    <img src="../_static/pyansys_logo_transparent_white.png" class="logo__image only-dark pst-js-only" alt="PyCFX - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../index.html" title="PyCFX home">Home</a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../getting_started/getting_started_contents.html">
+    Getting started
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="user_guide_contents.html">
+    User guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../examples/index.html">
+    Examples
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../api/api_contents.html">
+    API reference
+  </a>
+</li>
+
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false"
+                aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../contributing/contributing_contents.html">
+    Contribute
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../changelog.html">
+    Release notes
+  </a>
+</li>
+
+                </ul>
+            </li>
+            
+  </ul>
+</nav>
+</div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+      
+        <div class="navbar-item">
+<div class="search-bar pst-js-only" id="search-bar">
+  <form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <input type="search" class="form-control" name="q" placeholder="Search the docs ..."
+      aria-label="Search the docs ..." autocomplete="off" autocorrect="off"
+      autocapitalize="off" spellcheck="false" />
+    <span class="search-button__kbd-shortcut">
+      <kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd>
+    </span>
+  </form>
+  
+  <div id="static-search-results" class="static-search-results" style="display:none;" tabindex="0"></div>
+  
+</div></div>
+      
+        <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-2"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-2"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-2"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-2">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/ansys/pycfx" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+  
+    
+<!--
+  Announcement Version Loader
+  Dynamically loads the announcement.html content into the announcement_msg div.
+-->
+<div id="announcement_msg" aria-live="polite"></div>
+<script>
+  // Fetch and inject the announcement HTML content
+  fetch("announcement.html")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`HTTP error: ${response.status} Announcement.html file not found, Please ignore this, if you are in dev/stable documentation`);
+      }
+      return response.text();
+    })
+    .then((text) => {
+      var msgDiv = document.getElementById("announcement_msg");
+      if (msgDiv) {
+        msgDiv.innerHTML = text;
+      }
+    })
+    .catch((error) => {
+      // Log only unexpected fetch errors
+      if (!(error.message && error.message.startsWith("HTTP error: 404"))) {
+        console.error(`Fetch problem: ${error.message} Announcement.html could not be loaded.`);
+      }
+    });
+</script>
+  
+
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../index.html" title="PyCFX home">Home</a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../getting_started/getting_started_contents.html">
+    Getting started
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="user_guide_contents.html">
+    User guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../examples/index.html">
+    Examples
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../api/api_contents.html">
+    API reference
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../contributing/contributing_contents.html">
+    Contribute
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../changelog.html">
+    Release notes
+  </a>
+</li>
+
+  </ul>
+</nav>
+</div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<div class="search-bar pst-js-only" id="search-bar">
+  <form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <input type="search" class="form-control" name="q" placeholder="Search the docs ..."
+      aria-label="Search the docs ..." autocomplete="off" autocorrect="off"
+      autocapitalize="off" spellcheck="false" />
+    <span class="search-button__kbd-shortcut">
+      <kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd>
+    </span>
+  </form>
+  
+  <div id="static-search-results" class="static-search-results" style="display:none;" tabindex="0"></div>
+  
+</div></div>
+        
+          <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-3"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-3"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-3"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-3">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/ansys/pycfx" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="launching_cfx.html">Launch CFX</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Use PyCFX sessions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="log.html">Configure logging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usability.html">Explore usability features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="environment_variables.html">Environment variables</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+<nav aria-label="Breadcrumb">
+  <ul class="bd-breadcrumbs">
+         
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="https://docs.pyansys.com/" class="nav-link">PyAnsys</a>
+    </li>
+     
+    <li class="breadcrumb-item">
+      <a
+        href="../index.html"
+        class="nav-link"
+        aria-label="Home"
+      >
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+     
+    <li class="breadcrumb-item">
+      <a href="user_guide_contents.html" class="nav-link">User guide</a>
+    </li>
+      
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Use PyCFX sessions</span></li>
+    
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="use-pycfx-sessions">
+<span id="ref-session-guide"></span><h1>Use PyCFX sessions<a class="headerlink" href="#use-pycfx-sessions" title="Link to this heading">#</a></h1>
+<p>PyCFX provides three types of session objects:</p>
+<ul class="simple">
+<li><p><strong>PreProcessing</strong>: Connects to CFX-Pre to set up simulations.</p></li>
+<li><p><strong>Solver</strong>: Controls the CFX-Solver.</p></li>
+<li><p><strong>PostProcessing</strong>: Connects to CFD-Post to postprocess simulation results.</p></li>
+</ul>
+<p>For an overview of these session objects, see the <a class="reference internal" href="user_guide_contents.html#ref-user-guide"><span class="std std-ref">User guide</span></a>.</p>
+<p>Each PyCFX session object exposes a hierarchy of Python <em>settings objects</em> that provide access to the
+underlying CFX setup and tools. For example, both the PreProcessing and PostProcessing session
+objects have a child <code class="docutils literal notranslate"><span class="pre">setup</span></code> object, which contains the CFX setup in a hierarchy that corresponds
+to the CFX Command Language (CCL) structure of CFX-Pre or CFD-Post, respectively. They also have a
+child <code class="docutils literal notranslate"><span class="pre">file</span></code> object, which provides actions that broadly correspond to the functions accessible
+from the CFX-Pre or CFD-Post <strong>File</strong> menus.</p>
+<p>Each settings object that is a child of the <code class="docutils literal notranslate"><span class="pre">setup</span></code> object represents a CCL object or parameter,
+or a related function. For example, <code class="docutils literal notranslate"><span class="pre">pypre.setup.flow['Flow</span> <span class="pre">Analysis</span> <span class="pre">1'].analysis_type.option</span></code>
+represents the following CCL parameter:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">FLOW</span><span class="p">:</span> <span class="n">Flow</span> <span class="n">Analysis</span> <span class="mi">1</span>
+  <span class="n">ANALYSIS</span> <span class="n">TYPE</span><span class="p">:</span>
+    <span class="n">Option</span> <span class="o">=</span> <span class="n">Steady</span> <span class="n">State</span>
+  <span class="n">END</span>
+<span class="n">END</span>
+</pre></div>
+</div>
+<p>When Python settings objects are created, their names are derived from the related CCL object
+types and parameter names by converting to lowercase and replacing spaces with underscores.
+Named object names (such as <strong>Flow Analysis 1</strong>) and parameter values (such as <strong>Steady State</strong>)
+remain unchanged from CCL.</p>
+<p>All settings objects share a uniform interface with methods like <code class="docutils literal notranslate"><span class="pre">get_state()</span></code>, <code class="docutils literal notranslate"><span class="pre">set_state()</span></code>,
+and <code class="docutils literal notranslate"><span class="pre">is_active()</span></code>. Additional methods such as <code class="docutils literal notranslate"><span class="pre">allowed_values()</span></code>, <code class="docutils literal notranslate"><span class="pre">min()</span></code>, and <code class="docutils literal notranslate"><span class="pre">max()</span></code>
+are available for relevant objects.</p>
+<p>All of the following examples assume that you have initialized a PreProcessing session object
+named <code class="docutils literal notranslate"><span class="pre">pypre</span></code> with a suitable case (for example, the <a class="reference internal" href="../examples/01-introductory-example-static-mixer.html#ref-static-mixer"><span class="std std-ref">Static mixer</span></a> example).</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">ansys.cfx.core</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pycfx</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pypre</span> <span class="o">=</span> <span class="n">pycfx</span><span class="o">.</span><span class="n">PreProcessing</span><span class="o">.</span><span class="n">from_install</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pypre</span><span class="o">.</span><span class="n">file</span><span class="o">.</span><span class="n">open_case</span><span class="p">(</span><span class="n">file_name</span> <span class="o">=</span> <span class="o">&lt;</span><span class="n">case_name</span><span class="o">&gt;</span><span class="p">)</span>
+
+<span class="go"># Retrieve the parameter value</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s1">&#39;Flow Analysis 1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">analysis_type</span><span class="o">.</span><span class="n">option</span><span class="p">()</span>
+<span class="go">&#39;Steady State&#39;</span>
+
+<span class="go"># Find out the allowed values</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s1">&#39;Flow Analysis 1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">analysis_type</span><span class="o">.</span><span class="n">option</span><span class="o">.</span><span class="n">allowed_values</span><span class="p">()</span>
+<span class="go">[&#39;Steady State&#39;, &#39;Transient&#39;, &#39;Transient Blade Row&#39;]</span>
+
+<span class="go"># Set the Analysis Type option</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s1">&#39;Flow Analysis 1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">analysis_type</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;Transient&quot;</span>
+
+<span class="go"># get_state() can also be used to get the parameter value</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s1">&#39;Flow Analysis 1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">analysis_type</span><span class="o">.</span><span class="n">option</span><span class="o">.</span><span class="n">get_state</span><span class="p">()</span>
+<span class="go">&#39;Transient&#39;</span>
+
+<span class="go"># Invalid values cannot be set</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s1">&#39;Flow Analysis 1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">analysis_type</span><span class="o">.</span><span class="n">option</span><span class="o">.</span><span class="n">set_state</span><span class="p">(</span><span class="s2">&quot;Invalid Value&quot;</span><span class="p">)</span>
+<span class="gt">Traceback (most recent call last):</span>
+<span class="w">  </span><span class="c">...</span>
+<span class="gr">RuntimeError</span>: <span class="n">Parameter value &#39;Option&#39; for object &#39;/FLOW:Flow Analysis 1/ANALYSIS TYPE&#39; is not allowed.</span>
+</pre></div>
+</div>
+<p>Some items in the settings object hierarchy are methods that you call to request a particular
+action in PyCFX:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pypre</span><span class="o">.</span><span class="n">file</span><span class="o">.</span><span class="n">save_picture</span><span class="p">(</span><span class="n">file_name</span> <span class="o">=</span> <span class="s2">&quot;Image.png&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<section id="settings-object-types">
+<h2>Settings object types<a class="headerlink" href="#settings-object-types" title="Link to this heading">#</a></h2>
+<p>A settings object can be one of the primitive types such as:
+<code class="xref py py-obj docutils literal notranslate"><span class="pre">Integer</span></code>,
+<code class="xref py py-obj docutils literal notranslate"><span class="pre">Real</span></code>,
+<code class="xref py py-obj docutils literal notranslate"><span class="pre">String</span></code>, and
+<code class="xref py py-obj docutils literal notranslate"><span class="pre">Boolean</span></code>. A settings object can also be one of the two types
+of container objects: <code class="xref py py-obj docutils literal notranslate"><span class="pre">Group</span></code> and
+<code class="xref py py-obj docutils literal notranslate"><span class="pre">NamedObject</span></code>.</p>
+<ul class="simple">
+<li><p>The <code class="xref py py-obj docutils literal notranslate"><span class="pre">Group</span></code> type is a static container with predefined
+child objects that you can access as attributes, for example,
+<code class="docutils literal notranslate"><span class="pre">pypre.setup.flow['Flow</span> <span class="pre">Analysis</span> <span class="pre">1'].analysis_type</span></code> or <code class="docutils literal notranslate"><span class="pre">pypre.setup.flow['Flow</span> <span class="pre">Analysis</span> <span class="pre">1']</span></code>.
+The names of the child objects of a group can be accessed via <code class="docutils literal notranslate"><span class="pre">&lt;Group&gt;.child_names</span></code>. Within
+the PyCFX session <code class="docutils literal notranslate"><span class="pre">setup</span></code> object, <code class="docutils literal notranslate"><span class="pre">Group</span></code> objects correspond directly to CCL objects.</p></li>
+<li><p>The <code class="xref py py-obj docutils literal notranslate"><span class="pre">NamedObject</span></code> type is a container holding
+dynamically created named <code class="docutils literal notranslate"><span class="pre">Group</span></code> objects. For a given <code class="docutils literal notranslate"><span class="pre">NamedObject</span></code> container, each contained
+<code class="docutils literal notranslate"><span class="pre">Group</span></code> object is of the same specific CCL type. A given named <code class="docutils literal notranslate"><span class="pre">Group</span></code> object can be accessed using
+the index operator. For example, <code class="docutils literal notranslate"><span class="pre">pypre.setup.flow['Flow</span> <span class="pre">Analysis</span> <span class="pre">1']</span></code> yields a <code class="docutils literal notranslate"><span class="pre">flow</span></code> object
+with the name <code class="docutils literal notranslate"><span class="pre">Flow</span> <span class="pre">Analysis</span> <span class="pre">1</span></code>, assuming it exists. The current list of named <code class="docutils literal notranslate"><span class="pre">Group</span></code> object
+children can be accessed using the <code class="docutils literal notranslate"><span class="pre">&lt;NamedObject&gt;.get_object_names()</span></code> method. Note that these
+<code class="docutils literal notranslate"><span class="pre">NamedObject</span></code> containers do not correspond to any CCL object but represent an intermediate layer.
+However, their contained named <code class="docutils literal notranslate"><span class="pre">Group</span></code> objects do correspond to CCL objects.</p></li>
+</ul>
+</section>
+<section id="object-state">
+<h2>Object state<a class="headerlink" href="#object-state" title="Link to this heading">#</a></h2>
+<p>You can access the state of any object by “calling” it. This returns the state of the children
+as a dictionary for <code class="docutils literal notranslate"><span class="pre">Group</span></code> and <code class="docutils literal notranslate"><span class="pre">NamedObject</span></code> types.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s1">&#39;Flow Analysis 1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">analysis_type</span><span class="o">.</span><span class="n">option</span><span class="p">()</span>
+<span class="go">&#39;Transient&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s1">&#39;Flow Analysis 1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">analysis_type</span><span class="o">.</span><span class="n">get_state</span><span class="p">()</span> <span class="o">==</span> <span class="p">{</span>
+<span class="gp">... </span>  <span class="s1">&#39;option&#39;</span><span class="p">:</span> <span class="s1">&#39;Transient&#39;</span><span class="p">,</span>
+<span class="gp">... </span>  <span class="s1">&#39;external_solver_coupling&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;option&#39;</span><span class="p">:</span> <span class="s1">&#39;None&#39;</span><span class="p">},</span>
+<span class="gp">... </span>  <span class="s1">&#39;time_duration&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;option&#39;</span><span class="p">:</span> <span class="s1">&#39;Total Time&#39;</span><span class="p">,</span> <span class="s1">&#39;total_time&#39;</span><span class="p">:</span> <span class="s1">&#39;-- Undefined --&#39;</span><span class="p">},</span>
+<span class="gp">... </span>  <span class="s1">&#39;initial_time&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;option&#39;</span><span class="p">:</span> <span class="s1">&#39;Automatic with Value&#39;</span><span class="p">,</span> <span class="s1">&#39;time&#39;</span><span class="p">:</span> <span class="s1">&#39;0 [s]&#39;</span><span class="p">},</span>
+<span class="gp">... </span>  <span class="s1">&#39;time_steps&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;option&#39;</span><span class="p">:</span> <span class="s1">&#39;Timesteps&#39;</span><span class="p">,</span> <span class="s1">&#39;timesteps&#39;</span><span class="p">:</span> <span class="s1">&#39;-- Undefined --&#39;</span><span class="p">}}</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p>To modify the state of any object, you can assign the corresponding attribute
+in its parent object. This assignment can be done at any level. For <code class="docutils literal notranslate"><span class="pre">Group</span></code>
+and <code class="docutils literal notranslate"><span class="pre">NamedObject</span></code> types, the state value is a dictionary.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s1">&#39;Flow Analysis 1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">analysis_type</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;Transient&quot;</span>
+</pre></div>
+</div>
+<p>You can also access the state of an object with the <code class="docutils literal notranslate"><span class="pre">get_state()</span></code> method and
+modify it with the <code class="docutils literal notranslate"><span class="pre">set_state()</span></code> method.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Real</span></code>, <code class="docutils literal notranslate"><span class="pre">RealTriplet</span></code>, and <code class="docutils literal notranslate"><span class="pre">RealList</span></code> settings objects incorporate units alongside values. If
+the object has units (not dimensionless), you must set its value as a string including the
+unit. Setting the value as a float is not supported. For example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s1">&#39;Flow Analysis 1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">analysis_type</span><span class="o">.</span><span class="n">time_duration</span><span class="o">.</span><span class="n">total_time</span> <span class="o">=</span> <span class="s2">&quot;2.0 [s]&quot;</span>
+</pre></div>
+</div>
+<p>You can print the current state in a simple text format with the <code class="docutils literal notranslate"><span class="pre">print_state()</span></code> method. For
+example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s1">&#39;Flow Analysis 1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">analysis_type</span><span class="o">.</span><span class="n">print_state</span><span class="p">()</span>
+
+<span class="go">option : Transient</span>
+<span class="go">external_solver_coupling :</span>
+<span class="go">  option : None</span>
+<span class="go">time_duration :</span>
+<span class="go">  option : Total Time</span>
+<span class="go">  total_time : 2.0 [s]</span>
+<span class="go">initial_time :</span>
+<span class="go">  option : Automatic with Value</span>
+<span class="go">  time : 0 [s]</span>
+<span class="go">time_steps :</span>
+<span class="go">  option : Timesteps</span>
+<span class="go">  timesteps : -- Undefined --</span>
+</pre></div>
+</div>
+<section id="expressions-expert-parameters-and-user-data">
+<h3>Expressions, expert parameters, and user data<a class="headerlink" href="#expressions-expert-parameters-and-user-data" title="Link to this heading">#</a></h3>
+<p>In CFX, expressions are CCL parameters:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">LIBRARY</span><span class="p">:</span>
+  <span class="n">CEL</span><span class="p">:</span>
+    <span class="n">EXPRESSIONS</span><span class="p">:</span>
+      <span class="n">MyPressure</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">OpeningPressure</span>
+      <span class="n">OpeningPressure</span> <span class="o">=</span> <span class="mi">101325</span> <span class="p">[</span><span class="n">Pa</span><span class="p">]</span>
+    <span class="n">END</span>
+  <span class="n">END</span>
+<span class="n">END</span>
+</pre></div>
+</div>
+<p>However, in PyCFX, each expression is a <code class="docutils literal notranslate"><span class="pre">Group</span></code> object within the <code class="docutils literal notranslate"><span class="pre">expressions</span></code> container. Expression values must be set with the <code class="docutils literal notranslate"><span class="pre">definition</span></code> attribute. Examples of creating and using expressions follow.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">library</span><span class="o">.</span><span class="n">cel</span><span class="o">.</span><span class="n">expressions</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="s2">&quot;MyPressure&quot;</span><span class="p">)</span>
+<span class="go">&lt;ansys.cfx.core... object at 0x...&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">library</span><span class="o">.</span><span class="n">cel</span><span class="o">.</span><span class="n">expressions</span><span class="p">[</span><span class="s1">&#39;MyPressure&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">definition</span> <span class="o">=</span> <span class="s2">&quot;2 * OpeningPressure&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">library</span><span class="o">.</span><span class="n">cel</span><span class="o">.</span><span class="n">expressions</span><span class="p">[</span><span class="s1">&#39;OpeningPressure&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;definition&quot;</span><span class="p">:</span> <span class="s2">&quot;101325 [Pa]&quot;</span><span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">library</span><span class="o">.</span><span class="n">cel</span><span class="o">.</span><span class="n">expressions</span><span class="o">.</span><span class="n">get_state</span><span class="p">()</span>
+<span class="go">{&#39;MyPressure&#39;: {&#39;definition&#39;: &#39;2 * OpeningPressure&#39;}, &#39;OpeningPressure&#39;: {&#39;definition&#39;: &#39;101325 [Pa]&#39;}}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">library</span><span class="o">.</span><span class="n">cel</span><span class="o">.</span><span class="n">expressions</span><span class="o">.</span><span class="n">list_properties</span><span class="p">())</span>
+<span class="go">LIBRARY:</span>
+<span class="go">  CEL:</span>
+<span class="go">    EXPRESSIONS:</span>
+<span class="go">      MyPressure = 2 * OpeningPressure</span>
+<span class="go">      OpeningPressure = 101325 [Pa]</span>
+<span class="go">    END</span>
+<span class="go">  END</span>
+<span class="go">END</span>
+</pre></div>
+</div>
+<p>Other commands relating to expressions can be found by using the <code class="docutils literal notranslate"><span class="pre">dir()</span></code> function on the
+<code class="docutils literal notranslate"><span class="pre">expressions</span></code> container.</p>
+<p>Similar behavior exists for other objects that have parameters that can be given a user-defined
+name, for example, the <strong>EXPERT PARAMETERS</strong> and <strong>USER</strong> CCL objects in CFX-Pre.</p>
+</section>
+</section>
+<section id="commands">
+<h2>Commands<a class="headerlink" href="#commands" title="Link to this heading">#</a></h2>
+<p>Commands are methods of settings objects that you use to modify the state of
+the session, for example, the <code class="docutils literal notranslate"><span class="pre">open_case()</span></code> method of the <code class="docutils literal notranslate"><span class="pre">pypre.file</span></code> object.
+The <code class="docutils literal notranslate"><span class="pre">get_active_command_names()</span></code> method of a settings object
+provides the names of the object’s currently available commands.</p>
+<p>If keyword arguments are needed, you can use commands to pass them. To access a
+list of valid arguments, use the <code class="docutils literal notranslate"><span class="pre">argument_names</span></code> attribute. If you do not specify
+an argument, its default value is used. Arguments are also settings objects
+and can be of either the primitive or container type.</p>
+</section>
+<section id="queries">
+<h2>Queries<a class="headerlink" href="#queries" title="Link to this heading">#</a></h2>
+<p>Queries are methods of settings objects that you use to query the state of
+the session, for example, the <code class="docutils literal notranslate"><span class="pre">get_physics_messages()</span></code> method of many of the
+PreProcessing settings objects. The <code class="docutils literal notranslate"><span class="pre">query_names</span></code> attribute of a settings object
+provides the names of the object’s currently available queries.</p>
+<p>If keyword arguments are needed, you can use queries to pass them. To access a
+list of valid arguments, use the <code class="docutils literal notranslate"><span class="pre">argument_names</span></code> attribute. If you do not specify
+an argument, its default value is used. Arguments are also settings objects
+and can be of either the primitive or container type.</p>
+</section>
+<section id="additional-metadata">
+<h2>Additional metadata<a class="headerlink" href="#additional-metadata" title="Link to this heading">#</a></h2>
+<p>Settings object methods are provided to access some additional attributes (metadata). There are
+a number of explicit methods and two generic methods: <code class="docutils literal notranslate"><span class="pre">get_attr()</span></code> and <code class="docutils literal notranslate"><span class="pre">get_attrs()</span></code>.</p>
+<p>The following example shows how to use the two generic methods <code class="docutils literal notranslate"><span class="pre">get_attr()</span></code> and
+<code class="docutils literal notranslate"><span class="pre">get_attrs()</span></code> to get the list of allowed values for a particular <strong>Option</strong> parameter
+in PyCFX. Additionally, the example uses the explicit method for this attribute: <code class="docutils literal notranslate"><span class="pre">allowed_values()</span></code>.
+All string and string list objects have an <code class="docutils literal notranslate"><span class="pre">allowed_values()</span></code> method, which returns a list of
+allowed string values if such a constraint currently applies for that object. Otherwise, it
+returns <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s1">&#39;Flow Analysis 1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">analysis_type</span><span class="o">.</span><span class="n">option</span><span class="o">.</span><span class="n">get_attr</span><span class="p">(</span><span class="s1">&#39;allowed-values&#39;</span><span class="p">)</span>
+<span class="go">[&#39;Steady State&#39;, &#39;Transient&#39;, &#39;Transient Blade Row&#39;]</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s1">&#39;Flow Analysis 1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">analysis_type</span><span class="o">.</span><span class="n">option</span><span class="o">.</span><span class="n">get_attrs</span><span class="p">([</span><span class="s1">&#39;allowed-values&#39;</span><span class="p">])</span>
+<span class="go">{&#39;allowed-values&#39;: [&#39;Steady State&#39;, &#39;Transient&#39;, &#39;Transient Blade Row&#39;]}</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s1">&#39;Flow Analysis 1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">analysis_type</span><span class="o">.</span><span class="n">option</span><span class="o">.</span><span class="n">allowed_values</span><span class="p">()</span>
+<span class="go">[&#39;Steady State&#39;, &#39;Transient&#39;, &#39;Transient Blade Row&#39;]</span>
+</pre></div>
+</div>
+<p>The following table contains attribute names, corresponding methods to access the attribute, whether
+the method can return <code class="docutils literal notranslate"><span class="pre">None</span></code>, applicable object types, and returned data types:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Attribute name</p></th>
+<th class="head"><p>Method</p></th>
+<th class="head"><p>Can return None</p></th>
+<th class="head"><p>Type applicability</p></th>
+<th class="head"><p>Metadata type</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">is-active?</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">is_active</span></code></p></td>
+<td><p>No</p></td>
+<td><p>All</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">bool</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">is-read-only?</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">is_read_only</span></code></p></td>
+<td><p>No</p></td>
+<td><p>All</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">bool</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">default-value</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">default</span></code></p></td>
+<td><p>Yes</p></td>
+<td><p>All primitives</p></td>
+<td><p>Type of primitive</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">allowed-values</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">allowed_values</span></code></p></td>
+<td><p>Yes</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">str</span></code>, <code class="docutils literal notranslate"><span class="pre">str</span> <span class="pre">list</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">str</span> <span class="pre">list</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">min</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">min</span></code></p></td>
+<td><p>Yes</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">int</span></code>, <code class="docutils literal notranslate"><span class="pre">float</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">max</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">max</span></code></p></td>
+<td><p>Yes</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">int</span></code>, <code class="docutils literal notranslate"><span class="pre">float</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Using the <code class="docutils literal notranslate"><span class="pre">get_attr()</span></code> method requires knowledge of attribute names, their applicability, and
+the ability to interpret the raw values of the attribute. You can avoid all these requirements by
+using the explicitly named methods. Note that the attribute values are dynamic, which means
+values can change based on the session state. A <code class="docutils literal notranslate"><span class="pre">None</span></code> value signifies that no value
+is currently designated for this attribute.</p>
+</section>
+<section id="active-objects-commands-and-queries">
+<h2>Active objects, commands, and queries<a class="headerlink" href="#active-objects-commands-and-queries" title="Link to this heading">#</a></h2>
+<p>Objects, commands, and queries can be active or inactive based on the session state.
+The <code class="docutils literal notranslate"><span class="pre">is_active()</span></code> method returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if an object, command, or query is currently active.</p>
+<p>For the PreProcessing session, objects become active or inactive depending on their physical
+availability. So, a turbulence model setting on a boundary is inactive if the domain does not
+include a turbulence model.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">get_active_child_names()</span></code> method returns a list of active children, including both CCL
+objects and parameters:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s1">&#39;Flow Analysis 1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">domain</span><span class="p">[</span><span class="s1">&#39;Default Domain&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">get_active_child_names</span><span class="p">()</span>
+<span class="go">[&#39;location&#39;, &#39;domain_type&#39;, &#39;coord_frame&#39;, &#39;number_of_passages_in_360&#39;, &#39;number_of_passages_in_component&#39;, &#39;fluid_definition&#39;, &#39;domain_models&#39;, &#39;fluid_models&#39;, &#39;boundary&#39;, &#39;initialisation&#39;, &#39;solver_control&#39;]</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">get_active_command_names()</span></code> or <code class="docutils literal notranslate"><span class="pre">get_active_query_names</span></code> method returns the list of active
+commands or queries:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pypre</span><span class="o">.</span><span class="n">file</span><span class="o">.</span><span class="n">get_active_command_names</span><span class="p">()</span>
+<span class="go">[&#39;close_case&#39;, &#39;export_ccl&#39;, &#39;import_mesh&#39;, &#39;new_case&#39;, &#39;open_case&#39;, &#39;save_case&#39;, &#39;save_picture&#39;, &#39;write_solver_input_file&#39;]</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">get_active_query_names</span><span class="p">()</span>
+<span class="go">[&#39;get_physics_messages&#39;]</span>
+</pre></div>
+</div>
+</section>
+<section id="preprocessing-session-details">
+<h2>PreProcessing session details<a class="headerlink" href="#preprocessing-session-details" title="Link to this heading">#</a></h2>
+<p>The PreProcessing session object has some unique behaviors that are designed to make it easy
+to set up complex CFD simulations.</p>
+<section id="physics-messages">
+<h3>Physics messages<a class="headerlink" href="#physics-messages" title="Link to this heading">#</a></h3>
+<p>A complex simulation setup can be difficult to set up correctly because many parameters and
+objects are interdependent and any change could require other updates. At any time, you can check
+whether your setup is physically valid by calling the <code class="docutils literal notranslate"><span class="pre">get_physics_messages()</span></code> method of any
+PreProcessing settings object that is a child of the <code class="docutils literal notranslate"><span class="pre">setup</span></code> object. For example, to check the
+entire setup: <code class="docutils literal notranslate"><span class="pre">pypre.setup.get_physics_messages()</span></code>. Or, to check a specific domain:
+<code class="docutils literal notranslate"><span class="pre">pypre.setup.flow['Flow</span> <span class="pre">Analysis</span> <span class="pre">1'].domain['Default</span> <span class="pre">Domain'].get_physics_messages()</span></code>.
+The messages returned can be filtered by severity level (All, Beta, Information, Warning,
+and Error).</p>
+</section>
+<section id="physics-updates">
+<h3>Physics updates<a class="headerlink" href="#physics-updates" title="Link to this heading">#</a></h3>
+<p>In a PreProcessing session, changing one value (for example, <strong>Boundary Type</strong>) can require large
+numbers of dependent objects and parameters to be updated. For the PreProcessing session
+to be usable, the session incorporates <em>physics updates</em>, which update the necessary dependent
+objects when any parameter value or other change is made.</p>
+<p>For example, a case with <strong>Turbulence Model</strong> set to <strong>k-Epsilon</strong> must have a
+<strong>Wall Function</strong> set to <strong>Scalable</strong> as this is the only valid <strong>Wall Function</strong>
+for the <strong>k-Epsilon</strong> model. If you later set <strong>Turbulence Model</strong> to <strong>Shear Stress
+Transport</strong>, the <strong>Wall Function</strong> must be updated to <strong>Automatic</strong> as this is
+the only allowed <strong>Wall Function</strong> option for the <strong>Shear Stress Transport</strong> model.
+The physics updates in the PreProcessing session automatically makes this
+change.</p>
+<p>If you are familiar with the CFX-Pre user interface, then the easiest way to understand the
+physics updates is to imagine opening the editor for the object that you want to change and
+making the same parameter or object change. For example, if you open the <strong>Domain</strong> editor
+for a case with <strong>Turbulence Model</strong> set to <strong>k-Epsilon</strong>, then the <strong>Wall Function</strong> must
+be set to <strong>Scalable</strong>. If you then change <strong>Turbulence Model</strong> to <strong>Shear Stress Transport</strong>,
+you can see that the <strong>Wall Function</strong> option, further down the panel, automatically updates
+to <strong>Automatic</strong>.</p>
+<p>Physics updates are limited to the <em>top-level</em> objects. For example, changing a parameter in a
+domain does not update a boundary condition object, only other dependent objects within the domain.
+Top-level objects are those that have their own editors in CFX-Pre, such as for the <strong>Domain</strong>,
+<strong>Boundary</strong>, <strong>Initial Conditions</strong>, and <strong>Execution Control</strong>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s1">&#39;Flow Analysis 1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">domain</span><span class="p">[</span><span class="s1">&#39;Default Domain&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fluid_models</span><span class="o">.</span><span class="n">print_state</span><span class="p">()</span>
+
+<span class="go">heat_transfer_model :</span>
+<span class="go">  option : Thermal Energy</span>
+<span class="go">turbulence_model :</span>
+<span class="go">  option : k epsilon</span>
+<span class="go">turbulent_wall_functions :</span>
+<span class="go">  option : Scalable</span>
+<span class="go">thermal_radiation_model :</span>
+<span class="go">  option : None</span>
+<span class="go">combustion_model :</span>
+<span class="go">  option : None</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s1">&#39;Flow Analysis 1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">domain</span><span class="p">[</span><span class="s1">&#39;Default Domain&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fluid_models</span><span class="o">.</span><span class="n">turbulence_model</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;SST&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s1">&#39;Flow Analysis 1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">domain</span><span class="p">[</span><span class="s1">&#39;Default Domain&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fluid_models</span><span class="o">.</span><span class="n">print_state</span><span class="p">()</span>
+
+<span class="go">heat_transfer_model :</span>
+<span class="go">  option : Thermal Energy</span>
+<span class="go">turbulence_model :</span>
+<span class="go">  option : SST</span>
+<span class="go">turbulent_wall_functions :</span>
+<span class="go">  option : Automatic</span>
+<span class="go">thermal_radiation_model :</span>
+<span class="go">  option : None</span>
+<span class="go">combustion_model :</span>
+<span class="go">  option : None</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">turbulent_wall_functions</span></code> option was automatically updated from <code class="docutils literal notranslate"><span class="pre">Scalable</span></code> to <code class="docutils literal notranslate"><span class="pre">Automatic</span></code>
+by the physics update.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For CFX versions up to and including 2026 R1, if a state is supplied as a dictionary,
+the physics updates are not applied and the state is applied as-is. The PreProcessing session
+may be left in an invalid physical state following such an update. You should check for any
+physics warnings or errors.</p>
+</div>
+</section>
+<section id="optional-objects-and-parameters">
+<h3>Optional objects and parameters<a class="headerlink" href="#optional-objects-and-parameters" title="Link to this heading">#</a></h3>
+<p>The CCL structure in the PreProcessing session is more complex than those of the other session
+types. Some parameters and objects are optional, and their existence (or lack thereof) affects
+the setup.</p>
+<p>To add an optional parameter, simply set its value to the desired value. To remove an optional
+parameter, set the value to <code class="docutils literal notranslate"><span class="pre">None</span></code>. For example, this code adds and then removes the
+<strong>Coord Frame</strong> parameter in a boundary object:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">in1</span> <span class="o">=</span> <span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s2">&quot;Flow Analysis 1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">domain</span><span class="p">[</span><span class="s2">&quot;Default Domain&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">boundary</span><span class="p">[</span><span class="s2">&quot;in1&quot;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">in1</span><span class="o">.</span><span class="n">print_state</span><span class="p">()</span>
+
+<span class="go">boundary_type : INLET</span>
+<span class="go">location : in1</span>
+<span class="go">boundary_conditions :</span>
+<span class="go">  ...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">in1</span><span class="o">.</span><span class="n">coord_frame</span> <span class="o">=</span> <span class="s2">&quot;Coord 0&quot;</span>  <span class="c1"># Add the optional Coord Frame parameter</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">in1</span><span class="o">.</span><span class="n">print_state</span><span class="p">()</span>
+
+<span class="go">interface_boundary : False</span>
+<span class="go">boundary_type : INLET</span>
+<span class="go">location : in1</span>
+<span class="go">coord_frame : Coord 0</span>
+<span class="go">boundary_conditions :</span>
+<span class="go">  ...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">in1</span><span class="o">.</span><span class="n">coord_frame</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># Remove the optional Coord Frame parameter</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">in1</span><span class="o">.</span><span class="n">print_state</span><span class="p">()</span>
+
+<span class="go">interface_boundary : False</span>
+<span class="go">boundary_type : INLET</span>
+<span class="go">location : in1</span>
+<span class="go">boundary_conditions :</span>
+<span class="go">  ...</span>
+</pre></div>
+</div>
+<p>To add or remove an optional object, it must be explicitly enabled or disabled. For example,
+this code enables and then disables the <strong>Boundary Contour</strong> object for a boundary:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">in1</span> <span class="o">=</span> <span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s2">&quot;Flow Analysis 1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">domain</span><span class="p">[</span><span class="s2">&quot;Default Domain&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">boundary</span><span class="p">[</span><span class="s2">&quot;in1&quot;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">in1</span><span class="o">.</span><span class="n">print_state</span><span class="p">()</span>
+
+<span class="go">interface_boundary : False</span>
+<span class="go">boundary_type : INLET</span>
+<span class="go">location : in1</span>
+<span class="go">boundary_conditions :</span>
+<span class="go">  ...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">in1</span><span class="o">.</span><span class="n">boundary_contour</span><span class="o">.</span><span class="n">enabled</span> <span class="o">=</span> <span class="kc">True</span> <span class="c1"># Enable the optional Boundary Contour object</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">in1</span><span class="o">.</span><span class="n">print_state</span><span class="p">()</span>
+
+<span class="go">interface_boundary : False</span>
+<span class="go">boundary_type : INLET</span>
+<span class="go">location : in1</span>
+<span class="go">boundary_conditions :</span>
+<span class="go">  ...</span>
+<span class="go">boundary_contour :</span>
+<span class="go">  profile_variable : Normal Speed</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">in1</span><span class="o">.</span><span class="n">boundary_contour</span><span class="o">.</span><span class="n">enabled</span> <span class="o">=</span> <span class="kc">False</span> <span class="c1"># Disable the optional Boundary Contour object</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">in1</span><span class="o">.</span><span class="n">print_state</span><span class="p">()</span>
+
+<span class="go">interface_boundary : False</span>
+<span class="go">boundary_type : INLET</span>
+<span class="go">location : in1</span>
+<span class="go">boundary_conditions :</span>
+<span class="go">  ...</span>
+</pre></div>
+</div>
+<p>Optional named objects are named objects that you can explicitly create but only with specific
+names. They are uncommon in the PreProcessing session. You can create these named objects
+in the same way as other named objects, for example, by using the <code class="docutils literal notranslate"><span class="pre">create()</span></code> method of the parent
+<code class="docutils literal notranslate"><span class="pre">NamedObject</span></code> container. To remove an optional named object, use the Python <code class="docutils literal notranslate"><span class="pre">del</span></code> keyword.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">library</span><span class="o">.</span><span class="n">additional_variable</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="s1">&#39;Additional Variable 1&#39;</span><span class="p">)</span>
+<span class="go">&lt;ansys.cfx.core... object at 0x...&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fluid_models_obj</span> <span class="o">=</span> <span class="n">pypre</span><span class="o">.</span><span class="n">setup</span><span class="o">.</span><span class="n">flow</span><span class="p">[</span><span class="s2">&quot;Flow Analysis 1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">domain</span><span class="p">[</span><span class="s2">&quot;Default Domain&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">fluid_models</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fluid_models_obj</span><span class="o">.</span><span class="n">additional_variable</span><span class="p">[</span><span class="s2">&quot;Additional Variable 1&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">del</span> <span class="n">fluid_models_obj</span><span class="o">.</span><span class="n">additional_variable</span><span class="p">[</span><span class="s2">&quot;Additional Variable 1&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Note that if you use the <code class="docutils literal notranslate"><span class="pre">set_state()</span></code> method to apply the state as a dictionary,
+optional objects or parameters omitted from the dictionary are not removed from the PreProcessing
+state. You must explicitly remove them.</p>
+</section>
+</section>
+<section id="solver-session-details">
+<h2>Solver session details<a class="headerlink" href="#solver-session-details" title="Link to this heading">#</a></h2>
+<p>For the initial release of PyCFX with Ansys CFX 2025 R2, the Solver object is very
+limited and does not implement a hierarchy of settings objects.</p>
+<p>Solver-specific settings, such as parallel settings, precision settings, and initial conditions,
+must be set up as <strong>Execution Control</strong> in the PreProcessing session.</p>
+<p>The only available settings object is <code class="docutils literal notranslate"><span class="pre">solution</span></code>, which provides access to a minimal set of
+solver controls.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pysolve</span> <span class="o">=</span> <span class="n">pycfx</span><span class="o">.</span><span class="n">Solver</span><span class="o">.</span><span class="n">from_install</span><span class="p">(</span><span class="n">solver_input_file_name</span><span class="o">=</span><span class="n">solver_input_file_name</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pysolve</span><span class="o">.</span><span class="n">solution</span><span class="o">.</span><span class="n">start_run</span><span class="p">()</span>
+<span class="gp">...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pysolve</span><span class="o">.</span><span class="n">solution</span><span class="o">.</span><span class="n">is_running</span><span class="p">()</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pysolve</span><span class="o">.</span><span class="n">solution</span><span class="o">.</span><span class="n">wait_for_run</span><span class="p">()</span> <span class="c1"># To wait for the solver run to complete.</span>
+</pre></div>
+</div>
+<p>Other available methods can be found in the <a class="reference internal" href="../api/solver_controller.html#ref-solver-controller"><span class="std std-ref">Solver Controller</span></a>
+module.</p>
+</section>
+<section id="postprocessing-session-details">
+<h2>PostProcessing session details<a class="headerlink" href="#postprocessing-session-details" title="Link to this heading">#</a></h2>
+<section id="long-calculations">
+<h3>Long calculations<a class="headerlink" href="#long-calculations" title="Link to this heading">#</a></h3>
+<p>Some operations in a PostProcessing session can take a significant amount of time to complete if a
+large or complex case is loaded. A example is the generation (calculation) of a plane or contour.
+For maximum efficiency, you need to avoid unnecessary recalculations such as calculating updates to
+an object before you have finished setting it up.</p>
+<p>Suppose you create a plane with this code:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pypost</span> <span class="o">=</span> <span class="n">pycfx</span><span class="o">.</span><span class="n">PostProcessing</span><span class="o">.</span><span class="n">from_install</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pypost</span><span class="o">.</span><span class="n">file</span><span class="o">.</span><span class="n">load_results</span><span class="p">(</span><span class="n">file_name</span><span class="o">=&lt;</span><span class="n">results_name</span><span class="o">&gt;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pypost</span><span class="o">.</span><span class="n">results</span><span class="o">.</span><span class="n">plane</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="s2">&quot;Plane 1&quot;</span><span class="p">)</span>
+<span class="go">&lt;ansys.cfx.core... object at 0x...&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">plane1</span> <span class="o">=</span> <span class="n">pypost</span><span class="o">.</span><span class="n">results</span><span class="o">.</span><span class="n">plane</span><span class="p">[</span><span class="s2">&quot;Plane 1&quot;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">plane1</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;ZX Plane&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">plane1</span><span class="o">.</span><span class="n">plane_type</span> <span class="o">=</span> <span class="s2">&quot;Slice&quot;</span>
+</pre></div>
+</div>
+<p>The plane update calculation is performed three times: once when the plane is created,
+again with the default settings, and then finally when the <code class="docutils literal notranslate"><span class="pre">option</span></code> and <code class="docutils literal notranslate"><span class="pre">plane_type</span></code>
+are modified.</p>
+<p>These unnecessary calculations can be reduced or avoided in two ways. One way is to <em>suspend</em>
+the plane object until it is complete:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pypost</span><span class="o">.</span><span class="n">results</span><span class="o">.</span><span class="n">plane</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="s2">&quot;Plane 2&quot;</span><span class="p">)</span>
+<span class="go">&lt;ansys.cfx.core... object at 0x...&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">plane1</span> <span class="o">=</span> <span class="n">pypost</span><span class="o">.</span><span class="n">results</span><span class="o">.</span><span class="n">plane</span><span class="p">[</span><span class="s2">&quot;Plane 2&quot;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">plane1</span><span class="o">.</span><span class="n">suspend</span><span class="p">()</span>  <span class="c1"># Suspend update calculations for the plane</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">plane1</span><span class="o">.</span><span class="n">option</span> <span class="o">=</span> <span class="s2">&quot;ZX Plane&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">plane1</span><span class="o">.</span><span class="n">plane_type</span> <span class="o">=</span> <span class="s2">&quot;Slice&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">plane1</span><span class="o">.</span><span class="n">unsuspend</span><span class="p">()</span>  <span class="c1"># The plane is recalculated when it is unsuspended</span>
+</pre></div>
+</div>
+<p>The other way to avoid unneeded calculations is to set up the plane with all the desired
+parameters in a single dictionary when it is created:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pypost</span><span class="o">.</span><span class="n">results</span><span class="o">.</span><span class="n">plane</span><span class="p">[</span><span class="s2">&quot;Plane 3&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+<span class="gp">... </span>  <span class="s2">&quot;option&quot;</span><span class="p">:</span> <span class="s2">&quot;ZX Plane&quot;</span><span class="p">,</span>
+<span class="gp">... </span>  <span class="s2">&quot;plane_type&quot;</span><span class="p">:</span> <span class="s2">&quot;Slice&quot;</span>
+<span class="gp">... </span><span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="id1">
+<h3>Active objects, commands, and queries<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p>For the initial release of PyCFX with Ansys CFX 2025 R2, all objects and parameters of the
+PostProcessing session are always active. For example, you can set the <strong>X</strong> parameter for a plane
+with the option set to <strong>XY</strong>, even though the <strong>Z</strong> parameter is the only relevant parameter for
+this option. Parameters and objects that are not relevant are ignored by CFD-Post.</p>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#settings-object-types">Settings object types</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#object-state">Object state</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#expressions-expert-parameters-and-user-data">Expressions, expert parameters, and user data</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#commands">Commands</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#queries">Queries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-metadata">Additional metadata</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#active-objects-commands-and-queries">Active objects, commands, and queries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocessing-session-details">PreProcessing session details</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#physics-messages">Physics messages</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#physics-updates">Physics updates</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#optional-objects-and-parameters">Optional objects and parameters</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solver-session-details">Solver session details</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#postprocessing-session-details">PostProcessing session details</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#long-calculations">Long calculations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Active objects, commands, and queries</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  <div role="note" aria-label="source link">
+    <ul class="this-page-menu">
+      <li><a href="../_sources/user_guide/session.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+
+  <!-- Include desired assets -->
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.7/require.min.js"></script>
+
+<script>
+// Passing the search options to the search.js file
+const SEARCH_OPTIONS = JSON.parse('{"keys": ["title", "text", "objectID"], "limit": 10, "threshold": 0.2}');
+const SEARCH_FILE = "../_static/search.json";
+const ADVANCE_SEARCH_PATH = "../search.html";
+const EXTRA_SOURCES = JSON.parse('""');
+</script>
+
+
+<script src="../_static/js/search.js"></script>
+
+  
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright (c) 2026 ANSYS, Inc. All rights reserved.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<!--
+  Theme Version Footer
+  Displays the Sphinx theme version and the last updated date.
+  Accessibility and semantic improvements included.
+-->
+<footer class="theme-version" aria-label="Theme version and last update">
+  <span>
+    
+      Built with the
+      <a href="https://sphinxdocs.ansys.com/version/stable/index.html" target="_blank" rel="noopener noreferrer">
+        Ansys Sphinx Theme
+      </a>
+      1.7.2.
+    
+  </span>
+  <br />
+  <span>Last updated on <time id="ast_build_date"></time></span>
+</footer>
+<script>
+  // Set the last updated date in a readable format
+  (function() {
+    var options = { day: "numeric", month: "long", year: "numeric" };
+    var ast_lastModifiedDate = new Date(document.lastModified);
+    var ast_build_date = ast_lastModifiedDate.toLocaleDateString("en-US", options);
+    var dateElem = document.getElementById("ast_build_date");
+    if (dateElem) {
+      dateElem.textContent = ast_build_date;
+    }
+  })();
+</script></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

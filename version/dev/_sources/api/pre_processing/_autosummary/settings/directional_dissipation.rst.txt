@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_directional_dissipation:
+
+directional_dissipation
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.directional_dissipation.directional_dissipation
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================   ===============================================================
+
+Parent                                                                                                                    Summary
+
+===============================================================   ===============================================================
+:ref:`buoyancy_turbulence <pre_processing_buoyancy_turbulence>`   Controls turbulence production and dissipation due to buoyancy.
+
+===============================================================   ===============================================================
+

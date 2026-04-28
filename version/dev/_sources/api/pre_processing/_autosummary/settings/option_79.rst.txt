@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_79:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_79.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================   =====================================================
+
+Parent                                                                                            Summary
+
+=================================================   =====================================================
+:ref:`initial_time <pre_processing_initial_time>`   Defines the Initial Time for a Transient Calculation.
+
+=================================================   =====================================================
+

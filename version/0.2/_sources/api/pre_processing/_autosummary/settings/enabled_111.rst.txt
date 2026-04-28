@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_111:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_111.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   ====================================================
+
+Parent                                                                                                                 Summary
+
+=======================================================================   ====================================================
+:ref:`particle_mass_flow_rate <pre_processing_particle_mass_flow_rate>`   Defines the mass flow rate for a group of particles.
+
+=======================================================================   ====================================================
+

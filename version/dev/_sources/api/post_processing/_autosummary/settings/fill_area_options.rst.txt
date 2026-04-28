@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_fill_area_options:
+
+fill_area_options
+=================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.fill_area_options.fill_area_options
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==========================================================   ==================================
+
+Parent                                                                                  Summary
+
+==========================================================   ==================================
+:ref:`chart_line_child <post_processing_chart_line_child>`   'child_object_type' of chart_line.
+
+==========================================================   ==================================
+

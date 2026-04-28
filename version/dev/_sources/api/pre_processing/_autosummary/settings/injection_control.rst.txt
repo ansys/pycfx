@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_injection_control:
+
+injection_control
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.injection_control.injection_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================================   =================================================
+
+Attribute                                                                                                                 Summary
+
+=============================================================================   =================================================
+:ref:`enabled <pre_processing_enabled_204>`                                                  Enable the INJECTION CONTROL object.
+
+:ref:`surface_injection_control <pre_processing_surface_injection_control_1>`   Defines global controls for 2D Injection Regions.
+
+=============================================================================   =================================================
+
+.. rubric:: Included in:
+
+=======================================================   ====================================================================================
+
+Parent                                                                                                                                 Summary
+
+=======================================================   ====================================================================================
+:ref:`solver_control <pre_processing_solver_control_1>`   Holds all objects that control discretization and execution of the solution process.
+
+=======================================================   ====================================================================================
+

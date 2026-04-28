@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_411:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_411.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================================   ===================================
+
+Parent                                                                                                    Summary
+
+===========================================================================   ===================================
+:ref:`position_update_frequency <pre_processing_position_update_frequency>`   'POSITION UPDATE FREQUENCY' object.
+
+===========================================================================   ===================================
+

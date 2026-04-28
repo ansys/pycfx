@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_option_133:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_133.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================================   =====================================================
+
+Parent                                                                                                                      Summary
+
+===========================================================================   =====================================================
+:ref:`turbulent_wall_functions <pre_processing_turbulent_wall_functions>`     Sets the turbulent near-wall treatment at a boundary.
+
+:ref:`turbulent_wall_functions <pre_processing_turbulent_wall_functions_1>`   Sets the turbulent near-wall treatment at a boundary.
+
+:ref:`turbulent_wall_functions <pre_processing_turbulent_wall_functions_2>`   Sets the turbulent near-wall treatment at a boundary.
+
+===========================================================================   =====================================================
+

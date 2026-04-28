@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_336:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_336.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================   ===================================================
+
+Parent                                                                                                            Summary
+
+===================================================================   ===================================================
+:ref:`fractional_intensity <pre_processing_fractional_intensity_1>`   Defines the initialization of fractional intensity.
+
+===================================================================   ===================================================
+

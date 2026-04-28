@@ -1,0 +1,46 @@
+:orphan:
+
+.. _pre_processing_particle_collision_model:
+
+particle_collision_model
+========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.particle_collision_model.particle_collision_model
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================================================   =====================================================
+
+Attribute                                                                                                                                                 Summary
+
+=========================================================================================================   =====================================================
+:ref:`enabled <pre_processing_enabled_105>`                                                                           Enable the PARTICLE COLLISION MODEL object.
+
+:ref:`option <pre_processing_option_210>`                                                                                  The 'Particle Collision Model' option.
+
+:ref:`collision_coefficient_of_restitution <pre_processing_collision_coefficient_of_restitution>`               'Collision Coefficient of Restitution' parameter.
+
+:ref:`collision_static_friction_coefficient <pre_processing_collision_static_friction_coefficient>`            'Collision Static Friction Coefficient' parameter.
+
+:ref:`collision_kinetic_friction_coefficient <pre_processing_collision_kinetic_friction_coefficient>`         'Collision Kinetic Friction Coefficient' parameter.
+
+:ref:`particle_user_routine <pre_processing_particle_user_routine>`                                                                     Name of the user routine.
+
+:ref:`argument_variables_list <pre_processing_argument_variables_list>`                                                      'Argument Variables List' parameter.
+
+:ref:`particle_collision_return_variables_list <pre_processing_particle_collision_return_variables_list>`   'Particle Collision Return Variables List' parameter.
+
+=========================================================================================================   =====================================================
+
+.. rubric:: Included in:
+
+=========================================================   ==================================
+
+Parent                                                                                 Summary
+
+=========================================================   ==================================
+:ref:`fluid_pair_child <pre_processing_fluid_pair_child>`   'child_object_type' of fluid_pair.
+
+=========================================================   ==================================
+

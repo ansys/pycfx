@@ -1,0 +1,59 @@
+:orphan:
+
+.. _post_processing_colour:
+
+colour
+======
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.colour.colour
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==================================================================================   ==============================================
+
+Parent                                                                                                                      Summary
+
+==================================================================================   ==============================================
+:ref:`streamline_child <post_processing_streamline_child>`                                       'child_object_type' of streamline.
+
+:ref:`turbo_surface_child <post_processing_turbo_surface_child>`                              'child_object_type' of turbo_surface.
+
+:ref:`turbo_line_child <post_processing_turbo_line_child>`                                       'child_object_type' of turbo_line.
+
+:ref:`particle_cloud_child <post_processing_particle_cloud_child>`                           'child_object_type' of particle_cloud.
+
+:ref:`particle_track_child <post_processing_particle_track_child>`                           'child_object_type' of particle_track.
+
+:ref:`res_particle_track_child <post_processing_res_particle_track_child>`               'child_object_type' of res_particle_track.
+
+:ref:`vector_child <post_processing_vector_child>`                                                   'child_object_type' of vector.
+
+:ref:`isosurface_child <post_processing_isosurface_child>`                                       'child_object_type' of isosurface.
+
+:ref:`iso_clip_child <post_processing_iso_clip_child>`                                             'child_object_type' of iso_clip.
+
+:ref:`vortex_core_region_child <post_processing_vortex_core_region_child>`               'child_object_type' of vortex_core_region.
+
+:ref:`user_surface_child <post_processing_user_surface_child>`                                 'child_object_type' of user_surface.
+
+:ref:`plane_child <post_processing_plane_child>`                                                      'child_object_type' of plane.
+
+:ref:`volume_child <post_processing_volume_child>`                                                   'child_object_type' of volume.
+
+:ref:`surface_group_child <post_processing_surface_group_child>`                              'child_object_type' of surface_group.
+
+:ref:`volume_rendering_child <post_processing_volume_rendering_child>`                     'child_object_type' of volume_rendering.
+
+:ref:`surface_of_revolution_child <post_processing_surface_of_revolution_child>`      'child_object_type' of surface_of_revolution.
+
+:ref:`difference_object_child <post_processing_difference_object_child>`                  'child_object_type' of difference_object.
+
+:ref:`internal_vector_child <post_processing_internal_vector_child>`                        'child_object_type' of internal_vector.
+
+:ref:`internal_turbo_surface_child <post_processing_internal_turbo_surface_child>`   'child_object_type' of internal_turbo_surface.
+
+:ref:`internal_turbo_line_child <post_processing_internal_turbo_line_child>`            'child_object_type' of internal_turbo_line.
+
+==================================================================================   ==============================================
+

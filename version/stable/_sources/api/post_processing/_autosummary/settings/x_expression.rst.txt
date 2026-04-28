@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_x_expression:
+
+x_expression
+============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.x_expression.x_expression
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+====================================================================   =======================================
+
+Parent                                                                                                 Summary
+
+====================================================================   =======================================
+:ref:`vector_variable_child <post_processing_vector_variable_child>`   'child_object_type' of vector_variable.
+
+====================================================================   =======================================
+

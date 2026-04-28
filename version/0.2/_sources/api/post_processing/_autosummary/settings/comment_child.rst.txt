@@ -1,0 +1,51 @@
+:orphan:
+
+.. _post_processing_comment_child:
+
+comment_child
+=============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.comment_child.comment_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+========================================================   =====================================================================================================================================
+
+Attribute                                                                                                                                                                                Summary
+
+========================================================   =====================================================================================================================================
+:ref:`comment_exists <post_processing_comment_exists>`                                                                                                                   'comment_exists' child.
+
+:ref:`comment_heading <post_processing_comment_heading>`                                                                 The heading text of the comment. If blank, no heading text is assigned.
+
+:ref:`comment_text <post_processing_comment_text>`                                                                                                        The text used within a COMMENT object.
+
+:ref:`heading_level <post_processing_heading_level>`       Specifies the Heading depth. E.g. A value of 2 specifies a 'Heading 2' setting, resulting in a second level heading number: e.g. 1.2.
+
+========================================================   =====================================================================================================================================
+
+.. rubric:: Methods
+
+============================================   ========================================
+
+Method                                                                          Summary
+
+============================================   ========================================
+:ref:`suspend <post_processing_suspend>`       Suspend immediate update for the object.
+
+:ref:`unsuspend <post_processing_unsuspend>`   Restore immediate update for the object.
+
+============================================   ========================================
+
+.. rubric:: Included in:
+
+========================================   ================
+
+Parent                                              Summary
+
+========================================   ================
+:ref:`comment <post_processing_comment>`   'comment' child.
+
+========================================   ================
+

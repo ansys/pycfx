@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_stop_iteration_list:
+
+stop_iteration_list
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.stop_iteration_list.stop_iteration_list
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================================   ============================================
+
+Parent                                                                                                               Summary
+
+=============================================================================   ============================================
+:ref:`transient_statistics_child <pre_processing_transient_statistics_child>`   'child_object_type' of transient_statistics.
+
+=============================================================================   ============================================
+

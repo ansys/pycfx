@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_collision_coefficient_of_restitution:
+
+collision_coefficient_of_restitution
+====================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.collision_coefficient_of_restitution.collision_coefficient_of_restitution
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================================   ==============================================
+
+Parent                                                                                                             Summary
+
+=========================================================================   ==============================================
+:ref:`particle_collision_model <pre_processing_particle_collision_model>`   Defines the particle-particle collision model.
+
+=========================================================================   ==============================================
+
