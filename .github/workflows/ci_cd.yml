@@ -509,7 +509,7 @@ jobs:
     permissions:
       contents: write # Required to push to the documentation branch (gh-pages)
     needs: [build-library]
-    if: github.ref == 'refs/heads/main'
+    # if: github.ref == 'refs/heads/main'
     steps:
       - uses: ansys/actions/doc-deploy-dev@fix/ouch-decompression # v10.2.12
         with:
