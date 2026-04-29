@@ -4,7 +4,7 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name = "ansys-cfx-core"
-version = "0.2.2"
+version = "0.2.3"
 description = "PyCFX is a Python wrapper for Ansys CFX, the gold standard CFD software for turbomachinery applications."
 requires-python = ">=3.10,<3.15"
 license = "MIT"
@@ -144,7 +144,6 @@ ignore-words = "doc/styles/config/vocabularies/ANSYS/accept.txt"
 [tool.coverage.report]
 show_missing = true
 
-
 [tool.towncrier]
 package = "ansys.cfx.core"
 directory = "doc/changelog.d"
@@ -155,13 +154,13 @@ title_format = "`{version} <https://github.com/ansys/pycfx/releases/tag/v{versio
 issue_format = "`#{issue} <https://github.com/ansys/pycfx/pull/{issue}>`_"
 
 [[tool.towncrier.type]]
-directory = "added"
-name = "Added"
+directory = "breaking"
+name = "Breaking"
 showcontent = true
 
 [[tool.towncrier.type]]
-directory = "changed"
-name = "Changed"
+directory = "added"
+name = "Added"
 showcontent = true
 
 [[tool.towncrier.type]]
@@ -170,18 +169,13 @@ name = "Fixed"
 showcontent = true
 
 [[tool.towncrier.type]]
-directory = "dependencies"
-name = "Dependencies"
-showcontent = true
-
-[[tool.towncrier.type]]
-directory = "miscellaneous"
-name = "Miscellaneous"
-showcontent = true
-
-[[tool.towncrier.type]]
 directory = "documentation"
 name = "Documentation"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "dependencies"
+name = "Dependencies"
 showcontent = true
 
 [[tool.towncrier.type]]
@@ -190,8 +184,18 @@ name = "Maintenance"
 showcontent = true
 
 [[tool.towncrier.type]]
+directory = "miscellaneous"
+name = "Miscellaneous"
+showcontent = true
+
+[[tool.towncrier.type]]
 directory = "test"
 name = "Test"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "changed"
+name = "Changed"
 showcontent = true
 
 [tool.bandit]
