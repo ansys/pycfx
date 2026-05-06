@@ -35,3 +35,23 @@ def test_solver_basic(pysolve: Solver, pytestconfig, capsys):
     assert Path(output_file).exists()
     Path(results_file).unlink()
     Path(output_file).unlink()
+
+
+def test_solver_errors(pysolve: Solver):
+
+    try:
+        solver = pysolve()
+    except TypeError as e:
+        assert (
+            str(e) == "pysolve.<locals>._make() missing 1 required positional argument: "
+            "'solver_input_file_name'"
+        )
+    else:
+        assert False, "Expected TypeError"
+
+    try:
+        solver = pysolve("invalid_file.def")
+    except RuntimeError as e:
+        assert str(e) == "Provided solver input file 'invalid_file.def' does not exist."
+    else:
+        assert False, "Expected RuntimeError"
