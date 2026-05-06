@@ -211,7 +211,7 @@ pypre.execute_ccl(inlet_profile_ccl)
 # name is created.
 #
 del pypre.setup.flow["Flow Analysis 1"].domain["Default Domain"]
-pypre.setup.flow["Flow Analysis 1"].domain["R1"] = {}
+pypre.setup.flow["Flow Analysis 1"].domain.create("R1")
 r1_domain = pypre.setup.flow["Flow Analysis 1"].domain["R1"]
 r1_domain.location = "Entire Rotor Passage"
 r1_domain.fluid_definition["Fluid 1"].material = "Air Ideal Gas"
@@ -248,7 +248,7 @@ r1_sampling_name = "R1 Sampling Interface"
 # Add the R1 Inlet boundary.
 #
 
-pypre.setup.flow["Flow Analysis 1"].domain["R1"].boundary[r1_inlet_name] = {}
+pypre.setup.flow["Flow Analysis 1"].domain["R1"].boundary.create(r1_inlet_name)
 r1_inlet = pypre.setup.flow["Flow Analysis 1"].domain["R1"].boundary[r1_inlet_name]
 r1_inlet.boundary_type = "INLET"
 r1_inlet.location = "Entire Rotor INFLOW"
@@ -273,7 +273,7 @@ r1_inlet.boundary_conditions.flow_direction.unit_vector_theta_component = (
 ##################################################################################################
 # Add the R1 Outlet boundary.
 #
-pypre.setup.flow["Flow Analysis 1"].domain["R1"].boundary[r1_outlet_name] = {}
+pypre.setup.flow["Flow Analysis 1"].domain["R1"].boundary.create(r1_outlet_name)
 r1_outlet = pypre.setup.flow["Flow Analysis 1"].domain["R1"].boundary[r1_outlet_name]
 r1_outlet.boundary_type = "OUTLET"
 r1_outlet.location = "Entire Rotor OUTFLOW"
@@ -292,7 +292,7 @@ r1_outlet.boundary_conditions.pressure_averaging.radial_reference_position.speci
 ##################################################################################################
 # Add the R1 Hub boundary.
 #
-pypre.setup.flow["Flow Analysis 1"].domain["R1"].boundary["R1 Hub"] = {}
+pypre.setup.flow["Flow Analysis 1"].domain["R1"].boundary.create("R1 Hub")
 r1_hub = pypre.setup.flow["Flow Analysis 1"].domain["R1"].boundary["R1 Hub"]
 r1_hub.boundary_type = "WALL"
 r1_hub.location = "Entire Rotor HUB"
@@ -301,7 +301,7 @@ r1_hub.boundary_conditions.mesh_motion.option = "Stationary"
 ##################################################################################################
 # Add the R1 Shroud boundary.
 #
-pypre.setup.flow["Flow Analysis 1"].domain["R1"].boundary["R1 Shroud"] = {}
+pypre.setup.flow["Flow Analysis 1"].domain["R1"].boundary.create("R1 Shroud")
 r1_shroud = pypre.setup.flow["Flow Analysis 1"].domain["R1"].boundary["R1 Shroud"]
 r1_shroud.boundary_type = "WALL"
 r1_shroud.location = "Entire Rotor SHROUD"
@@ -313,7 +313,7 @@ r1_shroud.boundary_conditions.mass_and_momentum.wall_velocity.option = "Counter 
 ##################################################################################################
 # Add the R1 Blade boundary.
 #
-pypre.setup.flow["Flow Analysis 1"].domain["R1"].boundary[r1_blade_name] = {}
+pypre.setup.flow["Flow Analysis 1"].domain["R1"].boundary.create(r1_blade_name)
 r1_blade = pypre.setup.flow["Flow Analysis 1"].domain["R1"].boundary[r1_blade_name]
 r1_blade.boundary_type = "WALL"
 r1_blade.location = "Entire Rotor BLADE"
@@ -322,14 +322,14 @@ r1_blade.boundary_conditions.mesh_motion.option = "Stationary"
 ##################################################################################################
 # Add the R1 Tip Gap interfaces.
 #
-pypre.setup.flow["Flow Analysis 1"].domain_interface["R1 Blade Tip Gap"] = {}
+pypre.setup.flow["Flow Analysis 1"].domain_interface.create("R1 Blade Tip Gap")
 r1_tipgap1 = pypre.setup.flow["Flow Analysis 1"].domain_interface["R1 Blade Tip Gap"]
 r1_tipgap1.interface_type = "Fluid Fluid"
 r1_tipgap1.interface_region_list1 = "Rotor SHROUD TIP GGI SIDE 1"
 r1_tipgap1.interface_region_list2 = "Rotor SHROUD TIP GGI SIDE 2"
 r1_tipgap1.interface_models.option = "General Connection"
 r1_tipgap1.mesh_connection.option = "GGI"
-pypre.setup.flow["Flow Analysis 1"].domain_interface["R1 Blade Tip Gap 2"] = {}
+pypre.setup.flow["Flow Analysis 1"].domain_interface.create("R1 Blade Tip Gap 2")
 r1_tipgap2 = pypre.setup.flow["Flow Analysis 1"].domain_interface["R1 Blade Tip Gap 2"]
 r1_tipgap2.interface_type = "Fluid Fluid"
 r1_tipgap2.interface_region_list1 = "Rotor SHROUD TIP GGI SIDE 1 2"
@@ -339,7 +339,7 @@ r1_tipgap2.mesh_connection.option = "GGI"
 ##################################################################################################
 # Add the **Periodic** interface.
 #
-pypre.setup.flow["Flow Analysis 1"].domain_interface[r1_periodic_name] = {}
+pypre.setup.flow["Flow Analysis 1"].domain_interface.create(r1_periodic_name)
 r1_periodic = pypre.setup.flow["Flow Analysis 1"].domain_interface[r1_periodic_name]
 r1_periodic.interface_type = "Fluid Fluid"
 r1_periodic.interface_region_list1 = "Rotor PER1"
@@ -350,7 +350,7 @@ r1_periodic.mesh_connection.option = "GGI"
 ##################################################################################################
 # Add the **Sampling** interface.
 #
-pypre.setup.flow["Flow Analysis 1"].domain_interface[r1_sampling_name] = {}
+pypre.setup.flow["Flow Analysis 1"].domain_interface.create(r1_sampling_name)
 r1_sampling = pypre.setup.flow["Flow Analysis 1"].domain_interface[r1_sampling_name]
 r1_sampling.interface_type = "Fluid Fluid"
 r1_sampling.interface_region_list1 = "Rotor PER2"
@@ -590,7 +590,7 @@ pysolve_ini.solution.wait_for_run()
 initial_results_file = pysolve_ini.solution.get_results_file_name()
 pysolve_ini.exit()
 initial_values_spec = exec_control.run_definition.initial_values_specification
-initial_values_spec.initial_values["Initial Values 1"] = {}
+initial_values_spec.initial_values.create("Initial Values 1")
 initial_values_spec.initial_values["Initial Values 1"].option = "Results File"
 initial_values_spec.initial_values["Initial Values 1"].file_name = initial_results_file
 

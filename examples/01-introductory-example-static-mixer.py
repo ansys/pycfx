@@ -121,7 +121,7 @@ default_domain.fluid_models.turbulence_model.option = "k epsilon"
 #
 # Add the first inlet boundary, specifying each setting in turn.
 #
-default_domain.boundary["in1"] = {}
+default_domain.boundary.create("in1")
 in1 = default_domain.boundary["in1"]
 in1.boundary_type = "INLET"
 in1.location = "in1"
@@ -139,7 +139,7 @@ in2.boundary_conditions.heat_transfer.static_temperature = "285 [K]"
 ###################################################################################################
 # Add the outlet boundary.
 #
-pypre.setup.flow["Flow Analysis 1"].domain["Default Domain"].boundary["out"] = {}
+pypre.setup.flow["Flow Analysis 1"].domain["Default Domain"].boundary.create("out")
 out = pypre.setup.flow["Flow Analysis 1"].domain["Default Domain"].boundary["out"]
 out.boundary_type = "OUTLET"
 out.location = "out"
@@ -282,7 +282,7 @@ default_boundary.hide()
 # several settings sequentially, suspend the plane object to avoid unnecessary intermediate
 # calculations. Unsuspend the plane after completing the setup to reflect the latest settings.
 #
-pypost.results.plane["Plane 1"] = {}
+pypost.results.plane.create("Plane 1")
 plane = pypost.results.plane["Plane 1"]
 plane.suspend()
 plane.option = "ZX Plane"
