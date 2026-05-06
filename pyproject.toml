@@ -36,12 +36,12 @@ dependencies = [
     "h5py==3.16.0",
     "lxml>=6.0.0",
     "nltk>=3.8.1",
-    "numpy>=2.2.3",
+    "numpy>=1.26.4",
     "pandas>=2.0.3",
     "platformdirs>=4.2.2",
     "psutil>=7.0.0",
     "pyyaml>=6.0",
-    "requests==2.33.1",
+    "requests>=2.33.1",
     "typing-extensions>=4.12.0",
 ]
 
