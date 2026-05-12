@@ -6,7 +6,6 @@ install:
 
 install-test:
 	@pip install -e .[tests]
-	@pip install h5py
 	@python -m pip install -q --force-reinstall dist/*.whl > /dev/null
 
 version-info:
