@@ -523,7 +523,7 @@ jobs:
   release:
     name: Release
     if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v')
-    needs: [tests, build]
+    needs: [tests, build, update-changelog]
     runs-on: ubuntu-latest
     environment: release
     permissions:
