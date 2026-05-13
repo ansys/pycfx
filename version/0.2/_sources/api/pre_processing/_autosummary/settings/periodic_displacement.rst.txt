@@ -1,0 +1,68 @@
+:orphan:
+
+.. _pre_processing_periodic_displacement:
+
+periodic_displacement
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.periodic_displacement.periodic_displacement
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================================================================   ==========================================================
+
+Attribute                                                                                                                                                                Summary
+
+===================================================================================================================   ==========================================================
+:ref:`option <pre_processing_option_267>`                                                                                                    The 'Periodic Displacement' option.
+
+:ref:`displacement_x_component <pre_processing_displacement_x_component>`                                                                  'Displacement X Component' parameter.
+
+:ref:`displacement_y_component <pre_processing_displacement_y_component>`                                                                  'Displacement Y Component' parameter.
+
+:ref:`displacement_z_component <pre_processing_displacement_z_component>`                                                                  'Displacement Z Component' parameter.
+
+:ref:`normalised_displacement_x_component <pre_processing_normalised_displacement_x_component>`                                 'Normalised Displacement X Component' parameter.
+
+:ref:`normalised_displacement_y_component <pre_processing_normalised_displacement_y_component>`                                 'Normalised Displacement Y Component' parameter.
+
+:ref:`normalised_displacement_z_component <pre_processing_normalised_displacement_z_component>`                                 'Normalised Displacement Z Component' parameter.
+
+:ref:`imaginary_displacement_x_component <pre_processing_imaginary_displacement_x_component>`                                    'Imaginary Displacement X Component' parameter.
+
+:ref:`imaginary_displacement_y_component <pre_processing_imaginary_displacement_y_component>`                                    'Imaginary Displacement Y Component' parameter.
+
+:ref:`imaginary_displacement_z_component <pre_processing_imaginary_displacement_z_component>`                                    'Imaginary Displacement Z Component' parameter.
+
+:ref:`normalised_imaginary_displacement_x_component <pre_processing_normalised_imaginary_displacement_x_component>`   'Normalised Imaginary Displacement X Component' parameter.
+
+:ref:`normalised_imaginary_displacement_y_component <pre_processing_normalised_imaginary_displacement_y_component>`   'Normalised Imaginary Displacement Y Component' parameter.
+
+:ref:`normalised_imaginary_displacement_z_component <pre_processing_normalised_imaginary_displacement_z_component>`   'Normalised Imaginary Displacement Z Component' parameter.
+
+:ref:`frequency <pre_processing_frequency>`                                                                                                               'Frequency' parameter.
+
+:ref:`amplitude <pre_processing_amplitude>`                                                                                      Scales the normalized mesh displacement vector.
+
+:ref:`scaling <pre_processing_scaling>`                                                                                                     Scales the mesh displacement vector.
+
+:ref:`maximum_displacement_from_profile <pre_processing_maximum_displacement_from_profile_1>`                                     'Maximum Displacement From Profile' parameter.
+
+:ref:`phase_angle <pre_processing_phase_angle>`                                                                                                            'PHASE ANGLE' object.
+
+===================================================================================================================   ==========================================================
+
+.. rubric:: Included in:
+
+=================================================   ================================================================================
+
+Parent                                                                                                                       Summary
+
+=================================================   ================================================================================
+:ref:`mesh_motion <pre_processing_mesh_motion>`     Defines the motion of a mesh boundary. NOTE - Not fully supported by the solver.
+
+:ref:`mesh_motion <pre_processing_mesh_motion_1>`   Defines the motion of a mesh boundary. NOTE - Not fully supported by the solver.
+
+=================================================   ================================================================================
+

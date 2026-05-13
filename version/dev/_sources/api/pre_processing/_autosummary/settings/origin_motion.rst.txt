@@ -1,0 +1,60 @@
+:orphan:
+
+.. _pre_processing_origin_motion:
+
+origin_motion
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.origin_motion.origin_motion
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================   =======================================================================================================
+
+Attribute                                                                                                                                                                   Summary
+
+=========================================================================   =======================================================================================================
+:ref:`option <pre_processing_option_90>`                                                                                                                The 'Origin Motion' option.
+
+:ref:`linear_velocity <pre_processing_linear_velocity>`                                                                                                'Linear Velocity' parameter.
+
+:ref:`angular_velocity <pre_processing_angular_velocity>`                                                                             Rotating speed for a rotating domain or wall.
+
+:ref:`u <pre_processing_u>`                                                                                                                                          'U' parameter.
+
+:ref:`v <pre_processing_v>`                                                                                                                                          'V' parameter.
+
+:ref:`w <pre_processing_w>`                                                                                                                                          'W' parameter.
+
+:ref:`displacement_x_component <pre_processing_displacement_x_component>`                                                                     'Displacement X Component' parameter.
+
+:ref:`displacement_y_component <pre_processing_displacement_y_component>`                                                                     'Displacement Y Component' parameter.
+
+:ref:`displacement_z_component <pre_processing_displacement_z_component>`                                                                     'Displacement Z Component' parameter.
+
+:ref:`acceleration_x_component <pre_processing_acceleration_x_component>`                                          The X component of the instantaneous acceleration in space axes.
+
+:ref:`acceleration_y_component <pre_processing_acceleration_y_component>`                                          The Y component of the instantaneous acceleration in space axes.
+
+:ref:`acceleration_z_component <pre_processing_acceleration_z_component>`                                          The Z component of the instantaneous acceleration in space axes.
+
+:ref:`reference_location <pre_processing_reference_location>`                                        Defines the reference location of the Origin point in ORIGIN MOTION singleton.
+
+:ref:`translation_direction <pre_processing_translation_direction>`                                                              Defines the direction used for translating motion.
+
+:ref:`axis_definition <pre_processing_axis_definition>`                     Defines the axis for a cylindrical coordinate system or variables defined using cylindrical components.
+
+=========================================================================   =======================================================================================================
+
+.. rubric:: Included in:
+
+===================================================   ==================================================================================================================================================================================================================
+
+Parent                                                                                                                                                                                                                                                           Summary
+
+===================================================   ==================================================================================================================================================================================================================
+:ref:`domain_motion <pre_processing_domain_motion>`   Defines the motion of a mesh relative to a stationary coordinate frame. NOTE - Speed and Direction, Specified Displacement and General Motion Options are not supported for domains other than the immersed solid.
+
+===================================================   ==================================================================================================================================================================================================================
+

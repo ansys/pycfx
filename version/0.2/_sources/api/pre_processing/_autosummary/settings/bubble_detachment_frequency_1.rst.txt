@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_bubble_detachment_frequency_1:
+
+bubble_detachment_frequency
+===========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.bubble_detachment_frequency_1.bubble_detachment_frequency
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================================   ====================================================================
+
+Attribute                                                                                                                                      Summary
+
+===============================================================================   ====================================================================
+:ref:`enabled <pre_processing_enabled_118>`                                                             Enable the BUBBLE DETACHMENT FREQUENCY object.
+
+:ref:`option <pre_processing_option_257>`                                                                    The 'Bubble Detachment Frequency' option.
+
+:ref:`bubble_detachment_frequency <pre_processing_bubble_detachment_frequency>`   User defined bubble detachment frequency for the wall boiling model.
+
+:ref:`drag_coefficient <pre_processing_drag_coefficient>`                                                                'Drag Coefficient' parameter.
+
+===============================================================================   ====================================================================
+
+.. rubric:: Included in:
+
+===============================================================   =================================
+
+Parent                                                                                      Summary
+
+===============================================================   =================================
+:ref:`wall_boiling_model <pre_processing_wall_boiling_model_1>`   Specifies the wall boiling model.
+
+===============================================================   =================================
+

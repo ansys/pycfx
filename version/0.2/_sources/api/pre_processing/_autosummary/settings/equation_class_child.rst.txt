@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_equation_class_child:
+
+equation_class_child
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.equation_class_child.equation_class_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================   ==============================================================================================
+
+Attribute                                                                                                                                                    Summary
+
+===================================================================   ==============================================================================================
+:ref:`advection_scheme <pre_processing_advection_scheme_1>`           Defines the scheme used by the solver to discretize the advection term in transport equations.
+
+:ref:`transient_scheme <pre_processing_transient_scheme_2>`                                             Defines the discretization algorithm for the transient term.
+
+:ref:`convergence_control <pre_processing_convergence_control_4>`                                             Holds basic parameters that affect solver convergence.
+
+:ref:`convergence_criteria <pre_processing_convergence_criteria_2>`                                           Specifies the criteria for final solution convergence.
+
+===================================================================   ==============================================================================================
+
+.. rubric:: Included in:
+
+=======================================================   =======================================
+
+Parent                                                                                    Summary
+
+=======================================================   =======================================
+:ref:`equation_class <pre_processing_equation_class_1>`   A container for Equation Class objects.
+
+=======================================================   =======================================
+

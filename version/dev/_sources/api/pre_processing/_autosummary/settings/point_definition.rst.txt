@@ -1,0 +1,58 @@
+:orphan:
+
+.. _pre_processing_point_definition:
+
+point_definition
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.point_definition.point_definition
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================   =============================================================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                                                       Summary
+
+=======================================================================   =============================================================================================================================================================================================================================================
+:ref:`option <pre_processing_option_61>`                                                                                                                                                                                                                                                 The 'Point Definition' option.
+
+:ref:`coord_frame <pre_processing_coord_frame>`                           Local coordinate frame for computing expressions. The default at the top level of the command data structure is Coord 0, that is no transformation. The default at lower levels is to inherit the value from objects higher up the structure.
+
+:ref:`point_1 <pre_processing_point_1>`                                                                                                                                                                                                                                                            'Point 1' parameter.
+
+:ref:`point_2 <pre_processing_point_2>`                                                                                                                                                                                                                                                            'Point 2' parameter.
+
+:ref:`point_1_axial_component <pre_processing_point_1_axial_component>`                                                                                                                                                                                                            'Point 1 Axial Component' parameter.
+
+:ref:`point_1_r_component <pre_processing_point_1_r_component>`                                                                                                                                                                                                                        'Point 1 r Component' parameter.
+
+:ref:`point_1_theta_component <pre_processing_point_1_theta_component>`                                                                                                                                                                                                            'Point 1 Theta Component' parameter.
+
+:ref:`point_2_axial_component <pre_processing_point_2_axial_component>`                                                                                                                                                                                                            'Point 2 Axial Component' parameter.
+
+:ref:`point_2_r_component <pre_processing_point_2_r_component>`                                                                                                                                                                                                                        'Point 2 r Component' parameter.
+
+:ref:`point_2_theta_component <pre_processing_point_2_theta_component>`                                                                                                                                                                                                            'Point 2 Theta Component' parameter.
+
+:ref:`profile_name <pre_processing_profile_name>`                                                                                                                                                                                                                                             'Profile Name' parameter.
+
+:ref:`ignore_unmapped_points <pre_processing_ignore_unmapped_points>`                                                                                                                                                                                                               'Ignore Unmapped Points' parameter.
+
+:ref:`custom_point_1 <pre_processing_custom_point_1>`                                                                                                                                                                                                                                          'CUSTOM POINT 1' object.
+
+:ref:`custom_point_2 <pre_processing_custom_point_2>`                                                                                                                                                                                                                                          'CUSTOM POINT 2' object.
+
+=======================================================================   =============================================================================================================================================================================================================================================
+
+.. rubric:: Included in:
+
+=======================================================   =================================
+
+Parent                                                                              Summary
+
+=======================================================   =================================
+:ref:`user_line_child <pre_processing_user_line_child>`   'child_object_type' of user_line.
+
+=======================================================   =================================
+

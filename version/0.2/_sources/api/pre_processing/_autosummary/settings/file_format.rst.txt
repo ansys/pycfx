@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_file_format:
+
+file_format
+===========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.file_format.file_format
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   ======================================================
+
+Parent                                                                                                                   Summary
+
+=======================================================================   ======================================================
+:ref:`results <pre_processing_results>`                                   Defines the contents of the final solver results file.
+
+:ref:`transient_results_child <pre_processing_transient_results_child>`                'child_object_type' of transient_results.
+
+=======================================================================   ======================================================
+

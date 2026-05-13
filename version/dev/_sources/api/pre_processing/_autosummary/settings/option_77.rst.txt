@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_77:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_77.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================================   ======================================
+
+Parent                                                                                                     Summary
+
+=========================================================================   ======================================
+:ref:`external_solver_coupling <pre_processing_external_solver_coupling>`   Declare couplings to external solvers.
+
+=========================================================================   ======================================
+

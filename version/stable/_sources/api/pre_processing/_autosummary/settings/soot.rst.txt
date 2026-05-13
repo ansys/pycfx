@@ -1,0 +1,42 @@
+:orphan:
+
+.. _pre_processing_soot:
+
+soot
+====
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.soot.soot
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================================   ===============================
+
+Attribute                                                                                                     Summary
+
+===================================================================================   ===============================
+:ref:`option <pre_processing_option_286>`                                                          The 'Soot' option.
+
+:ref:`mass_concentration <pre_processing_mass_concentration>`                         'Mass Concentration' parameter.
+
+:ref:`nuclei_concentration <pre_processing_nuclei_concentration>`                               Nuclei Concentration.
+
+:ref:`mass_fraction <pre_processing_mass_fraction>`                                        'Mass Fraction' parameter.
+
+:ref:`nuclei_specific_concentration <pre_processing_nuclei_specific_concentration>`    Nuclei Specific Concentration.
+
+===================================================================================   ===============================
+
+.. rubric:: Included in:
+
+=================================================================   =============================================================
+
+Parent                                                                                                                    Summary
+
+=================================================================   =============================================================
+:ref:`boundary_conditions <pre_processing_boundary_conditions>`     Specifies boundary conditions for all equations being solved.
+
+:ref:`boundary_conditions <pre_processing_boundary_conditions_2>`   Specifies boundary conditions for all equations being solved.
+
+=================================================================   =============================================================
+

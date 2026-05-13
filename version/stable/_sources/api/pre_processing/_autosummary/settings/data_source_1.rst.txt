@@ -1,0 +1,44 @@
+:orphan:
+
+.. _pre_processing_data_source_1:
+
+data_source
+===========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.data_source_1.data_source
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================   =================================
+
+Attribute                                                                                     Summary
+
+=================================================================   =================================
+:ref:`option <pre_processing_option_5>`                                     The 'Data Source' option.
+
+:ref:`file_name <pre_processing_file_name_6>`                                  'File Name' parameter.
+
+:ref:`section_name <pre_processing_section_name_1>`                         'Section Name' parameter.
+
+:ref:`copy_data_into_setup <pre_processing_copy_data_into_setup>`   'Copy Data Into Setup' parameter.
+
+=================================================================   =================================
+
+.. rubric:: Included in:
+
+=====================================================================   ========================================
+
+Parent                                                                                                   Summary
+
+=====================================================================   ========================================
+:ref:`user_surface_child <pre_processing_user_surface_child>`               'child_object_type' of user_surface.
+
+:ref:`user_line_child <pre_processing_user_line_child>`                        'child_object_type' of user_line.
+
+:ref:`user_line_cloud_child <pre_processing_user_line_cloud_child>`      'child_object_type' of user_line_cloud.
+
+:ref:`user_point_cloud_child <pre_processing_user_point_cloud_child>`   'child_object_type' of user_point_cloud.
+
+=====================================================================   ========================================
+

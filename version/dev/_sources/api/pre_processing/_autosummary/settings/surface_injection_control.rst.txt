@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_surface_injection_control:
+
+surface_injection_control
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.surface_injection_control.surface_injection_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================   =============================================================================
+
+Attribute                                                                                                                                           Summary
+
+===========================================================================   =============================================================================
+:ref:`enabled <pre_processing_enabled_144>`                                                                    Enable the SURFACE INJECTION CONTROL object.
+
+:ref:`surface_overlap_type <pre_processing_surface_overlap_type>`                                                         'Surface Overlap Type' parameter.
+
+:ref:`boundary_extrusion_factor <pre_processing_boundary_extrusion_factor>`                                          'Boundary Extrusion Factor' parameter.
+
+:ref:`intersection_control <pre_processing_intersection_control>`             Holds advanced parameters to control the details of interface discretization.
+
+===========================================================================   =============================================================================
+
+.. rubric:: Included in:
+
+=======================================================================   =============================================================================================
+
+Parent                                                                                                                                                          Summary
+
+=======================================================================   =============================================================================================
+:ref:`injection_location_type <pre_processing_injection_location_type>`   Defines the type of location, physics or mesh regions, for the injection points to intersect.
+
+=======================================================================   =============================================================================================
+

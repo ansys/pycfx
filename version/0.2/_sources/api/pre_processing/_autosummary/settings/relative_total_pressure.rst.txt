@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_relative_total_pressure:
+
+relative_total_pressure
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.relative_total_pressure.relative_total_pressure
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ========================================================
+
+Parent                                                                                                           Summary
+
+=============================================================   ========================================================
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum>`     Specifies conditions on Mass and Momentum at a boundary.
+
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum_2>`   Specifies conditions on Mass and Momentum at a boundary.
+
+=============================================================   ========================================================
+

@@ -1,0 +1,166 @@
+:orphan:
+
+.. _pre_processing_equation_pair_child:
+
+equation_pair_child
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.equation_pair_child.equation_pair_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================================   ================================================================================
+
+Attribute                                                                                                                                                        Summary
+
+=====================================================================================   ================================================================================
+:ref:`option <pre_processing_option_184>`                                                                                                    The 'Equation Pair' option.
+
+:ref:`under_relaxation_factor <pre_processing_under_relaxation_factor>`                                                             'Under Relaxation Factor' parameter.
+
+:ref:`fluid1to2_flux <pre_processing_fluid1to2_flux>`                                                                                     Scalar flux from fluid 1 to 2.
+
+:ref:`fluid1_flux_coefficient <pre_processing_fluid1_flux_coefficient>`                                   Fluid 1 linearization coefficient of a flux from fluid 1 to 2.
+
+:ref:`fluid2_flux_coefficient <pre_processing_fluid2_flux_coefficient>`                                   Fluid 2 linearization coefficient of a flux from fluid 2 to 1.
+
+:ref:`fluid1to2_xflux <pre_processing_fluid1to2_xflux>`                                                                       X component vector flux from fluid 1 to 2.
+
+:ref:`fluid1to2_yflux <pre_processing_fluid1to2_yflux>`                                                                    Y component of vector flux from fluid 1 to 2.
+
+:ref:`fluid1to2_zflux <pre_processing_fluid1to2_zflux>`                                                                    Z component of vector flux from fluid 1 to 2.
+
+:ref:`fluid1to2_xxflux <pre_processing_fluid1to2_xxflux>`                                                       Xx component of symmetric tensor flux from fluid 1 to 2.
+
+:ref:`fluid1to2_xyflux <pre_processing_fluid1to2_xyflux>`                                                       Xy component of symmetric tensor flux from fluid 1 to 2.
+
+:ref:`fluid1to2_xzflux <pre_processing_fluid1to2_xzflux>`                                                       Xz component of symmetric tensor flux from fluid 1 to 2.
+
+:ref:`fluid1to2_yyflux <pre_processing_fluid1to2_yyflux>`                                                       Yy component of symmetric tensor flux from fluid 1 to 2.
+
+:ref:`fluid1to2_yzflux <pre_processing_fluid1to2_yzflux>`                                                       Yz component of symmetric tensor flux from fluid 1 to 2.
+
+:ref:`fluid1to2_zzflux <pre_processing_fluid1to2_zzflux>`                                                       Zz component of symmetric tensor flux from fluid 1 to 2.
+
+:ref:`fluid1_flux_out <pre_processing_fluid1_flux_out>`                                                                                        Scalar flux from fluid 1.
+
+:ref:`fluid2_flux_in <pre_processing_fluid2_flux_in>`                                                                                          Scalar flux into fluid 2.
+
+:ref:`fluid1_flux_fluid1_coefficient <pre_processing_fluid1_flux_fluid1_coefficient>`                          Fluid 1 linearization coefficient of a flux from fluid 1.
+
+:ref:`fluid2_flux_fluid1_coefficient <pre_processing_fluid2_flux_fluid1_coefficient>`                          Fluid 2 linearization coefficient of a flux into fluid 2.
+
+:ref:`fluid1_flux_fluid2_coefficient <pre_processing_fluid1_flux_fluid2_coefficient>`                          Fluid 2 linearization coefficient of a flux from fluid 1.
+
+:ref:`fluid2_flux_fluid2_coefficient <pre_processing_fluid2_flux_fluid2_coefficient>`                          Fluid 2 linearization coefficient of a flux into fluid 2.
+
+:ref:`fluid1_xflux_out <pre_processing_fluid1_xflux_out>`                                                                       X component of vector flux from fluid 1.
+
+:ref:`fluid1_yflux_out <pre_processing_fluid1_yflux_out>`                                                                       Y component of vector flux from fluid 1.
+
+:ref:`fluid1_zflux_out <pre_processing_fluid1_zflux_out>`                                                                       Z component of vector flux from fluid 1.
+
+:ref:`fluid2_xflux_in <pre_processing_fluid2_xflux_in>`                                                                         X component of vector flux into fluid 2.
+
+:ref:`fluid2_yflux_in <pre_processing_fluid2_yflux_in>`                                                                         Y component of vector flux into fluid 2.
+
+:ref:`fluid2_zflux_in <pre_processing_fluid2_zflux_in>`                                                                         Z component of vector flux into fluid 2.
+
+:ref:`fluid1_xxflux_out <pre_processing_fluid1_xxflux_out>`                                                          Xx component of symmetric tensor flux from fluid 1.
+
+:ref:`fluid1_xyflux_out <pre_processing_fluid1_xyflux_out>`                                                          Xy component of symmetric tensor flux from fluid 1.
+
+:ref:`fluid1_xzflux_out <pre_processing_fluid1_xzflux_out>`                                                          Xz component of symmetric tensor flux from fluid 1.
+
+:ref:`fluid1_yyflux_out <pre_processing_fluid1_yyflux_out>`                                                          Yy component of symmetric tensor flux from fluid 1.
+
+:ref:`fluid1_yzflux_out <pre_processing_fluid1_yzflux_out>`                                                          Yz component of symmetric tensor flux from fluid 1.
+
+:ref:`fluid1_zzflux_out <pre_processing_fluid1_zzflux_out>`                                                          Zz component of symmetric tensor flux from fluid 1.
+
+:ref:`fluid2_xxflux_in <pre_processing_fluid2_xxflux_in>`                                                            Xx component of symmetric tensor flux into fluid 2.
+
+:ref:`fluid2_xyflux_in <pre_processing_fluid2_xyflux_in>`                                                            Xy component of symmetric tensor flux into fluid 2.
+
+:ref:`fluid2_xzflux_in <pre_processing_fluid2_xzflux_in>`                                                            Xz component of symmetric tensor flux into fluid 2.
+
+:ref:`fluid2_yyflux_in <pre_processing_fluid2_yyflux_in>`                                                            Yy component of symmetric tensor flux into fluid 2.
+
+:ref:`fluid2_yzflux_in <pre_processing_fluid2_yzflux_in>`                                                            Yz component of symmetric tensor flux into fluid 2.
+
+:ref:`fluid2_zzflux_in <pre_processing_fluid2_zzflux_in>`                                                            Zz component of symmetric tensor flux into fluid 2.
+
+:ref:`fluid1_value <pre_processing_fluid1_value>`                                                                            Scalar value transferred from fluid 1 to 2.
+
+:ref:`fluid2_value <pre_processing_fluid2_value>`                                                                            Scalar value transferred from fluid 2 to 1.
+
+:ref:`transition_value <pre_processing_transition_value>`                                                               Scalar transition transferred from fluid 1 to 2.
+
+:ref:`fluid1_xvalue <pre_processing_fluid1_xvalue>`                                                         X-component of a vector value transferred from fluid 1 to 2.
+
+:ref:`fluid1_yvalue <pre_processing_fluid1_yvalue>`                                                         Y-component of a vector value transferred from fluid 1 to 2.
+
+:ref:`fluid1_zvalue <pre_processing_fluid1_zvalue>`                                                         Z-component of a vector value transferred from fluid 1 to 2.
+
+:ref:`fluid2_xvalue <pre_processing_fluid2_xvalue>`                                                         X-component of a vector value transferred from fluid 2 to 1.
+
+:ref:`fluid2_yvalue <pre_processing_fluid2_yvalue>`                                                         Y-component of a vector value transferred from fluid 2 to 1.
+
+:ref:`fluid2_zvalue <pre_processing_fluid2_zvalue>`                                                         Z-component of a vector value transferred from fluid 2 to 1.
+
+:ref:`transition_xvalue <pre_processing_transition_xvalue>`                                        X-component of vector transition value transferred from fluid 1 to 2.
+
+:ref:`transition_yvalue <pre_processing_transition_yvalue>`                                        Y-component of vector transition value transferred from fluid 1 to 2.
+
+:ref:`transition_zvalue <pre_processing_transition_zvalue>`                                        Z-component of vector transition value transferred from fluid 1 to 2.
+
+:ref:`fluid1_xxvalue <pre_processing_fluid1_xxvalue>`                                            Xx-component of a symmetric tensor value transferred from fluid 1 to 2.
+
+:ref:`fluid1_xyvalue <pre_processing_fluid1_xyvalue>`                                            Xy-component of a symmetric tensor value transferred from fluid 1 to 2.
+
+:ref:`fluid1_xzvalue <pre_processing_fluid1_xzvalue>`                                            Xz-component of a symmetric tensor value transferred from fluid 1 to 2.
+
+:ref:`fluid1_yyvalue <pre_processing_fluid1_yyvalue>`                                            Yy-component of a symmetric tensor value transferred from fluid 1 to 2.
+
+:ref:`fluid1_yzvalue <pre_processing_fluid1_yzvalue>`                                            Yz-component of a symmetric tensor value transferred from fluid 1 to 2.
+
+:ref:`fluid1_zzvalue <pre_processing_fluid1_zzvalue>`                                            Zz-component of a symmetric tensor value transferred from fluid 1 to 2.
+
+:ref:`fluid2_xxvalue <pre_processing_fluid2_xxvalue>`                                            Xx-component of a symmetric tensor value transferred from fluid 2 to 1.
+
+:ref:`fluid2_xyvalue <pre_processing_fluid2_xyvalue>`                                            Xy-component of a symmetric tensor value transferred from fluid 2 to 1.
+
+:ref:`fluid2_xzvalue <pre_processing_fluid2_xzvalue>`                                            Xz-component of a symmetric tensor value transferred from fluid 2 to 1.
+
+:ref:`fluid2_yyvalue <pre_processing_fluid2_yyvalue>`                                            Yy-component of a symmetric tensor value transferred from fluid 2 to 1.
+
+:ref:`fluid2_yzvalue <pre_processing_fluid2_yzvalue>`                                            Yz-component of a symmetric tensor value transferred from fluid 2 to 1.
+
+:ref:`fluid2_zzvalue <pre_processing_fluid2_zzvalue>`                                            Zz-component of a symmetric tensor value transferred from fluid 2 to 1.
+
+:ref:`transition_xxvalue <pre_processing_transition_xxvalue>`                           Xx-component of symmetric tensor transition value transferred from fluid 1 to 2.
+
+:ref:`transition_xyvalue <pre_processing_transition_xyvalue>`                           Xy-component of symmetric tensor transition value transferred from fluid 1 to 2.
+
+:ref:`transition_xzvalue <pre_processing_transition_xzvalue>`                           Xz-component of symmetric tensor transition value transferred from fluid 1 to 2.
+
+:ref:`transition_yyvalue <pre_processing_transition_yyvalue>`                           Yy-component of symmetric tensor transition value transferred from fluid 1 to 2.
+
+:ref:`transition_yzvalue <pre_processing_transition_yzvalue>`                           Yz-component of symmetric tensor transition value transferred from fluid 1 to 2.
+
+:ref:`transition_zzvalue <pre_processing_transition_zzvalue>`                           Zz-component of symmetric tensor transition value transferred from fluid 1 to 2.
+
+=====================================================================================   ================================================================================
+
+.. rubric:: Included in:
+
+===================================================   ======================================
+
+Parent                                                                               Summary
+
+===================================================   ======================================
+:ref:`equation_pair <pre_processing_equation_pair>`   A container for Equation Pair objects.
+
+===================================================   ======================================
+

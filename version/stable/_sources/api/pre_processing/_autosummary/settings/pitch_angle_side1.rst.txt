@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_pitch_angle_side1:
+
+pitch_angle_side1
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.pitch_angle_side1.pitch_angle_side1
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================   =================================================================
+
+Parent                                                                                                        Summary
+
+=================================================   =================================================================
+:ref:`pitch_change <pre_processing_pitch_change>`   Defines how pitch change is calculated across a domain interface.
+
+=================================================   =================================================================
+

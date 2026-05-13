@@ -1,0 +1,27 @@
+:orphan:
+
+.. _pre_processing_a1_coefficient:
+
+a1_coefficient
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.a1_coefficient.a1_coefficient
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================================   =====================================================================================
+
+Parent                                                                                                                                                                Summary
+
+=====================================================================================   =====================================================================================
+:ref:`preheat_temperature_dependency <pre_processing_preheat_temperature_dependency>`                            Preheat temperature dependency for laminar burning velocity.
+
+:ref:`turbulence_model <pre_processing_turbulence_model>`                                         Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+:ref:`turbulent_burning_velocity <pre_processing_turbulent_burning_velocity_1>`         Defines the turbulent burning velocity for premixed or partially premixed combustion.
+
+:ref:`turbulence_model <pre_processing_turbulence_model_1>`                                       Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+=====================================================================================   =====================================================================================
+

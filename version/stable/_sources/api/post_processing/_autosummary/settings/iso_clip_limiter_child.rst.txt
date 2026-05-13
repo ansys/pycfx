@@ -1,0 +1,38 @@
+:orphan:
+
+.. _post_processing_iso_clip_limiter_child:
+
+iso_clip_limiter_child
+======================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.iso_clip_limiter_child.iso_clip_limiter_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+============================================================================   ===========================================================================================================================
+
+Attribute                                                                                                                                                                                          Summary
+
+============================================================================   ===========================================================================================================================
+:ref:`limiter_operation <post_processing_limiter_operation>`                                                                                                              The operation of the limitation.
+
+:ref:`value <post_processing_value_1>`                                                                                                                                                      'value' child.
+
+:ref:`variable <post_processing_variable>`                                     The name of the variable used to create the object. Should be set equal to the name of a currently defined VARIABLE object.
+
+:ref:`variable_boundary_values <post_processing_variable_boundary_values_1>`                       Sets the type of boundary values to be presented for variables in this object (Conservative or Hybrid).
+
+============================================================================   ===========================================================================================================================
+
+.. rubric:: Included in:
+
+==========================================================   =========================
+
+Parent                                                                         Summary
+
+==========================================================   =========================
+:ref:`iso_clip_limiter <post_processing_iso_clip_limiter>`   'iso_clip_limiter' child.
+
+==========================================================   =========================
+

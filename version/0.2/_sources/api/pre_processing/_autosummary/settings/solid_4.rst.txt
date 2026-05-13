@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_solid_4:
+
+solid
+=====
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.solid_4.solid
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`solid_child <pre_processing_solid_child_4>`
+
+
+.. rubric:: Included in:
+
+=============================================================   ====================================
+
+Parent                                                                                       Summary
+
+=============================================================   ====================================
+:ref:`source_point_child <pre_processing_source_point_child>`   'child_object_type' of source_point.
+
+=============================================================   ====================================
+

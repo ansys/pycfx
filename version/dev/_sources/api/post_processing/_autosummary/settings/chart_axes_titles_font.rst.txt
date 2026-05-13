@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_chart_axes_titles_font:
+
+chart_axes_titles_font
+======================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.chart_axes_titles_font.chart_axes_titles_font
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+================================================   =============================
+
+Parent                                                                   Summary
+
+================================================   =============================
+:ref:`chart_child <post_processing_chart_child>`   'child_object_type' of chart.
+
+================================================   =============================
+

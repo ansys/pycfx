@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_icem_cfd_part_map_child:
+
+icem_cfd_part_map_child
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.icem_cfd_part_map_child.icem_cfd_part_map_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================   ================================
+
+Attribute                                                                                  Summary
+
+===============================================================   ================================
+:ref:`icem_cfd_parts_list <pre_processing_icem_cfd_parts_list>`   'ICEM CFD Parts List' parameter.
+
+:ref:`boundary <pre_processing_boundary_2>`                                  'Boundary' parameter.
+
+===============================================================   ================================
+
+.. rubric:: Included in:
+
+===========================================================   ==========================================
+
+Parent                                                                                           Summary
+
+===========================================================   ==========================================
+:ref:`icem_cfd_part_map <pre_processing_icem_cfd_part_map>`   A container for Icem Cfd Part Map objects.
+
+===========================================================   ==========================================
+

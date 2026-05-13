@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_fluid2_additional_variable_flux_coefficient:
+
+fluid2_additional_variable_flux_coefficient
+===========================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fluid2_additional_variable_flux_coefficient.fluid2_additional_variable_flux_coefficient
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================================   ================================================
+
+Parent                                                                                                                           Summary
+
+=====================================================================================   ================================================
+:ref:`additional_variable_pair_child <pre_processing_additional_variable_pair_child>`   'child_object_type' of additional_variable_pair.
+
+=====================================================================================   ================================================
+

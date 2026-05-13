@@ -1,0 +1,52 @@
+:orphan:
+
+.. _pre_processing_coalescence_model:
+
+coalescence_model
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.coalescence_model.coalescence_model
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================================================   ====================================================================================================================
+
+Attribute                                                                                                                                                                                                    Summary
+
+=============================================================================================   ====================================================================================================================
+:ref:`option <pre_processing_option_114>`                                                                                                                                            The 'Coalescence Model' option.
+
+:ref:`coalescence_rate <pre_processing_coalescence_rate>`                                                                                                        Coalescence Rate for the polydispersed fluid model.
+
+:ref:`allow_large_group_coalescence <pre_processing_allow_large_group_coalescence>`             Specifies whether coalescence between two groups is allowed if the total mass exceeds the mass of the largest group.
+
+:ref:`coalescence_mass_matrix_option <pre_processing_coalescence_mass_matrix_option>`                                                                               Option for the mass matrix used for coalescence.
+
+:ref:`initial_film_thickness <pre_processing_initial_film_thickness>`                                                                                          Initial thickness of film between coalescing bubbles.
+
+:ref:`final_film_thickness <pre_processing_final_film_thickness>`                                                                         Critical thickness of film when rupture occurs between coalescing bubbles.
+
+:ref:`buoyancy_coalescence_coefficient <pre_processing_buoyancy_coalescence_coefficient>`                                                                      Calibration factor for the buoyancy coalescence rate.
+
+:ref:`turbulence_coalescence_coefficient <pre_processing_turbulence_coalescence_coefficient>`                                                                Calibration factor for the turbulence coalescence rate.
+
+:ref:`eddy_coalescence_coefficient <pre_processing_eddy_coalescence_coefficient>`                                                                            Calibration factor for the turbulence coalescence rate.
+
+:ref:`shear_coalescence_coefficient <pre_processing_shear_coalescence_coefficient>`                                                                          Calibration factor for the turbulence coalescence rate.
+
+:ref:`wake_coalescence_coefficient <pre_processing_wake_coalescence_coefficient>`                                                                            Calibration factor for the turbulence coalescence rate.
+
+=============================================================================================   ====================================================================================================================
+
+.. rubric:: Included in:
+
+===========================================================================   ===========================================
+
+Parent                                                                                                            Summary
+
+===========================================================================   ===========================================
+:ref:`polydispersed_fluid_child <pre_processing_polydispersed_fluid_child>`   'child_object_type' of polydispersed_fluid.
+
+===========================================================================   ===========================================
+

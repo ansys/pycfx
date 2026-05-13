@@ -1,0 +1,54 @@
+:orphan:
+
+.. _pre_processing_partitioner_step_control_1:
+
+partitioner_step_control
+========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.partitioner_step_control_1.partitioner_step_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================   ============================================
+
+Attribute                                                                                                        Summary
+
+=========================================================================   ============================================
+:ref:`option <pre_processing_option_452>`                                         The 'Partitioner Step Control' option.
+
+:ref:`multidomain_option <pre_processing_multidomain_option>`                            'Multidomain Option' parameter.
+
+:ref:`runtime_priority <pre_processing_runtime_priority>`                                  'Runtime Priority' parameter.
+
+:ref:`spatial_partitioning <pre_processing_spatial_partitioning_1>`                       'SPATIAL PARTITIONING' object.
+
+:ref:`time_partitioning <pre_processing_time_partitioning>`                                  'TIME PARTITIONING' object.
+
+:ref:`executable_selection <pre_processing_executable_selection>`                         'EXECUTABLE SELECTION' object.
+
+:ref:`partitioning_domain <pre_processing_partitioning_domain>`             A container for Partitioning Domain objects.
+
+:ref:`partitioning_type <pre_processing_partitioning_type>`                                  'PARTITIONING TYPE' object.
+
+:ref:`partition_smoothing <pre_processing_partition_smoothing>`                            'PARTITION SMOOTHING' object.
+
+:ref:`partition_node_weighting <pre_processing_partition_node_weighting>`             'PARTITION NODE WEIGHTING' object.
+
+:ref:`precoarsening_control <pre_processing_precoarsening_control>`                      'PRECOARSENING CONTROL' object.
+
+:ref:`memory_control <pre_processing_memory_control_1>`                                         'MEMORY CONTROL' object.
+
+=========================================================================   ============================================
+
+.. rubric:: Included in:
+
+===========================================================   ===========================
+
+Parent                                                                            Summary
+
+===========================================================   ===========================
+:ref:`execution_control <pre_processing_execution_control>`   'EXECUTION CONTROL' object.
+
+===========================================================   ===========================
+

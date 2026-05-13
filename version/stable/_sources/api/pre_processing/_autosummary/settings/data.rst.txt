@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_data:
+
+data
+====
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.data.data
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ============================================================================================
+
+Parent                                                                                                                                               Summary
+
+=============================================================   ============================================================================================
+:ref:`interpolation_data <pre_processing_interpolation_data>`   Holds interpolation data for user-defined one and three dimensional interpolation functions.
+
+=============================================================   ============================================================================================
+

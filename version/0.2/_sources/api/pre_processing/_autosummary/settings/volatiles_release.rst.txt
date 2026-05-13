@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_volatiles_release:
+
+volatiles_release
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.volatiles_release.volatiles_release
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================   =================================================
+
+Attribute                                                                                                     Summary
+
+=================================================================   =================================================
+:ref:`enhancement_of_yield <pre_processing_enhancement_of_yield>`   Enhancement of volatiles yield for rapid heating.
+
+:ref:`volatiles_molar_mass <pre_processing_volatiles_molar_mass>`                       Volatiles average molar mass.
+
+=================================================================   =================================================
+
+.. rubric:: Included in:
+
+===========================================================   ====================================================
+
+Parent                                                                                                     Summary
+
+===========================================================   ====================================================
+:ref:`material_analysis <pre_processing_material_analysis>`   Proximate and ultimate analysis of hydrocarbon fuel.
+
+===========================================================   ====================================================
+

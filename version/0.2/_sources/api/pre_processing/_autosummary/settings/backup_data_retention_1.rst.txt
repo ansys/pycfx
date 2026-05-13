@@ -1,0 +1,32 @@
+:orphan:
+
+.. _pre_processing_backup_data_retention_1:
+
+backup_data_retention
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.backup_data_retention_1.backup_data_retention
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================   ===================================
+
+Attribute                                                               Summary
+
+=========================================   ===================================
+:ref:`option <pre_processing_option_365>`   The 'Backup Data Retention' option.
+
+=========================================   ===================================
+
+.. rubric:: Included in:
+
+=====================================================   ==============================================================================
+
+Parent                                                                                                                         Summary
+
+=====================================================   ==============================================================================
+:ref:`output_control <pre_processing_output_control>`   Holds object definitions that control output from the solver during execution.
+
+=====================================================   ==============================================================================
+

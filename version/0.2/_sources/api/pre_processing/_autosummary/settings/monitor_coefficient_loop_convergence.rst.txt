@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_monitor_coefficient_loop_convergence:
+
+monitor_coefficient_loop_convergence
+====================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.monitor_coefficient_loop_convergence.monitor_coefficient_loop_convergence
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================   =========================
+
+Parent                                                                      Summary
+
+=======================================================   =========================
+:ref:`monitor_objects <pre_processing_monitor_objects>`   'MONITOR OBJECTS' object.
+
+=======================================================   =========================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_wavenumber_lower_limit:
+
+wavenumber_lower_limit
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.wavenumber_lower_limit.wavenumber_lower_limit
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================   =====================================
+
+Parent                                                                                          Summary
+
+===============================================================   =====================================
+:ref:`spectral_band_child <pre_processing_spectral_band_child>`   'child_object_type' of spectral_band.
+
+===============================================================   =====================================
+

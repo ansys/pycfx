@@ -1,0 +1,27 @@
+:orphan:
+
+.. _pre_processing_enabled_48:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_48.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   =============================================================
+
+Parent                                                                                                                          Summary
+
+=======================================================================   =============================================================
+:ref:`turbulent_flux_closure <pre_processing_turbulent_flux_closure>`     Controls the turbulent flux closure for a transport equation.
+
+:ref:`turbulent_flux_closure <pre_processing_turbulent_flux_closure_1>`   Controls the turbulent flux closure for a transport equation.
+
+:ref:`turbulent_flux_closure <pre_processing_turbulent_flux_closure_2>`   Controls the turbulent flux closure for a transport equation.
+
+:ref:`turbulent_flux_closure <pre_processing_turbulent_flux_closure_3>`   Controls the turbulent flux closure for a transport equation.
+
+=======================================================================   =============================================================
+

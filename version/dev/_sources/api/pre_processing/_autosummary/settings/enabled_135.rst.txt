@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_135:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_135.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================   =======================
+
+Parent                                                                  Summary
+
+=====================================================   =======================
+:ref:`erosion_model <pre_processing_erosion_model_1>`   Particle erosion model.
+
+=====================================================   =======================
+

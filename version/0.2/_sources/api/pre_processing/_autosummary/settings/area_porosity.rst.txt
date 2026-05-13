@@ -1,0 +1,32 @@
+:orphan:
+
+.. _pre_processing_area_porosity:
+
+area_porosity
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.area_porosity.area_porosity
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================   ===========================
+
+Attribute                                                       Summary
+
+=========================================   ===========================
+:ref:`option <pre_processing_option_243>`   The 'Area Porosity' option.
+
+=========================================   ===========================
+
+.. rubric:: Included in:
+
+=======================================================   =========================================
+
+Parent                                                                                      Summary
+
+=======================================================   =========================================
+:ref:`porosity_models <pre_processing_porosity_models>`   Describes loss model for a porous domain.
+
+=======================================================   =========================================
+

@@ -1,0 +1,42 @@
+:orphan:
+
+.. _pre_processing_setup:
+
+setup
+=====
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.setup.setup
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================   ======================================================================================================
+
+Attribute                                                                                                                                                                Summary
+
+=======================================================================   ======================================================================================================
+:ref:`library <pre_processing_library>`                                                          Stores common object descriptions for reference in the main problem definition.
+
+:ref:`flow <pre_processing_flow>`                                                                                                                  A container for Flow objects.
+
+:ref:`command_file <pre_processing_command_file>`                                                                                Stores the Version of the current command file.
+
+:ref:`user <pre_processing_user>`                                         Object that stores user-defined parameters for use in user defined functions or junction box routines.
+
+:ref:`simulation_control <pre_processing_simulation_control>`                                                                      Container for all Simulation definition data.
+
+:ref:`physics_options_control <pre_processing_physics_options_control>`                                                                        'PHYSICS OPTIONS CONTROL' object.
+
+=======================================================================   ======================================================================================================
+
+.. rubric:: Included in:
+
+=====================================   ==========================================
+
+Parent                                                                     Summary
+
+=====================================   ==========================================
+:ref:`root <ref_pre_processing_root>`   Encapsulates a CFX pre-processing session.
+
+=====================================   ==========================================
+

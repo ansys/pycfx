@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_247:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_247.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================   ====================
+
+Parent                                                       Summary
+
+=============================================   ====================
+:ref:`new_points <pre_processing_new_points>`   'NEW POINTS' object.
+
+=============================================   ====================
+

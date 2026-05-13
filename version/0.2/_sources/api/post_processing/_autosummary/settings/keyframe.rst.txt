@@ -1,0 +1,26 @@
+:orphan:
+
+.. _post_processing_keyframe:
+
+keyframe
+========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.keyframe.keyframe
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`keyframe_child <post_processing_keyframe_child>`
+
+
+.. rubric:: Included in:
+
+========================================   =========================================
+
+Parent                                                                       Summary
+
+========================================   =========================================
+:ref:`results <post_processing_results>`   Encapsulates a CFX post-processing setup.
+
+========================================   =========================================
+

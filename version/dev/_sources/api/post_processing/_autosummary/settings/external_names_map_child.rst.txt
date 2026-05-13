@@ -1,0 +1,36 @@
+:orphan:
+
+.. _post_processing_external_names_map_child:
+
+external_names_map_child
+========================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.external_names_map_child.external_names_map_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+==============================================================   ================================================================
+
+Attribute                                                                                                                 Summary
+
+==============================================================   ================================================================
+:ref:`file_type <post_processing_file_type>`                     The type of the results file read for which this map is created.
+
+:ref:`units_quantity_map <post_processing_units_quantity_map>`                                        'units_quantity_map' child.
+
+:ref:`variable_name_map <post_processing_variable_name_map>`                                           'variable_name_map' child.
+
+==============================================================   ================================================================
+
+.. rubric:: Included in:
+
+==============================================================   ===========================
+
+Parent                                                                               Summary
+
+==============================================================   ===========================
+:ref:`external_names_map <post_processing_external_names_map>`   'external_names_map' child.
+
+==============================================================   ===========================
+

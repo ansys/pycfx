@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_110:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_110.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================================   ===========================================
+
+Parent                                                                                                            Summary
+
+===========================================================================   ===========================================
+:ref:`polydispersed_fluid_child <pre_processing_polydispersed_fluid_child>`   'child_object_type' of polydispersed_fluid.
+
+===========================================================================   ===========================================
+

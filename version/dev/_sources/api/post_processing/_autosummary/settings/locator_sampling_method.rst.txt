@@ -1,0 +1,27 @@
+:orphan:
+
+.. _post_processing_locator_sampling_method:
+
+locator_sampling_method
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.locator_sampling_method.locator_sampling_method
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==============================================================================   ============================================
+
+Parent                                                                                                                Summary
+
+==============================================================================   ============================================
+:ref:`streamline_child <post_processing_streamline_child>`                                 'child_object_type' of streamline.
+
+:ref:`point_cloud_child <post_processing_point_cloud_child>`                              'child_object_type' of point_cloud.
+
+:ref:`internal_vector_child <post_processing_internal_vector_child>`                  'child_object_type' of internal_vector.
+
+:ref:`internal_point_cloud_child <post_processing_internal_point_cloud_child>`   'child_object_type' of internal_point_cloud.
+
+==============================================================================   ============================================
+

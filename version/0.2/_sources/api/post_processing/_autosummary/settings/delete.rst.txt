@@ -1,0 +1,32 @@
+:orphan:
+
+.. _post_processing_delete:
+
+delete
+======
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.delete.delete
+    :show-inheritance:
+
+.. rubric:: Arguments
+
+============================================   ======================
+
+Argument                                                      Summary
+
+============================================   ======================
+:ref:`name_list <post_processing_name_list>`   Objects to be deleted.
+
+============================================   ======================
+
+.. rubric:: Included in:
+
+================================================   ====================
+
+Parent                                                          Summary
+
+================================================   ====================
+:ref:`expressions <post_processing_expressions>`   'expressions' child.
+
+================================================   ====================
+

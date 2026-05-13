@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_heat_transfer_5:
+
+heat_transfer
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.heat_transfer_5.heat_transfer
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================================   =====================================================
+
+Attribute                                                                                                                           Summary
+
+===================================================================================   =====================================================
+:ref:`enabled <pre_processing_enabled_157>`                                                                Enable the HEAT TRANSFER object.
+
+:ref:`option <pre_processing_option_284>`                                                                       The 'Heat Transfer' option.
+
+:ref:`heat_transfer_interface_model <pre_processing_heat_transfer_interface_model>`            Heat transfer models for a domain interface.
+
+:ref:`turbulent_wall_functions <pre_processing_turbulent_wall_functions_2>`           Sets the turbulent near-wall treatment at a boundary.
+
+===================================================================================   =====================================================
+
+.. rubric:: Included in:
+
+===========================================================================================   ========================================================
+
+Parent                                                                                                                                         Summary
+
+===========================================================================================   ========================================================
+:ref:`interface_models <pre_processing_interface_models>`                                     Holds the definition of models specific to an interface.
+
+:ref:`additional_interface_models_child <pre_processing_additional_interface_models_child>`        'child_object_type' of additional_interface_models.
+
+===========================================================================================   ========================================================
+

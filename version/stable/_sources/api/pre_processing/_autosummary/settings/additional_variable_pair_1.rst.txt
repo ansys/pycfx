@@ -1,0 +1,28 @@
+:orphan:
+
+.. _pre_processing_additional_variable_pair_1:
+
+additional_variable_pair
+========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.additional_variable_pair_1.additional_variable_pair
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`additional_variable_pair_child <pre_processing_additional_variable_pair_child_1>`
+
+
+.. rubric:: Included in:
+
+=======================================================   =========================================
+
+Parent                                                                                      Summary
+
+=======================================================   =========================================
+:ref:`porosity_models <pre_processing_porosity_models>`   Describes loss model for a porous domain.
+
+:ref:`fluid_child <pre_processing_fluid_child_2>`                     'child_object_type' of fluid.
+
+=======================================================   =========================================
+

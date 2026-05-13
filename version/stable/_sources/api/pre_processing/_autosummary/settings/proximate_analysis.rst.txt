@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_proximate_analysis:
+
+proximate_analysis
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.proximate_analysis.proximate_analysis
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================   ================================
+
+Attribute                                                                                      Summary
+
+===================================================================   ================================
+:ref:`option <pre_processing_option_36>`                              The 'Proximate Analysis' option.
+
+:ref:`ash_fraction <pre_processing_ash_fraction>`                                   Ash mass fraction.
+
+:ref:`moisture_fraction <pre_processing_moisture_fraction>`                    Moisture mass fraction.
+
+:ref:`fixed_carbon_fraction <pre_processing_fixed_carbon_fraction>`        Fixed carbon mass fraction.
+
+:ref:`volatiles_fraction <pre_processing_volatiles_fraction>`                 Volatiles mass fraction.
+
+===================================================================   ================================
+
+.. rubric:: Included in:
+
+===========================================================   ====================================================
+
+Parent                                                                                                     Summary
+
+===========================================================   ====================================================
+:ref:`material_analysis <pre_processing_material_analysis>`   Proximate and ultimate analysis of hydrocarbon fuel.
+
+===========================================================   ====================================================
+

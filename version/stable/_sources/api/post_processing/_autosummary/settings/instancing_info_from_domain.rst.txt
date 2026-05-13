@@ -1,0 +1,23 @@
+:orphan:
+
+.. _post_processing_instancing_info_from_domain:
+
+instancing_info_from_domain
+===========================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.instancing_info_from_domain.instancing_info_from_domain
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==========================================================================================   ==================================================
+
+Parent                                                                                                                                  Summary
+
+==========================================================================================   ==================================================
+:ref:`default_instance_transform_child <post_processing_default_instance_transform_child>`   'child_object_type' of default_instance_transform.
+
+:ref:`instance_transform_child <post_processing_instance_transform_child>`                           'child_object_type' of instance_transform.
+
+==========================================================================================   ==================================================
+

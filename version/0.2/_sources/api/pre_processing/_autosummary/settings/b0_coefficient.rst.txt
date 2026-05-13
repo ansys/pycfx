@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_b0_coefficient:
+
+b0_coefficient
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.b0_coefficient.b0_coefficient
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================   =================================================
+
+Parent                                                                                                      Summary
+
+===============================================================   =================================================
+:ref:`pressure_dependency <pre_processing_pressure_dependency>`   Pressure dependency for laminar burning velocity.
+
+===============================================================   =================================================
+

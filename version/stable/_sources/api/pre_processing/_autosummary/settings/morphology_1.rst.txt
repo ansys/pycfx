@@ -1,0 +1,48 @@
+:orphan:
+
+.. _pre_processing_morphology_1:
+
+morphology
+==========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.morphology_1.morphology
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================================================   ===================================================
+
+Attribute                                                                                                                                     Summary
+
+===============================================================================================   ===================================================
+:ref:`option <pre_processing_option_83>`                                                                                     The 'Morphology' option.
+
+:ref:`mean_diameter <pre_processing_mean_diameter>`                                                                        'Mean Diameter' parameter.
+
+:ref:`minimum_volume_fraction <pre_processing_minimum_volume_fraction>`                                          'Minimum Volume Fraction' parameter.
+
+:ref:`maximum_packing <pre_processing_maximum_packing>`                                                                  'Maximum Packing' parameter.
+
+:ref:`restitution_coefficient <pre_processing_restitution_coefficient>`                                          'Restitution Coefficient' parameter.
+
+:ref:`condensation_rate_relaxation_factor <pre_processing_condensation_rate_relaxation_factor>`                  Condensation rate relaxation factor.
+
+:ref:`particle_diameter_distribution <pre_processing_particle_diameter_distribution>`             Defines the size distribution for a particle group.
+
+:ref:`particle_shape_factors <pre_processing_particle_shape_factors>`                                  Defines the shape factor for a particle group.
+
+:ref:`particle_diameter_change <pre_processing_particle_diameter_change>`                                       Defines the particle diameter change.
+
+===============================================================================================   ===================================================
+
+.. rubric:: Included in:
+
+=====================================================================   ========================================
+
+Parent                                                                                                   Summary
+
+=====================================================================   ========================================
+:ref:`fluid_definition_child <pre_processing_fluid_definition_child>`   'child_object_type' of fluid_definition.
+
+=====================================================================   ========================================
+

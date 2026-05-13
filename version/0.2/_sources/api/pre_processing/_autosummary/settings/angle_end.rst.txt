@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_angle_end:
+
+angle_end
+=========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.angle_end.angle_end
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================================   ========================================
+
+Parent                                                                                                         Summary
+
+===========================================================================   ========================================
+:ref:`rotation_angle_definition <pre_processing_rotation_angle_definition>`   Defines how rotation angle is specified.
+
+===========================================================================   ========================================
+

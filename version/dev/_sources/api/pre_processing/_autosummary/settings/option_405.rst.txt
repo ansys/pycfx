@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_405:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_405.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   =========================================================================
+
+Parent                                                                                                                        Summary
+
+=========================================================   =========================================================================
+:ref:`monitor_balances <pre_processing_monitor_balances>`   Defines the extent of equation balance data recorded in the monitor file.
+
+=========================================================   =========================================================================
+

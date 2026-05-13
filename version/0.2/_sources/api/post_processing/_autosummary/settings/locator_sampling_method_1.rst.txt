@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_locator_sampling_method_1:
+
+locator_sampling_method
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.locator_sampling_method_1.locator_sampling_method
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==================================================   ==============================
+
+Parent                                                                      Summary
+
+==================================================   ==============================
+:ref:`vector_child <post_processing_vector_child>`   'child_object_type' of vector.
+
+==================================================   ==============================
+

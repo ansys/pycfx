@@ -1,0 +1,39 @@
+:orphan:
+
+.. _post_processing_location_list:
+
+location_list
+=============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.location_list.location_list
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+================================================================================   ===========================================================================
+
+Parent                                                                                                                                                 Summary
+
+================================================================================   ===========================================================================
+:ref:`streamline_child <post_processing_streamline_child>`                                                                  'child_object_type' of streamline.
+
+:ref:`point_cloud_child <post_processing_point_cloud_child>`                                                               'child_object_type' of point_cloud.
+
+:ref:`vector_child <post_processing_vector_child>`                                                                              'child_object_type' of vector.
+
+:ref:`iso_clip_child <post_processing_iso_clip_child>`                                                                        'child_object_type' of iso_clip.
+
+:ref:`volume_child <post_processing_volume_child>`                                                                              'child_object_type' of volume.
+
+:ref:`contour_child <post_processing_contour_child>`                                                                           'child_object_type' of contour.
+
+:ref:`surface_group_child <post_processing_surface_group_child>`                                                         'child_object_type' of surface_group.
+
+:ref:`surface_of_revolution_child <post_processing_surface_of_revolution_child>`                                 'child_object_type' of surface_of_revolution.
+
+:ref:`internal_point_cloud_child <post_processing_internal_point_cloud_child>`                                    'child_object_type' of internal_point_cloud.
+
+:ref:`export <post_processing_export>`                                             Holds parameters which control the export of data to an external text file.
+
+================================================================================   ===========================================================================
+

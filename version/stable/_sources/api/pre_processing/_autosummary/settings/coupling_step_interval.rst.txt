@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_coupling_step_interval:
+
+coupling_step_interval
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.coupling_step_interval.coupling_step_interval
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ======================================================================================================
+
+Parent                                                                                                                                                       Summary
+
+===========================================================   ======================================================================================================
+:ref:`output_frequency <pre_processing_output_frequency>`     Holds options for controlling the frequency with which backup and transient results files are written.
+
+:ref:`output_frequency <pre_processing_output_frequency_1>`   Holds options for controlling the frequency with which backup and transient results files are written.
+
+===========================================================   ======================================================================================================
+
