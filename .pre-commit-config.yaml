@@ -33,6 +33,16 @@ repos:
             tests,
           ]
 
+  - repo: https://github.com/PyCQA/bandit
+    rev: 1.9.4
+    hooks:
+      - id: bandit
+        args: [
+          -r,
+          -c, pyproject.toml,
+        ]
+        additional_dependencies: ["bandit[toml]"]
+
   - repo: https://github.com/codespell-project/codespell
     rev: v2.4.2
     hooks:
