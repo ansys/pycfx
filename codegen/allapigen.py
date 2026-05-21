@@ -81,7 +81,7 @@ def main(pycfx_path, ansys_version, cfx_path, static_info_file_path):
     cfx_app_list = [CFXMode.PRE_PROCESSING, CFXMode.POST_PROCESSING]
     should_write_static_info = static_info_file_path is not None
     for cfx_app in cfx_app_list:
-        sessions = {cfx_app: launch_cfx(version=ansys_version, mode=cfx_app)}
+        sessions = {cfx_app: launch_cfx(product_version=ansys_version, mode=cfx_app)}
         version = get_version_for_file_name(session=sessions[cfx_app])
         print_cfx_version.generate(pycfx_path, sessions)
         settingsgen.reset_globals()
