@@ -200,7 +200,7 @@ class DockerLauncher:
             setattr(self, "container_dict", {})
         self.container_dict["cfx_cmd"] = self.mode.value[0].get_cmd_name()
         if self.product_version:
-            self.container_dict["image_tag"] = f"v{self.product_version}"
+            self.container_dict["image_tag"] = f"{self.product_version}"
         if self.dry_run:
             config_dict, *_ = configure_container_dict(args, **self.container_dict)
             from pprint import pprint
