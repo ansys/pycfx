@@ -54,6 +54,7 @@ from ansys.cfx.core.launcher.pycfx_enums import CFXMode, LaunchMode, UIMode
 import ansys.cfx.core.launcher.watchdog as watchdog
 from ansys.cfx.core.session_solver import Solver
 from ansys.cfx.core.utils.file_transfer_service import PimFileTransferService
+from ansys.cfx.core.utils.cfx_version import CFXVersion
 
 _THIS_DIR = Path(__file__).parent
 _OPTIONS_FILE = _THIS_DIR / "cfx_launcher_options.json"
@@ -189,6 +190,7 @@ class DockerLauncher:
         self.file_transfer_service = (
             file_transfer_service if file_transfer_service else PimFileTransferService()
         )
+        self.product_version = product_version
 
     def __call__(self):
         has_remote_server: bool = self.mode.value[0].has_remote_server()
@@ -236,6 +238,7 @@ class DockerLauncher:
 
         session = self.new_session(
             cfx_connection=CFXConnection(
+                version=CFXVersion(self.product_version),
                 ip=ip,
                 port=port,
                 address=uds_address,

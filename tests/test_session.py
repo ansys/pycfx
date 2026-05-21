@@ -34,6 +34,7 @@ def test_launch_pre(pypre: PreProcessing, pytestconfig):
         "port": props.port,
         "address": props.address,
         "password": props.password,
+        "version": props.version,
     }
 
     pypre_connected = pycfx.PreProcessing.from_connection(**connection_kwargs)

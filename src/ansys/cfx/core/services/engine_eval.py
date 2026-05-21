@@ -26,8 +26,6 @@ from typing import Sequence
 
 import grpc
 
-from ansys.api.cfx.v0 import engine_eval_pb2 as EngineEvalProtoModule
-from ansys.api.cfx.v0 import engine_eval_pb2_grpc as EngineEvalGrpcModule
 from ansys.cfx.core.services.interceptors import (
     BatchInterceptor,
     ErrorStateInterceptor,
@@ -43,7 +41,11 @@ class EngineEvalService:
     """
 
     def __init__(
-        self, channel: grpc.Channel, metadata: list[tuple[str, str]], cfx_error_state
+        self,
+        channel: grpc.Channel,
+        metadata: list[tuple[str, str]],
+        cfx_error_state,
+        version: CFXVersion,
     ) -> None:
         """Initialize an instance of the ``EngineEvalService`` class."""
         intercept_channel = grpc.intercept_channel(
@@ -52,24 +54,35 @@ class EngineEvalService:
             TracingInterceptor(),
             BatchInterceptor(),
         )
-        self.__stub = EngineEvalGrpcModule.EngineEvalStub(intercept_channel)
+        print(f"EngineEvalService initialized with version {version}")
+        if version >= CFXVersion.v271:
+            from ansys.api.cfx.v1 import engine_eval_pb2 as EngineEvalProtoModule
+            from ansys.api.cfx.v1 import engine_eval_pb2_grpc as EngineEvalGrpcModule
+        else:
+            from ansys.api.cfx.v0 import engine_eval_pb2 as EngineEvalProtoModule
+            from ansys.api.cfx.v0 import engine_eval_pb2_grpc as EngineEvalGrpcModule
+
+        self.EngineEvalProtoModule = EngineEvalProtoModule
+        self.EngineEvalGrpcModule = EngineEvalGrpcModule
+
+        self.__stub = self.EngineEvalGrpcModule.EngineEvalStub(intercept_channel)
         self.__metadata = metadata
 
     def process_ccl(
-        self, request: EngineEvalProtoModule.ProcessCCLRequest
-    ) -> EngineEvalProtoModule.ProcessCCLResponse:
+        self, request: "EngineEvalProtoModule.ProcessCCLRequest"
+    ) -> "EngineEvalProtoModule.ProcessCCLResponse":
         """Exec RPC of EngineEval service."""
         return self.__stub.ProcessCCL(request, metadata=self.__metadata)
 
     def info_query(
-        self, request: EngineEvalProtoModule.InfoQueryRequest
-    ) -> EngineEvalProtoModule.InfoQueryResponse:
+        self, request: "EngineEvalProtoModule.InfoQueryRequest"
+    ) -> "EngineEvalProtoModule.InfoQueryResponse":
         """InfoQuery RPC of EngineEval service."""
         return self.__stub.InfoQuery(request, metadata=self.__metadata)
 
     def eval_expression(
-        self, request: EngineEvalProtoModule.ExpressionEvalRequest
-    ) -> EngineEvalProtoModule.ExpressionEvalResponse:
+        self, request: "EngineEvalProtoModule.ExpressionEvalRequest"
+    ) -> "EngineEvalProtoModule.ExpressionEvalResponse":
         """EngineEval RPC of EngineEval service."""
         return self.__stub.ExpressionEval(request, metadata=self.__metadata)
 
@@ -117,7 +130,7 @@ class EngineEval:
                 "Expressions can be created and evaluated from the 'expressions' object."
             )
 
-        request = EngineEvalProtoModule.ExpressionEvalRequest()
+        request = self.service.EngineEvalProtoModule.ExpressionEvalRequest()
         request.input = input
         response = self.service.eval_expression(request)
         return response.output
@@ -140,7 +153,7 @@ class EngineEval:
         str
            Output as string.
         """
-        request = EngineEvalProtoModule.ProcessCCLRequest()
+        request = self.service.EngineEvalProtoModule.ProcessCCLRequest()
         request.ccl.extend(ccl)
         request.wait = wait
         request.silent = silent
@@ -163,7 +176,7 @@ class EngineEval:
         str
             Output query value in string format.
         """
-        request = EngineEvalProtoModule.InfoQueryRequest()
+        request = self.service.EngineEvalProtoModule.InfoQueryRequest()
         request.query = query
         if args is not None:
             request.args = args

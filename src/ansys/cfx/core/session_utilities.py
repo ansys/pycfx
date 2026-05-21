@@ -233,6 +233,7 @@ class SessionBase:
         allow_remote_host: bool = False,
         certificates_folder: str | None = None,
         insecure_mode: bool = False,
+        version: CFXVersion | None = None,
     ):
         """Connect to an existing CFX server instance.
 
