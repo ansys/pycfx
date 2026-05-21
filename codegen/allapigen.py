@@ -50,6 +50,7 @@ def _update_first_level(d, u):
 @click.option(
     "--ansys-version",
     "ansys_version",
+    default=None,
     help="Specify the ansys package version to use. The default is determined automatically.",
 )
 @click.option(

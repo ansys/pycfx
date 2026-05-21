@@ -173,7 +173,7 @@ jobs:
 
       - name: Run ${{matrix.version}} API codegen
         if: ${{ !contains(github.event.pull_request.title, '[skip tests]') }}
-        run: make api-codegen
+        run: make api-codegen ansys-version=${{matrix.version}}
         env:
           CFX_IMAGE_TAG: ${{matrix.image-tag}}
 
