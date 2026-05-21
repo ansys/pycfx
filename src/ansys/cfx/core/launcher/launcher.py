@@ -63,6 +63,7 @@ def create_launcher(version, cfx_launch_mode: LaunchMode = None, **kwargs):
 
     Parameters
     ----------
+    version :  CFXVersion
     cfx_launch_mode: LaunchMode
         Supported CFX launch modes. Options are ``"LaunchMode.CONTAINER"``
         and ``"LaunchMode.STANDALONE"``.
@@ -300,6 +301,7 @@ def connect_to_cfx(
         which means an independent watchdog process is run to ensure
         that any local CFX connections are properly closed (or terminated if frozen) when
         the Python process ends.
+    version :  CFXVersion
 
     Returns
     -------

@@ -56,7 +56,7 @@ api-codegen:
 	@python -m venv env
 	@. env/bin/activate
 	@pip install -q -e .
-	@python codegen/allapigen.py --ansys-version=$(VERSION)
+	@python codegen/allapigen.py --ansys-version="$$ANSYS_VERSION"
 	@rm -rf env
 
 build-doc-source:

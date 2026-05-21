@@ -264,6 +264,7 @@ class SessionBase:
             Whether to connect CFX's gRPC server in insecure mode without TLS.
             This mode is not recommended. For more information on the implications
             and usage of insecure mode, see the CFX documentation.
+        version :  CFXVersion, default: None
 
         Returns
         -------
