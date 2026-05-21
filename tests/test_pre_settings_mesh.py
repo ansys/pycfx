@@ -137,13 +137,13 @@ def test_mesh_objects(pre_load_static_mixer_case: PreProcessing, pytestconfig):
     assert mesh2_file_path.endswith("data/StaticMixer.def")
 
     param_state = pypre.setup.mesh["MeshFromDefFile"].file_path.get_state()
-    assert len(param_state) == 1
-    param_state_file_path = param_state[0].replace("\\", "/")
+    assert len(param_state) == 51
+    param_state_file_path = param_state.replace("\\", "/")
     assert param_state_file_path.endswith("data/StaticMixer.def")
 
     param_value = pypre.setup.mesh["MeshFromDefFile"].file_path()
-    assert len(param_value) == 1
-    param_value_file_path = param_value[0].replace("\\", "/")
+    assert len(param_value) == 51
+    param_value_file_path = param_value.replace("\\", "/")
     assert param_value_file_path.endswith("data/StaticMixer.def")
 
     try:

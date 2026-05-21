@@ -193,6 +193,7 @@ class StandaloneLauncher:
         self.argvals = argvals
         self.new_session = self.mode.value[0]
         self.file_transfer_service = file_transfer_service
+        self.product_version = product_version
 
     def __call__(
         self,
@@ -226,8 +227,9 @@ class StandaloneLauncher:
             kwargs.update(cwd=self.cwd)
         launch_string += _build_journal_argument(self.topy, self.journal_file_names)
 
+        cfx_version = CFXVersion(self._cfx_version)
         filter_wnua = (
-            is_windows() and self._cfx_version and CFXVersion(self._cfx_version) < CFXVersion.v261
+            is_windows() and self._cfx_version and cfx_version < CFXVersion.v261
         ) and os.getenv("PYCFX_SHOW_ALL_WNUA_MESSAGES", "unset") != "1"
 
         if filter_wnua:
@@ -264,6 +266,7 @@ class StandaloneLauncher:
                     raise ex
 
             session = self.new_session._create_from_server_info_file(
+                version=cfx_version,
                 server_info_file_name=server_info_file_name,
                 file_transfer_service=self.file_transfer_service,
                 cleanup_on_exit=self.cleanup_on_exit,

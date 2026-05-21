@@ -53,6 +53,7 @@ from ansys.cfx.core.launcher.process_launch_string import _build_cfx_launch_args
 from ansys.cfx.core.launcher.pycfx_enums import CFXMode, LaunchMode, UIMode
 import ansys.cfx.core.launcher.watchdog as watchdog
 from ansys.cfx.core.session_solver import Solver
+from ansys.cfx.core.utils.cfx_version import CFXVersion
 from ansys.cfx.core.utils.file_transfer_service import PimFileTransferService
 
 _THIS_DIR = Path(__file__).parent
@@ -189,6 +190,7 @@ class DockerLauncher:
         self.file_transfer_service = (
             file_transfer_service if file_transfer_service else PimFileTransferService()
         )
+        self.product_version = product_version
 
     def __call__(self):
         has_remote_server: bool = self.mode.value[0].has_remote_server()
@@ -198,7 +200,7 @@ class DockerLauncher:
             setattr(self, "container_dict", {})
         self.container_dict["cfx_cmd"] = self.mode.value[0].get_cmd_name()
         if self.product_version:
-            self.container_dict["image_tag"] = f"v{self.product_version}"
+            self.container_dict["image_tag"] = f"{self.product_version}"
         if self.dry_run:
             config_dict, *_ = configure_container_dict(args, **self.container_dict)
             from pprint import pprint
@@ -236,6 +238,7 @@ class DockerLauncher:
 
         session = self.new_session(
             cfx_connection=CFXConnection(
+                version=CFXVersion(self.product_version),
                 ip=ip,
                 port=port,
                 address=uds_address,

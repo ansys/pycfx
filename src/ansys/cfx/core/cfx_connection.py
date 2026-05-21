@@ -43,6 +43,7 @@ import psutil
 
 from ansys.cfx.core.services import service_creator
 from ansys.cfx.core.services.engine_eval import EngineEvalService
+from ansys.cfx.core.utils.cfx_version import CFXVersion
 from ansys.cfx.core.utils.execution import timeout_exec, timeout_loop
 from ansys.platform.instancemanagement import Instance
 
@@ -278,6 +279,8 @@ class CFXConnectionProperties:
     """The process ID of the CFX engine (same as `engine_pid`)."""
     inside_container: Optional[Union[bool, Container, None]] = None
     """Whether the connected CFX session is running inside a Docker container."""
+    version: Optional[CFXVersion] = None
+    """The version of the CFX session."""
 
     def list_names(self) -> list:
         """Get a list of all property names."""
@@ -403,6 +406,7 @@ class CFXConnection:
 
     def __init__(
         self,
+        version: CFXVersion,
         ip: Optional[str] = None,
         port: Optional[int] = None,
         address: str | None = None,
@@ -488,7 +492,7 @@ class CFXConnection:
         self._metadata: List[Tuple[str, str]] = [("password", password)] if password else []
 
         self.health_check_service = service_creator("health_check").create(
-            self._channel, self._metadata, self._error_state
+            self._channel, self._metadata, self._error_state, version=version
         )
         # At this point, the server must be running. If the following check_health()
         # throws, we should not proceed.
@@ -502,7 +506,9 @@ class CFXConnection:
 
         # Move this service later.
         # Currently, required by launcher to connect to a running session.
-        self._engine_eval_service = self.create_grpc_service(EngineEvalService, self._error_state)
+        self._engine_eval_service = self.create_grpc_service(
+            EngineEvalService, self._error_state, version
+        )
         self.engine_eval = service_creator("engine_eval").create(self._engine_eval_service)
 
         self._cleanup_on_exit = cleanup_on_exit
@@ -553,6 +559,7 @@ class CFXConnection:
             engine_host,
             cfx_host_pid,
             inside_container,
+            version,
         )
 
         self._remote_instance = remote_instance

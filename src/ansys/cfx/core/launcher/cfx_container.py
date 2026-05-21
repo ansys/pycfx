@@ -346,6 +346,8 @@ def configure_container_dict(
             image_tag = os.getenv("CFX_IMAGE_TAG", "v26.1.0")
         if not image_name:
             image_name = os.getenv("CFX_IMAGE_NAME", "ghcr.io/ansys/pycfx")
+        if image_tag.startswith("v") == False:
+            image_tag = "v" + image_tag
         cfx_image = f"{image_name}:{image_tag}"
 
     container_dict["cfx_image"] = cfx_image

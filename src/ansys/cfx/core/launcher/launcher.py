@@ -43,6 +43,7 @@ from ansys.cfx.core.launcher.pycfx_enums import (
     _get_cfx_launch_mode,
     _get_mode,
     _get_running_session_mode,
+    _get_standalone_launch_cfx_version,
 )
 from ansys.cfx.core.launcher.server_info import _get_server_info
 from ansys.cfx.core.launcher.standalone_launcher import StandaloneLauncher
@@ -50,17 +51,19 @@ import ansys.cfx.core.launcher.watchdog as watchdog
 from ansys.cfx.core.session_post import PostProcessing
 from ansys.cfx.core.session_pre import PreProcessing
 from ansys.cfx.core.session_solver import Solver
+from ansys.cfx.core.utils.cfx_version import CFXVersion
 
 _THIS_DIR = Path(__file__).parent
 _OPTIONS_FILE = _THIS_DIR / "cfx_launcher_options.json"
 logger = logging.getLogger("pycfx.launcher")
 
 
-def create_launcher(cfx_launch_mode: LaunchMode = None, **kwargs):
+def create_launcher(version, cfx_launch_mode: LaunchMode = None, **kwargs):
     """Use a factory function to create a launcher for supported launch modes.
 
     Parameters
     ----------
+    version :  CFXVersion
     cfx_launch_mode: LaunchMode
         Supported CFX launch modes. Options are ``"LaunchMode.CONTAINER"``
         and ``"LaunchMode.STANDALONE"``.
@@ -87,9 +90,9 @@ def create_launcher(cfx_launch_mode: LaunchMode = None, **kwargs):
             allowed_values=allowed_options,
         )
     if cfx_launch_mode == LaunchMode.STANDALONE:
-        return StandaloneLauncher(**kwargs)
+        return StandaloneLauncher(product_version=version, **kwargs)
     elif cfx_launch_mode == LaunchMode.CONTAINER:
-        return DockerLauncher(**kwargs)
+        return DockerLauncher(product_version=version, **kwargs)
     elif cfx_launch_mode == LaunchMode.PIM:
         raise NotImplementedError("PIM launch mode is not yet implemented.")
         # return PIMLauncher(**kwargs)
@@ -232,7 +235,13 @@ def launch_cfx(
     argvals = locals().copy()
     _process_invalid_args(dry_run, cfx_launch_mode, argvals)
     cfx_launch_mode = argvals.pop("cfx_launch_mode")
-    launcher = create_launcher(cfx_launch_mode, **argvals)
+    given_version = argvals.pop("product_version")
+    version = (
+        given_version
+        if given_version is not None
+        else _get_standalone_launch_cfx_version(product_version)
+    )
+    launcher = create_launcher(version, cfx_launch_mode, **argvals)
     return launcher()
 
 
@@ -248,6 +257,7 @@ def connect_to_cfx(
     certificates_folder: str | None = None,
     insecure_mode: bool = False,
     start_watchdog: Optional[bool] = None,
+    version: Optional[CFXVersion] = None,
 ) -> Union[PreProcessing, Solver, PostProcessing]:
     """Connect to an existing CFX server instance.
 
@@ -291,6 +301,7 @@ def connect_to_cfx(
         which means an independent watchdog process is run to ensure
         that any local CFX connections are properly closed (or terminated if frozen) when
         the Python process ends.
+    version :  CFXVersion
 
     Returns
     -------
@@ -339,6 +350,7 @@ def connect_to_cfx(
         insecure_mode=insecure_mode,
         cleanup_on_exit=cleanup_on_exit,
         start_transcript=start_transcript,
+        version=version,
     )
     new_session = _get_running_session_mode(cfx_connection)
 

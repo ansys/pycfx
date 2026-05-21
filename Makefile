@@ -56,7 +56,7 @@ api-codegen:
 	@python -m venv env
 	@. env/bin/activate
 	@pip install -q -e .
-	@python codegen/allapigen.py
+	@python codegen/allapigen.py --ansys-version="$$CFX_IMAGE_TAG"
 	@rm -rf env
 
 build-doc-source:
