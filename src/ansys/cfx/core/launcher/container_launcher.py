@@ -53,8 +53,8 @@ from ansys.cfx.core.launcher.process_launch_string import _build_cfx_launch_args
 from ansys.cfx.core.launcher.pycfx_enums import CFXMode, LaunchMode, UIMode
 import ansys.cfx.core.launcher.watchdog as watchdog
 from ansys.cfx.core.session_solver import Solver
-from ansys.cfx.core.utils.file_transfer_service import PimFileTransferService
 from ansys.cfx.core.utils.cfx_version import CFXVersion
+from ansys.cfx.core.utils.file_transfer_service import PimFileTransferService
 
 _THIS_DIR = Path(__file__).parent
 _OPTIONS_FILE = _THIS_DIR / "cfx_launcher_options.json"

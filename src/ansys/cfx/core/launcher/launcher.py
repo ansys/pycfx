@@ -36,8 +36,6 @@ from ansys.cfx.core.exceptions import DisallowedValuesError
 from ansys.cfx.core.launcher.container_launcher import DockerLauncher
 from ansys.cfx.core.launcher.error_handler import _process_invalid_args, _process_kwargs
 from ansys.cfx.core.launcher.launcher_utils import _confirm_watchdog_start
-from ansys.cfx.core.utils.cfx_version import CFXVersion
-
 from ansys.cfx.core.launcher.pycfx_enums import (
     CFXMode,
     LaunchMode,
@@ -53,6 +51,7 @@ import ansys.cfx.core.launcher.watchdog as watchdog
 from ansys.cfx.core.session_post import PostProcessing
 from ansys.cfx.core.session_pre import PreProcessing
 from ansys.cfx.core.session_solver import Solver
+from ansys.cfx.core.utils.cfx_version import CFXVersion
 
 _THIS_DIR = Path(__file__).parent
 _OPTIONS_FILE = _THIS_DIR / "cfx_launcher_options.json"
