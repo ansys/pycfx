@@ -90,6 +90,9 @@ class CFXVersion(Enum):
     def _missing_(cls, version):
         if isinstance(version, (int, float, str)):
             version = str(version)
+            # Remove the leading 'v' if present
+            if version.startswith("v") or version.startswith("V"):
+                version = version[1:]
 
             # Remove the last digit if there are more than two dots for
             # patch version conventions like 25.2.3
