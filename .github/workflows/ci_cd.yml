@@ -176,7 +176,6 @@ jobs:
         run: make api-codegen
         env:
           CFX_IMAGE_TAG: ${{matrix.image-tag}}
-          ANSYS_VERSION: ${{matrix.version}}
 
       - name: Print ${{matrix.version}} CFX version info
         if: ${{ !contains(github.event.pull_request.title, '[skip tests]') }}
