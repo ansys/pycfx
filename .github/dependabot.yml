@@ -4,12 +4,13 @@ updates:
   - package-ecosystem: "pip"
     directory: "/"
     schedule:
-      interval: "daily"
+      interval: "weekly"
+      day: "saturday"
     labels:
       - "maintenance"
       - "dependencies"
     commit-message:
-      prefix: "build(deps): pip"
+      prefix: "build(deps)"
     ignore:
       - dependency-name: "attrs"
     cooldown:
@@ -18,10 +19,11 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "daily"
+      interval: "weekly"
+      day: "saturday"
     labels:
       - "maintenance"
     commit-message:
-      prefix: "build(deps): actions"
+      prefix: "build(deps)"
     cooldown:
       default-days: 7
