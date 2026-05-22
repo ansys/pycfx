@@ -26,15 +26,26 @@ from typing import List, Tuple
 
 import grpc
 
-from ansys.api.cfx.v0 import events_pb2_grpc as EventsGrpcModule
 from ansys.cfx.core.services.streaming import StreamingService
 
 
 class EventsService(StreamingService):
     """Wraps the events gRPC service of CFX."""
 
-    def __init__(self, channel: grpc.Channel, metadata: List[Tuple[str, str]]):
+    def __init__(
+        self,
+        channel: grpc.Channel,
+        metadata: List[Tuple[str, str]],
+    ):
         """Initialize an instance of the ``EventsService`` class."""
+
+        import os
+
+        if os.getenv("CFX_API_VERSION_1"):
+            from ansys.api.cfx.v1 import events_pb2_grpc as EventsGrpcModule
+        else:
+            from ansys.api.cfx.v0 import events_pb2_grpc as EventsGrpcModule
+
         super().__init__(
             stub=EventsGrpcModule.EventsStub(channel),
             metadata=metadata,
