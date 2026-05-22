@@ -26,7 +26,6 @@ from functools import partial
 import logging
 from typing import Callable, List
 
-from ansys.api.cfx.v0 import events_pb2 as EventsProtoModule
 from ansys.cfx.core.exceptions import DisallowedValuesError, InvalidArgument
 from ansys.cfx.core.streaming_services.streaming import StreamingService
 
@@ -49,13 +48,27 @@ class EventsManager(StreamingService):
         List of supported events.
     """
 
-    def __init__(self, session_events_service, cfx_error_state, session_id):
+    def __init__(
+        self,
+        session_events_service,
+        cfx_error_state,
+        session_id,
+    ):
         """Initialize an instance of the ``EventsManager`` class."""
         super().__init__(
             stream_begin_method="BeginStreaming",
             target=EventsManager._process_streaming,
             streaming_service=session_events_service,
         )
+
+        import os
+
+        if os.getenv("CFX_API_VERSION_1"):
+            from ansys.api.cfx.v1 import events_pb2 as EventsProtoModule
+        else:
+            from ansys.api.cfx.v0 import events_pb2 as EventsProtoModule
+        self.EventsProtoModule = EventsProtoModule
+
         self._cfx_error_state = cfx_error_state
         self._session_id: str = session_id
         self._events_list: List[str] = [
@@ -63,7 +76,7 @@ class EventsManager(StreamingService):
         ]
 
     def _process_streaming(self, id, stream_begin_method, started_evt, *args, **kwargs):
-        request = EventsProtoModule.BeginStreamingRequest(*args, **kwargs)
+        request = self.EventsProtoModule.BeginStreamingRequest(*args, **kwargs)
         responses = self._streaming_service.begin_streaming(
             request, started_evt, id=id, stream_begin_method=stream_begin_method
         )
