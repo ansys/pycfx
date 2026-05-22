@@ -27,8 +27,6 @@ import logging
 import sys
 
 import grpc
-from grpc_health.v1 import health_pb2 as HealthCheckModule
-from grpc_health.v1 import health_pb2_grpc as HealthCheckGrpcModule
 
 from ansys.cfx.core.services.interceptors import (
     BatchInterceptor,
@@ -36,6 +34,7 @@ from ansys.cfx.core.services.interceptors import (
     GrpcErrorInterceptor,
     TracingInterceptor,
 )
+from ansys.cfx.core.utils.cfx_version import CFXVersion
 
 logger: logging.Logger = logging.getLogger("pycfx.general")
 
@@ -58,7 +57,10 @@ class HealthCheckService:
         SERVICE_UNKNOWN: int = 3
 
     def __init__(
-        self, channel: grpc.Channel, metadata: list[tuple[str, str]], cfx_error_state
+        self,
+        channel: grpc.Channel,
+        metadata: list[tuple[str, str]],
+        cfx_error_state,
     ) -> None:
         """Initialize an instance of the ``HealthCheckService`` class."""
         intercept_channel = grpc.intercept_channel(
@@ -68,7 +70,18 @@ class HealthCheckService:
             TracingInterceptor(),
             BatchInterceptor(),
         )
-        self._stub = HealthCheckGrpcModule.HealthStub(intercept_channel)
+        import os
+
+        if os.getenv("CFX_API_VERSION_1"):
+            from ansys.api.cfx.v1 import health_pb2 as HealthCheckModule
+            from ansys.api.cfx.v1 import health_pb2_grpc as HealthCheckGrpcModule
+        else:
+            from grpc_health.v1 import health_pb2 as HealthCheckModule
+            from grpc_health.v1 import health_pb2_grpc as HealthCheckGrpcModule
+
+        self.HealthCheckModule = HealthCheckModule
+        self.HealthCheckGrpcModule = HealthCheckGrpcModule
+        self._stub = self.HealthCheckGrpcModule.HealthStub(intercept_channel)
         self._metadata = metadata
         self._channel = channel
 
@@ -79,7 +92,7 @@ class HealthCheckService:
         -------
         Status
         """
-        request = HealthCheckModule.HealthCheckRequest()
+        request = self.HealthCheckModule.HealthCheckRequest()
         response = self._stub.Check(request, metadata=self._metadata)
         return HealthCheckService.Status(response.status)
 
@@ -98,7 +111,7 @@ class HealthCheckService:
         TimeoutError
             If the connection to the CFX server could not be established within the timeout.
         """
-        request = HealthCheckModule.HealthCheckRequest()
+        request = self.HealthCheckModule.HealthCheckRequest()
         responses = self._stub.Watch(request, metadata=self._metadata, timeout=timeout)
 
         while True:
