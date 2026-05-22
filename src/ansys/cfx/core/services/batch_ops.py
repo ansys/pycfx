@@ -31,8 +31,6 @@ import weakref
 from google.protobuf.message import Message
 import grpc
 
-from ansys.cfx.core.utils.cfx_version import CFXVersion
-
 _TBatchOps = TypeVar("_TBatchOps", bound="BatchOps")
 
 network_logger: logging.Logger = logging.getLogger("pycfx.networking")

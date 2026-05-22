@@ -34,7 +34,6 @@ from ansys.cfx.core.services.interceptors import (
     GrpcErrorInterceptor,
     TracingInterceptor,
 )
-from ansys.cfx.core.utils.cfx_version import CFXVersion
 
 logger: logging.Logger = logging.getLogger("pycfx.general")
 

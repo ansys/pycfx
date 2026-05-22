@@ -28,7 +28,6 @@ from typing import Callable, List
 
 from ansys.cfx.core.exceptions import DisallowedValuesError, InvalidArgument
 from ansys.cfx.core.streaming_services.streaming import StreamingService
-from ansys.cfx.core.utils.cfx_version import CFXVersion
 
 event_logger = logging.getLogger("pycfx.server_event")
 

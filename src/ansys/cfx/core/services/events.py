@@ -27,7 +27,6 @@ from typing import List, Tuple
 import grpc
 
 from ansys.cfx.core.services.streaming import StreamingService
-from ansys.cfx.core.utils.cfx_version import CFXVersion
 
 
 class EventsService(StreamingService):
