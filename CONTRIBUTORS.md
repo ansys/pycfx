@@ -6,6 +6,7 @@
 
 ## Individual Contributors
 
+* [Acohen-work](https://github.com/Acohen-work)
 * [Kathy Pippert](https://github.com/PipKat)
 * [Kerry McAdams](https://github.com/klmcadams)
 * [Ming Chen](https://github.com/mchen-work)
