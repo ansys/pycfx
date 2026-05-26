@@ -31,9 +31,6 @@ import weakref
 from google.protobuf.message import Message
 import grpc
 
-import ansys.api.cfx.v0 as api
-from ansys.api.cfx.v0 import batch_ops_pb2, batch_ops_pb2_grpc
-
 _TBatchOps = TypeVar("_TBatchOps", bound="BatchOps")
 
 network_logger: logging.Logger = logging.getLogger("pycfx.networking")
@@ -42,7 +39,11 @@ network_logger: logging.Logger = logging.getLogger("pycfx.networking")
 class BatchOpsService:
     """Provides class wrapping methods in the batch RPC service."""
 
-    def __init__(self, channel: grpc.Channel, metadata: list[tuple[str, str]]) -> None:
+    def __init__(
+        self,
+        channel: grpc.Channel,
+        metadata: list[tuple[str, str]],
+    ) -> None:
         """Initialize an instance of the ``BatchOpsService`` class."""
 
         from ansys.cfx.core.services.interceptors import GrpcErrorInterceptor
@@ -51,10 +52,22 @@ class BatchOpsService:
             channel,
             GrpcErrorInterceptor(),
         )
+        import os
+
+        if os.getenv("CFX_API_VERSION_1"):
+            import ansys.api.cfx.v1 as api
+            from ansys.api.cfx.v1 import batch_ops_pb2, batch_ops_pb2_grpc
+        else:
+            import ansys.api.cfx.v0 as api
+            from ansys.api.cfx.v0 import batch_ops_pb2, batch_ops_pb2_grpc
+
+        self.api = api
+        self.batch_ops_pb2 = batch_ops_pb2
+
         self._stub = batch_ops_pb2_grpc.BatchOpsStub(intercept_channel)
         self._metadata = metadata
 
-    def execute(self, request: batch_ops_pb2.ExecuteRequest) -> batch_ops_pb2.ExecuteResponse:
+    def execute(self, request: "batch_ops_pb2.ExecuteRequest") -> "batch_ops_pb2.ExecuteResponse":
         """Execute RPC of the ``BatchOps`` service."""
         return self._stub.Execute(request, metadata=self._metadata)
 
@@ -112,9 +125,16 @@ class BatchOps:
     class Op:
         """Provides for creating a single batch operation."""
 
-        def __init__(self, package: str, service: str, method: str, request_body: bytes) -> None:
+        def __init__(
+            self,
+            package: str,
+            service: str,
+            method: str,
+            request_body: bytes,
+            bo_service: BatchOpsService,
+        ) -> None:
             """Initialize an instance of the ``Op`` class."""
-            self._request = batch_ops_pb2.ExecuteRequest(
+            self._request = bo_service.batch_ops_pb2.ExecuteRequest(
                 package=package,
                 service=service,
                 method=method,
@@ -123,7 +143,7 @@ class BatchOps:
             if not BatchOps._proto_files:
                 BatchOps._proto_files = [
                     x[1]
-                    for x in inspect.getmembers(api, inspect.ismodule)
+                    for x in inspect.getmembers(bo_service.api, inspect.ismodule)
                     if hasattr(x[1], "DESCRIPTOR")
                 ]
             self._supported = False
@@ -150,7 +170,7 @@ class BatchOps:
                                 except AttributeError:
                                     pass
             if self._supported:
-                self._request = batch_ops_pb2.ExecuteRequest(
+                self._request = bo_service.batch_ops_pb2.ExecuteRequest(
                     package=package,
                     service=service,
                     method=method,
@@ -160,7 +180,7 @@ class BatchOps:
                 self._result = None
             self.queued = False
 
-        def update_result(self, status: batch_ops_pb2.ExecuteStatus, data: str) -> None:
+        def update_result(self, status: "batch_ops_pb2.ExecuteStatus", data: str) -> None:
             """Update results after the batch operation is executed."""
             obj = self.response_cls()
             try:
@@ -215,7 +235,7 @@ class BatchOps:
             BatchOps.Op object with a queued attribute that is ``True`` if the operation
             has been queued.
         """
-        op = BatchOps.Op(package, service, method, request.SerializeToString())
+        op = BatchOps.Op(package, service, method, request.SerializeToString(), self._service)
         if op._supported:
             network_logger.debug(
                 f"Adding batch operation with package {package}, service {service}, and method "

@@ -28,8 +28,6 @@ from typing import Any
 
 import grpc
 
-from ansys.api.cfx.v0 import settings_pb2 as SettingsModule
-from ansys.api.cfx.v0 import settings_pb2_grpc as SettingsGrpcModule
 from ansys.cfx.core.services.interceptors import (
     BatchInterceptor,
     ErrorStateInterceptor,
@@ -41,7 +39,10 @@ from ansys.cfx.core.utils.cfx_version import CFXVersion
 
 class _SettingsServiceImpl:
     def __init__(
-        self, channel: grpc.Channel, metadata: list[tuple[str, str]], cfx_error_state
+        self,
+        channel: grpc.Channel,
+        metadata: list[tuple[str, str]],
+        cfx_error_state,
     ) -> None:
         intercept_channel = grpc.intercept_channel(
             channel,
@@ -50,66 +51,81 @@ class _SettingsServiceImpl:
             TracingInterceptor(),
             BatchInterceptor(),
         )
-        self.__stub = SettingsGrpcModule.SettingsStub(intercept_channel)
+
+        import os
+
+        if os.getenv("CFX_API_VERSION_1"):
+            from ansys.api.cfx.v1 import settings_pb2 as SettingsModule
+            from ansys.api.cfx.v1 import settings_pb2_grpc as SettingsGrpcModule
+        else:
+            from ansys.api.cfx.v0 import settings_pb2 as SettingsModule
+            from ansys.api.cfx.v0 import settings_pb2_grpc as SettingsGrpcModule
+
+        self.SettingsModule = SettingsModule
+        self.SettingsGrpcModule = SettingsGrpcModule
+
+        self.__stub = self.SettingsGrpcModule.SettingsStub(intercept_channel)
         self.__metadata = metadata
 
-    def set_var(self, request: SettingsModule.SetVarRequest) -> SettingsModule.SetVarResponse:
+    def set_var(self, request: "SettingsModule.SetVarRequest") -> "SettingsModule.SetVarResponse":
         """Set a variable."""
         return self.__stub.SetVar(request, metadata=self.__metadata)
 
-    def get_var(self, request: SettingsModule.GetVarRequest) -> SettingsModule.GetVarResponse:
+    def get_var(self, request: "SettingsModule.GetVarRequest") -> "SettingsModule.GetVarResponse":
         """Get a variable."""
         return self.__stub.GetVar(request, metadata=self.__metadata)
 
-    def rename(self, request: SettingsModule.RenameRequest) -> SettingsModule.RenameResponse:
+    def rename(self, request: "SettingsModule.RenameRequest") -> "SettingsModule.RenameResponse":
         """Rename an object."""
         return self.__stub.Rename(request, metadata=self.__metadata)
 
-    def create(self, request: SettingsModule.CreateRequest) -> SettingsModule.CreateResponse:
+    def create(self, request: "SettingsModule.CreateRequest") -> "SettingsModule.CreateResponse":
         """Create an object."""
         return self.__stub.Create(request, metadata=self.__metadata)
 
-    def delete(self, request: SettingsModule.DeleteRequest) -> SettingsModule.DeleteResponse:
+    def delete(self, request: "SettingsModule.DeleteRequest") -> "SettingsModule.DeleteResponse":
         """Delete an object."""
         return self.__stub.Delete(request, metadata=self.__metadata)
 
     def get_object_names(
-        self, request: SettingsModule.GetObjectNamesRequest
-    ) -> SettingsModule.GetObjectNamesResponse:
+        self, request: "SettingsModule.GetObjectNamesRequest"
+    ) -> "SettingsModule.GetObjectNamesResponse":
         """Get object names."""
         return self.__stub.GetObjectNames(request, metadata=self.__metadata)
 
     def get_list_size(
-        self, request: SettingsModule.GetListSizeRequest
-    ) -> SettingsModule.GetListSizeResponse:
+        self, request: "SettingsModule.GetListSizeRequest"
+    ) -> "SettingsModule.GetListSizeResponse":
         """Get list size."""
         return self.__stub.GetListSize(request, metadata=self.__metadata)
 
     def resize_list_object(
-        self, request: SettingsModule.ResizeListObjectRequest
-    ) -> SettingsModule.ResizeListObjectResponse:
+        self, request: "SettingsModule.ResizeListObjectRequest"
+    ) -> "SettingsModule.ResizeListObjectResponse":
         """Resize list object."""
         return self.__stub.ResizeListObject(request, metadata=self.__metadata)
 
     def get_static_info(
-        self, request: SettingsModule.GetStaticInfoRequest
-    ) -> SettingsModule.GetStaticInfoResponse:
+        self, request: "SettingsModule.GetStaticInfoRequest"
+    ) -> "SettingsModule.GetStaticInfoResponse":
         """Get static info."""
         return self.__stub.GetStaticInfo(request, metadata=self.__metadata)
 
     def execute_cmd(
-        self, request: SettingsModule.ExecuteCommandRequest
-    ) -> SettingsModule.ExecuteCommandResponse:
+        self, request: "SettingsModule.ExecuteCommandRequest"
+    ) -> "SettingsModule.ExecuteCommandResponse":
         """Execute the command."""
         return self.__stub.ExecuteCommand(request, metadata=self.__metadata)
 
     def execute_query(
-        self, request: SettingsModule.ExecuteQueryRequest
-    ) -> SettingsModule.ExecuteQueryResponse:
+        self, request: "SettingsModule.ExecuteQueryRequest"
+    ) -> "SettingsModule.ExecuteQueryResponse":
         """Execute the query."""
         return self.__stub.ExecuteQuery(request, metadata=self.__metadata)
 
-    def get_attrs(self, request: SettingsModule.GetAttrsRequest) -> SettingsModule.GetAttrsResponse:
+    def get_attrs(
+        self, request: "SettingsModule.GetAttrsRequest"
+    ) -> "SettingsModule.GetAttrsResponse":
         """Get attributes."""
         return self.__stub.GetAttrs(request, metadata=self.__metadata)
 
@@ -149,12 +165,12 @@ class SettingsService:
 
     def __init__(self, channel, metadata, engine_eval, cfx_error_state) -> None:
         """Initialize an instance of the ``SettingsService`` class."""
-        self._service_impl = _SettingsServiceImpl(channel, metadata, cfx_error_state)
         self.engine_eval = engine_eval
         self.engine_version = CFXVersion(self.engine_eval.get_engine_version())
+        self._service_impl = _SettingsServiceImpl(channel, metadata, cfx_error_state)
 
     @_trace
-    def _set_state_from_value(self, state: SettingsModule.Value, value: Any):
+    def _set_state_from_value(self, state: "SettingsModule.Value", value: Any):
         if value is None:
             if self.engine_version > CFXVersion.v252:
                 state.string = str("__None__")
@@ -177,7 +193,7 @@ class SettingsService:
             state.string = str(value)
 
     @_trace
-    def _get_state_from_value(self, state: SettingsModule.Value) -> Any:
+    def _get_state_from_value(self, state: "SettingsModule.Value") -> Any:
         t = state.WhichOneof("value")
         if t == "boolean":
             return state.boolean
@@ -200,21 +216,27 @@ class SettingsService:
     @_trace
     def set_var(self, path: str, value: Any) -> None:
         """Set the value for the given path."""
-        request = _get_request_instance_for_path(SettingsModule.SetVarRequest, path)
+        request = _get_request_instance_for_path(
+            self._service_impl.SettingsModule.SetVarRequest, path
+        )
         self._set_state_from_value(request.value, value)
         self._service_impl.set_var(request)
 
     @_trace
     def get_var(self, path: str) -> Any:
         """Get the value for the given path."""
-        request = _get_request_instance_for_path(SettingsModule.GetVarRequest, path)
+        request = _get_request_instance_for_path(
+            self._service_impl.SettingsModule.GetVarRequest, path
+        )
         response = self._service_impl.get_var(request)
         return self._get_state_from_value(response.value)
 
     @_trace
     def rename(self, path: str, new: str, old: str) -> None:
         """Rename the object at the given path."""
-        request = _get_request_instance_for_path(SettingsModule.RenameRequest, path)
+        request = _get_request_instance_for_path(
+            self._service_impl.SettingsModule.RenameRequest, path
+        )
         request.old_name = old
         request.new_name = new
 
@@ -223,7 +245,9 @@ class SettingsService:
     @_trace
     def create(self, path: str, name: str) -> None:
         """Create a named object child for the given path."""
-        request = _get_request_instance_for_path(SettingsModule.CreateRequest, path)
+        request = _get_request_instance_for_path(
+            self._service_impl.SettingsModule.CreateRequest, path
+        )
         request.name = name
 
         self._service_impl.create(request)
@@ -231,7 +255,9 @@ class SettingsService:
     @_trace
     def delete(self, path: str, name: str) -> None:
         """Delete the object with the given name at the given path."""
-        request = _get_request_instance_for_path(SettingsModule.DeleteRequest, path)
+        request = _get_request_instance_for_path(
+            self._service_impl.SettingsModule.DeleteRequest, path
+        )
         request.name = name
 
         self._service_impl.delete(request)
@@ -239,24 +265,30 @@ class SettingsService:
     @_trace
     def get_object_names(self, path: str) -> list[str]:
         """Get a list of named objects."""
-        request = _get_request_instance_for_path(SettingsModule.GetObjectNamesRequest, path)
+        request = _get_request_instance_for_path(
+            self._service_impl.SettingsModule.GetObjectNamesRequest, path
+        )
         return self._service_impl.get_object_names(request).names
 
     @_trace
     def get_list_size(self, path: str) -> int:
         """Get the number of elements in a list object."""
-        request = _get_request_instance_for_path(SettingsModule.GetListSizeRequest, path)
+        request = _get_request_instance_for_path(
+            self._service_impl.SettingsModule.GetListSizeRequest, path
+        )
         return self._service_impl.get_list_size(request).size
 
     @_trace
     def resize_list_object(self, path: str, size: int) -> None:
         """Resize a list object."""
-        request = _get_request_instance_for_path(SettingsModule.ResizeListObjectRequest, path)
+        request = _get_request_instance_for_path(
+            self._service_impl.SettingsModule.ResizeListObjectRequest, path
+        )
         request.size = size
         return self._service_impl.resize_list_object(request)
 
     @_trace
-    def _extract_static_info(self, info: SettingsModule.StaticInfo) -> dict[str, Any]:
+    def _extract_static_info(self, info: "SettingsModule.StaticInfo") -> dict[str, Any]:
         ret = {}
         ret["type"] = info.type
         for key, value in sorted(info.attrs.items()):
@@ -312,7 +344,7 @@ class SettingsService:
         RuntimeError
             If type is empty.
         """
-        request = SettingsModule.GetStaticInfoRequest()
+        request = self._service_impl.SettingsModule.GetStaticInfoRequest()
         request.root = "cfx"
         response = self._service_impl.get_static_info(request)
         # The RPC calls no longer raise an exception. Force an exception if
@@ -324,7 +356,9 @@ class SettingsService:
     @_trace
     def execute_cmd(self, path: str, command: str, **kwds) -> Any:
         """Execute a given command with the provided keyword arguments."""
-        request = _get_request_instance_for_path(SettingsModule.ExecuteCommandRequest, path)
+        request = _get_request_instance_for_path(
+            self._service_impl.SettingsModule.ExecuteCommandRequest, path
+        )
         request.command = command
         self._set_state_from_value(request.args, kwds)
 
@@ -334,7 +368,9 @@ class SettingsService:
     @_trace
     def execute_query(self, path: str, query: str, **kwds) -> Any:
         """Execute a given query with the provided keyword arguments."""
-        request = _get_request_instance_for_path(SettingsModule.ExecuteQueryRequest, path)
+        request = _get_request_instance_for_path(
+            self._service_impl.SettingsModule.ExecuteQueryRequest, path
+        )
         request.query = query
         self._set_state_from_value(request.args, kwds)
 
@@ -342,7 +378,7 @@ class SettingsService:
         return self._get_state_from_value(response.reply)
 
     @_trace
-    def _parse_attrs(self, response: SettingsModule.GetAttrsResponse) -> dict[str, Any]:
+    def _parse_attrs(self, response: "SettingsModule.GetAttrsResponse") -> dict[str, Any]:
         ret = {}
         ret["attrs"] = self._get_state_from_value(response.values)
         if response.group_children:
@@ -354,7 +390,9 @@ class SettingsService:
     @_trace
     def get_attrs(self, path: str, attrs: list[str], recursive: bool = False) -> Any:
         """Return values of given attributes."""
-        request = _get_request_instance_for_path(SettingsModule.GetAttrsRequest, path)
+        request = _get_request_instance_for_path(
+            self._service_impl.SettingsModule.GetAttrsRequest, path
+        )
         request.attrs[:] = attrs
         request.recursive = recursive
 
