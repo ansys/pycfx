@@ -9,6 +9,32 @@ This document contains the release notes for the project.
 
 .. towncrier release notes start
 
+`0.2.5 <https://github.com/ansys/pycfx/releases/tag/v0.2.5>`_ - May 26, 2026
+============================================================================
+
+.. tab-set::
+
+
+  .. tab-item:: Added
+
+    .. list-table::
+        :header-rows: 0
+        :widths: auto
+
+        * - Support API version 1 with env var
+          - `#101 <https://github.com/ansys/pycfx/pull/101>`_
+
+
+  .. tab-item:: Maintenance
+
+    .. list-table::
+        :header-rows: 0
+        :widths: auto
+
+        * - Update version for release 0.2.5
+          - `#103 <https://github.com/ansys/pycfx/pull/103>`_
+
+
 `0.2.4 <https://github.com/ansys/pycfx/releases/tag/v0.2.4>`_ - May 13, 2026
 ============================================================================
 
