@@ -68,7 +68,7 @@ The static mixer example guides you through these tasks:
 import os
 
 import ansys.cfx.core as pycfx
-from ansys.cfx.core import examples
+from ansys.tools.common.example_download import download_manager
 
 # sphinx_gallery_thumbnail_path = '_static/static_mixer_overview.png'
 
@@ -77,10 +77,10 @@ from ansys.cfx.core import examples
 # Download required files
 # -----------------------
 #
-mesh_file_name = examples.download_file(
+mesh_file_name = download_manager.download_file(
     "StaticMixerMesh.gtm",
     "pycfx/static_mixer",
-    save_path=os.getcwd(),
+    destination=os.getcwd(),
 )
 
 

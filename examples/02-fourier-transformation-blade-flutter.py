@@ -77,8 +77,8 @@ wait for a solver run to complete before modifying the setup for the next simula
 import os
 
 import ansys.cfx.core as pycfx
-from ansys.cfx.core import examples
 from ansys.cfx.core.utils.cfx_version import CFXVersion
+from ansys.tools.common.example_download import download_manager
 
 # sphinx_gallery_thumbnail_path = '_static/fourier_blade_flutter_overview.png'
 
@@ -87,20 +87,20 @@ from ansys.cfx.core.utils.cfx_version import CFXVersion
 # Download required files
 # -----------------------
 #
-mesh_file_name = examples.download_file(
+mesh_file_name = download_manager.download_file(
     "R37ATM_60k.gtm",
     "pycfx/fourier_blade_flutter",
-    save_path=os.getcwd(),
+    destination=os.getcwd(),
 )
-mode_profile_file_name = examples.download_file(
+mode_profile_file_name = download_manager.download_file(
     "R37_mode1_1p.csv",
     "pycfx/fourier_blade_flutter",
-    save_path=os.getcwd(),
+    destination=os.getcwd(),
 )
-inlet_profile_file_name = examples.download_file(
+inlet_profile_file_name = download_manager.download_file(
     "R37_inlet.csv",
     "pycfx/fourier_blade_flutter",
-    save_path=os.getcwd(),
+    destination=os.getcwd(),
 )
 
 

@@ -25,10 +25,10 @@ from pathlib import Path
 from util.common import setup_write_dir
 
 import ansys.cfx.core as pycfx
-from ansys.cfx.core import examples
 from ansys.cfx.core.launcher.cfx_container import timeout_loop
 from ansys.cfx.core.session_pre import PreProcessing
 from ansys.cfx.core.utils.cfx_version import CFXVersion
+from ansys.tools.common.example_download import download_manager
 
 # pycfx.logging.enable()
 
@@ -62,7 +62,7 @@ def test_workflow(pypre: PreProcessing, pytestconfig):
         pytestconfig.test_data_directory_path, [mesh_file]
     )
 
-    mesh_file_path_client = examples.download_file(
+    mesh_file_path_client = download_manager.download_file(
         mesh_file,
         "pycfx/static_mixer",
         generated_path_client,
