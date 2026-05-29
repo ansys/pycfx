@@ -22,6 +22,7 @@
 
 """Module for CFX connection functionality."""
 
+from contextlib import suppress
 from ctypes import c_int, sizeof
 from dataclasses import dataclass
 import ipaddress
@@ -846,10 +847,8 @@ class CFXConnection:
             for cb in finalizer_cbs:
                 cb()
             if cleanup_on_exit:
-                try:
+                with suppress(Exception):
                     engine_eval.process_ccl((">quit",), False)
-                except Exception:
-                    pass
             channel.close()
             channel = None
 
