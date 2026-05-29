@@ -45,7 +45,7 @@ updates:
       prefix: "build(pre-commit)"
     cooldown:
       default-days: 7
-    pre-commit:
-      actions:
+    groups:
+      pre-commit:
         patterns:
           - "*"
