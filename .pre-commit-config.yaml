@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/psf/black
-    rev: 26.3.1
+    rev: 26.5.1
     hooks:
       - id: black
         args: [--target-version=py310]
@@ -63,20 +63,20 @@ repos:
       - id: check-yaml
 
   - repo: https://github.com/PyCQA/pylint
-    rev: v3.3.0
+    rev: v4.0.5
     hooks:
       - id: pylint
         args: ["--reports", "n", "--score", "n", "--rcfile=pylintrc"]
 
   - repo: https://github.com/compilerla/conventional-pre-commit
-    rev: v3.4.0
+    rev: v4.4.0
     hooks:
       - id: conventional-pre-commit
         stages: [commit-msg]
         args: []
 
   - repo: https://github.com/ansys/pre-commit-hooks
-    rev: v0.5.2
+    rev: v0.7.2
     hooks:
       - id: add-license-headers
         files: '(src|examples|tests|codegen)/.*\.(py)'
