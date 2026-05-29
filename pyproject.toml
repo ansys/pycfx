@@ -191,7 +191,6 @@ showcontent = true
 [tool.bandit]
 exclude_dirs = ["tests"]
 skips = [
-    "B110",
     "B112",
     "B301",
     "B310",

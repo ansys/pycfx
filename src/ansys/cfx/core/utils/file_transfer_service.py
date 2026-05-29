@@ -77,7 +77,7 @@ class PimFileTransferService:
                 from simple_upload_server.client import Client
 
                 self.file_service = Client(
-                    token="token",  # nosec B106 - Fixed token for internal AnsysLabs upload server
+                    token="token",  # nosec B106 # Fixed token for internal AnsysLabs upload server
                     url=self.upload_server.uri,
                     headers=self.upload_server.headers,
                 )
