@@ -37,7 +37,7 @@ jobs:
       contents: write # Needed to combine changelog fragments into changelog file
       pull-requests: write # Needed to commit to the release branch/tag
     steps:
-      - uses: ansys/actions/doc-deploy-changelog@12ca08fd7f0caa52076cca15c5621482646f8560 # v10.3.1
+      - uses: ansys/actions/doc-deploy-changelog@d946b24b9a765f4169bcc94afdb27bd1a0533741 # v10.3.2
         with:
           token: ${{ secrets.PYANSYS_CI_BOT_TOKEN }}
           bot-user: ${{ secrets.PYANSYS_CI_BOT_USERNAME }}
@@ -47,7 +47,7 @@ jobs:
     name: "Check library vulnerabilities"
     runs-on: ubuntu-latest
     steps:
-      - uses: ansys/actions/check-vulnerabilities@12ca08fd7f0caa52076cca15c5621482646f8560 # v10.3.1
+      - uses: ansys/actions/check-vulnerabilities@d946b24b9a765f4169bcc94afdb27bd1a0533741 # v10.3.2
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           token: ${{ secrets.PYANSYS_CI_BOT_TOKEN }}
@@ -61,7 +61,7 @@ jobs:
     name: "Check actions security"
     runs-on: ubuntu-latest
     steps:
-      - uses: ansys/actions/check-actions-security@12ca08fd7f0caa52076cca15c5621482646f8560 # v10.3.1
+      - uses: ansys/actions/check-actions-security@d946b24b9a765f4169bcc94afdb27bd1a0533741 # v10.3.2
         with:
           generate-summary: true
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -72,7 +72,7 @@ jobs:
     name: "Code style"
     runs-on: ubuntu-latest
     steps:
-      - uses: ansys/actions/code-style@12ca08fd7f0caa52076cca15c5621482646f8560 # v10.3.1
+      - uses: ansys/actions/code-style@d946b24b9a765f4169bcc94afdb27bd1a0533741 # v10.3.2
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
 
@@ -83,7 +83,7 @@ jobs:
       contents: read
       pull-requests: read # Needed for reviewdog
     steps:
-      - uses: ansys/actions/doc-style@12ca08fd7f0caa52076cca15c5621482646f8560 # v10.3.1
+      - uses: ansys/actions/doc-style@d946b24b9a765f4169bcc94afdb27bd1a0533741 # v10.3.2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           vale-version: "3.4.1"
@@ -99,7 +99,7 @@ jobs:
         python-version: ["3.10", "3.11", "3.12", "3.13", "3.14"]
     steps:
       - name: Build wheelhouse and perform smoke test
-        uses: ansys/actions/build-wheelhouse@12ca08fd7f0caa52076cca15c5621482646f8560 # v10.3.1
+        uses: ansys/actions/build-wheelhouse@d946b24b9a765f4169bcc94afdb27bd1a0533741 # v10.3.2
         with:
           library-name: ${{ env.LIBRARY_NAME }}
           operating-system: ${{ matrix.os }}
@@ -159,7 +159,7 @@ jobs:
 
       - name: Login to GitHub Container Registry
         if: ${{ !contains(github.event.pull_request.title, '[skip tests]') }}
-        uses: docker/login-action@4907a6ddec9925e35a0a9e82d7399ccc52663121 # v4.1.0
+        uses: docker/login-action@650006c6eb7dba73a995cc03b0b2d7f5ca915bee # v4.2.0
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
@@ -200,7 +200,7 @@ jobs:
           PYTESTRERUN: "--last-failed --last-failed-no-failures none"
 
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@57e3a136b779b570ffcdbf80b3bdc90e7fab3de2 # v6.0.0
+        uses: codecov/codecov-action@e79a6962e0d4c0c17b229090214935d2e33f8354 # v6.0.1
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 
@@ -301,7 +301,7 @@ jobs:
 
       - name: Login to GitHub container registry
         if: steps.cache-api-code.outputs.cache-hit != 'true'
-        uses: docker/login-action@4907a6ddec9925e35a0a9e82d7399ccc52663121 # v4.1.0
+        uses: docker/login-action@650006c6eb7dba73a995cc03b0b2d7f5ca915bee # v4.2.0
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
@@ -393,7 +393,7 @@ jobs:
         id: version
 
       - name: Login to GitHub Container Registry
-        uses: docker/login-action@4907a6ddec9925e35a0a9e82d7399ccc52663121 # v4.1.0
+        uses: docker/login-action@650006c6eb7dba73a995cc03b0b2d7f5ca915bee # v4.2.0
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
@@ -497,7 +497,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: [doc-build, tests]
     steps:
-      - uses: ansys/actions/build-library@12ca08fd7f0caa52076cca15c5621482646f8560 # v10.3.1
+      - uses: ansys/actions/build-library@d946b24b9a765f4169bcc94afdb27bd1a0533741 # v10.3.2
         with:
           library-name: ${{ env.LIBRARY_NAME }}
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
@@ -511,7 +511,7 @@ jobs:
     needs: [build-library]
     if: github.ref == 'refs/heads/main'
     steps:
-      - uses: ansys/actions/doc-deploy-dev@12ca08fd7f0caa52076cca15c5621482646f8560 # v10.3.1
+      - uses: ansys/actions/doc-deploy-dev@d946b24b9a765f4169bcc94afdb27bd1a0533741 # v10.3.2
         with:
           doc-artifact-name: "HTML-Documentation-tag-${{ env.DOC_DEPLOYMENT_IMAGE_TAG }}"
           decompress-artifact: true
@@ -563,7 +563,7 @@ jobs:
     needs: [release]
     if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v') && !contains(github.ref, 'dev')
     steps:
-      - uses: ansys/actions/doc-deploy-stable@12ca08fd7f0caa52076cca15c5621482646f8560 # v10.3.1
+      - uses: ansys/actions/doc-deploy-stable@d946b24b9a765f4169bcc94afdb27bd1a0533741 # v10.3.2
         with:
           doc-artifact-name: HTML-Documentation-tag-${{ env.DOC_DEPLOYMENT_IMAGE_TAG }}
           decompress-artifact: true
