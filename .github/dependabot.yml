@@ -25,9 +25,13 @@ updates:
       - "maintenance"
       - "dependencies"
     commit-message:
-      prefix: "build(deps)"
+      prefix: "build(actions)"
     cooldown:
       default-days: 7
+    groups:
+      actions:
+        patterns:
+          - "*"
 
   - package-ecosystem: "pre-commit"
     directory: "/"
@@ -38,6 +42,10 @@ updates:
       - "maintenance"
       - "dependencies"
     commit-message:
-      prefix: "build(deps)"
+      prefix: "build(pre-commit)"
     cooldown:
       default-days: 7
+    groups:
+      pre-commit:
+        patterns:
+          - "*"
