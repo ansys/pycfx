@@ -1,17 +1,17 @@
 repos:
   - repo: https://github.com/psf/black
-    rev: 26.5.1
+    rev: 87928e6d6761a4a6d22250e1fee5601b3998086e  # frozen: 26.5.1
     hooks:
       - id: black
         args: [--target-version=py310]
 
   - repo: https://github.com/pycqa/isort
-    rev: 8.0.1
+    rev: dac090ce4d9ee313d086e2e89ab1acb8c2664fa1  # frozen: 9.0.0a3
     hooks:
       - id: isort
 
   - repo: https://github.com/PyCQA/flake8
-    rev: 7.3.0
+    rev: d93590f5be797aabb60e3b09f2f52dddb02f349f  # frozen: 7.3.0
     hooks:
       - id: flake8
         args:
@@ -34,7 +34,7 @@ repos:
           ]
 
   - repo: https://github.com/PyCQA/bandit
-    rev: 1.9.4
+    rev: 92ae8b82fb422a639f0ed8d99e96cea769594e08  # frozen: 1.9.4
     hooks:
       - id: bandit
         args: [
@@ -44,40 +44,45 @@ repos:
         additional_dependencies: ["bandit[toml]"]
 
   - repo: https://github.com/codespell-project/codespell
-    rev: v2.4.2
+    rev: 2ccb47ff45ad361a21071a7eedda4c37e6ae8c5a  # frozen: v2.4.2
     hooks:
       - id: codespell
         args: ["--toml", "pyproject.toml"]
         additional_dependencies: ["tomli"]
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v6.0.0
+    rev: 3e8a8703264a2f4a69428a0aa4dcb512790b2c8c  # frozen: v6.0.0
     hooks:
       - id: check-merge-conflict
       - id: trailing-whitespace
         exclude: ".(def|gtm|res)$|session.rst"
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v6.0.0
+    rev: 3e8a8703264a2f4a69428a0aa4dcb512790b2c8c  # frozen: v6.0.0
     hooks:
       - id: check-yaml
 
   - repo: https://github.com/PyCQA/pylint
-    rev: v4.0.5
+    rev: 88e1ab7545a4af4aea15c305a154c164a95ab842  # frozen: v4.0.5
     hooks:
       - id: pylint
         args: ["--reports", "n", "--score", "n", "--rcfile=pylintrc"]
 
   - repo: https://github.com/compilerla/conventional-pre-commit
-    rev: v4.4.0
+    rev: 3db014c16a9d31997ab8c07a4d61fcce936c8f0d  # frozen: v4.4.0
     hooks:
       - id: conventional-pre-commit
         stages: [commit-msg]
         args: []
 
   - repo: https://github.com/ansys/pre-commit-hooks
-    rev: v0.7.2
+    rev: ad4e7598809ad98cde5aaf52d80040c7ac56e7cf  # frozen: v0.7.2
     hooks:
       - id: add-license-headers
         files: '(src|examples|tests|codegen)/.*\.(py)'
         args: [--start_year=2023]
+
+  - repo: https://github.com/pre-commit-ci/pre-commit-ci-config
+    rev: 500543de231a91e6157db630075d70320709b834  # frozen: v1.6.1
+    hooks:
+      - id: check-pre-commit-ci-config
