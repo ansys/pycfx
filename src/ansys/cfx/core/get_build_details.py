@@ -23,6 +23,7 @@
 """Get the Git build information."""
 
 from collections import OrderedDict
+from contextlib import suppress
 import subprocess
 
 import ansys.cfx.core as pycfx
@@ -31,7 +32,7 @@ import ansys.cfx.core as pycfx
 def get_build_version():
     """Get the build version."""
     build_details = OrderedDict()
-    try:
+    with suppress(Exception):
         last_commit_time = (
             subprocess.check_output(["git", "log", "-n", "1", "--pretty=tformat:%ad"])
             .decode("ascii")
@@ -50,8 +51,6 @@ def get_build_version():
         build_details["Branch"] = (
             subprocess.check_output(["git", "branch", "--show-current"]).decode("ascii").strip()
         )
-    except Exception:
-        pass
     return build_details
 
 

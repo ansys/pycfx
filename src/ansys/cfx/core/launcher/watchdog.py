@@ -29,7 +29,7 @@ For more information, see the ``start_watchdog`` argument for the
 
 import os
 from pathlib import Path
-import random
+import secrets
 import string
 import subprocess
 import sys
@@ -71,7 +71,8 @@ def launch(main_pid: int, sv_port: int, sv_password: str, sv_ip: Optional[str] =
         If Watchdog fails to launch.
     """
     watchdog_id = "".join(
-        random.choices(string.ascii_uppercase + string.ascii_lowercase + string.digits, k=6)
+        secrets.choice(string.ascii_uppercase + string.ascii_lowercase + string.digits)
+        for _ in range(6)
     )
 
     env_watchdog_debug = os.getenv("PYCFX_WATCHDOG_DEBUG", "off").upper()
