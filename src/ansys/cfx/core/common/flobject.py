@@ -89,6 +89,8 @@ class InactiveObjectError(RuntimeError):
 
 class _InlineConstants:
     is_active = "active?"
+    display_text = "display-text"
+    object_names = "object-names"
     is_stable = "webui-release-active?"
     is_read_only = "read-only?"
     default_value = "default"
@@ -364,6 +366,10 @@ class Base:
         """Check if the object is read-only."""
         attr = self.get_attr(_InlineConstants.is_read_only)
         return False if attr is None else attr
+
+    def display_text(self):
+        """Get the UI display text of the object."""
+        return self.get_attr(_InlineConstants.display_text)
 
     def __setattr__(self, name, value):
         raise AttributeError(name)
