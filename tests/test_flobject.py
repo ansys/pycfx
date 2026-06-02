@@ -345,6 +345,7 @@ class Root(Group):
             attrs = {
                 "active?": lambda self: not self.parent.objs["b-3"].get_state(),
                 "allowed-values": lambda self: ["foo", "bar"],
+                "display-text": lambda self: "String 4",
                 "webui-release-active?": lambda self: True,
             }
 
@@ -695,10 +696,13 @@ def test_attrs():
     r = flobject.get_root(Proxy())
     assert r.g_1.s_4.get_attr("active?")
     assert r.g_1.s_4.get_attr("allowed-values") == ["foo", "bar"]
+    assert r.g_1.s_4.display_text() == "String 4"
     r.g_1.b_3 = True
     assert not r.g_1.s_4.get_attr("active?")
     with pytest.raises(InactiveObjectError) as einfo:
         r.g_1.s_4.get_attr("allowed-values") == ["foo", "bar"]
+    with pytest.raises(InactiveObjectError):
+        r.g_1.s_4.display_text()
 
 
 def test_aliases():
