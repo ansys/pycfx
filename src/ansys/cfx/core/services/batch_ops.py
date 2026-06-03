@@ -185,8 +185,8 @@ class BatchOps:
             obj = self.response_cls()
             try:
                 obj.ParseFromString(data)
-            except Exception:
-                pass
+            except Exception as ex:
+                network_logger.warning(ex)
             self._status = status
             self._result = obj
 

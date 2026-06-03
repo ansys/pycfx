@@ -23,7 +23,29 @@ updates:
       day: "saturday"
     labels:
       - "maintenance"
+      - "dependencies"
     commit-message:
-      prefix: "build(deps)"
+      prefix: "build(actions)"
     cooldown:
       default-days: 7
+    groups:
+      actions:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "pre-commit"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "saturday"
+    labels:
+      - "maintenance"
+      - "dependencies"
+    commit-message:
+      prefix: "build(pre-commit)"
+    cooldown:
+      default-days: 7
+    groups:
+      pre-commit:
+        patterns:
+          - "*"

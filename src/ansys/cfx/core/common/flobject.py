@@ -45,7 +45,7 @@ Example
 from __future__ import annotations
 
 import collections
-from contextlib import contextmanager, nullcontext
+from contextlib import contextmanager, nullcontext, suppress
 import fnmatch
 import hashlib
 import importlib
@@ -89,6 +89,8 @@ class InactiveObjectError(RuntimeError):
 
 class _InlineConstants:
     is_active = "active?"
+    display_text = "display-text"
+    object_names = "object-names"
     is_stable = "webui-release-active?"
     is_read_only = "read-only?"
     default_value = "default"
@@ -364,6 +366,10 @@ class Base:
         """Check if the object is read-only."""
         attr = self.get_attr(_InlineConstants.is_read_only)
         return False if attr is None else attr
+
+    def display_text(self):
+        """Get the UI display text of the object."""
+        return self.get_attr(_InlineConstants.display_text)
 
     def __setattr__(self, name, value):
         raise AttributeError(name)
@@ -1656,10 +1662,8 @@ class _ChildNamedObjectAccessorMixin(collections.abc.MutableMapping):  # pragma:
         """Get a child object."""
         for cname in self.child_names:
             cobj = getattr(self, cname)
-            try:
+            with suppress(Exception):
                 return cobj[name]
-            except Exception:
-                pass
         raise KeyError(name)
 
     def __setitem__(self, name, value):
@@ -1670,21 +1674,17 @@ class _ChildNamedObjectAccessorMixin(collections.abc.MutableMapping):  # pragma:
         """Delete a child object."""
         for cname in self.child_names:
             cobj = getattr(self, cname)
-            try:
+            with suppress(Exception):
                 del cobj[name]
                 return
-            except Exception:
-                pass
         raise KeyError(name)
 
     def __iter__(self):
         """Iterator for child named objects."""
         for cname in self.child_names:
-            try:
+            with suppress(Exception):
                 for item in getattr(self, cname):
                     yield item
-            except Exception:
-                continue
 
     def __len__(self):
         """Number of child named objects."""
