@@ -1,0 +1,26 @@
+:orphan:
+
+.. _post_processing_coordinate_frame:
+
+coordinate_frame
+================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.coordinate_frame.coordinate_frame
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`coordinate_frame_child <post_processing_coordinate_frame_child>`
+
+
+.. rubric:: Included in:
+
+========================================   =========================================
+
+Parent                                                                       Summary
+
+========================================   =========================================
+:ref:`results <post_processing_results>`   Encapsulates a CFX post-processing setup.
+
+========================================   =========================================
+

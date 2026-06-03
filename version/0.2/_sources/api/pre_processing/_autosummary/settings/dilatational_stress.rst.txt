@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_dilatational_stress:
+
+dilatational_stress
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.dilatational_stress.dilatational_stress
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================   =============================================================================================================
+
+Attribute                                                                                                                                                                     Summary
+
+=====================================================================   =============================================================================================================
+:ref:`enabled <pre_processing_enabled_95>`                                                                                                     Enable the DILATATIONAL STRESS object.
+
+:ref:`option <pre_processing_option_170>`                                                                                                           The 'Dilatational Stress' option.
+
+:ref:`dynamic_bulk_viscosity <pre_processing_dynamic_bulk_viscosity>`   Dynamic bulk viscosity (lambda+2/3 mu). Excluding this parameter recovers Stokes' hypothesis (lambda=2/3 mu).
+
+=====================================================================   =============================================================================================================
+
+.. rubric:: Included in:
+
+===============================================   =============================
+
+Parent                                                                  Summary
+
+===============================================   =============================
+:ref:`fluid_child <pre_processing_fluid_child>`   'child_object_type' of fluid.
+
+===============================================   =============================
+

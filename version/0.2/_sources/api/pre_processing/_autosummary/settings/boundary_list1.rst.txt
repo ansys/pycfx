@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_boundary_list1:
+
+boundary_list1
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.boundary_list1.boundary_list1
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================   ========================================
+
+Parent                                                                                                   Summary
+
+=====================================================================   ========================================
+:ref:`domain_interface_child <pre_processing_domain_interface_child>`   'child_object_type' of domain_interface.
+
+=====================================================================   ========================================
+

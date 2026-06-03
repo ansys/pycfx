@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_option_348:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_348.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ============================================================
+
+Parent                                                                                                             Summary
+
+===========================================================   ============================================================
+:ref:`transient_scheme <pre_processing_transient_scheme>`     Defines the discretization algorithm for the transient term.
+
+:ref:`transient_scheme <pre_processing_transient_scheme_1>`   Defines the discretization algorithm for the transient term.
+
+:ref:`transient_scheme <pre_processing_transient_scheme_2>`   Defines the discretization algorithm for the transient term.
+
+===========================================================   ============================================================
+

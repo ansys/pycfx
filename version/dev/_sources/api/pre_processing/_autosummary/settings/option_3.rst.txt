@@ -1,0 +1,37 @@
+:orphan:
+
+.. _pre_processing_option_3:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_3.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================================   ===========================================
+
+Parent                                                                                                              Summary
+
+=============================================================================   ===========================================
+:ref:`additional_variable_child <pre_processing_additional_variable_child>`     'child_object_type' of additional_variable.
+
+:ref:`additional_variable_child <pre_processing_additional_variable_child_1>`   'child_object_type' of additional_variable.
+
+:ref:`additional_variable_child <pre_processing_additional_variable_child_2>`   'child_object_type' of additional_variable.
+
+:ref:`additional_variable_child <pre_processing_additional_variable_child_3>`   'child_object_type' of additional_variable.
+
+:ref:`additional_variable_child <pre_processing_additional_variable_child_4>`   'child_object_type' of additional_variable.
+
+:ref:`additional_variable_child <pre_processing_additional_variable_child_5>`   'child_object_type' of additional_variable.
+
+:ref:`additional_variable_child <pre_processing_additional_variable_child_6>`   'child_object_type' of additional_variable.
+
+:ref:`additional_variable_child <pre_processing_additional_variable_child_7>`   'child_object_type' of additional_variable.
+
+:ref:`additional_variable_child <pre_processing_additional_variable_child_8>`   'child_object_type' of additional_variable.
+
+=============================================================================   ===========================================
+

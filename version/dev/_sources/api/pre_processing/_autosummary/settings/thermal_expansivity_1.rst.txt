@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_thermal_expansivity_1:
+
+thermal_expansivity
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.thermal_expansivity_1.thermal_expansivity
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================   ======================================
+
+Attribute                                                                                        Summary
+
+===============================================================   ======================================
+:ref:`enabled <pre_processing_enabled_9>`                         Enable the THERMAL EXPANSIVITY object.
+
+:ref:`option <pre_processing_option_22>`                               The 'Thermal Expansivity' option.
+
+:ref:`thermal_expansivity <pre_processing_thermal_expansivity>`         'Thermal Expansivity' parameter.
+
+===============================================================   ======================================
+
+.. rubric:: Included in:
+
+=============================================   ===============================================================
+
+Parent                                                                                                  Summary
+
+=============================================   ===============================================================
+:ref:`properties <pre_processing_properties>`   Holds the definition of all physical properties for a material.
+
+=============================================   ===============================================================
+

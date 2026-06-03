@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_projection_control:
+
+projection_control
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.projection_control.projection_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================   =======================================================================================================
+
+Attribute                                                                                                                                                           Summary
+
+=================================================================   =======================================================================================================
+:ref:`enabled <pre_processing_enabled_230>`                                                                                           Enable the PROJECTION CONTROL object.
+
+:ref:`option <pre_processing_option_456>`                                                                                                  The 'Projection Control' option.
+
+:ref:`projection_direction <pre_processing_projection_direction>`                                                                                     Projection Direction.
+
+:ref:`axis_definition <pre_processing_axis_definition>`             Defines the axis for a cylindrical coordinate system or variables defined using cylindrical components.
+
+=================================================================   =======================================================================================================
+
+.. rubric:: Included in:
+
+===========================================================   ===========================
+
+Parent                                                                            Summary
+
+===========================================================   ===========================
+:ref:`partitioning_type <pre_processing_partitioning_type>`   'PARTITIONING TYPE' object.
+
+===========================================================   ===========================
+

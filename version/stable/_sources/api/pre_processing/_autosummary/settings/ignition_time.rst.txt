@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_ignition_time:
+
+ignition_time
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.ignition_time.ignition_time
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================   ===========================
+
+Attribute                                                         Summary
+
+===========================================   ===========================
+:ref:`option <pre_processing_option_146>`     The 'Ignition Time' option.
+
+:ref:`time_list <pre_processing_time_list>`        'Time List' parameter.
+
+===========================================   ===========================
+
+.. rubric:: Included in:
+
+=====================================================   ==================================
+
+Parent                                                                             Summary
+
+=====================================================   ==================================
+:ref:`spark_ignition <pre_processing_spark_ignition>`   Controls the spark ignition model.
+
+=====================================================   ==================================
+

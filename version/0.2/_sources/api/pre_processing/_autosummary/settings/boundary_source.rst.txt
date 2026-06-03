@@ -1,0 +1,44 @@
+:orphan:
+
+.. _pre_processing_boundary_source:
+
+boundary_source
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.boundary_source.boundary_source
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================================   ============================================================================================
+
+Attribute                                                                                                                                                            Summary
+
+=============================================================================   ============================================================================================
+:ref:`enabled <pre_processing_enabled_139>`                                                                                               Enable the BOUNDARY SOURCE object.
+
+:ref:`include_on_nonoverlap_area <pre_processing_include_on_nonoverlap_area>`   Setting to true applies the boundary sources to non-overlap parts of the interface boundary.
+
+:ref:`sources <pre_processing_sources>`                                                                           Holds the definition of sources for one or more equations.
+
+:ref:`bulk_sources <pre_processing_bulk_sources>`                                                                                Specifies bulk sources in multi-fluid flow.
+
+:ref:`fluid <pre_processing_fluid_6>`                                                                                                         A container for Fluid objects.
+
+:ref:`solid <pre_processing_solid_2>`                                                                                                         A container for Solid objects.
+
+:ref:`fluid_pair <pre_processing_fluid_pair_3>`                                                                                          A container for Fluid Pair objects.
+
+=============================================================================   ============================================================================================
+
+.. rubric:: Included in:
+
+=====================================================   ================================
+
+Parent                                                                           Summary
+
+=====================================================   ================================
+:ref:`boundary_child <pre_processing_boundary_child>`   'child_object_type' of boundary.
+
+=====================================================   ================================
+

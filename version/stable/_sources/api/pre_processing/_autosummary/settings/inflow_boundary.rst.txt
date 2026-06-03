@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_inflow_boundary:
+
+inflow_boundary
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.inflow_boundary.inflow_boundary
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================================   ============================================================
+
+Parent                                                                                                                               Summary
+
+=============================================================================   ============================================================
+:ref:`injection_distribution <pre_processing_injection_distribution>`                                       'INJECTION DISTRIBUTION' object.
+
+:ref:`efficiency_output <pre_processing_efficiency_output>`                     Defines the type of efficiency computed during a solver run.
+
+:ref:`transient_blade_row_models <pre_processing_transient_blade_row_models>`                           'TRANSIENT BLADE ROW MODELS' object.
+
+=============================================================================   ============================================================
+

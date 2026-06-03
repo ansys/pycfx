@@ -1,0 +1,37 @@
+:orphan:
+
+.. _pre_processing_total_source_coefficient:
+
+total_source_coefficient
+========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.total_source_coefficient.total_source_coefficient
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================   =======================================
+
+Parent                                                                                                  Summary
+
+=====================================================================   =======================================
+:ref:`equation_source_child <pre_processing_equation_source_child>`     'child_object_type' of equation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_1>`   'child_object_type' of equation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_2>`   'child_object_type' of equation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_3>`   'child_object_type' of equation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_4>`   'child_object_type' of equation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_5>`   'child_object_type' of equation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_6>`   'child_object_type' of equation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_7>`   'child_object_type' of equation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_8>`   'child_object_type' of equation_source.
+
+=====================================================================   =======================================
+

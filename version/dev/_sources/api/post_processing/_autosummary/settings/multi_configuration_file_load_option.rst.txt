@@ -1,0 +1,23 @@
+:orphan:
+
+.. _post_processing_multi_configuration_file_load_option:
+
+multi_configuration_file_load_option
+====================================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.multi_configuration_file_load_option.multi_configuration_file_load_option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+================================================   ======================================================================================================================
+
+Parent                                                                                                                                                            Summary
+
+================================================   ======================================================================================================================
+:ref:`case_child <post_processing_case_child>`                                                                                               'child_object_type' of case.
+
+:ref:`data_reader <post_processing_data_reader>`   This object contains the settings used to read results files into the post-processor. It is used by the "load" action.
+
+================================================   ======================================================================================================================
+

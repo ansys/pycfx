@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_smagorinsky_model_constant:
+
+smagorinsky_model_constant
+==========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.smagorinsky_model_constant.smagorinsky_model_constant
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ===========================================================================
+
+Parent                                                                                                                            Summary
+
+===========================================================   ===========================================================================
+:ref:`turbulence_model <pre_processing_turbulence_model>`     Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+:ref:`zonal_les_model <pre_processing_zonal_les_model>`                                                         'ZONAL LES MODEL' object.
+
+:ref:`turbulence_model <pre_processing_turbulence_model_1>`   Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+===========================================================   ===========================================================================
+

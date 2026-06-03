@@ -1,0 +1,27 @@
+:orphan:
+
+.. _pre_processing_normal_speed:
+
+normal_speed
+============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.normal_speed.normal_speed
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ===========================================================
+
+Parent                                                                                                              Summary
+
+=============================================================   ===========================================================
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum>`        Specifies conditions on Mass and Momentum at a boundary.
+
+:ref:`velocity <pre_processing_velocity>`                       Sets velocity part of mass and momentum boundary condition.
+
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum_2>`      Specifies conditions on Mass and Momentum at a boundary.
+
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum_3>`      Specifies conditions on Mass and Momentum at a boundary.
+
+=============================================================   ===========================================================
+

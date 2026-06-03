@@ -1,0 +1,31 @@
+:orphan:
+
+.. _pre_processing_diagnostic_output_level:
+
+diagnostic_output_level
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.diagnostic_output_level.diagnostic_output_level
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================================   =============================================================================================
+
+Parent                                                                                                                                                              Summary
+
+===========================================================================   =============================================================================================
+:ref:`injection_region_child <pre_processing_injection_region_child>`                                                              'child_object_type' of injection_region.
+
+:ref:`injection_location_type <pre_processing_injection_location_type>`       Defines the type of location, physics or mesh regions, for the injection points to intersect.
+
+:ref:`injection_model <pre_processing_injection_model>`                                                                                           'INJECTION MODEL' object.
+
+:ref:`thermal_radiation_control <pre_processing_thermal_radiation_control>`                    Holds parameters and objects that control the solution of Thermal Radiation.
+
+:ref:`coarsening_control <pre_processing_coarsening_control>`                                            Holds parameters to control creation of the radiation coarse grid.
+
+:ref:`radiometer_child <pre_processing_radiometer_child>`                                                                                'child_object_type' of radiometer.
+
+===========================================================================   =============================================================================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_54:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_54.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================   =================================================================================
+
+Parent                                                                                                                            Summary
+
+=====================================================   =================================================================================
+:ref:`k_coefficients <pre_processing_k_coefficients>`   Controls model coefficients for the Turbulence Kinetic Energy transport equation.
+
+=====================================================   =================================================================================
+

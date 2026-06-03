@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_static_pressure:
+
+static_pressure
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.static_pressure.static_pressure
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================   ==============================
+
+Attribute                                                                            Summary
+
+===========================================================   ==============================
+:ref:`option <pre_processing_option_326>`                      The 'Static Pressure' option.
+
+:ref:`relative_pressure <pre_processing_relative_pressure>`   'Relative Pressure' parameter.
+
+===========================================================   ==============================
+
+.. rubric:: Included in:
+
+=============================================================   ===============================================================================
+
+Parent                                                                                                                                  Summary
+
+=============================================================   ===============================================================================
+:ref:`initial_conditions <pre_processing_initial_conditions>`   Holds the details of initial condition specification for one or more equations.
+
+=============================================================   ===============================================================================
+

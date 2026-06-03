@@ -1,0 +1,54 @@
+:orphan:
+
+.. _pre_processing_advection_scheme_1:
+
+advection_scheme
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.advection_scheme_1.advection_scheme
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================================   =================================================================================
+
+Attribute                                                                                                                                                         Summary
+
+=====================================================================================   =================================================================================
+:ref:`enabled <pre_processing_enabled_179>`                                                                                           Enable the ADVECTION SCHEME object.
+
+:ref:`option <pre_processing_option_361>`                                                                                                  The 'Advection Scheme' option.
+
+:ref:`blend_factor <pre_processing_blend_factor>`                                       Specifies the blend between pure UDS (0.0) and second order (1.0) discretization.
+
+:ref:`gradient_relaxation <pre_processing_gradient_relaxation>`                                                                          'Gradient Relaxation' parameter.
+
+:ref:`gradient_type <pre_processing_gradient_type>`                                                                                            'Gradient Type' parameter.
+
+:ref:`blend_factor_relaxation <pre_processing_blend_factor_relaxation>`                                              Under-relaxation factor for the NAC term multiplier.
+
+:ref:`blend_factor_relaxation_option <pre_processing_blend_factor_relaxation_option>`                                    Relaxation option (1=always, 2=increasing only).
+
+:ref:`minimum_blend_factor <pre_processing_minimum_blend_factor>`                                                                       'Minimum Blend Factor' parameter.
+
+:ref:`maximum_blend_factor <pre_processing_maximum_blend_factor>`                                                                       'Maximum Blend Factor' parameter.
+
+:ref:`freestream_damping <pre_processing_freestream_damping>`                                                                             'Freestream Damping' parameter.
+
+:ref:`mach_blending <pre_processing_mach_blending>`                                             Determines whether density advection blends with CDS at low Mach numbers.
+
+:ref:`freestream_damping_option <pre_processing_freestream_damping_option>`                                                        'Freestream Damping Option' parameter.
+
+=====================================================================================   =================================================================================
+
+.. rubric:: Included in:
+
+=================================================================   ======================================
+
+Parent                                                                                             Summary
+
+=================================================================   ======================================
+:ref:`equation_class_child <pre_processing_equation_class_child>`   'child_object_type' of equation_class.
+
+=================================================================   ======================================
+

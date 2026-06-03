@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_process_ansys_input_file:
+
+process_ansys_input_file
+========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.process_ansys_input_file.process_ansys_input_file
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ============================
+
+Parent                                                                               Summary
+
+=============================================================   ============================
+:ref:`mfx_run_definition <pre_processing_mfx_run_definition>`   'MFX RUN DEFINITION' object.
+
+=============================================================   ============================
+

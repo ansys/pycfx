@@ -1,0 +1,27 @@
+:orphan:
+
+.. _pre_processing_physical_timescale:
+
+physical_timescale
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.physical_timescale.physical_timescale
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================   ======================================================
+
+Parent                                                                                                             Summary
+
+=================================================================   ======================================================
+:ref:`convergence_control <pre_processing_convergence_control>`     Holds basic parameters that affect solver convergence.
+
+:ref:`convergence_control <pre_processing_convergence_control_1>`   Holds basic parameters that affect solver convergence.
+
+:ref:`convergence_control <pre_processing_convergence_control_3>`   Holds basic parameters that affect solver convergence.
+
+:ref:`convergence_control <pre_processing_convergence_control_4>`   Holds basic parameters that affect solver convergence.
+
+=================================================================   ======================================================
+

@@ -1,0 +1,28 @@
+:orphan:
+
+.. _post_processing_primitive3d:
+
+primitive3d
+===========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.primitive3d.primitive3d
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`primitive3d_child <post_processing_primitive3d_child>`
+
+
+.. rubric:: Included in:
+
+==============================================   =========================================
+
+Parent                                                                             Summary
+
+==============================================   =========================================
+:ref:`results <post_processing_results>`         Encapsulates a CFX post-processing setup.
+
+:ref:`case_child <post_processing_case_child>`                'child_object_type' of case.
+
+==============================================   =========================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_extrusion_distance:
+
+extrusion_distance
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.extrusion_distance.extrusion_distance
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ==============================================
+
+Parent                                                                                               Summary
+
+===========================================================   ==============================================
+:ref:`boundary_tracking <pre_processing_boundary_tracking>`   Defines the immersed boundary tracking option.
+
+===========================================================   ==============================================
+

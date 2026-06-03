@@ -1,0 +1,50 @@
+:orphan:
+
+.. _pre_processing_equation_definition_child:
+
+equation_definition_child
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.equation_definition_child.equation_definition_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================   =======================================================================
+
+Attribute                                                                                                                                 Summary
+
+=======================================================================   =======================================================================
+:ref:`mms_name <pre_processing_mms_name>`                                                                                   'MMS Name' parameter.
+
+:ref:`long_name <pre_processing_long_name>`                                                                                'Long Name' parameter.
+
+:ref:`equation_class <pre_processing_equation_class>`                                                                      Solver equation class.
+
+:ref:`quantity <pre_processing_quantity>`                                                                                   'Quantity' parameter.
+
+:ref:`tensor_type <pre_processing_tensor_type>`                                                                          'Tensor Type' parameter.
+
+:ref:`principal_variable <pre_processing_principal_variable>`                                                 Principal variable for an equation.
+
+:ref:`default_source_variable <pre_processing_default_source_variable>`   Define a default entry for Source Variable List for an equation source.
+
+:ref:`component_short_names <pre_processing_component_short_names>`                                            'Component Short Names' parameter.
+
+:ref:`component_long_names <pre_processing_component_long_names>`                                               'Component Long Names' parameter.
+
+:ref:`component_mms_names <pre_processing_component_mms_names>`                                                  'Component MMS Names' parameter.
+
+=======================================================================   =======================================================================
+
+.. rubric:: Included in:
+
+===============================================================   ============================================
+
+Parent                                                                                                 Summary
+
+===============================================================   ============================================
+:ref:`equation_definition <pre_processing_equation_definition>`   A container for Equation Definition objects.
+
+===============================================================   ============================================
+

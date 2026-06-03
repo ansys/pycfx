@@ -1,0 +1,28 @@
+:orphan:
+
+.. _pre_processing_fluid_pair_5:
+
+fluid_pair
+==========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fluid_pair_5.fluid_pair
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`fluid_pair_child <pre_processing_fluid_pair_child_5>`
+
+
+.. rubric:: Included in:
+
+=======================================================   ===================================================
+
+Parent                                                                                                Summary
+
+=======================================================   ===================================================
+:ref:`initialisation <pre_processing_initialisation>`     Defines the initialisation of flow-field variables.
+
+:ref:`initialisation <pre_processing_initialisation_1>`   Defines the initialisation of flow-field variables.
+
+=======================================================   ===================================================
+

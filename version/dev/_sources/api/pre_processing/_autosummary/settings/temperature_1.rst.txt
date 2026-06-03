@@ -1,0 +1,42 @@
+:orphan:
+
+.. _pre_processing_temperature_1:
+
+temperature
+===========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.temperature_1.temperature
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================   =========================
+
+Attribute                                                           Summary
+
+===============================================   =========================
+:ref:`option <pre_processing_option_32>`          The 'Temperature' option.
+
+:ref:`temperature <pre_processing_temperature>`    'Temperature' parameter.
+
+===============================================   =========================
+
+.. rubric:: Included in:
+
+===================================================================   ===================================================================================================================================================================================================================================================================================
+
+Parent                                                                                                                                                                                                                                                                                                                                            Summary
+
+===================================================================   ===================================================================================================================================================================================================================================================================================
+:ref:`saturation_properties <pre_processing_saturation_properties>`   Defines the saturation properties used for interphase mass transfer or equilibrium mass transfer models. This singleton would point to a data file. In this case only RGP files are currently supported. The saturation pressure and temperature singletons can override this data.
+
+:ref:`initial_conditions <pre_processing_initial_conditions>`                                                                                                                                                                                                             Holds the details of initial condition specification for one or more equations.
+
+:ref:`initial_conditions <pre_processing_initial_conditions_1>`                                                                                                                                                                                                           Holds the details of initial condition specification for one or more equations.
+
+:ref:`initial_conditions <pre_processing_initial_conditions_2>`                                                                                                                                                                                                           Holds the details of initial condition specification for one or more equations.
+
+:ref:`initial_conditions <pre_processing_initial_conditions_5>`                                                                                                                                                                                                           Holds the details of initial condition specification for one or more equations.
+
+===================================================================   ===================================================================================================================================================================================================================================================================================
+

@@ -1,0 +1,50 @@
+:orphan:
+
+.. _pre_processing_drag_force_1:
+
+drag_force
+==========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.drag_force_1.drag_force
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================================================   =============================================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                                                               Summary
+
+===============================================================================================   =============================================================================================================================================================================================================================
+:ref:`option <pre_processing_option_158>`                                                                                                                                                                                                                                                              The 'Drag Force' option.
+
+:ref:`drag_coefficient <pre_processing_drag_coefficient>`                                                                                                                                                                                                                                         'Drag Coefficient' parameter.
+
+:ref:`minimum_drag_coefficient <pre_processing_minimum_drag_coefficient>`                                                                                                                                                                                                                 'Minimum Drag Coefficient' parameter.
+
+:ref:`volume_fraction_correction_exponent <pre_processing_volume_fraction_correction_exponent>`   Exponent for volume-fraction dependence of drag force. Omission of this parameter, or a unit exponent, are equivalent to no correction. Typical exponent values for dense concentrations are -1.65 for solids, 4 for bubbles.
+
+:ref:`linearisation_blend_factor <pre_processing_linearisation_blend_factor>`                                                                                                                                                                                                           'Linearisation Blend Factor' parameter.
+
+:ref:`redistribute_in_rhie_chow <pre_processing_redistribute_in_rhie_chow>`                                                                                                                                                                                                 Indicates whether momentum source is redistributed.
+
+:ref:`drag_coefficient_1 <pre_processing_drag_coefficient_1>`                                                                                                                                                                                                                                        'DRAG COEFFICIENT' object.
+
+:ref:`fluid1_drag_force <pre_processing_fluid1_drag_force>`                                                                                                                                                                                                  Specifies drag force in low VF limit on 1st. fluid for AIAD model.
+
+:ref:`fluid2_drag_force <pre_processing_fluid2_drag_force>`                                                                                                                                                                                                  Specifies drag force in low VF limit on 2nd. fluid for AIAD model.
+
+:ref:`free_surface_drag_force <pre_processing_free_surface_drag_force>`                                                                                                                                                                                              Specifies drag force in free surface sector of AIAD model.
+
+===============================================================================================   =============================================================================================================================================================================================================================
+
+.. rubric:: Included in:
+
+===========================================================   ====================================================
+
+Parent                                                                                                     Summary
+
+===========================================================   ====================================================
+:ref:`momentum_transfer <pre_processing_momentum_transfer>`   Specifies momentum transfer models for a fluid pair.
+
+===========================================================   ====================================================
+

@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_output_particle_boundary_vertex_fields:
+
+output_particle_boundary_vertex_fields
+======================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.output_particle_boundary_vertex_fields.output_particle_boundary_vertex_fields
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   =========================================
+
+Parent                                                                                                      Summary
+
+=======================================================================   =========================================
+:ref:`backup_results_child <pre_processing_backup_results_child>`            'child_object_type' of backup_results.
+
+:ref:`transient_results_child <pre_processing_transient_results_child>`   'child_object_type' of transient_results.
+
+=======================================================================   =========================================
+

@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_export_track_data:
+
+export_track_data
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.export_track_data.export_track_data
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================   ==================================
+
+Attribute                                                                                        Summary
+
+===================================================================   ==================================
+:ref:`option <pre_processing_option_396>`                                The 'Export Track Data' option.
+
+:ref:`particle_definition <pre_processing_particle_definition>`         'Particle Definition' parameter.
+
+:ref:`output_boundary <pre_processing_output_boundary>`                     'Output Boundary' parameter.
+
+:ref:`output_variables_list <pre_processing_output_variables_list>`   'Output Variables List' parameter.
+
+===================================================================   ==================================
+
+.. rubric:: Included in:
+
+=================================================================   ======================================
+
+Parent                                                                                             Summary
+
+=================================================================   ======================================
+:ref:`export_results_child <pre_processing_export_results_child>`   'child_object_type' of export_results.
+
+=================================================================   ======================================
+

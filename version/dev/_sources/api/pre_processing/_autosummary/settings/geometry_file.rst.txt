@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_geometry_file:
+
+geometry_file
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.geometry_file.geometry_file
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================   ==============================
+
+Parent                                                                     Summary
+
+=================================================   ==============================
+:ref:`remesh_child <pre_processing_remesh_child>`   'child_object_type' of remesh.
+
+=================================================   ==============================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_normal_vector_alignment:
+
+normal_vector_alignment
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.normal_vector_alignment.normal_vector_alignment
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================   =========================
+
+Parent                                                                      Summary
+
+=======================================================   =========================
+:ref:`mapping_control <pre_processing_mapping_control>`   'MAPPING CONTROL' object.
+
+=======================================================   =========================
+

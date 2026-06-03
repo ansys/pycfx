@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_transient_method:
+
+transient_method
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.transient_method.transient_method
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================   =====================================================================
+
+Attribute                                                                                                               Summary
+
+=======================================================   =====================================================================
+:ref:`option <pre_processing_option_439>`                                                        The 'Transient Method' option.
+
+:ref:`number_of_modes <pre_processing_number_of_modes>`                                            'Number of Modes' parameter.
+
+:ref:`time_period <pre_processing_time_period>`                                                           'TIME PERIOD' object.
+
+:ref:`time_duration <pre_processing_time_duration_1>`     Specifies the length of time to be simulated in a transient analysis.
+
+:ref:`time_steps <pre_processing_time_steps_1>`                                   Specifies the time steps for a transient run.
+
+=======================================================   =====================================================================
+
+.. rubric:: Included in:
+
+=============================================================================   ====================================
+
+Parent                                                                                                       Summary
+
+=============================================================================   ====================================
+:ref:`transient_blade_row_models <pre_processing_transient_blade_row_models>`   'TRANSIENT BLADE ROW MODELS' object.
+
+=============================================================================   ====================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_phase_positions:
+
+phase_positions
+===============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.phase_positions.phase_positions
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+================================================   ====================
+
+Parent                                                          Summary
+
+================================================   ====================
+:ref:`tbr_options <post_processing_tbr_options>`   'tbr_options' child.
+
+================================================   ====================
+

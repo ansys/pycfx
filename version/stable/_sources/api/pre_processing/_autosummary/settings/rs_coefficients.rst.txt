@@ -1,0 +1,50 @@
+:orphan:
+
+.. _pre_processing_rs_coefficients:
+
+rs_coefficients
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.rs_coefficients.rs_coefficients
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================   =============================================================
+
+Attribute                                                                                                                     Summary
+
+=====================================================================   =============================================================
+:ref:`enabled <pre_processing_enabled_67>`                                                         Enable the RS COEFFICIENTS object.
+
+:ref:`cs1_coefficient <pre_processing_cs1_coefficient>`                             Cs1 Reynolds Stress turbulence model coefficient.
+
+:ref:`cs2_coefficient <pre_processing_cs2_coefficient>`                             Cs2 Reynolds Stress turbulence model coefficient.
+
+:ref:`cr1_coefficient <pre_processing_cr1_coefficient>`                             Cr1 Reynolds Stress turbulence model coefficient.
+
+:ref:`cr2_coefficient <pre_processing_cr2_coefficient>`                             Cr2 Reynolds Stress turbulence model coefficient.
+
+:ref:`cr3_coefficient <pre_processing_cr3_coefficient>`                             Cr3 Reynolds Stress turbulence model coefficient.
+
+:ref:`cr4_coefficient <pre_processing_cr4_coefficient>`                             Cr4 Reynolds Stress turbulence model coefficient.
+
+:ref:`cr5_coefficient <pre_processing_cr5_coefficient>`                             Cr5 Reynolds Stress turbulence model coefficient.
+
+:ref:`turbulent_flux_closure <pre_processing_turbulent_flux_closure>`   Controls the turbulent flux closure for a transport equation.
+
+=====================================================================   =============================================================
+
+.. rubric:: Included in:
+
+===========================================================   ===========================================================================
+
+Parent                                                                                                                            Summary
+
+===========================================================   ===========================================================================
+:ref:`turbulence_model <pre_processing_turbulence_model>`     Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+:ref:`turbulence_model <pre_processing_turbulence_model_1>`   Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+===========================================================   ===========================================================================
+

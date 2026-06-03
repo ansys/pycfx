@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_338:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_338.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================================   =========================================================
+
+Parent                                                                                                                            Summary
+
+=============================================================================   =========================================================
+:ref:`reynolds_stress_components <pre_processing_reynolds_stress_components>`   Defines the initialization of Reynolds Stress components.
+
+=============================================================================   =========================================================
+

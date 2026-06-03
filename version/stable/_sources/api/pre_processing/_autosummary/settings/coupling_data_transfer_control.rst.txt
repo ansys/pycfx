@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_coupling_data_transfer_control:
+
+coupling_data_transfer_control
+==============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.coupling_data_transfer_control.coupling_data_transfer_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================   =======================================
+
+Attribute                                                                                                 Summary
+
+=======================================================================   =======================================
+:ref:`under_relaxation_factor <pre_processing_under_relaxation_factor>`      'Under Relaxation Factor' parameter.
+
+:ref:`convergence_target <pre_processing_convergence_target>`                     'Convergence Target' parameter.
+
+:ref:`ansys_variable <pre_processing_ansys_variable_1>`                   A container for Ansys Variable objects.
+
+=======================================================================   =======================================
+
+.. rubric:: Included in:
+
+=========================================================================================   ==========================================
+
+Parent                                                                                                                         Summary
+
+=========================================================================================   ==========================================
+:ref:`external_solver_coupling_control <pre_processing_external_solver_coupling_control>`   'EXTERNAL SOLVER COUPLING CONTROL' object.
+
+=========================================================================================   ==========================================
+

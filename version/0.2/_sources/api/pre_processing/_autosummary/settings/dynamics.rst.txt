@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_dynamics:
+
+dynamics
+========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.dynamics.dynamics
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================   =======================================================
+
+Attribute                                                                                                       Summary
+
+=============================================================   =======================================================
+:ref:`enabled <pre_processing_enabled_40>`                                                  Enable the DYNAMICS object.
+
+:ref:`external_force <pre_processing_external_force>`                           A container for External Force objects.
+
+:ref:`external_torque <pre_processing_external_torque>`                        A container for External Torque objects.
+
+:ref:`degrees_of_freedom <pre_processing_degrees_of_freedom>`   Defines the rigid body degrees of freedom to solve for.
+
+:ref:`gravity <pre_processing_gravity>`                                          The gravitational acceleration vector.
+
+=============================================================   =======================================================
+
+.. rubric:: Included in:
+
+===================================================   ==================================================================================================================================================================================================================
+
+Parent                                                                                                                                                                                                                                                           Summary
+
+===================================================   ==================================================================================================================================================================================================================
+:ref:`domain_motion <pre_processing_domain_motion>`   Defines the motion of a mesh relative to a stationary coordinate frame. NOTE - Speed and Direction, Specified Displacement and General Motion Options are not supported for domains other than the immersed solid.
+
+===================================================   ==================================================================================================================================================================================================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_high_speed_numerics:
+
+high_speed_numerics
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.high_speed_numerics.high_speed_numerics
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   =======================================================================
+
+Parent                                                                                                                                    Summary
+
+=======================================================================   =======================================================================
+:ref:`compressibility_control <pre_processing_compressibility_control>`   Holds parameters that affect solver convergence for compressible flows.
+
+=======================================================================   =======================================================================
+

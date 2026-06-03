@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_shared_license_port:
+
+shared_license_port
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.shared_license_port.shared_license_port
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================   =========================
+
+Parent                                                                      Summary
+
+=======================================================   =========================
+:ref:`license_control <pre_processing_license_control>`   'LICENSE CONTROL' object.
+
+=======================================================   =========================
+

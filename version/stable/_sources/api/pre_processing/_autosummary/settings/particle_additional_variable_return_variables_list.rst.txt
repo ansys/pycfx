@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_particle_additional_variable_return_variables_list:
+
+particle_additional_variable_return_variables_list
+==================================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.particle_additional_variable_return_variables_list.particle_additional_variable_return_variables_list
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================================================   =================================================
+
+Parent                                                                                                                                    Summary
+
+=============================================================================================   =================================================
+:ref:`particle_additional_variable_model <pre_processing_particle_additional_variable_model>`   Specifies the particle additional variable model.
+
+=============================================================================================   =================================================
+

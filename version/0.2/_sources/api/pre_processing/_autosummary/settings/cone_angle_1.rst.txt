@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_cone_angle_1:
+
+cone_angle
+==========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.cone_angle_1.cone_angle
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================================================================   =======================================================
+
+Attribute                                                                                                                                                       Summary
+
+=============================================================================================================   =======================================================
+:ref:`option <pre_processing_option_218>`                                                                                                      The 'Cone Angle' option.
+
+:ref:`cone_angle <pre_processing_cone_angle>`                                                                                                   'Cone Angle' parameter.
+
+:ref:`injector_nozzle_length_over_diameter_ratio <pre_processing_injector_nozzle_length_over_diameter_ratio>`   'Injector Nozzle Length over Diameter Ratio' parameter.
+
+:ref:`density_probe_normal_distance <pre_processing_density_probe_normal_distance>`                                          'Density Probe Normal Distance' parameter.
+
+=============================================================================================================   =======================================================
+
+.. rubric:: Included in:
+
+=========================================================================   =======================================================================
+
+Parent                                                                                                                                      Summary
+
+=========================================================================   =======================================================================
+:ref:`particle_primary_breakup <pre_processing_particle_primary_breakup>`   Defines the primary break-up model used to determine spray atomization.
+
+=========================================================================   =======================================================================
+

@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_option_287:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_287.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   =============================================================
+
+Parent                                                                                                                Summary
+
+=============================================================   =============================================================
+:ref:`reaction_progress <pre_processing_reaction_progress_1>`   Defines the initialization of the reaction progress variable.
+
+:ref:`reaction_progress <pre_processing_reaction_progress_2>`   Defines the initialization of the reaction progress variable.
+
+=============================================================   =============================================================
+
