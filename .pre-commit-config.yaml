@@ -6,12 +6,12 @@ repos:
         args: [--target-version=py310]
 
   - repo: https://github.com/pycqa/isort
-    rev: dac090ce4d9ee313d086e2e89ab1acb8c2664fa1  # frozen: 9.0.0a3
+    rev: a333737ed43df02b18e6c95477ea1b285b3de15a  # frozen: 8.0.1a3
     hooks:
       - id: isort
 
   - repo: https://github.com/PyCQA/flake8
-    rev: d93590f5be797aabb60e3b09f2f52dddb02f349f  # frozen: 7.3.0
+    rev: c48217e1fc006c2dddd14df54e83b67da15de5cd  # frozen: 7.3.0
     hooks:
       - id: flake8
         args:
@@ -69,7 +69,7 @@ repos:
         args: ["--reports", "n", "--score", "n", "--rcfile=pylintrc"]
 
   - repo: https://github.com/compilerla/conventional-pre-commit
-    rev: 3db014c16a9d31997ab8c07a4d61fcce936c8f0d  # frozen: v4.4.0
+    rev: 91ab4bf57e58b32adf1a122681f6ebe164d081c8  # frozen: v4.4.0
     hooks:
       - id: conventional-pre-commit
         stages: [commit-msg]
