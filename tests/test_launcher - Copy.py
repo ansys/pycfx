@@ -22,58 +22,43 @@
 
 import pytest
 
+import ansys.cfx.core as pycfx
+from ansys.cfx.core.exceptions import DisallowedValuesError
+from ansys.cfx.core.launcher.error_handler import UnexpectedKeywordArgument
+from ansys.cfx.core.launcher.process_launch_string import get_cfx_exe_path
 from ansys.cfx.core.utils.cfx_version import AnsysVersionNotFound, CFXVersion
 
 
-def test_examples():
-    assert CFXVersion("25.2.0") == CFXVersion.v252
-    assert CFXVersion.v252.number == 252
-    assert CFXVersion.v252.awp_var == "AWP_ROOT252"
-    assert CFXVersion.v252.name == "v252"
-    assert CFXVersion.v252.value == "25.2.0"
+def test_mode():
+    with pytest.raises(DisallowedValuesError):
+        pycfx.launch_cfx(
+            mode="meshing",
+            start_container=False,
+        )
 
 
-def test_version_found():
-    assert CFXVersion("25.2") == CFXVersion.v252
-    assert CFXVersion(25.2) == CFXVersion.v252
-    assert CFXVersion(252) == CFXVersion.v252
-
-
-def test_version_not_found():
+def test_get_cfx_exe_path_when_nothing_is_set(helpers):
+    helpers.delete_all_awp_vars()
     with pytest.raises(AnsysVersionNotFound):
-        CFXVersion("25.1.0")
-
+        get_cfx_exe_path(mode=pycfx.CFXMode.PRE_PROCESSING)
     with pytest.raises(AnsysVersionNotFound):
-        CFXVersion(22)
+        CFXVersion.get_latest_installed()
 
 
-def test_get_latest_installed(helpers):
-    helpers.mock_awp_vars()
-    assert CFXVersion.get_latest_installed() == CFXVersion.current_release()
+def test_kwargs():
+    with pytest.raises(UnexpectedKeywordArgument):
+        pycfx.launch_cfx(abc=1, meshing_mode=True)
+    with pytest.raises(UnexpectedKeywordArgument):
+        pycfx.launch_cfx(abc=1, xyz=2)
 
 
-def test_gt():
-    assert CFXVersion.v261 > CFXVersion.v252
+def test_unsuccessful_pre_connection():
+    # start-timeout is intentionally provided to be 1s for the connection to fail
+    with pytest.raises(Exception):
+        pycfx.PreProcessing.from_install(start_timeout=1)
 
 
-def test_ge():
-    assert CFXVersion.v261 >= CFXVersion.v252
-    assert CFXVersion.v252 >= CFXVersion.v252
-
-
-def test_lt():
-    assert CFXVersion.v252 < CFXVersion.v261
-
-
-def test_le():
-    assert CFXVersion.v252 <= CFXVersion.v261
-    assert CFXVersion.v252 <= CFXVersion.v252
-
-
-def test_ne():
-    assert CFXVersion.v252 != CFXVersion.v261
-
-
-def test_eq():
-    assert CFXVersion.v252 == CFXVersion.v252
-    assert CFXVersion.v261 == CFXVersion.v261
+def test_unsuccessful_post_connection():
+    # start-timeout is intentionally provided to be 1s for the connection to fail
+    with pytest.raises(Exception):
+        pycfx.PostProcessing.from_install(start_timeout=0)
