@@ -1,0 +1,69 @@
+:orphan:
+
+.. _post_processing_difference_object_child:
+
+difference_object_child
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.difference_object_child.difference_object_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+========================================================================================   ===============================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                                          Summary
+
+========================================================================================   ===============================================================================================================================================================================================================
+:ref:`colour <post_processing_colour>`                                                                                                       A list of three numbers between 0 and 1, which represent the RGB (Red/Green/Blue) values to be used when colouring the faces of an object by constant colour.
+
+:ref:`colour_map <post_processing_colour_map>`                                                                                                                                                                                                The name of the colour map to use when colouring the object.
+
+:ref:`colour_mode <post_processing_colour_mode>`                                           Sets the mode used to colour the object. If set equal to "Constant" then the "Colour" parameter is used to determine the plot colour. If set equal to "Variable", then the "Colour Variable" parameter is used.
+
+:ref:`colour_scale <post_processing_colour_scale>`                                                                                                                                           Sets whether to colour the object with a Linear or Logarithmic scale. By default, the colour scale is Linear.
+
+:ref:`colour_variable <post_processing_colour_variable>`                                                                                                              The name of the variable to be used in colouring the object. Should be set equal to the name of a currently defined VARIABLE object.
+
+:ref:`colour_variable_boundary_values <post_processing_colour_variable_boundary_values>`                                                                                                    Sets the type of boundary values to be presented for colour variables in this object (Conservative or Hybrid).
+
+:ref:`domain_list <post_processing_domain_list>`                                                                                                                                                                                                     The list of domains over which to define this object.
+
+:ref:`instancing_transform <post_processing_instancing_transform>`                                                                                                                                                                    Defines the TRANSFORM object that is used for the object instancing.
+
+:ref:`location_list <post_processing_location_list_1>`                                                                                                                                                                                                                              'location_list' child.
+
+:ref:`visibility <post_processing_visibility>`                                                                                                                                                                Toggles the visibility of this graphics object in the viewer. THIS PARAMETER IS DEPRECATED!.
+
+:ref:`object_view_transform <post_processing_object_view_transform>`                                 This object contains object transformation info to be processed by the viewer. Like instance transform, this object should be associated with each geometry. It is usually specified as a sub-object.
+
+========================================================================================   ===============================================================================================================================================================================================================
+
+.. rubric:: Methods
+
+============================================   ========================================
+
+Method                                                                          Summary
+
+============================================   ========================================
+:ref:`hide <post_processing_hide>`                  Hide the object in a given view(s).
+
+:ref:`show <post_processing_show>`                  Show the object in a given view(s).
+
+:ref:`suspend <post_processing_suspend>`       Suspend immediate update for the object.
+
+:ref:`unsuspend <post_processing_unsuspend>`   Restore immediate update for the object.
+
+============================================   ========================================
+
+.. rubric:: Included in:
+
+============================================================   ==========================
+
+Parent                                                                            Summary
+
+============================================================   ==========================
+:ref:`difference_object <post_processing_difference_object>`   'difference_object' child.
+
+============================================================   ==========================
+

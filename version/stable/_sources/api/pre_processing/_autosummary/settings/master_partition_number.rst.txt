@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_master_partition_number:
+
+master_partition_number
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.master_partition_number.master_partition_number
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ===========================
+
+Parent                                                                            Summary
+
+===========================================================   ===========================
+:ref:`partitioning_type <pre_processing_partitioning_type>`   'PARTITIONING TYPE' object.
+
+===========================================================   ===========================
+

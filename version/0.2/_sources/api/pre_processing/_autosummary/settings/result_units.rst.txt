@@ -1,0 +1,33 @@
+:orphan:
+
+.. _pre_processing_result_units:
+
+result_units
+============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.result_units.result_units
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   =========================================
+
+Parent                                                                                                      Summary
+
+=======================================================================   =========================================
+:ref:`function_child <pre_processing_function_child>`                              'child_object_type' of function.
+
+:ref:`data_field_child <pre_processing_data_field_child>`                        'child_object_type' of data_field.
+
+:ref:`transfer_value_child <pre_processing_transfer_value_child>`            'child_object_type' of transfer_value.
+
+:ref:`argument_constant_child <pre_processing_argument_constant_child>`   'child_object_type' of argument_constant.
+
+:ref:`argument_value_child <pre_processing_argument_value_child>`            'child_object_type' of argument_value.
+
+:ref:`result_value_child <pre_processing_result_value_child>`                  'child_object_type' of result_value.
+
+:ref:`data_value_child <pre_processing_data_value_child>`                        'child_object_type' of data_value.
+
+=======================================================================   =========================================
+

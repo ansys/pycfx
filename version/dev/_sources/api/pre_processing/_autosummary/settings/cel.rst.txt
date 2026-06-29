@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_cel:
+
+cel
+===
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.cel.cel
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================   ===============================================
+
+Attribute                                                                                                         Summary
+
+=======================================================================   ===============================================
+:ref:`enabled <pre_processing_enabled>`                                                            Enable the CEL object.
+
+:ref:`cel_function_order_list <pre_processing_cel_function_order_list>`              'CEL Function Order List' parameter.
+
+:ref:`function <pre_processing_function>`                                               A container for Function objects.
+
+:ref:`expressions <pre_processing_expressions>`                           Definition of CFX Command Language Expressions.
+
+=======================================================================   ===============================================
+
+.. rubric:: Included in:
+
+=======================================   ===============================================================================
+
+Parent                                                                                                            Summary
+
+=======================================   ===============================================================================
+:ref:`library <pre_processing_library>`   Stores common object descriptions for reference in the main problem definition.
+
+=======================================   ===============================================================================
+

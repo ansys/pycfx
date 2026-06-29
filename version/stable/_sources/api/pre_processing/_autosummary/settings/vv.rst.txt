@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_vv:
+
+vv
+==
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.vv.vv
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================================   =========================================================
+
+Parent                                                                                                                            Summary
+
+=============================================================================   =========================================================
+:ref:`turbulence <pre_processing_turbulence>`                                                Sets conditions on turbulence at a boundary.
+
+:ref:`reynolds_stress_components <pre_processing_reynolds_stress_components>`   Defines the initialization of Reynolds Stress components.
+
+=============================================================================   =========================================================
+

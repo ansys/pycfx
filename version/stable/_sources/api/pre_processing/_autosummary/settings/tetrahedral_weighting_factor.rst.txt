@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_tetrahedral_weighting_factor:
+
+tetrahedral_weighting_factor
+============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.tetrahedral_weighting_factor.tetrahedral_weighting_factor
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================================   ==================================
+
+Parent                                                                                                 Summary
+
+=========================================================================   ==================================
+:ref:`partition_node_weighting <pre_processing_partition_node_weighting>`   'PARTITION NODE WEIGHTING' object.
+
+=========================================================================   ==================================
+

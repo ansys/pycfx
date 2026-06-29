@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_212:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_212.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================   ==========================================
+
+Parent                                                                                               Summary
+
+===============================================================   ==========================================
+:ref:`particle_track_file <pre_processing_particle_track_file>`   Controls output of particle track records.
+
+===============================================================   ==========================================
+

@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_heat_transfer_model_1:
+
+heat_transfer_model
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.heat_transfer_model_1.heat_transfer_model
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================================   =========================================================================================================
+
+Attribute                                                                                                                                                                                     Summary
+
+=========================================================================================   =========================================================================================================
+:ref:`option <pre_processing_option_116>`                                                                                                                           The 'Heat Transfer Model' option.
+
+:ref:`fluid_temperature <pre_processing_fluid_temperature>`                                                                                                            'Fluid Temperature' parameter.
+
+:ref:`include_viscous_work_term <pre_processing_include_viscous_work_term>`                       Indicates whether the shear stress term dot velocity term is included in the total energy equation.
+
+:ref:`include_pressure_transient_term <pre_processing_include_pressure_transient_term>`                                                                  'Include Pressure Transient Term' parameter.
+
+:ref:`include_viscous_dissipation_term <pre_processing_include_viscous_dissipation_term>`   Indicates whether the shear stress term dot velocity gradient is included in the thermal energy equation.
+
+=========================================================================================   =========================================================================================================
+
+.. rubric:: Included in:
+
+===============================================   =============================
+
+Parent                                                                  Summary
+
+===============================================   =============================
+:ref:`fluid_child <pre_processing_fluid_child>`   'child_object_type' of fluid.
+
+===============================================   =============================
+

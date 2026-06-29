@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_stiffness_model_exponent:
+
+stiffness_model_exponent
+========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.stiffness_model_exponent.stiffness_model_exponent
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================   =============================
+
+Parent                                                                          Summary
+
+=======================================================   =============================
+:ref:`mesh_stiffness <pre_processing_mesh_stiffness_1>`   Defines mesh stiffness model.
+
+=======================================================   =============================
+

@@ -1,0 +1,42 @@
+:orphan:
+
+.. _pre_processing_gt_suite_model_child:
+
+gt_suite_model_child
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.gt_suite_model_child.gt_suite_model_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================   =======================================================================================
+
+Attribute                                                                                                                                       Summary
+
+=============================================================   =======================================================================================
+:ref:`file_name <pre_processing_file_name_6>`                                                                                    'File Name' parameter.
+
+:ref:`version <pre_processing_version>`                                                                                                 Version number.
+
+:ref:`installation_path <pre_processing_installation_path>`                                                   Directory path for software installation.
+
+:ref:`preferred_license <pre_processing_preferred_license>`     Controls an initial product-specific license check to be performed for the GT software.
+
+:ref:`gt_suite_arguments <pre_processing_gt_suite_arguments>`                                                           'GT SUITE Arguments' parameter.
+
+:ref:`material_mapping <pre_processing_material_mapping>`                              Defines the physical models that are associated with boundaries.
+
+=============================================================   =======================================================================================
+
+.. rubric:: Included in:
+
+=======================================================   =======================================
+
+Parent                                                                                    Summary
+
+=======================================================   =======================================
+:ref:`gt_suite_model <pre_processing_gt_suite_model_1>`   A container for Gt Suite Model objects.
+
+=======================================================   =======================================
+

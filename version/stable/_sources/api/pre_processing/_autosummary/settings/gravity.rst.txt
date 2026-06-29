@@ -1,0 +1,42 @@
+:orphan:
+
+.. _pre_processing_gravity:
+
+gravity
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.gravity.gravity
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================   ================================
+
+Attribute                                                                                  Summary
+
+===============================================================   ================================
+:ref:`enabled <pre_processing_enabled_41>`                              Enable the GRAVITY object.
+
+:ref:`option <pre_processing_option_100>`                                    The 'Gravity' option.
+
+:ref:`gravity_x_component <pre_processing_gravity_x_component>`   'Gravity X Component' parameter.
+
+:ref:`gravity_y_component <pre_processing_gravity_y_component>`   'Gravity Y Component' parameter.
+
+:ref:`gravity_z_component <pre_processing_gravity_z_component>`   'Gravity Z Component' parameter.
+
+===============================================================   ================================
+
+.. rubric:: Included in:
+
+===========================================   =======================================
+
+Parent                                                                        Summary
+
+===========================================   =======================================
+:ref:`dynamics <pre_processing_dynamics>`     Defines rigid body dynamics attributes.
+
+:ref:`dynamics <pre_processing_dynamics_1>`   Defines rigid body dynamics attributes.
+
+===========================================   =======================================
+

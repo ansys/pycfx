@@ -1,0 +1,32 @@
+:orphan:
+
+.. _pre_processing_save_case:
+
+save_case
+=========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.save_case.save_case
+    :show-inheritance:
+
+.. rubric:: Arguments
+
+=============================================   ===============================
+
+Argument                                                                Summary
+
+=============================================   ===============================
+:ref:`file_name <pre_processing_file_name_3>`   Name of the case (\*.cfx) file.
+
+=============================================   ===============================
+
+.. rubric:: Included in:
+
+=================================   =========================================================
+
+Parent                                                                                Summary
+
+=================================   =========================================================
+:ref:`file <pre_processing_file>`   File-related operations for a CFX pre-processing session.
+
+=================================   =========================================================
+

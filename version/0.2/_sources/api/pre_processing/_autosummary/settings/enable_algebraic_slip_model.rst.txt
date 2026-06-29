@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enable_algebraic_slip_model:
+
+enable_algebraic_slip_model
+===========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enable_algebraic_slip_model.enable_algebraic_slip_model
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================   =================================
+
+Parent                                                                              Summary
+
+=======================================================   =================================
+:ref:`component_child <pre_processing_component_child>`   'child_object_type' of component.
+
+=======================================================   =================================
+

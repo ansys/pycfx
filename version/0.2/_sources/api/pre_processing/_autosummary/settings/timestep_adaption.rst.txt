@@ -1,0 +1,50 @@
+:orphan:
+
+.. _pre_processing_timestep_adaption:
+
+timestep_adaption
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.timestep_adaption.timestep_adaption
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================================   =================================================================================================
+
+Attribute                                                                                                                                                                             Summary
+
+=========================================================================================   =================================================================================================
+:ref:`option <pre_processing_option_81>`                                                                                                                      The 'Timestep Adaption' option.
+
+:ref:`maximum_timestep <pre_processing_maximum_timestep>`                                                                                                       'Maximum Timestep' parameter.
+
+:ref:`minimum_timestep <pre_processing_minimum_timestep>`                                                                                                       'Minimum Timestep' parameter.
+
+:ref:`target_maximum_coefficient_loops <pre_processing_target_maximum_coefficient_loops>`                                                       'Target Maximum Coefficient Loops' parameter.
+
+:ref:`target_minimum_coefficient_loops <pre_processing_target_minimum_coefficient_loops>`                                                       'Target Minimum Coefficient Loops' parameter.
+
+:ref:`timestep_decrease_factor <pre_processing_timestep_decrease_factor>`                                                                               'Timestep Decrease Factor' parameter.
+
+:ref:`timestep_increase_factor <pre_processing_timestep_increase_factor>`                                                                               'Timestep Increase Factor' parameter.
+
+:ref:`courant_number <pre_processing_courant_number>`                                                                                  Courant number used for adaptive timestep calculation.
+
+:ref:`decreasing_relaxation_factor <pre_processing_decreasing_relaxation_factor>`           Used to under relax the timestep when using adaptive timestepping and the timestep is decreasing.
+
+:ref:`increasing_relaxation_factor <pre_processing_increasing_relaxation_factor>`                                          Used to under relax the timestep when using adaptive timestepping.
+
+=========================================================================================   =================================================================================================
+
+.. rubric:: Included in:
+
+=============================================   =============================================
+
+Parent                                                                                Summary
+
+=============================================   =============================================
+:ref:`time_steps <pre_processing_time_steps>`   Specifies the time steps for a transient run.
+
+=============================================   =============================================
+

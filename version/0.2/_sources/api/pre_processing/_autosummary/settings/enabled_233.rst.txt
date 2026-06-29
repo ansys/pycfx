@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_233:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_233.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================   =============================
+
+Parent                                                                                  Summary
+
+===============================================================   =============================
+:ref:`aspect_ratio_filter <pre_processing_aspect_ratio_filter>`   'ASPECT RATIO FILTER' object.
+
+===============================================================   =============================
+

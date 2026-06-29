@@ -1,0 +1,28 @@
+:orphan:
+
+.. _post_processing_legend:
+
+legend
+======
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.legend.legend
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`legend_child <post_processing_legend_child>`
+
+
+.. rubric:: Included in:
+
+========================================================   ===============================================================================================================================================
+
+Parent                                                                                                                                                                                             Summary
+
+========================================================   ===============================================================================================================================================
+:ref:`results <post_processing_results>`                                                                                                                         Encapsulates a CFX post-processing setup.
+
+:ref:`case_comparison <post_processing_case_comparison>`   This object contains information and settings for the comparison of two (for now) results files or timesteps. It is used by DATA READER object.
+
+========================================================   ===============================================================================================================================================
+

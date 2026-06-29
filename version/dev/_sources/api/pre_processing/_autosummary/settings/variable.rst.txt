@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_variable:
+
+variable
+========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.variable.variable
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`variable_child <pre_processing_variable_child>`
+
+
+.. rubric:: Included in:
+
+=====================================================================   ===============================================================================
+
+Parent                                                                                                                                          Summary
+
+=====================================================================   ===============================================================================
+:ref:`library <pre_processing_library>`                                 Stores common object descriptions for reference in the main problem definition.
+
+:ref:`equation_source_child <pre_processing_equation_source_child>`                                             'child_object_type' of equation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_1>`                                           'child_object_type' of equation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_3>`                                           'child_object_type' of equation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_4>`                                           'child_object_type' of equation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_6>`                                           'child_object_type' of equation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_7>`                                           'child_object_type' of equation_source.
+
+=====================================================================   ===============================================================================
+

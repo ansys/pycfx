@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_329:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_329.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================   =======================================
+
+Parent                                                                            Summary
+
+===============================================   =======================================
+:ref:`g_variance <pre_processing_g_variance_1>`   Sets initial conditions for G Variance.
+
+===============================================   =======================================
+

@@ -1,0 +1,39 @@
+:orphan:
+
+.. _pre_processing_visibility:
+
+visibility
+==========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.visibility.visibility
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================   ========================================
+
+Parent                                                                                                   Summary
+
+=====================================================================   ========================================
+:ref:`function_child <pre_processing_function_child>`                           'child_object_type' of function.
+
+:ref:`coordinate_frame_child <pre_processing_coordinate_frame_child>`   'child_object_type' of coordinate_frame.
+
+:ref:`user_surface_child <pre_processing_user_surface_child>`               'child_object_type' of user_surface.
+
+:ref:`user_line_child <pre_processing_user_line_child>`                        'child_object_type' of user_line.
+
+:ref:`user_line_cloud_child <pre_processing_user_line_cloud_child>`      'child_object_type' of user_line_cloud.
+
+:ref:`user_point_child <pre_processing_user_point_child>`                     'child_object_type' of user_point.
+
+:ref:`user_point_cloud_child <pre_processing_user_point_cloud_child>`   'child_object_type' of user_point_cloud.
+
+:ref:`boundary_contour <pre_processing_boundary_contour>`                             'BOUNDARY CONTOUR' object.
+
+:ref:`boundary_vector <pre_processing_boundary_vector>`                                'BOUNDARY VECTOR' object.
+
+:ref:`injection_region_child <pre_processing_injection_region_child>`   'child_object_type' of injection_region.
+
+=====================================================================   ========================================
+

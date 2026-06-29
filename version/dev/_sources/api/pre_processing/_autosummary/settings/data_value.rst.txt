@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_data_value:
+
+data_value
+==========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.data_value.data_value
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`data_value_child <pre_processing_data_value_child>`
+
+
+.. rubric:: Included in:
+
+=====================================================   ================================
+
+Parent                                                                           Summary
+
+=====================================================   ================================
+:ref:`function_child <pre_processing_function_child>`   'child_object_type' of function.
+
+=====================================================   ================================
+

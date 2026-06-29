@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_bubble_departure_temperature_1:
+
+bubble_departure_temperature
+============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.bubble_departure_temperature_1.bubble_departure_temperature
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================================   ============================================================================
+
+Attribute                                                                                                                                                Summary
+
+=================================================================================   ============================================================================
+:ref:`enabled <pre_processing_enabled_116>`                                                                      Enable the BUBBLE DEPARTURE TEMPERATURE object.
+
+:ref:`option <pre_processing_option_255>`                                                                             The 'Bubble Departure Temperature' option.
+
+:ref:`bubble_departure_temperature <pre_processing_bubble_departure_temperature>`          User defined bubble departure temperature for the wall boiling model.
+
+:ref:`bubble_superheat_fraction <pre_processing_bubble_superheat_fraction>`         User defined bubble departure superheat fraction for the wall boiling model.
+
+=================================================================================   ============================================================================
+
+.. rubric:: Included in:
+
+===============================================================   =================================
+
+Parent                                                                                      Summary
+
+===============================================================   =================================
+:ref:`wall_boiling_model <pre_processing_wall_boiling_model_1>`   Specifies the wall boiling model.
+
+===============================================================   =================================
+

@@ -1,0 +1,35 @@
+:orphan:
+
+.. _pre_processing_reference_pressure:
+
+reference_pressure
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.reference_pressure.reference_pressure
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   ==============================================================
+
+Parent                                                                                                                           Summary
+
+=======================================================================   ==============================================================
+:ref:`reference_state <pre_processing_reference_state>`                                         Sets the reference state for a material.
+
+:ref:`heating_value <pre_processing_heating_value_1>`                                                                     Heating value.
+
+:ref:`moisture_latent_heat <pre_processing_moisture_latent_heat>`                                                  Moisture latent heat.
+
+:ref:`heat_release <pre_processing_heat_release>`                               Holds heat release information for multiphase reactions.
+
+:ref:`pressure_dependency <pre_processing_pressure_dependency>`                        Pressure dependency for laminar burning velocity.
+
+:ref:`reference_pressure <pre_processing_reference_pressure_1>`                               Sets the Reference Pressure in the Domain.
+
+:ref:`tube_reference_pressure <pre_processing_tube_reference_pressure>`   Sets the Reference Pressure for the tube fluids in the Domain.
+
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum>`                     Specifies conditions on Mass and Momentum at a boundary.
+
+=======================================================================   ==============================================================
+

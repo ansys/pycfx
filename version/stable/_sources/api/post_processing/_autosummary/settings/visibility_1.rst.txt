@@ -1,0 +1,39 @@
+:orphan:
+
+.. _post_processing_visibility_1:
+
+visibility
+==========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.visibility_1.visibility
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+================================================================================   =============================================
+
+Parent                                                                                                                   Summary
+
+================================================================================   =============================================
+:ref:`particle_cloud_child <post_processing_particle_cloud_child>`                        'child_object_type' of particle_cloud.
+
+:ref:`subdomain_child <post_processing_subdomain_child>`                                       'child_object_type' of subdomain.
+
+:ref:`primitive2d_child <post_processing_primitive2d_child>`                                 'child_object_type' of primitive2d.
+
+:ref:`primitive3d_child <post_processing_primitive3d_child>`                                 'child_object_type' of primitive3d.
+
+:ref:`composite_child <post_processing_composite_child>`                                       'child_object_type' of composite.
+
+:ref:`composite_periodic_child <post_processing_composite_periodic_child>`            'child_object_type' of composite_periodic.
+
+:ref:`composite_inter_block_child <post_processing_composite_inter_block_child>`   'child_object_type' of composite_inter_block.
+
+:ref:`boundary_child <post_processing_boundary_child>`                                          'child_object_type' of boundary.
+
+:ref:`injection_region_child <post_processing_injection_region_child>`                  'child_object_type' of injection_region.
+
+:ref:`res_surface_child <post_processing_res_surface_child>`                                 'child_object_type' of res_surface.
+
+================================================================================   =============================================
+

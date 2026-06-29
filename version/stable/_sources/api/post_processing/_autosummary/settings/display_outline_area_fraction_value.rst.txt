@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_display_outline_area_fraction_value:
+
+display_outline_area_fraction_value
+===================================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.display_outline_area_fraction_value.display_outline_area_fraction_value
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+======================================================================   ========================================
+
+Parent                                                                                                    Summary
+
+======================================================================   ========================================
+:ref:`injection_region_child <post_processing_injection_region_child>`   'child_object_type' of injection_region.
+
+======================================================================   ========================================
+

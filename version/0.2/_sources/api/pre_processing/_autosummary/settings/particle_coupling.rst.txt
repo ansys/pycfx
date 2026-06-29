@@ -1,0 +1,31 @@
+:orphan:
+
+.. _pre_processing_particle_coupling:
+
+particle_coupling
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.particle_coupling.particle_coupling
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================================   ===================================================================================================
+
+Parent                                                                                                                                                                          Summary
+
+=================================================================================   ===================================================================================================
+:ref:`fluid_pair_child <pre_processing_fluid_pair_child>`                                                                                            'child_object_type' of fluid_pair.
+
+:ref:`virtual_mass_force <pre_processing_virtual_mass_force>`                        Specifies that virtual mass force should be included in momentum transfer models for a fluid pair.
+
+:ref:`pressure_gradient_force <pre_processing_pressure_gradient_force>`             Specifies that pressure mass force should be included in momentum transfer models for a fluid pair.
+
+:ref:`particle_user_source <pre_processing_particle_user_source>`                                                                                        'PARTICLE USER SOURCE' object.
+
+:ref:`interphase_thermal_radiation <pre_processing_interphase_thermal_radiation>`                                                     Specifies radiative heat transfer between fluids.
+
+:ref:`thermal_radiation <pre_processing_thermal_radiation>`                                                                     Sets the conditions on Thermal Radiation at a boundary.
+
+=================================================================================   ===================================================================================================
+

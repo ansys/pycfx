@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_subdomain:
+
+subdomain
+=========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.subdomain.subdomain
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`subdomain_child <pre_processing_subdomain_child>`
+
+
+.. rubric:: Included in:
+
+=================================================   ==============================
+
+Parent                                                                     Summary
+
+=================================================   ==============================
+:ref:`domain_child <pre_processing_domain_child>`   'child_object_type' of domain.
+
+=================================================   ==============================
+

@@ -1,0 +1,26 @@
+:orphan:
+
+.. _post_processing_streamline:
+
+streamline
+==========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.streamline.streamline
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`streamline_child <post_processing_streamline_child>`
+
+
+.. rubric:: Included in:
+
+========================================   =========================================
+
+Parent                                                                       Summary
+
+========================================   =========================================
+:ref:`results <post_processing_results>`   Encapsulates a CFX post-processing setup.
+
+========================================   =========================================
+

@@ -1,0 +1,28 @@
+:orphan:
+
+.. _post_processing_variable_name_map:
+
+variable_name_map
+=================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.variable_name_map.variable_name_map
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`variable_name_map_child <post_processing_variable_name_map_child>`
+
+
+.. rubric:: Included in:
+
+==========================================================================   ==========================================
+
+Parent                                                                                                          Summary
+
+==========================================================================   ==========================================
+:ref:`results <post_processing_results>`                                      Encapsulates a CFX post-processing setup.
+
+:ref:`external_names_map_child <post_processing_external_names_map_child>`   'child_object_type' of external_names_map.
+
+==========================================================================   ==========================================
+

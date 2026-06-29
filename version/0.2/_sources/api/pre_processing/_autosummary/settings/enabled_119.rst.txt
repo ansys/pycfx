@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_119:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_119.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================   ====================================================================================
+
+Parent                                                                                                                                           Summary
+
+=================================================================   ====================================================================================
+:ref:`bubble_waiting_time <pre_processing_bubble_waiting_time_1>`   Specifies waiting time between release of bubble to start of next bubble nucleation.
+
+=================================================================   ====================================================================================
+

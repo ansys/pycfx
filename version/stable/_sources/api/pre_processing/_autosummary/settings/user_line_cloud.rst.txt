@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_user_line_cloud:
+
+user_line_cloud
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.user_line_cloud.user_line_cloud
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`user_line_cloud_child <pre_processing_user_line_cloud_child>`
+
+
+.. rubric:: Included in:
+
+===========================================================================   ========================================
+
+Parent                                                                                                         Summary
+
+===========================================================================   ========================================
+:ref:`user_location_definitions <pre_processing_user_location_definitions>`   Contains definitions for user locations.
+
+===========================================================================   ========================================
+

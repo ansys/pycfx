@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_method_name:
+
+method_name
+===========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.method_name.method_name
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==========================================================================   ==========================================
+
+Parent                                                                                                          Summary
+
+==========================================================================   ==========================================
+:ref:`vortex_core_region_child <post_processing_vortex_core_region_child>`   'child_object_type' of vortex_core_region.
+
+==========================================================================   ==========================================
+

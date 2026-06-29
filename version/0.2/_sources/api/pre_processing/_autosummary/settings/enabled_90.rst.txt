@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_90:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_90.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   =========================================================================
+
+Parent                                                                                                                                      Summary
+
+=======================================================================   =========================================================================
+:ref:`g_variance_coefficients <pre_processing_g_variance_coefficients>`   Controls model coefficients for the G Scalar Variance transport equation.
+
+=======================================================================   =========================================================================
+

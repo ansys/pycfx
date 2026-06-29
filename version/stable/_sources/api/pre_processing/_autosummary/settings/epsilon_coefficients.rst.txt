@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_epsilon_coefficients:
+
+epsilon_coefficients
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.epsilon_coefficients.epsilon_coefficients
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================   =============================================================
+
+Attribute                                                                                                                       Summary
+
+=======================================================================   =============================================================
+:ref:`enabled <pre_processing_enabled_57>`                                                      Enable the EPSILON COEFFICIENTS object.
+
+:ref:`ce1_coefficient <pre_processing_ce1_coefficient>`                                               Ce1 Epsilon equation coefficient.
+
+:ref:`ce2_coefficient <pre_processing_ce2_coefficient>`                                               Ce2 Epsilon equation coefficient.
+
+:ref:`turbulent_flux_closure <pre_processing_turbulent_flux_closure_1>`   Controls the turbulent flux closure for a transport equation.
+
+=======================================================================   =============================================================
+
+.. rubric:: Included in:
+
+===========================================================   ===========================================================================
+
+Parent                                                                                                                            Summary
+
+===========================================================   ===========================================================================
+:ref:`turbulence_model <pre_processing_turbulence_model>`     Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+:ref:`turbulence_model <pre_processing_turbulence_model_1>`   Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+===========================================================   ===========================================================================
+

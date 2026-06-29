@@ -1,0 +1,72 @@
+:orphan:
+
+.. _pre_processing_boundary_conditions:
+
+boundary_conditions
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.boundary_conditions.boundary_conditions
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================   =================================================================================================
+
+Attribute                                                                                                                                                         Summary
+
+=====================================================================   =================================================================================================
+:ref:`flow_regime <pre_processing_flow_regime>`                                                                           States if a boundary is subsonic or supersonic.
+
+:ref:`mesh_motion <pre_processing_mesh_motion>`                                          Defines the motion of a mesh boundary. NOTE - Not fully supported by the solver.
+
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum>`                                                      Specifies conditions on Mass and Momentum at a boundary.
+
+:ref:`pressure_averaging <pre_processing_pressure_averaging>`                                                Controls details of how pressure is averaged over an outlet.
+
+:ref:`flow_direction <pre_processing_flow_direction>`                                                                  Sets the velocity direction imposed at a boundary.
+
+:ref:`turbulence <pre_processing_turbulence>`                                                                                Sets conditions on turbulence at a boundary.
+
+:ref:`wall_roughness <pre_processing_wall_roughness>`                                                                   Sets wall roughness on a wall boundary condition.
+
+:ref:`heat_transfer <pre_processing_heat_transfer>`                                                                     Specifies heat transfer conditions at a boundary.
+
+:ref:`thermal_radiation <pre_processing_thermal_radiation>`                                                       Sets the conditions on Thermal Radiation at a boundary.
+
+:ref:`additional_variable <pre_processing_additional_variable_5>`                                                            A container for Additional Variable objects.
+
+:ref:`component <pre_processing_component_2>`                                                                                          A container for Component objects.
+
+:ref:`soot <pre_processing_soot>`                                                                                                     Defines the initialization of Soot.
+
+:ref:`reaction_progress <pre_processing_reaction_progress_1>`                                               Defines the initialization of the reaction progress variable.
+
+:ref:`flame_surface_density <pre_processing_flame_surface_density_1>`                                      Sets boundary or initial conditions for Flame Surface Density.
+
+:ref:`g_scalar <pre_processing_g_scalar_1>`                                                                             Sets boundary or initial conditions for G Scalar.
+
+:ref:`mixture <pre_processing_mixture>`                                                                             Specification of Fuel/Oxidiser mixture at a boundary.
+
+:ref:`solid_motion_advection <pre_processing_solid_motion_advection>`                                                    Defines the Motion Advection Term on a boundary.
+
+:ref:`electric_field <pre_processing_electric_field>`                                                                                            'ELECTRIC FIELD' object.
+
+:ref:`magnetic_field <pre_processing_magnetic_field>`                                                                                            'MAGNETIC FIELD' object.
+
+:ref:`wall_contact_model <pre_processing_wall_contact_model>`           Specifies model for fluid-wall contact and bulk boundary conditions at walls in multi-fluid flow.
+
+:ref:`loss_coefficient <pre_processing_loss_coefficient_1>`                                                          Defines the Loss Coefficient at an opening boundary.
+
+=====================================================================   =================================================================================================
+
+.. rubric:: Included in:
+
+=====================================================   ================================
+
+Parent                                                                           Summary
+
+=====================================================   ================================
+:ref:`boundary_child <pre_processing_boundary_child>`   'child_object_type' of boundary.
+
+=====================================================   ================================
+

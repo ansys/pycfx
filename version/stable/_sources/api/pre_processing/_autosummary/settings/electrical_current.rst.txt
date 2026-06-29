@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_electrical_current:
+
+electrical_current
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.electrical_current.electrical_current
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================   ========================
+
+Parent                                                                   Summary
+
+=====================================================   ========================
+:ref:`electric_field <pre_processing_electric_field>`   'ELECTRIC FIELD' object.
+
+=====================================================   ========================
+

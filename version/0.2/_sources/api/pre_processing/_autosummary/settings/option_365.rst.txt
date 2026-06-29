@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_option_365:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_365.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================   ======================================================
+
+Parent                                                                                                                 Summary
+
+=====================================================================   ======================================================
+:ref:`backup_data_retention <pre_processing_backup_data_retention>`     Controls how scheduled backup files are deleted/saved.
+
+:ref:`backup_data_retention <pre_processing_backup_data_retention_1>`   Controls how scheduled backup files are deleted/saved.
+
+=====================================================================   ======================================================
+

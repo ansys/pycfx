@@ -1,0 +1,42 @@
+:orphan:
+
+.. _pre_processing_interphase_thermal_radiation:
+
+interphase_thermal_radiation
+============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.interphase_thermal_radiation.interphase_thermal_radiation
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================   ==========================================
+
+Attribute                                                                                          Summary
+
+=============================================================   ==========================================
+:ref:`option <pre_processing_option_202>`                       The 'Interphase Thermal Radiation' option.
+
+:ref:`emissivity <pre_processing_emissivity>`                                          Surface Emissivity.
+
+:ref:`base_emissivity <pre_processing_base_emissivity>`               Surface Emissivity of Bulk Material.
+
+:ref:`blend_emissivity <pre_processing_blend_emissivity>`        Surface Emissivity of Reference Material.
+
+:ref:`reference_material <pre_processing_reference_material>`                          Reference material.
+
+:ref:`particle_coupling <pre_processing_particle_coupling>`                 'Particle Coupling' parameter.
+
+=============================================================   ==========================================
+
+.. rubric:: Included in:
+
+=========================================================   ==================================
+
+Parent                                                                                 Summary
+
+=========================================================   ==================================
+:ref:`fluid_pair_child <pre_processing_fluid_pair_child>`   'child_object_type' of fluid_pair.
+
+=========================================================   ==================================
+

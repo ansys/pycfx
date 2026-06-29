@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_compressible_transient_option:
+
+compressible_transient_option
+=============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.compressible_transient_option.compressible_transient_option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================================   =======================================================================
+
+Parent                                                                                                                                          Summary
+
+=============================================================================   =======================================================================
+:ref:`pressure_level_information <pre_processing_pressure_level_information>`   Sets the pressure level and location if not set by boundary conditions.
+
+=============================================================================   =======================================================================
+

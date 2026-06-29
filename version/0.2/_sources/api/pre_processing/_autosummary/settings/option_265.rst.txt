@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_option_265:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_265.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================   ================================================================================
+
+Parent                                                                                                                       Summary
+
+=================================================   ================================================================================
+:ref:`mesh_motion <pre_processing_mesh_motion>`     Defines the motion of a mesh boundary. NOTE - Not fully supported by the solver.
+
+:ref:`mesh_motion <pre_processing_mesh_motion_1>`   Defines the motion of a mesh boundary. NOTE - Not fully supported by the solver.
+
+:ref:`mesh_motion <pre_processing_mesh_motion_2>`   Defines the motion of a mesh boundary. NOTE - Not fully supported by the solver.
+
+=================================================   ================================================================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_volume_fraction_coupling:
+
+volume_fraction_coupling
+========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.volume_fraction_coupling.volume_fraction_coupling
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ==========================================
+
+Parent                                                                                             Summary
+
+=============================================================   ==========================================
+:ref:`multiphase_control <pre_processing_multiphase_control>`   Defines multiphase solver control details.
+
+=============================================================   ==========================================
+

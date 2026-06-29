@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_iate_sources_child:
+
+iate_sources_child
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.iate_sources_child.iate_sources_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================================================   =====================================================================================
+
+Attribute                                                                                                                                                                       Summary
+
+===============================================================================================   =====================================================================================
+:ref:`option <pre_processing_option_212>`                                                                                                                    The 'Iate Sources' option.
+
+:ref:`interfacial_area_source <pre_processing_interfacial_area_source>`                                                                                           Value of IATE source.
+
+:ref:`dilatation_source_coefficient <pre_processing_dilatation_source_coefficient>`                                                               Value of IATE dilatation source coef.
+
+:ref:`dilating_fluid <pre_processing_dilating_fluid>`                                             Specifies which fluid of a multiphase case provides a dilatation source contribution.
+
+:ref:`interfacial_area_source_coefficient <pre_processing_interfacial_area_source_coefficient>`                                         Value of IATE source linearization coefficient.
+
+===============================================================================================   =====================================================================================
+
+.. rubric:: Included in:
+
+=================================================   =====================================
+
+Parent                                                                            Summary
+
+=================================================   =====================================
+:ref:`iate_sources <pre_processing_iate_sources>`   A container for Iate Sources objects.
+
+=================================================   =====================================
+

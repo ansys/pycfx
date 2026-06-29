@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_59:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_59.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   =================================================================================
+
+Parent                                                                                                                                    Summary
+
+=============================================================   =================================================================================
+:ref:`omega_coefficients <pre_processing_omega_coefficients>`   Controls model coefficients for the Turbulence Eddy Frequency transport equation.
+
+=============================================================   =================================================================================
+

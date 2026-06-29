@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_particle_mass_flow_rate_1:
+
+particle_mass_flow_rate
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.particle_mass_flow_rate_1.particle_mass_flow_rate
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================   ===========================
+
+Attribute                                                                   Summary
+
+=====================================================   ===========================
+:ref:`mass_flow_rate <pre_processing_mass_flow_rate>`   'Mass Flow Rate' parameter.
+
+=====================================================   ===========================
+
+.. rubric:: Included in:
+
+=================================================================   =============================================================
+
+Parent                                                                                                                    Summary
+
+=================================================================   =============================================================
+:ref:`boundary_conditions <pre_processing_boundary_conditions_2>`   Specifies boundary conditions for all equations being solved.
+
+:ref:`boundary_conditions <pre_processing_boundary_conditions_6>`   Specifies boundary conditions for all equations being solved.
+
+=================================================================   =============================================================
+

@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_reflection_mach_scale:
+
+reflection_mach_scale
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.reflection_mach_scale.reflection_mach_scale
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================   =================================================================
+
+Parent                                                                                                                            Summary
+
+=====================================================================   =================================================================
+:ref:`acoustic_reflectivity <pre_processing_acoustic_reflectivity>`     Specifies acoustic reflection attributes of a boundary condition.
+
+:ref:`acoustic_reflectivity <pre_processing_acoustic_reflectivity_1>`   Specifies acoustic reflection attributes of a boundary condition.
+
+=====================================================================   =================================================================
+

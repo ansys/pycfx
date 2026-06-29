@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_interval_definition:
+
+interval_definition
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.interval_definition.interval_definition
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================   =================================
+
+Attribute                                                                                     Summary
+
+=================================================================   =================================
+:ref:`option <pre_processing_option_415>`                           The 'Interval Definition' option.
+
+:ref:`number_of_periods <pre_processing_number_of_periods>`            'Number of Periods' parameter.
+
+:ref:`time <pre_processing_time>`                                                   'Time' parameter.
+
+:ref:`number_of_timesteps <pre_processing_number_of_timesteps>`      'Number of Timesteps' parameter.
+
+:ref:`number_of_iterations <pre_processing_number_of_iterations>`   'Number of Iterations' parameter.
+
+=================================================================   =================================
+
+.. rubric:: Included in:
+
+=============================================================   ================================================
+
+Parent                                                                                                   Summary
+
+=============================================================   ================================================
+:ref:`monitor_statistics <pre_processing_monitor_statistics>`   Defines the transient statistics of the monitor.
+
+=============================================================   ================================================
+

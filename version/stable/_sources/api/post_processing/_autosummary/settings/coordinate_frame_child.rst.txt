@@ -1,0 +1,63 @@
+:orphan:
+
+.. _post_processing_coordinate_frame_child:
+
+coordinate_frame_child
+======================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.coordinate_frame_child.coordinate_frame_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+====================================================================   =====================================================================================================
+
+Attribute                                                                                                                                                            Summary
+
+====================================================================   =====================================================================================================
+:ref:`axis_3_point <post_processing_axis_3_point>`                                                          The location of the point in the Z axis of the coordinate frame.
+
+:ref:`coord_frame_type <post_processing_coord_frame_type>`                                                        The orthonormal space used to define the coordinate frame.
+
+:ref:`option <post_processing_option>`                                                                                                                       'option' child.
+
+:ref:`origin_point <post_processing_origin_point>`                                                                              The location of the coordinate frame origin.
+
+:ref:`plane_13_point <post_processing_plane_13_point>`                                                  The location of the a point in the XZ plane of the coordinate frame.
+
+:ref:`reference_coord_frame <post_processing_reference_coord_frame>`   The Coordinate Frame in which the physical locations used to set this coordinate frame are described.
+
+:ref:`symbol_size <post_processing_symbol_size>`                                                                               A scaling factor for all symbols in the plot.
+
+:ref:`visibility <post_processing_visibility>`                                  Toggles the visibility of this graphics object in the viewer. THIS PARAMETER IS DEPRECATED!.
+
+====================================================================   =====================================================================================================
+
+.. rubric:: Methods
+
+============================================   ========================================
+
+Method                                                                          Summary
+
+============================================   ========================================
+:ref:`hide <post_processing_hide>`                  Hide the object in a given view(s).
+
+:ref:`show <post_processing_show>`                  Show the object in a given view(s).
+
+:ref:`suspend <post_processing_suspend>`       Suspend immediate update for the object.
+
+:ref:`unsuspend <post_processing_unsuspend>`   Restore immediate update for the object.
+
+============================================   ========================================
+
+.. rubric:: Included in:
+
+==========================================================   =========================
+
+Parent                                                                         Summary
+
+==========================================================   =========================
+:ref:`coordinate_frame <post_processing_coordinate_frame>`   'coordinate_frame' child.
+
+==========================================================   =========================
+

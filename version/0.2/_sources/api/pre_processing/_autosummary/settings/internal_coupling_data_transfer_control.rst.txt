@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_internal_coupling_data_transfer_control:
+
+internal_coupling_data_transfer_control
+=======================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.internal_coupling_data_transfer_control.internal_coupling_data_transfer_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================================   ==========================================================
+
+Attribute                                                                                                                                        Summary
+
+===========================================================================================   ==========================================================
+:ref:`enabled <pre_processing_enabled_198>`                                                   Enable the INTERNAL COUPLING DATA TRANSFER CONTROL object.
+
+:ref:`mesh_motion_data_transfer_control <pre_processing_mesh_motion_data_transfer_control>`                  'MESH MOTION DATA TRANSFER CONTROL' object.
+
+:ref:`force_data_transfer_control <pre_processing_force_data_transfer_control>`                                    'FORCE DATA TRANSFER CONTROL' object.
+
+:ref:`torque_data_transfer_control <pre_processing_torque_data_transfer_control>`                                 'TORQUE DATA TRANSFER CONTROL' object.
+
+===========================================================================================   ==========================================================
+
+.. rubric:: Included in:
+
+=============================================================================================   =======================================
+
+Parent                                                                                                                          Summary
+
+=============================================================================================   =======================================
+:ref:`rigid_body_solver_coupling_control <pre_processing_rigid_body_solver_coupling_control>`   Control the rigid body solver coupling.
+
+=============================================================================================   =======================================
+
