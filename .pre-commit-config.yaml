@@ -63,7 +63,7 @@ repos:
       - id: check-yaml
 
   - repo: https://github.com/PyCQA/pylint
-    rev: 88e1ab7545a4af4aea15c305a154c164a95ab842  # frozen: v4.0.5
+    rev: 8a396357098337ba8be714fffdf2d00947a9778c  # frozen: v4.0.6
     hooks:
       - id: pylint
         args: ["--reports", "n", "--score", "n", "--rcfile=pylintrc"]
