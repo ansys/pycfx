@@ -382,7 +382,7 @@ def check_boundary_position(pypre, boundary, min_x, max_x, min_y, max_y, min_z, 
     min_x, max_x, min_y, max_y, min_z, max_z : str
         The expected minimum and maximum coordinates of the boundary.
     area : str | None
-        Optional expected boundary area (e.g. "2.83 [m^2]"). If None, defaults to the original 
+        Optional expected boundary area (e.g. "2.83 [m^2]"). If None, defaults to the original
         area of in1 ("0.71 [m^2]").
     """
 
