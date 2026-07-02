@@ -368,7 +368,7 @@ END
     }
 
 
-def check_boundary_position(pypre, boundary, minX, maxX, minY, maxY, minZ, maxZ, area=None):
+def check_boundary_position(pypre, boundary, min_x, max_x, min_y, max_y, min_z, max_z, area=None):
     """
     Check the position of a boundary in the mesh. It is assumed that the boundary is based
     on "in1" or a copy of "in1", so that the stats on numbers of mesh elements match.
@@ -379,20 +379,23 @@ def check_boundary_position(pypre, boundary, minX, maxX, minY, maxY, minZ, maxZ,
         The pre-processing object.
     boundary : str
         The name of the boundary to check.
-    minX, maxX, minY, maxY, minZ, maxZ : str
+    min_x, max_x, min_y, max_y, min_z, max_z : str
         The expected minimum and maximum coordinates of the boundary.
+    area : str | None
+        Optional expected boundary area (e.g. "2.83 [m^2]"). If None, defaults to the original 
+        area of in1 ("0.71 [m^2]").
     """
 
     expected_stats = {
         "Area": "0.71 [m^2]",
         "Elements": 14,
         "Maximum Edge Length Ratio": 2.76,
-        "Maximum X": maxX,
-        "Maximum Y": maxY,
-        "Maximum Z": maxZ,
-        "Minimum X": minX,
-        "Minimum Y": minY,
-        "Minimum Z": minZ,
+        "Maximum X": max_x,
+        "Maximum Y": max_y,
+        "Maximum Z": max_z,
+        "Minimum X": min_x,
+        "Minimum Y": min_y,
+        "Minimum Z": min_z,
         "Nodes": 12,
         "Quadrilaterals": 0,
         "Triangles": 14,
@@ -411,6 +414,7 @@ def check_boundary_position(pypre, boundary, minX, maxX, minY, maxY, minZ, maxZ,
 
 
 def test_mesh_transformation(pre_load_static_mixer_case: PreProcessing, pytestconfig):
+    """Test mesh transformations performed via transform_mesh()."""
 
     pypre = pre_load_static_mixer_case
 
