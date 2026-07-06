@@ -59,6 +59,6 @@ def test_unsuccessful_pre_connection():
 
 
 def test_unsuccessful_post_connection():
-    # start-timeout is intentionally provided to be 1s for the connection to fail
+    # start-timeout is intentionally provided to be 0s for the connection to fail
     with pytest.raises(Exception):
-        pycfx.PostProcessing.from_install(start_timeout=1)
+        pycfx.PostProcessing.from_install(start_timeout=0)
