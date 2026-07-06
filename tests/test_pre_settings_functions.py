@@ -412,16 +412,29 @@ def test_function_data(pypre: PreProcessing, pytestconfig, capsys):
             "mode_shape_definitions",
         ]
 
-    assert pypre.file.get_active_command_names() == [
-        "close_case",
-        "export_ccl",
-        "import_mesh",
-        "new_case",
-        "open_case",
-        "save_case",
-        "save_picture",
-        "write_solver_input_file",
-    ]
+    if pypre.get_cfx_version() > CFXVersion.v261:
+        assert pypre.file.get_active_command_names() == [
+            "close_case",
+            "export_ccl",
+            "import_mesh",
+            "new_case",
+            "open_case",
+            "save_case",
+            "save_picture",
+            "undo",
+            "write_solver_input_file",
+        ]
+    else:
+        assert pypre.file.get_active_command_names() == [
+            "close_case",
+            "export_ccl",
+            "import_mesh",
+            "new_case",
+            "open_case",
+            "save_case",
+            "save_picture",
+            "write_solver_input_file",
+        ]
 
     assert pypre.setup.library.get_active_query_names() == ["get_physics_messages"]
 
