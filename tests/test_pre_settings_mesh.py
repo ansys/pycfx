@@ -137,13 +137,11 @@ def test_mesh_objects(pre_load_static_mixer_case: PreProcessing, pytestconfig):
     assert mesh2_file_path.endswith("data/StaticMixer.def")
 
     param_state = pypre.setup.mesh["MeshFromDefFile"].file_path.get_state()
-    assert len(param_state) == 1
-    param_state_file_path = param_state[0].replace("\\", "/")
+    param_state_file_path = param_state.replace("\\", "/")
     assert param_state_file_path.endswith("data/StaticMixer.def")
 
     param_value = pypre.setup.mesh["MeshFromDefFile"].file_path()
-    assert len(param_value) == 1
-    param_value_file_path = param_value[0].replace("\\", "/")
+    param_value_file_path = param_value.replace("\\", "/")
     assert param_value_file_path.endswith("data/StaticMixer.def")
 
     try:
@@ -368,3 +366,222 @@ END
         "Quadrilaterals": 0,
         "Triangles": 20,
     }
+
+
+def check_boundary_position(pypre, boundary, min_x, max_x, min_y, max_y, min_z, max_z, area=None):
+    """
+    Check the position of a boundary in the mesh. It is assumed that the boundary is based
+    on "in1" or a copy of "in1", so that the stats on numbers of mesh elements match.
+
+    Parameters
+    ----------
+    pypre : PreProcessing
+        The pre-processing object.
+    boundary : str
+        The name of the boundary to check.
+    min_x, max_x, min_y, max_y, min_z, max_z : str
+        The expected minimum and maximum coordinates of the boundary.
+    area : str | None
+        Optional expected boundary area (e.g. "2.83 [m^2]"). If None, defaults to the original
+        area of in1 ("0.71 [m^2]").
+    """
+
+    expected_stats = {
+        "Area": "0.71 [m^2]",
+        "Elements": 14,
+        "Maximum Edge Length Ratio": 2.76,
+        "Maximum X": max_x,
+        "Maximum Y": max_y,
+        "Maximum Z": max_z,
+        "Minimum X": min_x,
+        "Minimum Y": min_y,
+        "Minimum Z": min_z,
+        "Nodes": 12,
+        "Quadrilaterals": 0,
+        "Triangles": 14,
+    }
+    if area is not None:
+        expected_stats["Area"] = area
+    assert (
+        _round_mesh_stats(
+            pypre.setup.flow["Flow Analysis 1"]
+            .domain["Default Domain"]
+            .boundary[boundary]
+            .get_mesh_statistics()
+        )
+        == expected_stats
+    )
+
+
+def test_mesh_transformation(pre_load_static_mixer_case: PreProcessing, pytestconfig):
+    """Test mesh transformations performed via transform_mesh()."""
+
+    pypre = pre_load_static_mixer_case
+
+    if pypre.get_cfx_version() < CFXVersion.v271:
+        pytest.skip("Mesh objects are not supported in Release 26.1 and earlier.")
+
+    original_volume_stats = _round_mesh_stats(
+        pypre.setup.mesh["StaticMixerMesh"].get_mesh_statistics()
+    )
+    original_in1_stats = _round_mesh_stats(
+        pypre.setup.flow["Flow Analysis 1"]
+        .domain["Default Domain"]
+        .boundary["in1"]
+        .get_mesh_statistics()
+    )
+
+    # Default transform (no change)
+    pypre.setup.mesh["StaticMixerMesh"].transform_mesh()
+    assert (
+        _round_mesh_stats(pypre.setup.mesh["StaticMixerMesh"].get_mesh_statistics())
+        == original_volume_stats
+    )
+    assert (
+        _round_mesh_stats(
+            pypre.setup.flow["Flow Analysis 1"]
+            .domain["Default Domain"]
+            .boundary["in1"]
+            .get_mesh_statistics()
+        )
+        == original_in1_stats
+    )
+
+    pypre.setup.mesh["StaticMixerMesh"].transform_mesh(
+        option="Reflection",
+        reflection_option="XY Plane",
+    )
+    check_boundary_position(
+        pypre, "in1", "-1.5 [m]", "-0.5 [m]", "-3.0 [m]", "-3.0 [m]", "-1.5 [m]", "-0.5 [m]"
+    )
+    pypre.file.undo()
+
+    # Check that the undo has worked
+    assert (
+        _round_mesh_stats(
+            pypre.setup.flow["Flow Analysis 1"]
+            .domain["Default Domain"]
+            .boundary["in1"]
+            .get_mesh_statistics()
+        )
+        == original_in1_stats
+    )
+
+    pypre.setup.mesh["StaticMixerMesh"].transform_mesh(
+        option="Reflection",
+        reflection_option="XY Plane",
+        z="2.0 [m]",
+        reflection_method="Copy (Keep Original)",
+    )
+    check_boundary_position(
+        pypre, "in1", "-1.5 [m]", "-0.5 [m]", "-3.0 [m]", "-3.0 [m]", "0.5 [m]", "1.5 [m]"
+    )
+    # We can't yet check stats for individual regions, so create a boundary for "in1 2" in order
+    # to check its stats.
+    pypre.setup.flow["Flow Analysis 1"].domain["Default Domain"].boundary.create("in1 2")
+    pypre.setup.flow["Flow Analysis 1"].domain["Default Domain"].boundary[
+        "in1 2"
+    ].location = "in1 2"
+    check_boundary_position(
+        pypre, "in1 2", "-1.5 [m]", "-0.5 [m]", "-3.0 [m]", "-3.0 [m]", "2.5 [m]", "3.5 [m]"
+    )
+    pypre.file.undo()  # create boundary
+    pypre.file.undo()  # transform mesh
+
+    pypre.setup.mesh["StaticMixerMesh"].transform_mesh(
+        option="Reflection",
+        reflection_option="YZ Plane",
+        x="7000 [mm]",
+        reflection_method="Original (No Copy)",
+    )
+    check_boundary_position(
+        pypre, "in1", "14.5 [m]", "15.5 [m]", "-3.0 [m]", "-3.0 [m]", "0.5 [m]", "1.5 [m]"
+    )
+    pypre.file.undo()
+
+    pypre.setup.mesh["StaticMixerMesh"].transform_mesh(
+        option="Reflection",
+        reflection_option="YZ Plane",
+        x="7",
+        reflection_method="Original (No Copy)",
+    )
+    check_boundary_position(
+        pypre, "in1", "14.5 [m]", "15.5 [m]", "-3.0 [m]", "-3.0 [m]", "0.5 [m]", "1.5 [m]"
+    )
+    pypre.file.undo()
+
+    pypre.setup.mesh["StaticMixerMesh"].transform_mesh(
+        option="Scale",
+        scale_option="Uniform",
+        scale_origin="0 [m], 200 [cm], 0 [m]",
+        uniform_scale="2.0",
+    )
+    check_boundary_position(
+        pypre,
+        "in1",
+        "-3.0 [m]",
+        "-1.0 [m]",
+        "-8.0 [m]",
+        "-8.0 [m]",
+        "1.0 [m]",
+        "3.0 [m]",
+        area="2.83 [m^2]",
+    )
+    pypre.file.undo()
+
+    pypre.setup.mesh["StaticMixerMesh"].transform_mesh(
+        option="Translation",
+        translation_option="Deltas",
+        translation_deltas="3 [m], 400 [cm], 5",
+        use_multiple_copy=True,
+        number_of_copies=2,
+    )
+    check_boundary_position(
+        pypre, "in1", "-1.5 [m]", "-0.5 [m]", "-3.0 [m]", "-3.0 [m]", "0.5 [m]", "1.5 [m]"
+    )
+    pypre.setup.flow["Flow Analysis 1"].domain["Default Domain"].boundary.create("in1 2")
+    pypre.setup.flow["Flow Analysis 1"].domain["Default Domain"].boundary[
+        "in1 2"
+    ].location = "in1 2"
+    check_boundary_position(
+        pypre, "in1 2", "1.5 [m]", "2.5 [m]", "1.0 [m]", "1.0 [m]", "5.5 [m]", "6.5 [m]"
+    )
+    pypre.file.undo()  # create boundary
+    pypre.file.undo()  # transform mesh
+
+    pypre.setup.mesh["StaticMixerMesh"].transform_mesh(
+        option="Rotation",
+        rotation_option="Principal Axis",
+        principal_axis="Y",
+        rotation_angle_option="Specified",
+        rotation_angle="45 [deg]",
+        delete_original=True,
+        use_multiple_copy=False,
+    )
+    check_boundary_position(
+        pypre, "in1", "-0.5 [m]", "0.5 [m]", "-3.0 [m]", "-3.0 [m]", "0.91 [m]", "1.91 [m]"
+    )
+    pypre.file.undo()
+
+    pypre.setup.mesh["StaticMixerMesh"].transform_mesh(
+        option="Turbo Rotation",
+        rotation_option="Rotation Axis",
+        rotation_axis_begin="0, 0, 4",
+        rotation_axis_end="0 [m], 1 [m], 4 [m]",
+        passages_per_mesh=1,
+        passages_to_model=2,
+        passages_in_360=4,
+        theta_offset="45 [deg]",
+    )
+    check_boundary_position(
+        pypre, "in1", "-3.33 [m]", "-2.33 [m]", "-3.0 [m]", "-3.0 [m]", "2.09 [m]", "3.09 [m]"
+    )
+    pypre.setup.flow["Flow Analysis 1"].domain["Default Domain"].boundary.create("in1 2")
+    pypre.setup.flow["Flow Analysis 1"].domain["Default Domain"].boundary[
+        "in1 2"
+    ].location = "in1 2"
+    check_boundary_position(
+        pypre, "in1 2", "-1.91 [m]", "-0.91 [m]", "-3.0 [m]", "-3.0 [m]", "6.33 [m]", "7.33 [m]"
+    )
+    pypre.file.undo()  # create boundary
+    pypre.file.undo()  # transform mesh
