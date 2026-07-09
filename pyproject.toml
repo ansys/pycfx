@@ -4,7 +4,7 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name = "ansys-cfx-core"
-version = "0.2.5"
+version = "0.2.6"
 description = "PyCFX is a Python wrapper for Ansys CFX, the gold standard CFD software for turbomachinery applications."
 requires-python = ">=3.10,<3.15"
 license = "MIT"
@@ -30,7 +30,7 @@ dependencies = [
     "ansys-units>=0.10.0",
     "beartype>=0.17",
     "docker>=7.1.0",
-    "grpcio-health-checking>=1.30.0",
+    "grpcio-health-checking>=1.30.0,<1.82.0",
     "importlib-metadata>=8.0.0",
     "platformdirs>=4.2.2",
     "protobuf>=3.20",

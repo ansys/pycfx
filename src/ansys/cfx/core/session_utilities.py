@@ -239,7 +239,7 @@ class SessionBase:
         Parameters
         ----------
         ip : str, default: None
-            IP address for connecting to an existing CFX instance. When ``None, theThe
+            IP address for connecting to an existing CFX instance. When ``None``,
             ``"127.0.0.1"`` is used. You can also use the ``PYCFX_CFX_IP=<ip>`` environment
             variable to set this parameter. The explicit value of ``ip`` takes precedence over the
             ``PYCFX_CFX_IP=<ip>`` environment variable.
