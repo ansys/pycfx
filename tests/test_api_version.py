@@ -19,8 +19,8 @@ from ansys.cfx.core.utils.api_version import (
 )
 from ansys.cfx.core.utils.cfx_version import CFXVersion
 
-
 # ---------- use_new_api ----------
+
 
 def test_use_new_api_true_for_new_engine(monkeypatch):
     monkeypatch.delenv("CFX_API_VERSION_1", raising=False)
@@ -38,6 +38,7 @@ def test_use_new_api_env_override(monkeypatch):
 
 
 # ---------- module getters ----------
+
 
 @pytest.mark.parametrize(
     "getter, expected_v1_suffix",
@@ -79,6 +80,7 @@ def test_get_health_check_modules_old(monkeypatch):
 
 
 # ---------- detect_engine_version ----------
+
 
 class _FakeRpcError(grpc.RpcError):
     def __init__(self, code):
