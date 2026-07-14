@@ -25,8 +25,12 @@ _PROBE_FALLBACK_STATUSES = {
 
 def _probe_one(channel, metadata, api_tag: str) -> CFXVersion | None:
     """Try ``InfoQuery('Engine Version')`` against the given proto version."""
-    pb2 = importlib.import_module(f"ansys.api.cfx.{api_tag}.engine_eval_pb2")
-    pb2_grpc = importlib.import_module(f"ansys.api.cfx.{api_tag}.engine_eval_pb2_grpc")
+    try:
+        pb2 = importlib.import_module(f"ansys.api.cfx.{api_tag}.engine_eval_pb2")
+        pb2_grpc = importlib.import_module(f"ansys.api.cfx.{api_tag}.engine_eval_pb2_grpc")
+    except (ModuleNotFoundError, ImportError) as exc:
+        logger.debug(f"Proto API modules for {api_tag} not available ({exc}); will fall back.")
+        return None
     stub = pb2_grpc.EngineEvalStub(channel)
     request = pb2.InfoQueryRequest(query="Engine Version")
     try:
