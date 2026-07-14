@@ -31,20 +31,19 @@ from ansys.cfx.core.services.interceptors import (
     ErrorStateInterceptor,
     TracingInterceptor,
 )
+from ansys.cfx.core.utils.api_version import get_engine_eval_modules
 from ansys.cfx.core.utils.cfx_version import CFXVersion
 
 
 class EngineEvalService:
-    """Wraps the EngineEval gRPC service of CFX.
-
-    Using the methods from the ``EngineEval`` class is recommended.
-    """
+    """Wraps the EngineEval gRPC service of CFX."""
 
     def __init__(
         self,
         channel: grpc.Channel,
         metadata: list[tuple[str, str]],
         cfx_error_state,
+        engine_version: CFXVersion,
     ) -> None:
         """Initialize an instance of the ``EngineEvalService`` class."""
         intercept_channel = grpc.intercept_channel(
@@ -53,17 +52,11 @@ class EngineEvalService:
             TracingInterceptor(),
             BatchInterceptor(),
         )
-        import os
 
-        if os.getenv("CFX_API_VERSION_1"):
-            from ansys.api.cfx.v1 import engine_eval_pb2 as EngineEvalProtoModule
-            from ansys.api.cfx.v1 import engine_eval_pb2_grpc as EngineEvalGrpcModule
-        else:
-            from ansys.api.cfx.v0 import engine_eval_pb2 as EngineEvalProtoModule
-            from ansys.api.cfx.v0 import engine_eval_pb2_grpc as EngineEvalGrpcModule
-
-        self.EngineEvalProtoModule = EngineEvalProtoModule
-        self.EngineEvalGrpcModule = EngineEvalGrpcModule
+        self.EngineEvalProtoModule, self.EngineEvalGrpcModule = get_engine_eval_modules(
+            engine_version
+        )
+        self.engine_version = engine_version
 
         self.__stub = self.EngineEvalGrpcModule.EngineEvalStub(intercept_channel)
         self.__metadata = metadata

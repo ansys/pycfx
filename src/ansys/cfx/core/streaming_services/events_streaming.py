@@ -28,6 +28,8 @@ from typing import Callable, List
 
 from ansys.cfx.core.exceptions import DisallowedValuesError, InvalidArgument
 from ansys.cfx.core.streaming_services.streaming import StreamingService
+from ansys.cfx.core.utils.api_version import get_events_modules
+from ansys.cfx.core.utils.cfx_version import CFXVersion
 
 event_logger = logging.getLogger("pycfx.server_event")
 
@@ -53,6 +55,7 @@ class EventsManager(StreamingService):
         session_events_service,
         cfx_error_state,
         session_id,
+        engine_version: CFXVersion,
     ):
         """Initialize an instance of the ``EventsManager`` class."""
         super().__init__(
@@ -61,12 +64,7 @@ class EventsManager(StreamingService):
             streaming_service=session_events_service,
         )
 
-        import os
-
-        if os.getenv("CFX_API_VERSION_1"):
-            from ansys.api.cfx.v1 import events_pb2 as EventsProtoModule
-        else:
-            from ansys.api.cfx.v0 import events_pb2 as EventsProtoModule
+        EventsProtoModule, _ = get_events_modules(engine_version)
         self.EventsProtoModule = EventsProtoModule
 
         self._cfx_error_state = cfx_error_state

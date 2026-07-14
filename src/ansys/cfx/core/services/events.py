@@ -27,6 +27,8 @@ from typing import List, Tuple
 import grpc
 
 from ansys.cfx.core.services.streaming import StreamingService
+from ansys.cfx.core.utils.api_version import get_events_modules
+from ansys.cfx.core.utils.cfx_version import CFXVersion
 
 
 class EventsService(StreamingService):
@@ -36,16 +38,10 @@ class EventsService(StreamingService):
         self,
         channel: grpc.Channel,
         metadata: List[Tuple[str, str]],
+        engine_version: CFXVersion,
     ):
         """Initialize an instance of the ``EventsService`` class."""
-
-        import os
-
-        if os.getenv("CFX_API_VERSION_1"):
-            from ansys.api.cfx.v1 import events_pb2_grpc as EventsGrpcModule
-        else:
-            from ansys.api.cfx.v0 import events_pb2_grpc as EventsGrpcModule
-
+        _, EventsGrpcModule = get_events_modules(engine_version)
         super().__init__(
             stub=EventsGrpcModule.EventsStub(channel),
             metadata=metadata,

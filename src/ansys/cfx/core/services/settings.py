@@ -34,6 +34,7 @@ from ansys.cfx.core.services.interceptors import (
     GrpcErrorInterceptor,
     TracingInterceptor,
 )
+from ansys.cfx.core.utils.api_version import get_settings_modules
 from ansys.cfx.core.utils.cfx_version import CFXVersion
 
 
@@ -43,6 +44,7 @@ class _SettingsServiceImpl:
         channel: grpc.Channel,
         metadata: list[tuple[str, str]],
         cfx_error_state,
+        engine_version: CFXVersion,
     ) -> None:
         intercept_channel = grpc.intercept_channel(
             channel,
@@ -52,17 +54,7 @@ class _SettingsServiceImpl:
             BatchInterceptor(),
         )
 
-        import os
-
-        if os.getenv("CFX_API_VERSION_1"):
-            from ansys.api.cfx.v1 import settings_pb2 as SettingsModule
-            from ansys.api.cfx.v1 import settings_pb2_grpc as SettingsGrpcModule
-        else:
-            from ansys.api.cfx.v0 import settings_pb2 as SettingsModule
-            from ansys.api.cfx.v0 import settings_pb2_grpc as SettingsGrpcModule
-
-        self.SettingsModule = SettingsModule
-        self.SettingsGrpcModule = SettingsGrpcModule
+        self.SettingsModule, self.SettingsGrpcModule = get_settings_modules(engine_version)
 
         self.__stub = self.SettingsGrpcModule.SettingsStub(intercept_channel)
         self.__metadata = metadata
@@ -163,11 +155,13 @@ def _get_request_instance_for_path(request_class, path: str) -> Any:
 class SettingsService:
     """Service for accessing and modifying CFX settings."""
 
-    def __init__(self, channel, metadata, engine_eval, cfx_error_state) -> None:
+    def __init__(self, channel, metadata, engine_eval, cfx_error_state, engine_version) -> None:
         """Initialize an instance of the ``SettingsService`` class."""
         self.engine_eval = engine_eval
-        self.engine_version = CFXVersion(self.engine_eval.get_engine_version())
-        self._service_impl = _SettingsServiceImpl(channel, metadata, cfx_error_state)
+        self.engine_version = engine_version
+        self._service_impl = _SettingsServiceImpl(
+            channel, metadata, cfx_error_state, engine_version
+        )
 
     @_trace
     def _set_state_from_value(self, state: "SettingsModule.Value", value: Any):
