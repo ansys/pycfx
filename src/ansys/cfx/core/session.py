@@ -106,14 +106,22 @@ class BaseSession:
         self.journal = Journal(self.engine_eval)
 
         self._batch_ops_service = service_creator("batch_ops").create(
-            cfx_connection._channel, cfx_connection._metadata
+            cfx_connection._channel,
+            cfx_connection._metadata,
+            cfx_connection.engine_version,
         )
 
         self._events_service = service_creator("events").create(
-            cfx_connection._channel, cfx_connection._metadata
+            cfx_connection._channel,
+            cfx_connection._metadata,
+            cfx_connection.engine_version,
         )
+
         self.events_manager = EventsManager(
-            self._events_service, self._error_state, cfx_connection._id
+            self._events_service,
+            self._error_state,
+            cfx_connection._id,
+            cfx_connection.engine_version,
         )
 
         self.events_manager.start()
@@ -123,6 +131,7 @@ class BaseSession:
             cfx_connection._metadata,
             self.engine_eval,
             self._error_state,
+            cfx_connection.engine_version,
         )
 
         self.health_check_service = cfx_connection.health_check_service

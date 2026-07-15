@@ -44,6 +44,7 @@ import psutil
 
 from ansys.cfx.core.services import service_creator
 from ansys.cfx.core.services.engine_eval import EngineEvalService
+from ansys.cfx.core.utils.api_version import detect_engine_version
 from ansys.cfx.core.utils.execution import timeout_exec, timeout_loop
 from ansys.platform.instancemanagement import Instance
 
@@ -488,11 +489,15 @@ class CFXConnection:
             )
         self._metadata: List[Tuple[str, str]] = [("password", password)] if password else []
 
+        # Resolve the engine/proto version first. The probe itself acts as a
+        # liveness check: if the server is unreachable, it raises a clear
+        # gRPC error before any other service is constructed.
+        self._engine_version = detect_engine_version(self._channel, self._metadata)
+
         self.health_check_service = service_creator("health_check").create(
-            self._channel, self._metadata, self._error_state
+            self._channel, self._metadata, self._error_state, self._engine_version
         )
-        # At this point, the server must be running. If the following check_health()
-        # throws, we should not proceed.
+        # Confirm the server is serving through the (now versioned) health API.
         self.health_check_service.check_health()
 
         self._id = f"session-{next(CFXConnection._id_iter)}"
@@ -503,7 +508,9 @@ class CFXConnection:
 
         # Move this service later.
         # Currently, required by launcher to connect to a running session.
-        self._engine_eval_service = self.create_grpc_service(EngineEvalService, self._error_state)
+        self._engine_eval_service = self.create_grpc_service(
+            EngineEvalService, self._error_state, self._engine_version
+        )
         self.engine_eval = service_creator("engine_eval").create(self._engine_eval_service)
 
         self._cleanup_on_exit = cleanup_on_exit
@@ -581,6 +588,11 @@ class CFXConnection:
             self._exit_event,
         )
         CFXConnection._monitor_thread.cbs.append(self._finalizer)
+
+    @property
+    def engine_version(self):
+        """Resolved CFX engine version (used to select proto API)."""
+        return self._engine_version
 
     @property
     def cfx_build_info(self) -> str:

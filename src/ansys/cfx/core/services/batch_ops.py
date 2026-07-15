@@ -31,6 +31,9 @@ import weakref
 from google.protobuf.message import Message
 import grpc
 
+from ansys.cfx.core.utils.api_version import get_batch_ops_modules
+from ansys.cfx.core.utils.cfx_version import CFXVersion
+
 _TBatchOps = TypeVar("_TBatchOps", bound="BatchOps")
 
 network_logger: logging.Logger = logging.getLogger("pycfx.networking")
@@ -43,6 +46,7 @@ class BatchOpsService:
         self,
         channel: grpc.Channel,
         metadata: list[tuple[str, str]],
+        engine_version: CFXVersion,
     ) -> None:
         """Initialize an instance of the ``BatchOpsService`` class."""
 
@@ -52,15 +56,8 @@ class BatchOpsService:
             channel,
             GrpcErrorInterceptor(),
         )
-        import os
 
-        if os.getenv("CFX_API_VERSION_1"):
-            import ansys.api.cfx.v1 as api
-            from ansys.api.cfx.v1 import batch_ops_pb2, batch_ops_pb2_grpc
-        else:
-            import ansys.api.cfx.v0 as api
-            from ansys.api.cfx.v0 import batch_ops_pb2, batch_ops_pb2_grpc
-
+        api, batch_ops_pb2, batch_ops_pb2_grpc = get_batch_ops_modules(engine_version)
         self.api = api
         self.batch_ops_pb2 = batch_ops_pb2
 
