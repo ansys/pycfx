@@ -8,7 +8,7 @@ import pytest
 
 from ansys.cfx.core.utils import api_version
 from ansys.cfx.core.utils.api_version import (
-    NEW_API_MIN_VERSION,
+    API_V1_MIN_VERSION,
     detect_engine_version,
     get_batch_ops_modules,
     get_engine_eval_modules,
@@ -24,7 +24,7 @@ from ansys.cfx.core.utils.cfx_version import CFXVersion
 
 def test_use_api_v1_true_for_new_engine(monkeypatch):
     monkeypatch.delenv("CFX_API_VERSION_1", raising=False)
-    assert use_api_v1(NEW_API_MIN_VERSION) is True
+    assert use_api_v1(API_V1_MIN_VERSION) is True
 
 
 def test_use_api_v1_false_for_old_engine(monkeypatch):
@@ -51,7 +51,7 @@ def test_use_api_v1_env_override(monkeypatch):
 )
 def test_getters_return_v1_for_new_engine(monkeypatch, getter, expected_v1_suffix):
     monkeypatch.delenv("CFX_API_VERSION_1", raising=False)
-    result = getter(NEW_API_MIN_VERSION)
+    result = getter(API_V1_MIN_VERSION)
     for mod in result if isinstance(result, tuple) else (result,):
         assert f".cfx.{expected_v1_suffix}" in mod.__name__
 
@@ -69,7 +69,7 @@ def test_getters_return_v0_for_old_engine(monkeypatch, getter):
 
 def test_get_health_check_modules_new(monkeypatch):
     monkeypatch.delenv("CFX_API_VERSION_1", raising=False)
-    pb2, pb2_grpc = get_health_check_modules(NEW_API_MIN_VERSION)
+    pb2, pb2_grpc = get_health_check_modules(API_V1_MIN_VERSION)
     assert ".cfx.v1" in pb2.__name__
 
 

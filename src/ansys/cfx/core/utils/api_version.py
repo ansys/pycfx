@@ -31,7 +31,7 @@ from ansys.cfx.core.utils.cfx_version import CFXVersion
 
 logger = logging.getLogger("pycfx.general")
 
-NEW_API_MIN_VERSION = CFXVersion.v271
+API_V1_MIN_VERSION = CFXVersion.v271
 
 # Statuses that mean "this proto version is not the right one" rather
 # than a real server failure.
@@ -146,5 +146,5 @@ def use_api_v1(engine_version: CFXVersion) -> bool:
     """Return ``True`` if the engine speaks the new (v1) proto API."""
     if os.getenv("CFX_API_VERSION_1") is not None:
         return True
-    result = engine_version >= NEW_API_MIN_VERSION
+    result = engine_version >= API_V1_MIN_VERSION
     return result
