@@ -88,7 +88,8 @@ def detect_engine_version(channel, metadata) -> CFXVersion:
         if version is not None:
             logger.info(f"Detected engine {version} via proto API {tag}.")
             return version
-    raise RuntimeError("Could not detect CFX engine version with either v0 or v1 protos.")
+    tried = ", ".join(candidates)
+    raise RuntimeError(f"Could not detect CFX engine version with protos: {tried}.")
 
 
 def get_batch_ops_modules(engine_version: CFXVersion):
