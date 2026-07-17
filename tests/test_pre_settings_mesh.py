@@ -667,12 +667,16 @@ def test_mesh_region_queries(pre_load_static_mixer_case: PreProcessing, pytestco
         "out",
     ]
 
-    assert pypre.setup.mesh["StaticMixerMesh"].get_composite_3d_regions_for_3d_region(
-        region="B1.P3"
-    ) == []
-    assert pypre.setup.mesh["StaticMixerMesh"].get_composite_3d_regions_for_3d_region(
-        region="Assembly"
-    ) == []
+    assert (
+        pypre.setup.mesh["StaticMixerMesh"].get_composite_3d_regions_for_3d_region(region="B1.P3")
+        == []
+    )
+    assert (
+        pypre.setup.mesh["StaticMixerMesh"].get_composite_3d_regions_for_3d_region(
+            region="Assembly"
+        )
+        == []
+    )
     assert pypre.setup.mesh["StaticMixerMesh"].get_primitive_3d_regions_for_3d_region(
         region="B1.P3"
     ) == ["B1.P3"]
@@ -863,16 +867,13 @@ def test_mesh_region_queries(pre_load_static_mixer_case: PreProcessing, pytestco
     else:
         assert False, "Expected RuntimeError"
 
-    assert pypre.setup.mesh.get_composite_3d_regions_for_3d_region(
-        region="B1.P3"
-    ) == []
-    assert pypre.setup.mesh.get_composite_3d_regions_for_3d_region(
-        region="TwoDomains"
-    ) == ["TwoDomains"]
+    assert pypre.setup.mesh.get_composite_3d_regions_for_3d_region(region="B1.P3") == []
+    assert pypre.setup.mesh.get_composite_3d_regions_for_3d_region(region="TwoDomains") == [
+        "TwoDomains"
+    ]
 
-    assert pypre.setup.mesh.get_primitive_3d_regions_for_3d_region(
-        region="TwoDomains"
-    ) == ["B1.P3", "B1.P3 2"]
-    assert pypre.setup.mesh.get_primitive_3d_regions_for_3d_region(
-        region="B1.P3 2"
-    ) == ["B1.P3 2"]
+    assert pypre.setup.mesh.get_primitive_3d_regions_for_3d_region(region="TwoDomains") == [
+        "B1.P3",
+        "B1.P3 2",
+    ]
+    assert pypre.setup.mesh.get_primitive_3d_regions_for_3d_region(region="B1.P3 2") == ["B1.P3 2"]
