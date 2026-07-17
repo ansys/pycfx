@@ -585,3 +585,161 @@ def test_mesh_transformation(pre_load_static_mixer_case: PreProcessing, pytestco
     )
     pypre.file.undo()  # create boundary
     pypre.file.undo()  # transform mesh
+
+
+def test_mesh_region_queries(pre_load_static_mixer_case: PreProcessing, pytestconfig):
+    """Test mesh region queries."""
+
+    pypre = pre_load_static_mixer_case
+
+    if pypre.get_cfx_version() < CFXVersion.v271:
+        pytest.skip("Mesh objects are not supported in Release 26.1 and earlier.")
+
+    assert pypre.setup.mesh["StaticMixerMesh"].get_assemblies() == ["Assembly"]
+    assert pypre.setup.mesh["StaticMixerMesh"].get_composite_3d_regions() == []
+    assert pypre.setup.mesh["StaticMixerMesh"].get_primitive_3d_regions() == ["B1.P3"]
+    assert pypre.setup.mesh["StaticMixerMesh"].get_all_3d_regions() == ["B1.P3"]
+    assert pypre.setup.mesh["StaticMixerMesh"].get_composite_bounding_2d_regions_for_3d_region(
+        region="Assembly"
+    ) == ["Default 2D Region", "in1", "in2", "out"]
+    assert pypre.setup.mesh["StaticMixerMesh"].get_primitive_bounding_2d_regions_for_3d_region(
+        region="Assembly"
+    ) == [
+        "F1.B1.P3",
+        "F2.B1.P3",
+        "F3.B1.P3",
+        "F4.B1.P3",
+        "F5.B1.P3",
+        "F6.B1.P3",
+        "F7.B1.P3",
+        "F8.B1.P3",
+        "F9.B1.P3",
+    ]
+    assert pypre.setup.mesh["StaticMixerMesh"].get_all_bounding_2d_regions_for_3d_region(
+        region="Assembly"
+    ) == [
+        "Default 2D Region",
+        "F1.B1.P3",
+        "F2.B1.P3",
+        "F3.B1.P3",
+        "F4.B1.P3",
+        "F5.B1.P3",
+        "F6.B1.P3",
+        "F7.B1.P3",
+        "F8.B1.P3",
+        "F9.B1.P3",
+        "in1",
+        "in2",
+        "out",
+    ]
+
+    assert pypre.setup.mesh["StaticMixerMesh"].get_composite_bounding_2d_regions_for_3d_region(
+        region="B1.P3"
+    ) == ["Default 2D Region", "in1", "in2", "out"]
+    assert pypre.setup.mesh["StaticMixerMesh"].get_primitive_bounding_2d_regions_for_3d_region(
+        region="B1.P3"
+    ) == [
+        "F1.B1.P3",
+        "F2.B1.P3",
+        "F3.B1.P3",
+        "F4.B1.P3",
+        "F5.B1.P3",
+        "F6.B1.P3",
+        "F7.B1.P3",
+        "F8.B1.P3",
+        "F9.B1.P3",
+    ]
+    assert pypre.setup.mesh["StaticMixerMesh"].get_all_bounding_2d_regions_for_3d_region(
+        region="B1.P3"
+    ) == [
+        "Default 2D Region",
+        "F1.B1.P3",
+        "F2.B1.P3",
+        "F3.B1.P3",
+        "F4.B1.P3",
+        "F5.B1.P3",
+        "F6.B1.P3",
+        "F7.B1.P3",
+        "F8.B1.P3",
+        "F9.B1.P3",
+        "in1",
+        "in2",
+        "out",
+    ]
+    pypre.setup.mesh["StaticMixerMesh"].transform_mesh(
+        option="Turbo Rotation",
+        rotation_option="Rotation Axis",
+        rotation_axis_begin="0, 0, 4",
+        rotation_axis_end="0 [m], 1 [m], 4 [m]",
+        passages_per_mesh=1,
+        passages_to_model=2,
+        passages_in_360=4,
+        theta_offset="45 [deg]",
+    )
+
+    assert pypre.setup.mesh["StaticMixerMesh"].get_assemblies() == ["Assembly", "Assembly 2"]
+    assert pypre.setup.mesh["StaticMixerMesh"].get_composite_3d_regions() == []
+    assert pypre.setup.mesh["StaticMixerMesh"].get_primitive_3d_regions() == ["B1.P3", "B1.P3 2"]
+    assert pypre.setup.mesh["StaticMixerMesh"].get_all_3d_regions() == ["B1.P3", "B1.P3 2"]
+    assert pypre.setup.mesh["StaticMixerMesh"].get_composite_bounding_2d_regions_for_3d_region(
+        region="Assembly"
+    ) == ["Default 2D Region", "in1", "in2", "out"]
+    assert pypre.setup.mesh["StaticMixerMesh"].get_primitive_bounding_2d_regions_for_3d_region(
+        region="Assembly"
+    ) == [
+        "F1.B1.P3",
+        "F2.B1.P3",
+        "F3.B1.P3",
+        "F4.B1.P3",
+        "F5.B1.P3",
+        "F6.B1.P3",
+        "F7.B1.P3",
+        "F8.B1.P3",
+        "F9.B1.P3",
+    ]
+    assert pypre.setup.mesh["StaticMixerMesh"].get_all_bounding_2d_regions_for_3d_region(
+        region="Assembly 2"
+    ) == [
+        "Default 2D Region 2",
+        "F1.B1.P3 2",
+        "F2.B1.P3 2",
+        "F3.B1.P3 2",
+        "F4.B1.P3 2",
+        "F5.B1.P3 2",
+        "F6.B1.P3 2",
+        "F7.B1.P3 2",
+        "F8.B1.P3 2",
+        "F9.B1.P3 2",
+        "in1 2",
+        "in2 2",
+        "out 2",
+    ]
+    assert pypre.setup.mesh["StaticMixerMesh"].get_composite_bounding_2d_regions_for_3d_region(
+        region="B1.P3 2"
+    ) == ["Default 2D Region 2", "in1 2", "in2 2", "out 2"]
+    assert pypre.setup.mesh["StaticMixerMesh"].get_primitive_bounding_2d_regions_for_3d_region(
+        region="B1.P3"
+    ) == [
+        "F1.B1.P3",
+        "F2.B1.P3",
+        "F3.B1.P3",
+        "F4.B1.P3",
+        "F5.B1.P3",
+        "F6.B1.P3",
+        "F7.B1.P3",
+        "F8.B1.P3",
+        "F9.B1.P3",
+    ]
+
+    assert (
+        pypre.setup.mesh["StaticMixerMesh"].get_bounded_3d_region_for_2d_primitive(
+            region="F1.B1.P3"
+        )
+        == "B1.P3"
+    )
+    assert (
+        pypre.setup.mesh["StaticMixerMesh"].get_bounded_3d_region_for_2d_primitive(
+            region="F8.B1.P3 2"
+        )
+        == "B1.P3 2"
+    )
