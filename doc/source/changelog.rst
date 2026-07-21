@@ -9,6 +9,198 @@ This document contains the release notes for the project.
 
 .. towncrier release notes start
 
+`0.3.0 <https://github.com/ansys/pycfx/releases/tag/v0.3.0>`_ - July 21, 2026
+=============================================================================
+
+.. tab-set::
+
+
+  .. tab-item:: Added
+
+    .. list-table::
+        :header-rows: 0
+        :widths: auto
+
+        * - Use create() method in examples instead of {}
+          - `#70 <https://github.com/ansys/pycfx/pull/70>`_
+
+        * - Add object-names and display-text attributes for Simba
+          - `#121 <https://github.com/ansys/pycfx/pull/121>`_
+
+        * - Auto detect engine ansys-api-cfx version.
+          - `#136 <https://github.com/ansys/pycfx/pull/136>`_
+
+
+  .. tab-item:: Fixed
+
+    .. list-table::
+        :header-rows: 0
+        :widths: auto
+
+        * - Fix broken link to documentation
+          - `#59 <https://github.com/ansys/pycfx/pull/59>`_
+
+        * - Decompress docs artifact on stable doc deployment
+          - `#62 <https://github.com/ansys/pycfx/pull/62>`_
+
+        * - Pinned requirements incompatible with the rest of the ecosystem
+          - `#69 <https://github.com/ansys/pycfx/pull/69>`_
+
+        * - Requirements for ansys-tools-filetransfer
+          - `#72 <https://github.com/ansys/pycfx/pull/72>`_
+
+        * - Remove some bandit skipped checks and add to pre-commit
+          - `#97 <https://github.com/ansys/pycfx/pull/97>`_
+
+        * - Update dependabot configuration
+          - `#99 <https://github.com/ansys/pycfx/pull/99>`_
+
+        * - Use ansys-tools for example file download
+          - `#106 <https://github.com/ansys/pycfx/pull/106>`_
+
+        * - Fix up various bandit security issues
+          - `#119 <https://github.com/ansys/pycfx/pull/119>`_
+
+        * - Minor test and doc fixes
+          - `#131 <https://github.com/ansys/pycfx/pull/131>`_
+
+
+  .. tab-item:: Documentation
+
+    .. list-table::
+        :header-rows: 0
+        :widths: auto
+
+        * - Update \`\`CONTRIBUTORS.md\`\` with the latest contributors
+          - `#73 <https://github.com/ansys/pycfx/pull/73>`_, `#102 <https://github.com/ansys/pycfx/pull/102>`_
+
+
+  .. tab-item:: Dependencies
+
+    .. list-table::
+        :header-rows: 0
+        :widths: auto
+
+        * - Actions: Bump docker/login-action from 4.0.0 to 4.1.0
+          - `#51 <https://github.com/ansys/pycfx/pull/51>`_
+
+        * - Pip: Bump pytest from 9.0.2 to 9.0.3
+          - `#55 <https://github.com/ansys/pycfx/pull/55>`_
+
+        * - Actions: Bump actions/upload-artifact from 7.0.0 to 7.0.1
+          - `#56 <https://github.com/ansys/pycfx/pull/56>`_
+
+        * - Actions: Bump softprops/action-gh-release from 2.6.1 to 3.0.0
+          - `#57 <https://github.com/ansys/pycfx/pull/57>`_
+
+        * - Actions: Bump actions/cache from 5.0.4 to 5.0.5
+          - `#58 <https://github.com/ansys/pycfx/pull/58>`_
+
+        * - Bump ansys/actions from 10.3.0 to 10.3.1
+          - `#98 <https://github.com/ansys/pycfx/pull/98>`_
+
+        * - Bump the pre-commit group with 4 updates
+          - `#116 <https://github.com/ansys/pycfx/pull/116>`_
+
+        * - Bump the actions group with 3 updates
+          - `#117 <https://github.com/ansys/pycfx/pull/117>`_
+
+        * - Bump the pre-commit group with 3 updates
+          - `#122 <https://github.com/ansys/pycfx/pull/122>`_
+
+        * - Bump the actions group with 2 updates
+          - `#123 <https://github.com/ansys/pycfx/pull/123>`_, `#128 <https://github.com/ansys/pycfx/pull/128>`_, `#130 <https://github.com/ansys/pycfx/pull/130>`_
+
+        * - Bump github.com/PyCQA/pylint from v4.0.5 to 4.0.6 in the pre-commit group
+          - `#126 <https://github.com/ansys/pycfx/pull/126>`_
+
+        * - Bump pytest from 9.0.3 to 9.1.1
+          - `#127 <https://github.com/ansys/pycfx/pull/127>`_
+
+        * - Bump the actions group with 11 updates
+          - `#135 <https://github.com/ansys/pycfx/pull/135>`_, `#139 <https://github.com/ansys/pycfx/pull/139>`_
+
+        * - Update grpcio-health-checking requirement from <1.82.0,>=1.30.0 to >=1.30.0,<1.83.0
+          - `#138 <https://github.com/ansys/pycfx/pull/138>`_
+
+
+  .. tab-item:: Maintenance
+
+    .. list-table::
+        :header-rows: 0
+        :widths: auto
+
+        * - Update CHANGELOG for v0.2.0
+          - `#49 <https://github.com/ansys/pycfx/pull/49>`_
+
+        * - Update version in \`pyproject.toml\`
+          - `#52 <https://github.com/ansys/pycfx/pull/52>`_
+
+        * - Add codecov action and update README
+          - `#54 <https://github.com/ansys/pycfx/pull/54>`_
+
+        * - Update CHANGELOG for v0.2.1
+          - `#61 <https://github.com/ansys/pycfx/pull/61>`_
+
+        * - Update CHANGELOG for v0.2.2
+          - `#64 <https://github.com/ansys/pycfx/pull/64>`_
+
+        * - Update ansys/actions version to 10.3.0
+          - `#66 <https://github.com/ansys/pycfx/pull/66>`_
+
+        * - Update CHANGELOG for v0.2.3
+          - `#68 <https://github.com/ansys/pycfx/pull/68>`_
+
+        * - Updating CHANGELOG for v0.2.4
+          - `#95 <https://github.com/ansys/pycfx/pull/95>`_
+
+        * - Make update-changelog a required stage for releasing
+          - `#96 <https://github.com/ansys/pycfx/pull/96>`_
+
+        * - Update CHANGELOG for v0.2.5
+          - `#104 <https://github.com/ansys/pycfx/pull/104>`_
+
+        * - Add pre-commit section
+          - `#107 <https://github.com/ansys/pycfx/pull/107>`_
+
+        * - Grouping dependabot prs for actions and pre-commit
+          - `#115 <https://github.com/ansys/pycfx/pull/115>`_
+
+        * - Update pre-commit configuration
+          - `#118 <https://github.com/ansys/pycfx/pull/118>`_
+
+        * - Update missing or outdated files
+          - `#120 <https://github.com/ansys/pycfx/pull/120>`_, `#124 <https://github.com/ansys/pycfx/pull/124>`_
+
+        * - Update license headers
+          - `#125 <https://github.com/ansys/pycfx/pull/125>`_
+
+        * - Update CHANGELOG for v0.2.6
+          - `#134 <https://github.com/ansys/pycfx/pull/134>`_
+
+        * - Update version for 0.3.0 release
+          - `#140 <https://github.com/ansys/pycfx/pull/140>`_
+
+
+  .. tab-item:: Test
+
+    .. list-table::
+        :header-rows: 0
+        :widths: auto
+
+        * - Add tests for mesh statistics query
+          - `#41 <https://github.com/ansys/pycfx/pull/41>`_
+
+        * - Add test for some Solver errors
+          - `#71 <https://github.com/ansys/pycfx/pull/71>`_
+
+        * - Add unit tests for transform_mesh
+          - `#129 <https://github.com/ansys/pycfx/pull/129>`_
+
+        * - Add tests for mesh region queries
+          - `#137 <https://github.com/ansys/pycfx/pull/137>`_
+
+
 `0.2.6 <https://github.com/ansys/pycfx/releases/tag/v0.2.6>`_ - July 09, 2026
 =============================================================================
 
