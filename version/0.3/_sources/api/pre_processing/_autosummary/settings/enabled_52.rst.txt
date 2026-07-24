@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_52:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_52.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================   ==============================
+
+Parent                                                                                     Summary
+
+=================================================================   ==============================
+:ref:`crossflow_transition <pre_processing_crossflow_transition>`   'CROSSFLOW TRANSITION' object.
+
+=================================================================   ==============================
+

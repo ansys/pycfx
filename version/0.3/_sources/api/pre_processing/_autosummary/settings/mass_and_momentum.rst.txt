@@ -1,0 +1,94 @@
+:orphan:
+
+.. _pre_processing_mass_and_momentum:
+
+mass_and_momentum
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.mass_and_momentum.mass_and_momentum
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================================   =============================================================================================================================================================================================================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Summary
+
+=================================================================================   =============================================================================================================================================================================================================================================================================================================================================================================================
+:ref:`option <pre_processing_option_269>`                                                                                                                                                                                                                                                                                                                                                                                                         The 'Mass And Momentum' option.
+
+:ref:`relative_pressure <pre_processing_relative_pressure>`                                                                                                                                                                                                                                                                                                                                                                                        'Relative Pressure' parameter.
+
+:ref:`relative_static_pressure <pre_processing_relative_static_pressure>`                                                                                                                                                                                                                                                                                                                                                                   'Relative Static Pressure' parameter.
+
+:ref:`relative_total_pressure <pre_processing_relative_total_pressure>`                                                                                                                                                                                                                                                                                                                                                                      'Relative Total Pressure' parameter.
+
+:ref:`u <pre_processing_u>`                                                                                                                                                                                                                                                                                                                                                                                                                                        'U' parameter.
+
+:ref:`v <pre_processing_v>`                                                                                                                                                                                                                                                                                                                                                                                                                                        'V' parameter.
+
+:ref:`w <pre_processing_w>`                                                                                                                                                                                                                                                                                                                                                                                                                                        'W' parameter.
+
+:ref:`velocity_axial_component <pre_processing_velocity_axial_component>`                                                                                                                                                                                                                                                                                                                                                                   'Velocity Axial Component' parameter.
+
+:ref:`velocity_r_component <pre_processing_velocity_r_component>`                                                                                                                                                                                                                                                                                                                                                                               'Velocity r Component' parameter.
+
+:ref:`velocity_theta_component <pre_processing_velocity_theta_component>`                                                                                                                                                                                                                                                                                                                                                                   'Velocity Theta Component' parameter.
+
+:ref:`normal_speed <pre_processing_normal_speed>`                                                                                                                                                                                                                                                                                                                                                                                                       'Normal Speed' parameter.
+
+:ref:`mass_flow_rate <pre_processing_mass_flow_rate>`                                                                                                                                                                                                                                                                                                                                                                                                 'Mass Flow Rate' parameter.
+
+:ref:`corrected_mass_flow_rate <pre_processing_corrected_mass_flow_rate>`                                                                                                                                                                                                                                                                                                                                                                   'Corrected Mass Flow Rate' parameter.
+
+:ref:`mass_flow_rate_area <pre_processing_mass_flow_rate_area>`                                                                                                                                                                                                                                                                                                                                                                                  'Mass Flow Rate Area' parameter.
+
+:ref:`reference_temperature <pre_processing_reference_temperature>`                                                                                                                                                                                                                                                                                                                                                                            'Reference Temperature' parameter.
+
+:ref:`reference_pressure <pre_processing_reference_pressure>`                                                                                                                                                                                                                                                                                                                                                                                     'Reference Pressure' parameter.
+
+:ref:`relative_pressure_in_gas <pre_processing_relative_pressure_in_gas>`                                                                                                                                                                                                                                                                                                                                                                   'Relative Pressure in Gas' parameter.
+
+:ref:`pressure_profile_blend <pre_processing_pressure_profile_blend>`                                                                                                                                                                                                                                Factor to blend between the specified pressure profile and a floating (implicit) pressure profile blend factor. 0.0 is fully implicit and 1.0 imposes the specified profile.
+
+:ref:`wall_velocity_relative_to <pre_processing_wall_velocity_relative_to>`                                                                                                                                                                                                                                                      Sets whether wall velocities are evaluated relative to the specified boundary frame or the mesh motion. This is only used for moving mesh cases.
+
+:ref:`input_variable <pre_processing_input_variable>`                                                                                                                                                                                                                                                                                                                                                                                                 'Input Variable' parameter.
+
+:ref:`implicit_pressure_averaging <pre_processing_implicit_pressure_averaging>`                                                                                                                                                                                                                                                                                                                                                 Indicates whether pressure averaging is implicit.
+
+:ref:`weighting_option <pre_processing_weighting_option>`                                                                                                                                                                                                                                                                                                                                                            Specifies the weighting option for average pressure outlets.
+
+:ref:`include_normal_viscous_force <pre_processing_include_normal_viscous_force>`                                                                                                                                                                                                                                                                                                                               Indicates whether normal viscous force is included at slip walls.
+
+:ref:`slip_model <pre_processing_slip_model>`                                                                                                                                                                                                                                                                                                                                                                                                        Specifies a wall slip model.
+
+:ref:`shear_stress <pre_processing_shear_stress>`                                                                                                                                                                                                                                                                                                                                                                                            Specifies the shear force at a wall.
+
+:ref:`axis_definition <pre_processing_axis_definition>`                                                                                                                                                                                                                                                                                                                   Defines the axis for a cylindrical coordinate system or variables defined using cylindrical components.
+
+:ref:`wall_velocity <pre_processing_wall_velocity>`                                                                                                                                                                                                                                                                                                                                                                                     Specifies the velocity of a no-slip wall.
+
+:ref:`turbulent_wall_functions <pre_processing_turbulent_wall_functions_2>`                                                                                                                                                                                                                                                                                                                                                 Sets the turbulent near-wall treatment at a boundary.
+
+:ref:`mass_flow_update <pre_processing_mass_flow_update>`                           Determines how the solver enforces the mass flow rate specified on an outflow boundary condition. Shift pressure updates the average pressure level on the boundary to give the required mass flow rate, Scale Mass Flows multiplies the solver computed mass flows by a factor to give the set value, and Constant Flux distributes the set value by area weighting over the boundary patch.
+
+:ref:`acoustic_reflectivity <pre_processing_acoustic_reflectivity>`                                                                                                                                                                                                                                                                                                                                             Specifies acoustic reflection attributes of a boundary condition.
+
+:ref:`pressure_option <pre_processing_pressure_option>`                                                                                                                                                                                                                                                                                                                                                                  Specifies the pressure choice at an entrainment opening.
+
+:ref:`pressure_profile <pre_processing_pressure_profile>`                                                                                                                                                                                                                                                                                                                                                                  Specifies pressure profile information for outlet BCs.
+
+=================================================================================   =============================================================================================================================================================================================================================================================================================================================================================================================
+
+.. rubric:: Included in:
+
+===============================================================   =============================================================
+
+Parent                                                                                                                  Summary
+
+===============================================================   =============================================================
+:ref:`boundary_conditions <pre_processing_boundary_conditions>`   Specifies boundary conditions for all equations being solved.
+
+===============================================================   =============================================================
+

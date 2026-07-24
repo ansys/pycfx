@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_user_variables_list:
+
+user_variables_list
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.user_variables_list.user_variables_list
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ====================================
+
+Parent                                                                                       Summary
+
+=============================================================   ====================================
+:ref:`user_routine_child <pre_processing_user_routine_child>`   'child_object_type' of user_routine.
+
+=============================================================   ====================================
+

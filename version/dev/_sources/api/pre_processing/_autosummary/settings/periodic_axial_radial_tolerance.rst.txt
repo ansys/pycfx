@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_periodic_axial_radial_tolerance:
+
+periodic_axial_radial_tolerance
+===============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.periodic_axial_radial_tolerance.periodic_axial_radial_tolerance
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================   =============================================================================
+
+Parent                                                                                                                                      Summary
+
+===================================================================   =============================================================================
+:ref:`intersection_control <pre_processing_intersection_control_1>`   Holds advanced parameters to control the details of interface discretization.
+
+===================================================================   =============================================================================
+

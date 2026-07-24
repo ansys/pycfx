@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_default_interface_enabled:
+
+default_interface_enabled
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.default_interface_enabled.default_interface_enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   =================================
+
+Parent                                                                                              Summary
+
+=======================================================================   =================================
+:ref:`physics_options_control <pre_processing_physics_options_control>`   'PHYSICS OPTIONS CONTROL' object.
+
+=======================================================================   =================================
+

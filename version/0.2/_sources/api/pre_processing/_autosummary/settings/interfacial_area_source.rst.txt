@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_interfacial_area_source:
+
+interfacial_area_source
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.interfacial_area_source.interfacial_area_source
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================================   ============================================================================================================================================
+
+Parent                                                                                                                                                                                                                 Summary
+
+===============================================================================   ============================================================================================================================================
+:ref:`iate_sources_child <pre_processing_iate_sources_child>`                                                                                                                             'child_object_type' of iate_sources.
+
+:ref:`interfacial_area_transport <pre_processing_interfacial_area_transport_3>`   Interfacial Area Transport Equation specification. Required when this option is selected for the interphase transfer model for a phase pair.
+
+===============================================================================   ============================================================================================================================================
+

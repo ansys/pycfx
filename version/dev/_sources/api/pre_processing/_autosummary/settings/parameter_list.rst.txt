@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_parameter_list:
+
+parameter_list
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.parameter_list.parameter_list
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   ==================================
+
+Parent                                                                                 Summary
+
+=========================================================   ==================================
+:ref:`data_field_child <pre_processing_data_field_child>`   'child_object_type' of data_field.
+
+:ref:`data_value_child <pre_processing_data_value_child>`   'child_object_type' of data_value.
+
+=========================================================   ==================================
+

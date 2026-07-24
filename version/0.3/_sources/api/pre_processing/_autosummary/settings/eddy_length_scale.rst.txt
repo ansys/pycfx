@@ -1,0 +1,29 @@
+:orphan:
+
+.. _pre_processing_eddy_length_scale:
+
+eddy_length_scale
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.eddy_length_scale.eddy_length_scale
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ===========================================================================
+
+Parent                                                                                                                              Summary
+
+=============================================================   ===========================================================================
+:ref:`turbulence_model <pre_processing_turbulence_model>`       Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+:ref:`turbulence_model <pre_processing_turbulence_model_1>`     Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+:ref:`turbulence <pre_processing_turbulence>`                                                  Sets conditions on turbulence at a boundary.
+
+:ref:`turbulence <pre_processing_turbulence_2>`                                                Sets conditions on turbulence at a boundary.
+
+:ref:`eddy_length_scale <pre_processing_eddy_length_scale_1>`                              Defines the initialization of eddy length scale.
+
+=============================================================   ===========================================================================
+

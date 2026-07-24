@@ -1,0 +1,48 @@
+:orphan:
+
+.. _pre_processing_equation_of_state:
+
+equation_of_state
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.equation_of_state.equation_of_state
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================   =======================================
+
+Attribute                                                                                           Summary
+
+=================================================================   =======================================
+:ref:`option <pre_processing_option_13>`                                    The 'Equation Of State' option.
+
+:ref:`real_gas_model <pre_processing_real_gas_model>`               Sets real gas equation of state to use.
+
+:ref:`molar_mass <pre_processing_molar_mass>`                                       'Molar Mass' parameter.
+
+:ref:`density <pre_processing_density>`                                                   Material density.
+
+:ref:`critical_temperature <pre_processing_critical_temperature>`         'Critical Temperature' parameter.
+
+:ref:`critical_pressure <pre_processing_critical_pressure>`                  'Critical Pressure' parameter.
+
+:ref:`critical_volume <pre_processing_critical_volume>`                        'Critical Volume' parameter.
+
+:ref:`acentric_factor <pre_processing_acentric_factor>`                        'Acentric Factor' parameter.
+
+:ref:`boiling_temperature <pre_processing_boiling_temperature>`            'Boiling Temperature' parameter.
+
+=================================================================   =======================================
+
+.. rubric:: Included in:
+
+=============================================   ===============================================================
+
+Parent                                                                                                  Summary
+
+=============================================   ===============================================================
+:ref:`properties <pre_processing_properties>`   Holds the definition of all physical properties for a material.
+
+=============================================   ===============================================================
+

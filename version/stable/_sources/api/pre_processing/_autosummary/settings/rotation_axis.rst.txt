@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_rotation_axis:
+
+rotation_axis
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.rotation_axis.rotation_axis
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   =======================================================================================================
+
+Parent                                                                                                                                                      Summary
+
+=========================================================   =======================================================================================================
+:ref:`axis_definition <pre_processing_axis_definition>`     Defines the axis for a cylindrical coordinate system or variables defined using cylindrical components.
+
+:ref:`axis_definition <pre_processing_axis_definition_1>`   Defines the axis for a cylindrical coordinate system or variables defined using cylindrical components.
+
+=========================================================   =======================================================================================================
+

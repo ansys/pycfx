@@ -1,0 +1,58 @@
+:orphan:
+
+.. _pre_processing_injection_region_child:
+
+injection_region_child
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.injection_region_child.injection_region_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================   =============================================================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                                                         Summary
+
+=========================================================================   =============================================================================================================================================================================================================================================
+:ref:`injection_region_type <pre_processing_injection_region_type>`                                                                                                                                                                                                                                Injection Region Type.
+
+:ref:`coord_frame <pre_processing_coord_frame>`                             Local coordinate frame for computing expressions. The default at the top level of the command data structure is Coord 0, that is no transformation. The default at lower levels is to inherit the value from objects higher up the structure.
+
+:ref:`frame_type <pre_processing_frame_type>`                                  Sets the frame in which velocity components or flow direction components are specified. If set to Rotating then the components are in the relative frame. If set to Stationary then the components are in the absolute frame of reference.
+
+:ref:`visibility <pre_processing_visibility>`                                                                                                                                                                                                                                                     'Visibility' parameter.
+
+:ref:`diagnostic_output_level <pre_processing_diagnostic_output_level>`                                                                                                                                                                                                                          Diagnostic Output Level.
+
+:ref:`render_type <pre_processing_render_type>`                                                                                                                                                                                                                                                  'Render Type' parameter.
+
+:ref:`injection_location_type <pre_processing_injection_location_type>`                                                                                                                                                     Defines the type of location, physics or mesh regions, for the injection points to intersect.
+
+:ref:`injection_positions <pre_processing_injection_positions>`                                                                                                                                                                                                                             'INJECTION POSITIONS' object.
+
+:ref:`injection_model <pre_processing_injection_model>`                                                                                                                                                                                                                                         'INJECTION MODEL' object.
+
+:ref:`injection_conditions <pre_processing_injection_conditions_1>`                                                                                                                                                                                        Specifies injection conditions for all equations being solved.
+
+:ref:`fluid <pre_processing_fluid_7>`                                                                                                                                                                                                                                                      A container for Fluid objects.
+
+:ref:`injection_distribution <pre_processing_injection_distribution>`                                                                                                                                                                                                                    'INJECTION DISTRIBUTION' object.
+
+:ref:`injection_region_contour <pre_processing_injection_region_contour>`                                                                                                                                                                                                              'INJECTION REGION CONTOUR' object.
+
+:ref:`injection_region_vector <pre_processing_injection_region_vector>`                                                                                                                                                                                                                 'INJECTION REGION VECTOR' object.
+
+=========================================================================   =============================================================================================================================================================================================================================================
+
+.. rubric:: Included in:
+
+=========================================================   =========================================
+
+Parent                                                                                        Summary
+
+=========================================================   =========================================
+:ref:`injection_region <pre_processing_injection_region>`   A container for Injection Region objects.
+
+=========================================================   =========================================
+

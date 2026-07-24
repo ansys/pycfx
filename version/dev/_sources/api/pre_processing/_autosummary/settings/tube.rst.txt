@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_tube:
+
+tube
+====
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.tube.tube
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`tube_child <pre_processing_tube_child>`
+
+
+.. rubric:: Included in:
+
+=====================================================   ================================
+
+Parent                                                                           Summary
+
+=====================================================   ================================
+:ref:`boundary_child <pre_processing_boundary_child>`   'child_object_type' of boundary.
+
+=====================================================   ================================
+

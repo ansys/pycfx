@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_use_profile_data:
+
+use_profile_data
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.use_profile_data.use_profile_data
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   ==================================
+
+Parent                                                                                 Summary
+
+=========================================================   ==================================
+:ref:`mode_shape_child <pre_processing_mode_shape_child>`   'child_object_type' of mode_shape.
+
+:ref:`boundary_child <pre_processing_boundary_child>`         'child_object_type' of boundary.
+
+=========================================================   ==================================
+

@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_interpolation_model_control:
+
+interpolation_model_control
+===========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.interpolation_model_control.interpolation_model_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================================================   ===================================================
+
+Attribute                                                                                                                                           Summary
+
+=====================================================================================================   ===================================================
+:ref:`enabled <pre_processing_enabled_236>`                                                                  Enable the INTERPOLATION MODEL CONTROL object.
+
+:ref:`enforce_strict_name_mapping_for_phases <pre_processing_enforce_strict_name_mapping_for_phases>`   'Enforce Strict Name Mapping for Phases' parameter.
+
+:ref:`particle_relocalisation_tolerance <pre_processing_particle_relocalisation_tolerance>`                  'Particle Relocalisation Tolerance' parameter.
+
+:ref:`mesh_deformation_option <pre_processing_mesh_deformation_option>`                                                'Mesh Deformation Option' parameter.
+
+=====================================================================================================   ===================================================
+
+.. rubric:: Included in:
+
+===========================================================================   ===================================
+
+Parent                                                                                                    Summary
+
+===========================================================================   ===================================
+:ref:`interpolator_step_control <pre_processing_interpolator_step_control>`   'INTERPOLATOR STEP CONTROL' object.
+
+===========================================================================   ===================================
+

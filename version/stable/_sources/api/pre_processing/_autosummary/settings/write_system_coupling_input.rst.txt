@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_write_system_coupling_input:
+
+write_system_coupling_input
+===========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.write_system_coupling_input.write_system_coupling_input
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ===========================
+
+Parent                                                                            Summary
+
+===========================================================   ===========================
+:ref:`execution_control <pre_processing_execution_control>`   'EXECUTION CONTROL' object.
+
+===========================================================   ===========================
+

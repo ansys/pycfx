@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_radiation_source_child_2:
+
+radiation_source_child
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.radiation_source_child_2.radiation_source_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================   =============================================================================
+
+Attribute                                                                                                                                     Summary
+
+=====================================================================   =============================================================================
+:ref:`option <pre_processing_option_305>`                                                                              The 'Radiation Source' option.
+
+:ref:`total_radiation_source <pre_processing_total_radiation_source>`                          Value of radiation source strength, in relevant units.
+
+:ref:`multiply_by_porosity <pre_processing_multiply_by_porosity>`       Defines whether the source terms in porous domains is multiplied by porosity.
+
+:ref:`direction <pre_processing_direction>`                                             Defines the direction used for radiation boundary conditions.
+
+=====================================================================   =============================================================================
+
+.. rubric:: Included in:
+
+===========================================================   =========================================
+
+Parent                                                                                          Summary
+
+===========================================================   =========================================
+:ref:`radiation_source <pre_processing_radiation_source_3>`   A container for Radiation Source objects.
+
+===========================================================   =========================================
+

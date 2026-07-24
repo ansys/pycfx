@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_222:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_222.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ===========================
+
+Parent                                                                            Summary
+
+===========================================================   ===========================
+:ref:`nozzle_definition <pre_processing_nozzle_definition>`   'NOZZLE DEFINITION' object.
+
+===========================================================   ===========================
+

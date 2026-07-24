@@ -1,0 +1,75 @@
+:orphan:
+
+.. _post_processing_chart_line_child:
+
+chart_line_child
+================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.chart_line_child.chart_line_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+============================================================================   ====================================================================================================================================
+
+Attribute                                                                                                                                                                                                   Summary
+
+============================================================================   ====================================================================================================================================
+:ref:`auto_chart_line_colour <post_processing_auto_chart_line_colour>`                                        Indicates whether to automatically choose the Line Colour or to allow the user to manually select it.
+
+:ref:`auto_chart_symbol_colour <post_processing_auto_chart_symbol_colour>`                                  Indicates whether to automatically choose the Symbol Colour or to allow the user to manually select it.
+
+:ref:`case_name <post_processing_case_name>`                                                                                                                                                     'case_name' child.
+
+:ref:`category_values <post_processing_category_values>`                                                                                                         Histogram information of the count values per bin.
+
+:ref:`chart_fft_line_type <post_processing_chart_fft_line_type>`                                                                                                     Specifies the line type to use for FFT charts.
+
+:ref:`chart_line_colour <post_processing_chart_line_colour>`                     A list of three numbers between 0 and 1, which represent the RGB (Red/Green/Blue) values to be used when colouring the Chart Line.
+
+:ref:`chart_line_style <post_processing_chart_line_style>`                                                                                                                         Specifies the line style to use.
+
+:ref:`chart_line_type <post_processing_chart_line_type>`                                                                                                         Specifies the line type to use for non-FFT charts.
+
+:ref:`chart_line_visibility <post_processing_chart_line_visibility>`                                                                                        Toggles the visibility of this chart line in the chart.
+
+:ref:`chart_symbol_colour <post_processing_chart_symbol_colour>`               A list of three numbers between 0 and 1, which represent the RGB (Red/Green/Blue) values to be used when colouring the Chart Symbol.
+
+:ref:`chart_symbol_style <post_processing_chart_symbol_style>`                                                                                                                   Specifies the symbol style to use.
+
+:ref:`fill_area <post_processing_fill_area>`                                                                                                                 Fill in the area under the curve depending on options.
+
+:ref:`fill_area_options <post_processing_fill_area_options>`                                                                                                       Determines how to process the fill area of line.
+
+:ref:`is_valid <post_processing_is_valid>`                                                                                                                    If False, then the line case name is no longer valid.
+
+:ref:`line_name <post_processing_line_name>`                                                                  The name of this chart line. This string will be used as the label in the Legend if one is displayed.
+
+:ref:`use_automatic_line_naming <post_processing_use_automatic_line_naming>`                                                                           If True, then the line name will be automatically generated.
+
+============================================================================   ====================================================================================================================================
+
+.. rubric:: Methods
+
+============================================   ========================================
+
+Method                                                                          Summary
+
+============================================   ========================================
+:ref:`suspend <post_processing_suspend>`       Suspend immediate update for the object.
+
+:ref:`unsuspend <post_processing_unsuspend>`   Restore immediate update for the object.
+
+============================================   ========================================
+
+.. rubric:: Included in:
+
+==============================================   ===================
+
+Parent                                                       Summary
+
+==============================================   ===================
+:ref:`chart_line <post_processing_chart_line>`   'chart_line' child.
+
+==============================================   ===================
+

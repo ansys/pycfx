@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_314:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_314.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================   =================================================================
+
+Parent                                                                                                    Summary
+
+=============================================   =================================================================
+:ref:`polar_axis <pre_processing_polar_axis>`   Defines the first reference direction used for Injection Regions.
+
+=============================================   =================================================================
+

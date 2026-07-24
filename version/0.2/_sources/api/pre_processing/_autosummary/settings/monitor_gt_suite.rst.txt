@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_monitor_gt_suite:
+
+monitor_gt_suite
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.monitor_gt_suite.monitor_gt_suite
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`monitor_gt_suite_child <pre_processing_monitor_gt_suite_child>`
+
+
+.. rubric:: Included in:
+
+=======================================================   =========================
+
+Parent                                                                      Summary
+
+=======================================================   =========================
+:ref:`monitor_objects <pre_processing_monitor_objects>`   'MONITOR OBJECTS' object.
+
+=======================================================   =========================
+

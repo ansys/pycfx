@@ -1,0 +1,46 @@
+:orphan:
+
+.. _pre_processing_additional_interface_models_child:
+
+additional_interface_models_child
+=================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.additional_interface_models_child.additional_interface_models_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================   =================================================================================
+
+Attribute                                                                                                                                     Summary
+
+=================================================================   =================================================================================
+:ref:`filter_domain_list1 <pre_processing_filter_domain_list1>`      A filter for the list of regions used on the first side of the domain interface.
+
+:ref:`filter_domain_list2 <pre_processing_filter_domain_list2>`     A filter for the list of regions used on the second side of the domain interface.
+
+:ref:`interface_type <pre_processing_interface_type>`                                                                     'Interface Type' parameter.
+
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum_5>`                                Specifies conditions on Mass and Momentum at a boundary.
+
+:ref:`additional_variable <pre_processing_additional_variable_7>`                                        A container for Additional Variable objects.
+
+:ref:`electric_field <pre_processing_electric_field_1>`                                                                      'ELECTRIC FIELD' object.
+
+:ref:`heat_transfer <pre_processing_heat_transfer_5>`                                               Specifies heat transfer conditions at a boundary.
+
+:ref:`thermal_radiation <pre_processing_thermal_radiation_2>`                                 Sets the conditions on Thermal Radiation at a boundary.
+
+=================================================================   =================================================================================
+
+.. rubric:: Included in:
+
+===============================================================================   ====================================================
+
+Parent                                                                                                                         Summary
+
+===============================================================================   ====================================================
+:ref:`additional_interface_models <pre_processing_additional_interface_models>`   A container for Additional Interface Models objects.
+
+===============================================================================   ====================================================
+

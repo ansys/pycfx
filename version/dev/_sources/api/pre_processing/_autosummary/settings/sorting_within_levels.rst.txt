@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_sorting_within_levels:
+
+sorting_within_levels
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.sorting_within_levels.sorting_within_levels
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================   =======================
+
+Parent                                                                Summary
+
+===================================================   =======================
+:ref:`node_ordering <pre_processing_node_ordering>`   'NODE ORDERING' object.
+
+===================================================   =======================
+

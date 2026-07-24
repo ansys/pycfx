@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_high_lift_modification:
+
+high_lift_modification
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.high_lift_modification.high_lift_modification
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================   ===========================================================
+
+Attribute                                                                                                     Summary
+
+=======================================================   ===========================================================
+:ref:`enabled <pre_processing_enabled_74>`                                  Enable the HIGH LIFT MODIFICATION object.
+
+:ref:`option <pre_processing_option_131>`                                        The 'High Lift Modification' option.
+
+:ref:`chl_coefficient <pre_processing_chl_coefficient>`   Coefficient for the High-Lift correction for the SST model.
+
+=======================================================   ===========================================================
+
+.. rubric:: Included in:
+
+===========================================================   ===========================================================================
+
+Parent                                                                                                                            Summary
+
+===========================================================   ===========================================================================
+:ref:`turbulence_model <pre_processing_turbulence_model>`     Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+:ref:`turbulence_model <pre_processing_turbulence_model_1>`   Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+===========================================================   ===========================================================================
+

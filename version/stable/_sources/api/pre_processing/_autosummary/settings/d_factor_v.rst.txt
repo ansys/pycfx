@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_d_factor_v:
+
+d_factor_v
+==========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.d_factor_v.d_factor_v
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================================   ==========================================
+
+Parent                                                                                                         Summary
+
+=========================================================================   ==========================================
+:ref:`injection_variable_child <pre_processing_injection_variable_child>`   'child_object_type' of injection_variable.
+
+=========================================================================   ==========================================
+

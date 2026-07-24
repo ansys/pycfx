@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_number_of_modes:
+
+number_of_modes
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.number_of_modes.number_of_modes
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   ============================================================
+
+Parent                                                                                                           Summary
+
+=========================================================   ============================================================
+:ref:`transient_method <pre_processing_transient_method>`   Defines the discretization algorithm for the transient term.
+
+=========================================================   ============================================================
+

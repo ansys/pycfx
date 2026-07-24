@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_option_250:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_250.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================   =====================================================
+
+Parent                                                                                                          Summary
+
+===============================================================   =====================================================
+:ref:`contact_area_model <pre_processing_contact_area_model>`     Specifies fluid-solid contact area for a given fluid.
+
+:ref:`contact_area_model <pre_processing_contact_area_model_1>`   Specifies fluid-solid contact area for a given fluid.
+
+===============================================================   =====================================================
+

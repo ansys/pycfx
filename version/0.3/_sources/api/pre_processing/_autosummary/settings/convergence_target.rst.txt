@@ -1,0 +1,29 @@
+:orphan:
+
+.. _pre_processing_convergence_target:
+
+convergence_target
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.convergence_target.convergence_target
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================================================   ===========================================
+
+Parent                                                                                                                            Summary
+
+===========================================================================================   ===========================================
+:ref:`coupling_data_transfer_control <pre_processing_coupling_data_transfer_control>`            'COUPLING DATA TRANSFER CONTROL' object.
+
+:ref:`ansys_variable_child <pre_processing_ansys_variable_child>`                                  'child_object_type' of ansys_variable.
+
+:ref:`mesh_motion_data_transfer_control <pre_processing_mesh_motion_data_transfer_control>`   'MESH MOTION DATA TRANSFER CONTROL' object.
+
+:ref:`force_data_transfer_control <pre_processing_force_data_transfer_control>`                     'FORCE DATA TRANSFER CONTROL' object.
+
+:ref:`torque_data_transfer_control <pre_processing_torque_data_transfer_control>`                  'TORQUE DATA TRANSFER CONTROL' object.
+
+===========================================================================================   ===========================================
+

@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_pressure_gradient_force:
+
+pressure_gradient_force
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.pressure_gradient_force.pressure_gradient_force
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================   =====================================
+
+Attribute                                                                                   Summary
+
+===========================================================   =====================================
+:ref:`option <pre_processing_option_190>`                     The 'Pressure Gradient Force' option.
+
+:ref:`particle_coupling <pre_processing_particle_coupling>`          'Particle Coupling' parameter.
+
+===========================================================   =====================================
+
+.. rubric:: Included in:
+
+===========================================================   ====================================================
+
+Parent                                                                                                     Summary
+
+===========================================================   ====================================================
+:ref:`momentum_transfer <pre_processing_momentum_transfer>`   Specifies momentum transfer models for a fluid pair.
+
+===========================================================   ====================================================
+

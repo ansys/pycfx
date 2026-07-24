@@ -1,0 +1,50 @@
+:orphan:
+
+.. _pre_processing_particle_histogram_child:
+
+particle_histogram_child
+========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.particle_histogram_child.particle_histogram_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================   =======================================
+
+Attribute                                                                                             Summary
+
+===================================================================   =======================================
+:ref:`histogram_type <pre_processing_histogram_type>`                             'Histogram Type' parameter.
+
+:ref:`number_of_bins <pre_processing_number_of_bins>`                 Number of classes for histogram output.
+
+:ref:`particle_definition <pre_processing_particle_definition>`              'Particle Definition' parameter.
+
+:ref:`x_variable <pre_processing_x_variable>`                                         'x Variable' parameter.
+
+:ref:`y_variable <pre_processing_y_variable>`                                         'y Variable' parameter.
+
+:ref:`histogram_lower_bound <pre_processing_histogram_lower_bound>`         Lower bound for histogram x-axis.
+
+:ref:`histogram_upper_bound <pre_processing_histogram_upper_bound>`         Upper bound for histogram y-axis.
+
+:ref:`sample_location <pre_processing_sample_location>`                          'Sample Location' parameter.
+
+:ref:`export_frequency <pre_processing_export_frequency_1>`                        'EXPORT FREQUENCY' object.
+
+:ref:`export_format <pre_processing_export_format_1>`                                 'EXPORT FORMAT' object.
+
+===================================================================   =======================================
+
+.. rubric:: Included in:
+
+=============================================================   ===========================================
+
+Parent                                                                                              Summary
+
+=============================================================   ===========================================
+:ref:`particle_histogram <pre_processing_particle_histogram>`   A container for Particle Histogram objects.
+
+=============================================================   ===========================================
+

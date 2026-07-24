@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_fluid_5:
+
+fluid
+=====
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fluid_5.fluid
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`fluid_child <pre_processing_fluid_child_5>`
+
+
+.. rubric:: Included in:
+
+===================================================================   ===============================================================================
+
+Parent                                                                                                                                        Summary
+
+===================================================================   ===============================================================================
+:ref:`nonoverlap_conditions <pre_processing_nonoverlap_conditions>`   Specifies boundary conditions on non overlap regions of a GGI domain interface.
+
+===================================================================   ===============================================================================
+

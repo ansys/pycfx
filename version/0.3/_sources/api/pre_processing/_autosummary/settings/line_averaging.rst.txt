@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_line_averaging:
+
+line_averaging
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.line_averaging.line_averaging
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`line_averaging_child <pre_processing_line_averaging_child>`
+
+
+.. rubric:: Included in:
+
+===================================================================   =======================================
+
+Parent                                                                                                Summary
+
+===================================================================   =======================================
+:ref:`user_line_cloud_child <pre_processing_user_line_cloud_child>`   'child_object_type' of user_line_cloud.
+
+===================================================================   =======================================
+

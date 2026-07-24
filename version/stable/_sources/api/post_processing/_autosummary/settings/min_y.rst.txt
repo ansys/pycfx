@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_min_y:
+
+min_y
+=====
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.min_y.min_y
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+================================================   =============================
+
+Parent                                                                   Summary
+
+================================================   =============================
+:ref:`chart_child <post_processing_chart_child>`   'child_object_type' of chart.
+
+================================================   =============================
+

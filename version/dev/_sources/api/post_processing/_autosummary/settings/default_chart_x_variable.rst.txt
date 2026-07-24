@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_default_chart_x_variable:
+
+default_chart_x_variable
+========================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.default_chart_x_variable.default_chart_x_variable
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+================================================   =============================
+
+Parent                                                                   Summary
+
+================================================   =============================
+:ref:`chart_child <post_processing_chart_child>`   'child_object_type' of chart.
+
+================================================   =============================
+

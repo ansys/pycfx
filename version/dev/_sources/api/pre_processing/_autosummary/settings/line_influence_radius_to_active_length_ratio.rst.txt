@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_line_influence_radius_to_active_length_ratio:
+
+line_influence_radius_to_active_length_ratio
+============================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.line_influence_radius_to_active_length_ratio.line_influence_radius_to_active_length_ratio
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ============================
+
+Parent                                                                               Summary
+
+=============================================================   ============================
+:ref:`boundary_line_type <pre_processing_boundary_line_type>`   Defines the line properties.
+
+=============================================================   ============================
+

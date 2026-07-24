@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_use_mesh_from:
+
+use_mesh_from
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.use_mesh_from.use_mesh_from
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================   ================================
+
+Parent                                                                                           Summary
+
+=====================================================================   ================================
+:ref:`initial_values_control <pre_processing_initial_values_control>`   'INITIAL VALUES CONTROL' object.
+
+=====================================================================   ================================
+

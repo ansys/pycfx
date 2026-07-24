@@ -1,0 +1,44 @@
+:orphan:
+
+.. _pre_processing_heat_release:
+
+heat_release
+============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.heat_release.heat_release
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================================   ========================================
+
+Attribute                                                                                                          Summary
+
+===============================================================================   ========================================
+:ref:`option <pre_processing_option_47>`                                                        The 'Heat Release' option.
+
+:ref:`latent_heat <pre_processing_latent_heat>`                                                               Latent Heat.
+
+:ref:`reference_parent_material <pre_processing_reference_parent_material>`                     Reference parent material.
+
+:ref:`reference_material <pre_processing_reference_material>`                                          Reference material.
+
+:ref:`reference_temperature <pre_processing_reference_temperature>`                     'Reference Temperature' parameter.
+
+:ref:`reference_specific_enthalpy <pre_processing_reference_specific_enthalpy>`   'Reference Specific Enthalpy' parameter.
+
+:ref:`reference_pressure <pre_processing_reference_pressure>`                              'Reference Pressure' parameter.
+
+===============================================================================   ========================================
+
+.. rubric:: Included in:
+
+=====================================================   ================================
+
+Parent                                                                           Summary
+
+=====================================================   ================================
+:ref:`reaction_child <pre_processing_reaction_child>`   'child_object_type' of reaction.
+
+=====================================================   ================================
+

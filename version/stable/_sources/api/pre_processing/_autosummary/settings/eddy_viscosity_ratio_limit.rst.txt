@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_eddy_viscosity_ratio_limit:
+
+eddy_viscosity_ratio_limit
+==========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.eddy_viscosity_ratio_limit.eddy_viscosity_ratio_limit
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================================   ====================================================================================================
+
+Parent                                                                                                                                                                       Summary
+
+=============================================================================   ====================================================================================================
+:ref:`zonal_les_model <pre_processing_zonal_les_model>`                                                                                                    'ZONAL LES MODEL' object.
+
+:ref:`turbulent_dispersion_force <pre_processing_turbulent_dispersion_force>`   Specifies that turbulent dispersion should be included in momentum transfer models for a fluid pair.
+
+=============================================================================   ====================================================================================================
+

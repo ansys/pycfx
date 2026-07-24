@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_carbuncle_fix:
+
+carbuncle_fix
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.carbuncle_fix.carbuncle_fix
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   =======================================================================
+
+Parent                                                                                                                                    Summary
+
+=======================================================================   =======================================================================
+:ref:`compressibility_control <pre_processing_compressibility_control>`   Holds parameters that affect solver convergence for compressible flows.
+
+=======================================================================   =======================================================================
+

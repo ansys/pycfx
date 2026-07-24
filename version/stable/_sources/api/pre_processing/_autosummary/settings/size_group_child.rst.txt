@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_size_group_child:
+
+size_group_child
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.size_group_child.size_group_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================   ========================================================
+
+Attribute                                                                                                          Summary
+
+===============================================================   ========================================================
+:ref:`polydispersed_fluid <pre_processing_polydispersed_fluid>`     The polydispersed fluid to which a size group belongs.
+
+:ref:`option <pre_processing_option_112>`                                                         The 'Size Group' option.
+
+:ref:`size_group_diameter <pre_processing_size_group_diameter>`   Specified diameter for a polydispersed fluid size group.
+
+===============================================================   ========================================================
+
+.. rubric:: Included in:
+
+=============================================   ===================================
+
+Parent                                                                      Summary
+
+=============================================   ===================================
+:ref:`size_group <pre_processing_size_group>`   A container for Size Group objects.
+
+=============================================   ===================================
+

@@ -1,0 +1,48 @@
+:orphan:
+
+.. _pre_processing_omega_coefficients:
+
+omega_coefficients
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.omega_coefficients.omega_coefficients
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================   =============================================================
+
+Attribute                                                                                                                       Summary
+
+=======================================================================   =============================================================
+:ref:`enabled <pre_processing_enabled_59>`                                                        Enable the OMEGA COEFFICIENTS object.
+
+:ref:`alpha_coefficient <pre_processing_alpha_coefficient>`                                                    Alpha model coefficient.
+
+:ref:`beta_coefficient <pre_processing_beta_coefficient>`                                                       Beta model coefficient.
+
+:ref:`turbulent_flux_closure <pre_processing_turbulent_flux_closure_1>`   Controls the turbulent flux closure for a transport equation.
+
+=======================================================================   =============================================================
+
+.. rubric:: Included in:
+
+===========================================================   =====================================================================================
+
+Parent                                                                                                                                      Summary
+
+===========================================================   =====================================================================================
+:ref:`turbulence_model <pre_processing_turbulence_model>`               Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+:ref:`k_omega_regime <pre_processing_k_omega_regime>`                         Controls Menter turbulence model coefficients for the k-Omega regime.
+
+:ref:`k_epsilon_regime <pre_processing_k_epsilon_regime>`                   Controls Menter turbulence model coefficients for the k-Epsilon regime.
+
+:ref:`rs_epsilon_regime <pre_processing_rs_epsilon_regime>`   Controls Menter turbulence model coefficients for the Reynolds Stress-Epsilon regime.
+
+:ref:`rs_omega_regime <pre_processing_rs_omega_regime>`         Controls Menter turbulence model coefficients for the Reynolds Stress-Omega regime.
+
+:ref:`turbulence_model <pre_processing_turbulence_model_1>`             Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+===========================================================   =====================================================================================
+

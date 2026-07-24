@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_transient_results:
+
+transient_results
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.transient_results.transient_results
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`transient_results_child <pre_processing_transient_results_child>`
+
+
+.. rubric:: Included in:
+
+=====================================================   ==============================================================================
+
+Parent                                                                                                                         Summary
+
+=====================================================   ==============================================================================
+:ref:`output_control <pre_processing_output_control>`   Holds object definitions that control output from the solver during execution.
+
+=====================================================   ==============================================================================
+

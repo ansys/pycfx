@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_solid_models:
+
+solid_models
+============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.solid_models.solid_models
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================   ======================================================================
+
+Attribute                                                                                                                                  Summary
+
+=========================================================================   ======================================================================
+:ref:`heat_transfer_model <pre_processing_heat_transfer_model_2>`                        Specifies the Heat Transfer Model to be used in a domain.
+
+:ref:`thermal_radiation_model <pre_processing_thermal_radiation_model_2>`            Defines the Thermal Radiation model to be used in the domain.
+
+:ref:`additional_variable <pre_processing_additional_variable_3>`                                     A container for Additional Variable objects.
+
+:ref:`electromagnetic_model <pre_processing_electromagnetic_model>`                    Specifies the electromagnetic model to be used in a domain.
+
+:ref:`solid_motion <pre_processing_solid_motion>`                           Describes the motion of the solid with respect to the reference frame.
+
+=========================================================================   ======================================================================
+
+.. rubric:: Included in:
+
+=================================================   ==============================
+
+Parent                                                                     Summary
+
+=================================================   ==============================
+:ref:`domain_child <pre_processing_domain_child>`   'child_object_type' of domain.
+
+=================================================   ==============================
+

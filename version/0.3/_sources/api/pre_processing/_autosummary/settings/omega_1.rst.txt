@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_omega_1:
+
+omega
+=====
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.omega_1.omega
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================   ===================
+
+Attribute                                               Summary
+
+=========================================   ===================
+:ref:`option <pre_processing_option_340>`   The 'Omega' option.
+
+:ref:`omega <pre_processing_omega>`          'Omega' parameter.
+
+=========================================   ===================
+
+.. rubric:: Included in:
+
+===================================================================================   ======================================
+
+Parent                                                                                                               Summary
+
+===================================================================================   ======================================
+:ref:`turbulence_initial_conditions <pre_processing_turbulence_initial_conditions>`   Sets initial conditions on turbulence.
+
+===================================================================================   ======================================
+

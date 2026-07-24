@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_temperature_2:
+
+temperature
+===========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.temperature_2.temperature
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================   ==============================
+
+Attribute                                                                Summary
+
+===============================================   ==============================
+:ref:`enabled <pre_processing_enabled_109>`       Enable the TEMPERATURE object.
+
+:ref:`option <pre_processing_option_32>`               The 'Temperature' option.
+
+:ref:`temperature <pre_processing_temperature>`         'Temperature' parameter.
+
+===============================================   ==============================
+
+.. rubric:: Included in:
+
+=================================================================   ==============================================================
+
+Parent                                                                                                                     Summary
+
+=================================================================   ==============================================================
+:ref:`injection_conditions <pre_processing_injection_conditions>`   Specifies injection conditions for all equations being solved.
+
+=================================================================   ==============================================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_generate_display_geometry:
+
+generate_display_geometry
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.generate_display_geometry.generate_display_geometry
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+======================================================================   ========================================
+
+Parent                                                                                                    Summary
+
+======================================================================   ========================================
+:ref:`injection_region_child <post_processing_injection_region_child>`   'child_object_type' of injection_region.
+
+======================================================================   ========================================
+

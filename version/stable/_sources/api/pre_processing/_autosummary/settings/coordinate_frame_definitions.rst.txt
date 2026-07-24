@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_coordinate_frame_definitions:
+
+coordinate_frame_definitions
+============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.coordinate_frame_definitions.coordinate_frame_definitions
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================   ===============================================
+
+Attribute                                                                                           Summary
+
+=========================================================   ===============================================
+:ref:`enabled <pre_processing_enabled_28>`                  Enable the COORDINATE FRAME DEFINITIONS object.
+
+:ref:`coordinate_frame <pre_processing_coordinate_frame>`         A container for Coordinate Frame objects.
+
+=========================================================   ===============================================
+
+.. rubric:: Included in:
+
+=======================================   ===============================================================================
+
+Parent                                                                                                            Summary
+
+=======================================   ===============================================================================
+:ref:`library <pre_processing_library>`   Stores common object descriptions for reference in the main problem definition.
+
+=======================================   ===============================================================================
+

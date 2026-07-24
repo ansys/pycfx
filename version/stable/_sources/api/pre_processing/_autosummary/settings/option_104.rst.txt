@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_104:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_104.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   ===========================================
+
+Parent                                                                                          Summary
+
+=========================================================   ===========================================
+:ref:`mesh_deformation <pre_processing_mesh_deformation>`   Defines the method used to deform the mesh.
+
+=========================================================   ===========================================
+

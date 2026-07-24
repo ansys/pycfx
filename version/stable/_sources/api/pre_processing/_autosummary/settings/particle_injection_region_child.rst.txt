@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_particle_injection_region_child:
+
+particle_injection_region_child
+===============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.particle_injection_region_child.particle_injection_region_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================   =============================================================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                               Summary
+
+===============================================   =============================================================================================================================================================================================================================================
+:ref:`coord_frame <pre_processing_coord_frame>`   Local coordinate frame for computing expressions. The default at the top level of the command data structure is Coord 0, that is no transformation. The default at lower levels is to inherit the value from objects higher up the structure.
+
+:ref:`fluid <pre_processing_fluid_1>`                                                                                                                                                                                                                            A container for Fluid objects.
+
+===============================================   =============================================================================================================================================================================================================================================
+
+.. rubric:: Included in:
+
+===========================================================================   ==================================================
+
+Parent                                                                                                                   Summary
+
+===========================================================================   ==================================================
+:ref:`particle_injection_region <pre_processing_particle_injection_region>`   A container for Particle Injection Region objects.
+
+===========================================================================   ==================================================
+

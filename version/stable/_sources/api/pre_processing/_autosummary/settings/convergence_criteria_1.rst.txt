@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_convergence_criteria_1:
+
+convergence_criteria
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.convergence_criteria_1.convergence_criteria
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================   ============================
+
+Attribute                                                                      Summary
+
+=======================================================   ============================
+:ref:`residual_type <pre_processing_residual_type>`         'Residual Type' parameter.
+
+:ref:`residual_target <pre_processing_residual_target>`   'Residual Target' parameter.
+
+=======================================================   ============================
+
+.. rubric:: Included in:
+
+=====================================================================   ========================================
+
+Parent                                                                                                   Summary
+
+=====================================================================   ========================================
+:ref:`dynamic_variable_child <pre_processing_dynamic_variable_child>`   'child_object_type' of dynamic_variable.
+
+=====================================================================   ========================================
+

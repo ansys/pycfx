@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_g_variance_1:
+
+g_variance
+==========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.g_variance_1.g_variance
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================   ====================================================
+
+Attribute                                                                                    Summary
+
+=============================================   ====================================================
+:ref:`option <pre_processing_option_329>`                                   The 'G Variance' option.
+
+:ref:`g_variance <pre_processing_g_variance>`   Variance of G Scalar signed distance to flame front.
+
+=============================================   ====================================================
+
+.. rubric:: Included in:
+
+===============================================================   ===============================================================================
+
+Parent                                                                                                                                    Summary
+
+===============================================================   ===============================================================================
+:ref:`initial_conditions <pre_processing_initial_conditions>`     Holds the details of initial condition specification for one or more equations.
+
+:ref:`initial_conditions <pre_processing_initial_conditions_1>`   Holds the details of initial condition specification for one or more equations.
+
+:ref:`initial_conditions <pre_processing_initial_conditions_5>`   Holds the details of initial condition specification for one or more equations.
+
+===============================================================   ===============================================================================
+

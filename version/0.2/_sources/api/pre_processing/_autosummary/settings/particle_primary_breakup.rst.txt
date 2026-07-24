@@ -1,0 +1,78 @@
+:orphan:
+
+.. _pre_processing_particle_primary_breakup:
+
+particle_primary_breakup
+========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.particle_primary_breakup.particle_primary_breakup
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================================================================   ===============================================================
+
+Attribute                                                                                                                                                                 Summary
+
+===============================================================================================================   ===============================================================
+:ref:`option <pre_processing_option_217>`                                                                                                  The 'Particle Primary Breakup' option.
+
+:ref:`coefficient_of_contraction <pre_processing_coefficient_of_contraction>`                                                             'Coefficient of Contraction' parameter.
+
+:ref:`injection_total_pressure <pre_processing_injection_total_pressure>`                                                                   'Injection Total Pressure' parameter.
+
+:ref:`pressure_probe_normal_distance <pre_processing_pressure_probe_normal_distance>`                                                 'Pressure Probe Normal Distance' parameter.
+
+:ref:`injection_pressure_difference <pre_processing_injection_pressure_difference>`                                                    'Injection Pressure Difference' parameter.
+
+:ref:`density_probe_normal_distance <pre_processing_density_probe_normal_distance>`                                                    'Density Probe Normal Distance' parameter.
+
+:ref:`injector_nozzle_length_over_diameter_ratio <pre_processing_injector_nozzle_length_over_diameter_ratio>`             'Injector Nozzle Length over Diameter Ratio' parameter.
+
+:ref:`critical_weber_number <pre_processing_critical_weber_number>`                                                                            'Critical Weber Number' parameter.
+
+:ref:`short_wave_ligament_factor <pre_processing_short_wave_ligament_factor>`                                                             'Short Wave Ligament Factor' parameter.
+
+:ref:`long_wave_ligament_factor <pre_processing_long_wave_ligament_factor>`                                                                'Long Wave Ligament Factor' parameter.
+
+:ref:`droplet_diameter_size_factor <pre_processing_droplet_diameter_size_factor>`                                                       'Droplet Diameter Size Factor' parameter.
+
+:ref:`form_loss_coefficient <pre_processing_form_loss_coefficient>`                                                                            'Form Loss Coefficient' parameter.
+
+:ref:`c1_constant <pre_processing_c1_constant>`                                                                                                          'C1 Constant' parameter.
+
+:ref:`c2_constant <pre_processing_c2_constant>`                                                                                                          'C2 Constant' parameter.
+
+:ref:`c3_constant <pre_processing_c3_constant>`                                                                                                          'C3 Constant' parameter.
+
+:ref:`c4_constant <pre_processing_c4_constant>`                                                                                                          'C4 Constant' parameter.
+
+:ref:`ca1_constant <pre_processing_ca1_constant>`                                                                                                       'CA1 Constant' parameter.
+
+:ref:`k1_constant <pre_processing_k1_constant>`                                                                                                          'K1 Constant' parameter.
+
+:ref:`average_turbulent_energy_dissipation_factor <pre_processing_average_turbulent_energy_dissipation_factor>`          'Average Turbulent Energy Dissipation Factor' parameter.
+
+:ref:`turbulence_length_scale_power_factor <pre_processing_turbulence_length_scale_power_factor>`                               'Turbulence Length Scale Power Factor' parameter.
+
+:ref:`cone_angle <pre_processing_cone_angle_1>`                                                                                      Defines the initial droplet injection angle.
+
+:ref:`particle_material_vapour_pressure <pre_processing_particle_material_vapour_pressure>`                       Holds vapour pressure information for primary droplet break-up.
+
+:ref:`nozzle_discharge_coefficient <pre_processing_nozzle_discharge_coefficient>`                                       Holds information about the nozzle discharge coefficient.
+
+:ref:`swirl_definition <pre_processing_swirl_definition>`                                                                            Defines the initial droplet swirl component.
+
+===============================================================================================================   ===============================================================
+
+.. rubric:: Included in:
+
+=========================================================   =============================
+
+Parent                                                                            Summary
+
+=========================================================   =============================
+:ref:`injection_method <pre_processing_injection_method>`   Defines the injection method.
+
+=========================================================   =============================
+

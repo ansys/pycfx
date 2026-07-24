@@ -1,0 +1,54 @@
+:orphan:
+
+.. _pre_processing_turbulent_flux_closure:
+
+turbulent_flux_closure
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.turbulent_flux_closure.turbulent_flux_closure
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================================   ==============================================================================================
+
+Attribute                                                                                                                                                                            Summary
+
+===========================================================================================   ==============================================================================================
+:ref:`enabled <pre_processing_enabled_48>`                                                                                                         Enable the TURBULENT FLUX CLOSURE object.
+
+:ref:`option <pre_processing_option_122>`                                                                                                               The 'Turbulent Flux Closure' option.
+
+:ref:`turbulent_schmidt_number <pre_processing_turbulent_schmidt_number>`                                     Turbulent Schmidt number for a quantity (density in buoyancy turbulence term).
+
+:ref:`anisotropic_diffusion_coefficient <pre_processing_anisotropic_diffusion_coefficient>`                      Coefficient for anisotropic turbulent diffusion for Turbulent Flux Closure.
+
+:ref:`cross_derivative_weighting <pre_processing_cross_derivative_weighting>`                 Weighting of cross derivatives for anisotropic turbulent diffusion for Turbulent Flux Closure.
+
+:ref:`isotropic_diffusion_coefficient <pre_processing_isotropic_diffusion_coefficient>`                            Coefficient for isotropic turbulent diffusion for Turbulent Flux Closure.
+
+===========================================================================================   ==============================================================================================
+
+.. rubric:: Included in:
+
+===================================================================================   =============================================================================================================================
+
+Parent                                                                                                                                                                                                      Summary
+
+===================================================================================   =============================================================================================================================
+:ref:`intermittency_coefficients <pre_processing_intermittency_coefficients>`                                                                Controls model coefficients for the turbulence intermittency equation.
+
+:ref:`rethetat_coefficients <pre_processing_rethetat_coefficients>`                   Controls model coefficients for the transport equation of the turbulence transition onset momentum thickness Reynolds number.
+
+:ref:`eddy_viscosity_coefficients <pre_processing_eddy_viscosity_coefficients>`                   Controls model coefficients for the Eddy Viscosity transport equation with the Spalart-Allmaras turbulence model.
+
+:ref:`lrr_ip_rs_coefficients <pre_processing_lrr_ip_rs_coefficients>`                                 Controls model coefficients for the Reynolds Stress transport equations (simple pressure strain formulation).
+
+:ref:`rs_coefficients <pre_processing_rs_coefficients>`                                              Controls model coefficients for the Reynolds Stress transport equations (general pressure strain formulation).
+
+:ref:`mixture_variance_coefficients <pre_processing_mixture_variance_coefficients>`                                               Controls model coefficients for the Mixture Fraction Variance transport equation.
+
+:ref:`reaction_progress_variable <pre_processing_reaction_progress_variable>`                                       Defines the primitive reaction progress variable for premixed or partially premixed combustion.
+
+===================================================================================   =============================================================================================================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_damping_factor:
+
+damping_factor
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.damping_factor.damping_factor
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   =======================================
+
+Parent                                                                                                    Summary
+
+=======================================================================   =======================================
+:ref:`turbulence_wall_damping <pre_processing_turbulence_wall_damping>`   Sets the turbulence wall damping model.
+
+=======================================================================   =======================================
+

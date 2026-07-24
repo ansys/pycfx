@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_fourier_transformation_side_2:
+
+fourier_transformation_side_2
+=============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fourier_transformation_side_2.fourier_transformation_side_2
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================   ===========================================
+
+Attribute                                                                                                         Summary
+
+===========================================================================   ===========================================
+:ref:`option <pre_processing_option_434>`                                     The 'Fourier Transformation Side 2' option.
+
+:ref:`phase_corrected_interface <pre_processing_phase_corrected_interface>`        'Phase Corrected Interface' parameter.
+
+:ref:`sampling_domain_interface <pre_processing_sampling_domain_interface>`        'Sampling Domain Interface' parameter.
+
+===========================================================================   ===========================================
+
+.. rubric:: Included in:
+
+=================================================================================   ==============================================
+
+Parent                                                                                                                     Summary
+
+=================================================================================   ==============================================
+:ref:`fourier_transformation_child <pre_processing_fourier_transformation_child>`   'child_object_type' of fourier_transformation.
+
+=================================================================================   ==============================================
+

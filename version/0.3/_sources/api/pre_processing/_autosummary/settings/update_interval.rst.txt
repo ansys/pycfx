@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_update_interval:
+
+update_interval
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.update_interval.update_interval
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================   ================================
+
+Parent                                                                                           Summary
+
+=====================================================================   ================================
+:ref:`injection_distribution <pre_processing_injection_distribution>`   'INJECTION DISTRIBUTION' object.
+
+=====================================================================   ================================
+

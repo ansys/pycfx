@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_191:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_191.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================   ======================================================================================================
+
+Parent                                                                                                                                                                 Summary
+
+=====================================================================   ======================================================================================================
+:ref:`wall_lubrication_force <pre_processing_wall_lubrication_force>`   Specifies that wall lubrication force should be included in momentum transfer models for a fluid pair.
+
+=====================================================================   ======================================================================================================
+

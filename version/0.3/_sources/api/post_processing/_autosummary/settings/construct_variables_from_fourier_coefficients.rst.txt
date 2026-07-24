@@ -1,0 +1,23 @@
+:orphan:
+
+.. _post_processing_construct_variables_from_fourier_coefficients:
+
+construct_variables_from_fourier_coefficients
+=============================================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.construct_variables_from_fourier_coefficients.construct_variables_from_fourier_coefficients
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+================================================   ======================================================================================================================
+
+Parent                                                                                                                                                            Summary
+
+================================================   ======================================================================================================================
+:ref:`case_child <post_processing_case_child>`                                                                                               'child_object_type' of case.
+
+:ref:`data_reader <post_processing_data_reader>`   This object contains the settings used to read results files into the post-processor. It is used by the "load" action.
+
+================================================   ======================================================================================================================
+

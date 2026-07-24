@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_number_of_refinement_levels:
+
+number_of_refinement_levels
+===========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.number_of_refinement_levels.number_of_refinement_levels
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ===========================
+
+Parent                                                                            Summary
+
+===========================================================   ===========================
+:ref:`partitioning_type <pre_processing_partitioning_type>`   'PARTITIONING TYPE' object.
+
+===========================================================   ===========================
+

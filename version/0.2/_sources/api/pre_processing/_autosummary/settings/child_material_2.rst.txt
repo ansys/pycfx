@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_child_material_2:
+
+child_material
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.child_material_2.child_material
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`child_material_child <pre_processing_child_material_child_2>`
+
+
+.. rubric:: Included in:
+
+===================================================================   =======================================
+
+Parent                                                                                                Summary
+
+===================================================================   =======================================
+:ref:`parent_material_child <pre_processing_parent_material_child>`   'child_object_type' of parent_material.
+
+===================================================================   =======================================
+

@@ -1,0 +1,44 @@
+:orphan:
+
+.. _pre_processing_job_submission_definition_child:
+
+job_submission_definition_child
+===============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.job_submission_definition_child.job_submission_definition_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================   =======================================
+
+Attribute                                                                                                     Summary
+
+===========================================================================   =======================================
+:ref:`option <pre_processing_option_474>`                                     The 'Job Submission Definition' option.
+
+:ref:`queue_name_list <pre_processing_queue_name_list>`                                  'Queue Name List' parameter.
+
+:ref:`job_template_list <pre_processing_job_template_list>`                            'Job Template List' parameter.
+
+:ref:`cluster_partition_list <pre_processing_cluster_partition_list>`             'Cluster Partition List' parameter.
+
+:ref:`parallel_environment_list <pre_processing_parallel_environment_list>`    'Parallel Environment List' parameter.
+
+:ref:`node_group_list <pre_processing_node_group_list>`                                  'Node Group List' parameter.
+
+:ref:`node_group_operator_list <pre_processing_node_group_operator_list>`       'Node Group Operator List' parameter.
+
+===========================================================================   =======================================
+
+.. rubric:: Included in:
+
+===========================================================================   ==================================================
+
+Parent                                                                                                                   Summary
+
+===========================================================================   ==================================================
+:ref:`job_submission_definition <pre_processing_job_submission_definition>`   A container for Job Submission Definition objects.
+
+===========================================================================   ==================================================
+

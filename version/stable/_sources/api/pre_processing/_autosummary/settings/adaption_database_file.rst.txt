@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_adaption_database_file:
+
+adaption_database_file
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.adaption_database_file.adaption_database_file
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================   ========================
+
+Parent                                                                   Summary
+
+=====================================================   ========================
+:ref:`run_definition <pre_processing_run_definition>`   'RUN DEFINITION' object.
+
+=====================================================   ========================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_boundary_hierarchy:
+
+boundary_hierarchy
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.boundary_hierarchy.boundary_hierarchy
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================================   ===========================================
+
+Parent                                                                                                            Summary
+
+===========================================================================   ===========================================
+:ref:`hybrid_order_option_child <pre_processing_hybrid_order_option_child>`   'child_object_type' of hybrid_order_option.
+
+===========================================================================   ===========================================
+

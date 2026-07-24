@@ -1,0 +1,44 @@
+:orphan:
+
+.. _pre_processing_interpolator_step_control:
+
+interpolator_step_control
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.interpolator_step_control.interpolator_step_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================================   =====================================
+
+Attribute                                                                                                       Summary
+
+===============================================================================   =====================================
+:ref:`runtime_priority <pre_processing_runtime_priority>`                                 'Runtime Priority' parameter.
+
+:ref:`executable_selection <pre_processing_executable_selection>`                        'EXECUTABLE SELECTION' object.
+
+:ref:`memory_control <pre_processing_memory_control>`                                          'MEMORY CONTROL' object.
+
+:ref:`threading_control <pre_processing_threading_control>`                                 'THREADING CONTROL' object.
+
+:ref:`domain_search_control <pre_processing_domain_search_control>`                     'DOMAIN SEARCH CONTROL' object.
+
+:ref:`interpolation_model_control <pre_processing_interpolation_model_control>`   'INTERPOLATION MODEL CONTROL' object.
+
+===============================================================================   =====================================
+
+.. rubric:: Included in:
+
+=======================================================================================   =========================================
+
+Parent                                                                                                                      Summary
+
+=======================================================================================   =========================================
+:ref:`configuration_execution_control <pre_processing_configuration_execution_control>`   'CONFIGURATION EXECUTION CONTROL' object.
+
+:ref:`execution_control <pre_processing_execution_control>`                                             'EXECUTION CONTROL' object.
+
+=======================================================================================   =========================================
+

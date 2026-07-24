@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_loss_model_1:
+
+loss_model
+==========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.loss_model_1.loss_model
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================   ==========================================================================
+
+Attribute                                                                                                                                  Summary
+
+=====================================================================   ==========================================================================
+:ref:`enabled <pre_processing_enabled_150>`                                                                          Enable the LOSS MODEL object.
+
+:ref:`option <pre_processing_option_245>`                                                                                 The 'Loss Model' option.
+
+:ref:`loss_velocity_type <pre_processing_loss_velocity_type>`           Specifies if we are using Superficial or True velocity for the loss model.
+
+:ref:`isotropic_loss_model <pre_processing_isotropic_loss_model>`                                          Defines an isotropic resistance source.
+
+:ref:`directional_loss_model <pre_processing_directional_loss_model>`                                            Defines a directional loss model.
+
+=====================================================================   ==========================================================================
+
+.. rubric:: Included in:
+
+=======================================================   ================================
+
+Parent                                                                             Summary
+
+=======================================================   ================================
+:ref:`momentum_source <pre_processing_momentum_source>`   Holds source terms for momentum.
+
+=======================================================   ================================
+

@@ -1,0 +1,42 @@
+:orphan:
+
+.. _pre_processing_laminar_flame_thickness_1:
+
+laminar_flame_thickness
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.laminar_flame_thickness_1.laminar_flame_thickness
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================================   ============================================
+
+Attribute                                                                                                                Summary
+
+=================================================================================   ============================================
+:ref:`option <pre_processing_option_142>`                                                  The 'Laminar Flame Thickness' option.
+
+:ref:`laminar_flame_thickness <pre_processing_laminar_flame_thickness>`                         Laminar Thermal Flame Thickness.
+
+:ref:`thickness_multiplier <pre_processing_thickness_multiplier>`                     Laminar flame thickness model coefficient.
+
+:ref:`temperature_exponent <pre_processing_temperature_exponent>`                              'Temperature Exponent' parameter.
+
+:ref:`dynamic_diffusivity <pre_processing_dynamic_diffusivity>`                     Smooke constant for laminar flame thickness.
+
+:ref:`smooke_reference_temperature <pre_processing_smooke_reference_temperature>`      'Smooke Reference Temperature' parameter.
+
+=================================================================================   ============================================
+
+.. rubric:: Included in:
+
+===========================================================   ========================================
+
+Parent                                                                                         Summary
+
+===========================================================   ========================================
+:ref:`combustion_model <pre_processing_combustion_model_1>`   Defines the combustion model to be used.
+
+===========================================================   ========================================
+
