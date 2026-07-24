@@ -877,3 +877,18 @@ def test_mesh_region_queries(pre_load_static_mixer_case: PreProcessing, pytestco
         "B1.P3 2",
     ]
     assert pypre.setup.mesh.get_primitive_3d_regions_for_3d_region(region="B1.P3 2") == ["B1.P3 2"]
+
+    assert pypre.setup.mesh.get_composite_2d_regions_for_2d_region(region="F4.B1.P3") == []
+    assert pypre.setup.mesh.get_composite_2d_regions_for_2d_region(region="TwoRegions") == [
+        "TwoRegions",
+        "out",
+    ]
+
+    assert pypre.setup.mesh.get_primitive_2d_regions_for_2d_region(region="Default 2D Region") == [
+        "F1.B1.P3",
+        "F2.B1.P3",
+        "F4.B1.P3",
+        "F5.B1.P3",
+        "F6.B1.P3",
+        "F8.B1.P3",
+    ]
