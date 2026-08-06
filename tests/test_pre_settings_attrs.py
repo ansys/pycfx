@@ -589,15 +589,27 @@ def test_pre_attributes(pre_load_static_mixer_case: PreProcessing, pytestconfig,
         .boundary_conditions.mass_and_momentum
     )
 
-    assert m_and_m.option.get_attr("allowed-values") == [
-        "Average Static Pressure",
-        "Normal Speed",
-        "Cartesian Velocity Components",
-        "Cylindrical Velocity Components",
-        "Mass Flow Rate",
-        "Static Pressure",
-        "Implicit",
-    ]
+    if pypre.get_cfx_version() > CFXVersion.v261:
+        assert m_and_m.option.get_attr("allowed-values") == [
+            "Average Static Pressure",
+            "Normal Speed",
+            "Cartesian Velocity Components",
+            "Cylindrical Velocity Components",
+            "Mass Flow Rate",
+            "Static Pressure",
+            "Implicit",
+            "System Coupling",
+        ]
+    else:
+        assert m_and_m.option.get_attr("allowed-values") == [
+            "Average Static Pressure",
+            "Normal Speed",
+            "Cartesian Velocity Components",
+            "Cylindrical Velocity Components",
+            "Mass Flow Rate",
+            "Static Pressure",
+            "Implicit",
+        ]
 
     assert m_and_m.pressure_profile_blend.get_attr("default") == "0.05"
     assert m_and_m.pressure_profile_blend.get_attr("active?") is True
