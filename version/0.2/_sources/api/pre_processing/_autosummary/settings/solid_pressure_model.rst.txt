@@ -1,0 +1,46 @@
+:orphan:
+
+.. _pre_processing_solid_pressure_model:
+
+solid_pressure_model
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.solid_pressure_model.solid_pressure_model
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================================   =============================================================
+
+Attribute                                                                                                                                 Summary
+
+=================================================================================   =============================================================
+:ref:`option <pre_processing_option_165>`                                                                      The 'Solid Pressure Model' option.
+
+:ref:`elasticity_modulus <pre_processing_elasticity_modulus>`                                       Parameter in simple model for solid pressure.
+
+:ref:`compaction_modulus <pre_processing_compaction_modulus>`                                     Parameter in Gidaspow model for solid pressure.
+
+:ref:`reference_elasticity_modulus <pre_processing_reference_elasticity_modulus>`                 Parameter in Gidaspow model for solid pressure.
+
+:ref:`solid_pressure <pre_processing_solid_pressure>`                                                              User specified solid pressure.
+
+:ref:`redistribute_in_rhie_chow <pre_processing_redistribute_in_rhie_chow>`                   Indicates whether momentum source is redistributed.
+
+:ref:`under_relaxation_factor <pre_processing_under_relaxation_factor>`                                      'Under Relaxation Factor' parameter.
+
+:ref:`false_timestep_linearisation <pre_processing_false_timestep_linearisation>`   Defines false timestep linearisation options for body forces.
+
+=================================================================================   =============================================================
+
+.. rubric:: Included in:
+
+===============================================   =============================
+
+Parent                                                                  Summary
+
+===============================================   =============================
+:ref:`fluid_child <pre_processing_fluid_child>`   'child_object_type' of fluid.
+
+===============================================   =============================
+

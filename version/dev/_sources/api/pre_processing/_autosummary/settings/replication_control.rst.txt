@@ -1,0 +1,48 @@
+:orphan:
+
+.. _pre_processing_replication_control:
+
+replication_control
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.replication_control.replication_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================   ===================================================
+
+Attribute                                                                                                                 Summary
+
+===========================================================================   ===================================================
+:ref:`enabled <pre_processing_enabled_238>`                                                Enable the REPLICATION CONTROL object.
+
+:ref:`option <pre_processing_option_463>`                                                       The 'Replication Control' option.
+
+:ref:`passages_per_component <pre_processing_passages_per_component>`             Specifies the number of passages per component.
+
+:ref:`passages_in_360 <pre_processing_passages_in_360>`                       Specifies the number of passages required in a 360.
+
+:ref:`total_number_of_instances <pre_processing_total_number_of_instances>`           Specifies the number of transformed copies.
+
+:ref:`theta_offset <pre_processing_theta_offset>`                              Specifies the offset angle of the first component.
+
+:ref:`rotation_axis_definition <pre_processing_rotation_axis_definition>`             Defines how the rotation axis is specified.
+
+:ref:`rotation_angle_definition <pre_processing_rotation_angle_definition>`              Defines how rotation angle is specified.
+
+:ref:`translation_definition <pre_processing_translation_definition>`                       Defines how translation is specified.
+
+===========================================================================   ===================================================
+
+.. rubric:: Included in:
+
+===============================================================================   =============================================
+
+Parent                                                                                                                  Summary
+
+===============================================================================   =============================================
+:ref:`interpolation_mapping_child <pre_processing_interpolation_mapping_child>`   'child_object_type' of interpolation_mapping.
+
+===============================================================================   =============================================
+

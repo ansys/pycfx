@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_option_392:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_392.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================   ======================================================================================
+
+Parent                                                                                                                                 Summary
+
+=====================================================   ======================================================================================
+:ref:`location_type <pre_processing_location_type>`     Defines the type of location, physics or mesh regions, to compute aerodynamic damping.
+
+:ref:`location_type <pre_processing_location_type_1>`   Defines the type of location, physics or mesh regions, to compute aerodynamic damping.
+
+=====================================================   ======================================================================================
+

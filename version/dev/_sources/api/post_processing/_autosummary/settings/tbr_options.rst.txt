@@ -1,0 +1,57 @@
+:orphan:
+
+.. _post_processing_tbr_options:
+
+tbr_options
+===========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.tbr_options.tbr_options
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+================================================================   ============================
+
+Attribute                                                                               Summary
+
+================================================================   ============================
+:ref:`maximum_phase <post_processing_maximum_phase>`                     'maximum_phase' child.
+
+:ref:`minimum_phase <post_processing_minimum_phase>`                     'minimum_phase' child.
+
+:ref:`number_of_timesteps <post_processing_number_of_timesteps>`   'number_of_timesteps' child.
+
+:ref:`phase_positions <post_processing_phase_positions>`               'phase_positions' child.
+
+:ref:`specify_phase_range <post_processing_specify_phase_range>`   'specify_phase_range' child.
+
+:ref:`timestep_sampling <post_processing_timestep_sampling>`         'timestep_sampling' child.
+
+================================================================   ============================
+
+.. rubric:: Methods
+
+============================================   ========================================
+
+Method                                                                          Summary
+
+============================================   ========================================
+:ref:`suspend <post_processing_suspend>`       Suspend immediate update for the object.
+
+:ref:`unsuspend <post_processing_unsuspend>`   Restore immediate update for the object.
+
+============================================   ========================================
+
+.. rubric:: Included in:
+
+==============================================   =========================================
+
+Parent                                                                             Summary
+
+==============================================   =========================================
+:ref:`results <post_processing_results>`         Encapsulates a CFX post-processing setup.
+
+:ref:`case_child <post_processing_case_child>`                'child_object_type' of case.
+
+==============================================   =========================================
+

@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_radial_distribution_function_1:
+
+radial_distribution_function
+============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.radial_distribution_function_1.radial_distribution_function
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================================   ==========================================
+
+Attribute                                                                                                              Summary
+
+=================================================================================   ==========================================
+:ref:`option <pre_processing_option_164>`                                           The 'Radial Distribution Function' option.
+
+:ref:`radial_distribution_function <pre_processing_radial_distribution_function>`    'Radial Distribution Function' parameter.
+
+=================================================================================   ==========================================
+
+.. rubric:: Included in:
+
+=================================================================   =====================================================
+
+Parent                                                                                                            Summary
+
+=================================================================   =====================================================
+:ref:`kinetic_theory_model <pre_processing_kinetic_theory_model>`   Specifies kinetic theory model for a dispersed solid.
+
+=================================================================   =====================================================
+

@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_profile_coord_system_definition:
+
+profile_coord_system_definition
+===============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.profile_coord_system_definition.profile_coord_system_definition
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================   ==================================================
+
+Attribute                                                                                                          Summary
+
+=====================================================================   ==================================================
+:ref:`enabled <pre_processing_enabled_1>`                               Enable the PROFILE COORD SYSTEM DEFINITION object.
+
+:ref:`coord_system_variables <pre_processing_coord_system_variables>`                  'Coord System Variables' parameter.
+
+=====================================================================   ==================================================
+
+.. rubric:: Included in:
+
+=====================================================   ================================
+
+Parent                                                                           Summary
+
+=====================================================   ================================
+:ref:`function_child <pre_processing_function_child>`   'child_object_type' of function.
+
+=====================================================   ================================
+

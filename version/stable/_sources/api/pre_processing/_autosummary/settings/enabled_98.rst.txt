@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_98:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_98.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================   ===========================================================
+
+Parent                                                                                                                    Summary
+
+===================================================================   ===========================================================
+:ref:`electromagnetic_model <pre_processing_electromagnetic_model>`   Specifies the electromagnetic model to be used in a domain.
+
+===================================================================   ===========================================================
+

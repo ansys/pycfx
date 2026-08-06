@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_mass_units:
+
+mass_units
+==========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.mass_units.mass_units
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================   =================================================
+
+Parent                                                                                            Summary
+
+=====================================================   =================================================
+:ref:`solution_units <pre_processing_solution_units>`   Sets the base solution units for the calculation.
+
+=====================================================   =================================================
+

@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_interpolation_mapping:
+
+interpolation_mapping
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.interpolation_mapping.interpolation_mapping
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`interpolation_mapping_child <pre_processing_interpolation_mapping_child>`
+
+
+.. rubric:: Included in:
+
+=================================================================   ======================================
+
+Parent                                                                                             Summary
+
+=================================================================   ======================================
+:ref:`initial_values_child <pre_processing_initial_values_child>`   'child_object_type' of initial_values.
+
+=================================================================   ======================================
+

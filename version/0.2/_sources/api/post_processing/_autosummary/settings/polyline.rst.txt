@@ -1,0 +1,26 @@
+:orphan:
+
+.. _post_processing_polyline:
+
+polyline
+========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.polyline.polyline
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`polyline_child <post_processing_polyline_child>`
+
+
+.. rubric:: Included in:
+
+========================================   =========================================
+
+Parent                                                                       Summary
+
+========================================   =========================================
+:ref:`results <post_processing_results>`   Encapsulates a CFX post-processing setup.
+
+========================================   =========================================
+

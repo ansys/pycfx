@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_219:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_219.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================   ========================================
+
+Parent                                                                                               Summary
+
+=================================================================   ========================================
+:ref:`angular_acceleration <pre_processing_angular_acceleration>`   Defines the initial rigid body velocity.
+
+=================================================================   ========================================
+

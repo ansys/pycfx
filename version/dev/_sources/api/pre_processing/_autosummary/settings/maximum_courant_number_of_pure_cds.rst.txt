@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_maximum_courant_number_of_pure_cds:
+
+maximum_courant_number_of_pure_cds
+==================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.maximum_courant_number_of_pure_cds.maximum_courant_number_of_pure_cds
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================   =============================================================================================================================================
+
+Parent                                                                                                                                                                                    Summary
+
+=================================================   =============================================================================================================================================
+:ref:`cds_blending <pre_processing_cds_blending>`   Controls blending between the basic advection scheme and CDS. Currently used for DES and SAS turbulence models only (hybrid LES-RANS models).
+
+=================================================   =============================================================================================================================================
+

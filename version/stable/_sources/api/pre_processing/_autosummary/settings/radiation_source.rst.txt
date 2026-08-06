@@ -1,0 +1,28 @@
+:orphan:
+
+.. _pre_processing_radiation_source:
+
+radiation_source
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.radiation_source.radiation_source
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`radiation_source_child <pre_processing_radiation_source_child>`
+
+
+.. rubric:: Included in:
+
+=================================================   ==========================================================
+
+Parent                                                                                                 Summary
+
+=================================================   ==========================================================
+:ref:`sources <pre_processing_sources>`             Holds the definition of sources for one or more equations.
+
+:ref:`bulk_sources <pre_processing_bulk_sources>`                  Specifies bulk sources in multi-fluid flow.
+
+=================================================   ==========================================================
+

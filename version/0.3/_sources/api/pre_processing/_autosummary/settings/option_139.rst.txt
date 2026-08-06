@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_139:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_139.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================   =====================================
+
+Parent                                                                                          Summary
+
+===============================================================   =====================================
+:ref:`spectral_band_child <pre_processing_spectral_band_child>`   'child_object_type' of spectral_band.
+
+===============================================================   =====================================
+

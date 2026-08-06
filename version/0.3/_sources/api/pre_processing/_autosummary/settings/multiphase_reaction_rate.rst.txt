@@ -1,0 +1,54 @@
+:orphan:
+
+.. _pre_processing_multiphase_reaction_rate:
+
+multiphase_reaction_rate
+========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.multiphase_reaction_rate.multiphase_reaction_rate
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================================================================   ======================================================================
+
+Attribute                                                                                                                                                                              Summary
+
+=====================================================================================================================   ======================================================================
+:ref:`option <pre_processing_option_45>`                                                                                                                The 'Multiphase Reaction Rate' option.
+
+:ref:`pre_exponential_factor <pre_processing_pre_exponential_factor>`                                                                      Pre-exponential factor for Arrhenius reaction rate.
+
+:ref:`temperature_exponent <pre_processing_temperature_exponent>`                                                                                            'Temperature Exponent' parameter.
+
+:ref:`particle_user_routine <pre_processing_particle_user_routine>`                                                                                                  Name of the user routine.
+
+:ref:`argument_variables_list <pre_processing_argument_variables_list>`                                                                                   'Argument Variables List' parameter.
+
+:ref:`multiphase_reaction_rate_return_variables_list <pre_processing_multiphase_reaction_rate_return_variables_list>`              'Multiphase Reaction Rate Return Variables List' parameter.
+
+:ref:`maximum_reaction_temperature <pre_processing_maximum_reaction_temperature>`                                                                                Maximum reaction temperature.
+
+:ref:`char_oxidation_rate <pre_processing_char_oxidation_rate>`                                                                                                  'CHAR OXIDATION RATE' object.
+
+:ref:`internal_diffusion <pre_processing_internal_diffusion>`                                                                                                     'INTERNAL DIFFUSION' object.
+
+:ref:`external_diffusion <pre_processing_external_diffusion>`                                                                                                     'EXTERNAL DIFFUSION' object.
+
+:ref:`char_product_ratio <pre_processing_char_product_ratio>`                                                                                                     'CHAR PRODUCT RATIO' object.
+
+:ref:`reaction_activation <pre_processing_reaction_activation>`                                                         Defines reaction energy/temperature for Arrhenius type reaction rates.
+
+=====================================================================================================================   ======================================================================
+
+.. rubric:: Included in:
+
+=====================================================   ================================
+
+Parent                                                                           Summary
+
+=====================================================   ================================
+:ref:`reaction_child <pre_processing_reaction_child>`   'child_object_type' of reaction.
+
+=====================================================   ================================
+

@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_memory_allocation_factor:
+
+memory_allocation_factor
+========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.memory_allocation_factor.memory_allocation_factor
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================   ========================
+
+Parent                                                                     Summary
+
+=======================================================   ========================
+:ref:`memory_control <pre_processing_memory_control>`     'MEMORY CONTROL' object.
+
+:ref:`memory_control <pre_processing_memory_control_1>`   'MEMORY CONTROL' object.
+
+=======================================================   ========================
+

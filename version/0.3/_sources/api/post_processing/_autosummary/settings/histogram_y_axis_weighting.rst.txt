@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_histogram_y_axis_weighting:
+
+histogram_y_axis_weighting
+==========================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.histogram_y_axis_weighting.histogram_y_axis_weighting
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==============================================================   ====================================
+
+Parent                                                                                        Summary
+
+==============================================================   ====================================
+:ref:`chart_series_child <post_processing_chart_series_child>`   'child_object_type' of chart_series.
+
+==============================================================   ====================================
+

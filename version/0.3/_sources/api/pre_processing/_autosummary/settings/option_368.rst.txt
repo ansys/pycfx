@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_368:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_368.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================   =====================================
+
+Parent                                                                                                Summary
+
+=====================================================================   =====================================
+:ref:`convergence_conditions <pre_processing_convergence_conditions>`   Solver condition for process control.
+
+=====================================================================   =====================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_hpc_license:
+
+hpc_license
+===========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.hpc_license.hpc_license
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================   =========================
+
+Parent                                                                      Summary
+
+=======================================================   =========================
+:ref:`license_control <pre_processing_license_control>`   'LICENSE CONTROL' object.
+
+=======================================================   =========================
+

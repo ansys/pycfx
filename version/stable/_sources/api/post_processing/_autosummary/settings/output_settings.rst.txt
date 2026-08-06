@@ -1,0 +1,67 @@
+:orphan:
+
+.. _post_processing_output_settings:
+
+output_settings
+===============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.output_settings.output_settings
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+============================================================================   =================================================================
+
+Attribute                                                                                                                                Summary
+
+============================================================================   =================================================================
+:ref:`chart_image_type <post_processing_chart_image_type>`                                               Specifies the image format to generate.
+
+:ref:`chart_size <post_processing_chart_size>`                                                       Specifies the size of Charts in the Report.
+
+:ref:`custom_chart_size_height <post_processing_custom_chart_size_height>`        Specifies the Chart height if 'Custom' Chart Size is selected.
+
+:ref:`custom_chart_size_width <post_processing_custom_chart_size_width>`           Specifies the Chart width if 'Custom' Chart Size is selected.
+
+:ref:`custom_figure_size_height <post_processing_custom_figure_size_height>`    Specifies the Figure height if 'Custom' Figure Size is selected.
+
+:ref:`custom_figure_size_width <post_processing_custom_figure_size_width>`       Specifies the Figure width if 'Custom' Figure Size is selected.
+
+:ref:`figure_image_type <post_processing_figure_image_type>`                                             Specifies the image format to generate.
+
+:ref:`figure_size <post_processing_figure_size>`                                                    Specifies the size of Figures in the Report.
+
+:ref:`fit_views <post_processing_fit_views>`                                   Specifies whether to center every view before generating figures.
+
+:ref:`this_exists <post_processing_this_exists>`                                                    Indicates whether this object exists or not.
+
+============================================================================   =================================================================
+
+.. rubric:: Methods
+
+============================================   ========================================
+
+Method                                                                          Summary
+
+============================================   ========================================
+:ref:`suspend <post_processing_suspend>`       Suspend immediate update for the object.
+
+:ref:`unsuspend <post_processing_unsuspend>`   Restore immediate update for the object.
+
+============================================   ========================================
+
+.. rubric:: Included in:
+
+========================================   =========================================
+
+Parent                                                                       Summary
+
+========================================   =========================================
+:ref:`results <post_processing_results>`   Encapsulates a CFX post-processing setup.
+
+:ref:`publish <post_processing_publish>`                         Defines the Report.
+
+:ref:`preview <post_processing_preview>`                         Defines the Report.
+
+========================================   =========================================
+

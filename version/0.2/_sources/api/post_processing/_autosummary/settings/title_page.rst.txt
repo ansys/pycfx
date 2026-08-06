@@ -1,0 +1,61 @@
+:orphan:
+
+.. _post_processing_title_page:
+
+title_page
+==========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.title_page.title_page
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+==================================================================   ====================================================================================
+
+Attribute                                                                                                                                         Summary
+
+==================================================================   ====================================================================================
+:ref:`custom_logo_path <post_processing_custom_logo_path>`                       The path to the Custom logo. Only used if 'Include Custom Logo' is true.
+
+:ref:`include_ansys_logo <post_processing_include_ansys_logo>`                          Specifies whether to include the ANSYS report logo in the report.
+
+:ref:`include_custom_logo <post_processing_include_custom_logo>`                                Specifies whether to include a custom logo in the report.
+
+:ref:`include_date <post_processing_include_date>`                                        Specifies whether to include the date in the report Title Page.
+
+:ref:`include_toc <post_processing_include_toc>`                                          Specifies whether to include a Table of Contents in the Report.
+
+:ref:`report_author <post_processing_report_author>`                                                                  Specifies the author of the report.
+
+:ref:`report_title <post_processing_report_title>`                                                                    Specifies the title for the report.
+
+:ref:`show_captions_in_toc <post_processing_show_captions_in_toc>`   Specifies whether to show Figure, Chart and Table captions in the Table of Contents.
+
+:ref:`title_page_exists <post_processing_title_page_exists>`                                                                   'title_page_exists' child.
+
+==================================================================   ====================================================================================
+
+.. rubric:: Methods
+
+============================================   ========================================
+
+Method                                                                          Summary
+
+============================================   ========================================
+:ref:`suspend <post_processing_suspend>`       Suspend immediate update for the object.
+
+:ref:`unsuspend <post_processing_unsuspend>`   Restore immediate update for the object.
+
+============================================   ========================================
+
+.. rubric:: Included in:
+
+========================================   =========================================
+
+Parent                                                                       Summary
+
+========================================   =========================================
+:ref:`results <post_processing_results>`   Encapsulates a CFX post-processing setup.
+
+========================================   =========================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_fourier_harmonic_order:
+
+fourier_harmonic_order
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fourier_harmonic_order.fourier_harmonic_order
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================   =============================
+
+Parent                                                                                  Summary
+
+===============================================================   =============================
+:ref:`pressure_definition <pre_processing_pressure_definition>`   'PRESSURE DEFINITION' object.
+
+===============================================================   =============================
+

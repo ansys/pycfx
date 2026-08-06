@@ -1,0 +1,96 @@
+:orphan:
+
+.. _post_processing_case_child:
+
+case_child
+==========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.case_child.case_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+====================================================================================================================   =====================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                                                            Summary
+
+====================================================================================================================   =====================================================================================================================================================================================================
+:ref:`additional_timestep_files <post_processing_additional_timestep_files>`                                                                                                                                                                                              A list of files representing additional timesteps.
+
+:ref:`construct_variables_from_fourier_coefficients <post_processing_construct_variables_from_fourier_coefficients>`                                                                                                                    Parameter to indicate if variables should be constructed using Fourier Coefficients.
+
+:ref:`current_case_name <post_processing_current_case_name>`                                                                                                                                                                                                      Internal CFD-Post name for the currently analyzed problem.
+
+:ref:`current_results_file <post_processing_current_results_file>`                                                                                                                                                                                          The name of the results file to be read into the post-processor.
+
+:ref:`current_timestep <post_processing_current_timestep>`                                                                                                                                                                                                    The timestep to be used when reading a transient results file.
+
+:ref:`current_timevalue <post_processing_current_timevalue>`                                                                                                                                                The time value of the currently loaded results file. To change current timestep, use Current Timestep parameter.
+
+:ref:`domains_to_load <post_processing_domains_to_load>`                                                                                                                                                                                                                                   A list of domains for processing.
+
+:ref:`file_angle_units <post_processing_file_angle_units>`                                                                                                                                                                                                                                   Angle units read from the file.
+
+:ref:`file_chemical_amount_units <post_processing_file_chemical_amount_units>`                                                                                                                                                                                                     Chemical Amount units read from the file.
+
+:ref:`file_current_units <post_processing_file_current_units>`                                                                                                                                                                                                                             Current units read from the file.
+
+:ref:`file_length_units <post_processing_file_length_units>`                                                                                                                                                                                                                                Length units read from the file.
+
+:ref:`file_light_units <post_processing_file_light_units>`                                                                                                                                                                                                                                   Light units read from the file.
+
+:ref:`file_mass_units <post_processing_file_mass_units>`                                                                                                                                                                                                                                      Mass units read from the file.
+
+:ref:`file_money_units <post_processing_file_money_units>`                                                                                                                                                                                                                                   Money units read from the file.
+
+:ref:`file_solid_angle_units <post_processing_file_solid_angle_units>`                                                                                                                                                                                                                 Solid Angle units read from the file.
+
+:ref:`file_temperature_units <post_processing_file_temperature_units>`                                                                                                                                                                                                                 Temperature units read from the file.
+
+:ref:`file_time_units <post_processing_file_time_units>`                                                                                                                                                                                                                                      Time units read from the file.
+
+:ref:`load_particle_tracks <post_processing_load_particle_tracks>`                                                                                                                                                                       Parameter indicating whether to load the Particle tracks from a result file or not.
+
+:ref:`multi_configuration_file_load_option <post_processing_multi_configuration_file_load_option>`                                                                                                                                                              Load option for files that contains multiple configurations.
+
+:ref:`run_selection <post_processing_run_selection>`                                                                                                                                                                                                                                         A list of runs to be processed.
+
+:ref:`workbench_id <post_processing_workbench_id>`                                                                                                                                                                                                      A numerical ID used to uniquely identify cases loaded via Workbench.
+
+:ref:`object_view_transform <post_processing_object_view_transform>`                                                   This object contains object transformation info to be processed by the viewer. Like instance transform, this object should be associated with each geometry. It is usually specified as a sub-object.
+
+:ref:`domain <post_processing_domain>`                                                                                                                                                                                                                                                                       'domain' child.
+
+:ref:`subdomain <post_processing_subdomain>`                                                                                                                                                                                                                                                              'subdomain' child.
+
+:ref:`composite <post_processing_composite>`                                                                                                                                                                                                                                                              'composite' child.
+
+:ref:`boundary <post_processing_boundary>`                                                                                                                                                                                                                                                                 'boundary' child.
+
+:ref:`primitive2d <post_processing_primitive2d>`                                                                                                                                                                                                                                                        'primitive2d' child.
+
+:ref:`primitive3d <post_processing_primitive3d>`                                                                                                                                                                                                                                                        'primitive3d' child.
+
+:ref:`composite_periodic <post_processing_composite_periodic>`                                                                                                                                                                                                                                   'composite_periodic' child.
+
+:ref:`composite_inter_block <post_processing_composite_inter_block>`                                                                                                                                                                                                                          'composite_inter_block' child.
+
+:ref:`tbr_options <post_processing_tbr_options>`                                                                                                                                                                                                                                                        'tbr_options' child.
+
+:ref:`operating_points <post_processing_operating_points>`                                                                                                                                                                                                          Contains information related to operating point results.
+
+:ref:`chart <post_processing_chart>`                                                                                                                                                                                                                                                                          'chart' child.
+
+====================================================================================================================   =====================================================================================================================================================================================================
+
+.. rubric:: Included in:
+
+==================================   =============
+
+Parent                                     Summary
+
+==================================   =============
+:ref:`case <post_processing_case>`   'case' child.
+
+==================================   =============
+

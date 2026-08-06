@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_fluid_definition:
+
+fluid_definition
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fluid_definition.fluid_definition
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`fluid_definition_child <pre_processing_fluid_definition_child>`
+
+
+.. rubric:: Included in:
+
+=================================================   ==============================
+
+Parent                                                                     Summary
+
+=================================================   ==============================
+:ref:`domain_child <pre_processing_domain_child>`   'child_object_type' of domain.
+
+=================================================   ==============================
+

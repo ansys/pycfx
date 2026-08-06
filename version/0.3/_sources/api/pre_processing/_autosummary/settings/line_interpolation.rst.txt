@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_line_interpolation:
+
+line_interpolation
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.line_interpolation.line_interpolation
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================================================   =========================================================================
+
+Attribute                                                                                                                                                                       Summary
+
+===========================================================================================================   =========================================================================
+:ref:`enabled <pre_processing_enabled_31>`                                                                                                        Enable the LINE INTERPOLATION object.
+
+:ref:`number_of_nearest_interpolation_points <pre_processing_number_of_nearest_interpolation_points>`              Number of closest line points to be used to interpolate to a vertex.
+
+:ref:`cloud_point_distance_tolerance <pre_processing_cloud_point_distance_tolerance>`                         Distance below which a vertex is considered coincident with a line point.
+
+:ref:`variable_interpolation_distance_weighting <pre_processing_variable_interpolation_distance_weighting>`              Determines whether to use distance to point or to line origin.
+
+:ref:`line_interpolation_variable_options <pre_processing_line_interpolation_variable_options>`                            A container for Line Interpolation Variable Options objects.
+
+===========================================================================================================   =========================================================================
+
+.. rubric:: Included in:
+
+===================================================================   =======================================
+
+Parent                                                                                                Summary
+
+===================================================================   =======================================
+:ref:`user_line_cloud_child <pre_processing_user_line_cloud_child>`   'child_object_type' of user_line_cloud.
+
+===================================================================   =======================================
+

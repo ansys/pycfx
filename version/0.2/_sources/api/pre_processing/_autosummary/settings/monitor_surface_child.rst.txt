@@ -1,0 +1,42 @@
+:orphan:
+
+.. _pre_processing_monitor_surface_child:
+
+monitor_surface_child
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.monitor_surface_child.monitor_surface_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================   =============================================================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                                                     Summary
+
+=====================================================================   =============================================================================================================================================================================================================================================
+:ref:`option <pre_processing_option_416>`                                                                                                                                                                                                                                               The 'Monitor Surface' option.
+
+:ref:`coord_frame <pre_processing_coord_frame>`                         Local coordinate frame for computing expressions. The default at the top level of the command data structure is Coord 0, that is no transformation. The default at lower levels is to inherit the value from objects higher up the structure.
+
+:ref:`output_variables_list <pre_processing_output_variables_list>`                                                                                                                                                                                                                'Output Variables List' parameter.
+
+:ref:`output_location_list <pre_processing_output_location_list>`                                                                                                                                                                                                                   'Output Location List' parameter.
+
+:ref:`file_compression_level <pre_processing_file_compression_level>`                                                                                                                                                                                                             'File Compression Level' parameter.
+
+:ref:`output_frequency <pre_processing_output_frequency_2>`                                                                                                                                                    Holds options for controlling the frequency with which backup and transient results files are written.
+
+=====================================================================   =============================================================================================================================================================================================================================================
+
+.. rubric:: Included in:
+
+=======================================================   ========================================
+
+Parent                                                                                     Summary
+
+=======================================================   ========================================
+:ref:`monitor_surface <pre_processing_monitor_surface>`   A container for Monitor Surface objects.
+
+=======================================================   ========================================
+

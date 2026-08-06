@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_ctu3_coefficient:
+
+ctu3_coefficient
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.ctu3_coefficient.ctu3_coefficient
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================================================   ======================================================================
+
+Parent                                                                                                                                                     Summary
+
+=========================================================================================   ======================================================================
+:ref:`intermittency_model_coefficients <pre_processing_intermittency_model_coefficients>`   Controls model coefficients for the turbulence intermittency equation.
+
+=========================================================================================   ======================================================================
+

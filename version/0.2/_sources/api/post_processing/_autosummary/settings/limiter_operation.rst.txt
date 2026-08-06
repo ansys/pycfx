@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_limiter_operation:
+
+limiter_operation
+=================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.limiter_operation.limiter_operation
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+======================================================================   ========================================
+
+Parent                                                                                                    Summary
+
+======================================================================   ========================================
+:ref:`iso_clip_limiter_child <post_processing_iso_clip_limiter_child>`   'child_object_type' of iso_clip_limiter.
+
+======================================================================   ========================================
+

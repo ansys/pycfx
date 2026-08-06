@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_vector_definition:
+
+vector_definition
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.vector_definition.vector_definition
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================   ========================
+
+Parent                                                                   Summary
+
+=====================================================   ========================
+:ref:`profile_vector <pre_processing_profile_vector>`   'PROFILE VECTOR' object.
+
+=====================================================   ========================
+

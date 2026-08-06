@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_enabled_154:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_154.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================   ====================================================================================
+
+Parent                                                                                                                                 Summary
+
+=======================================================   ====================================================================================
+:ref:`solver_control <pre_processing_solver_control>`     Holds all objects that control discretization and execution of the solution process.
+
+:ref:`solver_control <pre_processing_solver_control_1>`   Holds all objects that control discretization and execution of the solution process.
+
+=======================================================   ====================================================================================
+

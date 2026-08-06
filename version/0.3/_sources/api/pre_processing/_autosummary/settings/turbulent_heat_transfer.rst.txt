@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_turbulent_heat_transfer:
+
+turbulent_heat_transfer
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.turbulent_heat_transfer.turbulent_heat_transfer
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================   =============================================================
+
+Attribute                                                                                                                           Summary
+
+===========================================================================   =============================================================
+:ref:`turbulent_flux_closure <pre_processing_turbulent_flux_closure_2>`       Controls the turbulent flux closure for a transport equation.
+
+:ref:`turbulent_wall_functions <pre_processing_turbulent_wall_functions_1>`           Sets the turbulent near-wall treatment at a boundary.
+
+===========================================================================   =============================================================
+
+.. rubric:: Included in:
+
+=================================================   ==============================================================================
+
+Parent                                                                                                                     Summary
+
+=================================================   ==============================================================================
+:ref:`fluid_models <pre_processing_fluid_models>`   Defines the model details that operate on individual fluids within the domain.
+
+:ref:`fluid_child <pre_processing_fluid_child>`                                                      'child_object_type' of fluid.
+
+=================================================   ==============================================================================
+

@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_monitor_gt_suite_child:
+
+monitor_gt_suite_child
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.monitor_gt_suite_child.monitor_gt_suite_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================================   =====================================
+
+Attribute                                                                                                       Summary
+
+===============================================================================   =====================================
+:ref:`option <pre_processing_option_419>`                                                The 'Monitor Gt Suite' option.
+
+:ref:`gt_suite_location <pre_processing_gt_suite_location>`                                 'GT SUITE LOCATION' object.
+
+:ref:`gt_suite_variable_selection <pre_processing_gt_suite_variable_selection>`   'GT SUITE VARIABLE SELECTION' object.
+
+:ref:`calculator <pre_processing_calculator>`                                                      'CALCULATOR' object.
+
+===============================================================================   =====================================
+
+.. rubric:: Included in:
+
+=========================================================   =========================================
+
+Parent                                                                                        Summary
+
+=========================================================   =========================================
+:ref:`monitor_gt_suite <pre_processing_monitor_gt_suite>`   A container for Monitor Gt Suite objects.
+
+=========================================================   =========================================
+

@@ -1,0 +1,65 @@
+:orphan:
+
+.. _post_processing_clip_plane_child:
+
+clip_plane_child
+================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.clip_plane_child.clip_plane_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+================================================   ==========================================================================================================================
+
+Attribute                                                                                                                                                             Summary
+
+================================================   ==========================================================================================================================
+:ref:`flip_normal <post_processing_flip_normal>`   If this parameter is set to true, the normal of the clip plane will be flipped, effectively inverting the clipping region.
+
+:ref:`normal <post_processing_normal>`                                                                                            An XYZ triple describing the normal vector.
+
+:ref:`option <post_processing_option>`                                                                                                                        'option' child.
+
+:ref:`point <post_processing_point>`                                                                                            An XYZ triple which defines a point in space.
+
+:ref:`point_1 <post_processing_point_1>`                                                                              An XYZ triple defining the first point for this object.
+
+:ref:`point_2 <post_processing_point_2>`                                                                             An XYZ triple defining the second point for this object.
+
+:ref:`point_3 <post_processing_point_3_1>`                                                                            An XYZ triple defining the third point for this object.
+
+:ref:`slice_plane <post_processing_slice_plane>`                                                 Specifies the name of the PLANE object to use for the clip plane definition.
+
+:ref:`x <post_processing_x>`                                                                                          The X coordinate value for the location of this object.
+
+:ref:`y <post_processing_y>`                                                                                          The Y coordinate value for the location of this object.
+
+:ref:`z <post_processing_z>`                                                                                          The Z coordinate value for the location of this object.
+
+================================================   ==========================================================================================================================
+
+.. rubric:: Methods
+
+============================================   ========================================
+
+Method                                                                          Summary
+
+============================================   ========================================
+:ref:`suspend <post_processing_suspend>`       Suspend immediate update for the object.
+
+:ref:`unsuspend <post_processing_unsuspend>`   Restore immediate update for the object.
+
+============================================   ========================================
+
+.. rubric:: Included in:
+
+==============================================   ===================
+
+Parent                                                       Summary
+
+==============================================   ===================
+:ref:`clip_plane <post_processing_clip_plane>`   'clip_plane' child.
+
+==============================================   ===================
+

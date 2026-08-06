@@ -1,0 +1,48 @@
+:orphan:
+
+.. _pre_processing_particle_wall_film_interaction:
+
+particle_wall_film_interaction
+==============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.particle_wall_film_interaction.particle_wall_film_interaction
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================================================================================   =================================================================
+
+Attribute                                                                                                                                                                                     Summary
+
+=================================================================================================================================   =================================================================
+:ref:`option <pre_processing_option_296>`                                                                                                                The 'Particle Wall Film Interaction' option.
+
+:ref:`wall_material <pre_processing_wall_material>`                                                                                                                        'Wall Material' parameter.
+
+:ref:`wall_friction_coefficient <pre_processing_wall_friction_coefficient>`                                                                                    'Wall Friction Coefficient' parameter.
+
+:ref:`splashing_criteria_coefficient <pre_processing_splashing_criteria_coefficient>`                                                                     'Splashing Criteria Coefficient' parameter.
+
+:ref:`secondary_droplet_multiplier <pre_processing_secondary_droplet_multiplier>`                                                                           'Secondary Droplet Multiplier' parameter.
+
+:ref:`particle_user_routine <pre_processing_particle_user_routine>`                                                                                                         Name of the user routine.
+
+:ref:`argument_variables_list <pre_processing_argument_variables_list>`                                                                                          'Argument Variables List' parameter.
+
+:ref:`particle_wall_film_interaction_return_variables_list <pre_processing_particle_wall_film_interaction_return_variables_list>`   'Particle Wall Film Interaction Return Variables List' parameter.
+
+=================================================================================================================================   =================================================================
+
+.. rubric:: Included in:
+
+=================================================================   =============================================================
+
+Parent                                                                                                                    Summary
+
+=================================================================   =============================================================
+:ref:`boundary_conditions <pre_processing_boundary_conditions_2>`   Specifies boundary conditions for all equations being solved.
+
+:ref:`boundary_conditions <pre_processing_boundary_conditions_6>`   Specifies boundary conditions for all equations being solved.
+
+=================================================================   =============================================================
+

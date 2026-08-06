@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_material_analysis:
+
+material_analysis
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.material_analysis.material_analysis
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================   ==============================================
+
+Attribute                                                                                              Summary
+
+=============================================================   ==============================================
+:ref:`volatiles_release <pre_processing_volatiles_release>`     Volatiles data used by hydrocarbon fuel model.
+
+:ref:`heating_value <pre_processing_heating_value_1>`                                           Heating value.
+
+:ref:`proximate_analysis <pre_processing_proximate_analysis>`             Proximate hydrocarbon fuel analysis.
+
+:ref:`ultimate_analysis <pre_processing_ultimate_analysis>`                Ultimate hydrocarbon fuel analysis.
+
+=============================================================   ==============================================
+
+.. rubric:: Included in:
+
+=====================================================   ================================
+
+Parent                                                                           Summary
+
+=====================================================   ================================
+:ref:`material_child <pre_processing_material_child>`   'child_object_type' of material.
+
+=====================================================   ================================
+

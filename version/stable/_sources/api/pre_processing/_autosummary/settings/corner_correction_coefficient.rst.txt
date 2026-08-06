@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_corner_correction_coefficient:
+
+corner_correction_coefficient
+=============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.corner_correction_coefficient.corner_correction_coefficient
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ===========================
+
+Parent                                                                            Summary
+
+===========================================================   ===========================
+:ref:`corner_correction <pre_processing_corner_correction>`   'CORNER CORRECTION' object.
+
+===========================================================   ===========================
+

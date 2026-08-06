@@ -1,0 +1,28 @@
+:orphan:
+
+.. _pre_processing_additional_variable_7:
+
+additional_variable
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.additional_variable_7.additional_variable
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`additional_variable_child <pre_processing_additional_variable_child_7>`
+
+
+.. rubric:: Included in:
+
+===========================================================================================   ========================================================
+
+Parent                                                                                                                                         Summary
+
+===========================================================================================   ========================================================
+:ref:`interface_models <pre_processing_interface_models>`                                     Holds the definition of models specific to an interface.
+
+:ref:`additional_interface_models_child <pre_processing_additional_interface_models_child>`        'child_object_type' of additional_interface_models.
+
+===========================================================================================   ========================================================
+

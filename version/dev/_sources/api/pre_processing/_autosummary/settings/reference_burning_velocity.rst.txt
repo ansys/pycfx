@@ -1,0 +1,54 @@
+:orphan:
+
+.. _pre_processing_reference_burning_velocity:
+
+reference_burning_velocity
+==========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.reference_burning_velocity.reference_burning_velocity
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================================   ===========================================================================
+
+Attribute                                                                                                                                             Summary
+
+===============================================================================   ===========================================================================
+:ref:`option <pre_processing_option_53>`                                                                             The 'Reference Burning Velocity' option.
+
+:ref:`maximum_burning_velocity <pre_processing_maximum_burning_velocity>`                                                           Maximum Burning Velocity.
+
+:ref:`reference_equivalence_ratio <pre_processing_reference_equivalence_ratio>`                                                  Reference equivalence ratio.
+
+:ref:`velocity_decay_coefficient <pre_processing_velocity_decay_coefficient>`     Coefficient for quadratic decay of burning velocity over equivalence ratio.
+
+:ref:`s0_burning_velocity <pre_processing_s0_burning_velocity>`                                                    Constant coefficient for burning velocity.
+
+:ref:`s1_burning_velocity <pre_processing_s1_burning_velocity>`                                                      Linear coefficient for burning velocity.
+
+:ref:`s2_burning_velocity <pre_processing_s2_burning_velocity>`                                                   Quadratic coefficient for burning velocity.
+
+:ref:`s3_burning_velocity <pre_processing_s3_burning_velocity>`                                                       Cubic coefficient for burning velocity.
+
+:ref:`s4_burning_velocity <pre_processing_s4_burning_velocity>`                                                   4th order coefficient for burning velocity.
+
+:ref:`s5_burning_velocity <pre_processing_s5_burning_velocity>`                                                   5th order coefficient for burning velocity.
+
+:ref:`flammability_limits <pre_processing_flammability_limits>`                                                     Equivalence ratio range for flammability.
+
+:ref:`fit_range <pre_processing_fit_range>`                                                                          Equivalence ratio range for correlation.
+
+===============================================================================   ===========================================================================
+
+.. rubric:: Included in:
+
+===========================================================================   ===================================================================================
+
+Parent                                                                                                                                                    Summary
+
+===========================================================================   ===================================================================================
+:ref:`laminar_burning_velocity <pre_processing_laminar_burning_velocity_1>`   Defines the laminar burning velocity for premixed or partially premixed combustion.
+
+===========================================================================   ===================================================================================
+

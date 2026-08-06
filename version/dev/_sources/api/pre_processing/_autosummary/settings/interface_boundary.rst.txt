@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_interface_boundary:
+
+interface_boundary
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.interface_boundary.interface_boundary
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================   ================================
+
+Parent                                                                           Summary
+
+=====================================================   ================================
+:ref:`boundary_child <pre_processing_boundary_child>`   'child_object_type' of boundary.
+
+=====================================================   ================================
+

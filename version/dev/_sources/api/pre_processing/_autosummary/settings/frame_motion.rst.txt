@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_frame_motion:
+
+frame_motion
+============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.frame_motion.frame_motion
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================   =======================================================================================================
+
+Attribute                                                                                                                                                   Summary
+
+=========================================================   =======================================================================================================
+:ref:`enabled <pre_processing_enabled_29>`                                                                                          Enable the FRAME MOTION object.
+
+:ref:`option <pre_processing_option_58>`                                                                                                 The 'Frame Motion' option.
+
+:ref:`angular_velocity <pre_processing_angular_velocity>`                                                             Rotating speed for a rotating domain or wall.
+
+:ref:`axis_definition <pre_processing_axis_definition>`     Defines the axis for a cylindrical coordinate system or variables defined using cylindrical components.
+
+=========================================================   =======================================================================================================
+
+.. rubric:: Included in:
+
+=====================================================================   ========================================
+
+Parent                                                                                                   Summary
+
+=====================================================================   ========================================
+:ref:`coordinate_frame_child <pre_processing_coordinate_frame_child>`   'child_object_type' of coordinate_frame.
+
+=====================================================================   ========================================
+

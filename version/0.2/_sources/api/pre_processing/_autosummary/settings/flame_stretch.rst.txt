@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_flame_stretch:
+
+flame_stretch
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.flame_stretch.flame_stretch
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================================   ====================================================================
+
+Attribute                                                                                                                                    Summary
+
+=============================================================================   ====================================================================
+:ref:`critical_velocity_gradient <pre_processing_critical_velocity_gradient>`                        Critical velocity gradient for quenching model.
+
+:ref:`variance_coefficient <pre_processing_variance_coefficient>`               Factor for turbulence eddy dissipation variance for quenching model.
+
+=============================================================================   ====================================================================
+
+.. rubric:: Included in:
+
+===============================================================================   =====================================================================================
+
+Parent                                                                                                                                                          Summary
+
+===============================================================================   =====================================================================================
+:ref:`turbulent_burning_velocity <pre_processing_turbulent_burning_velocity_1>`   Defines the turbulent burning velocity for premixed or partially premixed combustion.
+
+===============================================================================   =====================================================================================
+

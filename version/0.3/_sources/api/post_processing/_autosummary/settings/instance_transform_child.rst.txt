@@ -1,0 +1,89 @@
+:orphan:
+
+.. _post_processing_instance_transform_child:
+
+instance_transform_child
+========================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.instance_transform_child.instance_transform_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+========================================================================================   =========================================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                                                    Summary
+
+========================================================================================   =========================================================================================================================================================================================================================
+:ref:`angle_definition_method <post_processing_angle_definition_method>`                   Specifies angle definition method. If it is set to 'Value', parameter Rotation Angle value will be used for angular instancing. If it is set to 'Instances in 360', parameter 'Number of Components in 360' will be used.
+
+:ref:`apply_reflection <post_processing_apply_reflection>`                                                                                                                                                                                                                 Toggles reflection in the transformation.
+
+:ref:`apply_rotation <post_processing_apply_rotation>`                                                                                                                                                                                                                       Toggles rotation in the transformation.
+
+:ref:`apply_translation <post_processing_apply_translation>`                                                                                                                                                                                                              Toggles translation in the transformation.
+
+:ref:`axis <post_processing_axis>`                                                                                                                                                                                                                                                                     'axis' child.
+
+:ref:`coord_frame <post_processing_coord_frame>`                                                                                                                                                                                                                                                'coord_frame' child.
+
+:ref:`full_circle <post_processing_full_circle>`                                                                                              If set to On, the instances are placed uniformly about the instance rotation axis. Note that the Number of Copies has to be greater than two when this option is used.
+
+:ref:`instancing_info_from_domain <post_processing_instancing_info_from_domain>`                                                                                                                                Logical parameter indicating if instancing info should come from each domain for a geometric object.
+
+:ref:`number_of_components_in_360 <post_processing_number_of_components_in_360>`                                                                                                                                                                                                Number of Components in 360 degrees.
+
+:ref:`number_of_copies <post_processing_number_of_copies>`                                                                                                                                                                                                               Specifies the number of transformed copies.
+
+:ref:`number_of_passages_in_360 <post_processing_number_of_passages_in_360>`                                                                                                                                                                                                      Number of passages in 360 degrees.
+
+:ref:`number_of_passages_in_component <post_processing_number_of_passages_in_component>`                                                                                                                                                                                          Number of passages in a component.
+
+:ref:`principal_axis <post_processing_principal_axis>`                                                                                                                                                                                                       Specifies the principal axis used in instance rotation.
+
+:ref:`reflection_plane <post_processing_reflection_plane>`                                                                                                                                                                                         Specifies the REFLECTION PLANE object to use in a transformation.
+
+:ref:`reflection_plane_option <post_processing_reflection_plane_option>`                                                                     Specifies how to define the plane that is used to create the reflection plane. It can be defined as either some axis-parallel planes, or from an existing plane object.
+
+:ref:`rotation_angle <post_processing_rotation_angle>`                                                                                                                                                                                                                                 Specifies the rotation angle.
+
+:ref:`rotation_axis_from <post_processing_rotation_axis_from>`                                                                                                                                                                                          An XYZ triple defining the first point of the rotation axis.
+
+:ref:`rotation_axis_to <post_processing_rotation_axis_to>`                                                                                                                                                                                             An XYZ triple defining the second point of the rotation axis.
+
+:ref:`rotation_axis_type <post_processing_rotation_axis_type_1>`                                                                                                                                                                                                                         'rotation_axis_type' child.
+
+:ref:`translation_vector <post_processing_translation_vector>`                                                                                                                                                                                                                     Specifies the translation vector.
+
+:ref:`x <post_processing_x_1>`                                                                                                                                                                                                                                                                            'x' child.
+
+:ref:`y <post_processing_y_1>`                                                                                                                                                                                                                                                                            'y' child.
+
+:ref:`z <post_processing_z_1>`                                                                                                                                                                                                                                                                            'z' child.
+
+========================================================================================   =========================================================================================================================================================================================================================
+
+.. rubric:: Methods
+
+============================================   ========================================
+
+Method                                                                          Summary
+
+============================================   ========================================
+:ref:`suspend <post_processing_suspend>`       Suspend immediate update for the object.
+
+:ref:`unsuspend <post_processing_unsuspend>`   Restore immediate update for the object.
+
+============================================   ========================================
+
+.. rubric:: Included in:
+
+==============================================================   ===========================
+
+Parent                                                                               Summary
+
+==============================================================   ===========================
+:ref:`instance_transform <post_processing_instance_transform>`   'instance_transform' child.
+
+==============================================================   ===========================
+

@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_dynmc_minimum:
+
+dynmc_minimum
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.dynmc_minimum.dynmc_minimum
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ===========================================================================
+
+Parent                                                                                                                            Summary
+
+===========================================================   ===========================================================================
+:ref:`turbulence_model <pre_processing_turbulence_model>`     Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+:ref:`turbulence_model <pre_processing_turbulence_model_1>`   Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+===========================================================   ===========================================================================
+

@@ -1,0 +1,52 @@
+:orphan:
+
+.. _pre_processing_turbulent_wall_functions_1:
+
+turbulent_wall_functions
+========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.turbulent_wall_functions_1.turbulent_wall_functions
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================================================   ===========================================================================
+
+Attribute                                                                                                                                                           Summary
+
+=============================================================================================   ===========================================================================
+:ref:`enabled <pre_processing_enabled_78>`                                                                                      Enable the TURBULENT WALL FUNCTIONS object.
+
+:ref:`option <pre_processing_option_133>`                                                                                            The 'Turbulent Wall Functions' option.
+
+:ref:`high_speed_model <pre_processing_high_speed_model>`                                                                                     'High Speed Model' parameter.
+
+:ref:`wall_function_transfer_coefficient <pre_processing_wall_function_transfer_coefficient>`                                           Wall Function Transfer Coefficient.
+
+:ref:`kappa_coefficient <pre_processing_kappa_coefficient>`                                                              Turbulent wall function log-law coefficient Kappa.
+
+:ref:`c_coefficient <pre_processing_c_coefficient>`                                                                          Turbulent wall function log-law coefficient C.
+
+:ref:`near_wall_distance_factor <pre_processing_near_wall_distance_factor>`                     Omega models=2.0; other models=0.5 (scaling factor for near wall distance).
+
+:ref:`energy_calibration_coefficient <pre_processing_energy_calibration_coefficient>`                             Temperature log-law coefficient CTROUGH1 for rough walls.
+
+:ref:`minimum_yplus <pre_processing_minimum_yplus>`                                                                      Scalable wall function (log-law) minimum y+ value.
+
+:ref:`blended_near_wall_treatment <pre_processing_blended_near_wall_treatment>`                      Blending of viscous and turbulent approaches to compute wall stresses.
+
+:ref:`shear_velocity_scaling_model <pre_processing_shear_velocity_scaling_model>`                                                    Sets the shear velocity scaling model.
+
+=============================================================================================   ===========================================================================
+
+.. rubric:: Included in:
+
+=======================================================================   ===============================================================================
+
+Parent                                                                                                                                            Summary
+
+=======================================================================   ===============================================================================
+:ref:`turbulent_heat_transfer <pre_processing_turbulent_heat_transfer>`   Singleton holding model interactions among Turbulence and Heat Transfer Models.
+
+=======================================================================   ===============================================================================
+

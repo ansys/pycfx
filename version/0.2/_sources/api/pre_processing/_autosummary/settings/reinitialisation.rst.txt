@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_reinitialisation:
+
+reinitialisation
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.reinitialisation.reinitialisation
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================   ===================================
+
+Attribute                                                                 Summary
+
+===========================================   ===================================
+:ref:`enabled <pre_processing_enabled_87>`    Enable the REINITIALISATION object.
+
+:ref:`option <pre_processing_option_152>`          The 'Reinitialisation' option.
+
+:ref:`time_list <pre_processing_time_list>`                'Time List' parameter.
+
+===========================================   ===================================
+
+.. rubric:: Included in:
+
+=======================================================================   ==================================================================
+
+Parent                                                                                                                               Summary
+
+=======================================================================   ==================================================================
+:ref:`residual_material_model <pre_processing_residual_material_model>`   Controls the exhaust gas recirculation model (residual gas model).
+
+=======================================================================   ==================================================================
+

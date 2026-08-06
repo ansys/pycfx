@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_particle_relocalisation_tolerance:
+
+particle_relocalisation_tolerance
+=================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.particle_relocalisation_tolerance.particle_relocalisation_tolerance
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================================   =====================================
+
+Parent                                                                                                          Summary
+
+===============================================================================   =====================================
+:ref:`interpolation_model_control <pre_processing_interpolation_model_control>`   'INTERPOLATION MODEL CONTROL' object.
+
+===============================================================================   =====================================
+

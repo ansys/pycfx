@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enhancement_of_yield:
+
+enhancement_of_yield
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enhancement_of_yield.enhancement_of_yield
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ==============================================
+
+Parent                                                                                               Summary
+
+===========================================================   ==============================================
+:ref:`volatiles_release <pre_processing_volatiles_release>`   Volatiles data used by hydrocarbon fuel model.
+
+===========================================================   ==============================================
+

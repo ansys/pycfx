@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_legend_x_justification_1:
+
+legend_x_justification
+======================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.legend_x_justification_1.legend_x_justification
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==================================================================   ======================================
+
+Parent                                                                                              Summary
+
+==================================================================   ======================================
+:ref:`default_legend_child <post_processing_default_legend_child>`   'child_object_type' of default_legend.
+
+==================================================================   ======================================
+

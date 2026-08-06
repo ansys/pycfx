@@ -1,0 +1,32 @@
+:orphan:
+
+.. _pre_processing_partitioning_domain_child:
+
+partitioning_domain_child
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.partitioning_domain_child.partitioning_domain_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================   ===========================
+
+Attribute                                                                         Summary
+
+===========================================================   ===========================
+:ref:`partitioning_type <pre_processing_partitioning_type>`   'PARTITIONING TYPE' object.
+
+===========================================================   ===========================
+
+.. rubric:: Included in:
+
+===============================================================   ============================================
+
+Parent                                                                                                 Summary
+
+===============================================================   ============================================
+:ref:`partitioning_domain <pre_processing_partitioning_domain>`   A container for Partitioning Domain objects.
+
+===============================================================   ============================================
+

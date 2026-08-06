@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_absorbing_layer_damping_factor:
+
+absorbing_layer_damping_factor
+==============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.absorbing_layer_damping_factor.absorbing_layer_damping_factor
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================   =================================================================
+
+Parent                                                                                                                            Summary
+
+=====================================================================   =================================================================
+:ref:`acoustic_reflectivity <pre_processing_acoustic_reflectivity>`     Specifies acoustic reflection attributes of a boundary condition.
+
+:ref:`acoustic_reflectivity <pre_processing_acoustic_reflectivity_1>`   Specifies acoustic reflection attributes of a boundary condition.
+
+=====================================================================   =================================================================
+

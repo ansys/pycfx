@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_phase_corrected_interface:
+
+phase_corrected_interface
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.phase_corrected_interface.phase_corrected_interface
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================================   ==============================================
+
+Parent                                                                                                                       Summary
+
+===================================================================================   ==============================================
+:ref:`fourier_transformation_child <pre_processing_fourier_transformation_child>`     'child_object_type' of fourier_transformation.
+
+:ref:`fourier_transformation_side_1 <pre_processing_fourier_transformation_side_1>`          'FOURIER TRANSFORMATION SIDE 1' object.
+
+:ref:`fourier_transformation_side_2 <pre_processing_fourier_transformation_side_2>`          'FOURIER TRANSFORMATION SIDE 2' object.
+
+===================================================================================   ==============================================
+

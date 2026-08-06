@@ -1,0 +1,46 @@
+:orphan:
+
+.. _pre_processing_intermittency_model_coefficients:
+
+intermittency_model_coefficients
+================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.intermittency_model_coefficients.intermittency_model_coefficients
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================   ===================================================
+
+Attribute                                                                                               Summary
+
+=========================================================   ===================================================
+:ref:`enabled <pre_processing_enabled_51>`                  Enable the INTERMITTENCY MODEL COEFFICIENTS object.
+
+:ref:`ctu1_coefficient <pre_processing_ctu1_coefficient>`              CTU1 intermittency equation coefficient.
+
+:ref:`ctu2_coefficient <pre_processing_ctu2_coefficient>`              CTU2 intermittency equation coefficient.
+
+:ref:`ctu3_coefficient <pre_processing_ctu3_coefficient>`              CTU3 intermittency equation coefficient.
+
+:ref:`cpg1_coefficient <pre_processing_cpg1_coefficient>`              CPG1 intermittency equation coefficient.
+
+:ref:`cpg2_coefficient <pre_processing_cpg2_coefficient>`              CPG2 intermittency equation coefficient.
+
+:ref:`cpg3_coefficient <pre_processing_cpg3_coefficient>`              CPG3 intermittency equation coefficient.
+
+:ref:`csep_coefficient <pre_processing_csep_coefficient>`                             Coefficient in trip term.
+
+=========================================================   ===================================================
+
+.. rubric:: Included in:
+
+=======================================================================   ==============================================
+
+Parent                                                                                                           Summary
+
+=======================================================================   ==============================================
+:ref:`transitional_turbulence <pre_processing_transitional_turbulence>`   Defines the model for transitional turbulence.
+
+=======================================================================   ==============================================
+

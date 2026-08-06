@@ -1,0 +1,54 @@
+:orphan:
+
+.. _pre_processing_acoustic_reflectivity:
+
+acoustic_reflectivity
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.acoustic_reflectivity.acoustic_reflectivity
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================================   =================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                           Summary
+
+=======================================================================================   =================================================================================================================================================================
+:ref:`enabled <pre_processing_enabled_126>`                                                                                                                                                                        Enable the ACOUSTIC REFLECTIVITY object.
+
+:ref:`option <pre_processing_option_274>`                                                                                                                                                                               The 'Acoustic Reflectivity' option.
+
+:ref:`reflection_factor <pre_processing_reflection_factor>`                                                                                                                                                                              Reflection factor.
+
+:ref:`reflection_length_scale <pre_processing_reflection_length_scale>`                                                                                                                                  Reflection length scale. Default is domain extent.
+
+:ref:`reflection_mach_scale <pre_processing_reflection_mach_scale>`                                                                                                                                                                Reflection length scale.
+
+:ref:`absorbing_layer_damping_factor <pre_processing_absorbing_layer_damping_factor>`                                                                                                                                       Absorbing Layer Damping Factor.
+
+:ref:`absorbing_layer_shape_factor <pre_processing_absorbing_layer_shape_factor>`                                                                                                                                             Absorbing Layer Shape Factor.
+
+:ref:`absorbing_layer_length_fraction <pre_processing_absorbing_layer_length_fraction>`                                                                                                                                    Absorbing Layer Length Fraction.
+
+:ref:`absorbing_layer_thickness <pre_processing_absorbing_layer_thickness>`                                                                                                                                                      Absorbing Layer Thickness.
+
+:ref:`velocity_excitation <pre_processing_velocity_excitation>`                                                                                                              Specifies velocity excitation at a non-reflecting velocity boundary condition.
+
+:ref:`mass_flow_excitation <pre_processing_mass_flow_excitation>`                         Specifies mass flow excitation at a non-reflecting mass flow boundary condition. The direction is assumed to be the same as that of the specified mass flow rate.
+
+:ref:`pressure_excitation <pre_processing_pressure_excitation>`                                                                                                              Specifies pressure excitation at a non-reflecting pressure boundary condition.
+
+=======================================================================================   =================================================================================================================================================================
+
+.. rubric:: Included in:
+
+===========================================================   ========================================================
+
+Parent                                                                                                         Summary
+
+===========================================================   ========================================================
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum>`   Specifies conditions on Mass and Momentum at a boundary.
+
+===========================================================   ========================================================
+

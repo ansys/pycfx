@@ -1,0 +1,46 @@
+:orphan:
+
+.. _pre_processing_equation_of_state_1:
+
+equation_of_state
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.equation_of_state_1.equation_of_state
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================   =========================================================================
+
+Attribute                                                                                                                       Summary
+
+===========================================================   =========================================================================
+:ref:`enabled <pre_processing_enabled_20>`                                                         Enable the EQUATION OF STATE object.
+
+:ref:`option <pre_processing_option_13>`                                                                The 'Equation Of State' option.
+
+:ref:`density <pre_processing_density>`                                                                               Material density.
+
+:ref:`drhodp_t <pre_processing_drhodp_t>`                             Material density derivative wrt pressure at constant temperature.
+
+:ref:`drhodt_p <pre_processing_drhodt_p>`                             Material density derivative wrt temperature at constant pressure.
+
+:ref:`absolute_pressure <pre_processing_absolute_pressure>`                                              'Absolute Pressure' parameter.
+
+:ref:`dpdv_t <pre_processing_dpdv_t>`                         Material pressure derivative wrt specific volume at constant temperature.
+
+:ref:`dpdt_v <pre_processing_dpdt_v>`                         Material pressure derivative wrt temperature at constant specific volume.
+
+===========================================================   =========================================================================
+
+.. rubric:: Included in:
+
+=============================================================   ========================================================================================================================================================================================================================================
+
+Parent                                                                                                                                                                                                                                                                                           Summary
+
+=============================================================   ========================================================================================================================================================================================================================================
+:ref:`mixture_properties <pre_processing_mixture_properties>`   Used as a container for specifying bulk properties of both fixed and variable composition mixtures. Ideal Mixture is the default rule for all properties. Individual properties can be overridden using the singleton for that property.
+
+=============================================================   ========================================================================================================================================================================================================================================
+

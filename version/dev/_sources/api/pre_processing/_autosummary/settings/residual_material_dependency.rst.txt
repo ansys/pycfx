@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_residual_material_dependency:
+
+residual_material_dependency
+============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.residual_material_dependency.residual_material_dependency
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================   ===============================================
+
+Attribute                                                                                       Summary
+
+=====================================================   ===============================================
+:ref:`enabled <pre_processing_enabled_25>`              Enable the RESIDUAL MATERIAL DEPENDENCY object.
+
+:ref:`c0_coefficient <pre_processing_c0_coefficient>`                             C0 model coefficient.
+
+:ref:`c1_coefficient <pre_processing_c1_coefficient>`                             C1 model coefficient.
+
+:ref:`c2_coefficient <pre_processing_c2_coefficient>`                             C2 model coefficient.
+
+=====================================================   ===============================================
+
+.. rubric:: Included in:
+
+===========================================================================   ===================================================================================
+
+Parent                                                                                                                                                    Summary
+
+===========================================================================   ===================================================================================
+:ref:`laminar_burning_velocity <pre_processing_laminar_burning_velocity_1>`   Defines the laminar burning velocity for premixed or partially premixed combustion.
+
+===========================================================================   ===================================================================================
+

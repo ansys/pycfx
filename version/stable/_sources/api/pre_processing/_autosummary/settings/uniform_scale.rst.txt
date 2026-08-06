@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_uniform_scale:
+
+uniform_scale
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.uniform_scale.uniform_scale
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   =================================
+
+Parent                                                                                Summary
+
+=========================================================   =================================
+:ref:`scale_definition <pre_processing_scale_definition>`   Defines how scaling is specified.
+
+=========================================================   =================================
+

@@ -1,0 +1,43 @@
+:orphan:
+
+.. _pre_processing_expert_parameters_child:
+
+expert_parameters_child
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.expert_parameters_child.expert_parameters_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================   ===================
+
+Attribute                                                   Summary
+
+=============================================   ===================
+:ref:`definition <pre_processing_definition>`   'definition' child.
+
+=============================================   ===================
+
+.. rubric:: Methods
+
+===========================================   ============================
+
+Method                                                             Summary
+
+===========================================   ============================
+:ref:`duplicate <pre_processing_duplicate>`   Create a copy of the object.
+
+===========================================   ============================
+
+.. rubric:: Included in:
+
+===========================================================   ==========================================================================
+
+Parent                                                                                                                           Summary
+
+===========================================================   ==========================================================================
+:ref:`expert_parameters <pre_processing_expert_parameters>`   Hold advanced parameters used to control many aspects of solver operation.
+
+===========================================================   ==========================================================================
+

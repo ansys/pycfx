@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_shell_side_area_fraction:
+
+shell_side_area_fraction
+========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.shell_side_area_fraction.shell_side_area_fraction
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================   ===========================================
+
+Attribute                                                                                 Summary
+
+===================================================   ===========================================
+:ref:`option <pre_processing_option_240>`                  The 'Shell Side Area Fraction' option.
+
+:ref:`area_fraction <pre_processing_area_fraction>`   Contact area fraction of a phase at a wall.
+
+===================================================   ===========================================
+
+.. rubric:: Included in:
+
+=============================================================   =============================
+
+Parent                                                                                Summary
+
+=============================================================   =============================
+:ref:`pipe_configuration <pre_processing_pipe_configuration>`   Specifies tube configuration.
+
+=============================================================   =============================
+

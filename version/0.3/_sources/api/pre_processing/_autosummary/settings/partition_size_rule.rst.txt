@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_partition_size_rule:
+
+partition_size_rule
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.partition_size_rule.partition_size_rule
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ===========================
+
+Parent                                                                            Summary
+
+===========================================================   ===========================
+:ref:`partitioning_type <pre_processing_partitioning_type>`   'PARTITIONING TYPE' object.
+
+===========================================================   ===========================
+

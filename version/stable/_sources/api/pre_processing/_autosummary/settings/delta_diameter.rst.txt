@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_delta_diameter:
+
+delta_diameter
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.delta_diameter.delta_diameter
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================================   ===============================================================
+
+Parent                                                                                                                                  Summary
+
+=============================================================================   ===============================================================
+:ref:`bubble_departure_diameter <pre_processing_bubble_departure_diameter_1>`   Specifies bubble departure diameter for the wall boiling model.
+
+=============================================================================   ===============================================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_91:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_91.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ==============================================================================
+
+Parent                                                                                                                                 Summary
+
+=============================================================   ==============================================================================
+:ref:`reference_location <pre_processing_reference_location>`   Defines the reference location of the Origin point in ORIGIN MOTION singleton.
+
+=============================================================   ==============================================================================
+

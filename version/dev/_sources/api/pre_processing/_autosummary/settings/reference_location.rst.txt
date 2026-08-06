@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_reference_location:
+
+reference_location
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.reference_location.reference_location
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================   =============================================================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                                                   Summary
+
+===================================================================   =============================================================================================================================================================================================================================================
+:ref:`option <pre_processing_option_91>`                                                                                                                                                                                                                                           The 'Reference Location' option.
+
+:ref:`coord_frame <pre_processing_coord_frame>`                       Local coordinate frame for computing expressions. The default at the top level of the command data structure is Coord 0, that is no transformation. The default at lower levels is to inherit the value from objects higher up the structure.
+
+:ref:`cartesian_coordinates <pre_processing_cartesian_coordinates>`                                                                                                                                                                                             Position <x,y,z> specified by cartesian components.
+
+===================================================================   =============================================================================================================================================================================================================================================
+
+.. rubric:: Included in:
+
+===================================================   ======================================================================================================================================
+
+Parent                                                                                                                                                                               Summary
+
+===================================================   ======================================================================================================================================
+:ref:`origin_motion <pre_processing_origin_motion>`   Defines the general motion of the origin point relative to an stationary coordinate frame. NOTE: It is only valid for immersed solids.
+
+===================================================   ======================================================================================================================================
+

@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_residual_type:
+
+residual_type
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.residual_type.residual_type
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================   ======================================================
+
+Parent                                                                                                               Summary
+
+===================================================================   ======================================================
+:ref:`convergence_criteria <pre_processing_convergence_criteria>`     Specifies the criteria for final solution convergence.
+
+:ref:`convergence_criteria <pre_processing_convergence_criteria_1>`   Specifies the criteria for final solution convergence.
+
+:ref:`convergence_criteria <pre_processing_convergence_criteria_2>`   Specifies the criteria for final solution convergence.
+
+===================================================================   ======================================================
+

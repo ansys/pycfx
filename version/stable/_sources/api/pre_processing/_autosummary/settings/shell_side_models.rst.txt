@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_shell_side_models:
+
+shell_side_models
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.shell_side_models.shell_side_models
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================================   ==============================================================================================
+
+Attribute                                                                                                                                                                      Summary
+
+=====================================================================================   ==============================================================================================
+:ref:`shell_streamwise_momentum_loss <pre_processing_shell_streamwise_momentum_loss>`        Specifies shell side momentum loss model for the streamwise direction, parallel to tubes.
+
+:ref:`shell_transverse_momentum_loss <pre_processing_shell_transverse_momentum_loss>`   Specifies shell side momentum loss model for the transverse direction, perpendicular to tubes.
+
+:ref:`shell_side_fouling_model <pre_processing_shell_side_fouling_model>`                                                      Specifies the fouling material model on the shell side.
+
+:ref:`shell_heat_transfer_model <pre_processing_shell_heat_transfer_model>`                                                               Holds the definition of shell heat transfer.
+
+=====================================================================================   ==============================================================================================
+
+.. rubric:: Included in:
+
+===================================================================   ==============================================
+
+Parent                                                                                                       Summary
+
+===================================================================   ==============================================
+:ref:`shell_and_tube_models <pre_processing_shell_and_tube_models>`   Holds the definition of shell and tube models.
+
+===================================================================   ==============================================
+

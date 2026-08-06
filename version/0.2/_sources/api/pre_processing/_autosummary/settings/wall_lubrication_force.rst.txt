@@ -1,0 +1,50 @@
+:orphan:
+
+.. _pre_processing_wall_lubrication_force:
+
+wall_lubrication_force
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.wall_lubrication_force.wall_lubrication_force
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================================   ===============================================================================
+
+Attribute                                                                                                                                                           Summary
+
+=========================================================================================   ===============================================================================
+:ref:`option <pre_processing_option_191>`                                                                                              The 'Wall Lubrication Force' option.
+
+:ref:`lubrication_coefficient_c1 <pre_processing_lubrication_coefficient_c1>`                    Coefficient C1 for wall lubrication force in interfluid momentum transfer.
+
+:ref:`lubrication_coefficient_c2 <pre_processing_lubrication_coefficient_c2>`                    Coefficient C2 for wall lubrication force in interfluid momentum transfer.
+
+:ref:`pipe_diameter <pre_processing_pipe_diameter>`                                                                                              'Pipe Diameter' parameter.
+
+:ref:`lubrication_cut_off_coefficient <pre_processing_lubrication_cut_off_coefficient>`     Cut Off Coefficient for wall lubrication force in interfluid momentum transfer.
+
+:ref:`lubrication_damping_coefficient <pre_processing_lubrication_damping_coefficient>`     Damping Coefficient for wall lubrication force in interfluid momentum transfer.
+
+:ref:`lubrication_power_law_index <pre_processing_lubrication_power_law_index>`                 Power Law Index for wall lubrication force in interfluid momentum transfer.
+
+:ref:`wall_lubrication_coefficient <pre_processing_wall_lubrication_coefficient>`                                                 'Wall Lubrication Coefficient' parameter.
+
+:ref:`under_relaxation_factor <pre_processing_under_relaxation_factor>`                                                                'Under Relaxation Factor' parameter.
+
+:ref:`wall_lubrication_force_direction <pre_processing_wall_lubrication_force_direction>`                          Defines the direction in which Wall Lubrication applies.
+
+=========================================================================================   ===============================================================================
+
+.. rubric:: Included in:
+
+===========================================================   ====================================================
+
+Parent                                                                                                     Summary
+
+===========================================================   ====================================================
+:ref:`momentum_transfer <pre_processing_momentum_transfer>`   Specifies momentum transfer models for a fluid pair.
+
+===========================================================   ====================================================
+

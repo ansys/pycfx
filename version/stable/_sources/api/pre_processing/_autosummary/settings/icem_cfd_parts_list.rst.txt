@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_icem_cfd_parts_list:
+
+icem_cfd_parts_list
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.icem_cfd_parts_list.icem_cfd_parts_list
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================================   ===============================================
+
+Parent                                                                                                                        Summary
+
+===================================================================================   ===============================================
+:ref:`icem_cfd_part_map_child <pre_processing_icem_cfd_part_map_child>`                     'child_object_type' of icem_cfd_part_map.
+
+:ref:`icem_cfd_part_parameter_child <pre_processing_icem_cfd_part_parameter_child>`   'child_object_type' of icem_cfd_part_parameter.
+
+===================================================================================   ===============================================
+

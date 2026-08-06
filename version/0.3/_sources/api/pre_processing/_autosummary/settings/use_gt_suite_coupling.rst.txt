@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_use_gt_suite_coupling:
+
+use_gt_suite_coupling
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.use_gt_suite_coupling.use_gt_suite_coupling
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================   ================================================================
+
+Parent                                                                                                           Summary
+
+=====================================================   ================================================================
+:ref:`domain_models <pre_processing_domain_models>`     Defines the physical models that are associated with the domain.
+
+:ref:`boundary_child <pre_processing_boundary_child>`                                   'child_object_type' of boundary.
+
+=====================================================   ================================================================
+

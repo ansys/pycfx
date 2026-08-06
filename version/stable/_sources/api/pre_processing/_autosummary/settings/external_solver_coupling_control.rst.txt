@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_external_solver_coupling_control:
+
+external_solver_coupling_control
+================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.external_solver_coupling_control.external_solver_coupling_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================================   ========================================
+
+Attribute                                                                                                                Summary
+
+=====================================================================================   ========================================
+:ref:`coupling_step_control <pre_processing_coupling_step_control>`                              'COUPLING STEP CONTROL' object.
+
+:ref:`coupling_data_transfer_control <pre_processing_coupling_data_transfer_control>`   'COUPLING DATA TRANSFER CONTROL' object.
+
+=====================================================================================   ========================================
+
+.. rubric:: Included in:
+
+=======================================================   ====================================================================================
+
+Parent                                                                                                                                 Summary
+
+=======================================================   ====================================================================================
+:ref:`solver_control <pre_processing_solver_control_1>`   Holds all objects that control discretization and execution of the solution process.
+
+=======================================================   ====================================================================================
+

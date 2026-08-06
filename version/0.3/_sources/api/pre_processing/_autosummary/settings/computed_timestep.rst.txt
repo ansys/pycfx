@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_computed_timestep:
+
+computed_timestep
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.computed_timestep.computed_timestep
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================   =============================================
+
+Parent                                                                                  Summary
+
+===============================================   =============================================
+:ref:`time_steps <pre_processing_time_steps_1>`   Specifies the time steps for a transient run.
+
+===============================================   =============================================
+

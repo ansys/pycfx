@@ -1,0 +1,42 @@
+:orphan:
+
+.. _post_processing_report_properties:
+
+report_properties
+=================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.report_properties.report_properties
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+================================================================================   ==============================================================================================
+
+Attribute                                                                                                                                                                 Summary
+
+================================================================================   ==============================================================================================
+:ref:`execution_type <post_processing_execution_type>`                                          Specifies whether this report should be run as a session file or as a state file.
+
+:ref:`keywords <post_processing_keywords>`                                                                        Specifies any keywords that may be associated with this report.
+
+:ref:`report_support_level <post_processing_report_support_level>`                                                       Specifies whether the report is fully supported or Beta.
+
+:ref:`report_template_description <post_processing_report_template_description>`   Provides a description of the Report Template for the user to understand what the report does.
+
+:ref:`report_template_name <post_processing_report_template_name>`                                                                              Specifies the name of the report.
+
+================================================================================   ==============================================================================================
+
+.. rubric:: Included in:
+
+========================================   =========================================
+
+Parent                                                                       Summary
+
+========================================   =========================================
+:ref:`results <post_processing_results>`   Encapsulates a CFX post-processing setup.
+
+:ref:`report <post_processing_report>`                           Defines the Report.
+
+========================================   =========================================
+

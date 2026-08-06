@@ -1,0 +1,44 @@
+:orphan:
+
+.. _pre_processing_reynolds_stress_components:
+
+reynolds_stress_components
+==========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.reynolds_stress_components.reynolds_stress_components
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================   ========================================
+
+Attribute                                                                    Summary
+
+=========================================   ========================================
+:ref:`option <pre_processing_option_338>`   The 'Reynolds Stress Components' option.
+
+:ref:`uu <pre_processing_uu>`                                        'uu' parameter.
+
+:ref:`vv <pre_processing_vv>`                                        'vv' parameter.
+
+:ref:`ww <pre_processing_ww>`                                        'ww' parameter.
+
+:ref:`uv <pre_processing_uv>`                                        'uv' parameter.
+
+:ref:`uw <pre_processing_uw>`                                        'uw' parameter.
+
+:ref:`vw <pre_processing_vw>`                                        'vw' parameter.
+
+=========================================   ========================================
+
+.. rubric:: Included in:
+
+===================================================================================   ======================================
+
+Parent                                                                                                               Summary
+
+===================================================================================   ======================================
+:ref:`turbulence_initial_conditions <pre_processing_turbulence_initial_conditions>`   Sets initial conditions on turbulence.
+
+===================================================================================   ======================================
+

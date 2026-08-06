@@ -1,0 +1,42 @@
+:orphan:
+
+.. _pre_processing_cone_definition:
+
+cone_definition
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.cone_definition.cone_definition
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================================   ============================================
+
+Attribute                                                                                                                      Summary
+
+=======================================================================================   ============================================
+:ref:`option <pre_processing_option_214>`                                                                The 'Cone Definition' option.
+
+:ref:`injection_centre <pre_processing_injection_centre>`                                                'Injection Centre' parameter.
+
+:ref:`radius_of_injection_plane <pre_processing_radius_of_injection_plane>`                     'Radius of Injection Plane' parameter.
+
+:ref:`inner_radius_of_injection_plane <pre_processing_inner_radius_of_injection_plane>`   'Inner Radius of Injection Plane' parameter.
+
+:ref:`outer_radius_of_injection_plane <pre_processing_outer_radius_of_injection_plane>`   'Outer Radius of Injection Plane' parameter.
+
+:ref:`injection_direction <pre_processing_injection_direction>`                                          Sets the injection direction.
+
+=======================================================================================   ============================================
+
+.. rubric:: Included in:
+
+=========================================================   =============================
+
+Parent                                                                            Summary
+
+=========================================================   =============================
+:ref:`injection_method <pre_processing_injection_method>`   Defines the injection method.
+
+=========================================================   =============================
+

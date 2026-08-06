@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_associated_case_name:
+
+associated_case_name
+====================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.associated_case_name.associated_case_name
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+====================================================================   ========================================================
+
+Parent                                                                                                                  Summary
+
+====================================================================   ========================================================
+:ref:`object_report_options <post_processing_object_report_options>`   Defines options for the Report, specific to each object.
+
+====================================================================   ========================================================
+

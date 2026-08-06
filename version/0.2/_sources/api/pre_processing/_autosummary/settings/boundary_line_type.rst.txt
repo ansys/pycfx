@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_boundary_line_type:
+
+boundary_line_type
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.boundary_line_type.boundary_line_type
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================================================================   ===============================================================================================================================
+
+Attribute                                                                                                                                                                                                                                   Summary
+
+=================================================================================================================   ===============================================================================================================================
+:ref:`option <pre_processing_option_64>`                                                                                                                                                                           The 'Boundary Line Type' option.
+
+:ref:`line_length <pre_processing_line_length>`                                                                                                                                                                 Determines the length of ULC lines.
+
+:ref:`local_to_domain <pre_processing_local_to_domain>`                                                                                                                           Logical flag to determine if lines restricted to a single domain.
+
+:ref:`line_influence_radius_to_active_length_ratio <pre_processing_line_influence_radius_to_active_length_ratio>`   Determines what fraction of active line used for the radius of influence of line for scattering line data to the mesh vertices.
+
+:ref:`line_point_distribution <pre_processing_line_point_distribution>`                                                                                                                           Defines how the points are distributed on a line.
+
+=================================================================================================================   ===============================================================================================================================
+
+.. rubric:: Included in:
+
+===================================================================   =======================================
+
+Parent                                                                                                Summary
+
+===================================================================   =======================================
+:ref:`user_line_cloud_child <pre_processing_user_line_cloud_child>`   'child_object_type' of user_line_cloud.
+
+===================================================================   =======================================
+

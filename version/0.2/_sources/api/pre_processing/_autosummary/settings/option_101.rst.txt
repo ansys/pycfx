@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_101:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_101.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================   ==============================================================
+
+Parent                                                                                                         Summary
+
+=====================================================   ==============================================================
+:ref:`buoyancy_model <pre_processing_buoyancy_model>`   Defines type of buoyancy model and gravity vector in a domain.
+
+=====================================================   ==============================================================
+

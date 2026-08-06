@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_458:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_458.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================================   ==================================
+
+Parent                                                                                                 Summary
+
+=========================================================================   ==================================
+:ref:`partition_node_weighting <pre_processing_partition_node_weighting>`   'PARTITION NODE WEIGHTING' object.
+
+=========================================================================   ==================================
+

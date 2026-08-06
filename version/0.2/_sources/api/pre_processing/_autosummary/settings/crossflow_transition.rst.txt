@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_crossflow_transition:
+
+crossflow_transition
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.crossflow_transition.crossflow_transition
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================================   =======================================
+
+Attribute                                                                                                                     Summary
+
+===========================================================================================   =======================================
+:ref:`enabled <pre_processing_enabled_52>`                                                    Enable the CROSSFLOW TRANSITION object.
+
+:ref:`option <pre_processing_option_124>`                                                          The 'Crossflow Transition' option.
+
+:ref:`crossflow_correlation_coefficient <pre_processing_crossflow_correlation_coefficient>`     Coefficient in crossflow correlation.
+
+===========================================================================================   =======================================
+
+.. rubric:: Included in:
+
+=======================================================================   ==============================================
+
+Parent                                                                                                           Summary
+
+=======================================================================   ==============================================
+:ref:`transitional_turbulence <pre_processing_transitional_turbulence>`   Defines the model for transitional turbulence.
+
+=======================================================================   ==============================================
+

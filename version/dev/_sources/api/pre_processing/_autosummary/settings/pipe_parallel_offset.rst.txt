@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_pipe_parallel_offset:
+
+pipe_parallel_offset
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.pipe_parallel_offset.pipe_parallel_offset
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   =============================
+
+Parent                                                                                Summary
+
+=============================================================   =============================
+:ref:`pipe_configuration <pre_processing_pipe_configuration>`   Specifies tube configuration.
+
+=============================================================   =============================
+

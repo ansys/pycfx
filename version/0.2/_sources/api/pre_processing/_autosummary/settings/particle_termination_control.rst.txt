@@ -1,0 +1,44 @@
+:orphan:
+
+.. _pre_processing_particle_termination_control:
+
+particle_termination_control
+============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.particle_termination_control.particle_termination_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================================================   ================================================
+
+Attribute                                                                                                                                  Summary
+
+===============================================================================================   ================================================
+:ref:`enabled <pre_processing_enabled_176>`                                                        Enable the PARTICLE TERMINATION CONTROL object.
+
+:ref:`maximum_tracking_time <pre_processing_maximum_tracking_time>`                                             'Maximum Tracking Time' parameter.
+
+:ref:`maximum_tracking_distance <pre_processing_maximum_tracking_distance>`                                 'Maximum Tracking Distance' parameter.
+
+:ref:`maximum_number_of_integration_steps <pre_processing_maximum_number_of_integration_steps>`   'Maximum Number of Integration Steps' parameter.
+
+:ref:`minimum_diameter <pre_processing_minimum_diameter>`                                                            'Minimum Diameter' parameter.
+
+:ref:`minimum_total_mass <pre_processing_minimum_total_mass>`                                                      'Minimum Total Mass' parameter.
+
+:ref:`mass_fraction_limits <pre_processing_mass_fraction_limits>`                                                   'MASS FRACTION LIMITS' object.
+
+===============================================================================================   ================================================
+
+.. rubric:: Included in:
+
+=========================================================   ==============================================================================
+
+Parent                                                                                                                             Summary
+
+=========================================================   ==============================================================================
+:ref:`particle_control <pre_processing_particle_control>`   Holds objects that control the execution and convergence of particle tracking.
+
+=========================================================   ==============================================================================
+

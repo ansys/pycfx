@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_additional_materials_list:
+
+additional_materials_list
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.additional_materials_list.additional_materials_list
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ========================================
+
+Parent                                                                                         Summary
+
+===========================================================   ========================================
+:ref:`material_child <pre_processing_material_child>`                 'child_object_type' of material.
+
+:ref:`reaction_child <pre_processing_reaction_child>`                 'child_object_type' of reaction.
+
+:ref:`combustion_model <pre_processing_combustion_model_1>`   Defines the combustion model to be used.
+
+===========================================================   ========================================
+

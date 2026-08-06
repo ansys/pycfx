@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_additional_variable_child_4:
+
+additional_variable_child
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.additional_variable_child_4.additional_variable_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================   =================================
+
+Attribute                                                                                               Summary
+
+===========================================================================   =================================
+:ref:`option <pre_processing_option_3>`                                       The 'Additional Variable' option.
+
+:ref:`additional_variable_value <pre_processing_additional_variable_value>`          Additional Variable Value.
+
+===========================================================================   =================================
+
+.. rubric:: Included in:
+
+=================================================================   ============================================
+
+Parent                                                                                                   Summary
+
+=================================================================   ============================================
+:ref:`additional_variable <pre_processing_additional_variable_4>`   A container for Additional Variable objects.
+
+=================================================================   ============================================
+

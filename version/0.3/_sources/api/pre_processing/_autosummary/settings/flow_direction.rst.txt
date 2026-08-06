@@ -1,0 +1,52 @@
+:orphan:
+
+.. _pre_processing_flow_direction:
+
+flow_direction
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.flow_direction.flow_direction
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================================   =======================================================================================================
+
+Attribute                                                                                                                                                                         Summary
+
+===============================================================================   =======================================================================================================
+:ref:`option <pre_processing_option_281>`                                                                                                                    The 'Flow Direction' option.
+
+:ref:`unit_vector_x_component <pre_processing_unit_vector_x_component>`                                                                              'Unit Vector X Component' parameter.
+
+:ref:`unit_vector_y_component <pre_processing_unit_vector_y_component>`                                                                              'Unit Vector Y Component' parameter.
+
+:ref:`unit_vector_z_component <pre_processing_unit_vector_z_component>`                                                                              'Unit Vector Z Component' parameter.
+
+:ref:`unit_vector_axial_component <pre_processing_unit_vector_axial_component>`                                                                  'Unit Vector Axial Component' parameter.
+
+:ref:`unit_vector_r_component <pre_processing_unit_vector_r_component>`                                                                              'Unit Vector r Component' parameter.
+
+:ref:`unit_vector_theta_component <pre_processing_unit_vector_theta_component>`                                                                  'Unit Vector Theta Component' parameter.
+
+:ref:`elimination_factor <pre_processing_elimination_factor>`                                                                                Elimination Factor for Zero Gradient option.
+
+:ref:`blend_factor <pre_processing_blend_factor>`                                                       Specifies the blend between pure UDS (0.0) and second order (1.0) discretization.
+
+:ref:`axis_definition <pre_processing_axis_definition>`                           Defines the axis for a cylindrical coordinate system or variables defined using cylindrical components.
+
+===============================================================================   =======================================================================================================
+
+.. rubric:: Included in:
+
+=================================================================   =============================================================
+
+Parent                                                                                                                    Summary
+
+=================================================================   =============================================================
+:ref:`boundary_conditions <pre_processing_boundary_conditions>`     Specifies boundary conditions for all equations being solved.
+
+:ref:`boundary_conditions <pre_processing_boundary_conditions_2>`   Specifies boundary conditions for all equations being solved.
+
+=================================================================   =============================================================
+

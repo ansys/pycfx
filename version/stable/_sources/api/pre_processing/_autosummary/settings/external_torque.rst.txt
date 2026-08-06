@@ -1,0 +1,28 @@
+:orphan:
+
+.. _pre_processing_external_torque:
+
+external_torque
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.external_torque.external_torque
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`external_torque_child <pre_processing_external_torque_child>`
+
+
+.. rubric:: Included in:
+
+===========================================   =======================================
+
+Parent                                                                        Summary
+
+===========================================   =======================================
+:ref:`dynamics <pre_processing_dynamics>`     Defines rigid body dynamics attributes.
+
+:ref:`dynamics <pre_processing_dynamics_1>`   Defines rigid body dynamics attributes.
+
+===========================================   =======================================
+

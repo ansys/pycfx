@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_gray_gas_child:
+
+gray_gas_child
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.gray_gas_child.gray_gas_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================   ==========================================
+
+Attribute                                                                                                  Summary
+
+=====================================================================   ==========================================
+:ref:`option <pre_processing_option_140>`                                                   The 'Gray Gas' option.
+
+:ref:`weight <pre_processing_weight>`                                                          'Weight' parameter.
+
+:ref:`absorption_coefficient <pre_processing_absorption_coefficient>`   The Absorption Coefficient for a Gray Gas.
+
+=====================================================================   ==========================================
+
+.. rubric:: Included in:
+
+=========================================   =================================
+
+Parent                                                                Summary
+
+=========================================   =================================
+:ref:`gray_gas <pre_processing_gray_gas>`   A container for Gray Gas objects.
+
+=========================================   =================================
+

@@ -1,0 +1,31 @@
+:orphan:
+
+.. _pre_processing_frame_type:
+
+frame_type
+==========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.frame_type.frame_type
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================================   ===================================================
+
+Parent                                                                                                                              Summary
+
+=====================================================================================   ===================================================
+:ref:`boundary_child <pre_processing_boundary_child>`                                                      'child_object_type' of boundary.
+
+:ref:`injection_region_child <pre_processing_injection_region_child>`                              'child_object_type' of injection_region.
+
+:ref:`initialisation <pre_processing_initialisation>`                                   Defines the initialisation of flow-field variables.
+
+:ref:`downstream_velocity_constraint <pre_processing_downstream_velocity_constraint>`    Downstream velocity constraint at stage interface.
+
+:ref:`initialisation <pre_processing_initialisation_1>`                                 Defines the initialisation of flow-field variables.
+
+:ref:`monitor_location_control <pre_processing_monitor_location_control>`                                'MONITOR LOCATION CONTROL' object.
+
+=====================================================================================   ===================================================
+

@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_cartesian_velocity_components_1:
+
+cartesian_velocity_components
+=============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.cartesian_velocity_components_1.cartesian_velocity_components
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================   ===========================================
+
+Attribute                                                                                   Summary
+
+=====================================================   ===========================================
+:ref:`option <pre_processing_option_324>`               The 'Cartesian Velocity Components' option.
+
+:ref:`u <pre_processing_u>`                                                          'U' parameter.
+
+:ref:`v <pre_processing_v>`                                                          'V' parameter.
+
+:ref:`w <pre_processing_w>`                                                          'W' parameter.
+
+:ref:`velocity_scale <pre_processing_velocity_scale>`                   'Velocity Scale' parameter.
+
+=====================================================   ===========================================
+
+.. rubric:: Included in:
+
+===============================================================   ===============================================================================
+
+Parent                                                                                                                                    Summary
+
+===============================================================   ===============================================================================
+:ref:`initial_conditions <pre_processing_initial_conditions_1>`   Holds the details of initial condition specification for one or more equations.
+
+===============================================================   ===============================================================================
+

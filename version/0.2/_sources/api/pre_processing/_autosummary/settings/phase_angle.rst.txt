@@ -1,0 +1,48 @@
+:orphan:
+
+.. _pre_processing_phase_angle:
+
+phase_angle
+===========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.phase_angle.phase_angle
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================================================   ==================================================
+
+Attribute                                                                                                                                        Summary
+
+===================================================================================================   ==================================================
+:ref:`option <pre_processing_option_75>`                                                                                       The 'Phase Angle' option.
+
+:ref:`specified_phase_angle <pre_processing_specified_phase_angle>`                                                   'Specified Phase Angle' parameter.
+
+:ref:`nodal_diameter_magnitude <pre_processing_nodal_diameter_magnitude>`                                          'Nodal Diameter Magnitude' parameter.
+
+:ref:`nodal_diameter_magnitude_from_profile <pre_processing_nodal_diameter_magnitude_from_profile>`   'Nodal Diameter Magnitude From Profile' parameter.
+
+:ref:`travelling_wave_direction <pre_processing_travelling_wave_direction>`                                       'Travelling Wave Direction' parameter.
+
+:ref:`interblade_phase_angle <pre_processing_interblade_phase_angle>`                                                'Interblade Phase Angle' parameter.
+
+:ref:`passage_number <pre_processing_passage_number>`                                                                        'Passage Number' parameter.
+
+:ref:`passage_number_from_profile <pre_processing_passage_number_from_profile>`                                 'Passage Number From Profile' parameter.
+
+===================================================================================================   ==================================================
+
+.. rubric:: Included in:
+
+===================================================================   =====================================
+
+Parent                                                                                              Summary
+
+===================================================================   =====================================
+:ref:`mode_shape_child <pre_processing_mode_shape_child>`                'child_object_type' of mode_shape.
+
+:ref:`periodic_displacement <pre_processing_periodic_displacement>`   Defines displacement for mesh motion.
+
+===================================================================   =====================================
+

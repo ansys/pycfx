@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_fluid2_drag_force:
+
+fluid2_drag_force
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fluid2_drag_force.fluid2_drag_force
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================   ====================================
+
+Attribute                                                                                              Summary
+
+=======================================================================   ====================================
+:ref:`option <pre_processing_option_187>`                                      The 'Fluid2 Drag Force' option.
+
+:ref:`fluid2_drag_coefficient <pre_processing_fluid2_drag_coefficient>`   'Fluid2 Drag Coefficient' parameter.
+
+:ref:`stokes_coefficient <pre_processing_stokes_coefficient>`                  'Stokes Coefficient' parameter.
+
+:ref:`newton_coefficient <pre_processing_newton_coefficient>`                  'Newton Coefficient' parameter.
+
+=======================================================================   ====================================
+
+.. rubric:: Included in:
+
+===============================================   ========================================
+
+Parent                                                                             Summary
+
+===============================================   ========================================
+:ref:`drag_force <pre_processing_drag_force_1>`   Specifies drag force between two phases.
+
+===============================================   ========================================
+

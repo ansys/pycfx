@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_parent_materials_list:
+
+parent_materials_list
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.parent_materials_list.parent_materials_list
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================================   ========================================================
+
+Parent                                                                                                                         Summary
+
+===========================================================================   ========================================================
+:ref:`reactants <pre_processing_reactants>`                                   Specifies the reactant materials in a chemical reaction.
+
+:ref:`products <pre_processing_products>`                                      Defines the method of product generation in a reaction.
+
+:ref:`heat_release_distribution <pre_processing_heat_release_distribution>`                        'HEAT RELEASE DISTRIBUTION' object.
+
+===========================================================================   ========================================================
+

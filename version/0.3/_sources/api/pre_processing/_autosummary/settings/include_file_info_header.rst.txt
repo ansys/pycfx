@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_include_file_info_header:
+
+include_file_info_header
+========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.include_file_info_header.include_file_info_header
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================   =======================
+
+Parent                                                                Summary
+
+===================================================   =======================
+:ref:`export_format <pre_processing_export_format>`   'EXPORT FORMAT' object.
+
+===================================================   =======================
+

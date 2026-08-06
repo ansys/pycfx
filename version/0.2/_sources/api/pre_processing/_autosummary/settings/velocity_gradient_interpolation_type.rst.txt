@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_velocity_gradient_interpolation_type:
+
+velocity_gradient_interpolation_type
+====================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.velocity_gradient_interpolation_type.velocity_gradient_interpolation_type
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================   ==========================================================
+
+Parent                                                                                                                 Summary
+
+=================================================================   ==========================================================
+:ref:`interpolation_scheme <pre_processing_interpolation_scheme>`   Defines discretization details for variable interpolation.
+
+=================================================================   ==========================================================
+

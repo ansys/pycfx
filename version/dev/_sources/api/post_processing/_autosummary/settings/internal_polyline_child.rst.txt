@@ -1,0 +1,95 @@
+:orphan:
+
+.. _post_processing_internal_polyline_child:
+
+internal_polyline_child
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.internal_polyline_child.internal_polyline_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+========================================================================================   ===============================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                                          Summary
+
+========================================================================================   ===============================================================================================================================================================================================================
+:ref:`apply_instancing_transform <post_processing_apply_instancing_transform>`                                                                                                                                               Toggles the instancing transformation for this graphics object in the viewer.
+
+:ref:`boundary_list <post_processing_boundary_list>`                                                                                                                                                                                                                           A list of boundary objects.
+
+:ref:`colour <post_processing_colour_1>`                                                                                                                                                                                                                                                   'colour' child.
+
+:ref:`colour_map <post_processing_colour_map>`                                                                                                                                                                                                The name of the colour map to use when colouring the object.
+
+:ref:`colour_mode <post_processing_colour_mode>`                                           Sets the mode used to colour the object. If set equal to "Constant" then the "Colour" parameter is used to determine the plot colour. If set equal to "Variable", then the "Colour Variable" parameter is used.
+
+:ref:`colour_scale <post_processing_colour_scale>`                                                                                                                                           Sets whether to colour the object with a Linear or Logarithmic scale. By default, the colour scale is Linear.
+
+:ref:`colour_variable <post_processing_colour_variable>`                                                                                                              The name of the variable to be used in colouring the object. Should be set equal to the name of a currently defined VARIABLE object.
+
+:ref:`colour_variable_boundary_values <post_processing_colour_variable_boundary_values>`                                                                                                    Sets the type of boundary values to be presented for colour variables in this object (Conservative or Hybrid).
+
+:ref:`contour_level <post_processing_contour_level>`                                                                                                                                                                                                        The contour level specified in a user surface.
+
+:ref:`contour_name <post_processing_contour_name>`                                                                                                                                                                                             The name of the contour object specified in a user surface.
+
+:ref:`domain_list <post_processing_domain_list>`                                                                                                                                                                                                     The list of domains over which to define this object.
+
+:ref:`draw_contours <post_processing_draw_contours>`                                                                                                                                                                                                        Enables/disables drawing of the contour lines.
+
+:ref:`input_file <post_processing_input_file>`                                                                                                                       The name of the file to be read that contains the definition of one or more polylines or user surfaces and associated path variables.
+
+:ref:`instancing_transform <post_processing_instancing_transform>`                                                                                                                                                                    Defines the TRANSFORM object that is used for the object instancing.
+
+:ref:`line_width <post_processing_line_width_1>`                                                                                                                                                                                                                                       'line_width' child.
+
+:ref:`location <post_processing_location>`                                                                                                                                                                                                                                                 A locator name.
+
+:ref:`max <post_processing_max>`                                                                                                                                                                                    The maximum value of a variable in the colour map when using a "User Specified" range.
+
+:ref:`min <post_processing_min>`                                                                                                                                                                                    The minimum value of a variable in the colour map when using a "User Specified" range.
+
+:ref:`number_of_contours <post_processing_number_of_contours>`                                                                                                                                                                                        Specifies number of contour lines in a contour plot.
+
+:ref:`option <post_processing_option>`                                                                                                                                                                                                                                                     'option' child.
+
+:ref:`range <post_processing_range>`                                                                        Sets the method used to calculate the extents of the colour map on an object. "Global" uses the range of values in the problem domain. "Local" uses the range of values on the current object.
+
+:ref:`section_name <post_processing_section_name>`                                                                                                                     The section name in the file to be read that contains the definition of the polyline or user surface and associated path variables.
+
+:ref:`visibility <post_processing_visibility>`                                                                                                                                                                Toggles the visibility of this graphics object in the viewer. THIS PARAMETER IS DEPRECATED!.
+
+:ref:`object_view_transform <post_processing_object_view_transform>`                                 This object contains object transformation info to be processed by the viewer. Like instance transform, this object should be associated with each geometry. It is usually specified as a sub-object.
+
+========================================================================================   ===============================================================================================================================================================================================================
+
+.. rubric:: Methods
+
+============================================   ========================================
+
+Method                                                                          Summary
+
+============================================   ========================================
+:ref:`hide <post_processing_hide>`                  Hide the object in a given view(s).
+
+:ref:`show <post_processing_show>`                  Show the object in a given view(s).
+
+:ref:`suspend <post_processing_suspend>`       Suspend immediate update for the object.
+
+:ref:`unsuspend <post_processing_unsuspend>`   Restore immediate update for the object.
+
+============================================   ========================================
+
+.. rubric:: Included in:
+
+============================================================   ==========================
+
+Parent                                                                            Summary
+
+============================================================   ==========================
+:ref:`internal_polyline <post_processing_internal_polyline>`   'internal_polyline' child.
+
+============================================================   ==========================
+

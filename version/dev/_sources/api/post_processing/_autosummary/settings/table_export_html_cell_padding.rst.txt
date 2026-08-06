@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_table_export_html_cell_padding:
+
+table_export_html_cell_padding
+==============================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.table_export_html_cell_padding.table_export_html_cell_padding
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+================================================   =============================
+
+Parent                                                                   Summary
+
+================================================   =============================
+:ref:`table_child <post_processing_table_child>`   'child_object_type' of table.
+
+================================================   =============================
+

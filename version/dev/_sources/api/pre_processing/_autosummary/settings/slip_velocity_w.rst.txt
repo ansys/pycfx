@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_slip_velocity_w:
+
+slip_velocity_w
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.slip_velocity_w.slip_velocity_w
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================   =================================================
+
+Parent                                                                                                        Summary
+
+=================================================================   =================================================
+:ref:`algebraic_slip_model <pre_processing_algebraic_slip_model>`       Sets the details of the Algebraic Slip Model.
+
+:ref:`slip_velocity <pre_processing_slip_velocity>`                 Defines a slip velocity for algebraic components.
+
+=================================================================   =================================================
+

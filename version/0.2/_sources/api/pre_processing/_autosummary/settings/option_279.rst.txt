@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_279:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_279.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ============================================================
+
+Parent                                                                                                               Summary
+
+=============================================================   ============================================================
+:ref:`pressure_averaging <pre_processing_pressure_averaging>`   Controls details of how pressure is averaged over an outlet.
+
+=============================================================   ============================================================
+

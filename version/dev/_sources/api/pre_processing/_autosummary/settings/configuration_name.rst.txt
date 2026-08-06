@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_configuration_name:
+
+configuration_name
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.configuration_name.configuration_name
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================================   =========================================
+
+Parent                                                                                                        Summary
+
+=========================================================================   =========================================
+:ref:`initial_values_child <pre_processing_initial_values_child>`              'child_object_type' of initial_values.
+
+:ref:`control_condition_child <pre_processing_control_condition_child_1>`   'child_object_type' of control_condition.
+
+=========================================================================   =========================================
+

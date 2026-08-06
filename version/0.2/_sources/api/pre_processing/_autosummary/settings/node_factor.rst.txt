@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_node_factor:
+
+node_factor
+===========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.node_factor.node_factor
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ===========================
+
+Parent                                                                            Summary
+
+===========================================================   ===========================
+:ref:`adaption_criteria <pre_processing_adaption_criteria>`   'ADAPTION CRITERIA' object.
+
+===========================================================   ===========================
+

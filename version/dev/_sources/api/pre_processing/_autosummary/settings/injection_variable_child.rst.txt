@@ -1,0 +1,76 @@
+:orphan:
+
+.. _pre_processing_injection_variable_child:
+
+injection_variable_child
+========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.injection_variable_child.injection_variable_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================   =======================================================================================================
+
+Attribute                                                                                                                                                 Summary
+
+=======================================================   =======================================================================================================
+:ref:`option <pre_processing_option_319>`                                                                                        The 'Injection Variable' option.
+
+:ref:`value <pre_processing_value>`                                                                        Input expression for VARIABLE value in relevant units.
+
+:ref:`xvalue <pre_processing_xvalue>`                                                     Input expression for vector VARIABLE component value in relevant units.
+
+:ref:`yvalue <pre_processing_yvalue>`                                                     Input expression for vector VARIABLE component value in relevant units.
+
+:ref:`zvalue <pre_processing_zvalue>`                                                     Input expression for vector VARIABLE component value in relevant units.
+
+:ref:`avalue <pre_processing_avalue>`                                         Input expression for cylindrical vector VARIABLE component value in relevant units.
+
+:ref:`rvalue <pre_processing_rvalue>`                                         Input expression for cylindrical vector VARIABLE component value in relevant units.
+
+:ref:`tvalue <pre_processing_tvalue>`                                         Input expression for cylindrical vector VARIABLE component value in relevant units.
+
+:ref:`a_coefficient <pre_processing_a_coefficient>`                                                                                    'A Coefficient' parameter.
+
+:ref:`b_coefficient <pre_processing_b_coefficient>`                                                                                    'B Coefficient' parameter.
+
+:ref:`c_coefficient <pre_processing_c_coefficient>`                                                                Turbulent wall function log-law coefficient C.
+
+:ref:`a_coefficient_u <pre_processing_a_coefficient_u>`                                                                              'A Coefficient u' parameter.
+
+:ref:`b_coefficient_u <pre_processing_b_coefficient_u>`                                                                              'B Coefficient u' parameter.
+
+:ref:`c_coefficient_u <pre_processing_c_coefficient_u>`                                                                              'C Coefficient u' parameter.
+
+:ref:`a_coefficient_v <pre_processing_a_coefficient_v>`                                                                              'A Coefficient v' parameter.
+
+:ref:`b_angle_v <pre_processing_b_angle_v>`                                                                                                'B Angle v' parameter.
+
+:ref:`c_factor_v <pre_processing_c_factor_v>`                                                                                             'C Factor v' parameter.
+
+:ref:`d_factor_v <pre_processing_d_factor_v>`                                                                                             'D Factor v' parameter.
+
+:ref:`a_coefficient_w <pre_processing_a_coefficient_w>`                                                                              'A Coefficient w' parameter.
+
+:ref:`b_angle_w <pre_processing_b_angle_w>`                                                                                                'B Angle w' parameter.
+
+:ref:`c_factor_w <pre_processing_c_factor_w>`                                                                                             'C Factor w' parameter.
+
+:ref:`d_factor_w <pre_processing_d_factor_w>`                                                                                             'D Factor w' parameter.
+
+:ref:`axis_definition <pre_processing_axis_definition>`   Defines the axis for a cylindrical coordinate system or variables defined using cylindrical components.
+
+=======================================================   =======================================================================================================
+
+.. rubric:: Included in:
+
+=============================================================   ===========================================
+
+Parent                                                                                              Summary
+
+=============================================================   ===========================================
+:ref:`injection_variable <pre_processing_injection_variable>`   A container for Injection Variable objects.
+
+=============================================================   ===========================================
+

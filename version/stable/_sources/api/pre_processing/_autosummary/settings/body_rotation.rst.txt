@@ -1,0 +1,42 @@
+:orphan:
+
+.. _pre_processing_body_rotation:
+
+body_rotation
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.body_rotation.body_rotation
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================================   =======================================================================================================
+
+Attribute                                                                                                                                                                           Summary
+
+=================================================================================   =======================================================================================================
+:ref:`option <pre_processing_option_92>`                                                                                                                        The 'Body Rotation' option.
+
+:ref:`angular_velocity <pre_processing_angular_velocity>`                                                                                     Rotating speed for a rotating domain or wall.
+
+:ref:`angular_velocity_x_component <pre_processing_angular_velocity_x_component>`                                      The X component of the instantaneous angular velocity in space axes.
+
+:ref:`angular_velocity_y_component <pre_processing_angular_velocity_y_component>`                                      The Y component of the instantaneous angular velocity in space axes.
+
+:ref:`angular_velocity_z_component <pre_processing_angular_velocity_z_component>`                                      The Z component of the instantaneous angular velocity in space axes.
+
+:ref:`axis_definition <pre_processing_axis_definition>`                             Defines the axis for a cylindrical coordinate system or variables defined using cylindrical components.
+
+=================================================================================   =======================================================================================================
+
+.. rubric:: Included in:
+
+===================================================   ==================================================================================================================================================================================================================
+
+Parent                                                                                                                                                                                                                                                           Summary
+
+===================================================   ==================================================================================================================================================================================================================
+:ref:`domain_motion <pre_processing_domain_motion>`   Defines the motion of a mesh relative to a stationary coordinate frame. NOTE - Speed and Direction, Specified Displacement and General Motion Options are not supported for domains other than the immersed solid.
+
+===================================================   ==================================================================================================================================================================================================================
+

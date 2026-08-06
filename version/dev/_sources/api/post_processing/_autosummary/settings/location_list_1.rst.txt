@@ -1,0 +1,25 @@
+:orphan:
+
+.. _post_processing_location_list_1:
+
+location_list
+=============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.location_list_1.location_list
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+========================================================================   =========================================
+
+Parent                                                                                                       Summary
+
+========================================================================   =========================================
+:ref:`difference_object_child <post_processing_difference_object_child>`   'child_object_type' of difference_object.
+
+:ref:`internal_vector_child <post_processing_internal_vector_child>`         'child_object_type' of internal_vector.
+
+:ref:`internal_contour_child <post_processing_internal_contour_child>`      'child_object_type' of internal_contour.
+
+========================================================================   =========================================
+

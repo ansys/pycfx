@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_boundary_contour:
+
+boundary_contour
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.boundary_contour.boundary_contour
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================   ==================================================================
+
+Attribute                                                                                                                              Summary
+
+=========================================================================   ==================================================================
+:ref:`enabled <pre_processing_enabled_142>`                                                                Enable the BOUNDARY CONTOUR object.
+
+:ref:`profile_variable <pre_processing_profile_variable>`                                                        The contour colour parameter.
+
+:ref:`profile_reference_object <pre_processing_profile_reference_object>`   Object which contains the parameters with profiles to be rendered.
+
+:ref:`visibility <pre_processing_visibility>`                                                                          'Visibility' parameter.
+
+=========================================================================   ==================================================================
+
+.. rubric:: Included in:
+
+=====================================================   ================================
+
+Parent                                                                           Summary
+
+=====================================================   ================================
+:ref:`boundary_child <pre_processing_boundary_child>`   'child_object_type' of boundary.
+
+=====================================================   ================================
+

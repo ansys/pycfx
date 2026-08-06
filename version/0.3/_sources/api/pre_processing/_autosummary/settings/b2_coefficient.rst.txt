@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_b2_coefficient:
+
+b2_coefficient
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.b2_coefficient.b2_coefficient
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================================   =====================================================================================
+
+Parent                                                                                                                                                          Summary
+
+===============================================================================   =====================================================================================
+:ref:`pressure_dependency <pre_processing_pressure_dependency>`                                                       Pressure dependency for laminar burning velocity.
+
+:ref:`turbulent_burning_velocity <pre_processing_turbulent_burning_velocity_1>`   Defines the turbulent burning velocity for premixed or partially premixed combustion.
+
+===============================================================================   =====================================================================================
+

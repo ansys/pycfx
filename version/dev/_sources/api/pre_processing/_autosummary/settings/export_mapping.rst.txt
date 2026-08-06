@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_export_mapping:
+
+export_mapping
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.export_mapping.export_mapping
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================   =================================
+
+Attribute                                                                           Summary
+
+=======================================================   =================================
+:ref:`enabled <pre_processing_enabled_208>`               Enable the EXPORT MAPPING object.
+
+:ref:`file_name <pre_processing_file_name_6>`                        'File Name' parameter.
+
+:ref:`mapping_control <pre_processing_mapping_control>`           'MAPPING CONTROL' object.
+
+=======================================================   =================================
+
+.. rubric:: Included in:
+
+=================================================================   ======================================
+
+Parent                                                                                             Summary
+
+=================================================================   ======================================
+:ref:`export_surface_child <pre_processing_export_surface_child>`   'child_object_type' of export_surface.
+
+=================================================================   ======================================
+

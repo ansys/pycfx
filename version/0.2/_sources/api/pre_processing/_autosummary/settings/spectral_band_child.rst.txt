@@ -1,0 +1,44 @@
+:orphan:
+
+.. _pre_processing_spectral_band_child:
+
+spectral_band_child
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.spectral_band_child.spectral_band_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================   ===================================
+
+Attribute                                                                                           Summary
+
+=====================================================================   ===================================
+:ref:`option <pre_processing_option_139>`                                       The 'Spectral Band' option.
+
+:ref:`frequency_lower_limit <pre_processing_frequency_lower_limit>`      'Frequency Lower Limit' parameter.
+
+:ref:`frequency_upper_limit <pre_processing_frequency_upper_limit>`      'Frequency Upper Limit' parameter.
+
+:ref:`wavelength_lower_limit <pre_processing_wavelength_lower_limit>`   'Wavelength Lower Limit' parameter.
+
+:ref:`wavelength_upper_limit <pre_processing_wavelength_upper_limit>`   'Wavelength Upper Limit' parameter.
+
+:ref:`wavenumber_lower_limit <pre_processing_wavenumber_lower_limit>`   'Wavenumber Lower Limit' parameter.
+
+:ref:`wavenumber_upper_limit <pre_processing_wavenumber_upper_limit>`   'Wavenumber Upper Limit' parameter.
+
+=====================================================================   ===================================
+
+.. rubric:: Included in:
+
+===================================================   ======================================
+
+Parent                                                                               Summary
+
+===================================================   ======================================
+:ref:`spectral_band <pre_processing_spectral_band>`   A container for Spectral Band objects.
+
+===================================================   ======================================
+

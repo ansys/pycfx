@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_specific_entropy:
+
+specific_entropy
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.specific_entropy.specific_entropy
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   ===================================================
+
+Parent                                                                                                                Summary
+
+=======================================================================   ===================================================
+:ref:`specific_heat_capacity <pre_processing_specific_heat_capacity_2>`   Specifies how specific heat capacity is calculated.
+
+=======================================================================   ===================================================
+

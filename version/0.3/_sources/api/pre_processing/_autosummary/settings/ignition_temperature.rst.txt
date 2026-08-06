@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_ignition_temperature:
+
+ignition_temperature
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.ignition_temperature.ignition_temperature
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ===========================
+
+Parent                                                                            Summary
+
+===========================================================   ===========================
+:ref:`particle_ignition <pre_processing_particle_ignition>`   'PARTICLE IGNITION' object.
+
+===========================================================   ===========================
+

@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_spectral_band:
+
+spectral_band
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.spectral_band.spectral_band
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`spectral_band_child <pre_processing_spectral_band_child>`
+
+
+.. rubric:: Included in:
+
+=====================================================   ===========================================================
+
+Parent                                                                                                      Summary
+
+=====================================================   ===========================================================
+:ref:`spectral_model <pre_processing_spectral_model>`   Defines the type of spectral model to be used in radiation.
+
+=====================================================   ===========================================================
+

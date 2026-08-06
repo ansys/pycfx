@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_solid_definition:
+
+solid_definition
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.solid_definition.solid_definition
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`solid_definition_child <pre_processing_solid_definition_child>`
+
+
+.. rubric:: Included in:
+
+=================================================   ==============================
+
+Parent                                                                     Summary
+
+=================================================   ==============================
+:ref:`domain_child <pre_processing_domain_child>`   'child_object_type' of domain.
+
+=================================================   ==============================
+

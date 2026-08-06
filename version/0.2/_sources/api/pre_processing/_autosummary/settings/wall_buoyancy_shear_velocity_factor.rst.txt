@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_wall_buoyancy_shear_velocity_factor:
+
+wall_buoyancy_shear_velocity_factor
+===================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.wall_buoyancy_shear_velocity_factor.wall_buoyancy_shear_velocity_factor
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================================   ======================================================
+
+Attribute                                                                                                                              Summary
+
+=====================================================================================   ======================================================
+:ref:`enabled <pre_processing_enabled_77>`                                              Enable the WALL BUOYANCY SHEAR VELOCITY FACTOR object.
+
+:ref:`option <pre_processing_option_135>`                                                    The 'Wall Buoyancy Shear Velocity Factor' option.
+
+:ref:`buoyancy_shear_velocity_factor <pre_processing_buoyancy_shear_velocity_factor>`                          Buoyancy shear velocity factor.
+
+=====================================================================================   ======================================================
+
+.. rubric:: Included in:
+
+=================================================================================   ======================================
+
+Parent                                                                                                             Summary
+
+=================================================================================   ======================================
+:ref:`shear_velocity_scaling_model <pre_processing_shear_velocity_scaling_model>`   Sets the shear velocity scaling model.
+
+=================================================================================   ======================================
+

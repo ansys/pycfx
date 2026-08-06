@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_component_name_1:
+
+component_name
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.component_name_1.component_name
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================   ==============================
+
+Parent                                                                                     Summary
+
+=================================================================   ==============================
+:ref:`mass_fraction_limits <pre_processing_mass_fraction_limits>`   'MASS FRACTION LIMITS' object.
+
+=================================================================   ==============================
+

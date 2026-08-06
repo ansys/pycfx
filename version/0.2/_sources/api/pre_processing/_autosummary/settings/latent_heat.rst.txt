@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_latent_heat:
+
+latent_heat
+===========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.latent_heat.latent_heat
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================   ========================================================
+
+Parent                                                                                                               Summary
+
+=================================================================   ========================================================
+:ref:`moisture_latent_heat <pre_processing_moisture_latent_heat>`                                      Moisture latent heat.
+
+:ref:`heat_release <pre_processing_heat_release>`                   Holds heat release information for multiphase reactions.
+
+:ref:`latent_heat <pre_processing_latent_heat_1>`                      Holds latent heat information for liquid evaporation.
+
+=================================================================   ========================================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_85:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_85.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================   =============================
+
+Parent                                                                                    Summary
+
+=================================================================   =============================
+:ref:`knock_reaction_rate <pre_processing_knock_reaction_rate_1>`   'KNOCK REACTION RATE' object.
+
+=================================================================   =============================
+

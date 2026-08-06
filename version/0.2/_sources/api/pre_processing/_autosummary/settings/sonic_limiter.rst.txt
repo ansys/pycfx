@@ -1,0 +1,44 @@
+:orphan:
+
+.. _pre_processing_sonic_limiter:
+
+sonic_limiter
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.sonic_limiter.sonic_limiter
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================================   ====================================================
+
+Attribute                                                                                                                    Summary
+
+=============================================================================   ====================================================
+:ref:`enabled <pre_processing_enabled_123>`                                                         Enable the SONIC LIMITER object.
+
+:ref:`option <pre_processing_option_264>`                                                                The 'Sonic Limiter' option.
+
+:ref:`onset_mach_number <pre_processing_onset_mach_number>`                     Mach number above which choking is assumed to start.
+
+:ref:`target_mach_number <pre_processing_target_mach_number>`                                     Mach number limit at full choking.
+
+:ref:`discharge_factor <pre_processing_discharge_factor>`                                          Discharge Factor for choked hole.
+
+:ref:`mach_number_averaging_type <pre_processing_mach_number_averaging_type>`                'Mach Number Averaging Type' parameter.
+
+=============================================================================   ====================================================
+
+.. rubric:: Included in:
+
+=================================================   ===============================================
+
+Parent                                                                                      Summary
+
+=================================================   ===============================================
+:ref:`flow_regime <pre_processing_flow_regime>`     States if a boundary is subsonic or supersonic.
+
+:ref:`flow_regime <pre_processing_flow_regime_1>`   States if a boundary is subsonic or supersonic.
+
+=================================================   ===============================================
+

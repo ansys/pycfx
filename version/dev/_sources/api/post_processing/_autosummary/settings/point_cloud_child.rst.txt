@@ -1,0 +1,131 @@
+:orphan:
+
+.. _post_processing_point_cloud_child:
+
+point_cloud_child
+=================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.point_cloud_child.point_cloud_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+========================================================================================   ===============================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                                          Summary
+
+========================================================================================   ===============================================================================================================================================================================================================
+:ref:`add_sample_vertex_normals <post_processing_add_sample_vertex_normals_1>`                                                                                                                                                                    If true, calculate vertex normals for sampling geometry.
+
+:ref:`apply_instancing_transform <post_processing_apply_instancing_transform>`                                                                                                                                               Toggles the instancing transformation for this graphics object in the viewer.
+
+:ref:`colour <post_processing_colour_1>`                                                                                                                                                                                                                                                   'colour' child.
+
+:ref:`colour_map <post_processing_colour_map>`                                                                                                                                                                                                The name of the colour map to use when colouring the object.
+
+:ref:`colour_mode <post_processing_colour_mode>`                                           Sets the mode used to colour the object. If set equal to "Constant" then the "Colour" parameter is used to determine the plot colour. If set equal to "Variable", then the "Colour Variable" parameter is used.
+
+:ref:`colour_scale <post_processing_colour_scale>`                                                                                                                                           Sets whether to colour the object with a Linear or Logarithmic scale. By default, the colour scale is Linear.
+
+:ref:`colour_variable <post_processing_colour_variable>`                                                                                                              The name of the variable to be used in colouring the object. Should be set equal to the name of a currently defined VARIABLE object.
+
+:ref:`colour_variable_boundary_values <post_processing_colour_variable_boundary_values>`                                                                                                    Sets the type of boundary values to be presented for colour variables in this object (Conservative or Hybrid).
+
+:ref:`culling_mode <post_processing_culling_mode>`                                                                                                                                                                                                 Controls the face culling of this object in the viewer.
+
+:ref:`domain_list <post_processing_domain_list>`                                                                                                                                                                                                     The list of domains over which to define this object.
+
+:ref:`draw_faces <post_processing_draw_faces>`                                                                                                                                                                                 Toggles the visibility filled faces for this graphics object in the viewer.
+
+:ref:`draw_lines <post_processing_draw_lines>`                                                                                                                                                                                   Toggles the visibility of lines around each face of this graphics object.
+
+:ref:`input_file <post_processing_input_file>`                                                                                                                       The name of the file to be read that contains the definition of one or more polylines or user surfaces and associated path variables.
+
+:ref:`instancing_transform <post_processing_instancing_transform>`                                                                                                                                                                    Defines the TRANSFORM object that is used for the object instancing.
+
+:ref:`lighting <post_processing_lighting>`                                                                                                                                                                                                     Toggles the lighting of this graphics object in the viewer.
+
+:ref:`line_colour <post_processing_line_colour>`                                                                                                         A list of three numbers between 0 and 1, which represent the RGB (Red/Green/Blue) values to be used for colouring the lines on a graphics object.
+
+:ref:`line_colour_mode <post_processing_line_colour_mode>`                                                                                                                                                                                                   Determines where to get the line colour from.
+
+:ref:`line_width <post_processing_line_width_1>`                                                                                                                                                                                                                                       'line_width' child.
+
+:ref:`location_list <post_processing_location_list>`                                                                                                                                                                                                              A comma delimited list of locator names.
+
+:ref:`locator_sampling_method <post_processing_locator_sampling_method>`                                                                                                                                                                               Specifies point cloud sampling method on a surface.
+
+:ref:`max <post_processing_max>`                                                                                                                                                                                    The maximum value of a variable in the colour map when using a "User Specified" range.
+
+:ref:`maximum_number_of_items <post_processing_maximum_number_of_items>`                                                                                                                                                                                                  'maximum_number_of_items' child.
+
+:ref:`min <post_processing_min>`                                                                                                                                                                                    The minimum value of a variable in the colour map when using a "User Specified" range.
+
+:ref:`normalized <post_processing_normalized>`                                                                                                                                                                              If set On, all vectors are plotted with the same length (show direction only).
+
+:ref:`number_of_samples <post_processing_number_of_samples>`                                                                                                                                                                                                                    'number_of_samples' child.
+
+:ref:`option <post_processing_option>`                                                                                                                                                                                                                                                     'option' child.
+
+:ref:`point_symbol <post_processing_point_symbol>`                                                                                                                                                                                                                                   'point_symbol' child.
+
+:ref:`random_seed <post_processing_random_seed>`                                                                                                                                                                                                           The seed to be used for a random number series.
+
+:ref:`range <post_processing_range>`                                                                        Sets the method used to calculate the extents of the colour map on an object. "Global" uses the range of values in the problem domain. "Local" uses the range of values on the current object.
+
+:ref:`reduction_factor <post_processing_reduction_factor>`                                                                                                                                                                  Reduces the number of items that should be displayed for a particular locator.
+
+:ref:`reduction_or_max_number <post_processing_reduction_or_max_number>`                                                                                                              This indicates whether to use 'Reduction Factor' to reduce the number of items, or to use 'Maximum Number of Items'.
+
+:ref:`sample_spacing <post_processing_sample_spacing>`                                                                                                                                     A value between 0 and 1 relative to domain extents indicating number points in one direction for grid sampling.
+
+:ref:`sampling_accuracy <post_processing_sampling_accuracy>`                                                                                                                                                                                                    An indicator for points sampling accuracy.
+
+:ref:`sampling_aspect_ratio <post_processing_sampling_aspect_ratio>`                                                                                                                                                                                     Specifies spacing aspect ratio for grid sampling.
+
+:ref:`sampling_grid_angle <post_processing_sampling_grid_angle>`                                                                                                                                                                                         Specifies the rotation angle for a sampling grid.
+
+:ref:`section_name <post_processing_section_name>`                                                                                                                     The section name in the file to be read that contains the definition of the polyline or user surface and associated path variables.
+
+:ref:`specular_lighting <post_processing_specular_lighting>`                                                                                                                                                                                   Toggles the specular lighting of this object in the viewer.
+
+:ref:`surface_drawing <post_processing_surface_drawing>`                                                                                                                                                                              Sets the algorithm used to shade the faces for this graphics object.
+
+:ref:`symbol_size <post_processing_symbol_size>`                                                                                                                                                                                                             A scaling factor for all symbols in the plot.
+
+:ref:`transparency <post_processing_transparency>`                                                                                                                           Set between 0.0 (fully opaque) and 1.0 (fully transparent) to control the transparency of this graphics object in the viewer.
+
+:ref:`visibility <post_processing_visibility>`                                                                                                                                                                Toggles the visibility of this graphics object in the viewer. THIS PARAMETER IS DEPRECATED!.
+
+:ref:`object_view_transform <post_processing_object_view_transform>`                                 This object contains object transformation info to be processed by the viewer. Like instance transform, this object should be associated with each geometry. It is usually specified as a sub-object.
+
+========================================================================================   ===============================================================================================================================================================================================================
+
+.. rubric:: Methods
+
+============================================   ========================================
+
+Method                                                                          Summary
+
+============================================   ========================================
+:ref:`hide <post_processing_hide>`                  Hide the object in a given view(s).
+
+:ref:`show <post_processing_show>`                  Show the object in a given view(s).
+
+:ref:`suspend <post_processing_suspend>`       Suspend immediate update for the object.
+
+:ref:`unsuspend <post_processing_unsuspend>`   Restore immediate update for the object.
+
+============================================   ========================================
+
+.. rubric:: Included in:
+
+================================================   ====================
+
+Parent                                                          Summary
+
+================================================   ====================
+:ref:`point_cloud <post_processing_point_cloud>`   'point_cloud' child.
+
+================================================   ====================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_407:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_407.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ==========================================================================
+
+Parent                                                                                                                           Summary
+
+===========================================================   ==========================================================================
+:ref:`monitor_residuals <pre_processing_monitor_residuals>`   Defines the extent of equation residual data recorded in the monitor file.
+
+===========================================================   ==========================================================================
+

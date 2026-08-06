@@ -1,0 +1,53 @@
+:orphan:
+
+.. _post_processing_variable_data_filter_rule_child:
+
+variable_data_filter_rule_child
+===============================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.variable_data_filter_rule_child.variable_data_filter_rule_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+==============================================================   =====================================================================
+
+Attribute                                                                                                                      Summary
+
+==============================================================   =====================================================================
+:ref:`data_filter_option <post_processing_data_filter_option>`                      The list of options applicable for data filtering.
+
+:ref:`filter_condition <post_processing_filter_condition>`                           Defines filtering condition for a field variable.
+
+:ref:`filter_variable <post_processing_filter_variable>`                                         The variable used for data filtering.
+
+:ref:`run_status_list <post_processing_run_status_list>`         The list of allowed values for the run status of a completed CFX run.
+
+:ref:`value_list <post_processing_value_list_1>`                                                                   'value_list' child.
+
+==============================================================   =====================================================================
+
+.. rubric:: Methods
+
+============================================   ========================================
+
+Method                                                                          Summary
+
+============================================   ========================================
+:ref:`suspend <post_processing_suspend>`       Suspend immediate update for the object.
+
+:ref:`unsuspend <post_processing_unsuspend>`   Restore immediate update for the object.
+
+============================================   ========================================
+
+.. rubric:: Included in:
+
+============================================================================   ==================================
+
+Parent                                                                                                    Summary
+
+============================================================================   ==================================
+:ref:`variable_data_filter_rule <post_processing_variable_data_filter_rule>`   'variable_data_filter_rule' child.
+
+============================================================================   ==================================
+

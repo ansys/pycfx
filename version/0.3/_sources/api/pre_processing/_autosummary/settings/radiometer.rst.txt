@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_radiometer:
+
+radiometer
+==========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.radiometer.radiometer
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`radiometer_child <pre_processing_radiometer_child>`
+
+
+.. rubric:: Included in:
+
+=======================================================   =========================
+
+Parent                                                                      Summary
+
+=======================================================   =========================
+:ref:`monitor_objects <pre_processing_monitor_objects>`   'MONITOR OBJECTS' object.
+
+=======================================================   =========================
+
