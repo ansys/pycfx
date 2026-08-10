@@ -10,6 +10,7 @@
 [Ss]ession
 [Ss]ettings
 [Ss]treaming
+[Ss]ynopsys
 API
 batch_ops
 CAD
@@ -57,7 +58,6 @@ session_post
 session_pre
 session_solver
 Slurm
-[Ss]ynopsys
 THIRDPARTY
 transcript
 turbulent_wall_functions
