@@ -58,6 +58,7 @@ session_pre
 session_solver
 Slurm
 Synopsys
+synopsys
 THIRDPARTY
 transcript
 turbulent_wall_functions
