@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_radiation_source_child_1:
+
+radiation_source_child
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.radiation_source_child_1.radiation_source_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================   =============================================================================
+
+Attribute                                                                                                                                 Summary
+
+=================================================================   =============================================================================
+:ref:`option <pre_processing_option_305>`                                                                          The 'Radiation Source' option.
+
+:ref:`radiation_source <pre_processing_radiation_source_1>`                                                         'Radiation Source' parameter.
+
+:ref:`multiply_by_porosity <pre_processing_multiply_by_porosity>`   Defines whether the source terms in porous domains is multiplied by porosity.
+
+:ref:`direction <pre_processing_direction>`                                         Defines the direction used for radiation boundary conditions.
+
+=================================================================   =============================================================================
+
+.. rubric:: Included in:
+
+===========================================================   =========================================
+
+Parent                                                                                          Summary
+
+===========================================================   =========================================
+:ref:`radiation_source <pre_processing_radiation_source_2>`   A container for Radiation Source objects.
+
+===========================================================   =========================================
+

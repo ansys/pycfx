@@ -1,0 +1,86 @@
+:orphan:
+
+.. _pre_processing_boundary_conditions_2:
+
+boundary_conditions
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.boundary_conditions_2.boundary_conditions
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================================   ===============================================================================================================
+
+Attribute                                                                                                                                                                                       Summary
+
+=====================================================================================   ===============================================================================================================
+:ref:`define_particle_data <pre_processing_define_particle_data>`                                                                                                     'Define Particle Data' parameter.
+
+:ref:`particle_wall_interaction <pre_processing_particle_wall_interaction>`                                                                                         'PARTICLE WALL INTERACTION' object.
+
+:ref:`particle_wall_film_interaction <pre_processing_particle_wall_film_interaction>`                                                                   Specifies particle-wall film interaction model.
+
+:ref:`velocity <pre_processing_velocity>`                                                                                                   Sets velocity part of mass and momentum boundary condition.
+
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum_2>`                                                                                  Specifies conditions on Mass and Momentum at a boundary.
+
+:ref:`flow_direction <pre_processing_flow_direction>`                                                                                                Sets the velocity direction imposed at a boundary.
+
+:ref:`turbulence <pre_processing_turbulence>`                                                                                                              Sets conditions on turbulence at a boundary.
+
+:ref:`particle_position <pre_processing_particle_position>`                                                                         Defines how particle positions are to be distributed on a boundary.
+
+:ref:`heat_transfer <pre_processing_heat_transfer_2>`                                                                                                 Specifies heat transfer conditions at a boundary.
+
+:ref:`thermal_radiation <pre_processing_thermal_radiation>`                                                                                     Sets the conditions on Thermal Radiation at a boundary.
+
+:ref:`wall_contact_area <pre_processing_wall_contact_area>`                             Specifies fluid-wall contact area for a given fluid under the WALL CONTACT MODEL: Option=Specify Area Fraction.
+
+:ref:`volume_fraction <pre_processing_volume_fraction_1>`                                                                              Sets boundary condition or initial condition on volume fraction.
+
+:ref:`soot <pre_processing_soot>`                                                                                                                                   Defines the initialization of Soot.
+
+:ref:`reaction_progress <pre_processing_reaction_progress_1>`                                                                             Defines the initialization of the reaction progress variable.
+
+:ref:`flame_surface_density <pre_processing_flame_surface_density_1>`                                                                    Sets boundary or initial conditions for Flame Surface Density.
+
+:ref:`g_scalar <pre_processing_g_scalar_1>`                                                                                                           Sets boundary or initial conditions for G Scalar.
+
+:ref:`mixture <pre_processing_mixture>`                                                                                                           Specification of Fuel/Oxidiser mixture at a boundary.
+
+:ref:`additional_variable <pre_processing_additional_variable_5>`                                                                                          A container for Additional Variable objects.
+
+:ref:`component <pre_processing_component_2>`                                                                                                                        A container for Component objects.
+
+:ref:`particle_mass_flow_rate <pre_processing_particle_mass_flow_rate_1>`                                                                          Defines the mass flow rate for a group of particles.
+
+:ref:`size_group <pre_processing_size_group_1>`                                                                                                                     A container for Size Group objects.
+
+:ref:`droplet_number <pre_processing_droplet_number_1>`                                                                                          Specifies droplet number equation boundary conditions.
+
+:ref:`particle_diameter_distribution <pre_processing_particle_diameter_distribution>`                                                               Defines the size distribution for a particle group.
+
+:ref:`loss_coefficient <pre_processing_loss_coefficient_1>`                                                                                        Defines the Loss Coefficient at an opening boundary.
+
+:ref:`particle_mass_flow_absorption <pre_processing_particle_mass_flow_absorption>`                                                                                   Defines the mass flow absorption.
+
+:ref:`erosion_model <pre_processing_erosion_model_1>`                                                                                                                           Particle erosion model.
+
+:ref:`particle_rough_wall_model <pre_processing_particle_rough_wall_model_1>`                                                                                 Particle rough wall (virtual wall) model.
+
+:ref:`particle_user_wall_interaction <pre_processing_particle_user_wall_interaction>`                                                                          'PARTICLE USER WALL INTERACTION' object.
+
+=====================================================================================   ===============================================================================================================
+
+.. rubric:: Included in:
+
+=================================================   =============================
+
+Parent                                                                    Summary
+
+=================================================   =============================
+:ref:`fluid_child <pre_processing_fluid_child_4>`   'child_object_type' of fluid.
+
+=================================================   =============================
+

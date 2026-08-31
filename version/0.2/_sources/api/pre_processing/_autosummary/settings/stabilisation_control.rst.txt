@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_stabilisation_control:
+
+stabilisation_control
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.stabilisation_control.stabilisation_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================================   ==========================================================
+
+Attribute                                                                                                                                Summary
+
+===================================================================================   ==========================================================
+:ref:`enabled <pre_processing_enabled_168>`                                                             Enable the STABILISATION CONTROL object.
+
+:ref:`option <pre_processing_option_366>`                                                                    The 'Stabilisation Control' option.
+
+:ref:`maximum_number_of_repetitions <pre_processing_maximum_number_of_repetitions>`         Maximum number of repeats for time step convergence.
+
+:ref:`timescale_factor <pre_processing_timescale_factor>`                             The estimated auto timescale is multiplied by this number.
+
+:ref:`timestep_factor <pre_processing_timestep_factor>`                                                 Time step factor if there is repetition.
+
+===================================================================================   ==========================================================
+
+.. rubric:: Included in:
+
+=================================================================   ======================================================
+
+Parent                                                                                                             Summary
+
+=================================================================   ======================================================
+:ref:`convergence_control <pre_processing_convergence_control_3>`   Holds basic parameters that affect solver convergence.
+
+=================================================================   ======================================================
+

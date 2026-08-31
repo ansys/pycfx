@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_iso_line_width:
+
+iso_line_width
+==============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.iso_line_width.iso_line_width
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+======================================================   ================================
+
+Parent                                                                            Summary
+
+======================================================   ================================
+:ref:`iso_clip_child <post_processing_iso_clip_child>`   'child_object_type' of iso_clip.
+
+======================================================   ================================
+

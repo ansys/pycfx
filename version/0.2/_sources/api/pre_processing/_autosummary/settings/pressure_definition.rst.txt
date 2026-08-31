@@ -1,0 +1,42 @@
+:orphan:
+
+.. _pre_processing_pressure_definition:
+
+pressure_definition
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.pressure_definition.pressure_definition
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================   ===================================================
+
+Attribute                                                                                                           Summary
+
+=====================================================================   ===================================================
+:ref:`option <pre_processing_option_413>`                                                 The 'Pressure Definition' option.
+
+:ref:`pressure <pre_processing_pressure_1>`                                                      Force Pressure expression.
+
+:ref:`imaginary_pressure <pre_processing_imaginary_pressure>`                                    Force Pressure expression.
+
+:ref:`fourier_harmonic_order <pre_processing_fourier_harmonic_order>`   Order of Harmonic coefficients from Fourier series.
+
+:ref:`excitation_frequency <pre_processing_excitation_frequency>`                            'EXCITATION FREQUENCY' object.
+
+:ref:`accumulation_period <pre_processing_accumulation_period_1>`                             'ACCUMULATION PERIOD' object.
+
+=====================================================================   ===================================================
+
+.. rubric:: Included in:
+
+===============================================================   =====================================
+
+Parent                                                                                          Summary
+
+===============================================================   =====================================
+:ref:`monitor_point_child <pre_processing_monitor_point_child>`   'child_object_type' of monitor_point.
+
+===============================================================   =====================================
+

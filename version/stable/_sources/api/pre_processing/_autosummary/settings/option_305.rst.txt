@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_option_305:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_305.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   ========================================
+
+Parent                                                                                                     Summary
+
+=======================================================================   ========================================
+:ref:`radiation_source_child <pre_processing_radiation_source_child>`     'child_object_type' of radiation_source.
+
+:ref:`radiation_source_child <pre_processing_radiation_source_child_1>`   'child_object_type' of radiation_source.
+
+:ref:`radiation_source_child <pre_processing_radiation_source_child_2>`   'child_object_type' of radiation_source.
+
+=======================================================================   ========================================
+

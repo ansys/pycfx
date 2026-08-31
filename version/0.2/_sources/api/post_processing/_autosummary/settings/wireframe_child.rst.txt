@@ -1,0 +1,71 @@
+:orphan:
+
+.. _post_processing_wireframe_child:
+
+wireframe_child
+===============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.wireframe_child.wireframe_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+==============================================================================   =====================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                      Summary
+
+==============================================================================   =====================================================================================================================================================================================================
+:ref:`apply_instancing_transform <post_processing_apply_instancing_transform>`                                                                                                                           Toggles the instancing transformation for this graphics object in the viewer.
+
+:ref:`colour <post_processing_colour_1>`                                                                                                                                                                                                                               'colour' child.
+
+:ref:`domain_list <post_processing_domain_list>`                                                                                                                                                                                 The list of domains over which to define this object.
+
+:ref:`draw_contours <post_processing_draw_contours>`                                                                                                                                                                                    Enables/disables drawing of the contour lines.
+
+:ref:`edge_angle <post_processing_edge_angle>`                                                                                                                                                                 The angle between two faces used to limit visible edges in a wireframe.
+
+:ref:`instancing_transform <post_processing_instancing_transform>`                                                                                                                                                Defines the TRANSFORM object that is used for the object instancing.
+
+:ref:`line_colour_mode <post_processing_line_colour_mode>`                                                                                                                                                                               Determines where to get the line colour from.
+
+:ref:`line_width <post_processing_line_width>`                                                                                                                                                                 Controls the width (in pixels) of lines drawn for this graphics object.
+
+:ref:`number_of_contours <post_processing_number_of_contours>`                                                                                                                                                                    Specifies number of contour lines in a contour plot.
+
+:ref:`show_surface_mesh <post_processing_show_surface_mesh>`                                                                                                                           If set to On, all mesh lines are displayed in the wireframe, and Edge Angle setting is ignored.
+
+:ref:`visibility <post_processing_visibility>`                                                                                                                                            Toggles the visibility of this graphics object in the viewer. THIS PARAMETER IS DEPRECATED!.
+
+:ref:`object_view_transform <post_processing_object_view_transform>`             This object contains object transformation info to be processed by the viewer. Like instance transform, this object should be associated with each geometry. It is usually specified as a sub-object.
+
+==============================================================================   =====================================================================================================================================================================================================
+
+.. rubric:: Methods
+
+============================================   ========================================
+
+Method                                                                          Summary
+
+============================================   ========================================
+:ref:`hide <post_processing_hide>`                  Hide the object in a given view(s).
+
+:ref:`show <post_processing_show>`                  Show the object in a given view(s).
+
+:ref:`suspend <post_processing_suspend>`       Suspend immediate update for the object.
+
+:ref:`unsuspend <post_processing_unsuspend>`   Restore immediate update for the object.
+
+============================================   ========================================
+
+.. rubric:: Included in:
+
+============================================   ==================
+
+Parent                                                    Summary
+
+============================================   ==================
+:ref:`wireframe <post_processing_wireframe>`   'wireframe' child.
+
+============================================   ==================
+

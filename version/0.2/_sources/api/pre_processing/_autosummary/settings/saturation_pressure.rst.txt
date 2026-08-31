@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_saturation_pressure:
+
+saturation_pressure
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.saturation_pressure.saturation_pressure
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================================   ========================================================
+
+Parent                                                                                                                                 Summary
+
+===================================================================================   ========================================================
+:ref:`cavitation_model <pre_processing_cavitation_model>`                                                      Specifies the cavitation model.
+
+:ref:`interfacial_equilibrium_model <pre_processing_interfacial_equilibrium_model>`   Specifies equilibrium model for species and AV transfer.
+
+===================================================================================   ========================================================
+

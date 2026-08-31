@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_particle_mass_source_linearization:
+
+particle_mass_source_linearization
+==================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.particle_mass_source_linearization.particle_mass_source_linearization
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================   =====================================================
+
+Attribute                                                                                   Summary
+
+===========================================   =====================================================
+:ref:`enabled <pre_processing_enabled_175>`   Enable the PARTICLE MASS SOURCE LINEARIZATION object.
+
+:ref:`option <pre_processing_option_375>`          The 'Particle Mass Source Linearization' option.
+
+===========================================   =====================================================
+
+.. rubric:: Included in:
+
+=======================================================================   =============================================================================
+
+Parent                                                                                                                                          Summary
+
+=======================================================================   =============================================================================
+:ref:`particle_source_control <pre_processing_particle_source_control>`   Set details of the particle source term bounding and robustness improvements.
+
+=======================================================================   =============================================================================
+

@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_configuration_child:
+
+configuration_child
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.configuration_child.configuration_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================================   ======================================================
+
+Attribute                                                                                                                                Summary
+
+=======================================================================================   ======================================================
+:ref:`flow_name <pre_processing_flow_name>`                                                                               'Flow Name' parameter.
+
+:ref:`activation_control <pre_processing_activation_control>`                             Holds all activation conditions for remeshing context.
+
+:ref:`remesh <pre_processing_remesh>`                                                                            A container for Remesh objects.
+
+:ref:`configuration_execution_control <pre_processing_configuration_execution_control>`                'CONFIGURATION EXECUTION CONTROL' object.
+
+=======================================================================================   ======================================================
+
+.. rubric:: Included in:
+
+===================================================   ======================================
+
+Parent                                                                               Summary
+
+===================================================   ======================================
+:ref:`configuration <pre_processing_configuration>`   A container for Configuration objects.
+
+===================================================   ======================================
+

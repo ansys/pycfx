@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_particle_mixture:
+
+particle_mixture
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.particle_mixture.particle_mixture
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================   ==============================
+
+Attribute                                                                                          Summary
+
+=========================================================================   ==============================
+:ref:`option <pre_processing_option_38>`                                    The 'Particle Mixture' option.
+
+:ref:`ash_material <pre_processing_ash_material>`                                            Ash material.
+
+:ref:`char_material <pre_processing_char_material>`                                         Char material.
+
+:ref:`raw_combustible_material <pre_processing_raw_combustible_material>`        Raw combustible material.
+
+=========================================================================   ==============================
+
+.. rubric:: Included in:
+
+===========================================================   =====================================================================
+
+Parent                                                                                                                      Summary
+
+===========================================================   =====================================================================
+:ref:`mixture_materials <pre_processing_mixture_materials>`   Material names for mixture components used by hydrocarbon fuel model.
+
+===========================================================   =====================================================================
+

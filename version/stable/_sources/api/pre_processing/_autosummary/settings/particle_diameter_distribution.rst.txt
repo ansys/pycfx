@@ -1,0 +1,62 @@
+:orphan:
+
+.. _pre_processing_particle_diameter_distribution:
+
+particle_diameter_distribution
+==============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.particle_diameter_distribution.particle_diameter_distribution
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================================   =================================================
+
+Attribute                                                                                                                         Summary
+
+=====================================================================================   =================================================
+:ref:`enabled <pre_processing_enabled_36>`                                              Enable the PARTICLE DIAMETER DISTRIBUTION object.
+
+:ref:`option <pre_processing_option_85>`                                                     The 'Particle Diameter Distribution' option.
+
+:ref:`diameter <pre_processing_diameter>`                                                                           'Diameter' parameter.
+
+:ref:`minimum_diameter <pre_processing_minimum_diameter>`                                                   'Minimum Diameter' parameter.
+
+:ref:`maximum_diameter <pre_processing_maximum_diameter>`                                                   'Maximum Diameter' parameter.
+
+:ref:`mean_diameter <pre_processing_mean_diameter>`                                                            'Mean Diameter' parameter.
+
+:ref:`standard_deviation_in_diameter <pre_processing_standard_deviation_in_diameter>`         'Standard Deviation in Diameter' parameter.
+
+:ref:`rosin_rammler_size <pre_processing_rosin_rammler_size>`                                             'Rosin Rammler Size' parameter.
+
+:ref:`rosin_rammler_power <pre_processing_rosin_rammler_power>`                                          'Rosin Rammler Power' parameter.
+
+:ref:`nukiyama_tanasawa_power <pre_processing_nukiyama_tanasawa_power>`                              'Nukiyama Tanasawa Power' parameter.
+
+:ref:`diameter_list <pre_processing_diameter_list>`                                                            'Diameter List' parameter.
+
+:ref:`mass_fraction_list <pre_processing_mass_fraction_list>`                                             'Mass Fraction List' parameter.
+
+:ref:`number_fraction_list <pre_processing_number_fraction_list>`                                       'Number Fraction List' parameter.
+
+=====================================================================================   =================================================
+
+.. rubric:: Included in:
+
+=================================================================   ==============================================================
+
+Parent                                                                                                                     Summary
+
+=================================================================   ==============================================================
+:ref:`morphology <pre_processing_morphology_1>`                                             Fluid morphology in multifluid models.
+
+:ref:`injection_conditions <pre_processing_injection_conditions>`   Specifies injection conditions for all equations being solved.
+
+:ref:`boundary_conditions <pre_processing_boundary_conditions_2>`    Specifies boundary conditions for all equations being solved.
+
+:ref:`boundary_conditions <pre_processing_boundary_conditions_6>`    Specifies boundary conditions for all equations being solved.
+
+=================================================================   ==============================================================
+

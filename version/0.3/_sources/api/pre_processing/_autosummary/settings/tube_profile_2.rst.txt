@@ -1,0 +1,32 @@
+:orphan:
+
+.. _pre_processing_tube_profile_2:
+
+tube_profile
+============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.tube_profile_2.tube_profile
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================   ==========================
+
+Attribute                                                      Summary
+
+=========================================   ==========================
+:ref:`option <pre_processing_option_302>`   The 'Tube Profile' option.
+
+=========================================   ==========================
+
+.. rubric:: Included in:
+
+===================================================================   ===============================
+
+Parent                                                                                        Summary
+
+===================================================================   ===============================
+:ref:`tube_interface_models <pre_processing_tube_interface_models>`   'TUBE INTERFACE MODELS' object.
+
+===================================================================   ===============================
+

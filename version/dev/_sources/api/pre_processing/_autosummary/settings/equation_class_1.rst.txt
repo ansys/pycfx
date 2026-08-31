@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_equation_class_1:
+
+equation_class
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.equation_class_1.equation_class
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`equation_class_child <pre_processing_equation_class_child>`
+
+
+.. rubric:: Included in:
+
+=======================================================   ====================================================================================
+
+Parent                                                                                                                                 Summary
+
+=======================================================   ====================================================================================
+:ref:`solver_control <pre_processing_solver_control_1>`   Holds all objects that control discretization and execution of the solution process.
+
+=======================================================   ====================================================================================
+

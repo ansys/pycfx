@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_kinematic_eddy_viscosity:
+
+kinematic_eddy_viscosity
+========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.kinematic_eddy_viscosity.kinematic_eddy_viscosity
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================   =========================================================================================================================================
+
+Parent                                                                                                                                                                            Summary
+
+=============================================   =========================================================================================================================================
+:ref:`turbulence <pre_processing_turbulence>`                                                                                                Sets conditions on turbulence at a boundary.
+
+:ref:`visktrb <pre_processing_visktrb>`         Defines the initialization of turbulent eddy viscosity when running the ke-1e turbulence model which solves for turbulent eddy viscosity.
+
+=============================================   =========================================================================================================================================
+

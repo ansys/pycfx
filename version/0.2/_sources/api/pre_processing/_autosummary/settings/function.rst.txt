@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_function:
+
+function
+========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.function.function
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`function_child <pre_processing_function_child>`
+
+
+.. rubric:: Included in:
+
+===============================   ===================================================================
+
+Parent                                                                                        Summary
+
+===============================   ===================================================================
+:ref:`cel <pre_processing_cel>`   Stores user-defined CFX Command Language functions and expressions.
+
+===============================   ===================================================================
+

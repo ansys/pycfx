@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_command_file:
+
+command_file
+============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.command_file.command_file
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================   ============================
+
+Attribute                                                                      Summary
+
+=======================================================   ============================
+:ref:`results_version <pre_processing_results_version>`   'Results Version' parameter.
+
+:ref:`version <pre_processing_version_1>`                              Version number.
+
+=======================================================   ============================
+
+.. rubric:: Included in:
+
+===================================   ========================================
+
+Parent                                                                 Summary
+
+===================================   ========================================
+:ref:`setup <pre_processing_setup>`   Encapsulates a CFX pre-processing setup.
+
+===================================   ========================================
+

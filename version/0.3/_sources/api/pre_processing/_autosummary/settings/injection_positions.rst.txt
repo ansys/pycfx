@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_injection_positions:
+
+injection_positions
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.injection_positions.injection_positions
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================   ===================================================
+
+Attribute                                                                                                   Summary
+
+=============================================================   ===================================================
+:ref:`option <pre_processing_option_311>`                                         The 'Injection Positions' option.
+
+:ref:`profile_name <pre_processing_profile_name>`                                         'Profile Name' parameter.
+
+:ref:`user_location_list <pre_processing_user_location_list>`                       'User Location List' parameter.
+
+:ref:`generate_values <pre_processing_generate_values>`         Causes the values for Profile BCs to be calculated.
+
+=============================================================   ===================================================
+
+.. rubric:: Included in:
+
+=====================================================================   ========================================
+
+Parent                                                                                                   Summary
+
+=====================================================================   ========================================
+:ref:`injection_region_child <pre_processing_injection_region_child>`   'child_object_type' of injection_region.
+
+=====================================================================   ========================================
+

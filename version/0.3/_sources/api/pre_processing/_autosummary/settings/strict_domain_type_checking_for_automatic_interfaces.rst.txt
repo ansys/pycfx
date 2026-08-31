@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_strict_domain_type_checking_for_automatic_interfaces:
+
+strict_domain_type_checking_for_automatic_interfaces
+====================================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.strict_domain_type_checking_for_automatic_interfaces.strict_domain_type_checking_for_automatic_interfaces
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   =================================
+
+Parent                                                                                              Summary
+
+=======================================================================   =================================
+:ref:`physics_options_control <pre_processing_physics_options_control>`   'PHYSICS OPTIONS CONTROL' object.
+
+=======================================================================   =================================
+

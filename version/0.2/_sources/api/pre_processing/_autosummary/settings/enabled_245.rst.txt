@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_245:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_245.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   =================================
+
+Parent                                                                                              Summary
+
+=======================================================================   =================================
+:ref:`operating_point_changes <pre_processing_operating_point_changes>`   'OPERATING POINT CHANGES' object.
+
+=======================================================================   =================================
+

@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_radiation_intensity_1:
+
+radiation_intensity
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.radiation_intensity_1.radiation_intensity
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================   ==============================================
+
+Attribute                                                                                                    Summary
+
+===================================================================   ==============================================
+:ref:`option <pre_processing_option_327>`                                          The 'Radiation Intensity' option.
+
+:ref:`radiation_intensity <pre_processing_radiation_intensity>`                       Radiation Intensity Magnitude.
+
+:ref:`blackbody_temperature <pre_processing_blackbody_temperature>`   Blackbody Temperature at a radiative boundary.
+
+===================================================================   ==============================================
+
+.. rubric:: Included in:
+
+===============================================================   ===============================================================================
+
+Parent                                                                                                                                    Summary
+
+===============================================================   ===============================================================================
+:ref:`initial_conditions <pre_processing_initial_conditions>`     Holds the details of initial condition specification for one or more equations.
+
+:ref:`initial_conditions <pre_processing_initial_conditions_1>`   Holds the details of initial condition specification for one or more equations.
+
+:ref:`initial_conditions <pre_processing_initial_conditions_5>`   Holds the details of initial condition specification for one or more equations.
+
+===============================================================   ===============================================================================
+

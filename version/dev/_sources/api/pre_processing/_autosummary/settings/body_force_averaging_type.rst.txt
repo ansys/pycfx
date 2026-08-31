@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_body_force_averaging_type:
+
+body_force_averaging_type
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.body_force_averaging_type.body_force_averaging_type
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================   =====================================================
+
+Parent                                                                                          Summary
+
+===============================================   =====================================================
+:ref:`body_forces <pre_processing_body_forces>`   Defines the details of discretization of body forces.
+
+===============================================   =====================================================
+

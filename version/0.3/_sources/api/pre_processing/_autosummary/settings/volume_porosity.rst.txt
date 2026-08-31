@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_volume_porosity:
+
+volume_porosity
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.volume_porosity.volume_porosity
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   =========================
+
+Parent                                                                        Summary
+
+=========================================================   =========================
+:ref:`volume_porosity <pre_processing_volume_porosity_1>`   'VOLUME POROSITY' object.
+
+=========================================================   =========================
+

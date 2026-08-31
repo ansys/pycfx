@@ -1,0 +1,44 @@
+:orphan:
+
+.. _pre_processing_time_steps:
+
+time_steps
+==========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.time_steps.time_steps
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================   ================================================
+
+Attribute                                                                                                              Summary
+
+===========================================================================   ================================================
+:ref:`option <pre_processing_option_80>`                                                              The 'Time Steps' option.
+
+:ref:`timesteps <pre_processing_timesteps>`                                                             'Timesteps' parameter.
+
+:ref:`timesteps_for_the_run <pre_processing_timesteps_for_the_run>`                         'Timesteps for the Run' parameter.
+
+:ref:`first_update_time <pre_processing_first_update_time>`                   Adaptive timestepping starts at this time value.
+
+:ref:`timestep_update_frequency <pre_processing_timestep_update_frequency>`             'Timestep Update Frequency' parameter.
+
+:ref:`initial_timestep <pre_processing_initial_timestep>`                         Initial timestep for adaptive time stepping.
+
+:ref:`timestep_adaption <pre_processing_timestep_adaption>`                     Controls method for adaption of timestep size.
+
+===========================================================================   ================================================
+
+.. rubric:: Included in:
+
+===================================================   ==================================================
+
+Parent                                                                                           Summary
+
+===================================================   ==================================================
+:ref:`analysis_type <pre_processing_analysis_type>`   Controls if the simulation is Steady or Transient.
+
+===================================================   ==================================================
+

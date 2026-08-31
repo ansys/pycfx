@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_mean_piston_speed:
+
+mean_piston_speed
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.mean_piston_speed.mean_piston_speed
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================   ========================================
+
+Parent                                                                                               Summary
+
+=================================================================   ========================================
+:ref:`ignition_delay_time <pre_processing_ignition_delay_time_1>`   Correlation for autoignition delay time.
+
+=================================================================   ========================================
+

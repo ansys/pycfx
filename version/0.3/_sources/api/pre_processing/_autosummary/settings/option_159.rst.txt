@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_option_159:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_159.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================   ==========================================================================================
+
+Parent                                                                                                                               Summary
+
+===============================================   ==========================================================================================
+:ref:`lift_force <pre_processing_lift_force>`     Specifies that lift force should be included in momentum transfer models for a fluid pair.
+
+:ref:`lift_force <pre_processing_lift_force_1>`   Specifies that lift force should be included in momentum transfer models for a fluid pair.
+
+===============================================   ==========================================================================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_160:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_160.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================   ========================
+
+Parent                                                                     Summary
+
+=======================================================   ========================
+:ref:`magnetic_field <pre_processing_magnetic_field_1>`   'MAGNETIC FIELD' object.
+
+=======================================================   ========================
+

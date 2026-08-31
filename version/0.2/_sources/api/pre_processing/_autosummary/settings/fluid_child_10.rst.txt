@@ -1,0 +1,32 @@
+:orphan:
+
+.. _pre_processing_fluid_child_10:
+
+fluid_child
+===========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fluid_child_10.fluid_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================   ===============================================================================
+
+Attribute                                                                                                                                 Summary
+
+===============================================================   ===============================================================================
+:ref:`initial_conditions <pre_processing_initial_conditions_1>`   Holds the details of initial condition specification for one or more equations.
+
+===============================================================   ===============================================================================
+
+.. rubric:: Included in:
+
+======================================   ==============================
+
+Parent                                                          Summary
+
+======================================   ==============================
+:ref:`fluid <pre_processing_fluid_10>`   A container for Fluid objects.
+
+======================================   ==============================
+

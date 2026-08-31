@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_fuel_material:
+
+fuel_material
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fuel_material.fuel_material
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ============================================
+
+Parent                                                                                               Summary
+
+=============================================================   ============================================
+:ref:`soot_model <pre_processing_soot_model>`                   Sets parameters that control the soot model.
+
+:ref:`autoignition_model <pre_processing_autoignition_model>`               Controls the autoignition model.
+
+=============================================================   ============================================
+

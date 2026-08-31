@@ -1,0 +1,44 @@
+:orphan:
+
+.. _pre_processing_ultimate_analysis:
+
+ultimate_analysis
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.ultimate_analysis.ultimate_analysis
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================   ================================
+
+Attribute                                                                              Summary
+
+===========================================================   ================================
+:ref:`option <pre_processing_option_37>`                       The 'Ultimate Analysis' option.
+
+:ref:`carbon_fraction <pre_processing_carbon_fraction>`         Carbon elements mass fraction.
+
+:ref:`hydrogen_fraction <pre_processing_hydrogen_fraction>`   Hydrogen elements mass fraction.
+
+:ref:`oxygen_fraction <pre_processing_oxygen_fraction>`         Oxygen elements mass fraction.
+
+:ref:`nitrogen_fraction <pre_processing_nitrogen_fraction>`   Nitrogen elements mass fraction.
+
+:ref:`chlorine_fraction <pre_processing_chlorine_fraction>`   Chlorine elements mass fraction.
+
+:ref:`sulphur_fraction <pre_processing_sulphur_fraction>`      Sulphur elements mass fraction.
+
+===========================================================   ================================
+
+.. rubric:: Included in:
+
+===========================================================   ====================================================
+
+Parent                                                                                                     Summary
+
+===========================================================   ====================================================
+:ref:`material_analysis <pre_processing_material_analysis>`   Proximate and ultimate analysis of hydrocarbon fuel.
+
+===========================================================   ====================================================
+

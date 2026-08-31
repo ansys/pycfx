@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_mass_under_relaxation_factor_for_first_particle_integration:
+
+mass_under_relaxation_factor_for_first_particle_integration
+===========================================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.mass_under_relaxation_factor_for_first_particle_integration.mass_under_relaxation_factor_for_first_particle_integration
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================================================   ===========================================================
+
+Parent                                                                                                                                            Summary
+
+===========================================================================================   ===========================================================
+:ref:`particle_under_relaxation_factors <pre_processing_particle_under_relaxation_factors>`   Sets under relaxation factors on particle tracking sources.
+
+===========================================================================================   ===========================================================
+

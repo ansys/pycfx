@@ -1,0 +1,27 @@
+:orphan:
+
+.. _pre_processing_domain_name_1:
+
+domain_name
+===========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.domain_name_1.domain_name
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================================   ===========================================
+
+Parent                                                                                                              Summary
+
+=============================================================================   ===========================================
+:ref:`time_transformation_child <pre_processing_time_transformation_child>`     'child_object_type' of time_transformation.
+
+:ref:`time_transformation_side_1 <pre_processing_time_transformation_side_1>`          'TIME TRANSFORMATION SIDE 1' object.
+
+:ref:`time_transformation_side_2 <pre_processing_time_transformation_side_2>`          'TIME TRANSFORMATION SIDE 2' object.
+
+:ref:`mesh_adaption <pre_processing_mesh_adaption>`                                                 'MESH ADAPTION' object.
+
+=============================================================================   ===========================================
+

@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_transfer_coefficient:
+
+transfer_coefficient
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.transfer_coefficient.transfer_coefficient
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================================   ===========================================
+
+Parent                                                                                                              Summary
+
+=============================================================================   ===========================================
+:ref:`additional_variable_child <pre_processing_additional_variable_child_5>`   'child_object_type' of additional_variable.
+
+:ref:`electric_field <pre_processing_electric_field>`                                              'ELECTRIC FIELD' object.
+
+:ref:`additional_variable_child <pre_processing_additional_variable_child_6>`   'child_object_type' of additional_variable.
+
+=============================================================================   ===========================================
+

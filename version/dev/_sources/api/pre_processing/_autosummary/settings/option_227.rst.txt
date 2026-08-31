@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_227:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_227.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ====================================================
+
+Parent                                                                                                       Summary
+
+=============================================================   ====================================================
+:ref:`tube_profile_model <pre_processing_tube_profile_model>`   Holds the definition of tube fluid velocity profile.
+
+=============================================================   ====================================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_laminar_burning_velocity:
+
+laminar_burning_velocity
+========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.laminar_burning_velocity.laminar_burning_velocity
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================================   ===================================================================================
+
+Parent                                                                                                                                                    Summary
+
+===========================================================================   ===================================================================================
+:ref:`laminar_burning_velocity <pre_processing_laminar_burning_velocity_1>`   Defines the laminar burning velocity for premixed or partially premixed combustion.
+
+===========================================================================   ===================================================================================
+

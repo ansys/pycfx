@@ -1,0 +1,47 @@
+:orphan:
+
+.. _post_processing_parameterization:
+
+parameterization
+================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.parameterization.parameterization
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+======================================================   =======================
+
+Attribute                                                                Summary
+
+======================================================   =======================
+:ref:`input_field <post_processing_input_field>`            'input_field' child.
+
+:ref:`response_field <post_processing_response_field>`   'response_field' child.
+
+======================================================   =======================
+
+.. rubric:: Methods
+
+============================================   ========================================
+
+Method                                                                          Summary
+
+============================================   ========================================
+:ref:`suspend <post_processing_suspend>`       Suspend immediate update for the object.
+
+:ref:`unsuspend <post_processing_unsuspend>`   Restore immediate update for the object.
+
+============================================   ========================================
+
+.. rubric:: Included in:
+
+========================================   =========================================
+
+Parent                                                                       Summary
+
+========================================   =========================================
+:ref:`results <post_processing_results>`   Encapsulates a CFX post-processing setup.
+
+========================================   =========================================
+

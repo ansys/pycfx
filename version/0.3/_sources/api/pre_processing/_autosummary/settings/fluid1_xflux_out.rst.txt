@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_fluid1_xflux_out:
+
+fluid1_xflux_out
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fluid1_xflux_out.fluid1_xflux_out
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================   =====================================
+
+Parent                                                                                          Summary
+
+===============================================================   =====================================
+:ref:`equation_pair_child <pre_processing_equation_pair_child>`   'child_object_type' of equation_pair.
+
+===============================================================   =====================================
+

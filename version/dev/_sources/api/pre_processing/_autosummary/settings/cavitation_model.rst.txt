@@ -1,0 +1,52 @@
+:orphan:
+
+.. _pre_processing_cavitation_model:
+
+cavitation_model
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.cavitation_model.cavitation_model
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================================================   ===========================================================
+
+Attribute                                                                                                                                                     Summary
+
+=======================================================================================================   ===========================================================
+:ref:`option <pre_processing_option_181>`                                                                                              The 'Cavitation Model' option.
+
+:ref:`mean_diameter <pre_processing_mean_diameter>`                                                                                        'Mean Diameter' parameter.
+
+:ref:`cavitation_rate <pre_processing_cavitation_rate>`                                                              Cavitation mass transfer rate from fluid 1 to 2.
+
+:ref:`saturation_pressure <pre_processing_saturation_pressure>`                                               Saturation pressure for cavitation of a pure substance.
+
+:ref:`cavitation_condensation_coefficient <pre_processing_cavitation_condensation_coefficient>`                       Parameter in cavitation model for condensation.
+
+:ref:`cavitation_vaporization_coefficient <pre_processing_cavitation_vaporization_coefficient>`                       Parameter in cavitation model for vaporization.
+
+:ref:`maximum_density_ratio <pre_processing_maximum_density_ratio>`                                                                'Maximum Density Ratio' parameter.
+
+:ref:`nuclei_volume_fraction <pre_processing_nuclei_volume_fraction>`                                                             'Nuclei Volume Fraction' parameter.
+
+:ref:`cavitation_rate_under_relaxation_factor <pre_processing_cavitation_rate_under_relaxation_factor>`                       Cavitation rate underrelaxation factor.
+
+:ref:`cavitation_thermal_effects <pre_processing_cavitation_thermal_effects>`                                     Specifies the model for cavitation thermal effects.
+
+:ref:`cavitation_turbulence_effects <pre_processing_cavitation_turbulence_effects>`                       Specifies the model for effects of turbulence fluctuations.
+
+=======================================================================================================   ===========================================================
+
+.. rubric:: Included in:
+
+===================================================   ======================================
+
+Parent                                                                               Summary
+
+===================================================   ======================================
+:ref:`mass_transfer <pre_processing_mass_transfer>`   Mass transfer models for a fluid pair.
+
+===================================================   ======================================
+

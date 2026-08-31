@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_minimum_eddy_length_ratio:
+
+minimum_eddy_length_ratio
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.minimum_eddy_length_ratio.minimum_eddy_length_ratio
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================   ====================================================
+
+Parent                                                                                             Summary
+
+===================================================   ====================================================
+:ref:`breakup_model <pre_processing_breakup_model>`   Defines the breakup model for a polydispersed fluid.
+
+===================================================   ====================================================
+

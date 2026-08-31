@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_number_of_adaption_levels:
+
+number_of_adaption_levels
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.number_of_adaption_levels.number_of_adaption_levels
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================================   ===================================
+
+Parent                                                                                                    Summary
+
+===========================================================================   ===================================
+:ref:`adaption_advanced_options <pre_processing_adaption_advanced_options>`   'ADAPTION ADVANCED OPTIONS' object.
+
+===========================================================================   ===================================
+

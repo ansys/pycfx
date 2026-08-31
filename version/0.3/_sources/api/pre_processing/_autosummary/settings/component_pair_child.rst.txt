@@ -1,0 +1,48 @@
+:orphan:
+
+.. _pre_processing_component_pair_child:
+
+component_pair_child
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.component_pair_child.component_pair_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================================   =======================================================================
+
+Attribute                                                                                                                                             Summary
+
+===================================================================================   =======================================================================
+:ref:`option <pre_processing_option_204>`                                                                                        The 'Component Pair' option.
+
+:ref:`mass_transfer_coefficient <pre_processing_mass_transfer_coefficient>`                                                        Mass transfer coefficient.
+
+:ref:`sherwood_number <pre_processing_sherwood_number>`                               Sherwood number governing interphase transfer for additional variables.
+
+:ref:`modification <pre_processing_modification>`                                                                                   'Modification' parameter.
+
+:ref:`fluid1_species_mass_transfer <pre_processing_fluid1_species_mass_transfer>`       Specifies species mass transfer model to first fluid of a fluid pair.
+
+:ref:`fluid2_species_mass_transfer <pre_processing_fluid2_species_mass_transfer>`       Specifies species mass transfer model to first fluid of a fluid pair.
+
+:ref:`latent_heat <pre_processing_latent_heat_1>`                                                       Holds latent heat information for liquid evaporation.
+
+:ref:`particle_user_source <pre_processing_particle_user_source>`                                                              'PARTICLE USER SOURCE' object.
+
+:ref:`interfacial_equilibrium_model <pre_processing_interfacial_equilibrium_model>`                  Specifies equilibrium model for species and AV transfer.
+
+===================================================================================   =======================================================================
+
+.. rubric:: Included in:
+
+=====================================================   =======================================
+
+Parent                                                                                  Summary
+
+=====================================================   =======================================
+:ref:`component_pair <pre_processing_component_pair>`   A container for Component Pair objects.
+
+=====================================================   =======================================
+

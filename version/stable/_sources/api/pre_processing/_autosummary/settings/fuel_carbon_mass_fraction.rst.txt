@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_fuel_carbon_mass_fraction:
+
+fuel_carbon_mass_fraction
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fuel_carbon_mass_fraction.fuel_carbon_mass_fraction
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================   ============================================
+
+Parent                                                                               Summary
+
+=============================================   ============================================
+:ref:`soot_model <pre_processing_soot_model>`   Sets parameters that control the soot model.
+
+=============================================   ============================================
+

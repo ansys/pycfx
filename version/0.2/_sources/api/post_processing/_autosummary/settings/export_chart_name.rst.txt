@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_export_chart_name:
+
+export_chart_name
+=================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.export_chart_name.export_chart_name
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+======================================   ===========================================================================
+
+Parent                                                                                                       Summary
+
+======================================   ===========================================================================
+:ref:`export <post_processing_export>`   Holds parameters which control the export of data to an external text file.
+
+======================================   ===========================================================================
+

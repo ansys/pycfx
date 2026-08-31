@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_33:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_33.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================   =============================
+
+Parent                                                                                    Summary
+
+=================================================================   =============================
+:ref:`volatiles_molar_mass <pre_processing_volatiles_molar_mass>`   Volatiles average molar mass.
+
+=================================================================   =============================
+

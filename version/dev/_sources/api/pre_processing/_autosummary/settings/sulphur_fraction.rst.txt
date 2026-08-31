@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_sulphur_fraction:
+
+sulphur_fraction
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.sulphur_fraction.sulphur_fraction
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ===================================
+
+Parent                                                                                    Summary
+
+===========================================================   ===================================
+:ref:`ultimate_analysis <pre_processing_ultimate_analysis>`   Ultimate hydrocarbon fuel analysis.
+
+===========================================================   ===================================
+

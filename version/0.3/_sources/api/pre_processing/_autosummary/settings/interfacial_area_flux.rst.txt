@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_interfacial_area_flux:
+
+interfacial_area_flux
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.interfacial_area_flux.interfacial_area_flux
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================================   ============================================================================================================================================
+
+Parent                                                                                                                                                                                                                 Summary
+
+===============================================================================   ============================================================================================================================================
+:ref:`interfacial_area_transport <pre_processing_interfacial_area_transport_2>`   Interfacial Area Transport Equation specification. Required when this option is selected for the interphase transfer model for a phase pair.
+
+===============================================================================   ============================================================================================================================================
+

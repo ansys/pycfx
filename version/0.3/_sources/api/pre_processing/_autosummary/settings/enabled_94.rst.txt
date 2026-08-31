@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_94:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_94.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================   =================================================
+
+Parent                                                                                          Summary
+
+===================================================   =================================================
+:ref:`slip_velocity <pre_processing_slip_velocity>`   Defines a slip velocity for algebraic components.
+
+===================================================   =================================================
+

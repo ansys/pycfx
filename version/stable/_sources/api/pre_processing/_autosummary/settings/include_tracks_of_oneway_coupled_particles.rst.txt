@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_include_tracks_of_oneway_coupled_particles:
+
+include_tracks_of_oneway_coupled_particles
+==========================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.include_tracks_of_oneway_coupled_particles.include_tracks_of_oneway_coupled_particles
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================   ======================================
+
+Parent                                                                                             Summary
+
+=================================================================   ======================================
+:ref:`backup_results_child <pre_processing_backup_results_child>`   'child_object_type' of backup_results.
+
+=================================================================   ======================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_293:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_293.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   =================================================================================================
+
+Parent                                                                                                                                                    Summary
+
+=============================================================   =================================================================================================
+:ref:`wall_contact_model <pre_processing_wall_contact_model>`   Specifies model for fluid-wall contact and bulk boundary conditions at walls in multi-fluid flow.
+
+=============================================================   =================================================================================================
+

@@ -1,0 +1,58 @@
+:orphan:
+
+.. _pre_processing_mixture_properties:
+
+mixture_properties
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.mixture_properties.mixture_properties
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================   ========================================================================
+
+Attribute                                                                                                                                    Summary
+
+=========================================================================   ========================================================================
+:ref:`enabled <pre_processing_enabled_19>`                                                                     Enable the MIXTURE PROPERTIES object.
+
+:ref:`option <pre_processing_option_40>`                                                                            The 'Mixture Properties' option.
+
+:ref:`equation_of_state <pre_processing_equation_of_state_1>`                                                       Specifies the equation of state.
+
+:ref:`electrical_conductivity <pre_processing_electrical_conductivity_1>`   Hold the details for an advanced description of electrical conductivity.
+
+:ref:`electrical_permittivity <pre_processing_electrical_permittivity_1>`   Hold the details for an advanced description of Electrical Permittivity.
+
+:ref:`magnetic_permeability <pre_processing_magnetic_permeability_1>`         Hold the details for an advanced description of magnetic permeability.
+
+:ref:`specific_heat_capacity <pre_processing_specific_heat_capacity_2>`                          Specifies how specific heat capacity is calculated.
+
+:ref:`enthalpy <pre_processing_enthalpy>`                                                                                         'ENTHALPY' object.
+
+:ref:`entropy <pre_processing_entropy>`                                                                                            'ENTROPY' object.
+
+:ref:`thermal_conductivity <pre_processing_thermal_conductivity_2>`           Hold the details for an advanced descriptions of Thermal Conductivity.
+
+:ref:`dynamic_viscosity <pre_processing_dynamic_viscosity_2>`                     Hold the details for an advanced description of dynamic viscosity.
+
+:ref:`absorption_coefficient <pre_processing_absorption_coefficient_1>`                      Specifies how the absorption coefficient is calculated.
+
+:ref:`refractive_index <pre_processing_refractive_index_1>`                                           Specifies how the refractive index calculated.
+
+:ref:`scattering_coefficient <pre_processing_scattering_coefficient_1>`                      Specifies how the scattering coefficient is calculated.
+
+=========================================================================   ========================================================================
+
+.. rubric:: Included in:
+
+=====================================================   ================================
+
+Parent                                                                           Summary
+
+=====================================================   ================================
+:ref:`material_child <pre_processing_material_child>`   'child_object_type' of material.
+
+=====================================================   ================================
+

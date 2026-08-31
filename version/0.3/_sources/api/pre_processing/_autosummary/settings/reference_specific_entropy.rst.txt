@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_reference_specific_entropy:
+
+reference_specific_entropy
+==========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.reference_specific_entropy.reference_specific_entropy
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================   ========================================
+
+Parent                                                                                     Summary
+
+=======================================================   ========================================
+:ref:`reference_state <pre_processing_reference_state>`   Sets the reference state for a material.
+
+=======================================================   ========================================
+

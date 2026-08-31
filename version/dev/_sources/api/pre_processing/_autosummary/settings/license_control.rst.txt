@@ -1,0 +1,42 @@
+:orphan:
+
+.. _pre_processing_license_control:
+
+license_control
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.license_control.license_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================   =======================================================================================
+
+Attribute                                                                                                                                         Summary
+
+===============================================================   =======================================================================================
+:ref:`enabled <pre_processing_enabled_227>`                                                                            Enable the LICENSE CONTROL object.
+
+:ref:`capability_level <pre_processing_capability_level>`                                                                   'Capability Level' parameter.
+
+:ref:`hpc_license <pre_processing_hpc_license>`                                                                                  'HPC License' parameter.
+
+:ref:`preferred_license <pre_processing_preferred_license>`       Controls an initial product-specific license check to be performed for the GT software.
+
+:ref:`shared_license_port <pre_processing_shared_license_port>`                                                          'Shared License Port' parameter.
+
+===============================================================   =======================================================================================
+
+.. rubric:: Included in:
+
+=================================================================   =============================
+
+Parent                                                                                    Summary
+
+=================================================================   =============================
+:ref:`solver_step_control <pre_processing_solver_step_control>`     'SOLVER STEP CONTROL' object.
+
+:ref:`solver_step_control <pre_processing_solver_step_control_1>`   'SOLVER STEP CONTROL' object.
+
+=================================================================   =============================
+

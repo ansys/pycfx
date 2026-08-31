@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_newton_coefficient:
+
+newton_coefficient
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.newton_coefficient.newton_coefficient
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ==================================================================
+
+Parent                                                                                                                   Summary
+
+===========================================================   ==================================================================
+:ref:`drag_force <pre_processing_drag_force>`                                           Specifies drag force between two phases.
+
+:ref:`fluid1_drag_force <pre_processing_fluid1_drag_force>`   Specifies drag force in low VF limit on 1st. fluid for AIAD model.
+
+:ref:`fluid2_drag_force <pre_processing_fluid2_drag_force>`   Specifies drag force in low VF limit on 2nd. fluid for AIAD model.
+
+===========================================================   ==================================================================
+

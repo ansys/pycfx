@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_interface_conditions_1:
+
+interface_conditions
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.interface_conditions_1.interface_conditions
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`interface_conditions_child <pre_processing_interface_conditions_child_1>`
+
+
+.. rubric:: Included in:
+
+=================================================   =============================
+
+Parent                                                                    Summary
+
+=================================================   =============================
+:ref:`fluid_child <pre_processing_fluid_child_4>`   'child_object_type' of fluid.
+
+=================================================   =============================
+

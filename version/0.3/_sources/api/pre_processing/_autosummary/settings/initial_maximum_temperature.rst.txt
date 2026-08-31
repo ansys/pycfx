@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_initial_maximum_temperature:
+
+initial_maximum_temperature
+===========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.initial_maximum_temperature.initial_maximum_temperature
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ==========================
+
+Parent                                                                           Summary
+
+===========================================================   ==========================
+:ref:`table_generation <pre_processing_table_generation_1>`   'TABLE GENERATION' object.
+
+===========================================================   ==========================
+

@@ -1,0 +1,23 @@
+:orphan:
+
+.. _post_processing_chart_data_source:
+
+chart_data_source
+=================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.chart_data_source.chart_data_source
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==============================================================   ====================================
+
+Parent                                                                                        Summary
+
+==============================================================   ====================================
+:ref:`chart_series_child <post_processing_chart_series_child>`   'child_object_type' of chart_series.
+
+:ref:`user_surface_child <post_processing_user_surface_child>`   'child_object_type' of user_surface.
+
+==============================================================   ====================================
+

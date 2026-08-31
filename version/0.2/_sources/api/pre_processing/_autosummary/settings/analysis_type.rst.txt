@@ -1,0 +1,42 @@
+:orphan:
+
+.. _pre_processing_analysis_type:
+
+analysis_type
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.analysis_type.analysis_type
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================   =====================================================================
+
+Attribute                                                                                                                                 Summary
+
+=========================================================================   =====================================================================
+:ref:`enabled <pre_processing_enabled_35>`                                                                       Enable the ANALYSIS TYPE object.
+
+:ref:`option <pre_processing_option_76>`                                                                              The 'Analysis Type' option.
+
+:ref:`external_solver_coupling <pre_processing_external_solver_coupling>`                                  Declare couplings to external solvers.
+
+:ref:`time_duration <pre_processing_time_duration>`                         Specifies the length of time to be simulated in a transient analysis.
+
+:ref:`initial_time <pre_processing_initial_time>`                                           Defines the Initial Time for a Transient Calculation.
+
+:ref:`time_steps <pre_processing_time_steps>`                                                       Specifies the time steps for a transient run.
+
+=========================================================================   =====================================================================
+
+.. rubric:: Included in:
+
+=============================================   ============================
+
+Parent                                                               Summary
+
+=============================================   ============================
+:ref:`flow_child <pre_processing_flow_child>`   'child_object_type' of flow.
+
+=============================================   ============================
+

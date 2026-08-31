@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_257:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_257.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   =============================================
+
+Parent                                                                                            Summary
+
+=========================================================   =============================================
+:ref:`operating_points <pre_processing_operating_points>`   Overall container for operating points setup.
+
+=========================================================   =============================================
+

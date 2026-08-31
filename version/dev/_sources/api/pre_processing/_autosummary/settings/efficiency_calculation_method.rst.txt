@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_efficiency_calculation_method:
+
+efficiency_calculation_method
+=============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.efficiency_calculation_method.efficiency_calculation_method
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ============================================================
+
+Parent                                                                                                             Summary
+
+===========================================================   ============================================================
+:ref:`efficiency_output <pre_processing_efficiency_output>`   Defines the type of efficiency computed during a solver run.
+
+===========================================================   ============================================================
+

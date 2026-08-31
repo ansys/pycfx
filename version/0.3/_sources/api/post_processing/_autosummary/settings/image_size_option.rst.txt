@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_image_size_option:
+
+image_size_option
+=================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.image_size_option.image_size_option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==================================================   ===================================
+
+Parent                                                                           Summary
+
+==================================================   ===================================
+:ref:`save_picture <post_processing_save_picture>`   Saves an image of the current view.
+
+==================================================   ===================================
+

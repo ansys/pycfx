@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_second_point_of_axis:
+
+second_point_of_axis
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.second_point_of_axis.second_point_of_axis
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ===================================================================
+
+Parent                                                                                                                    Summary
+
+===========================================================   ===================================================================
+:ref:`particle_position <pre_processing_particle_position>`   Defines how particle positions are to be distributed on a boundary.
+
+===========================================================   ===================================================================
+

@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_diffuse_fraction:
+
+diffuse_fraction
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.diffuse_fraction.diffuse_fraction
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   =======================================================
+
+Parent                                                                                                          Summary
+
+=============================================================   =======================================================
+:ref:`thermal_radiation <pre_processing_thermal_radiation>`     Sets the conditions on Thermal Radiation at a boundary.
+
+:ref:`thermal_radiation <pre_processing_thermal_radiation_1>`   Sets the conditions on Thermal Radiation at a boundary.
+
+:ref:`thermal_radiation <pre_processing_thermal_radiation_2>`   Sets the conditions on Thermal Radiation at a boundary.
+
+=============================================================   =======================================================
+

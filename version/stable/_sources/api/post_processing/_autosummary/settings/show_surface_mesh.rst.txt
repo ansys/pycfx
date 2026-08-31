@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_show_surface_mesh:
+
+show_surface_mesh
+=================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.show_surface_mesh.show_surface_mesh
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+========================================================   =================================
+
+Parent                                                                               Summary
+
+========================================================   =================================
+:ref:`wireframe_child <post_processing_wireframe_child>`   'child_object_type' of wireframe.
+
+========================================================   =================================
+

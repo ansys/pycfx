@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_deformation_scale:
+
+deformation_scale
+=================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.deformation_scale.deformation_scale
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==========================================================   ========================================================================================
+
+Parent                                                                                                                                        Summary
+
+==========================================================   ========================================================================================
+:ref:`deformation_info <post_processing_deformation_info>`   This object contains the settings used to render deformation for all GeometricCCLObject.
+
+==========================================================   ========================================================================================
+

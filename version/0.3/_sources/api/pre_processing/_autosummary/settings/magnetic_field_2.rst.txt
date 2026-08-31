@@ -1,0 +1,32 @@
+:orphan:
+
+.. _pre_processing_magnetic_field_2:
+
+magnetic_field
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.magnetic_field_2.magnetic_field
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================   ============================
+
+Attribute                                                        Summary
+
+=========================================   ============================
+:ref:`option <pre_processing_option_292>`   The 'Magnetic Field' option.
+
+=========================================   ============================
+
+.. rubric:: Included in:
+
+=====================================================================   ========================================================
+
+Parent                                                                                                                   Summary
+
+=====================================================================   ========================================================
+:ref:`solid_interface_models <pre_processing_solid_interface_models>`   Holds the definition of models specific to an interface.
+
+=====================================================================   ========================================================
+

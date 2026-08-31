@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_spectral_model:
+
+spectral_model
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.spectral_model.spectral_model
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================   ======================================
+
+Attribute                                                                            Summary
+
+===================================================   ======================================
+:ref:`option <pre_processing_option_138>`                       The 'Spectral Model' option.
+
+:ref:`spectral_band <pre_processing_spectral_band>`   A container for Spectral Band objects.
+
+:ref:`gray_gas <pre_processing_gray_gas>`                  A container for Gray Gas objects.
+
+===================================================   ======================================
+
+.. rubric:: Included in:
+
+=========================================================================   =============================================================
+
+Parent                                                                                                                            Summary
+
+=========================================================================   =============================================================
+:ref:`thermal_radiation_model <pre_processing_thermal_radiation_model>`     Defines the Thermal Radiation model to be used in the domain.
+
+:ref:`thermal_radiation_model <pre_processing_thermal_radiation_model_1>`   Defines the Thermal Radiation model to be used in the domain.
+
+:ref:`thermal_radiation_model <pre_processing_thermal_radiation_model_2>`   Defines the Thermal Radiation model to be used in the domain.
+
+=========================================================================   =============================================================
+

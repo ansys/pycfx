@@ -1,0 +1,48 @@
+:orphan:
+
+.. _pre_processing_initialisation:
+
+initialisation
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.initialisation.initialisation
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================   =============================================================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                                             Summary
+
+=============================================================   =============================================================================================================================================================================================================================================
+:ref:`enabled <pre_processing_enabled_152>`                                                                                                                                                                                                                                 Enable the INITIALISATION object.
+
+:ref:`option <pre_processing_option_323>`                                                                                                                                                                                                                                        The 'Initialisation' option.
+
+:ref:`frame_type <pre_processing_frame_type>`                      Sets the frame in which velocity components or flow direction components are specified. If set to Rotating then the components are in the relative frame. If set to Stationary then the components are in the absolute frame of reference.
+
+:ref:`coord_frame <pre_processing_coord_frame>`                 Local coordinate frame for computing expressions. The default at the top level of the command data structure is Coord 0, that is no transformation. The default at lower levels is to inherit the value from objects higher up the structure.
+
+:ref:`initial_conditions <pre_processing_initial_conditions>`                                                                                                                                                                 Holds the details of initial condition specification for one or more equations.
+
+:ref:`fluid <pre_processing_fluid_10>`                                                                                                                                                                                                                                         A container for Fluid objects.
+
+:ref:`solid <pre_processing_solid_5>`                                                                                                                                                                                                                                          A container for Solid objects.
+
+:ref:`fluid_pair <pre_processing_fluid_pair_5>`                                                                                                                                                                                                                           A container for Fluid Pair objects.
+
+:ref:`tube <pre_processing_tube_1>`                                                                                                                                                                                                                                             A container for Tube objects.
+
+=============================================================   =============================================================================================================================================================================================================================================
+
+.. rubric:: Included in:
+
+=================================================   ==============================
+
+Parent                                                                     Summary
+
+=================================================   ==============================
+:ref:`domain_child <pre_processing_domain_child>`   'child_object_type' of domain.
+
+=================================================   ==============================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_chart_line_label_number_format:
+
+chart_line_label_number_format
+==============================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.chart_line_label_number_format.chart_line_label_number_format
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==============================================================   ====================================
+
+Parent                                                                                        Summary
+
+==============================================================   ====================================
+:ref:`chart_series_child <post_processing_chart_series_child>`   'child_object_type' of chart_series.
+
+==============================================================   ====================================
+

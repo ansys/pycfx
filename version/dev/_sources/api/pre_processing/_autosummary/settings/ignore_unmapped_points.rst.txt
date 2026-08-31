@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_ignore_unmapped_points:
+
+ignore_unmapped_points
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.ignore_unmapped_points.ignore_unmapped_points
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   ==========================
+
+Parent                                                                         Summary
+
+=========================================================   ==========================
+:ref:`point_definition <pre_processing_point_definition>`   'POINT DEFINITION' object.
+
+=========================================================   ==========================
+

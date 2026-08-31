@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_reaction_progress_1:
+
+reaction_progress
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.reaction_progress_1.reaction_progress
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================   =================================================================================
+
+Attribute                                                                                                                                 Summary
+
+=============================================================   =================================================================================
+:ref:`option <pre_processing_option_287>`                                                                         The 'Reaction Progress' option.
+
+:ref:`reaction_progress <pre_processing_reaction_progress>`             Reaction progress variable for premixed or partially premixed combustion.
+
+:ref:`elimination_factor <pre_processing_elimination_factor>`                                        Elimination Factor for Zero Gradient option.
+
+:ref:`blend_factor <pre_processing_blend_factor>`               Specifies the blend between pure UDS (0.0) and second order (1.0) discretization.
+
+=============================================================   =================================================================================
+
+.. rubric:: Included in:
+
+=================================================================   =============================================================
+
+Parent                                                                                                                    Summary
+
+=================================================================   =============================================================
+:ref:`boundary_conditions <pre_processing_boundary_conditions>`     Specifies boundary conditions for all equations being solved.
+
+:ref:`boundary_conditions <pre_processing_boundary_conditions_2>`   Specifies boundary conditions for all equations being solved.
+
+=================================================================   =============================================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_start_accumulation_period:
+
+start_accumulation_period
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.start_accumulation_period.start_accumulation_period
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   ==========================
+
+Parent                                                                         Summary
+
+=========================================================   ==========================
+:ref:`data_compression <pre_processing_data_compression>`   'DATA COMPRESSION' object.
+
+=========================================================   ==========================
+

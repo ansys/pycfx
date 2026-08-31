@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_166:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_166.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================   =================================================================================
+
+Parent                                                                                                                                            Summary
+
+=====================================================================   =================================================================================
+:ref:`solid_shear_viscosity <pre_processing_solid_shear_viscosity_1>`   Sets the model to be used for solids shear viscosity in a multiphase calculation.
+
+=====================================================================   =================================================================================
+

@@ -1,0 +1,76 @@
+:orphan:
+
+.. _pre_processing_material_child:
+
+material_child
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.material_child.material_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================================================================   ===================================================================================================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                                                                                                                                     Summary
+
+===============================================================================================================   ===================================================================================================================================================================================================================================================================================
+:ref:`option <pre_processing_option_10>`                                                                                                                                                                                                                                                                                                                                       The 'Material' option.
+
+:ref:`material_group <pre_processing_material_group>`                                                                                                                                                   Name of material group. Used for categorizing materials in a materials file so that the user interface can show them by group name. The value of this string must be a valid CCL Object name.
+
+:ref:`materials_list <pre_processing_materials_list>`                                                                                                                                                                                                                                                                                                                     'Materials List' parameter.
+
+:ref:`binary_material1 <pre_processing_binary_material1>`                                                                                                                                                                                                                                                                                             First material in a homogeneous binary mixture.
+
+:ref:`binary_material2 <pre_processing_binary_material2>`                                                                                                                                                                                                                                                                                             First material in a homogeneous binary mixture.
+
+:ref:`reactions_list <pre_processing_reactions_list>`                                                                                                                                                                                                                                                                                                                     'Reactions List' parameter.
+
+:ref:`object_origin <pre_processing_object_origin>`                                                                                                                                                                                                                                                                                                            Where the Object definition came from.
+
+:ref:`material_description <pre_processing_material_description>`                                                                                                                                                                                                                                                         Description of material, used for matching materials in a flamelet library.
+
+:ref:`thermodynamic_state <pre_processing_thermodynamic_state>`                                                                                                                                                                                                                                                                                                       State type of a pure substance.
+
+:ref:`coord_frame <pre_processing_coord_frame>`                                                                                                         Local coordinate frame for computing expressions. The default at the top level of the command data structure is Coord 0, that is no transformation. The default at lower levels is to inherit the value from objects higher up the structure.
+
+:ref:`additional_materials_list <pre_processing_additional_materials_list>`                                                                                                                                                                                                                                                                                    'Additional Materials List' parameter.
+
+:ref:`constitutive_relation_temperature_criterion <pre_processing_constitutive_relation_temperature_criterion>`                                                                                                                                                                                                                              'Constitutive Relation Temperature Criterion' parameter.
+
+:ref:`constitutive_relation_iteration_limit <pre_processing_constitutive_relation_iteration_limit>`                                                                                                                                                                                                                                                'Constitutive Relation Iteration Limit' parameter.
+
+:ref:`constitutive_relation_under_relaxation <pre_processing_constitutive_relation_under_relaxation>`                                                                                                                                                                                                                                             'Constitutive Relation Under Relaxation' parameter.
+
+:ref:`newton_pressure_criterion <pre_processing_newton_pressure_criterion>`                                                                                                                                                                                                                                                                                    'Newton Pressure Criterion' parameter.
+
+:ref:`newton_pressure_iteration_limit <pre_processing_newton_pressure_iteration_limit>`                                                                                                                                                                                                                                                                  'Newton Pressure Iteration Limit' parameter.
+
+:ref:`newton_pressure_under_relaxation <pre_processing_newton_pressure_under_relaxation>`                                                                                                                                                                                                                                                               'Newton Pressure Under Relaxation' parameter.
+
+:ref:`child_material <pre_processing_child_material>`                                                                                                                                                                                                                                                                                                         A container for Child Material objects.
+
+:ref:`properties <pre_processing_properties>`                                                                                                                                                                                                                                                                                         Holds the definition of all physical properties for a material.
+
+:ref:`saturation_properties <pre_processing_saturation_properties>`                                               Defines the saturation properties used for interphase mass transfer or equilibrium mass transfer models. This singleton would point to a data file. In this case only RGP files are currently supported. The saturation pressure and temperature singletons can override this data.
+
+:ref:`material_analysis <pre_processing_material_analysis>`                                                                                                                                                                                                                                                                                      Proximate and ultimate analysis of hydrocarbon fuel.
+
+:ref:`mixture_materials <pre_processing_mixture_materials>`                                                                                                                                                                                                                                                                     Material names for mixture components used by hydrocarbon fuel model.
+
+:ref:`mixture_properties <pre_processing_mixture_properties>`                                                                                                Used as a container for specifying bulk properties of both fixed and variable composition mixtures. Ideal Mixture is the default rule for all properties. Individual properties can be overridden using the singleton for that property.
+
+===============================================================================================================   ===================================================================================================================================================================================================================================================================================
+
+.. rubric:: Included in:
+
+=========================================   =================================
+
+Parent                                                                Summary
+
+=========================================   =================================
+:ref:`material <pre_processing_material>`   A container for Material objects.
+
+=========================================   =================================
+

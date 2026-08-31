@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_shell_side_fouling_model:
+
+shell_side_fouling_model
+========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.shell_side_fouling_model.shell_side_fouling_model
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================================   =========================================
+
+Attribute                                                                                                             Summary
+
+=================================================================================   =========================================
+:ref:`option <pre_processing_option_236>`                                              The 'Shell Side Fouling Model' option.
+
+:ref:`thickness <pre_processing_thickness>`                                                            Thickness of material.
+
+:ref:`fouling_thermal_conductivity <pre_processing_fouling_thermal_conductivity>`   'Fouling Thermal Conductivity' parameter.
+
+=================================================================================   =========================================
+
+.. rubric:: Included in:
+
+===========================================================   ===========================================================================================
+
+Parent                                                                                                                                            Summary
+
+===========================================================   ===========================================================================================
+:ref:`shell_side_models <pre_processing_shell_side_models>`   Holds the definition of shell fluid models for momentum loss and heat transfer coefficient.
+
+===========================================================   ===========================================================================================
+

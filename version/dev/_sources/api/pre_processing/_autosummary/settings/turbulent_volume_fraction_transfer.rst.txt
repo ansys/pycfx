@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_turbulent_volume_fraction_transfer:
+
+turbulent_volume_fraction_transfer
+==================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.turbulent_volume_fraction_transfer.turbulent_volume_fraction_transfer
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================   =============================================================
+
+Attribute                                                                                                                       Summary
+
+=======================================================================   =============================================================
+:ref:`turbulent_flux_closure <pre_processing_turbulent_flux_closure_3>`   Controls the turbulent flux closure for a transport equation.
+
+=======================================================================   =============================================================
+
+.. rubric:: Included in:
+
+=================================================   ==============================================================================
+
+Parent                                                                                                                     Summary
+
+=================================================   ==============================================================================
+:ref:`fluid_models <pre_processing_fluid_models>`   Defines the model details that operate on individual fluids within the domain.
+
+:ref:`fluid_child <pre_processing_fluid_child>`                                                      'child_object_type' of fluid.
+
+=================================================   ==============================================================================
+

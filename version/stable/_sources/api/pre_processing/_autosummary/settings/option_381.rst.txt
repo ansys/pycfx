@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_381:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_381.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ============================================================================
+
+Parent                                                                                                                               Summary
+
+=============================================================   ============================================================================
+:ref:`integration_method <pre_processing_integration_method>`   Specifies the angular momentum integration method for the rigid body solver.
+
+=============================================================   ============================================================================
+

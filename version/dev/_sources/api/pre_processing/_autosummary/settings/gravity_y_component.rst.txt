@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_gravity_y_component:
+
+gravity_y_component
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.gravity_y_component.gravity_y_component
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================   ==============================================================
+
+Parent                                                                                                         Summary
+
+=====================================================   ==============================================================
+:ref:`gravity <pre_processing_gravity>`                                         The gravitational acceleration vector.
+
+:ref:`buoyancy_model <pre_processing_buoyancy_model>`   Defines type of buoyancy model and gravity vector in a domain.
+
+=====================================================   ==============================================================
+

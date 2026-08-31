@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_x_variable_boundary_values:
+
+x_variable_boundary_values
+==========================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.x_variable_boundary_values.x_variable_boundary_values
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==============================================================   ====================================
+
+Parent                                                                                        Summary
+
+==============================================================   ====================================
+:ref:`chart_series_child <post_processing_chart_series_child>`   'child_object_type' of chart_series.
+
+==============================================================   ====================================
+

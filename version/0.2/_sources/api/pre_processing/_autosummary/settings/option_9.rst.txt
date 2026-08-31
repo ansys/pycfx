@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_9:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_9.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ===========================
+
+Parent                                                                            Summary
+
+===========================================================   ===========================
+:ref:`sample_definition <pre_processing_sample_definition>`   'SAMPLE DEFINITION' object.
+
+===========================================================   ===========================
+

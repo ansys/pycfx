@@ -1,0 +1,27 @@
+:orphan:
+
+.. _pre_processing_c2_coefficient:
+
+c2_coefficient
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.c2_coefficient.c2_coefficient
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================================================   =============================================================================================================
+
+Parent                                                                                                                                                                                                Summary
+
+=============================================================================================   =============================================================================================================
+:ref:`residual_material_dependency <pre_processing_residual_material_dependency>`                                                                  Residual material dependency for laminar burning velocity.
+
+:ref:`lrr_ip_rs_coefficients <pre_processing_lrr_ip_rs_coefficients>`                           Controls model coefficients for the Reynolds Stress transport equations (simple pressure strain formulation).
+
+:ref:`lrr_ip_rs_coefficients <pre_processing_lrr_ip_rs_coefficients_1>`                         Controls model coefficients for the Reynolds Stress transport equations (simple pressure strain formulation).
+
+:ref:`flame_surface_density_coefficients <pre_processing_flame_surface_density_coefficients>`                                   Controls model coefficients for the Flame Surface Density transport equation.
+
+=============================================================================================   =============================================================================================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_26:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_26.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   ========================================
+
+Parent                                                                                       Summary
+
+=========================================================   ========================================
+:ref:`combustion_model <pre_processing_combustion_model>`   Defines the combustion model to be used.
+
+=========================================================   ========================================
+

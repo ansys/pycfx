@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_reference_thermal_conductivity:
+
+reference_thermal_conductivity
+==============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.reference_thermal_conductivity.reference_thermal_conductivity
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================   ======================================================================
+
+Parent                                                                                                                               Summary
+
+===================================================================   ======================================================================
+:ref:`thermal_conductivity <pre_processing_thermal_conductivity_1>`   Hold the details for an advanced descriptions of Thermal Conductivity.
+
+:ref:`thermal_conductivity <pre_processing_thermal_conductivity_2>`   Hold the details for an advanced descriptions of Thermal Conductivity.
+
+===================================================================   ======================================================================
+

@@ -1,0 +1,44 @@
+:orphan:
+
+.. _pre_processing_tube_side_models:
+
+tube_side_models
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.tube_side_models.tube_side_models
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================   ==============================================================
+
+Attribute                                                                                                                          Summary
+
+=========================================================================   ==============================================================
+:ref:`tube_geometry_model <pre_processing_tube_geometry_model>`                                     Holds the definition of tube geometry.
+
+:ref:`tube_profile_model <pre_processing_tube_profile_model>`                         Holds the definition of tube fluid velocity profile.
+
+:ref:`tube_pressure_model <pre_processing_tube_pressure_model>`                               Holds the definition of tube pressure model.
+
+:ref:`tube_speed_model <pre_processing_tube_speed_model>`                                        Holds the definition of tube fluid speed.
+
+:ref:`tube_heat_transfer_model <pre_processing_tube_heat_transfer_model>`                      Holds the definition of tube heat transfer.
+
+:ref:`tube_side_fouling_model <pre_processing_tube_side_fouling_model>`             Specifies the fouling material model on the tube side.
+
+:ref:`tube_reference_pressure <pre_processing_tube_reference_pressure>`     Sets the Reference Pressure for the tube fluids in the Domain.
+
+=========================================================================   ==============================================================
+
+.. rubric:: Included in:
+
+===================================================================   ==============================================
+
+Parent                                                                                                       Summary
+
+===================================================================   ==============================================
+:ref:`shell_and_tube_models <pre_processing_shell_and_tube_models>`   Holds the definition of shell and tube models.
+
+===================================================================   ==============================================
+

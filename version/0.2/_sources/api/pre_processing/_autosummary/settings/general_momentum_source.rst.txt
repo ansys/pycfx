@@ -1,0 +1,58 @@
+:orphan:
+
+.. _pre_processing_general_momentum_source:
+
+general_momentum_source
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.general_momentum_source.general_momentum_source
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================================   ==============================================================================================================
+
+Attribute                                                                                                                                                                                          Summary
+
+=========================================================================================   ==============================================================================================================
+:ref:`enabled <pre_processing_enabled_151>`                                                                                                                     Enable the GENERAL MOMENTUM SOURCE object.
+
+:ref:`option <pre_processing_option_320>`                                                                                                                            The 'General Momentum Source' option.
+
+:ref:`momentum_source_x_component <pre_processing_momentum_source_x_component>`                                                                                   'Momentum Source X Component' parameter.
+
+:ref:`momentum_source_y_component <pre_processing_momentum_source_y_component>`                                                                                   'Momentum Source Y Component' parameter.
+
+:ref:`momentum_source_z_component <pre_processing_momentum_source_z_component>`                                                                                   'Momentum Source Z Component' parameter.
+
+:ref:`momentum_source_axial_component <pre_processing_momentum_source_axial_component>`                                                                       'Momentum Source Axial Component' parameter.
+
+:ref:`momentum_source_r_component <pre_processing_momentum_source_r_component>`                                                                                   'Momentum Source r Component' parameter.
+
+:ref:`momentum_source_theta_component <pre_processing_momentum_source_theta_component>`                                                                       'Momentum Source Theta Component' parameter.
+
+:ref:`multiply_by_porosity <pre_processing_multiply_by_porosity>`                                                            Defines whether the source terms in porous domains is multiplied by porosity.
+
+:ref:`momentum_source_coefficient <pre_processing_momentum_source_coefficient>`             Derivative of momentum source with respect to velocity. This isotropic coefficient is used for all components.
+
+:ref:`redistribute_in_rhie_chow <pre_processing_redistribute_in_rhie_chow>`                                                                            Indicates whether momentum source is redistributed.
+
+:ref:`include_coefficient_in_rhie_chow <pre_processing_include_coefficient_in_rhie_chow>`   Indicates whether momentum source coefficient modifies the Rhie Chow coupling term in the continuity equation.
+
+:ref:`axis_definition <pre_processing_axis_definition>`                                            Defines the axis for a cylindrical coordinate system or variables defined using cylindrical components.
+
+=========================================================================================   ==============================================================================================================
+
+.. rubric:: Included in:
+
+=========================================================   ================================
+
+Parent                                                                               Summary
+
+=========================================================   ================================
+:ref:`momentum_source <pre_processing_momentum_source>`     Holds source terms for momentum.
+
+:ref:`momentum_source <pre_processing_momentum_source_1>`   Holds source terms for momentum.
+
+=========================================================   ================================
+

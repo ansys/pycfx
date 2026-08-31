@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_computed_passing_period:
+
+computed_passing_period
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.computed_passing_period.computed_passing_period
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================   =====================
+
+Parent                                                          Summary
+
+===============================================   =====================
+:ref:`time_period <pre_processing_time_period>`   'TIME PERIOD' object.
+
+===============================================   =====================
+

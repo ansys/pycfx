@@ -1,0 +1,31 @@
+:orphan:
+
+.. _pre_processing_file_compression_level:
+
+file_compression_level
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.file_compression_level.file_compression_level
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================================   ======================================================
+
+Parent                                                                                                                         Summary
+
+=============================================================================   ======================================================
+:ref:`results <pre_processing_results>`                                         Defines the contents of the final solver results file.
+
+:ref:`backup_results_child <pre_processing_backup_results_child>`                               'child_object_type' of backup_results.
+
+:ref:`transient_results_child <pre_processing_transient_results_child>`                      'child_object_type' of transient_results.
+
+:ref:`transient_blade_row_output <pre_processing_transient_blade_row_output>`                     'TRANSIENT BLADE ROW OUTPUT' object.
+
+:ref:`monitor_surface_child <pre_processing_monitor_surface_child>`                            'child_object_type' of monitor_surface.
+
+:ref:`monitor_line_cloud_child <pre_processing_monitor_line_cloud_child>`                   'child_object_type' of monitor_line_cloud.
+
+=============================================================================   ======================================================
+

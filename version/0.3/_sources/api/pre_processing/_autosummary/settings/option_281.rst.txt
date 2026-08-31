@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_option_281:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_281.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================   ==================================================
+
+Parent                                                                                               Summary
+
+=======================================================   ==================================================
+:ref:`flow_direction <pre_processing_flow_direction>`     Sets the velocity direction imposed at a boundary.
+
+:ref:`flow_direction <pre_processing_flow_direction_1>`   Sets the velocity direction imposed at a boundary.
+
+=======================================================   ==================================================
+

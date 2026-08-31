@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_point_1_r_component:
+
+point_1_r_component
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.point_1_r_component.point_1_r_component
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   ==========================
+
+Parent                                                                         Summary
+
+=========================================================   ==========================
+:ref:`point_definition <pre_processing_point_definition>`   'POINT DEFINITION' object.
+
+=========================================================   ==========================
+

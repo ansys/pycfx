@@ -1,0 +1,25 @@
+:orphan:
+
+.. _post_processing_number_of_passages_in_component:
+
+number_of_passages_in_component
+===============================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.number_of_passages_in_component.number_of_passages_in_component
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==========================================================================================   ==================================================
+
+Parent                                                                                                                                  Summary
+
+==========================================================================================   ==================================================
+:ref:`domain_child <post_processing_domain_child>`                                                               'child_object_type' of domain.
+
+:ref:`default_instance_transform_child <post_processing_default_instance_transform_child>`   'child_object_type' of default_instance_transform.
+
+:ref:`instance_transform_child <post_processing_instance_transform_child>`                           'child_object_type' of instance_transform.
+
+==========================================================================================   ==================================================
+

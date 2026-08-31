@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_volume_fraction:
+
+volume_fraction
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.volume_fraction.volume_fraction
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   ================================================================
+
+Parent                                                                                                               Summary
+
+=========================================================   ================================================================
+:ref:`volume_fraction <pre_processing_volume_fraction_1>`   Sets boundary condition or initial condition on volume fraction.
+
+=========================================================   ================================================================
+

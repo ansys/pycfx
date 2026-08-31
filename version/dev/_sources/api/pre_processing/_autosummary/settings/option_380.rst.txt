@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_380:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_380.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   ==========================================
+
+Parent                                                                                                       Summary
+
+=======================================================================   ==========================================
+:ref:`elapsed_wall_clock_time <pre_processing_elapsed_wall_clock_time>`   Control run using wall clock time options.
+
+=======================================================================   ==========================================
+

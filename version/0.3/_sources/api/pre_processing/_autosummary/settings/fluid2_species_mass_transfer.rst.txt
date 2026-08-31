@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_fluid2_species_mass_transfer:
+
+fluid2_species_mass_transfer
+============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fluid2_species_mass_transfer.fluid2_species_mass_transfer
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================================   =============================================================================
+
+Attribute                                                                                                                                                         Summary
+
+=========================================================================================   =============================================================================
+:ref:`option <pre_processing_option_206>`                                                                                      The 'Fluid2 Species Mass Transfer' option.
+
+:ref:`fluid2_sherwood_number <pre_processing_fluid2_sherwood_number>`                       Fluid 2 Sherwood number governing interphase transfer of AV's and components.
+
+:ref:`fluid2_mass_transfer_coefficient <pre_processing_fluid2_mass_transfer_coefficient>`          Effective mass transfer coefficient on second-fluid side of interface.
+
+=========================================================================================   =============================================================================
+
+.. rubric:: Included in:
+
+=================================================================   ======================================
+
+Parent                                                                                             Summary
+
+=================================================================   ======================================
+:ref:`component_pair_child <pre_processing_component_pair_child>`   'child_object_type' of component_pair.
+
+=================================================================   ======================================
+

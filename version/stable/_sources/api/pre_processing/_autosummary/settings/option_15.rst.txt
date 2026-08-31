@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_15:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_15.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================================   ====================================================================================
+
+Parent                                                                                                                                                       Summary
+
+=============================================================================   ====================================================================================
+:ref:`zero_pressure_coefficients <pre_processing_zero_pressure_coefficients>`   Specifies ideal gas specific heat capacity for use with real gas equations of state.
+
+=============================================================================   ====================================================================================
+

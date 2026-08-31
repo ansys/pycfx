@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_directional_loss_model:
+
+directional_loss_model
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.directional_loss_model.directional_loss_model
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================================   ==============================================================================================================
+
+Attribute                                                                                                                                                                                          Summary
+
+=========================================================================================   ==============================================================================================================
+:ref:`include_coefficient_in_rhie_chow <pre_processing_include_coefficient_in_rhie_chow>`   Indicates whether momentum source coefficient modifies the Rhie Chow coupling term in the continuity equation.
+
+:ref:`streamwise_loss <pre_processing_streamwise_loss>`                                                                                                                     Defines streamwise loss model.
+
+:ref:`transverse_loss <pre_processing_transverse_loss>`                                                                                                                     Defines transverse loss model.
+
+:ref:`streamwise_direction <pre_processing_streamwise_direction>`                                                                                                        Defines the streamwise direction.
+
+=========================================================================================   ==============================================================================================================
+
+.. rubric:: Included in:
+
+===============================================   =========================================
+
+Parent                                                                              Summary
+
+===============================================   =========================================
+:ref:`loss_model <pre_processing_loss_model>`     Describes loss model for a porous domain.
+
+:ref:`loss_model <pre_processing_loss_model_1>`   Describes loss model for a porous domain.
+
+===============================================   =========================================
+

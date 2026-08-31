@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_equation_pair:
+
+equation_pair
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.equation_pair.equation_pair
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`equation_pair_child <pre_processing_equation_pair_child>`
+
+
+.. rubric:: Included in:
+
+===================================================   ======================================
+
+Parent                                                                               Summary
+
+===================================================   ======================================
+:ref:`mass_transfer <pre_processing_mass_transfer>`   Mass transfer models for a fluid pair.
+
+===================================================   ======================================
+

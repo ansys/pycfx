@@ -1,0 +1,23 @@
+:orphan:
+
+.. _post_processing_file_time_units:
+
+file_time_units
+===============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.file_time_units.file_time_units
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+================================================   ======================================================================================================================
+
+Parent                                                                                                                                                            Summary
+
+================================================   ======================================================================================================================
+:ref:`case_child <post_processing_case_child>`                                                                                               'child_object_type' of case.
+
+:ref:`data_reader <post_processing_data_reader>`   This object contains the settings used to read results files into the post-processor. It is used by the "load" action.
+
+================================================   ======================================================================================================================
+

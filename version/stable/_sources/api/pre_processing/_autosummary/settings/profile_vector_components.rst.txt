@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_profile_vector_components:
+
+profile_vector_components
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.profile_vector_components.profile_vector_components
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   =================================
+
+Parent                                                                                              Summary
+
+=======================================================================   =================================
+:ref:`boundary_vector <pre_processing_boundary_vector>`                           'BOUNDARY VECTOR' object.
+
+:ref:`injection_region_vector <pre_processing_injection_region_vector>`   'INJECTION REGION VECTOR' object.
+
+=======================================================================   =================================
+

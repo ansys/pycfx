@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_transfer_value_child:
+
+transfer_value_child
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.transfer_value_child.transfer_value_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================   =========================
+
+Attribute                                                             Summary
+
+=================================================   =========================
+:ref:`value_name <pre_processing_value_name>`         'Value Name' parameter.
+
+:ref:`result_units <pre_processing_result_units>`   'Result Units' parameter.
+
+=================================================   =========================
+
+.. rubric:: Included in:
+
+=====================================================   =======================================
+
+Parent                                                                                  Summary
+
+=====================================================   =======================================
+:ref:`transfer_value <pre_processing_transfer_value>`   A container for Transfer Value objects.
+
+=====================================================   =======================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_category_values:
+
+category_values
+===============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.category_values.category_values
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==========================================================   ==================================
+
+Parent                                                                                  Summary
+
+==========================================================   ==================================
+:ref:`chart_line_child <post_processing_chart_line_child>`   'child_object_type' of chart_line.
+
+==========================================================   ==================================
+

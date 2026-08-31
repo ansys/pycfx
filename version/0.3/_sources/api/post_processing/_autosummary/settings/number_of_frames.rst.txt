@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_number_of_frames:
+
+number_of_frames
+================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.number_of_frames.number_of_frames
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+======================================================   ================================
+
+Parent                                                                            Summary
+
+======================================================   ================================
+:ref:`keyframe_child <post_processing_keyframe_child>`   'child_object_type' of keyframe.
+
+======================================================   ================================
+

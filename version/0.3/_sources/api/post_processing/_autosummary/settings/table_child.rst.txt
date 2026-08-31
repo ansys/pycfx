@@ -1,0 +1,73 @@
+:orphan:
+
+.. _post_processing_table_child:
+
+table_child
+===========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.table_child.table_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+==============================================================================================   =========================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                          Summary
+
+==============================================================================================   =========================================================================================================================================================
+:ref:`export_table_only <post_processing_export_table_only>`                                                   Whether or not to export the table within the context of a complete HTML document, or to just export the table itself as a section of HTML.
+
+:ref:`table_default_case_name <post_processing_table_default_case_name>`                                                                 Specifies the case on which to do the expression evaluation when not explicitly set as part of a cell expression.
+
+:ref:`table_exists <post_processing_table_exists>`                                                                                                                                                                                   'table_exists' child.
+
+:ref:`table_export_format <post_processing_table_export_format>`                                                                                                                                                              What to export the table to.
+
+:ref:`table_export_html_border_width <post_processing_table_export_html_border_width>`           Specifies the width of the border around the exported HTML table. If '0' is specified, then no borders are shown around the table, nor between the cells.
+
+:ref:`table_export_html_caption <post_processing_table_export_html_caption>`                                                                                         Specifies a caption for the table to give a description of the contents of the table.
+
+:ref:`table_export_html_caption_position <post_processing_table_export_html_caption_position>`                                                               Specifies whether or not to show the caption specified in the Table Export Caption parameter.
+
+:ref:`table_export_html_cell_padding <post_processing_table_export_html_cell_padding>`                                                             Specifies the padding between the cell data and the borders around the cell. Specified as a percentage.
+
+:ref:`table_export_html_cell_spacing <post_processing_table_export_html_cell_spacing>`                                                 Specifies the spacing between the cells in the exported HTML table. This may not be supported by all HTML browsers.
+
+:ref:`table_export_html_title <post_processing_table_export_html_title>`                                     Specifies the HTML Table title to give to the HTML document This only applies to HTML Export when the Export Table Only parameter is 'False'.
+
+:ref:`table_export_lines <post_processing_table_export_lines>`                                                                                         Specifies which lines to show between the cells of the table. This applies to HTML and Text export.
+
+:ref:`table_export_separator <post_processing_table_export_separator>`                                                                                                      Specifies the separator to use between each table cell when exporting to Text.
+
+:ref:`table_export_trailing_separators <post_processing_table_export_trailing_separators>`                                                                              Specifies whether to show trailing separators when exporting to CSV or Text files.
+
+:ref:`table_cells <post_processing_table_cells>`                                                                                                                                                                           Definition of the TABLE object.
+
+:ref:`object_report_options <post_processing_object_report_options>`                                                                                                                              Defines options for the Report, specific to each object.
+
+==============================================================================================   =========================================================================================================================================================
+
+.. rubric:: Methods
+
+============================================   ========================================
+
+Method                                                                          Summary
+
+============================================   ========================================
+:ref:`suspend <post_processing_suspend>`       Suspend immediate update for the object.
+
+:ref:`unsuspend <post_processing_unsuspend>`   Restore immediate update for the object.
+
+============================================   ========================================
+
+.. rubric:: Included in:
+
+====================================   ==============
+
+Parent                                        Summary
+
+====================================   ==============
+:ref:`table <post_processing_table>`   'table' child.
+
+====================================   ==============
+

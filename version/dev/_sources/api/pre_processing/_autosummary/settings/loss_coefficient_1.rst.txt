@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_loss_coefficient_1:
+
+loss_coefficient
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.loss_coefficient_1.loss_coefficient
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================   ===================================
+
+Attribute                                                                               Summary
+
+=========================================================   ===================================
+:ref:`enabled <pre_processing_enabled_133>`                 Enable the LOSS COEFFICIENT object.
+
+:ref:`loss_coefficient <pre_processing_loss_coefficient>`         'Loss Coefficient' parameter.
+
+=========================================================   ===================================
+
+.. rubric:: Included in:
+
+=================================================================   =============================================================
+
+Parent                                                                                                                    Summary
+
+=================================================================   =============================================================
+:ref:`boundary_conditions <pre_processing_boundary_conditions>`     Specifies boundary conditions for all equations being solved.
+
+:ref:`boundary_conditions <pre_processing_boundary_conditions_2>`   Specifies boundary conditions for all equations being solved.
+
+=================================================================   =============================================================
+

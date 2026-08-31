@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_particle_diameter_change:
+
+particle_diameter_change
+========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.particle_diameter_change.particle_diameter_change
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================   ===============================================
+
+Attribute                                                                                               Summary
+
+=============================================================   ===============================================
+:ref:`enabled <pre_processing_enabled_38>`                          Enable the PARTICLE DIAMETER CHANGE object.
+
+:ref:`option <pre_processing_option_86>`                                 The 'Particle Diameter Change' option.
+
+:ref:`reference_material <pre_processing_reference_material>`                               Reference material.
+
+:ref:`swelling_factor <pre_processing_swelling_factor>`         Swelling of a particle during devolatilization.
+
+=============================================================   ===============================================
+
+.. rubric:: Included in:
+
+===============================================   ======================================
+
+Parent                                                                           Summary
+
+===============================================   ======================================
+:ref:`morphology <pre_processing_morphology_1>`   Fluid morphology in multifluid models.
+
+===============================================   ======================================
+

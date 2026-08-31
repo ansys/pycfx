@@ -1,0 +1,44 @@
+:orphan:
+
+.. _pre_processing_output_frequency:
+
+output_frequency
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.output_frequency.output_frequency
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================   ==================================================
+
+Attribute                                                                                                          Summary
+
+=====================================================================   ==================================================
+:ref:`option <pre_processing_option_386>`                                                   The 'Output Frequency' option.
+
+:ref:`iteration_interval <pre_processing_iteration_interval>`                              'Iteration Interval' parameter.
+
+:ref:`iteration_list <pre_processing_iteration_list>`                                          'Iteration List' parameter.
+
+:ref:`timestep_interval <pre_processing_timestep_interval>`                                 'Timestep Interval' parameter.
+
+:ref:`timestep_list <pre_processing_timestep_list>`                                             'Timestep List' parameter.
+
+:ref:`elapsed_time_interval <pre_processing_elapsed_time_interval>`     Wall clock time interval for writing backup files.
+
+:ref:`coupling_step_interval <pre_processing_coupling_step_interval>`                  'Coupling Step Interval' parameter.
+
+=====================================================================   ==================================================
+
+.. rubric:: Included in:
+
+=================================================================   ======================================
+
+Parent                                                                                             Summary
+
+=================================================================   ======================================
+:ref:`backup_results_child <pre_processing_backup_results_child>`   'child_object_type' of backup_results.
+
+=================================================================   ======================================
+

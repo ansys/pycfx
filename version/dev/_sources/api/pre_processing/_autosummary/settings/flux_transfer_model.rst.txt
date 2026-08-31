@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_flux_transfer_model:
+
+flux_transfer_model
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.flux_transfer_model.flux_transfer_model
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================================================   =====================================================================================
+
+Attribute                                                                                                                                                                       Summary
+
+===============================================================================================   =====================================================================================
+:ref:`enabled <pre_processing_enabled_121>`                                                                                                      Enable the FLUX TRANSFER MODEL object.
+
+:ref:`option <pre_processing_option_260>`                                                                                                             The 'Flux Transfer Model' option.
+
+:ref:`critical_convective_volume_fraction <pre_processing_critical_convective_volume_fraction>`   Critical Vapour Volume Fraction to include convective heat transfer for wall boiling.
+
+===============================================================================================   =====================================================================================
+
+.. rubric:: Included in:
+
+===============================================================   =================================
+
+Parent                                                                                      Summary
+
+===============================================================   =================================
+:ref:`wall_boiling_model <pre_processing_wall_boiling_model_2>`   Specifies the wall boiling model.
+
+===============================================================   =================================
+

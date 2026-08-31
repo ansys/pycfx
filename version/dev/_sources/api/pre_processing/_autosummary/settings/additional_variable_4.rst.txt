@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_additional_variable_4:
+
+additional_variable
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.additional_variable_4.additional_variable
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`additional_variable_child <pre_processing_additional_variable_child_4>`
+
+
+.. rubric:: Included in:
+
+===================================================================   ===============================================================================
+
+Parent                                                                                                                                        Summary
+
+===================================================================   ===============================================================================
+:ref:`injection_conditions <pre_processing_injection_conditions>`                      Specifies injection conditions for all equations being solved.
+
+:ref:`injection_conditions <pre_processing_injection_conditions_1>`                    Specifies injection conditions for all equations being solved.
+
+:ref:`injection_conditions <pre_processing_injection_conditions_2>`                    Specifies injection conditions for all equations being solved.
+
+:ref:`initial_conditions <pre_processing_initial_conditions>`         Holds the details of initial condition specification for one or more equations.
+
+:ref:`initial_conditions <pre_processing_initial_conditions_1>`       Holds the details of initial condition specification for one or more equations.
+
+:ref:`initial_conditions <pre_processing_initial_conditions_2>`       Holds the details of initial condition specification for one or more equations.
+
+:ref:`initial_conditions <pre_processing_initial_conditions_5>`       Holds the details of initial condition specification for one or more equations.
+
+===================================================================   ===============================================================================
+

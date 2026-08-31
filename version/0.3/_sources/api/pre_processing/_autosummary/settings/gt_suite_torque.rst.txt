@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_gt_suite_torque:
+
+gt_suite_torque
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.gt_suite_torque.gt_suite_torque
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================   =============================
+
+Attribute                                                                         Summary
+
+=========================================================   =============================
+:ref:`option <pre_processing_option_7>`                     The 'Gt Suite Torque' option.
+
+:ref:`expression_value <pre_processing_expression_value>`   Single valued CEL expression.
+
+:ref:`boundary <pre_processing_boundary>`                           'Boundary' parameter.
+
+=========================================================   =============================
+
+.. rubric:: Included in:
+
+=====================================================   ================================
+
+Parent                                                                           Summary
+
+=====================================================   ================================
+:ref:`function_child <pre_processing_function_child>`   'child_object_type' of function.
+
+=====================================================   ================================
+

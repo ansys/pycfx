@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_option_308:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_308.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================   ===========================================
+
+Parent                                                                                    Summary
+
+===================================================   ===========================================
+:ref:`bulk_sources <pre_processing_bulk_sources>`     Specifies bulk sources in multi-fluid flow.
+
+:ref:`bulk_sources <pre_processing_bulk_sources_1>`   Specifies bulk sources in multi-fluid flow.
+
+:ref:`bulk_sources <pre_processing_bulk_sources_2>`   Specifies bulk sources in multi-fluid flow.
+
+===================================================   ===========================================
+

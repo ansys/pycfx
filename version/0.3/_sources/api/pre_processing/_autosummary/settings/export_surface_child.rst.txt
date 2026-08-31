@@ -1,0 +1,46 @@
+:orphan:
+
+.. _pre_processing_export_surface_child:
+
+export_surface_child
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.export_surface_child.export_surface_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================   ======================================================================================
+
+Attribute                                                                                                                                                    Summary
+
+===========================================================================   ======================================================================================
+:ref:`option <pre_processing_option_391>`                                                                                               The 'Export Surface' option.
+
+:ref:`output_boundary_list <pre_processing_output_boundary_list>`                                                                  'Output Boundary List' parameter.
+
+:ref:`output_variables_list <pre_processing_output_variables_list>`                                                               'Output Variables List' parameter.
+
+:ref:`output_nodal_area_vectors <pre_processing_output_nodal_area_vectors>`                                                   'Output Nodal Area Vectors' parameter.
+
+:ref:`location_type <pre_processing_location_type>`                           Defines the type of location, physics or mesh regions, to compute aerodynamic damping.
+
+:ref:`excitation_frequency <pre_processing_excitation_frequency>`                                                                     'EXCITATION FREQUENCY' object.
+
+:ref:`accumulation_period <pre_processing_accumulation_period>`                                                                        'ACCUMULATION PERIOD' object.
+
+:ref:`export_mapping <pre_processing_export_mapping>`                                                                                       'EXPORT MAPPING' object.
+
+===========================================================================   ======================================================================================
+
+.. rubric:: Included in:
+
+=====================================================   =======================================
+
+Parent                                                                                  Summary
+
+=====================================================   =======================================
+:ref:`export_surface <pre_processing_export_surface>`   A container for Export Surface objects.
+
+=====================================================   =======================================
+

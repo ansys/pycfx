@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_tube_geometry:
+
+tube_geometry
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.tube_geometry.tube_geometry
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================   ======================================
+
+Parent                                                                                           Summary
+
+===============================================================   ======================================
+:ref:`tube_geometry_model <pre_processing_tube_geometry_model>`   Holds the definition of tube geometry.
+
+===============================================================   ======================================
+

@@ -1,0 +1,63 @@
+:orphan:
+
+.. _post_processing_response_surface:
+
+response_surface
+================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.response_surface.response_surface
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+======================================================================================================================   =====================================================================================================================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                                                                                                                                                              Summary
+
+======================================================================================================================   =====================================================================================================================================================================================================================================================================================================
+:ref:`disable_filtering <post_processing_disable_filtering>`                                                                                                                                                                                                                                                                                              The flag for controlling the application of variable data filtering.
+
+:ref:`response_surface_generation_seed <post_processing_response_surface_generation_seed>`                                                                                                                                                                                                                                                                 The seed for building a response surface using Ansys DesignXplorer.
+
+:ref:`response_surface_goodness_of_fit_criteria <post_processing_response_surface_goodness_of_fit_criteria>`             A list of response surface Goodness of Fit ( GOF ) criteria. Following Workbench, the following GOF measures can be calculated: 1. Coefficient of Determination ( R2 ), 2. Root Mean Square Error ( RMSE ), 3. Relative Maximum Absolute Error ( RMAE ), 4. Relative Average Absolute Error ( RAAE ).
+
+:ref:`response_surface_r2_minimum_acceptable_value <post_processing_response_surface_r2_minimum_acceptable_value>`                                                                                                                                                                                 The minimum acceptable value for response surface GOF R2 measure. The limit is used for GUI GOF table entry highlight only.
+
+:ref:`response_surface_raae_maximum_acceptable_value <post_processing_response_surface_raae_maximum_acceptable_value>`                                                                                                                                                                           The maximum acceptable value for response surface GOF RAAE measure. The limit is used for GUI GOF table entry highlight only.
+
+:ref:`response_surface_rmae_maximum_acceptable_value <post_processing_response_surface_rmae_maximum_acceptable_value>`                                                                                                                                                                           The maximum acceptable value for response surface GOF RMAE measure. The limit is used for GUI GOF table entry highlight only.
+
+:ref:`response_surface_rmse_maximum_acceptable_value <post_processing_response_surface_rmse_maximum_acceptable_value>`                                                                                                                                                                           The maximum acceptable value for response surface GOF RMSE measure. The limit is used for GUI GOF table entry highlight only.
+
+:ref:`variable_data_filter_rule_list <post_processing_variable_data_filter_rule_list>`                                                                                                                                                                                                                                                                       The list of filtering rules used by an object for data gathering.
+
+:ref:`x_input_variable_name <post_processing_x_input_variable_name>`                                                                                                                                                                                                                                                                                       The input variable name for the X coordinate of a response surface.
+
+:ref:`y_input_variable_name <post_processing_y_input_variable_name>`                                                                                                                                                                                                                                                                                       The input variable name for the Y coordinate of a response surface.
+
+======================================================================================================================   =====================================================================================================================================================================================================================================================================================================
+
+.. rubric:: Methods
+
+============================================   ========================================
+
+Method                                                                          Summary
+
+============================================   ========================================
+:ref:`suspend <post_processing_suspend>`       Suspend immediate update for the object.
+
+:ref:`unsuspend <post_processing_unsuspend>`   Restore immediate update for the object.
+
+============================================   ========================================
+
+.. rubric:: Included in:
+
+========================================   =========================================
+
+Parent                                                                       Summary
+
+========================================   =========================================
+:ref:`results <post_processing_results>`   Encapsulates a CFX post-processing setup.
+
+========================================   =========================================
+

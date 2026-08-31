@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_surface_charge_density:
+
+surface_charge_density
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.surface_charge_density.surface_charge_density
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================   ========================
+
+Parent                                                                   Summary
+
+=====================================================   ========================
+:ref:`electric_field <pre_processing_electric_field>`   'ELECTRIC FIELD' object.
+
+=====================================================   ========================
+

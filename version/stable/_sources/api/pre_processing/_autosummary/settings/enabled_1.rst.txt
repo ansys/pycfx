@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_1:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_1.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================================   =========================================
+
+Parent                                                                                                                      Summary
+
+=======================================================================================   =========================================
+:ref:`profile_coord_system_definition <pre_processing_profile_coord_system_definition>`   'PROFILE COORD SYSTEM DEFINITION' object.
+
+=======================================================================================   =========================================
+

@@ -1,0 +1,48 @@
+:orphan:
+
+.. _pre_processing_injection_distribution:
+
+injection_distribution
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.injection_distribution.injection_distribution
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================   ==========================================================
+
+Attribute                                                                                                              Summary
+
+=================================================================   ==========================================================
+:ref:`enabled <pre_processing_enabled_146>`                                          Enable the INJECTION DISTRIBUTION object.
+
+:ref:`option <pre_processing_option_316>`                                                 The 'Injection Distribution' option.
+
+:ref:`inflow_boundary <pre_processing_inflow_boundary>`                                               Inflow boundary regions.
+
+:ref:`update_iterations <pre_processing_update_iterations>`                                     'Update Iterations' parameter.
+
+:ref:`update_interval <pre_processing_update_interval>`                                           'Update Interval' parameter.
+
+:ref:`injection_trajectory <pre_processing_injection_trajectory>`                      Defines the Injection Trajectory model.
+
+:ref:`injection_shape <pre_processing_injection_shape>`             Defines the Injection cross-section for trajectory models.
+
+:ref:`injection_direction <pre_processing_injection_direction_1>`                                Sets the injection direction.
+
+:ref:`injection_variable <pre_processing_injection_variable>`                      A container for Injection Variable objects.
+
+=================================================================   ==========================================================
+
+.. rubric:: Included in:
+
+=====================================================================   ========================================
+
+Parent                                                                                                   Summary
+
+=====================================================================   ========================================
+:ref:`injection_region_child <pre_processing_injection_region_child>`   'child_object_type' of injection_region.
+
+=====================================================================   ========================================
+

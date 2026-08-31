@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_critical_weber_number_for_catastrophic_breakup:
+
+critical_weber_number_for_catastrophic_breakup
+==============================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.critical_weber_number_for_catastrophic_breakup.critical_weber_number_for_catastrophic_breakup
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   ===========================
+
+Parent                                                                          Summary
+
+=========================================================   ===========================
+:ref:`particle_breakup <pre_processing_particle_breakup>`   Defines the breakup method.
+
+=========================================================   ===========================
+

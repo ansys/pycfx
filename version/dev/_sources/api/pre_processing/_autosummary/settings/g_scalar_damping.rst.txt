@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_g_scalar_damping:
+
+g_scalar_damping
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.g_scalar_damping.g_scalar_damping
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================================   ============================================================================
+
+Attribute                                                                                                                                              Summary
+
+===============================================================================   ============================================================================
+:ref:`enabled <pre_processing_enabled_91>`                                                                                 Enable the G SCALAR DAMPING object.
+
+:ref:`option <pre_processing_option_153>`                                                                                       The 'G Scalar Damping' option.
+
+:ref:`g_damping_factor <pre_processing_g_damping_factor>`                                                                 Damping Factor for G Scalar damping.
+
+:ref:`flame_brush_distance_factor <pre_processing_flame_brush_distance_factor>`   Flame Brush Distance Factor for identifying region far away from flamefront.
+
+===============================================================================   ============================================================================
+
+.. rubric:: Included in:
+
+===========================================================   ========================================
+
+Parent                                                                                         Summary
+
+===========================================================   ========================================
+:ref:`combustion_model <pre_processing_combustion_model_1>`   Defines the combustion model to be used.
+
+===========================================================   ========================================
+
