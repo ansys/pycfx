@@ -37,7 +37,7 @@ jobs:
       contents: write # Needed to combine changelog fragments into changelog file
       pull-requests: write # Needed to commit to the release branch/tag
     steps:
-      - uses: ansys/actions/doc-deploy-changelog@7e89e00c5619374a1da8c2e876309d8b15ff0559 # v11.0.3
+      - uses: ansys/actions/doc-deploy-changelog@21c78f8b27683ae8c93557345392abe39ab21d2f # v11.0.4
         with:
           token: ${{ secrets.PYANSYS_CI_BOT_TOKEN }}
           bot-user: ${{ secrets.PYANSYS_CI_BOT_USERNAME }}
@@ -47,7 +47,7 @@ jobs:
     name: "Check library vulnerabilities"
     runs-on: ubuntu-latest
     steps:
-      - uses: ansys/actions/check-vulnerabilities@7e89e00c5619374a1da8c2e876309d8b15ff0559 # v11.0.3
+      - uses: ansys/actions/check-vulnerabilities@21c78f8b27683ae8c93557345392abe39ab21d2f # v11.0.4
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           token: ${{ secrets.PYANSYS_CI_BOT_TOKEN }}
@@ -61,7 +61,7 @@ jobs:
     name: "Check actions security"
     runs-on: ubuntu-latest
     steps:
-      - uses: ansys/actions/check-actions-security@7e89e00c5619374a1da8c2e876309d8b15ff0559 # v11.0.3
+      - uses: ansys/actions/check-actions-security@21c78f8b27683ae8c93557345392abe39ab21d2f # v11.0.4
         with:
           generate-summary: true
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -72,7 +72,7 @@ jobs:
     name: "Code style"
     runs-on: ubuntu-latest
     steps:
-      - uses: ansys/actions/code-style@7e89e00c5619374a1da8c2e876309d8b15ff0559 # v11.0.3
+      - uses: ansys/actions/code-style@21c78f8b27683ae8c93557345392abe39ab21d2f # v11.0.4
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
 
@@ -83,7 +83,7 @@ jobs:
       contents: read
       pull-requests: read # Needed for reviewdog
     steps:
-      - uses: ansys/actions/doc-style@7e89e00c5619374a1da8c2e876309d8b15ff0559 # v11.0.3
+      - uses: ansys/actions/doc-style@21c78f8b27683ae8c93557345392abe39ab21d2f # v11.0.4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           vale-version: "3.4.1"
@@ -99,7 +99,7 @@ jobs:
         python-version: ["3.10", "3.11", "3.12", "3.13", "3.14"]
     steps:
       - name: Build wheelhouse and perform smoke test
-        uses: ansys/actions/build-wheelhouse@7e89e00c5619374a1da8c2e876309d8b15ff0559 # v11.0.3
+        uses: ansys/actions/build-wheelhouse@21c78f8b27683ae8c93557345392abe39ab21d2f # v11.0.4
         with:
           library-name: ${{ env.LIBRARY_NAME }}
           operating-system: ${{ matrix.os }}
@@ -497,7 +497,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: [doc-build, tests]
     steps:
-      - uses: ansys/actions/build-library@7e89e00c5619374a1da8c2e876309d8b15ff0559 # v11.0.3
+      - uses: ansys/actions/build-library@21c78f8b27683ae8c93557345392abe39ab21d2f # v11.0.4
         with:
           library-name: ${{ env.LIBRARY_NAME }}
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
@@ -511,7 +511,7 @@ jobs:
     needs: [build-library]
     if: github.ref == 'refs/heads/main'
     steps:
-      - uses: ansys/actions/doc-deploy-dev@7e89e00c5619374a1da8c2e876309d8b15ff0559 # v11.0.3
+      - uses: ansys/actions/doc-deploy-dev@21c78f8b27683ae8c93557345392abe39ab21d2f # v11.0.4
         with:
           doc-artifact-name: "HTML-Documentation-tag-${{ env.DOC_DEPLOYMENT_IMAGE_TAG }}"
           decompress-artifact: true
@@ -548,7 +548,7 @@ jobs:
           skip-existing: false
 
       - name: Release to GitHub releases
-        uses: softprops/action-gh-release@3d0d9888cb7fd7b750713d6e236d1fcb99157228 # v3.0.2
+        uses: softprops/action-gh-release@efb35369e0ad2afab669f228072c1b0d510eae64 # v3.0.3
         with:
           files: |
             ./**/*.whl
@@ -563,7 +563,7 @@ jobs:
     needs: [release]
     if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v') && !contains(github.ref, 'dev')
     steps:
-      - uses: ansys/actions/doc-deploy-stable@7e89e00c5619374a1da8c2e876309d8b15ff0559 # v11.0.3
+      - uses: ansys/actions/doc-deploy-stable@21c78f8b27683ae8c93557345392abe39ab21d2f # v11.0.4
         with:
           doc-artifact-name: HTML-Documentation-tag-${{ env.DOC_DEPLOYMENT_IMAGE_TAG }}
           decompress-artifact: true
