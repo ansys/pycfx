@@ -70,7 +70,8 @@ def test_workflow(pypre: PreProcessing, pytestconfig):
 
     pypre.file.new_case()
 
-    mesh_file_path_engine = Path(generated_path_engine) / Path(mesh_file_path_client).name
+    mesh_file_relative_path = Path(mesh_file_path_client).relative_to(generated_path_client)
+    mesh_file_path_engine = Path(generated_path_engine) / mesh_file_relative_path
     pypre.file.import_mesh(file_name=str(mesh_file_path_engine))
 
     default_domain = pypre.setup.flow["Flow Analysis 1"].domain["Default Domain"]
