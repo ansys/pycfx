@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_x_variable:
+
+x_variable
+==========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.x_variable.x_variable
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================================   ==========================================
+
+Parent                                                                                                         Summary
+
+=========================================================================   ==========================================
+:ref:`particle_histogram_child <pre_processing_particle_histogram_child>`   'child_object_type' of particle_histogram.
+
+:ref:`operating_map_child <pre_processing_operating_map_child>`                  'child_object_type' of operating_map.
+
+=========================================================================   ==========================================
+

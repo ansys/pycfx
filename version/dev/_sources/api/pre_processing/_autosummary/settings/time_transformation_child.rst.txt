@@ -1,0 +1,56 @@
+:orphan:
+
+.. _pre_processing_time_transformation_child:
+
+time_transformation_child
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.time_transformation_child.time_transformation_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================================================   =====================================================
+
+Attribute                                                                                                                                                 Summary
+
+=========================================================================================================   =====================================================
+:ref:`option <pre_processing_option_436>`                                                                                       The 'Time Transformation' option.
+
+:ref:`domain_interface <pre_processing_domain_interface_1>`                                                                         'Domain Interface' parameter.
+
+:ref:`domain_name <pre_processing_domain_name_1>`                                                                                        'Domain Name' parameter.
+
+:ref:`signal_speed <pre_processing_signal_speed>`                                                                                       'Signal Speed' parameter.
+
+:ref:`pitch_length <pre_processing_pitch_length>`                                                                                                   Pitch length.
+
+:ref:`number_of_passages <pre_processing_number_of_passages>`                                                                     'Number of Passages' parameter.
+
+:ref:`external_pitch_length <pre_processing_external_pitch_length>`                                                                                 Pitch length.
+
+:ref:`external_number_of_passages <pre_processing_external_number_of_passages>`                                          'External Number of Passages' parameter.
+
+:ref:`external_number_of_passages_in_360 <pre_processing_external_number_of_passages_in_360>`                     'External Number of Passages in 360' parameter.
+
+:ref:`external_number_of_passages_in_component <pre_processing_external_number_of_passages_in_component>`   'External Number of Passages in Component' parameter.
+
+:ref:`time_transformation_side_1 <pre_processing_time_transformation_side_1>`                                                'TIME TRANSFORMATION SIDE 1' object.
+
+:ref:`time_transformation_side_2 <pre_processing_time_transformation_side_2>`                                                'TIME TRANSFORMATION SIDE 2' object.
+
+:ref:`signal_motion <pre_processing_signal_motion>`                                                                                       'SIGNAL MOTION' object.
+
+=========================================================================================================   =====================================================
+
+.. rubric:: Included in:
+
+===============================================================   ============================================
+
+Parent                                                                                                 Summary
+
+===============================================================   ============================================
+:ref:`time_transformation <pre_processing_time_transformation>`   A container for Time Transformation objects.
+
+===============================================================   ============================================
+

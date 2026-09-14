@@ -1,0 +1,52 @@
+:orphan:
+
+.. _pre_processing_zero_pressure_coefficients:
+
+zero_pressure_coefficients
+==========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.zero_pressure_coefficients.zero_pressure_coefficients
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================================   ===================================================================================================
+
+Attribute                                                                                                                                                                     Summary
+
+===============================================================================   ===================================================================================================
+:ref:`option <pre_processing_option_15>`                                                                                                     The 'Zero Pressure Coefficients' option.
+
+:ref:`zero_pressure_a1 <pre_processing_zero_pressure_a1>`                                                                                               'Zero Pressure a1' parameter.
+
+:ref:`zero_pressure_a2 <pre_processing_zero_pressure_a2>`                                                                                               'Zero Pressure a2' parameter.
+
+:ref:`zero_pressure_a3 <pre_processing_zero_pressure_a3>`                                                                                               'Zero Pressure a3' parameter.
+
+:ref:`zero_pressure_a4 <pre_processing_zero_pressure_a4>`                                                                                               'Zero Pressure a4' parameter.
+
+:ref:`zero_pressure_a5 <pre_processing_zero_pressure_a5>`                                                                                               'Zero Pressure a5' parameter.
+
+:ref:`minimum_temperature <pre_processing_minimum_temperature>`                                                                                      'Minimum Temperature' parameter.
+
+:ref:`maximum_temperature <pre_processing_maximum_temperature>`                                                                                      'Maximum Temperature' parameter.
+
+:ref:`temperature_limits <pre_processing_temperature_limits>`                     Specifies temperature limits for the lower and upper regions of a NASA SP-273 format Cp polynomial.
+
+:ref:`upper_interval_coefficients <pre_processing_upper_interval_coefficients>`            Specifies polynomial coefficients for NASA upper temperature interval, NASA SP-273 format.
+
+:ref:`lower_interval_coefficients <pre_processing_lower_interval_coefficients>`            Specifies polynomial coefficients for NASA lower temperature interval, NASA SP-273 format.
+
+===============================================================================   ===================================================================================================
+
+.. rubric:: Included in:
+
+=======================================================================   ===================================================
+
+Parent                                                                                                                Summary
+
+=======================================================================   ===================================================
+:ref:`specific_heat_capacity <pre_processing_specific_heat_capacity_1>`   Specifies how specific heat capacity is calculated.
+
+=======================================================================   ===================================================
+

@@ -1,0 +1,48 @@
+:orphan:
+
+.. _pre_processing_interface_conditions_child:
+
+interface_conditions_child
+==========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.interface_conditions_child.interface_conditions_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================   =================================================================================================
+
+Attribute                                                                                                                                                     Summary
+
+=================================================================   =================================================================================================
+:ref:`boundary_type <pre_processing_boundary_type>`                                                                                                    Boundary Type.
+
+:ref:`mesh_motion <pre_processing_mesh_motion_1>`                                    Defines the motion of a mesh boundary. NOTE - Not fully supported by the solver.
+
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum_1>`                                                Specifies conditions on Mass and Momentum at a boundary.
+
+:ref:`turbulence <pre_processing_turbulence_1>`                                                                          Sets conditions on turbulence at a boundary.
+
+:ref:`wall_roughness <pre_processing_wall_roughness>`                                                               Sets wall roughness on a wall boundary condition.
+
+:ref:`heat_transfer <pre_processing_heat_transfer_1>`                                                               Specifies heat transfer conditions at a boundary.
+
+:ref:`additional_variable <pre_processing_additional_variable_5>`                                                        A container for Additional Variable objects.
+
+:ref:`electric_field <pre_processing_electric_field>`                                                                                        'ELECTRIC FIELD' object.
+
+:ref:`wall_contact_model <pre_processing_wall_contact_model>`       Specifies model for fluid-wall contact and bulk boundary conditions at walls in multi-fluid flow.
+
+=================================================================   =================================================================================================
+
+.. rubric:: Included in:
+
+=================================================================   =============================================
+
+Parent                                                                                                    Summary
+
+=================================================================   =============================================
+:ref:`interface_conditions <pre_processing_interface_conditions>`   A container for Interface Conditions objects.
+
+=================================================================   =============================================
+

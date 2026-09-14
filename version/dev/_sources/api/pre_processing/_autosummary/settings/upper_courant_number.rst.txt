@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_upper_courant_number:
+
+upper_courant_number
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.upper_courant_number.upper_courant_number
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================================   ==============================================
+
+Parent                                                                                                             Summary
+
+=========================================================================   ==============================================
+:ref:`timestep_initialisation <pre_processing_timestep_initialisation>`     Defines the timestep initialisation procedure.
+
+:ref:`timestep_initialisation <pre_processing_timestep_initialisation_1>`   Defines the timestep initialisation procedure.
+
+=========================================================================   ==============================================
+

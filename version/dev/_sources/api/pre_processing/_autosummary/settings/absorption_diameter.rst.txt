@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_absorption_diameter:
+
+absorption_diameter
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.absorption_diameter.absorption_diameter
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================   =================================================
+
+Parent                                                                                                      Summary
+
+===============================================================   =================================================
+:ref:`particle_absorption <pre_processing_particle_absorption>`   Specifies the particle absorption in sub-domains.
+
+===============================================================   =================================================
+

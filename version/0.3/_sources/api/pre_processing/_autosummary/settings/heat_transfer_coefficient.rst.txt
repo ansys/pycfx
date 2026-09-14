@@ -1,0 +1,37 @@
+:orphan:
+
+.. _pre_processing_heat_transfer_coefficient:
+
+heat_transfer_coefficient
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.heat_transfer_coefficient.heat_transfer_coefficient
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================================   ============================================================================================
+
+Parent                                                                                                                                                                         Summary
+
+=======================================================================================   ============================================================================================
+:ref:`interphase_heat_transfer <pre_processing_interphase_heat_transfer>`                                                          Specifies heat transfer model between a fluid pair.
+
+:ref:`tube_heat_transfer_coefficient <pre_processing_tube_heat_transfer_coefficient>`                                                         Specifies tube side heat transfer model.
+
+:ref:`shell_heat_transfer_coefficient <pre_processing_shell_heat_transfer_coefficient>`                                                Specifies shell side heat transfer coefficient.
+
+:ref:`overall_heat_transfer_model <pre_processing_overall_heat_transfer_model>`              Specifies overall heat transfer model: the solver only supports Thermal Resistance Model.
+
+:ref:`fluid_solid_heat_transfer <pre_processing_fluid_solid_heat_transfer>`               Specifies heat transfer model between the solid and the fluid phases inside a porous domain.
+
+:ref:`heat_transfer <pre_processing_heat_transfer>`                                                                                  Specifies heat transfer conditions at a boundary.
+
+:ref:`heat_transfer <pre_processing_heat_transfer_1>`                                                                                Specifies heat transfer conditions at a boundary.
+
+:ref:`heat_transfer <pre_processing_heat_transfer_2>`                                                                                Specifies heat transfer conditions at a boundary.
+
+:ref:`heat_transfer <pre_processing_heat_transfer_3>`                                                                                Specifies heat transfer conditions at a boundary.
+
+=======================================================================================   ============================================================================================
+

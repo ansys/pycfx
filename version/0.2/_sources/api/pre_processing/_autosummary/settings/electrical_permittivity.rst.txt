@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_electrical_permittivity:
+
+electrical_permittivity
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.electrical_permittivity.electrical_permittivity
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================================   ========================================================================
+
+Parent                                                                                                                                       Summary
+
+=========================================================================   ========================================================================
+:ref:`electrical_permittivity <pre_processing_electrical_permittivity_1>`   Hold the details for an advanced description of Electrical Permittivity.
+
+=========================================================================   ========================================================================
+

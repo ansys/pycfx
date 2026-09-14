@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_line_averaging_child:
+
+line_averaging_child
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.line_averaging_child.line_averaging_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================================   ===================================================================
+
+Attribute                                                                                                                                               Summary
+
+=========================================================================================   ===================================================================
+:ref:`line_averaging_distance_fraction <pre_processing_line_averaging_distance_fraction>`   Determines what fraction of line used for computing a line average.
+
+:ref:`line_variables_list <pre_processing_line_variables_list>`                                    Provides a list of variables to be made available on a line.
+
+=========================================================================================   ===================================================================
+
+.. rubric:: Included in:
+
+=====================================================   =======================================
+
+Parent                                                                                  Summary
+
+=====================================================   =======================================
+:ref:`line_averaging <pre_processing_line_averaging>`   A container for Line Averaging objects.
+
+=====================================================   =======================================
+

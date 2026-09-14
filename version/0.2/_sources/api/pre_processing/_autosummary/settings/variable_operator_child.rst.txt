@@ -1,0 +1,70 @@
+:orphan:
+
+.. _pre_processing_variable_operator_child:
+
+variable_operator_child
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.variable_operator_child.variable_operator_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================   ====================================================
+
+Attribute                                                                                                              Summary
+
+=======================================================================   ====================================================
+:ref:`option <pre_processing_option_2>`                                                        The 'Variable Operator' option.
+
+:ref:`variable_class <pre_processing_variable_class>`                                                   Solver variable class.
+
+:ref:`default_vulnerability <pre_processing_default_vulnerability>`       Default vulnerability for non-permanent solver data.
+
+:ref:`mms_name <pre_processing_mms_name>`                                                                'MMS Name' parameter.
+
+:ref:`status <pre_processing_status>`                                                                      'Status' parameter.
+
+:ref:`under_relaxation_factor <pre_processing_under_relaxation_factor>`                   'Under Relaxation Factor' parameter.
+
+:ref:`component_short_names <pre_processing_component_short_names>`                         'Component Short Names' parameter.
+
+:ref:`component_long_names <pre_processing_component_long_names>`                            'Component Long Names' parameter.
+
+:ref:`component_mms_names <pre_processing_component_mms_names>`                               'Component MMS Names' parameter.
+
+:ref:`dimensions_modifier <pre_processing_dimensions_modifier>`                               'Dimensions Modifier' parameter.
+
+:ref:`cel_availability <pre_processing_cel_availability>`                                        'CEL Availability' parameter.
+
+:ref:`general_availability <pre_processing_general_availability>`                            'General Availability' parameter.
+
+:ref:`object_availability <pre_processing_object_availability>`                               'Object Availability' parameter.
+
+:ref:`physical_availability <pre_processing_physical_availability>`                         'Physical Availability' parameter.
+
+:ref:`variable_description <pre_processing_variable_description>`                            'Variable Description' parameter.
+
+:ref:`variable_scope <pre_processing_variable_scope>`                                              'Variable Scope' parameter.
+
+:ref:`long_name <pre_processing_long_name>`                                                             'Long Name' parameter.
+
+:ref:`tensor_type <pre_processing_tensor_type>`                                                       'Tensor Type' parameter.
+
+:ref:`user_level <pre_processing_user_level>`                                                          'User Level' parameter.
+
+:ref:`output_to_postprocessor <pre_processing_output_to_postprocessor>`                   'Output to Postprocessor' parameter.
+
+=======================================================================   ====================================================
+
+.. rubric:: Included in:
+
+===========================================================   ==========================================
+
+Parent                                                                                           Summary
+
+===========================================================   ==========================================
+:ref:`variable_operator <pre_processing_variable_operator>`   A container for Variable Operator objects.
+
+===========================================================   ==========================================
+

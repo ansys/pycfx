@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_pipe_pitch:
+
+pipe_pitch
+==========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.pipe_pitch.pipe_pitch
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   =============================
+
+Parent                                                                                Summary
+
+=============================================================   =============================
+:ref:`pipe_configuration <pre_processing_pipe_configuration>`   Specifies tube configuration.
+
+=============================================================   =============================
+

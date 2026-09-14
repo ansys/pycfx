@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_multipass_partitioning_option:
+
+multipass_partitioning_option
+=============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.multipass_partitioning_option.multipass_partitioning_option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ===========================
+
+Parent                                                                            Summary
+
+===========================================================   ===========================
+:ref:`partitioning_type <pre_processing_partitioning_type>`   'PARTITIONING TYPE' object.
+
+===========================================================   ===========================
+

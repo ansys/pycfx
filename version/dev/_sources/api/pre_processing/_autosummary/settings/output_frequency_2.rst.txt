@@ -1,0 +1,46 @@
+:orphan:
+
+.. _pre_processing_output_frequency_2:
+
+output_frequency
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.output_frequency_2.output_frequency
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================   ===============================
+
+Attribute                                                                               Summary
+
+=============================================================   ===============================
+:ref:`option <pre_processing_option_386>`                        The 'Output Frequency' option.
+
+:ref:`iteration_interval <pre_processing_iteration_interval>`   'Iteration Interval' parameter.
+
+:ref:`iteration_list <pre_processing_iteration_list>`               'Iteration List' parameter.
+
+:ref:`timestep_interval <pre_processing_timestep_interval>`      'Timestep Interval' parameter.
+
+:ref:`timestep_list <pre_processing_timestep_list>`                  'Timestep List' parameter.
+
+:ref:`time_interval <pre_processing_time_interval>`                  'Time Interval' parameter.
+
+:ref:`time_list <pre_processing_time_list>`                              'Time List' parameter.
+
+=============================================================   ===============================
+
+.. rubric:: Included in:
+
+=========================================================================   ==========================================
+
+Parent                                                                                                         Summary
+
+=========================================================================   ==========================================
+:ref:`monitor_surface_child <pre_processing_monitor_surface_child>`            'child_object_type' of monitor_surface.
+
+:ref:`monitor_line_cloud_child <pre_processing_monitor_line_cloud_child>`   'child_object_type' of monitor_line_cloud.
+
+=========================================================================   ==========================================
+

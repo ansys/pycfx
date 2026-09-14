@@ -1,0 +1,52 @@
+:orphan:
+
+.. _pre_processing_injection_velocity:
+
+injection_velocity
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.injection_velocity.injection_velocity
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================================   =======================================================================================================
+
+Attribute                                                                                                                                                                           Summary
+
+=================================================================================   =======================================================================================================
+:ref:`option <pre_processing_option_223>`                                                                                                                  The 'Injection Velocity' option.
+
+:ref:`injection_velocity_magnitude <pre_processing_injection_velocity_magnitude>`                                                                 'Injection Velocity Magnitude' parameter.
+
+:ref:`cone_angle <pre_processing_cone_angle>`                                                                                                                       'Cone Angle' parameter.
+
+:ref:`u <pre_processing_u>`                                                                                                                                                  'U' parameter.
+
+:ref:`v <pre_processing_v>`                                                                                                                                                  'V' parameter.
+
+:ref:`w <pre_processing_w>`                                                                                                                                                  'W' parameter.
+
+:ref:`velocity_axial_component <pre_processing_velocity_axial_component>`                                                                             'Velocity Axial Component' parameter.
+
+:ref:`velocity_r_component <pre_processing_velocity_r_component>`                                                                                         'Velocity r Component' parameter.
+
+:ref:`velocity_theta_component <pre_processing_velocity_theta_component>`                                                                             'Velocity Theta Component' parameter.
+
+:ref:`axis_definition <pre_processing_axis_definition>`                             Defines the axis for a cylindrical coordinate system or variables defined using cylindrical components.
+
+:ref:`dispersion_angle <pre_processing_dispersion_angle_1>`                                                                                                      'DISPERSION ANGLE' object.
+
+=================================================================================   =======================================================================================================
+
+.. rubric:: Included in:
+
+=========================================================   =============================
+
+Parent                                                                            Summary
+
+=========================================================   =============================
+:ref:`injection_method <pre_processing_injection_method>`   Defines the injection method.
+
+=========================================================   =============================
+

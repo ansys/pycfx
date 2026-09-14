@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_current_case_list:
+
+current_case_list
+=================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.current_case_list.current_case_list
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+================================================   ======================================================================================================================
+
+Parent                                                                                                                                                            Summary
+
+================================================   ======================================================================================================================
+:ref:`data_reader <post_processing_data_reader>`   This object contains the settings used to read results files into the post-processor. It is used by the "load" action.
+
+================================================   ======================================================================================================================
+

@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_threading_control:
+
+threading_control
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.threading_control.threading_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================================   ====================================
+
+Attribute                                                                                                    Summary
+
+=============================================================================   ====================================
+:ref:`enabled <pre_processing_enabled_234>`                                     Enable the THREADING CONTROL object.
+
+:ref:`option <pre_processing_option_461>`                                            The 'Threading Control' option.
+
+:ref:`number_of_threads <pre_processing_number_of_threads>`                            Number of threads to be used.
+
+:ref:`hardware_capacity_fraction <pre_processing_hardware_capacity_fraction>`            Hardware capacity fraction.
+
+=============================================================================   ====================================
+
+.. rubric:: Included in:
+
+===========================================================================   ===================================
+
+Parent                                                                                                    Summary
+
+===========================================================================   ===================================
+:ref:`interpolator_step_control <pre_processing_interpolator_step_control>`   'INTERPOLATOR STEP CONTROL' object.
+
+===========================================================================   ===================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_path_stack:
+
+path_stack
+==========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.path_stack.path_stack
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+========================================================   ============================================================================
+
+Parent                                                                                                                          Summary
+
+========================================================   ============================================================================
+:ref:`file_processing <post_processing_file_processing>`   Stores parameters indicating the state of processing state or session files.
+
+========================================================   ============================================================================
+

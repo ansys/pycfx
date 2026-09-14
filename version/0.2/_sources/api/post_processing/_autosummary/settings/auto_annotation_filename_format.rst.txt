@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_auto_annotation_filename_format:
+
+auto_annotation_filename_format
+===============================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.auto_annotation_filename_format.auto_annotation_filename_format
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+========================================================   =================================
+
+Parent                                                                               Summary
+
+========================================================   =================================
+:ref:`text_item_child <post_processing_text_item_child>`   'child_object_type' of text_item.
+
+========================================================   =================================
+

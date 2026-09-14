@@ -1,0 +1,42 @@
+:orphan:
+
+.. _pre_processing_heat_transfer_3:
+
+heat_transfer
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.heat_transfer_3.heat_transfer
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================   ======================================
+
+Attribute                                                                                                    Summary
+
+===========================================================================   ======================================
+:ref:`option <pre_processing_option_284>`                                                The 'Heat Transfer' option.
+
+:ref:`fixed_temperature <pre_processing_fixed_temperature>`                           'Fixed Temperature' parameter.
+
+:ref:`heat_flux_in <pre_processing_heat_flux_in>`                                          'Heat Flux in' parameter.
+
+:ref:`heat_transfer_coefficient <pre_processing_heat_transfer_coefficient>`   'Heat Transfer Coefficient' parameter.
+
+:ref:`outside_temperature <pre_processing_outside_temperature>`                     'Outside Temperature' parameter.
+
+===========================================================================   ======================================
+
+.. rubric:: Included in:
+
+=================================================================   =============================================================
+
+Parent                                                                                                                    Summary
+
+=================================================================   =============================================================
+:ref:`boundary_conditions <pre_processing_boundary_conditions_3>`   Specifies boundary conditions for all equations being solved.
+
+:ref:`boundary_conditions <pre_processing_boundary_conditions_7>`   Specifies boundary conditions for all equations being solved.
+
+=================================================================   =============================================================
+

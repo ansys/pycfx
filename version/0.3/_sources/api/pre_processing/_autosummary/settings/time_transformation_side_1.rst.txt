@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_time_transformation_side_1:
+
+time_transformation_side_1
+==========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.time_transformation_side_1.time_transformation_side_1
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================   ========================================
+
+Attribute                                                                            Summary
+
+=================================================   ========================================
+:ref:`option <pre_processing_option_437>`           The 'Time Transformation Side 1' option.
+
+:ref:`domain_name <pre_processing_domain_name_1>`                   'Domain Name' parameter.
+
+=================================================   ========================================
+
+.. rubric:: Included in:
+
+===========================================================================   ===========================================
+
+Parent                                                                                                            Summary
+
+===========================================================================   ===========================================
+:ref:`time_transformation_child <pre_processing_time_transformation_child>`   'child_object_type' of time_transformation.
+
+===========================================================================   ===========================================
+

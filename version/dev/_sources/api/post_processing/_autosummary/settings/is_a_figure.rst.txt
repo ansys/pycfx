@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_is_a_figure:
+
+is_a_figure
+===========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.is_a_figure.is_a_figure
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==============================================   ============================
+
+Parent                                                                Summary
+
+==============================================   ============================
+:ref:`view_child <post_processing_view_child>`   'child_object_type' of view.
+
+==============================================   ============================
+

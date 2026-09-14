@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_copy_data_into_setup:
+
+copy_data_into_setup
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.copy_data_into_setup.copy_data_into_setup
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================   =====================
+
+Parent                                                            Summary
+
+=================================================   =====================
+:ref:`data_source <pre_processing_data_source>`     'DATA SOURCE' object.
+
+:ref:`data_source <pre_processing_data_source_1>`   'DATA SOURCE' object.
+
+=================================================   =====================
+

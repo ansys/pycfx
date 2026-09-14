@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_g_variance:
+
+g_variance
+==========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.g_variance.g_variance
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================   =================================================
+
+Parent                                                                                      Summary
+
+===============================================   =================================================
+:ref:`g_scalar <pre_processing_g_scalar_1>`       Sets boundary or initial conditions for G Scalar.
+
+:ref:`g_variance <pre_processing_g_variance_1>`             Sets initial conditions for G Variance.
+
+===============================================   =================================================
+

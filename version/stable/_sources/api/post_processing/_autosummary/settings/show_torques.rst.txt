@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_show_torques:
+
+show_torques
+============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.show_torques.show_torques
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==========================================================================   =================================
+
+Parent                                                                                                 Summary
+
+==========================================================================   =================================
+:ref:`solution_summary_options <post_processing_solution_summary_options>`   'solution_summary_options' child.
+
+==========================================================================   =================================
+

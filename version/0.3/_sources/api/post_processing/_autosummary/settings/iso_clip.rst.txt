@@ -1,0 +1,26 @@
+:orphan:
+
+.. _post_processing_iso_clip:
+
+iso_clip
+========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.iso_clip.iso_clip
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`iso_clip_child <post_processing_iso_clip_child>`
+
+
+.. rubric:: Included in:
+
+========================================   =========================================
+
+Parent                                                                       Summary
+
+========================================   =========================================
+:ref:`results <post_processing_results>`   Encapsulates a CFX post-processing setup.
+
+========================================   =========================================
+

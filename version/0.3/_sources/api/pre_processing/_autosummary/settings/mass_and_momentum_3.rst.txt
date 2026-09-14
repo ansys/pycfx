@@ -1,0 +1,58 @@
+:orphan:
+
+.. _pre_processing_mass_and_momentum_3:
+
+mass_and_momentum
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.mass_and_momentum_3.mass_and_momentum
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================================   ================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                    Summary
+
+=================================================================================   ================================================================================================================================================
+:ref:`option <pre_processing_option_269>`                                                                                                                                                            The 'Mass And Momentum' option.
+
+:ref:`u <pre_processing_u>`                                                                                                                                                                                           'U' parameter.
+
+:ref:`v <pre_processing_v>`                                                                                                                                                                                           'V' parameter.
+
+:ref:`w <pre_processing_w>`                                                                                                                                                                                           'W' parameter.
+
+:ref:`velocity_axial_component <pre_processing_velocity_axial_component>`                                                                                                                      'Velocity Axial Component' parameter.
+
+:ref:`velocity_r_component <pre_processing_velocity_r_component>`                                                                                                                                  'Velocity r Component' parameter.
+
+:ref:`velocity_theta_component <pre_processing_velocity_theta_component>`                                                                                                                      'Velocity Theta Component' parameter.
+
+:ref:`normal_speed <pre_processing_normal_speed>`                                                                                                                                                          'Normal Speed' parameter.
+
+:ref:`wall_velocity_relative_to <pre_processing_wall_velocity_relative_to>`         Sets whether wall velocities are evaluated relative to the specified boundary frame or the mesh motion. This is only used for moving mesh cases.
+
+:ref:`include_normal_viscous_force <pre_processing_include_normal_viscous_force>`                                                                                  Indicates whether normal viscous force is included at slip walls.
+
+:ref:`slip_model <pre_processing_slip_model>`                                                                                                                                                           Specifies a wall slip model.
+
+:ref:`wall_velocity <pre_processing_wall_velocity>`                                                                                                                                        Specifies the velocity of a no-slip wall.
+
+:ref:`turbulent_wall_functions <pre_processing_turbulent_wall_functions_2>`                                                                                                    Sets the turbulent near-wall treatment at a boundary.
+
+=================================================================================   ================================================================================================================================================
+
+.. rubric:: Included in:
+
+===============================================================================   =============================================================
+
+Parent                                                                                                                                  Summary
+
+===============================================================================   =============================================================
+:ref:`interface_conditions_child <pre_processing_interface_conditions_child_1>`                    'child_object_type' of interface_conditions.
+
+:ref:`boundary_conditions <pre_processing_boundary_conditions_6>`                 Specifies boundary conditions for all equations being solved.
+
+===============================================================================   =============================================================
+

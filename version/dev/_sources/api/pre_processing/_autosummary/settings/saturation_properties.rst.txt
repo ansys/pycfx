@@ -1,0 +1,46 @@
+:orphan:
+
+.. _pre_processing_saturation_properties:
+
+saturation_properties
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.saturation_properties.saturation_properties
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================   =========================================================================
+
+Attribute                                                                                                                       Summary
+
+===========================================================   =========================================================================
+:ref:`option <pre_processing_option_30>`                                                            The 'Saturation Properties' option.
+
+:ref:`real_gas_model <pre_processing_real_gas_model>`                                           Sets real gas equation of state to use.
+
+:ref:`table_format <pre_processing_table_format>`                              Type of table format for specifying material properties.
+
+:ref:`table_name <pre_processing_table_name>`                   Path and name of the file which contains tables of material properties.
+
+:ref:`component_name <pre_processing_component_name>`                                                       'Component Name' parameter.
+
+:ref:`pressure <pre_processing_pressure>`                     Defines the Saturation Pressure used in a multiphase mass transfer model.
+
+:ref:`temperature <pre_processing_temperature_1>`                                            Defines the initialization of Temperature.
+
+:ref:`table_generation <pre_processing_table_generation_1>`                                                  'TABLE GENERATION' object.
+
+===========================================================   =========================================================================
+
+.. rubric:: Included in:
+
+=====================================================   ================================
+
+Parent                                                                           Summary
+
+=====================================================   ================================
+:ref:`material_child <pre_processing_material_child>`   'child_object_type' of material.
+
+=====================================================   ================================
+

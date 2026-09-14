@@ -1,0 +1,49 @@
+:orphan:
+
+.. _post_processing_keyframe_child:
+
+keyframe_child
+==============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.keyframe_child.keyframe_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+============================================================   ===================================================================================
+
+Attribute                                                                                                                                  Summary
+
+============================================================   ===================================================================================
+:ref:`keyframe_filename <post_processing_keyframe_filename>`         A string containing the name of the state file associated with this keyframe.
+
+:ref:`keyframe_name <post_processing_keyframe_name>`                          A string containing the name of the keyframe to display to the user.
+
+:ref:`number_of_frames <post_processing_number_of_frames>`     The number of frames in the animation to insert between this keyframe and the next.
+
+============================================================   ===================================================================================
+
+.. rubric:: Methods
+
+============================================   ========================================
+
+Method                                                                          Summary
+
+============================================   ========================================
+:ref:`suspend <post_processing_suspend>`       Suspend immediate update for the object.
+
+:ref:`unsuspend <post_processing_unsuspend>`   Restore immediate update for the object.
+
+============================================   ========================================
+
+.. rubric:: Included in:
+
+==========================================   =================
+
+Parent                                                 Summary
+
+==========================================   =================
+:ref:`keyframe <post_processing_keyframe>`   'keyframe' child.
+
+==========================================   =================
+

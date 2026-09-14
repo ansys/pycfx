@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_mode_shape:
+
+mode_shape
+==========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.mode_shape.mode_shape
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`mode_shape_child <pre_processing_mode_shape_child>`
+
+
+.. rubric:: Included in:
+
+=====================================================================   ==========================
+
+Parent                                                                                     Summary
+
+=====================================================================   ==========================
+:ref:`mode_shape_definitions <pre_processing_mode_shape_definitions>`   Container for Mode Shapes.
+
+=====================================================================   ==========================
+

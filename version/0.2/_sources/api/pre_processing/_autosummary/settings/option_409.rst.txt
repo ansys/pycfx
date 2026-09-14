@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_409:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_409.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ==========================================================================
+
+Parent                                                                                                                           Summary
+
+===========================================================   ==========================================================================
+:ref:`monitor_particles <pre_processing_monitor_particles>`   Defines the extent of particle tracking data recorded in the monitor file.
+
+===========================================================   ==========================================================================
+

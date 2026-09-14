@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_353:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_353.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================================   ================================================
+
+Parent                                                                                                               Summary
+
+=========================================================================   ================================================
+:ref:`momentum_interface_model <pre_processing_momentum_interface_model>`   Momentum transfer models for a domain interface.
+
+=========================================================================   ================================================
+

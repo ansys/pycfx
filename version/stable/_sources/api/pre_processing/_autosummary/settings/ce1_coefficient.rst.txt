@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_ce1_coefficient:
+
+ce1_coefficient
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.ce1_coefficient.ce1_coefficient
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================================   ===============================================================================================
+
+Parent                                                                                                                                                              Summary
+
+=========================================================================   ===============================================================================================
+:ref:`epsilon_coefficients <pre_processing_epsilon_coefficients>`                       Controls model coefficients for the Turbulence Eddy Dissipation transport equation.
+
+:ref:`rng_epsilon_coefficients <pre_processing_rng_epsilon_coefficients>`   Controls model coefficients for the Turbulence Eddy Dissipation transport equation (RNG model).
+
+=========================================================================   ===============================================================================================
+

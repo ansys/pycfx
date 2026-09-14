@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_boundary_profile:
+
+boundary_profile
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.boundary_profile.boundary_profile
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================   ===================================================
+
+Attribute                                                                                             Summary
+
+=======================================================   ===================================================
+:ref:`profile_name <pre_processing_profile_name>`                                   'Profile Name' parameter.
+
+:ref:`generate_values <pre_processing_generate_values>`   Causes the values for Profile BCs to be calculated.
+
+=======================================================   ===================================================
+
+.. rubric:: Included in:
+
+=====================================================   ================================
+
+Parent                                                                           Summary
+
+=====================================================   ================================
+:ref:`boundary_child <pre_processing_boundary_child>`   'child_object_type' of boundary.
+
+=====================================================   ================================
+

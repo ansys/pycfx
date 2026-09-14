@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_high_wave_number_damping:
+
+high_wave_number_damping
+========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.high_wave_number_damping.high_wave_number_damping
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================   =============================================================================================
+
+Attribute                                                                                                                                               Summary
+
+===============================================================   =============================================================================================
+:ref:`enabled <pre_processing_enabled_45>`                                                                          Enable the HIGH WAVE NUMBER DAMPING object.
+
+:ref:`option <pre_processing_option_119>`                                                                                The 'High Wave Number Damping' option.
+
+:ref:`limiter_coefficient <pre_processing_limiter_coefficient>`   Coefficient for the low limit of the von Karman length scale in the SST-SAS turbulence model.
+
+===============================================================   =============================================================================================
+
+.. rubric:: Included in:
+
+=========================================================   ========================================================
+
+Parent                                                                                                       Summary
+
+=========================================================   ========================================================
+:ref:`sas_coefficients <pre_processing_sas_coefficients>`   Parameters of the SAS source term in the omega equation.
+
+=========================================================   ========================================================
+

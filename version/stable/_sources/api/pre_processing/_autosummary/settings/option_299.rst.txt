@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_299:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_299.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ===============================================================================================================
+
+Parent                                                                                                                                                                Summary
+
+===========================================================   ===============================================================================================================
+:ref:`wall_contact_area <pre_processing_wall_contact_area>`   Specifies fluid-wall contact area for a given fluid under the WALL CONTACT MODEL: Option=Specify Area Fraction.
+
+===========================================================   ===============================================================================================================
+

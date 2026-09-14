@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_39:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_39.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================   ==========================================================================
+
+Parent                                                                                                               Summary
+
+===============================================   ==========================================================================
+:ref:`gas_mixture <pre_processing_gas_mixture>`   Material names for components of gas phase used by hydrocarbon fuel model.
+
+===============================================   ==========================================================================
+

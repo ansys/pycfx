@@ -1,0 +1,40 @@
+:orphan:
+
+.. _post_processing_vector_variable_child:
+
+vector_variable_child
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.vector_variable_child.vector_variable_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+========================================================   ============================================================================================
+
+Attribute                                                                                                                                       Summary
+
+========================================================   ============================================================================================
+:ref:`boundary_values <post_processing_boundary_values>`   Sets the type of boundary values to be presented for this variable (Conservative or Hybrid).
+
+:ref:`user_units <post_processing_user_units>`                                                                                      'user_units' child.
+
+:ref:`x_expression <post_processing_x_expression>`                                                                                'x_expression' child.
+
+:ref:`y_expression <post_processing_y_expression>`                                                                                'y_expression' child.
+
+:ref:`z_expression <post_processing_z_expression>`                                                                                'z_expression' child.
+
+========================================================   ============================================================================================
+
+.. rubric:: Included in:
+
+========================================================   ========================
+
+Parent                                                                      Summary
+
+========================================================   ========================
+:ref:`vector_variable <post_processing_vector_variable>`   'vector_variable' child.
+
+========================================================   ========================
+

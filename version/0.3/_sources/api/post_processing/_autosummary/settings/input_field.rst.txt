@@ -1,0 +1,28 @@
+:orphan:
+
+.. _post_processing_input_field:
+
+input_field
+===========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.input_field.input_field
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`input_field_child <post_processing_input_field_child>`
+
+
+.. rubric:: Included in:
+
+==========================================================   =========================================
+
+Parent                                                                                         Summary
+
+==========================================================   =========================================
+:ref:`results <post_processing_results>`                     Encapsulates a CFX post-processing setup.
+
+:ref:`parameterization <post_processing_parameterization>`                   'parameterization' child.
+
+==========================================================   =========================================
+

@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_solid_3:
+
+solid
+=====
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.solid_3.solid
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`solid_child <pre_processing_solid_child_3>`
+
+
+.. rubric:: Included in:
+
+=======================================================   =================================
+
+Parent                                                                              Summary
+
+=======================================================   =================================
+:ref:`subdomain_child <pre_processing_subdomain_child>`   'child_object_type' of subdomain.
+
+=======================================================   =================================
+

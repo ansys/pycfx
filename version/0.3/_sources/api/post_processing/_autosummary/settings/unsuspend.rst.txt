@@ -1,0 +1,177 @@
+:orphan:
+
+.. _post_processing_unsuspend:
+
+unsuspend
+=========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.unsuspend.unsuspend
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==========================================================================================================   =====================================================================================================================================================================================================
+
+Parent                                                                                                                                                                                                                                                                                                     Summary
+
+==========================================================================================================   =====================================================================================================================================================================================================
+:ref:`streamline_child <post_processing_streamline_child>`                                                                                                                                                                                                                      'child_object_type' of streamline.
+
+:ref:`object_view_transform <post_processing_object_view_transform>`                                         This object contains object transformation info to be processed by the viewer. Like instance transform, this object should be associated with each geometry. It is usually specified as a sub-object.
+
+:ref:`text_child <post_processing_text_child>`                                                                                                                                                                                                                                        'child_object_type' of text.
+
+:ref:`text_item_child <post_processing_text_item_child>`                                                                                                                                                                                                                         'child_object_type' of text_item.
+
+:ref:`colour_map_child <post_processing_colour_map_child>`                                                                                                                                                                                                                      'child_object_type' of colour_map.
+
+:ref:`domain_child <post_processing_domain_child>`                                                                                                                                                                                                                                  'child_object_type' of domain.
+
+:ref:`turbo_surface_child <post_processing_turbo_surface_child>`                                                                                                                                                                                                             'child_object_type' of turbo_surface.
+
+:ref:`turbo_line_child <post_processing_turbo_line_child>`                                                                                                                                                                                                                      'child_object_type' of turbo_line.
+
+:ref:`chart_child <post_processing_chart_child>`                                                                                                                                                                                                                                     'child_object_type' of chart.
+
+:ref:`chart_series_child <post_processing_chart_series_child>`                                                                                                                                                                                                                'child_object_type' of chart_series.
+
+:ref:`chart_line_child <post_processing_chart_line_child>`                                                                                                                                                                                                                      'child_object_type' of chart_line.
+
+:ref:`object_report_options <post_processing_object_report_options>`                                                                                                                                                                                      Defines options for the Report, specific to each object.
+
+:ref:`point_child <post_processing_point_child>`                                                                                                                                                                                                                                     'child_object_type' of point.
+
+:ref:`internal_particle_injection_region_child <post_processing_internal_particle_injection_region_child>`                                                                                                                                              'child_object_type' of internal_particle_injection_region.
+
+:ref:`point_cloud_child <post_processing_point_cloud_child>`                                                                                                                                                                                                                   'child_object_type' of point_cloud.
+
+:ref:`particle_cloud_child <post_processing_particle_cloud_child>`                                                                                                                                                                                                          'child_object_type' of particle_cloud.
+
+:ref:`polyline_child <post_processing_polyline_child>`                                                                                                                                                                                                                            'child_object_type' of polyline.
+
+:ref:`particle_track_child <post_processing_particle_track_child>`                                                                                                                                                                                                          'child_object_type' of particle_track.
+
+:ref:`res_particle_track_child <post_processing_res_particle_track_child>`                                                                                                                                                                                              'child_object_type' of res_particle_track.
+
+:ref:`subdomain_child <post_processing_subdomain_child>`                                                                                                                                                                                                                         'child_object_type' of subdomain.
+
+:ref:`primitive2d_child <post_processing_primitive2d_child>`                                                                                                                                                                                                                   'child_object_type' of primitive2d.
+
+:ref:`primitive3d_child <post_processing_primitive3d_child>`                                                                                                                                                                                                                   'child_object_type' of primitive3d.
+
+:ref:`composite_child <post_processing_composite_child>`                                                                                                                                                                                                                         'child_object_type' of composite.
+
+:ref:`composite_periodic_child <post_processing_composite_periodic_child>`                                                                                                                                                                                              'child_object_type' of composite_periodic.
+
+:ref:`composite_inter_block_child <post_processing_composite_inter_block_child>`                                                                                                                                                                                     'child_object_type' of composite_inter_block.
+
+:ref:`boundary_child <post_processing_boundary_child>`                                                                                                                                                                                                                            'child_object_type' of boundary.
+
+:ref:`injection_region_child <post_processing_injection_region_child>`                                                                                                                                                                                                    'child_object_type' of injection_region.
+
+:ref:`res_surface_child <post_processing_res_surface_child>`                                                                                                                                                                                                                   'child_object_type' of res_surface.
+
+:ref:`wireframe_child <post_processing_wireframe_child>`                                                                                                                                                                                                                         'child_object_type' of wireframe.
+
+:ref:`vector_child <post_processing_vector_child>`                                                                                                                                                                                                                                  'child_object_type' of vector.
+
+:ref:`isosurface_child <post_processing_isosurface_child>`                                                                                                                                                                                                                      'child_object_type' of isosurface.
+
+:ref:`iso_clip_child <post_processing_iso_clip_child>`                                                                                                                                                                                                                            'child_object_type' of iso_clip.
+
+:ref:`vortex_core_region_child <post_processing_vortex_core_region_child>`                                                                                                                                                                                              'child_object_type' of vortex_core_region.
+
+:ref:`user_surface_child <post_processing_user_surface_child>`                                                                                                                                                                                                                'child_object_type' of user_surface.
+
+:ref:`plane_child <post_processing_plane_child>`                                                                                                                                                                                                                                     'child_object_type' of plane.
+
+:ref:`clip_plane_child <post_processing_clip_plane_child>`                                                                                                                                                                                                                      'child_object_type' of clip_plane.
+
+:ref:`volume_child <post_processing_volume_child>`                                                                                                                                                                                                                                  'child_object_type' of volume.
+
+:ref:`line_child <post_processing_line_child>`                                                                                                                                                                                                                                        'child_object_type' of line.
+
+:ref:`contour_child <post_processing_contour_child>`                                                                                                                                                                                                                               'child_object_type' of contour.
+
+:ref:`surface_group_child <post_processing_surface_group_child>`                                                                                                                                                                                                             'child_object_type' of surface_group.
+
+:ref:`volume_rendering_child <post_processing_volume_rendering_child>`                                                                                                                                                                                                    'child_object_type' of volume_rendering.
+
+:ref:`surface_of_revolution_child <post_processing_surface_of_revolution_child>`                                                                                                                                                                                     'child_object_type' of surface_of_revolution.
+
+:ref:`tbr_options <post_processing_tbr_options>`                                                                                                                                                                                                                                              'tbr_options' child.
+
+:ref:`operating_points <post_processing_operating_points>`                                                                                                                                                                                                Contains information related to operating point results.
+
+:ref:`view_child <post_processing_view_child>`                                                                                                                                                                                                                                        'child_object_type' of view.
+
+:ref:`camera <post_processing_camera>`                                                                                                                                                                                             Defines a camera that can be used to specify the current view in a VIEW object.
+
+:ref:`table_child <post_processing_table_child>`                                                                                                                                                                                                                                     'child_object_type' of table.
+
+:ref:`comment_child <post_processing_comment_child>`                                                                                                                                                                                                                               'child_object_type' of comment.
+
+:ref:`keyframe_child <post_processing_keyframe_child>`                                                                                                                                                                                                                            'child_object_type' of keyframe.
+
+:ref:`default_instance_transform_child <post_processing_default_instance_transform_child>`                                                                                                                                                                      'child_object_type' of default_instance_transform.
+
+:ref:`instance_transform_child <post_processing_instance_transform_child>`                                                                                                                                                                                              'child_object_type' of instance_transform.
+
+:ref:`legend_child <post_processing_legend_child>`                                                                                                                                                                                                                                  'child_object_type' of legend.
+
+:ref:`default_legend_child <post_processing_default_legend_child>`                                                                                                                                                                                                          'child_object_type' of default_legend.
+
+:ref:`coordinate_frame_child <post_processing_coordinate_frame_child>`                                                                                                                                                                                                    'child_object_type' of coordinate_frame.
+
+:ref:`variable_data_filter_rule_child <post_processing_variable_data_filter_rule_child>`                                                                                                                                                                         'child_object_type' of variable_data_filter_rule.
+
+:ref:`difference_object_child <post_processing_difference_object_child>`                                                                                                                                                                                                 'child_object_type' of difference_object.
+
+:ref:`internal_vector_child <post_processing_internal_vector_child>`                                                                                                                                                                                                       'child_object_type' of internal_vector.
+
+:ref:`internal_contour_child <post_processing_internal_contour_child>`                                                                                                                                                                                                    'child_object_type' of internal_contour.
+
+:ref:`internal_point_child <post_processing_internal_point_child>`                                                                                                                                                                                                          'child_object_type' of internal_point.
+
+:ref:`internal_point_cloud_child <post_processing_internal_point_cloud_child>`                                                                                                                                                                                        'child_object_type' of internal_point_cloud.
+
+:ref:`internal_polyline_child <post_processing_internal_polyline_child>`                                                                                                                                                                                                 'child_object_type' of internal_polyline.
+
+:ref:`internal_turbo_surface_child <post_processing_internal_turbo_surface_child>`                                                                                                                                                                                  'child_object_type' of internal_turbo_surface.
+
+:ref:`internal_turbo_line_child <post_processing_internal_turbo_line_child>`                                                                                                                                                                                           'child_object_type' of internal_turbo_line.
+
+:ref:`deformation_info <post_processing_deformation_info>`                                                                                                                                                                This object contains the settings used to render deformation for all GeometricCCLObject.
+
+:ref:`export <post_processing_export>`                                                                                                                                                                                                 Holds parameters which control the export of data to an external text file.
+
+:ref:`viewport_manager <post_processing_viewport_manager>`                                                                                                                                                                            This object stores the parameters that control the global viewport controls.
+
+:ref:`title_page <post_processing_title_page>`                                                                                                                                                                                                                                Defines the Title Page for a report.
+
+:ref:`file_information_options <post_processing_file_information_options>`                                                                                                                                                                                                       'file_information_options' child.
+
+:ref:`mesh_statistics_options <post_processing_mesh_statistics_options>`                                                                                                                                                                                                          'mesh_statistics_options' child.
+
+:ref:`physics_summary_options <post_processing_physics_summary_options>`                                                                                                                                                                                                          'physics_summary_options' child.
+
+:ref:`solution_summary_options <post_processing_solution_summary_options>`                                                                                                                                                                                                       'solution_summary_options' child.
+
+:ref:`operating_maps <post_processing_operating_maps>`                                                                                                                                                                                                                                     'operating_maps' child.
+
+:ref:`output_settings <post_processing_output_settings>`                                                                                                                                                                                                                           Defines options for the Report.
+
+:ref:`publish <post_processing_publish>`                                                                                                                                                                                                                                                       Defines the Report.
+
+:ref:`preview <post_processing_preview>`                                                                                                                                                                                                                                                       Defines the Report.
+
+:ref:`report <post_processing_report>`                                                                                                                                                                                                                                                         Defines the Report.
+
+:ref:`animation <post_processing_animation>`                                                                                                                                                   Defines a Keyframe animation sequence. A list of KEYFRAME objects indicate the states between which to interpolate.
+
+:ref:`parameterization <post_processing_parameterization>`                                                                                                                                                                                                                               'parameterization' child.
+
+:ref:`response_surface <post_processing_response_surface>`                                                                                                                                                         Controls response surface and response points generation related to an operating point results.
+
+==========================================================================================================   =====================================================================================================================================================================================================
+

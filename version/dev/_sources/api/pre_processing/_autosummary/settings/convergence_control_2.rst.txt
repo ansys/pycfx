@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_convergence_control_2:
+
+convergence_control
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.convergence_control_2.convergence_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================================   =========================================
+
+Attribute                                                                                                             Summary
+
+=================================================================================   =========================================
+:ref:`timescale_control <pre_processing_timescale_control>`                                    'Timescale Control' parameter.
+
+:ref:`maximum_number_of_iterations <pre_processing_maximum_number_of_iterations>`   'Maximum Number of Iterations' parameter.
+
+:ref:`minimum_number_of_iterations <pre_processing_minimum_number_of_iterations>`   'Minimum Number of Iterations' parameter.
+
+=================================================================================   =========================================
+
+.. rubric:: Included in:
+
+=====================================================================   ========================================
+
+Parent                                                                                                   Summary
+
+=====================================================================   ========================================
+:ref:`dynamic_variable_child <pre_processing_dynamic_variable_child>`   'child_object_type' of dynamic_variable.
+
+=====================================================================   ========================================
+

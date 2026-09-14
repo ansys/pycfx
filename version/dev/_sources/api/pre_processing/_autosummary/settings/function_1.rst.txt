@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_function_1:
+
+function
+========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.function_1.function
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================   ====================
+
+Parent                                                       Summary
+
+=============================================   ====================
+:ref:`calculator <pre_processing_calculator>`   'CALCULATOR' object.
+
+=============================================   ====================
+

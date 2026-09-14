@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_multiphase_reaction_rate_return_variables_list:
+
+multiphase_reaction_rate_return_variables_list
+==============================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.multiphase_reaction_rate_return_variables_list.multiphase_reaction_rate_return_variables_list
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================================   ==================================
+
+Parent                                                                                                 Summary
+
+=========================================================================   ==================================
+:ref:`multiphase_reaction_rate <pre_processing_multiphase_reaction_rate>`   'MULTIPHASE REACTION RATE' object.
+
+=========================================================================   ==================================
+

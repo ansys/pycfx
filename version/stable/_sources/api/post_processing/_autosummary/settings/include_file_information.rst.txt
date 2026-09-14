@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_include_file_information:
+
+include_file_information
+========================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.include_file_information.include_file_information
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+======================================   ===========================================================================
+
+Parent                                                                                                       Summary
+
+======================================   ===========================================================================
+:ref:`export <post_processing_export>`   Holds parameters which control the export of data to an external text file.
+
+======================================   ===========================================================================
+

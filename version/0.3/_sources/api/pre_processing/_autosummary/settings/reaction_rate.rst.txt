@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_reaction_rate:
+
+reaction_rate
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.reaction_rate.reaction_rate
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================   ===================================================
+
+Parent                                                                                                              Summary
+
+=====================================================================   ===================================================
+:ref:`forward_reaction_rate <pre_processing_forward_reaction_rate>`                         'FORWARD REACTION RATE' object.
+
+:ref:`backward_reaction_rate <pre_processing_backward_reaction_rate>`   Defines the backwards rate for a chemical reaction.
+
+=====================================================================   ===================================================
+

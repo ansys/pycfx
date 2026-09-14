@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_mcf_energy_diffusion:
+
+mcf_energy_diffusion
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.mcf_energy_diffusion.mcf_energy_diffusion
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================   =======================================
+
+Attribute                                                                     Summary
+
+===========================================   =======================================
+:ref:`enabled <pre_processing_enabled_192>`   Enable the MCF ENERGY DIFFUSION object.
+
+:ref:`option <pre_processing_option_378>`          The 'Mcf Energy Diffusion' option.
+
+===========================================   =======================================
+
+.. rubric:: Included in:
+
+=======================================================   ====================================================================================
+
+Parent                                                                                                                                 Summary
+
+=======================================================   ====================================================================================
+:ref:`solver_control <pre_processing_solver_control_1>`   Holds all objects that control discretization and execution of the solution process.
+
+=======================================================   ====================================================================================
+

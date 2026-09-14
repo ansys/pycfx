@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_limiter_exponent:
+
+limiter_exponent
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.limiter_exponent.limiter_exponent
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================   =============================================================================================================================================
+
+Parent                                                                                                                                                                                    Summary
+
+=================================================   =============================================================================================================================================
+:ref:`cds_blending <pre_processing_cds_blending>`   Controls blending between the basic advection scheme and CDS. Currently used for DES and SAS turbulence models only (hybrid LES-RANS models).
+
+=================================================   =============================================================================================================================================
+

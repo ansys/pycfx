@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_particle_heat_source_bounding:
+
+particle_heat_source_bounding
+=============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.particle_heat_source_bounding.particle_heat_source_bounding
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================================   ================================================
+
+Attribute                                                                                                                      Summary
+
+===================================================================================   ================================================
+:ref:`enabled <pre_processing_enabled_173>`                                           Enable the PARTICLE HEAT SOURCE BOUNDING object.
+
+:ref:`option <pre_processing_option_373>`                                                  The 'Particle Heat Source Bounding' option.
+
+:ref:`stop_bounding_after_iteration <pre_processing_stop_bounding_after_iteration>`         'Stop Bounding after Iteration' parameter.
+
+===================================================================================   ================================================
+
+.. rubric:: Included in:
+
+=======================================================================   =============================================================================
+
+Parent                                                                                                                                          Summary
+
+=======================================================================   =============================================================================
+:ref:`particle_source_control <pre_processing_particle_source_control>`   Set details of the particle source term bounding and robustness improvements.
+
+=======================================================================   =============================================================================
+

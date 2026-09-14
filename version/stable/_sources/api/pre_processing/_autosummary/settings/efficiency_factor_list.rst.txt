@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_efficiency_factor_list:
+
+efficiency_factor_list
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.efficiency_factor_list.efficiency_factor_list
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   ==================================
+
+Parent                                                                                 Summary
+
+=========================================================   ==================================
+:ref:`radiometer_child <pre_processing_radiometer_child>`   'child_object_type' of radiometer.
+
+=========================================================   ==================================
+

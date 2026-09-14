@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_maximum_buffer_size:
+
+maximum_buffer_size
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.maximum_buffer_size.maximum_buffer_size
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================   =========================================================================
+
+Parent                                                                                                                              Summary
+
+===============================================================   =========================================================================
+:ref:`ray_tracing_control <pre_processing_ray_tracing_control>`   Controls details of the ray tracing algorithms for Monte Carlo radiation.
+
+===============================================================   =========================================================================
+

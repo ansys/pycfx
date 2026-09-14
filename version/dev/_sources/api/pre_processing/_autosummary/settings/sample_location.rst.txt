@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_sample_location:
+
+sample_location
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.sample_location.sample_location
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================================   ==========================================
+
+Parent                                                                                                         Summary
+
+=========================================================================   ==========================================
+:ref:`particle_histogram_child <pre_processing_particle_histogram_child>`   'child_object_type' of particle_histogram.
+
+=========================================================================   ==========================================
+

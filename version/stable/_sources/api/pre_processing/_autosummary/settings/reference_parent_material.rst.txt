@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_reference_parent_material:
+
+reference_parent_material
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.reference_parent_material.reference_parent_material
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================   ========================================================
+
+Parent                                                                                               Summary
+
+=================================================   ========================================================
+:ref:`heat_release <pre_processing_heat_release>`   Holds heat release information for multiphase reactions.
+
+=================================================   ========================================================
+

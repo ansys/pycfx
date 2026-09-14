@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_heat_transfer_4:
+
+heat_transfer
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.heat_transfer_4.heat_transfer
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================================================   ===============================================
+
+Attribute                                                                                                                               Summary
+
+=============================================================================================   ===============================================
+:ref:`option <pre_processing_option_284>`                                                                           The 'Heat Transfer' option.
+
+:ref:`static_temperature <pre_processing_static_temperature>`                                                   'Static Temperature' parameter.
+
+:ref:`stationary_frame_total_temperature <pre_processing_stationary_frame_total_temperature>`   'Stationary Frame Total Temperature' parameter.
+
+:ref:`total_temperature <pre_processing_total_temperature>`                                                      'Total Temperature' parameter.
+
+=============================================================================================   ===============================================
+
+.. rubric:: Included in:
+
+===================================================================   ==============================================================
+
+Parent                                                                                                                       Summary
+
+===================================================================   ==============================================================
+:ref:`injection_conditions <pre_processing_injection_conditions_1>`   Specifies injection conditions for all equations being solved.
+
+:ref:`injection_conditions <pre_processing_injection_conditions_2>`   Specifies injection conditions for all equations being solved.
+
+===================================================================   ==============================================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_62:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_62.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================   =======================================
+
+Parent                                                                                                Summary
+
+===================================================================   =======================================
+:ref:`user_line_cloud_child <pre_processing_user_line_cloud_child>`   'child_object_type' of user_line_cloud.
+
+===================================================================   =======================================
+

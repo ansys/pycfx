@@ -1,0 +1,29 @@
+:orphan:
+
+.. _post_processing_point:
+
+point
+=====
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.point.point
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==================================================================   ======================================
+
+Parent                                                                                              Summary
+
+==================================================================   ======================================
+:ref:`point_child <post_processing_point_child>`                              'child_object_type' of point.
+
+:ref:`plane_child <post_processing_plane_child>`                              'child_object_type' of plane.
+
+:ref:`clip_plane_child <post_processing_clip_plane_child>`               'child_object_type' of clip_plane.
+
+:ref:`volume_child <post_processing_volume_child>`                           'child_object_type' of volume.
+
+:ref:`internal_point_child <post_processing_internal_point_child>`   'child_object_type' of internal_point.
+
+==================================================================   ======================================
+

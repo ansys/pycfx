@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_79:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_79.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================================   =================================================================================
+
+Parent                                                                                                                                                          Summary
+
+===================================================================================   =================================================================================
+:ref:`mixture_variance_coefficients <pre_processing_mixture_variance_coefficients>`   Controls model coefficients for the Mixture Fraction Variance transport equation.
+
+===================================================================================   =================================================================================
+

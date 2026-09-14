@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_body_forces:
+
+body_forces
+===========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.body_forces.body_forces
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================================================================   ===============================================
+
+Attribute                                                                                                                                                         Summary
+
+=======================================================================================================================   ===============================================
+:ref:`enabled <pre_processing_enabled_187>`                                                                                                Enable the BODY FORCES object.
+
+:ref:`body_force_averaging_type <pre_processing_body_force_averaging_type>`                                                    Method to average body forces to elements.
+
+:ref:`volume_fraction_averaging_type <pre_processing_volume_fraction_averaging_type>`                                     Method to average volume fractions to elements.
+
+:ref:`turbulent_dispersion_coefficient_averaging_type <pre_processing_turbulent_dispersion_coefficient_averaging_type>`        Method to average tdisp coef. to elements.
+
+=======================================================================================================================   ===============================================
+
+.. rubric:: Included in:
+
+=======================================================   ====================================================================================
+
+Parent                                                                                                                                 Summary
+
+=======================================================   ====================================================================================
+:ref:`solver_control <pre_processing_solver_control_1>`   Holds all objects that control discretization and execution of the solution process.
+
+=======================================================   ====================================================================================
+

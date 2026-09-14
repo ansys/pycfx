@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_98:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_98.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================================================   ============================================================
+
+Parent                                                                                                                                           Summary
+
+=========================================================================================   ============================================================
+:ref:`translational_degrees_of_freedom <pre_processing_translational_degrees_of_freedom>`   Translational degrees of freedom of the rigid body solution.
+
+=========================================================================================   ============================================================
+

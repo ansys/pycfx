@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_fragment_model:
+
+fragment_model
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fragment_model.fragment_model
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================================   =======================================================
+
+Attribute                                                                                                                               Summary
+
+=====================================================================================   =======================================================
+:ref:`enabled <pre_processing_enabled_43>`                                                                    Enable the FRAGMENT MODEL object.
+
+:ref:`option <pre_processing_option_115>`                                                                          The 'Fragment Model' option.
+
+:ref:`fragment_distribution_function <pre_processing_fragment_distribution_function>`      Fragment Distribution for polydispersed fluid model.
+
+:ref:`fragment_m_mass_ratio <pre_processing_fragment_m_mass_ratio>`                     Mass ratio of fragment M in binary fragmentation model.
+
+:ref:`fragment_n_mass_ratio <pre_processing_fragment_n_mass_ratio>`                     Mass ratio of fragment N in binary fragmentation model.
+
+=====================================================================================   =======================================================
+
+.. rubric:: Included in:
+
+===========================================================================   ===========================================
+
+Parent                                                                                                            Summary
+
+===========================================================================   ===========================================
+:ref:`polydispersed_fluid_child <pre_processing_polydispersed_fluid_child>`   'child_object_type' of polydispersed_fluid.
+
+===========================================================================   ===========================================
+

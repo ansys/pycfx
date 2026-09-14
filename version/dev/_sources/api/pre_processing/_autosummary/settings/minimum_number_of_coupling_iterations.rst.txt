@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_minimum_number_of_coupling_iterations:
+
+minimum_number_of_coupling_iterations
+=====================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.minimum_number_of_coupling_iterations.minimum_number_of_coupling_iterations
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================================   ========================================
+
+Parent                                                                                                                   Summary
+
+=====================================================================================   ========================================
+:ref:`coupling_step_control <pre_processing_coupling_step_control>`                              'COUPLING STEP CONTROL' object.
+
+:ref:`internal_coupling_step_control <pre_processing_internal_coupling_step_control>`   'INTERNAL COUPLING STEP CONTROL' object.
+
+=====================================================================================   ========================================
+

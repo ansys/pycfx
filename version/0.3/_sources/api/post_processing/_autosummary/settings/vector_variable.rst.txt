@@ -1,0 +1,26 @@
+:orphan:
+
+.. _post_processing_vector_variable:
+
+vector_variable
+===============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.vector_variable.vector_variable
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`vector_variable_child <post_processing_vector_variable_child>`
+
+
+.. rubric:: Included in:
+
+========================================   =========================================
+
+Parent                                                                       Summary
+
+========================================   =========================================
+:ref:`results <post_processing_results>`   Encapsulates a CFX post-processing setup.
+
+========================================   =========================================
+

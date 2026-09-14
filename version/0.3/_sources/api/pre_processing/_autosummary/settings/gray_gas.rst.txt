@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_gray_gas:
+
+gray_gas
+========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.gray_gas.gray_gas
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`gray_gas_child <pre_processing_gray_gas_child>`
+
+
+.. rubric:: Included in:
+
+=====================================================   ===========================================================
+
+Parent                                                                                                      Summary
+
+=====================================================   ===========================================================
+:ref:`spectral_model <pre_processing_spectral_model>`   Defines the type of spectral model to be used in radiation.
+
+=====================================================   ===========================================================
+

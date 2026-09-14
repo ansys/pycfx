@@ -1,0 +1,48 @@
+:orphan:
+
+.. _pre_processing_intersection_control:
+
+intersection_control
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.intersection_control.intersection_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================================   ===================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                           Summary
+
+=====================================================================================   ===================================================================================================================================================================================================
+:ref:`enabled <pre_processing_enabled_145>`                                                                                                                                                                                                         Enable the INTERSECTION CONTROL object.
+
+:ref:`option <pre_processing_option_310>`                                                                                                                                                                                                                The 'Intersection Control' option.
+
+:ref:`angle_tolerance <pre_processing_angle_tolerance>`                                 Angle tolerance for intersection (in degrees) used for the direct intersector. The normal vectors of two intersected faces has to be in opposite direction with respect to the specified tolerance.
+
+:ref:`bitmap_resolution <pre_processing_bitmap_resolution>`                                                                                                               Bitmap resolution to use on a mesh face when calculating the mesh intersection for a nonmatched domain interface.
+
+:ref:`discernible_fraction <pre_processing_discernible_fraction>`                                                                                                                                                                                Control surface discernible area fraction.
+
+:ref:`edge_scale_factor <pre_processing_edge_scale_factor>`                                                                                                                                                                                      Degenerate surface length scale tolerance.
+
+:ref:`face_intersection_depth_factor <pre_processing_face_intersection_depth_factor>`                                                                             Scaling factor applied to element sized based separation distance that is used to intersect the sides of a GGI interface.
+
+:ref:`face_search_tolerance_factor <pre_processing_face_search_tolerance_factor>`                                                                               Scaling factor applied to element sized based separation distance that is used to find candidates for the GGI intersection.
+
+=====================================================================================   ===================================================================================================================================================================================================
+
+.. rubric:: Included in:
+
+=============================================================================   =================================================
+
+Parent                                                                                                                    Summary
+
+=============================================================================   =================================================
+:ref:`surface_injection_control <pre_processing_surface_injection_control>`     Defines global controls for 2D Injection Regions.
+
+:ref:`surface_injection_control <pre_processing_surface_injection_control_1>`   Defines global controls for 2D Injection Regions.
+
+=============================================================================   =================================================
+

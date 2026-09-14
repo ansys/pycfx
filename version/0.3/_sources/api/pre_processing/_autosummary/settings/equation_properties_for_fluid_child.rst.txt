@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_equation_properties_for_fluid_child:
+
+equation_properties_for_fluid_child
+===================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.equation_properties_for_fluid_child.equation_properties_for_fluid_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================   =============================================================
+
+Attribute                                                                                                                       Summary
+
+=======================================================================   =============================================================
+:ref:`kinematic_diffusivity <pre_processing_kinematic_diffusivity>`                                  'Kinematic Diffusivity' parameter.
+
+:ref:`turbulent_flux_closure <pre_processing_turbulent_flux_closure_1>`   Controls the turbulent flux closure for a transport equation.
+
+=======================================================================   =============================================================
+
+.. rubric:: Included in:
+
+===================================================================================   ======================================================
+
+Parent                                                                                                                               Summary
+
+===================================================================================   ======================================================
+:ref:`equation_properties_for_fluid <pre_processing_equation_properties_for_fluid>`   A container for Equation Properties For Fluid objects.
+
+===================================================================================   ======================================================
+

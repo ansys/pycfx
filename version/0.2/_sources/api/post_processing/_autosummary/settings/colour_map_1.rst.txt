@@ -1,0 +1,26 @@
+:orphan:
+
+.. _post_processing_colour_map_1:
+
+colour_map
+==========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.colour_map_1.colour_map
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`colour_map_child <post_processing_colour_map_child>`
+
+
+.. rubric:: Included in:
+
+========================================   =========================================
+
+Parent                                                                       Summary
+
+========================================   =========================================
+:ref:`results <post_processing_results>`   Encapsulates a CFX post-processing setup.
+
+========================================   =========================================
+

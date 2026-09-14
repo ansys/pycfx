@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_imaginary_pressure:
+
+imaginary_pressure
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.imaginary_pressure.imaginary_pressure
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================   =============================
+
+Parent                                                                                  Summary
+
+===============================================================   =============================
+:ref:`pressure_definition <pre_processing_pressure_definition>`   'PRESSURE DEFINITION' object.
+
+===============================================================   =============================
+

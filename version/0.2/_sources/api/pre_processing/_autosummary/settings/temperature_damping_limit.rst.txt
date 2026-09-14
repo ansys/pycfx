@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_temperature_damping_limit:
+
+temperature_damping_limit
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.temperature_damping_limit.temperature_damping_limit
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================   ===============================================
+
+Parent                                                                                                    Summary
+
+===============================================================   ===============================================
+:ref:`temperature_damping <pre_processing_temperature_damping>`   Controls the relaxation/damping of temperature.
+
+===============================================================   ===============================================
+

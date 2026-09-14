@@ -1,0 +1,32 @@
+:orphan:
+
+.. _pre_processing_solution_sequence_control:
+
+solution_sequence_control
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.solution_sequence_control.solution_sequence_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================   ===============================================================================
+
+Attribute                                                                                                                               Summary
+
+=============================================================   ===============================================================================
+:ref:`solve_ansys_fields <pre_processing_solve_ansys_fields>`   Straight forward ordering control when CFX is coupled to only one other solver.
+
+=============================================================   ===============================================================================
+
+.. rubric:: Included in:
+
+===================================================================   ===============================
+
+Parent                                                                                        Summary
+
+===================================================================   ===============================
+:ref:`coupling_step_control <pre_processing_coupling_step_control>`   'COUPLING STEP CONTROL' object.
+
+===================================================================   ===============================
+

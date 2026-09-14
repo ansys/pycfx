@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_particle_ignition:
+
+particle_ignition
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.particle_ignition.particle_ignition
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================   ====================================
+
+Attribute                                                                                        Summary
+
+=================================================================   ====================================
+:ref:`enabled <pre_processing_enabled_170>`                         Enable the PARTICLE IGNITION object.
+
+:ref:`ignition_temperature <pre_processing_ignition_temperature>`                  Ignition Temperature.
+
+=================================================================   ====================================
+
+.. rubric:: Included in:
+
+=========================================================   ==============================================================================
+
+Parent                                                                                                                             Summary
+
+=========================================================   ==============================================================================
+:ref:`particle_control <pre_processing_particle_control>`   Holds objects that control the execution and convergence of particle tracking.
+
+=========================================================   ==============================================================================
+

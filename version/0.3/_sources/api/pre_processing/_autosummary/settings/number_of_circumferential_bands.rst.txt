@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_number_of_circumferential_bands:
+
+number_of_circumferential_bands
+===============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.number_of_circumferential_bands.number_of_circumferential_bands
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ============================================================
+
+Parent                                                                                                               Summary
+
+=============================================================   ============================================================
+:ref:`pressure_averaging <pre_processing_pressure_averaging>`   Controls details of how pressure is averaged over an outlet.
+
+=============================================================   ============================================================
+

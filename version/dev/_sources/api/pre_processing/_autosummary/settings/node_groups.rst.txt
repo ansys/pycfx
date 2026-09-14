@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_node_groups:
+
+node_groups
+===========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.node_groups.node_groups
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================   ========================
+
+Parent                                                                   Summary
+
+=====================================================   ========================
+:ref:`job_submission <pre_processing_job_submission>`   'JOB SUBMISSION' object.
+
+=====================================================   ========================
+

@@ -1,0 +1,33 @@
+:orphan:
+
+.. _post_processing_point_1:
+
+point_1
+=======
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.point_1.point_1
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==================================================================================   ==============================================
+
+Parent                                                                                                                      Summary
+
+==================================================================================   ==============================================
+:ref:`turbo_surface_child <post_processing_turbo_surface_child>`                              'child_object_type' of turbo_surface.
+
+:ref:`turbo_line_child <post_processing_turbo_line_child>`                                       'child_object_type' of turbo_line.
+
+:ref:`plane_child <post_processing_plane_child>`                                                      'child_object_type' of plane.
+
+:ref:`clip_plane_child <post_processing_clip_plane_child>`                                       'child_object_type' of clip_plane.
+
+:ref:`line_child <post_processing_line_child>`                                                         'child_object_type' of line.
+
+:ref:`internal_turbo_surface_child <post_processing_internal_turbo_surface_child>`   'child_object_type' of internal_turbo_surface.
+
+:ref:`internal_turbo_line_child <post_processing_internal_turbo_line_child>`            'child_object_type' of internal_turbo_line.
+
+==================================================================================   ==============================================
+

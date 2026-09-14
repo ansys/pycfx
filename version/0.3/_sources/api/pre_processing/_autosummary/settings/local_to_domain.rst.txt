@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_local_to_domain:
+
+local_to_domain
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.local_to_domain.local_to_domain
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ============================
+
+Parent                                                                               Summary
+
+=============================================================   ============================
+:ref:`boundary_line_type <pre_processing_boundary_line_type>`   Defines the line properties.
+
+=============================================================   ============================
+

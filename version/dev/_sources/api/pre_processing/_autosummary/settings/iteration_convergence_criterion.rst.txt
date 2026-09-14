@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_iteration_convergence_criterion:
+
+iteration_convergence_criterion
+===============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.iteration_convergence_criterion.iteration_convergence_criterion
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================   ============================================================================
+
+Parent                                                                                                                                 Summary
+
+===============================================================   ============================================================================
+:ref:`ray_tracing_control <pre_processing_ray_tracing_control>`      Controls details of the ray tracing algorithms for Monte Carlo radiation.
+
+:ref:`integration_method <pre_processing_integration_method>`     Specifies the angular momentum integration method for the rigid body solver.
+
+===============================================================   ============================================================================
+

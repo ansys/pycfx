@@ -1,0 +1,32 @@
+:orphan:
+
+.. _pre_processing_fourier_transformation_control:
+
+fourier_transformation_control
+==============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fourier_transformation_control.fourier_transformation_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================   ==================================================
+
+Attribute                                                                                                    Summary
+
+===============================================================   ==================================================
+:ref:`frequency_filtering <pre_processing_frequency_filtering>`   Defines damping for Fourier Transformation models.
+
+===============================================================   ==================================================
+
+.. rubric:: Included in:
+
+=============================================================================   ====================================
+
+Parent                                                                                                       Summary
+
+=============================================================================   ====================================
+:ref:`transient_blade_row_models <pre_processing_transient_blade_row_models>`   'TRANSIENT BLADE ROW MODELS' object.
+
+=============================================================================   ====================================
+

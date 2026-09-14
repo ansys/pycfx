@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_tube_reference_pressure:
+
+tube_reference_pressure
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.tube_reference_pressure.tube_reference_pressure
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================   ==========================================
+
+Attribute                                                                                          Summary
+
+=============================================================   ==========================================
+:ref:`enabled <pre_processing_enabled_112>`                     Enable the TUBE REFERENCE PRESSURE object.
+
+:ref:`reference_pressure <pre_processing_reference_pressure>`              'Reference Pressure' parameter.
+
+=============================================================   ==========================================
+
+.. rubric:: Included in:
+
+=========================================================   ================================================================================================================
+
+Parent                                                                                                                                                               Summary
+
+=========================================================   ================================================================================================================
+:ref:`tube_side_models <pre_processing_tube_side_models>`   Holds the definition of tube fluid models for tube fluid equations, momentum loss and heat transfer coefficient.
+
+=========================================================   ================================================================================================================
+

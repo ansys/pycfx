@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_interface_generation_method:
+
+interface_generation_method
+===========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.interface_generation_method.interface_generation_method
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   =================================
+
+Parent                                                                                              Summary
+
+=======================================================================   =================================
+:ref:`physics_options_control <pre_processing_physics_options_control>`   'PHYSICS OPTIONS CONTROL' object.
+
+=======================================================================   =================================
+

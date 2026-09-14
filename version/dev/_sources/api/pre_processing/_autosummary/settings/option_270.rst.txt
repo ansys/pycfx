@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_270:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_270.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================   ============================
+
+Parent                                                               Summary
+
+=============================================   ============================
+:ref:`slip_model <pre_processing_slip_model>`   Specifies a wall slip model.
+
+=============================================   ============================
+

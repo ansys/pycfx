@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_bubble_waiting_time_1:
+
+bubble_waiting_time
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.bubble_waiting_time_1.bubble_waiting_time
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================   ===================================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                         Summary
+
+===================================================================   ===================================================================================================================================================================================================================
+:ref:`enabled <pre_processing_enabled_119>`                                                                                                                                                                                                        Enable the BUBBLE WAITING TIME object.
+
+:ref:`option <pre_processing_option_258>`                                                                                                                                                                                                               The 'Bubble Waiting Time' option.
+
+:ref:`bubble_waiting_time <pre_processing_bubble_waiting_time>`                                                                                                                                                              User defined bubble waiting time for the wall boiling model.
+
+:ref:`waiting_time_fraction <pre_processing_waiting_time_fraction>`   Waiting time between the bubble departure and the next bubble formation, as a fraction of the bubble departure period. Used to calculate the liquid quenching heat transfer coefficient for the wall boiling model.
+
+===================================================================   ===================================================================================================================================================================================================================
+
+.. rubric:: Included in:
+
+===============================================================   =================================
+
+Parent                                                                                      Summary
+
+===============================================================   =================================
+:ref:`wall_boiling_model <pre_processing_wall_boiling_model_1>`   Specifies the wall boiling model.
+
+===============================================================   =================================
+

@@ -1,0 +1,37 @@
+:orphan:
+
+.. _pre_processing_location:
+
+location
+========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.location.location
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   =============================================================================================
+
+Parent                                                                                                                                                          Summary
+
+=======================================================================   =============================================================================================
+:ref:`coordinate_frame_child <pre_processing_coordinate_frame_child>`                                                          'child_object_type' of coordinate_frame.
+
+:ref:`domain_child <pre_processing_domain_child>`                                                                                        'child_object_type' of domain.
+
+:ref:`boundary_child <pre_processing_boundary_child>`                                                                                  'child_object_type' of boundary.
+
+:ref:`injection_location_type <pre_processing_injection_location_type>`   Defines the type of location, physics or mesh regions, for the injection points to intersect.
+
+:ref:`subdomain_child <pre_processing_subdomain_child>`                                                                               'child_object_type' of subdomain.
+
+:ref:`location_type <pre_processing_location_type>`                              Defines the type of location, physics or mesh regions, to compute aerodynamic damping.
+
+:ref:`location_type <pre_processing_location_type_1>`                            Defines the type of location, physics or mesh regions, to compute aerodynamic damping.
+
+:ref:`rigid_body_child <pre_processing_rigid_body_child>`                                                                            'child_object_type' of rigid_body.
+
+:ref:`remesh_child <pre_processing_remesh_child>`                                                                                        'child_object_type' of remesh.
+
+=======================================================================   =============================================================================================
+

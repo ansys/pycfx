@@ -1,0 +1,42 @@
+:orphan:
+
+.. _pre_processing_pressure_averaging:
+
+pressure_averaging
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.pressure_averaging.pressure_averaging
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================================   ============================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                      Summary
+
+=======================================================================================   ============================================================================================================================================================================
+:ref:`option <pre_processing_option_279>`                                                                                                                                                                                             The 'Pressure Averaging' option.
+
+:ref:`radius <pre_processing_radius>`                                                                                                                                                                                                              'Radius' parameter.
+
+:ref:`number_of_circumferential_bands <pre_processing_number_of_circumferential_bands>`                                                                                   Number of circumferential bands used for the meridional average pressure boundary condition.
+
+:ref:`pressure_profile_blend <pre_processing_pressure_profile_blend>`                     Factor to blend between the specified pressure profile and a floating (implicit) pressure profile blend factor. 0.0 is fully implicit and 1.0 imposes the specified profile.
+
+:ref:`radial_reference_position <pre_processing_radial_reference_position>`                                                                                                                                                        'RADIAL REFERENCE POSITION' object.
+
+:ref:`axis_definition <pre_processing_axis_definition>`                                                                                                        Defines the axis for a cylindrical coordinate system or variables defined using cylindrical components.
+
+=======================================================================================   ============================================================================================================================================================================
+
+.. rubric:: Included in:
+
+===============================================================   =============================================================
+
+Parent                                                                                                                  Summary
+
+===============================================================   =============================================================
+:ref:`boundary_conditions <pre_processing_boundary_conditions>`   Specifies boundary conditions for all equations being solved.
+
+===============================================================   =============================================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_turbo_hs_chart_plot_type:
+
+turbo_hs_chart_plot_type
+========================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.turbo_hs_chart_plot_type.turbo_hs_chart_plot_type
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+============================================================   ===================================
+
+Parent                                                                                     Summary
+
+============================================================   ===================================
+:ref:`turbo_plots_child <post_processing_turbo_plots_child>`   'child_object_type' of turbo_plots.
+
+============================================================   ===================================
+

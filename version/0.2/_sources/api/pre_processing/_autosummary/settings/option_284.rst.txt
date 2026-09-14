@@ -1,0 +1,33 @@
+:orphan:
+
+.. _pre_processing_option_284:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_284.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================   =================================================
+
+Parent                                                                                            Summary
+
+=====================================================   =================================================
+:ref:`heat_transfer <pre_processing_heat_transfer>`     Specifies heat transfer conditions at a boundary.
+
+:ref:`heat_transfer <pre_processing_heat_transfer_1>`   Specifies heat transfer conditions at a boundary.
+
+:ref:`heat_transfer <pre_processing_heat_transfer_2>`   Specifies heat transfer conditions at a boundary.
+
+:ref:`heat_transfer <pre_processing_heat_transfer_3>`   Specifies heat transfer conditions at a boundary.
+
+:ref:`heat_transfer <pre_processing_heat_transfer_4>`   Specifies heat transfer conditions at a boundary.
+
+:ref:`heat_transfer <pre_processing_heat_transfer_5>`   Specifies heat transfer conditions at a boundary.
+
+:ref:`heat_transfer <pre_processing_heat_transfer_6>`   Specifies heat transfer conditions at a boundary.
+
+=====================================================   =================================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_374:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_374.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================================================   ==========================================================
+
+Parent                                                                                                                                           Summary
+
+===========================================================================================   ==========================================================
+:ref:`particle_momentum_source_bounding <pre_processing_particle_momentum_source_bounding>`   Set details of the particle momentum source term bounding.
+
+===========================================================================================   ==========================================================
+

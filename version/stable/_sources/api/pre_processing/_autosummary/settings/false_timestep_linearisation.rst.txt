@@ -1,0 +1,48 @@
+:orphan:
+
+.. _pre_processing_false_timestep_linearisation:
+
+false_timestep_linearisation
+============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.false_timestep_linearisation.false_timestep_linearisation
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================================   ============================================================================================
+
+Attribute                                                                                                                                                            Summary
+
+=============================================================================   ============================================================================================
+:ref:`enabled <pre_processing_enabled_42>`                                                                                   Enable the FALSE TIMESTEP LINEARISATION object.
+
+:ref:`option <pre_processing_option_103>`                                                                                         The 'False Timestep Linearisation' option.
+
+:ref:`ftl_momentum_factor <pre_processing_ftl_momentum_factor>`                        Scaling factor for false timestep linearization coefficient in the momentum equation.
+
+:ref:`ftl_rhie_chow_factor <pre_processing_ftl_rhie_chow_factor>`                                  Scaling factor for false timestep linearization coefficient in Rhie Chow.
+
+:ref:`ftl_volume_fraction_factor <pre_processing_ftl_volume_fraction_factor>`   Scaling factor for false timestep linearization coefficient in the volume fraction equation.
+
+=============================================================================   ============================================================================================
+
+.. rubric:: Included in:
+
+=============================================================================   ====================================================================================================
+
+Parent                                                                                                                                                                       Summary
+
+=============================================================================   ====================================================================================================
+:ref:`buoyancy_model <pre_processing_buoyancy_model>`                                                                 Defines type of buoyancy model and gravity vector in a domain.
+
+:ref:`solid_pressure_model <pre_processing_solid_pressure_model>`                                  Sets the model to be used for solids pressure forces in a multiphase calculation.
+
+:ref:`virtual_mass_force <pre_processing_virtual_mass_force>`                     Specifies that virtual mass force should be included in momentum transfer models for a fluid pair.
+
+:ref:`turbulent_dispersion_force <pre_processing_turbulent_dispersion_force>`   Specifies that turbulent dispersion should be included in momentum transfer models for a fluid pair.
+
+:ref:`surface_tension_model <pre_processing_surface_tension_model>`                        Sets parameters that control the surface tension force model at a free surface interface.
+
+=============================================================================   ====================================================================================================
+

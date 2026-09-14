@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_bubble_superheat_fraction:
+
+bubble_superheat_fraction
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.bubble_superheat_fraction.bubble_superheat_fraction
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================================   ==================================================================
+
+Parent                                                                                                                                           Summary
+
+===================================================================================   ==================================================================
+:ref:`bubble_departure_temperature <pre_processing_bubble_departure_temperature_1>`   Specifies bubble departure temperature for the wall boiling model.
+
+===================================================================================   ==================================================================
+

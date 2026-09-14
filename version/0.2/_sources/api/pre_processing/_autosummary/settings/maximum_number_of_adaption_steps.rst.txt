@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_maximum_number_of_adaption_steps:
+
+maximum_number_of_adaption_steps
+================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.maximum_number_of_adaption_steps.maximum_number_of_adaption_steps
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ===========================
+
+Parent                                                                            Summary
+
+===========================================================   ===========================
+:ref:`adaption_criteria <pre_processing_adaption_criteria>`   'ADAPTION CRITERIA' object.
+
+===========================================================   ===========================
+

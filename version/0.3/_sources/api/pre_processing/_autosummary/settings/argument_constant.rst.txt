@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_argument_constant:
+
+argument_constant
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.argument_constant.argument_constant
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`argument_constant_child <pre_processing_argument_constant_child>`
+
+
+.. rubric:: Included in:
+
+=====================================================   ================================
+
+Parent                                                                           Summary
+
+=====================================================   ================================
+:ref:`function_child <pre_processing_function_child>`   'child_object_type' of function.
+
+=====================================================   ================================
+

@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_spray_angle:
+
+spray_angle
+===========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.spray_angle.spray_angle
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================================================   ===============================================
+
+Attribute                                                                                                                               Summary
+
+=============================================================================================   ===============================================
+:ref:`option <pre_processing_option_402>`                                                                             The 'Spray Angle' option.
+
+:ref:`spray_radius_at_penetration_origin <pre_processing_spray_radius_at_penetration_origin>`   'Spray Radius at Penetration Origin' parameter.
+
+=============================================================================================   ===============================================
+
+.. rubric:: Included in:
+
+=================================================================================================   ======================================================
+
+Parent                                                                                                                                             Summary
+
+=================================================================================================   ======================================================
+:ref:`transient_particle_diagnostics_child <pre_processing_transient_particle_diagnostics_child>`   'child_object_type' of transient_particle_diagnostics.
+
+=================================================================================================   ======================================================
+

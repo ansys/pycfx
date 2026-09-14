@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_volatiles_molar_mass:
+
+volatiles_molar_mass
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.volatiles_molar_mass.volatiles_molar_mass
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================   ==================================
+
+Attribute                                                                  Summary
+
+=============================================   ==================================
+:ref:`option <pre_processing_option_33>`        The 'Volatiles Molar Mass' option.
+
+:ref:`molar_mass <pre_processing_molar_mass>`              'Molar Mass' parameter.
+
+=============================================   ==================================
+
+.. rubric:: Included in:
+
+===========================================================   ==============================================
+
+Parent                                                                                               Summary
+
+===========================================================   ==============================================
+:ref:`volatiles_release <pre_processing_volatiles_release>`   Volatiles data used by hydrocarbon fuel model.
+
+===========================================================   ==============================================
+

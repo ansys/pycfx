@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_188:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_188.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   ==========================================================
+
+Parent                                                                                                                       Summary
+
+=======================================================================   ==========================================================
+:ref:`free_surface_drag_force <pre_processing_free_surface_drag_force>`   Specifies drag force in free surface sector of AIAD model.
+
+=======================================================================   ==========================================================
+

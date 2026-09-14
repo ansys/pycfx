@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_294:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_294.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================   ========================================================
+
+Parent                                                                                                 Summary
+
+===================================================   ========================================================
+:ref:`wall_adhesion <pre_processing_wall_adhesion>`   Specifies surface tension wall conditions at a boundary.
+
+===================================================   ========================================================
+

@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_boundary_tracking:
+
+boundary_tracking
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.boundary_tracking.boundary_tracking
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================   =====================================================================================================================
+
+Attribute                                                                                                                                                                       Summary
+
+===============================================================   =====================================================================================================================
+:ref:`option <pre_processing_option_347>`                                                                                                               The 'Boundary Tracking' option.
+
+:ref:`extrusion_distance <pre_processing_extrusion_distance>`                                      This parameter allow the user to set the extrusion distance for immersed boundaries.
+
+:ref:`extrusion_tolerance <pre_processing_extrusion_tolerance>`   This parameter allow the user to set the bounding box tolerance for an imaginary volume of an immersed boundary face.
+
+===============================================================   =====================================================================================================================
+
+.. rubric:: Included in:
+
+=======================================================   ====================================
+
+Parent                                                                                 Summary
+
+=======================================================   ====================================
+:ref:`boundary_model <pre_processing_boundary_model>`     Defines the immersed boundary model.
+
+:ref:`boundary_model <pre_processing_boundary_model_1>`   Defines the immersed boundary model.
+
+=======================================================   ====================================
+

@@ -1,0 +1,32 @@
+:orphan:
+
+.. _pre_processing_fluid_pair_child_3:
+
+fluid_pair_child
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fluid_pair_child_3.fluid_pair_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================   ==========================================================
+
+Attribute                                                                                      Summary
+
+=========================================   ==========================================================
+:ref:`sources <pre_processing_sources_3>`   Holds the definition of sources for one or more equations.
+
+=========================================   ==========================================================
+
+.. rubric:: Included in:
+
+===============================================   ===================================
+
+Parent                                                                        Summary
+
+===============================================   ===================================
+:ref:`fluid_pair <pre_processing_fluid_pair_3>`   A container for Fluid Pair objects.
+
+===============================================   ===================================
+

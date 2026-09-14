@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_tube_profile:
+
+tube_profile
+============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.tube_profile.tube_profile
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ===============================================================
+
+Parent                                                                                                                  Summary
+
+=============================================================   ===============================================================
+:ref:`tube_profile_model <pre_processing_tube_profile_model>`              Holds the definition of tube fluid velocity profile.
+
+:ref:`tube_profile <pre_processing_tube_profile_1>`             Defines either boundary or initial conditions for tube profile.
+
+=============================================================   ===============================================================
+

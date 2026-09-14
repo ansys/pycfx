@@ -1,0 +1,26 @@
+:orphan:
+
+.. _post_processing_internal_particle_injection_region:
+
+internal_particle_injection_region
+==================================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.internal_particle_injection_region.internal_particle_injection_region
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`internal_particle_injection_region_child <post_processing_internal_particle_injection_region_child>`
+
+
+.. rubric:: Included in:
+
+========================================   =========================================
+
+Parent                                                                       Summary
+
+========================================   =========================================
+:ref:`results <post_processing_results>`   Encapsulates a CFX post-processing setup.
+
+========================================   =========================================
+

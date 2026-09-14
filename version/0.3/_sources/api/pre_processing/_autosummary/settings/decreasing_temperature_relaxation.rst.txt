@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_decreasing_temperature_relaxation:
+
+decreasing_temperature_relaxation
+=================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.decreasing_temperature_relaxation.decreasing_temperature_relaxation
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   =======================================================================
+
+Parent                                                                                                                                    Summary
+
+=======================================================================   =======================================================================
+:ref:`compressibility_control <pre_processing_compressibility_control>`   Holds parameters that affect solver convergence for compressible flows.
+
+=======================================================================   =======================================================================
+

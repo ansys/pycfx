@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_330:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_330.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================   ========================================================================
+
+Parent                                                                                                               Summary
+
+=================================================   ========================================================================
+:ref:`fuel_tracer <pre_processing_fuel_tracer_1>`   Sets initial conditions for Fuel Tracer for the residual material model.
+
+=================================================   ========================================================================
+

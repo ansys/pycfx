@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_initial_values_specification:
+
+initial_values_specification
+============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.initial_values_specification.initial_values_specification
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================   ===============================================
+
+Attribute                                                                                                       Summary
+
+=====================================================================   ===============================================
+:ref:`enabled <pre_processing_enabled_237>`                             Enable the INITIAL VALUES SPECIFICATION object.
+
+:ref:`initial_values <pre_processing_initial_values>`                           A container for Initial Values objects.
+
+:ref:`initial_values_control <pre_processing_initial_values_control>`                  'INITIAL VALUES CONTROL' object.
+
+=====================================================================   ===============================================
+
+.. rubric:: Included in:
+
+=======================================================================================   =========================================
+
+Parent                                                                                                                      Summary
+
+=======================================================================================   =========================================
+:ref:`configuration_execution_control <pre_processing_configuration_execution_control>`   'CONFIGURATION EXECUTION CONTROL' object.
+
+:ref:`run_definition <pre_processing_run_definition>`                                                      'RUN DEFINITION' object.
+
+=======================================================================================   =========================================
+

@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_data_value_child:
+
+data_value_child
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.data_value_child.data_value_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================   ===========================
+
+Attribute                                                                   Summary
+
+=====================================================   ===========================
+:ref:`result_units <pre_processing_result_units>`         'Result Units' parameter.
+
+:ref:`value_name <pre_processing_value_name>`               'Value Name' parameter.
+
+:ref:`parameter_list <pre_processing_parameter_list>`   'Parameter List' parameter.
+
+=====================================================   ===========================
+
+.. rubric:: Included in:
+
+=============================================   ===================================
+
+Parent                                                                      Summary
+
+=============================================   ===================================
+:ref:`data_value <pre_processing_data_value>`   A container for Data Value objects.
+
+=============================================   ===================================
+

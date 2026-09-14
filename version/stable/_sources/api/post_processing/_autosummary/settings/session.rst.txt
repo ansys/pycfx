@@ -1,0 +1,34 @@
+:orphan:
+
+.. _post_processing_session:
+
+session
+=======
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.session.session
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+==============================================================   ====================================================================================================
+
+Attribute                                                                                                                                                     Summary
+
+==============================================================   ====================================================================================================
+:ref:`session_filename <post_processing_session_filename>`                                          The name of the session file to which session data will be saved.
+
+:ref:`write_session_mode <post_processing_write_session_mode>`   This parameter indicates whether the session file should be overwritten or appended to if it exists.
+
+==============================================================   ====================================================================================================
+
+.. rubric:: Included in:
+
+========================================   =========================================
+
+Parent                                                                       Summary
+
+========================================   =========================================
+:ref:`results <post_processing_results>`   Encapsulates a CFX post-processing setup.
+
+========================================   =========================================
+

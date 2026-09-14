@@ -1,0 +1,44 @@
+:orphan:
+
+.. _pre_processing_particle_integration:
+
+particle_integration
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.particle_integration.particle_integration
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================================================   =======================================================
+
+Attribute                                                                                                                                                   Summary
+
+=========================================================================================================   =======================================================
+:ref:`option <pre_processing_option_371>`                                                                                        The 'Particle Integration' option.
+
+:ref:`first_iteration_for_particle_calculation <pre_processing_first_iteration_for_particle_calculation>`     'First Iteration for Particle Calculation' parameter.
+
+:ref:`iteration_frequency <pre_processing_iteration_frequency>`                                                                    'Iteration Frequency' parameter.
+
+:ref:`particle_source_change_target <pre_processing_particle_source_change_target>`                                      'Particle Source Change Target' parameter.
+
+:ref:`number_of_integration_steps_per_element <pre_processing_number_of_integration_steps_per_element>`        'Number of Integration Steps per Element' parameter.
+
+:ref:`maximum_particle_integration_time_step <pre_processing_maximum_particle_integration_time_step>`           'Maximum Particle Integration Time Step' parameter.
+
+:ref:`chemistry_time_step_multiplier <pre_processing_chemistry_time_step_multiplier>`                       Chemistry time step multiplier for particle combustion.
+
+=========================================================================================================   =======================================================
+
+.. rubric:: Included in:
+
+=========================================================   ==============================================================================
+
+Parent                                                                                                                             Summary
+
+=========================================================   ==============================================================================
+:ref:`particle_control <pre_processing_particle_control>`   Holds objects that control the execution and convergence of particle tracking.
+
+=========================================================   ==============================================================================
+

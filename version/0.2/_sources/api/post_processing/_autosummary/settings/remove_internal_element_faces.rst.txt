@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_remove_internal_element_faces:
+
+remove_internal_element_faces
+=============================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.remove_internal_element_faces.remove_internal_element_faces
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==================================================   ==============================
+
+Parent                                                                      Summary
+
+==================================================   ==============================
+:ref:`volume_child <post_processing_volume_child>`   'child_object_type' of volume.
+
+==================================================   ==============================
+

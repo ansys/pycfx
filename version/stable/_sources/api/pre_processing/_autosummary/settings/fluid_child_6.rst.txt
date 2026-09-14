@@ -1,0 +1,32 @@
+:orphan:
+
+.. _pre_processing_fluid_child_6:
+
+fluid_child
+===========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fluid_child_6.fluid_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================   ==========================================================
+
+Attribute                                                                                      Summary
+
+=========================================   ==========================================================
+:ref:`sources <pre_processing_sources_1>`   Holds the definition of sources for one or more equations.
+
+=========================================   ==========================================================
+
+.. rubric:: Included in:
+
+=====================================   ==============================
+
+Parent                                                         Summary
+
+=====================================   ==============================
+:ref:`fluid <pre_processing_fluid_6>`   A container for Fluid objects.
+
+=====================================   ==============================
+

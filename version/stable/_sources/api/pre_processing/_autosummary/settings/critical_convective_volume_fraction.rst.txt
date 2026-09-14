@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_critical_convective_volume_fraction:
+
+critical_convective_volume_fraction
+===================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.critical_convective_volume_fraction.critical_convective_volume_fraction
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================   ====================================================
+
+Parent                                                                                                         Summary
+
+===============================================================   ====================================================
+:ref:`flux_transfer_model <pre_processing_flux_transfer_model>`   Specifies the model heat transfer model for boiling.
+
+===============================================================   ====================================================
+

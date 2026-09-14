@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_phase_change_model:
+
+phase_change_model
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.phase_change_model.phase_change_model
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================================================================   =======================================================================
+
+Attribute                                                                                                                                                                                     Summary
+
+===========================================================================================================================   =======================================================================
+:ref:`option <pre_processing_option_180>`                                                                                                                            The 'Phase Change Model' option.
+
+:ref:`disperse_phase_particle_source <pre_processing_disperse_phase_particle_source>`                                                                      Specifies mass source generates particles.
+
+:ref:`saturation_temperature <pre_processing_saturation_temperature>`                                                         Saturation temperature for vaporization or boiling of a pure substance.
+
+:ref:`heat_transfer_coefficient_under_relaxation_factor <pre_processing_heat_transfer_coefficient_under_relaxation_factor>`                         Heat transfer coefficient underrelaxation factor.
+
+===========================================================================================================================   =======================================================================
+
+.. rubric:: Included in:
+
+===================================================   ======================================
+
+Parent                                                                               Summary
+
+===================================================   ======================================
+:ref:`mass_transfer <pre_processing_mass_transfer>`   Mass transfer models for a fluid pair.
+
+===================================================   ======================================
+

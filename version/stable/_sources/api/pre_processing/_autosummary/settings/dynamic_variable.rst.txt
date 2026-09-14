@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_dynamic_variable:
+
+dynamic_variable
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.dynamic_variable.dynamic_variable
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`dynamic_variable_child <pre_processing_dynamic_variable_child>`
+
+
+.. rubric:: Included in:
+
+===================================================================   ========================================================================================================
+
+Parent                                                                                                                                                                 Summary
+
+===================================================================   ========================================================================================================
+:ref:`dynamic_model_control <pre_processing_dynamic_model_control>`   Holds objects that control the temporary simplification of models to improve solver start-up robustness.
+
+===================================================================   ========================================================================================================
+

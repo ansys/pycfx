@@ -1,0 +1,23 @@
+:orphan:
+
+.. _post_processing_y_input_variable_name:
+
+y_input_variable_name
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.y_input_variable_name.y_input_variable_name
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==============================================================   ===============================================================================================
+
+Parent                                                                                                                                                   Summary
+
+==============================================================   ===============================================================================================
+:ref:`user_surface_child <post_processing_user_surface_child>`                                                              'child_object_type' of user_surface.
+
+:ref:`response_surface <post_processing_response_surface>`       Controls response surface and response points generation related to an operating point results.
+
+==============================================================   ===============================================================================================
+

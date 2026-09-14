@@ -1,0 +1,76 @@
+:orphan:
+
+.. _pre_processing_particle_breakup:
+
+particle_breakup
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.particle_breakup.particle_breakup
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================================================================   =================================================================
+
+Attribute                                                                                                                                                                         Summary
+
+=====================================================================================================================   =================================================================
+:ref:`enabled <pre_processing_enabled_104>`                                                                                                           Enable the PARTICLE BREAKUP object.
+
+:ref:`option <pre_processing_option_209>`                                                                                                                  The 'Particle Breakup' option.
+
+:ref:`particle_user_routine <pre_processing_particle_user_routine>`                                                                                             Name of the user routine.
+
+:ref:`argument_variables_list <pre_processing_argument_variables_list>`                                                                              'Argument Variables List' parameter.
+
+:ref:`particle_breakup_return_variables_list <pre_processing_particle_breakup_return_variables_list>`                                 'Particle Breakup Return Variables List' parameter.
+
+:ref:`use_liu_dynamic_drag_modification <pre_processing_use_liu_dynamic_drag_modification>`                             Defines whether the dynamic drag law modification of Liu is used.
+
+:ref:`use_schmehl_dynamic_drag_law <pre_processing_use_schmehl_dynamic_drag_law>`                                                Defines whether the dynamic drag law of Schmehl is used.
+
+:ref:`etab_bag_breakup_factor <pre_processing_etab_bag_breakup_factor>`                                                                              'ETAB Bag Breakup Factor' parameter.
+
+:ref:`cab_bag_breakup_factor <pre_processing_cab_bag_breakup_factor>`                                                                                 'CAB Bag Breakup Factor' parameter.
+
+:ref:`critical_amplitude_coefficient <pre_processing_critical_amplitude_coefficient>`                                                         'Critical Amplitude Coefficient' parameter.
+
+:ref:`critical_weber_number_for_bag_breakup <pre_processing_critical_weber_number_for_bag_breakup>`                                    'Critical Weber Number for Bag Breakup' parameter.
+
+:ref:`critical_weber_number_for_stripping_breakup <pre_processing_critical_weber_number_for_stripping_breakup>`                  'Critical Weber Number for Stripping Breakup' parameter.
+
+:ref:`critical_weber_number_for_catastrophic_breakup <pre_processing_critical_weber_number_for_catastrophic_breakup>`         'Critical Weber Number for Catastrophic Breakup' parameter.
+
+:ref:`damping_coefficient <pre_processing_damping_coefficient>`                                                                                          'Damping Coefficient' parameter.
+
+:ref:`energy_ratio_factor <pre_processing_energy_ratio_factor>`                                                                                          'Energy Ratio Factor' parameter.
+
+:ref:`external_force_coefficient <pre_processing_external_force_coefficient>`                                                                     'External Force Coefficient' parameter.
+
+:ref:`new_droplet_velocity_factor <pre_processing_new_droplet_velocity_factor>`                                                                  'New Droplet Velocity Factor' parameter.
+
+:ref:`restoring_force_coefficient <pre_processing_restoring_force_coefficient>`                                                                  'Restoring Force Coefficient' parameter.
+
+:ref:`stripping_breakup_factor <pre_processing_stripping_breakup_factor>`                                                                           'Stripping Breakup Factor' parameter.
+
+:ref:`initial_breakup_time_factor <pre_processing_initial_breakup_time_factor>`                                                                  'Initial Breakup Time Factor' parameter.
+
+:ref:`time_factor_for_bag_breakup <pre_processing_time_factor_for_bag_breakup>`                                                                  'Time Factor for Bag Breakup' parameter.
+
+:ref:`time_factor_for_stripping <pre_processing_time_factor_for_stripping>`                                                                        'Time Factor for Stripping' parameter.
+
+:ref:`weber_number_factor_for_stripping <pre_processing_weber_number_factor_for_stripping>`                                                'Weber Number Factor for Stripping' parameter.
+
+=====================================================================================================================   =================================================================
+
+.. rubric:: Included in:
+
+=========================================================   ==================================
+
+Parent                                                                                 Summary
+
+=========================================================   ==================================
+:ref:`fluid_pair_child <pre_processing_fluid_pair_child>`   'child_object_type' of fluid_pair.
+
+=========================================================   ==================================
+

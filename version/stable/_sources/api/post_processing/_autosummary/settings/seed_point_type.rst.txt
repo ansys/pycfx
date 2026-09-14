@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_seed_point_type:
+
+seed_point_type
+===============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.seed_point_type.seed_point_type
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==========================================================   ==================================
+
+Parent                                                                                  Summary
+
+==========================================================   ==================================
+:ref:`streamline_child <post_processing_streamline_child>`   'child_object_type' of streamline.
+
+==========================================================   ==================================
+

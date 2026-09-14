@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_initial_state:
+
+initial_state
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.initial_state.initial_state
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================================   =========================================
+
+Parent                                                                                                                    Summary
+
+=====================================================================================   =========================================
+:ref:`conditional_connection_control <pre_processing_conditional_connection_control>`   Interface conditional connection control.
+
+=====================================================================================   =========================================
+

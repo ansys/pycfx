@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_activate_adaption:
+
+activate_adaption
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.activate_adaption.activate_adaption
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================   =======================
+
+Parent                                                                Summary
+
+===================================================   =======================
+:ref:`mesh_adaption <pre_processing_mesh_adaption>`   'MESH ADAPTION' object.
+
+===================================================   =======================
+

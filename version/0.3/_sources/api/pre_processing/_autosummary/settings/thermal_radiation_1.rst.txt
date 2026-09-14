@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_thermal_radiation_1:
+
+thermal_radiation
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.thermal_radiation_1.thermal_radiation
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================   ===============================
+
+Attribute                                                                           Summary
+
+=========================================================   ===============================
+:ref:`option <pre_processing_option_285>`                   The 'Thermal Radiation' option.
+
+:ref:`emissivity <pre_processing_emissivity>`                           Surface Emissivity.
+
+:ref:`diffuse_fraction <pre_processing_diffuse_fraction>`     'Diffuse Fraction' parameter.
+
+=========================================================   ===============================
+
+.. rubric:: Included in:
+
+=================================================================   =============================================================
+
+Parent                                                                                                                    Summary
+
+=================================================================   =============================================================
+:ref:`boundary_conditions <pre_processing_boundary_conditions_5>`   Specifies boundary conditions for all equations being solved.
+
+:ref:`boundary_conditions <pre_processing_boundary_conditions_6>`   Specifies boundary conditions for all equations being solved.
+
+=================================================================   =============================================================
+

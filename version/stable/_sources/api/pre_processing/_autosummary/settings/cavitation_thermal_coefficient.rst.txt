@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_cavitation_thermal_coefficient:
+
+cavitation_thermal_coefficient
+==============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.cavitation_thermal_coefficient.cavitation_thermal_coefficient
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================================   ===================================================
+
+Parent                                                                                                                      Summary
+
+=============================================================================   ===================================================
+:ref:`cavitation_thermal_effects <pre_processing_cavitation_thermal_effects>`   Specifies the model for cavitation thermal effects.
+
+=============================================================================   ===================================================
+

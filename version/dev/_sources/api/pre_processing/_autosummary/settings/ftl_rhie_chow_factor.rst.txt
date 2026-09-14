@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_ftl_rhie_chow_factor:
+
+ftl_rhie_chow_factor
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.ftl_rhie_chow_factor.ftl_rhie_chow_factor
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================================   =============================================================
+
+Parent                                                                                                                                    Summary
+
+=================================================================================   =============================================================
+:ref:`false_timestep_linearisation <pre_processing_false_timestep_linearisation>`   Defines false timestep linearisation options for body forces.
+
+=================================================================================   =============================================================
+

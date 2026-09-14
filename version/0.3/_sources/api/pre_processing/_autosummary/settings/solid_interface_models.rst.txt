@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_solid_interface_models:
+
+solid_interface_models
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.solid_interface_models.solid_interface_models
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================   =================================================
+
+Attribute                                                                                                     Summary
+
+=================================================================   =================================================
+:ref:`heat_transfer <pre_processing_heat_transfer_6>`               Specifies heat transfer conditions at a boundary.
+
+:ref:`electric_field <pre_processing_electric_field_2>`                                      'ELECTRIC FIELD' object.
+
+:ref:`magnetic_field <pre_processing_magnetic_field_2>`                                      'MAGNETIC FIELD' object.
+
+:ref:`additional_variable <pre_processing_additional_variable_8>`        A container for Additional Variable objects.
+
+=================================================================   =================================================
+
+.. rubric:: Included in:
+
+=====================================================================   ========================================
+
+Parent                                                                                                   Summary
+
+=====================================================================   ========================================
+:ref:`domain_interface_child <pre_processing_domain_interface_child>`   'child_object_type' of domain_interface.
+
+=====================================================================   ========================================
+

@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_cclsetup_step_control:
+
+cclsetup_step_control
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.cclsetup_step_control.cclsetup_step_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================   ========================================
+
+Attribute                                                                                                  Summary
+
+=======================================================================   ========================================
+:ref:`enabled <pre_processing_enabled_250>`                               Enable the CCLSETUP STEP CONTROL object.
+
+:ref:`maximum_number_of_loops <pre_processing_maximum_number_of_loops>`       'Maximum Number of Loops' parameter.
+
+:ref:`executable_selection <pre_processing_executable_selection_1>`                 'EXECUTABLE SELECTION' object.
+
+:ref:`memory_control <pre_processing_memory_control>`                                     'MEMORY CONTROL' object.
+
+=======================================================================   ========================================
+
+.. rubric:: Included in:
+
+===========================================================   ===========================
+
+Parent                                                                            Summary
+
+===========================================================   ===========================
+:ref:`execution_control <pre_processing_execution_control>`   'EXECUTION CONTROL' object.
+
+===========================================================   ===========================
+

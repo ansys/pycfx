@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_new_case:
+
+new_case
+========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.new_case.new_case
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================   =========================================================
+
+Parent                                                                                Summary
+
+=================================   =========================================================
+:ref:`file <pre_processing_file>`   File-related operations for a CFX pre-processing session.
+
+=================================   =========================================================
+

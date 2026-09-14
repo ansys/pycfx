@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_include_jacobian_multiplier:
+
+include_jacobian_multiplier
+===========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.include_jacobian_multiplier.include_jacobian_multiplier
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================   =============================
+
+Parent                                                                          Summary
+
+=======================================================   =============================
+:ref:`mesh_stiffness <pre_processing_mesh_stiffness_1>`   Defines mesh stiffness model.
+
+=======================================================   =============================
+
