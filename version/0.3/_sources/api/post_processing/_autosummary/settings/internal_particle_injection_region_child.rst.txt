@@ -1,0 +1,45 @@
+:orphan:
+
+.. _post_processing_internal_particle_injection_region_child:
+
+internal_particle_injection_region_child
+========================================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.internal_particle_injection_region_child.internal_particle_injection_region_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+==============================================   ==========================================================================
+
+Attribute                                                                                                           Summary
+
+==============================================   ==========================================================================
+:ref:`case_name <post_processing_case_name_1>`   Internal CFD-Post name for the analyzed problem or the results set to use.
+
+==============================================   ==========================================================================
+
+.. rubric:: Methods
+
+============================================   ========================================
+
+Method                                                                          Summary
+
+============================================   ========================================
+:ref:`suspend <post_processing_suspend>`       Suspend immediate update for the object.
+
+:ref:`unsuspend <post_processing_unsuspend>`   Restore immediate update for the object.
+
+============================================   ========================================
+
+.. rubric:: Included in:
+
+==============================================================================================   ===========================================
+
+Parent                                                                                                                               Summary
+
+==============================================================================================   ===========================================
+:ref:`internal_particle_injection_region <post_processing_internal_particle_injection_region>`   'internal_particle_injection_region' child.
+
+==============================================================================================   ===========================================
+

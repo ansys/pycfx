@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_force:
+
+force
+=====
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.force.force
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+========================================   =======================================================================
+
+Attribute                                                                                                  Summary
+
+========================================   =======================================================================
+:ref:`option <pre_processing_option_95>`                                                       The 'Force' option.
+
+:ref:`xvalue <pre_processing_xvalue>`      Input expression for vector VARIABLE component value in relevant units.
+
+:ref:`yvalue <pre_processing_yvalue>`      Input expression for vector VARIABLE component value in relevant units.
+
+:ref:`zvalue <pre_processing_zvalue>`      Input expression for vector VARIABLE component value in relevant units.
+
+========================================   =======================================================================
+
+.. rubric:: Included in:
+
+=================================================================   ======================================
+
+Parent                                                                                             Summary
+
+=================================================================   ======================================
+:ref:`external_force_child <pre_processing_external_force_child>`   'child_object_type' of external_force.
+
+=================================================================   ======================================
+

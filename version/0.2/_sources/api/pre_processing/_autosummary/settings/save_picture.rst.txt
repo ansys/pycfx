@@ -1,0 +1,54 @@
+:orphan:
+
+.. _pre_processing_save_picture:
+
+save_picture
+============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.save_picture.save_picture
+    :show-inheritance:
+
+.. rubric:: Arguments
+
+=============================================================================   =============================================================
+
+Argument                                                                                                                              Summary
+
+=============================================================================   =============================================================
+:ref:`file_name <pre_processing_file_name_4>`                                                                 Name of the image file to save.
+
+:ref:`format <pre_processing_format>`                                                               The image format. Allowed values include:
+
+:ref:`use_white_background <pre_processing_use_white_background>`                                     Save the image with a white background.
+
+:ref:`use_transparent_background <pre_processing_use_transparent_background>`        Save the image with a transparent background (PNG images
+
+:ref:`use_enhanced_output <pre_processing_use_enhanced_output>`                   Process the image with antialiasing. Not available with GPU
+
+:ref:`use_screen_size <pre_processing_use_screen_size>`                              When this is enabled, the saved image will have the same
+
+:ref:`image_size_option <pre_processing_image_size_option>`                         Set the image size option. Only applicable if 'Use Screen
+
+:ref:`image_height <pre_processing_image_height>`                                Set the image height in pixels. Only applicable if the image
+
+:ref:`image_width <pre_processing_image_width>`                                   Set the image width in pixels. Only applicable if the image
+
+:ref:`image_scale <pre_processing_image_scale>`                                 Scale the size of bitmap images to a fraction (in percent) of
+
+:ref:`image_quality <pre_processing_image_quality>`                              Specify the image quality (JPEG images only). A value of 100
+
+:ref:`tolerance <pre_processing_tolerance>`                                            Increasing the tolerance should result in faster image
+
+=============================================================================   =============================================================
+
+.. rubric:: Included in:
+
+=================================   =========================================================
+
+Parent                                                                                Summary
+
+=================================   =========================================================
+:ref:`file <pre_processing_file>`   File-related operations for a CFX pre-processing session.
+
+=================================   =========================================================
+

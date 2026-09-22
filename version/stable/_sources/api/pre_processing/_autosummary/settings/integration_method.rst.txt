@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_integration_method:
+
+integration_method
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.integration_method.integration_method
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================================   ==============================================================================================================================
+
+Attribute                                                                                                                                                                                                        Summary
+
+=======================================================================================   ==============================================================================================================================
+:ref:`option <pre_processing_option_381>`                                                                                                                                               The 'Integration Method' option.
+
+:ref:`iteration_convergence_criterion <pre_processing_iteration_convergence_criterion>`   Determines when iterations due to reflective walls have converged or due to Rigid Body Angular Momentum Solver have converged.
+
+:ref:`maximum_number_of_iterations <pre_processing_maximum_number_of_iterations>`                                                                                              'Maximum Number of Iterations' parameter.
+
+:ref:`newmark_gamma_coefficient <pre_processing_newmark_gamma_coefficient>`                                                           Newmark Gamma Coefficient for Angular Momentum Equations of the rigid body solver.
+
+:ref:`newmark_beta_coefficient <pre_processing_newmark_beta_coefficient>`                                                              Newmark Beta Coefficient for Angular Momentum Equations of the rigid body solver.
+
+=======================================================================================   ==============================================================================================================================
+
+.. rubric:: Included in:
+
+===========================================================================================   ==========================================
+
+Parent                                                                                                                           Summary
+
+===========================================================================================   ==========================================
+:ref:`angular_momentum_equation_control <pre_processing_angular_momentum_equation_control>`   Angular momentum equation solver controls.
+
+===========================================================================================   ==========================================
+

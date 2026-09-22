@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_138:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_138.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================   ===========================================================
+
+Parent                                                                                                      Summary
+
+=====================================================   ===========================================================
+:ref:`spectral_model <pre_processing_spectral_model>`   Defines the type of spectral model to be used in radiation.
+
+=====================================================   ===========================================================
+

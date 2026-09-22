@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_237:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_237.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================================   ======================================
+
+Parent                                                                                                             Summary
+
+=================================================================================   ======================================
+:ref:`initial_values_specification <pre_processing_initial_values_specification>`   'INITIAL VALUES SPECIFICATION' object.
+
+=================================================================================   ======================================
+

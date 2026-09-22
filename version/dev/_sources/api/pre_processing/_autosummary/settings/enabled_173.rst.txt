@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_173:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_173.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================================   ======================================================
+
+Parent                                                                                                                               Summary
+
+===================================================================================   ======================================================
+:ref:`particle_heat_source_bounding <pre_processing_particle_heat_source_bounding>`   Set details of the particle heat source term bounding.
+
+===================================================================================   ======================================================
+

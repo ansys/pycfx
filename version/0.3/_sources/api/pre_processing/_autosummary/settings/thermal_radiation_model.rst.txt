@@ -1,0 +1,50 @@
+:orphan:
+
+.. _pre_processing_thermal_radiation_model:
+
+thermal_radiation_model
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.thermal_radiation_model.thermal_radiation_model
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================================   ================================================================
+
+Attribute                                                                                                                                              Summary
+
+===========================================================================================   ================================================================
+:ref:`option <pre_processing_option_136>`                                                                                The 'Thermal Radiation Model' option.
+
+:ref:`number_of_histories <pre_processing_number_of_histories>`                                                           Number of histories for Monte Carlo.
+
+:ref:`radiation_transfer_mode <pre_processing_radiation_transfer_mode>`                                                                Treatment of Radiation.
+
+:ref:`include_boundary_temperature_slip <pre_processing_include_boundary_temperature_slip>`                     'Include Boundary Temperature Slip' parameter.
+
+:ref:`maximum_number_of_photons <pre_processing_maximum_number_of_photons>`                   Maximum number of photons tracked simultaneously by Monte Carlo.
+
+:ref:`number_of_rays <pre_processing_number_of_rays>`                                                                    Number of rays for Discrete Transfer.
+
+:ref:`number_of_batches <pre_processing_number_of_batches>`                                                                           Number of photon groups.
+
+:ref:`maximum_number_of_histories <pre_processing_maximum_number_of_histories>`                                   Maximum number of histories for Monte Carlo.
+
+:ref:`scattering_model <pre_processing_scattering_model>`                                                      Defines the thermal radiation scattering model.
+
+:ref:`spectral_model <pre_processing_spectral_model>`                                              Defines the type of spectral model to be used in radiation.
+
+===========================================================================================   ================================================================
+
+.. rubric:: Included in:
+
+=================================================   ==============================================================================
+
+Parent                                                                                                                     Summary
+
+=================================================   ==============================================================================
+:ref:`fluid_models <pre_processing_fluid_models>`   Defines the model details that operate on individual fluids within the domain.
+
+=================================================   ==============================================================================
+

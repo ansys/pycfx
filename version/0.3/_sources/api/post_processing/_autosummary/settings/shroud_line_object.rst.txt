@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_shroud_line_object:
+
+shroud_line_object
+==================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.shroud_line_object.shroud_line_object
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==================================================   ==============================
+
+Parent                                                                      Summary
+
+==================================================   ==============================
+:ref:`domain_child <post_processing_domain_child>`   'child_object_type' of domain.
+
+==================================================   ==============================
+

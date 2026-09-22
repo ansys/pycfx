@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_minimum_number_of_timesteps_per_period:
+
+minimum_number_of_timesteps_per_period
+======================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.minimum_number_of_timesteps_per_period.minimum_number_of_timesteps_per_period
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================   =====================
+
+Parent                                                          Summary
+
+===============================================   =====================
+:ref:`time_period <pre_processing_time_period>`   'TIME PERIOD' object.
+
+===============================================   =====================
+

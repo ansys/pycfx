@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_additional_variable_8:
+
+additional_variable
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.additional_variable_8.additional_variable
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`additional_variable_child <pre_processing_additional_variable_child_8>`
+
+
+.. rubric:: Included in:
+
+=====================================================================   ========================================================
+
+Parent                                                                                                                   Summary
+
+=====================================================================   ========================================================
+:ref:`solid_interface_models <pre_processing_solid_interface_models>`   Holds the definition of models specific to an interface.
+
+=====================================================================   ========================================================
+

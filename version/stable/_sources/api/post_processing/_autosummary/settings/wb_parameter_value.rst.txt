@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_wb_parameter_value:
+
+wb_parameter_value
+==================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.wb_parameter_value.wb_parameter_value
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+============================================================   ===================================
+
+Parent                                                                                     Summary
+
+============================================================   ===================================
+:ref:`input_field_child <post_processing_input_field_child>`   'child_object_type' of input_field.
+
+============================================================   ===================================
+

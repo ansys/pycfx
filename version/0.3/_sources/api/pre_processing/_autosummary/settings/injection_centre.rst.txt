@@ -1,0 +1,27 @@
+:orphan:
+
+.. _pre_processing_injection_centre:
+
+injection_centre
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.injection_centre.injection_centre
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================================================   ==========================================
+
+Parent                                                                                                                         Summary
+
+=========================================================================================   ==========================================
+:ref:`injection_method <pre_processing_injection_method>`                                                Defines the injection method.
+
+:ref:`cone_definition <pre_processing_cone_definition>`                                                      'CONE DEFINITION' object.
+
+:ref:`nozzle_definition <pre_processing_nozzle_definition>`                                                'NOZZLE DEFINITION' object.
+
+:ref:`penetration_origin_and_direction <pre_processing_penetration_origin_and_direction>`   'PENETRATION ORIGIN AND DIRECTION' object.
+
+=========================================================================================   ==========================================
+

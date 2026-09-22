@@ -1,0 +1,50 @@
+:orphan:
+
+.. _pre_processing_gas_mixture:
+
+gas_mixture
+===========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.gas_mixture.gas_mixture
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================   ===========================
+
+Attribute                                                                                     Summary
+
+=======================================================================   ===========================
+:ref:`option <pre_processing_option_39>`                                    The 'Gas Mixture' option.
+
+:ref:`mixture_material <pre_processing_mixture_material>`                 Gas phase mixture material.
+
+:ref:`carbon_dioxide_material <pre_processing_carbon_dioxide_material>`      Carbon dioxide material.
+
+:ref:`hcn_material <pre_processing_hcn_material>`                                       HCN material.
+
+:ref:`hco_material <pre_processing_hco_material>`                                       HCO material.
+
+:ref:`no_material <pre_processing_no_material>`                                          NO material.
+
+:ref:`nitrogen_material <pre_processing_nitrogen_material>`                        Nitrogen material.
+
+:ref:`oxygen_material <pre_processing_oxygen_material>`                              Oxygen material.
+
+:ref:`volatiles_fuel_material <pre_processing_volatiles_fuel_material>`      Volatiles fuel material.
+
+:ref:`water_vapour_material <pre_processing_water_vapour_material>`            Water vapour material.
+
+=======================================================================   ===========================
+
+.. rubric:: Included in:
+
+===========================================================   =====================================================================
+
+Parent                                                                                                                      Summary
+
+===========================================================   =====================================================================
+:ref:`mixture_materials <pre_processing_mixture_materials>`   Material names for mixture components used by hydrocarbon fuel model.
+
+===========================================================   =====================================================================
+

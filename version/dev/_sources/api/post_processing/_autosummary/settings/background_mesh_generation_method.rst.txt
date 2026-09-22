@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_background_mesh_generation_method:
+
+background_mesh_generation_method
+=================================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.background_mesh_generation_method.background_mesh_generation_method
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==================================================   ==============================
+
+Parent                                                                      Summary
+
+==================================================   ==============================
+:ref:`domain_child <post_processing_domain_child>`   'child_object_type' of domain.
+
+==================================================   ==============================
+

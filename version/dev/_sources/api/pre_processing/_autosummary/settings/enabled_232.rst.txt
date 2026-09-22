@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_232:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_232.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================   ===============================
+
+Parent                                                                                        Summary
+
+===================================================================   ===============================
+:ref:`precoarsening_control <pre_processing_precoarsening_control>`   'PRECOARSENING CONTROL' object.
+
+===================================================================   ===============================
+

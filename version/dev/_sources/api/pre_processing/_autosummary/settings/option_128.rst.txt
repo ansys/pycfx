@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_128:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_128.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================   ==============================
+
+Parent                                                                                     Summary
+
+=================================================================   ==============================
+:ref:`curvature_correction <pre_processing_curvature_correction>`   'CURVATURE CORRECTION' object.
+
+=================================================================   ==============================
+

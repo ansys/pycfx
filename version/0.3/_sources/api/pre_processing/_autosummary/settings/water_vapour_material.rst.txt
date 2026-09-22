@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_water_vapour_material:
+
+water_vapour_material
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.water_vapour_material.water_vapour_material
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================   ==========================================================================
+
+Parent                                                                                                               Summary
+
+===============================================   ==========================================================================
+:ref:`gas_mixture <pre_processing_gas_mixture>`   Material names for components of gas phase used by hydrocarbon fuel model.
+
+===============================================   ==========================================================================
+

@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_particle_definition:
+
+particle_definition
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.particle_definition.particle_definition
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================================   ==========================================
+
+Parent                                                                                                         Summary
+
+=========================================================================   ==========================================
+:ref:`export_track_data <pre_processing_export_track_data>`                                'EXPORT TRACK DATA' object.
+
+:ref:`particle_histogram_child <pre_processing_particle_histogram_child>`   'child_object_type' of particle_histogram.
+
+=========================================================================   ==========================================
+

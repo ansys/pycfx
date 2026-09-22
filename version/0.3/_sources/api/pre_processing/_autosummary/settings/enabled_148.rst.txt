@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_148:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_148.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   =================================
+
+Parent                                                                                              Summary
+
+=======================================================================   =================================
+:ref:`injection_region_vector <pre_processing_injection_region_vector>`   'INJECTION REGION VECTOR' object.
+
+=======================================================================   =================================
+

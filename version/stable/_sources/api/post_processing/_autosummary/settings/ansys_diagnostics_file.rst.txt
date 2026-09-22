@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_ansys_diagnostics_file:
+
+ansys_diagnostics_file
+======================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.ansys_diagnostics_file.ansys_diagnostics_file
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==============================================================   ====================================
+
+Parent                                                                                        Summary
+
+==============================================================   ====================================
+:ref:`user_surface_child <post_processing_user_surface_child>`   'child_object_type' of user_surface.
+
+==============================================================   ====================================
+

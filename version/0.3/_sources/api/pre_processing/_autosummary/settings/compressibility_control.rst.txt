@@ -1,0 +1,52 @@
+:orphan:
+
+.. _pre_processing_compressibility_control:
+
+compressibility_control
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.compressibility_control.compressibility_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================================================   ===============================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                           Summary
+
+=========================================================================================================   ===============================================================================================================================================================
+:ref:`enabled <pre_processing_enabled_191>`                                                                                                                                                                                      Enable the COMPRESSIBILITY CONTROL object.
+
+:ref:`high_speed_numerics <pre_processing_high_speed_numerics>`                                                                                                               Activates special numerics to improve solver behavior for high speed flow (e.g. with shocks).
+
+:ref:`carbuncle_fix <pre_processing_carbuncle_fix>`                                                                                                  Activates special numerics to workaround carbuncle effect. Activated by default when High Speed Numerics is activated.
+
+:ref:`compressible_linearisation <pre_processing_compressible_linearisation>`                                                                                               Determines whether drho/dp is used to linearize density derivatives in the continuity equation.
+
+:ref:`decreasing_pressure_relaxation <pre_processing_decreasing_pressure_relaxation>`                                                                                                Determines whether the rate of pressure decrease is restricted for compressible flows.
+
+:ref:`decreasing_pressure_relaxation_factor <pre_processing_decreasing_pressure_relaxation_factor>`                                                                                                                      Maximum rate of pressure decrease in an iteration.
+
+:ref:`decreasing_temperature_relaxation <pre_processing_decreasing_temperature_relaxation>`                                                                                       Determines whether the rate of temperature decrease is restricted for compressible flows.
+
+:ref:`decreasing_temperature_relaxation_factor <pre_processing_decreasing_temperature_relaxation_factor>`                                                                                                             Maximum rate of temperature decrease in an iteration.
+
+:ref:`total_pressure_option <pre_processing_total_pressure_option>`                                                                                                                                                 Recipe to use for static-to-total pressure conversions.
+
+:ref:`clip_pressure_for_properties <pre_processing_clip_pressure_for_properties>`                           Specifies whether pressure should be clipped when calculating properties for compressible simulations. If activated, negative solution pressures are permitted.
+
+:ref:`minimum_pressure_for_properties <pre_processing_minimum_pressure_for_properties>`                                                                 Minimum absolute pressure for properties if negative absolute pressures are permitted for compressible simulations.
+
+=========================================================================================================   ===============================================================================================================================================================
+
+.. rubric:: Included in:
+
+=======================================================   ====================================================================================
+
+Parent                                                                                                                                 Summary
+
+=======================================================   ====================================================================================
+:ref:`solver_control <pre_processing_solver_control_1>`   Holds all objects that control discretization and execution of the solution process.
+
+=======================================================   ====================================================================================
+

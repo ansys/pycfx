@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_use_automatic_line_naming:
+
+use_automatic_line_naming
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.use_automatic_line_naming.use_automatic_line_naming
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==========================================================   ==================================
+
+Parent                                                                                  Summary
+
+==========================================================   ==================================
+:ref:`chart_line_child <post_processing_chart_line_child>`   'child_object_type' of chart_line.
+
+==========================================================   ==================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_minimum_total_mass:
+
+minimum_total_mass
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.minimum_total_mass.minimum_total_mass
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================================   ============================================================
+
+Parent                                                                                                                                   Summary
+
+=================================================================================   ============================================================
+:ref:`particle_termination_control <pre_processing_particle_termination_control>`   Sets details of the particle tracking integration algorithm.
+
+=================================================================================   ============================================================
+

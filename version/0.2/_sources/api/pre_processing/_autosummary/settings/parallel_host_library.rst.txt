@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_parallel_host_library:
+
+parallel_host_library
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.parallel_host_library.parallel_host_library
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================   ========================================
+
+Attribute                                                                                  Summary
+
+=======================================================   ========================================
+:ref:`enabled <pre_processing_enabled_256>`               Enable the PARALLEL HOST LIBRARY object.
+
+:ref:`host_definition <pre_processing_host_definition>`   A container for Host Definition objects.
+
+=======================================================   ========================================
+
+.. rubric:: Included in:
+
+===========================================================   ===========================
+
+Parent                                                                            Summary
+
+===========================================================   ===========================
+:ref:`execution_control <pre_processing_execution_control>`   'EXECUTION CONTROL' object.
+
+===========================================================   ===========================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_249:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_249.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================   =================================
+
+Parent                                                                                        Summary
+
+=================================================================   =================================
+:ref:`streamwise_direction <pre_processing_streamwise_direction>`   Defines the streamwise direction.
+
+=================================================================   =================================
+

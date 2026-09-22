@@ -1,0 +1,27 @@
+:orphan:
+
+.. _post_processing_include_in_report:
+
+include_in_report
+=================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.include_in_report.include_in_report
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==========================================================================   =================================
+
+Parent                                                                                                 Summary
+
+==========================================================================   =================================
+:ref:`file_information_options <post_processing_file_information_options>`   'file_information_options' child.
+
+:ref:`mesh_statistics_options <post_processing_mesh_statistics_options>`      'mesh_statistics_options' child.
+
+:ref:`physics_summary_options <post_processing_physics_summary_options>`      'physics_summary_options' child.
+
+:ref:`operating_maps <post_processing_operating_maps>`                                 'operating_maps' child.
+
+==========================================================================   =================================
+

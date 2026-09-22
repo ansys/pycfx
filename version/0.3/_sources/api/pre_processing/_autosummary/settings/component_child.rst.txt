@@ -1,0 +1,46 @@
+:orphan:
+
+.. _pre_processing_component_child:
+
+component_child
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.component_child.component_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================================   ====================================================================
+
+Attribute                                                                                                                                      Summary
+
+===============================================================================   ====================================================================
+:ref:`option <pre_processing_option_156>`                                                                                      The 'Component' option.
+
+:ref:`mass_fraction <pre_processing_mass_fraction>`                                                                         'Mass Fraction' parameter.
+
+:ref:`kinematic_diffusivity <pre_processing_kinematic_diffusivity>`                                                 'Kinematic Diffusivity' parameter.
+
+:ref:`enable_algebraic_slip_model <pre_processing_enable_algebraic_slip_model>`                               'Enable Algebraic Slip Model' parameter.
+
+:ref:`algebraic_slip_model <pre_processing_algebraic_slip_model>`                                        Sets the details of the Algebraic Slip Model.
+
+:ref:`condensation_model <pre_processing_condensation_model>`                     Specifies the condensability options for components of an MCF fluid.
+
+:ref:`slip_velocity <pre_processing_slip_velocity>`                                                  Defines a slip velocity for algebraic components.
+
+:ref:`turbulent_flux_closure <pre_processing_turbulent_flux_closure_1>`                  Controls the turbulent flux closure for a transport equation.
+
+===============================================================================   ====================================================================
+
+.. rubric:: Included in:
+
+===========================================   ==================================
+
+Parent                                                                   Summary
+
+===========================================   ==================================
+:ref:`component <pre_processing_component>`   A container for Component objects.
+
+===========================================   ==================================
+

@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_mass_fraction_limits:
+
+mass_fraction_limits
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.mass_fraction_limits.mass_fraction_limits
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================   =======================================
+
+Attribute                                                                                             Summary
+
+===================================================================   =======================================
+:ref:`enabled <pre_processing_enabled_177>`                           Enable the MASS FRACTION LIMITS object.
+
+:ref:`component_name <pre_processing_component_name_1>`                           'Component Name' parameter.
+
+:ref:`minimum_mass_fraction <pre_processing_minimum_mass_fraction>`        'Minimum Mass Fraction' parameter.
+
+:ref:`maximum_mass_fraction <pre_processing_maximum_mass_fraction>`        'Maximum Mass Fraction' parameter.
+
+===================================================================   =======================================
+
+.. rubric:: Included in:
+
+=================================================================================   ============================================================
+
+Parent                                                                                                                                   Summary
+
+=================================================================================   ============================================================
+:ref:`particle_termination_control <pre_processing_particle_termination_control>`   Sets details of the particle tracking integration algorithm.
+
+=================================================================================   ============================================================
+

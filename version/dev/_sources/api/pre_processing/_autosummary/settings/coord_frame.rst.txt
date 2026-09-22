@@ -1,0 +1,55 @@
+:orphan:
+
+.. _pre_processing_coord_frame:
+
+coord_frame
+===========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.coord_frame.coord_frame
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================================   ==============================================================================
+
+Parent                                                                                                                                                           Summary
+
+=======================================================================================   ==============================================================================
+:ref:`material_child <pre_processing_material_child>`                                                                                   'child_object_type' of material.
+
+:ref:`point_definition <pre_processing_point_definition>`                                                                                     'POINT DEFINITION' object.
+
+:ref:`user_point_child <pre_processing_user_point_child>`                                                                             'child_object_type' of user_point.
+
+:ref:`domain_child <pre_processing_domain_child>`                                                                                         'child_object_type' of domain.
+
+:ref:`reference_location <pre_processing_reference_location>`                             Defines the reference location of the Origin point in ORIGIN MOTION singleton.
+
+:ref:`spark_ignition <pre_processing_spark_ignition>`                                                                                 Controls the spark ignition model.
+
+:ref:`particle_injection_region_child <pre_processing_particle_injection_region_child>`                                'child_object_type' of particle_injection_region.
+
+:ref:`boundary_child <pre_processing_boundary_child>`                                                                                   'child_object_type' of boundary.
+
+:ref:`injection_region_child <pre_processing_injection_region_child>`                                                           'child_object_type' of injection_region.
+
+:ref:`subdomain_child <pre_processing_subdomain_child>`                                                                                'child_object_type' of subdomain.
+
+:ref:`source_point_child <pre_processing_source_point_child>`                                                                       'child_object_type' of source_point.
+
+:ref:`initialisation <pre_processing_initialisation>`                                                                Defines the initialisation of flow-field variables.
+
+:ref:`initialisation <pre_processing_initialisation_1>`                                                              Defines the initialisation of flow-field variables.
+
+:ref:`monitor_point_child <pre_processing_monitor_point_child>`                                                                    'child_object_type' of monitor_point.
+
+:ref:`monitor_surface_child <pre_processing_monitor_surface_child>`                                                              'child_object_type' of monitor_surface.
+
+:ref:`monitor_line_cloud_child <pre_processing_monitor_line_cloud_child>`                                                     'child_object_type' of monitor_line_cloud.
+
+:ref:`radiometer_child <pre_processing_radiometer_child>`                                                                             'child_object_type' of radiometer.
+
+:ref:`signal_motion <pre_processing_signal_motion>`                                                                                              'SIGNAL MOTION' object.
+
+=======================================================================================   ==============================================================================
+

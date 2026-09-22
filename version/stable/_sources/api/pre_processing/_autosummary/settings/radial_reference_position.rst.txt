@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_radial_reference_position:
+
+radial_reference_position
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.radial_reference_position.radial_reference_position
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================   =======================================
+
+Attribute                                                                                   Summary
+
+=========================================================   =======================================
+:ref:`option <pre_processing_option_280>`                   The 'Radial Reference Position' option.
+
+:ref:`specified_radius <pre_processing_specified_radius>`             'Specified Radius' parameter.
+
+=========================================================   =======================================
+
+.. rubric:: Included in:
+
+=============================================================   ============================================================
+
+Parent                                                                                                               Summary
+
+=============================================================   ============================================================
+:ref:`pressure_averaging <pre_processing_pressure_averaging>`   Controls details of how pressure is averaged over an outlet.
+
+=============================================================   ============================================================
+

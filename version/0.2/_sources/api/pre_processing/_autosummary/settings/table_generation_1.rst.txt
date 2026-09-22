@@ -1,0 +1,62 @@
+:orphan:
+
+.. _pre_processing_table_generation_1:
+
+table_generation
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.table_generation_1.table_generation
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================================   ==============================================
+
+Attribute                                                                                                                            Summary
+
+===========================================================================================   ==============================================
+:ref:`enabled <pre_processing_enabled_15>`                                                               Enable the TABLE GENERATION object.
+
+:ref:`option <pre_processing_option_26>`                                                                      The 'Table Generation' option.
+
+:ref:`minimum_temperature <pre_processing_minimum_temperature>`                                             'Minimum Temperature' parameter.
+
+:ref:`maximum_temperature <pre_processing_maximum_temperature>`                                             'Maximum Temperature' parameter.
+
+:ref:`minimum_absolute_pressure <pre_processing_minimum_absolute_pressure>`                           'Minimum Absolute Pressure' parameter.
+
+:ref:`maximum_absolute_pressure <pre_processing_maximum_absolute_pressure>`                           'Maximum Absolute Pressure' parameter.
+
+:ref:`initial_minimum_temperature <pre_processing_initial_minimum_temperature>`                     'Initial Minimum Temperature' parameter.
+
+:ref:`initial_maximum_temperature <pre_processing_initial_maximum_temperature>`                     'Initial Maximum Temperature' parameter.
+
+:ref:`initial_minimum_absolute_pressure <pre_processing_initial_minimum_absolute_pressure>`   'Initial Minimum Absolute Pressure' parameter.
+
+:ref:`initial_maximum_absolute_pressure <pre_processing_initial_maximum_absolute_pressure>`   'Initial Maximum Absolute Pressure' parameter.
+
+:ref:`temperature_extrapolation <pre_processing_temperature_extrapolation>`                           'Temperature Extrapolation' parameter.
+
+:ref:`pressure_extrapolation <pre_processing_pressure_extrapolation>`                                    'Pressure Extrapolation' parameter.
+
+:ref:`check_entropy_table_consistency <pre_processing_check_entropy_table_consistency>`         'Check Entropy Table Consistency' parameter.
+
+:ref:`maximum_points <pre_processing_maximum_points>`                                               Maximum number of property table points.
+
+:ref:`error_tolerance <pre_processing_error_tolerance>`                                            Table generator relative error tolerance.
+
+===========================================================================================   ==============================================
+
+.. rubric:: Included in:
+
+===================================================================   ===================================================================================================================================================================================================================================================================================
+
+Parent                                                                                                                                                                                                                                                                                                                                            Summary
+
+===================================================================   ===================================================================================================================================================================================================================================================================================
+:ref:`properties <pre_processing_properties>`                                                                                                                                                                                                                                             Holds the definition of all physical properties for a material.
+
+:ref:`saturation_properties <pre_processing_saturation_properties>`   Defines the saturation properties used for interphase mass transfer or equilibrium mass transfer models. This singleton would point to a data file. In this case only RGP files are currently supported. The saturation pressure and temperature singletons can override this data.
+
+===================================================================   ===================================================================================================================================================================================================================================================================================
+

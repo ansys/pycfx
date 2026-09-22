@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_injection_total_temperature:
+
+injection_total_temperature
+===========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.injection_total_temperature.injection_total_temperature
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================================================   ===============================================================
+
+Parent                                                                                                                                                Summary
+
+===========================================================================================   ===============================================================
+:ref:`particle_material_vapour_pressure <pre_processing_particle_material_vapour_pressure>`   Holds vapour pressure information for primary droplet break-up.
+
+===========================================================================================   ===============================================================
+

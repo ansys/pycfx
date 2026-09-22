@@ -1,0 +1,34 @@
+:orphan:
+
+.. _post_processing_variable_name_map_child:
+
+variable_name_map_child
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.variable_name_map_child.variable_name_map_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+======================================================   ==========================================================================
+
+Attribute                                                                                                                   Summary
+
+======================================================   ==========================================================================
+:ref:`cfx_style_name <post_processing_cfx_style_name>`                                                  Equivalent CFX solver name.
+
+:ref:`external_name <post_processing_external_name>`     External name being used by the external application that wrote this file.
+
+======================================================   ==========================================================================
+
+.. rubric:: Included in:
+
+============================================================   ==========================
+
+Parent                                                                            Summary
+
+============================================================   ==========================
+:ref:`variable_name_map <post_processing_variable_name_map>`   'variable_name_map' child.
+
+============================================================   ==========================
+

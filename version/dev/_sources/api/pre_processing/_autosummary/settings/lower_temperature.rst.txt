@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_lower_temperature:
+
+lower_temperature
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.lower_temperature.lower_temperature
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================   ===================================================================================================
+
+Parent                                                                                                                                                              Summary
+
+=====================================================================   ===================================================================================================
+:ref:`temperature_limits <pre_processing_temperature_limits>`           Specifies temperature limits for the lower and upper regions of a NASA SP-273 format Cp polynomial.
+
+:ref:`forward_reaction_rate <pre_processing_forward_reaction_rate>`                                                                         'FORWARD REACTION RATE' object.
+
+:ref:`backward_reaction_rate <pre_processing_backward_reaction_rate>`                                                   Defines the backwards rate for a chemical reaction.
+
+=====================================================================   ===================================================================================================
+

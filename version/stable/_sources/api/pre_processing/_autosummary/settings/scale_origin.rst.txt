@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_scale_origin:
+
+scale_origin
+============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.scale_origin.scale_origin
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   =================================
+
+Parent                                                                                Summary
+
+=========================================================   =================================
+:ref:`scale_definition <pre_processing_scale_definition>`   Defines how scaling is specified.
+
+=========================================================   =================================
+

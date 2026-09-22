@@ -1,0 +1,45 @@
+:orphan:
+
+.. _pre_processing_reference_temperature:
+
+reference_temperature
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.reference_temperature.reference_temperature
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================================   ======================================================================
+
+Parent                                                                                                                                                 Summary
+
+=====================================================================================   ======================================================================
+:ref:`reference_state <pre_processing_reference_state>`                                                               Sets the reference state for a material.
+
+:ref:`dynamic_viscosity <pre_processing_dynamic_viscosity_1>`                               Hold the details for an advanced description of dynamic viscosity.
+
+:ref:`thermal_conductivity <pre_processing_thermal_conductivity_1>`                     Hold the details for an advanced descriptions of Thermal Conductivity.
+
+:ref:`heating_value <pre_processing_heating_value_1>`                                                                                           Heating value.
+
+:ref:`moisture_latent_heat <pre_processing_moisture_latent_heat>`                                                                        Moisture latent heat.
+
+:ref:`thermal_conductivity <pre_processing_thermal_conductivity_2>`                     Hold the details for an advanced descriptions of Thermal Conductivity.
+
+:ref:`dynamic_viscosity <pre_processing_dynamic_viscosity_2>`                               Hold the details for an advanced description of dynamic viscosity.
+
+:ref:`internal_diffusion <pre_processing_internal_diffusion>`                                                                     'INTERNAL DIFFUSION' object.
+
+:ref:`external_diffusion <pre_processing_external_diffusion>`                                                                     'EXTERNAL DIFFUSION' object.
+
+:ref:`heat_release <pre_processing_heat_release>`                                                     Holds heat release information for multiphase reactions.
+
+:ref:`preheat_temperature_dependency <pre_processing_preheat_temperature_dependency>`             Preheat temperature dependency for laminar burning velocity.
+
+:ref:`latent_heat <pre_processing_latent_heat_1>`                                                        Holds latent heat information for liquid evaporation.
+
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum>`                                           Specifies conditions on Mass and Momentum at a boundary.
+
+=====================================================================================   ======================================================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_199:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_199.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================================================   ===========================================
+
+Parent                                                                                                                            Summary
+
+===========================================================================================   ===========================================
+:ref:`mesh_motion_data_transfer_control <pre_processing_mesh_motion_data_transfer_control>`   'MESH MOTION DATA TRANSFER CONTROL' object.
+
+===========================================================================================   ===========================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_radius_of_injection_sphere:
+
+radius_of_injection_sphere
+==========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.radius_of_injection_sphere.radius_of_injection_sphere
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   =============================
+
+Parent                                                                            Summary
+
+=========================================================   =============================
+:ref:`injection_method <pre_processing_injection_method>`   Defines the injection method.
+
+=========================================================   =============================
+

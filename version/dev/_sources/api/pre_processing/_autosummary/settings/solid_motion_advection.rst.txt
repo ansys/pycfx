@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_solid_motion_advection:
+
+solid_motion_advection
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.solid_motion_advection.solid_motion_advection
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================   =====================================================
+
+Attribute                                                                                                     Summary
+
+=============================================================   =====================================================
+:ref:`boundary_advection <pre_processing_boundary_advection>`   Includes Motion Advection Term on specified boundary.
+
+=============================================================   =====================================================
+
+.. rubric:: Included in:
+
+=================================================================   =============================================================
+
+Parent                                                                                                                    Summary
+
+=================================================================   =============================================================
+:ref:`boundary_conditions <pre_processing_boundary_conditions>`     Specifies boundary conditions for all equations being solved.
+
+:ref:`boundary_conditions <pre_processing_boundary_conditions_3>`   Specifies boundary conditions for all equations being solved.
+
+=================================================================   =============================================================
+

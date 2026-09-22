@@ -1,0 +1,48 @@
+:orphan:
+
+.. _pre_processing_shear_stress:
+
+shear_stress
+============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.shear_stress.shear_stress
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================   =======================================================================================================
+
+Attribute                                                                                                                                                 Summary
+
+=======================================================   =======================================================================================================
+:ref:`option <pre_processing_option_271>`                                                                                              The 'Shear Stress' option.
+
+:ref:`xvalue <pre_processing_xvalue>`                                                     Input expression for vector VARIABLE component value in relevant units.
+
+:ref:`yvalue <pre_processing_yvalue>`                                                     Input expression for vector VARIABLE component value in relevant units.
+
+:ref:`zvalue <pre_processing_zvalue>`                                                     Input expression for vector VARIABLE component value in relevant units.
+
+:ref:`avalue <pre_processing_avalue>`                                         Input expression for cylindrical vector VARIABLE component value in relevant units.
+
+:ref:`rvalue <pre_processing_rvalue>`                                         Input expression for cylindrical vector VARIABLE component value in relevant units.
+
+:ref:`tvalue <pre_processing_tvalue>`                                         Input expression for cylindrical vector VARIABLE component value in relevant units.
+
+:ref:`axis_definition <pre_processing_axis_definition>`   Defines the axis for a cylindrical coordinate system or variables defined using cylindrical components.
+
+=======================================================   =======================================================================================================
+
+.. rubric:: Included in:
+
+=============================================================   ========================================================
+
+Parent                                                                                                           Summary
+
+=============================================================   ========================================================
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum>`     Specifies conditions on Mass and Momentum at a boundary.
+
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum_1>`   Specifies conditions on Mass and Momentum at a boundary.
+
+=============================================================   ========================================================
+

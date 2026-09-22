@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_large_problem:
+
+large_problem
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.large_problem.large_problem
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================   ==============================
+
+Parent                                                                                       Summary
+
+===================================================================   ==============================
+:ref:`executable_selection <pre_processing_executable_selection>`     'EXECUTABLE SELECTION' object.
+
+:ref:`executable_selection <pre_processing_executable_selection_1>`   'EXECUTABLE SELECTION' object.
+
+===================================================================   ==============================
+

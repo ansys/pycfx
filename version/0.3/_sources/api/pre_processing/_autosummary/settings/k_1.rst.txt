@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_k_1:
+
+k
+=
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.k_1.k
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================   ===============
+
+Attribute                                           Summary
+
+=========================================   ===============
+:ref:`option <pre_processing_option_337>`   The 'K' option.
+
+:ref:`k <pre_processing_k>`                  'k' parameter.
+
+=========================================   ===============
+
+.. rubric:: Included in:
+
+===================================================================================   ======================================
+
+Parent                                                                                                               Summary
+
+===================================================================================   ======================================
+:ref:`turbulence_initial_conditions <pre_processing_turbulence_initial_conditions>`   Sets initial conditions on turbulence.
+
+===================================================================================   ======================================
+

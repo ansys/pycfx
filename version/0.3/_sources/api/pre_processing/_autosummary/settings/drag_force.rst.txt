@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_drag_force:
+
+drag_force
+==========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.drag_force.drag_force
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================   ===============================
+
+Attribute                                                                               Summary
+
+=============================================================   ===============================
+:ref:`option <pre_processing_option_158>`                              The 'Drag Force' option.
+
+:ref:`drag_coefficient <pre_processing_drag_coefficient>`         'Drag Coefficient' parameter.
+
+:ref:`newton_coefficient <pre_processing_newton_coefficient>`   'Newton Coefficient' parameter.
+
+:ref:`stokes_coefficient <pre_processing_stokes_coefficient>`   'Stokes Coefficient' parameter.
+
+=============================================================   ===============================
+
+.. rubric:: Included in:
+
+=================================================================   =============================================
+
+Parent                                                                                                    Summary
+
+=================================================================   =============================================
+:ref:`algebraic_slip_model <pre_processing_algebraic_slip_model>`   Sets the details of the Algebraic Slip Model.
+
+=================================================================   =============================================
+

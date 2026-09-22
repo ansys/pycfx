@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_latent_heat_1:
+
+latent_heat
+===========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.latent_heat_1.latent_heat
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================   ==================================
+
+Attribute                                                                                        Summary
+
+===================================================================   ==================================
+:ref:`option <pre_processing_option_207>`                                      The 'Latent Heat' option.
+
+:ref:`latent_heat <pre_processing_latent_heat>`                                             Latent Heat.
+
+:ref:`reference_temperature <pre_processing_reference_temperature>`   'Reference Temperature' parameter.
+
+===================================================================   ==================================
+
+.. rubric:: Included in:
+
+=================================================================   ======================================
+
+Parent                                                                                             Summary
+
+=================================================================   ======================================
+:ref:`component_pair_child <pre_processing_component_pair_child>`   'child_object_type' of component_pair.
+
+=================================================================   ======================================
+

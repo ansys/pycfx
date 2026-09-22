@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_number_of_timesteps:
+
+number_of_timesteps
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.number_of_timesteps.number_of_timesteps
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================   ==============================================
+
+Parent                                                                                                   Summary
+
+===============================================================   ==============================================
+:ref:`interval_definition <pre_processing_interval_definition>`   Defines the statistical window for mon points.
+
+===============================================================   ==============================================
+

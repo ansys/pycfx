@@ -1,0 +1,29 @@
+:orphan:
+
+.. _pre_processing_time_list:
+
+time_list
+=========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.time_list.time_list
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ======================================================================================================
+
+Parent                                                                                                                                                       Summary
+
+===========================================================   ======================================================================================================
+:ref:`ignition_time <pre_processing_ignition_time>`                                                                                 Defines time for spark ignition.
+
+:ref:`reinitialisation <pre_processing_reinitialisation>`                                                                     Defines time for EGR reinitialization.
+
+:ref:`output_frequency <pre_processing_output_frequency_1>`   Holds options for controlling the frequency with which backup and transient results files are written.
+
+:ref:`export_frequency <pre_processing_export_frequency>`                                                                                 'EXPORT FREQUENCY' object.
+
+:ref:`output_frequency <pre_processing_output_frequency_2>`   Holds options for controlling the frequency with which backup and transient results files are written.
+
+===========================================================   ======================================================================================================
+

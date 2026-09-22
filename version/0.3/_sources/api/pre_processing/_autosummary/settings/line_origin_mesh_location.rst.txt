@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_line_origin_mesh_location:
+
+line_origin_mesh_location
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.line_origin_mesh_location.line_origin_mesh_location
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================   ===========================
+
+Parent                                                                                      Summary
+
+=====================================================================   ===========================
+:ref:`boundary_line_location <pre_processing_boundary_line_location>`   Locates lines in the model.
+
+=====================================================================   ===========================
+

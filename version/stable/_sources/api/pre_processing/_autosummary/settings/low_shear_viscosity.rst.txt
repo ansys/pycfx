@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_low_shear_viscosity:
+
+low_shear_viscosity
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.low_shear_viscosity.low_shear_viscosity
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================================   ==================================================================
+
+Parent                                                                                                                                           Summary
+
+===================================================================================   ==================================================================
+:ref:`non_newtonian_viscosity_model <pre_processing_non_newtonian_viscosity_model>`   Hold the details for an advanced description of dynamic viscosity.
+
+===================================================================================   ==================================================================
+

@@ -1,0 +1,44 @@
+:orphan:
+
+.. _pre_processing_particle_user_source:
+
+particle_user_source
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.particle_user_source.particle_user_source
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================================================================   =======================================================
+
+Attribute                                                                                                                                                       Summary
+
+=============================================================================================================   =======================================================
+:ref:`enabled <pre_processing_enabled_102>`                                                                                     Enable the PARTICLE USER SOURCE object.
+
+:ref:`particle_user_routine <pre_processing_particle_user_routine>`                                                                           Name of the user routine.
+
+:ref:`argument_variables_list <pre_processing_argument_variables_list>`                                                            'Argument Variables List' parameter.
+
+:ref:`particle_user_source_return_variables_list <pre_processing_particle_user_source_return_variables_list>`   'Particle User Source Return Variables List' parameter.
+
+:ref:`particle_coupling <pre_processing_particle_coupling>`                                                                              'Particle Coupling' parameter.
+
+=============================================================================================================   =======================================================
+
+.. rubric:: Included in:
+
+=========================================================================   ====================================================
+
+Parent                                                                                                                   Summary
+
+=========================================================================   ====================================================
+:ref:`momentum_transfer <pre_processing_momentum_transfer>`                 Specifies momentum transfer models for a fluid pair.
+
+:ref:`interphase_heat_transfer <pre_processing_interphase_heat_transfer>`    Specifies heat transfer model between a fluid pair.
+
+:ref:`component_pair_child <pre_processing_component_pair_child>`                         'child_object_type' of component_pair.
+
+=========================================================================   ====================================================
+

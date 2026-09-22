@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_injection_variable:
+
+injection_variable
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.injection_variable.injection_variable
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`injection_variable_child <pre_processing_injection_variable_child>`
+
+
+.. rubric:: Included in:
+
+=====================================================================   ================================
+
+Parent                                                                                           Summary
+
+=====================================================================   ================================
+:ref:`injection_distribution <pre_processing_injection_distribution>`   'INJECTION DISTRIBUTION' object.
+
+=====================================================================   ================================
+

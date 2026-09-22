@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_200:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_200.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================================   =====================================
+
+Parent                                                                                                          Summary
+
+===============================================================================   =====================================
+:ref:`force_data_transfer_control <pre_processing_force_data_transfer_control>`   'FORCE DATA TRANSFER CONTROL' object.
+
+===============================================================================   =====================================
+

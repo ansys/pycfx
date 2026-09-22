@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_include_in_report_1:
+
+include_in_report
+=================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.include_in_report_1.include_in_report
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==========================================================================   =================================
+
+Parent                                                                                                 Summary
+
+==========================================================================   =================================
+:ref:`solution_summary_options <post_processing_solution_summary_options>`   'solution_summary_options' child.
+
+==========================================================================   =================================
+

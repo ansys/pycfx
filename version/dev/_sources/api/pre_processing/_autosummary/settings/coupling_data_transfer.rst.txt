@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_coupling_data_transfer:
+
+coupling_data_transfer
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.coupling_data_transfer.coupling_data_transfer
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`coupling_data_transfer_child <pre_processing_coupling_data_transfer_child>`
+
+
+.. rubric:: Included in:
+
+=====================================================   ================================
+
+Parent                                                                           Summary
+
+=====================================================   ================================
+:ref:`boundary_child <pre_processing_boundary_child>`   'child_object_type' of boundary.
+
+=====================================================   ================================
+

@@ -1,0 +1,48 @@
+:orphan:
+
+.. _pre_processing_shear_velocity_scaling_model:
+
+shear_velocity_scaling_model
+============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.shear_velocity_scaling_model.shear_velocity_scaling_model
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================================================================   ======================================================================================================
+
+Attribute                                                                                                                                                                                                      Summary
+
+=============================================================================================================   ======================================================================================================
+:ref:`enabled <pre_processing_enabled_76>`                                                                                                                             Enable the SHEAR VELOCITY SCALING MODEL object.
+
+:ref:`option <pre_processing_option_134>`                                                                                                                                   The 'Shear Velocity Scaling Model' option.
+
+:ref:`variable_sigma <pre_processing_variable_sigma>`                                                                                                                      Switch on variable sigma for Marie scaling.
+
+:ref:`velocity_profile_shift <pre_processing_velocity_profile_shift>`                                                                                            Additional Shift In Non Dimensional Velocity Profile.
+
+:ref:`buoyancy_shear_velocity_factor_diffusivity <pre_processing_buoyancy_shear_velocity_factor_diffusivity>`                                                                      Diffusivity used in bstar equation.
+
+:ref:`wall_node_distance_factor <pre_processing_wall_node_distance_factor>`                                                                                Turbulent wall function yplus wall distance scaling factor.
+
+:ref:`turbulence_production_factor <pre_processing_turbulence_production_factor>`                               Wall turbulence production scaling factor allowing accounting of bubby and film turbulence production.
+
+:ref:`wall_buoyancy_shear_velocity_factor <pre_processing_wall_buoyancy_shear_velocity_factor>`                                                                               Sets bstar on a wall boundary condition.
+
+=============================================================================================================   ======================================================================================================
+
+.. rubric:: Included in:
+
+===========================================================================   =====================================================
+
+Parent                                                                                                                      Summary
+
+===========================================================================   =====================================================
+:ref:`turbulent_wall_functions <pre_processing_turbulent_wall_functions>`     Sets the turbulent near-wall treatment at a boundary.
+
+:ref:`turbulent_wall_functions <pre_processing_turbulent_wall_functions_1>`   Sets the turbulent near-wall treatment at a boundary.
+
+===========================================================================   =====================================================
+

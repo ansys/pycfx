@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_205:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_205.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================================   =====================================================================
+
+Parent                                                                                                                                            Summary
+
+=================================================================================   =====================================================================
+:ref:`fluid1_species_mass_transfer <pre_processing_fluid1_species_mass_transfer>`   Specifies species mass transfer model to first fluid of a fluid pair.
+
+=================================================================================   =====================================================================
+

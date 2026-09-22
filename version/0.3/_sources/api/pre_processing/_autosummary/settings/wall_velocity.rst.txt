@@ -1,0 +1,58 @@
+:orphan:
+
+.. _pre_processing_wall_velocity:
+
+wall_velocity
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.wall_velocity.wall_velocity
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================================   =======================================================================================================
+
+Attribute                                                                                                                                                                             Summary
+
+===================================================================================   =======================================================================================================
+:ref:`enabled <pre_processing_enabled_124>`                                                                                                                  Enable the WALL VELOCITY object.
+
+:ref:`option <pre_processing_option_272>`                                                                                                                         The 'Wall Velocity' option.
+
+:ref:`wall_u <pre_processing_wall_u>`                                                                                                                                     'Wall U' parameter.
+
+:ref:`wall_v <pre_processing_wall_v>`                                                                                                                                     'Wall V' parameter.
+
+:ref:`wall_w <pre_processing_wall_w>`                                                                                                                                     'Wall W' parameter.
+
+:ref:`wall_velocity_axial_component <pre_processing_wall_velocity_axial_component>`                                                                'Wall Velocity Axial Component' parameter.
+
+:ref:`wall_velocity_r_component <pre_processing_wall_velocity_r_component>`                                                                            'Wall Velocity r Component' parameter.
+
+:ref:`wall_velocity_theta_component <pre_processing_wall_velocity_theta_component>`                                                                'Wall Velocity Theta Component' parameter.
+
+:ref:`angular_velocity <pre_processing_angular_velocity>`                                                                                       Rotating speed for a rotating domain or wall.
+
+:ref:`axis_definition <pre_processing_axis_definition>`                               Defines the axis for a cylindrical coordinate system or variables defined using cylindrical components.
+
+===================================================================================   =======================================================================================================
+
+.. rubric:: Included in:
+
+=============================================================   ========================================================
+
+Parent                                                                                                           Summary
+
+=============================================================   ========================================================
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum>`     Specifies conditions on Mass and Momentum at a boundary.
+
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum_1>`   Specifies conditions on Mass and Momentum at a boundary.
+
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum_2>`   Specifies conditions on Mass and Momentum at a boundary.
+
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum_3>`   Specifies conditions on Mass and Momentum at a boundary.
+
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum_5>`   Specifies conditions on Mass and Momentum at a boundary.
+
+=============================================================   ========================================================
+

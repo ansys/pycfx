@@ -1,0 +1,7 @@
+.. _ref_post_processing:
+
+post_processing
+===============
+
+The post_processing :ref:`ref_post_processing_root` is the top-level PostProcessing object. It contains all
+other settings objects in a hierarchical structure.

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_241:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_241.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   =================================================
+
+Parent                                                                                                              Summary
+
+=======================================================================   =================================================
+:ref:`tube_side_area_fraction <pre_processing_tube_side_area_fraction>`   Holds the definition of tube fluid area fraction.
+
+=======================================================================   =================================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_auxiliary_jet_coefficient:
+
+auxiliary_jet_coefficient
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.auxiliary_jet_coefficient.auxiliary_jet_coefficient
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ====================================================================
+
+Parent                                                                                                                     Summary
+
+===========================================================   ====================================================================
+:ref:`geko_coefficients <pre_processing_geko_coefficients>`   Provides auxiliary model coefficients for the GEKO turbulence model.
+
+===========================================================   ====================================================================
+

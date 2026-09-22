@@ -1,0 +1,44 @@
+:orphan:
+
+.. _pre_processing_thermal_conductivity_2:
+
+thermal_conductivity
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.thermal_conductivity_2.thermal_conductivity
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================================   ===========================================
+
+Attribute                                                                                                                   Summary
+
+=====================================================================================   ===========================================
+:ref:`enabled <pre_processing_enabled_8>`                                                   Enable the THERMAL CONDUCTIVITY object.
+
+:ref:`option <pre_processing_option_20>`                                                         The 'Thermal Conductivity' option.
+
+:ref:`reference_temperature <pre_processing_reference_temperature>`                              'Reference Temperature' parameter.
+
+:ref:`thermal_conductivity <pre_processing_thermal_conductivity>`                                 'Thermal Conductivity' parameter.
+
+:ref:`reference_thermal_conductivity <pre_processing_reference_thermal_conductivity>`   'Reference Thermal Conductivity' parameter.
+
+:ref:`sutherlands_constant <pre_processing_sutherlands_constant>`                                 'Sutherlands Constant' parameter.
+
+:ref:`temperature_exponent <pre_processing_temperature_exponent>`                                 'Temperature Exponent' parameter.
+
+=====================================================================================   ===========================================
+
+.. rubric:: Included in:
+
+=============================================================   ========================================================================================================================================================================================================================================
+
+Parent                                                                                                                                                                                                                                                                                           Summary
+
+=============================================================   ========================================================================================================================================================================================================================================
+:ref:`mixture_properties <pre_processing_mixture_properties>`   Used as a container for specifying bulk properties of both fixed and variable composition mixtures. Ideal Mixture is the default rule for all properties. Individual properties can be overridden using the singleton for that property.
+
+=============================================================   ========================================================================================================================================================================================================================================
+

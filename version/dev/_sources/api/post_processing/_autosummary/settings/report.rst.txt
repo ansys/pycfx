@@ -1,0 +1,61 @@
+:orphan:
+
+.. _post_processing_report:
+
+report
+======
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.report.report
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+==========================================================================   ==================================================================================================================================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                                                                                                                               Summary
+
+==========================================================================   ==================================================================================================================================================================================================================================================================================================================
+:ref:`excluded_report_items <post_processing_excluded_report_items>`                                                                                                                                                                                                                      Specifies which items in the 'Report Items' parameter should NOT be included in the generated report.
+
+:ref:`report_items <post_processing_report_items>`                           A list of object paths that make up the report. This list contains all objects that can possibly exist in a report, and in the order in which they will appear. If any of these objects are not to be included in the final report, the object paths should be specified in the 'Excluded Report Items' parameter.
+
+:ref:`publish <post_processing_publish>`                                                                                                                                                                                                                                                                                                                                    Defines the Report.
+
+:ref:`preview <post_processing_preview>`                                                                                                                                                                                                                                                                                                                                    Defines the Report.
+
+:ref:`report_properties <post_processing_report_properties>`                                                                                                                                                                                                                                                                                                         'report_properties' child.
+
+:ref:`file_information_options <post_processing_file_information_options>`                                                                                                                                                                                                                                                                                    'file_information_options' child.
+
+:ref:`mesh_statistics_options <post_processing_mesh_statistics_options>`                                                                                                                                                                                                                                                                                       'mesh_statistics_options' child.
+
+:ref:`physics_summary_options <post_processing_physics_summary_options>`                                                                                                                                                                                                                                                                                       'physics_summary_options' child.
+
+:ref:`solution_summary_options <post_processing_solution_summary_options>`                                                                                                                                                                                                                                                                                    'solution_summary_options' child.
+
+==========================================================================   ==================================================================================================================================================================================================================================================================================================================
+
+.. rubric:: Methods
+
+============================================   ========================================
+
+Method                                                                          Summary
+
+============================================   ========================================
+:ref:`suspend <post_processing_suspend>`       Suspend immediate update for the object.
+
+:ref:`unsuspend <post_processing_unsuspend>`   Restore immediate update for the object.
+
+============================================   ========================================
+
+.. rubric:: Included in:
+
+========================================   =========================================
+
+Parent                                                                       Summary
+
+========================================   =========================================
+:ref:`results <post_processing_results>`   Encapsulates a CFX post-processing setup.
+
+========================================   =========================================
+

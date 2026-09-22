@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_x_split:
+
+x_split
+=======
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.x_split.x_split
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==========================================================   ============================================================================
+
+Parent                                                                                                                            Summary
+
+==========================================================   ============================================================================
+:ref:`viewport_manager <post_processing_viewport_manager>`   This object stores the parameters that control the global viewport controls.
+
+==========================================================   ============================================================================
+

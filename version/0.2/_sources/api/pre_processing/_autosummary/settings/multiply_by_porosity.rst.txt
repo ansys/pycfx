@@ -1,0 +1,41 @@
+:orphan:
+
+.. _pre_processing_multiply_by_porosity:
+
+multiply_by_porosity
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.multiply_by_porosity.multiply_by_porosity
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================================   ============================================================================================================================================
+
+Parent                                                                                                                                                                                                                 Summary
+
+===============================================================================   ============================================================================================================================================
+:ref:`radiation_source_child <pre_processing_radiation_source_child>`                                                                                                                 'child_object_type' of radiation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child>`                                                                                                                    'child_object_type' of equation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_1>`                                                                                                                  'child_object_type' of equation_source.
+
+:ref:`radiation_source_child <pre_processing_radiation_source_child_1>`                                                                                                               'child_object_type' of radiation_source.
+
+:ref:`general_momentum_source <pre_processing_general_momentum_source>`                                                                                                Defines a general momentum source term and coefficient.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_3>`                                                                                                                  'child_object_type' of equation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_4>`                                                                                                                  'child_object_type' of equation_source.
+
+:ref:`interfacial_area_transport <pre_processing_interfacial_area_transport_3>`   Interfacial Area Transport Equation specification. Required when this option is selected for the interphase transfer model for a phase pair.
+
+:ref:`radiation_source_child <pre_processing_radiation_source_child_2>`                                                                                                               'child_object_type' of radiation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_6>`                                                                                                                  'child_object_type' of equation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_7>`                                                                                                                  'child_object_type' of equation_source.
+
+===============================================================================   ============================================================================================================================================
+

@@ -1,0 +1,32 @@
+:orphan:
+
+.. _pre_processing_external_solver_coupling:
+
+external_solver_coupling
+========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.external_solver_coupling.external_solver_coupling
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+========================================   ======================================
+
+Attribute                                                                 Summary
+
+========================================   ======================================
+:ref:`option <pre_processing_option_77>`   The 'External Solver Coupling' option.
+
+========================================   ======================================
+
+.. rubric:: Included in:
+
+===================================================   ==================================================
+
+Parent                                                                                           Summary
+
+===================================================   ==================================================
+:ref:`analysis_type <pre_processing_analysis_type>`   Controls if the simulation is Steady or Transient.
+
+===================================================   ==================================================
+

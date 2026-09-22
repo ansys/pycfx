@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_a0_coefficient:
+
+a0_coefficient
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.a0_coefficient.a0_coefficient
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================================   ============================================================
+
+Parent                                                                                                                                       Summary
+
+=====================================================================================   ============================================================
+:ref:`preheat_temperature_dependency <pre_processing_preheat_temperature_dependency>`   Preheat temperature dependency for laminar burning velocity.
+
+=====================================================================================   ============================================================
+

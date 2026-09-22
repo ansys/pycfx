@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_chart_print_base_width:
+
+chart_print_base_width
+======================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.chart_print_base_width.chart_print_base_width
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+================================================   =============================
+
+Parent                                                                   Summary
+
+================================================   =============================
+:ref:`chart_child <post_processing_chart_child>`   'child_object_type' of chart.
+
+================================================   =============================
+

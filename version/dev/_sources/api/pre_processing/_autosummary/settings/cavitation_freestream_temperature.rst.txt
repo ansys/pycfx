@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_cavitation_freestream_temperature:
+
+cavitation_freestream_temperature
+=================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.cavitation_freestream_temperature.cavitation_freestream_temperature
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================================   ===================================================
+
+Parent                                                                                                                      Summary
+
+=============================================================================   ===================================================
+:ref:`cavitation_thermal_effects <pre_processing_cavitation_thermal_effects>`   Specifies the model for cavitation thermal effects.
+
+=============================================================================   ===================================================
+

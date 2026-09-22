@@ -1,0 +1,58 @@
+:orphan:
+
+.. _pre_processing_coordinate_frame_child:
+
+coordinate_frame_child
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.coordinate_frame_child.coordinate_frame_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================================   ==================================================================================
+
+Attribute                                                                                                                                                      Summary
+
+=================================================================================   ==================================================================================
+:ref:`option <pre_processing_option_57>`                                                                                                The 'Coordinate Frame' option.
+
+:ref:`coord_frame_type <pre_processing_coord_frame_type>`                                                 Specifies if a Coordinate Frame is Cartesian or Cylindrical.
+
+:ref:`reference_coord_frame <pre_processing_reference_coord_frame>`                                                                 'Reference Coord Frame' parameter.
+
+:ref:`origin_point <pre_processing_origin_point>`                                                                                            'Origin Point' parameter.
+
+:ref:`axis_3_point <pre_processing_axis_3_point>`                                                                   A point on the 3rd (Z) Axis of a coordinate frame.
+
+:ref:`plane_13_point <pre_processing_plane_13_point>`                                                              A point on the 13 (XZ) Plane of a coordinate frame.
+
+:ref:`location <pre_processing_location>`                                                                                                        'Location' parameter.
+
+:ref:`centroid_type <pre_processing_centroid_type>`                                 Whether the centroid is the 'real' centroid, or the nearest point on the location.
+
+:ref:`invert_normal_axis_direction <pre_processing_invert_normal_axis_direction>`                                            'Invert Normal Axis Direction' parameter.
+
+:ref:`visibility <pre_processing_visibility>`                                                                                                  'Visibility' parameter.
+
+:ref:`origin <pre_processing_origin>`                                                                                                              'Origin' parameter.
+
+:ref:`point_on_axis_3 <pre_processing_point_on_axis_3>`                                                             A point on the 3rd (Z) Axis of a coordinate frame.
+
+:ref:`point_on_plane_13 <pre_processing_point_on_plane_13>`                                                        A point on the 13 (XZ) Plane of a coordinate frame.
+
+:ref:`frame_motion <pre_processing_frame_motion>`                                       Defines the motion of a coordinate frame relative to another coordinate frame.
+
+=================================================================================   ==================================================================================
+
+.. rubric:: Included in:
+
+=========================================================   =========================================
+
+Parent                                                                                        Summary
+
+=========================================================   =========================================
+:ref:`coordinate_frame <pre_processing_coordinate_frame>`   A container for Coordinate Frame objects.
+
+=========================================================   =========================================
+

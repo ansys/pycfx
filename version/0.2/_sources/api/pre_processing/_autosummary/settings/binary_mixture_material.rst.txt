@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_binary_mixture_material:
+
+binary_mixture_material
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.binary_mixture_material.binary_mixture_material
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   =====================================================================
+
+Parent                                                                                                                      Summary
+
+===========================================================   =====================================================================
+:ref:`mixture_materials <pre_processing_mixture_materials>`   Material names for mixture components used by hydrocarbon fuel model.
+
+===========================================================   =====================================================================
+

@@ -1,0 +1,42 @@
+:orphan:
+
+.. _pre_processing_convergence_criteria_2:
+
+convergence_criteria
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.convergence_criteria_2.convergence_criteria
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================   ==================================================================================================
+
+Attribute                                                                                                                                                                Summary
+
+===========================================================================   ==================================================================================================
+:ref:`enabled <pre_processing_enabled_183>`                                                                                              Enable the CONVERGENCE CRITERIA object.
+
+:ref:`residual_type <pre_processing_residual_type>`                                                                                                   'Residual Type' parameter.
+
+:ref:`residual_target <pre_processing_residual_target>`                                                                                             'Residual Target' parameter.
+
+:ref:`conservation_target <pre_processing_conservation_target>`                                                         The maximum relative equation imbalance for convergence.
+
+:ref:`residual_reduction_target <pre_processing_residual_reduction_target>`                                                               'Residual Reduction Target' parameter.
+
+:ref:`domain_interface_target <pre_processing_domain_interface_target>`       A target for the relative change of a domain interface quantity (e.g. pressure change, mass flow).
+
+===========================================================================   ==================================================================================================
+
+.. rubric:: Included in:
+
+=================================================================   ======================================
+
+Parent                                                                                             Summary
+
+=================================================================   ======================================
+:ref:`equation_class_child <pre_processing_equation_class_child>`   'child_object_type' of equation_class.
+
+=================================================================   ======================================
+

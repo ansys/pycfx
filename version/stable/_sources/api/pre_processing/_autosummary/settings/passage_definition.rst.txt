@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_passage_definition:
+
+passage_definition
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.passage_definition.passage_definition
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================================   ============================================
+
+Attribute                                                                                                                      Summary
+
+=======================================================================================   ============================================
+:ref:`number_of_passages_in_component <pre_processing_number_of_passages_in_component>`   'Number of Passages in Component' parameter.
+
+:ref:`number_of_passages_in_360 <pre_processing_number_of_passages_in_360>`                     'Number of Passages in 360' parameter.
+
+=======================================================================================   ============================================
+
+.. rubric:: Included in:
+
+===================================================   ================================================================
+
+Parent                                                                                                         Summary
+
+===================================================   ================================================================
+:ref:`domain_models <pre_processing_domain_models>`   Defines the physical models that are associated with the domain.
+
+===================================================   ================================================================
+

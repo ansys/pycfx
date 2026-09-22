@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_objects:
+
+objects
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.objects.objects
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================   =====================================================
+
+Parent                                                                                        Summary
+
+=============================================   =====================================================
+:ref:`export_ccl <pre_processing_export_ccl>`   Export a file containing some or all CCL definitions.
+
+=============================================   =====================================================
+

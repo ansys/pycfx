@@ -1,0 +1,29 @@
+:orphan:
+
+.. _post_processing_colour_mode_1:
+
+colour_mode
+===========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.colour_mode_1.colour_mode
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==================================================================================   ==============================================
+
+Parent                                                                                                                      Summary
+
+==================================================================================   ==============================================
+:ref:`turbo_surface_child <post_processing_turbo_surface_child>`                              'child_object_type' of turbo_surface.
+
+:ref:`turbo_line_child <post_processing_turbo_line_child>`                                       'child_object_type' of turbo_line.
+
+:ref:`volume_rendering_child <post_processing_volume_rendering_child>`                     'child_object_type' of volume_rendering.
+
+:ref:`internal_turbo_surface_child <post_processing_internal_turbo_surface_child>`   'child_object_type' of internal_turbo_surface.
+
+:ref:`internal_turbo_line_child <post_processing_internal_turbo_line_child>`            'child_object_type' of internal_turbo_line.
+
+==================================================================================   ==============================================
+

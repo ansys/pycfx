@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_open_to_compare:
+
+open_to_compare
+===============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.open_to_compare.open_to_compare
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+================================================   ======================================================================================================================
+
+Parent                                                                                                                                                            Summary
+
+================================================   ======================================================================================================================
+:ref:`data_reader <post_processing_data_reader>`   This object contains the settings used to read results files into the post-processor. It is used by the "load" action.
+
+================================================   ======================================================================================================================
+

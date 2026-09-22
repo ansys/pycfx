@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_rotation_angle_definition:
+
+rotation_angle_definition
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.rotation_angle_definition.rotation_angle_definition
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================   =======================================
+
+Attribute                                                                               Summary
+
+=====================================================   =======================================
+:ref:`option <pre_processing_option_70>`                The 'Rotation Angle Definition' option.
+
+:ref:`rotation_angle <pre_processing_rotation_angle>`             Specifies the rotation angle.
+
+:ref:`angle_start <pre_processing_angle_start>`            First point used to calculate angle.
+
+:ref:`angle_end <pre_processing_angle_end>`               Second point used to calculate angle.
+
+=====================================================   =======================================
+
+.. rubric:: Included in:
+
+=================================================================   =============================================================================================
+
+Parent                                                                                                                                                    Summary
+
+=================================================================   =============================================================================================
+:ref:`transformation_child <pre_processing_transformation_child>`                                                          'child_object_type' of transformation.
+
+:ref:`replication_control <pre_processing_replication_control>`     Defines how the replicated components are connected to the properly aligned source component.
+
+=================================================================   =============================================================================================
+

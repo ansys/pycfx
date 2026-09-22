@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_number_of_nodes_in_adapted_mesh:
+
+number_of_nodes_in_adapted_mesh
+===============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.number_of_nodes_in_adapted_mesh.number_of_nodes_in_adapted_mesh
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ===========================
+
+Parent                                                                            Summary
+
+===========================================================   ===========================
+:ref:`adaption_criteria <pre_processing_adaption_criteria>`   'ADAPTION CRITERIA' object.
+
+===========================================================   ===========================
+

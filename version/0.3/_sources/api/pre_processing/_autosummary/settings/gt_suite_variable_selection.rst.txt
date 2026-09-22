@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_gt_suite_variable_selection:
+
+gt_suite_variable_selection
+===========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.gt_suite_variable_selection.gt_suite_variable_selection
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================   =========================================
+
+Attribute                                                                                               Summary
+
+===================================================================   =========================================
+:ref:`option <pre_processing_option_421>`                             The 'Gt Suite Variable Selection' option.
+
+:ref:`output_variables_list <pre_processing_output_variables_list>`          'Output Variables List' parameter.
+
+===================================================================   =========================================
+
+.. rubric:: Included in:
+
+=====================================================================   ========================================
+
+Parent                                                                                                   Summary
+
+=====================================================================   ========================================
+:ref:`monitor_gt_suite_child <pre_processing_monitor_gt_suite_child>`   'child_object_type' of monitor_gt_suite.
+
+=====================================================================   ========================================
+

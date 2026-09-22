@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_tensor_type:
+
+tensor_type
+===========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.tensor_type.tensor_type
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================================   ===========================================
+
+Parent                                                                                                            Summary
+
+===========================================================================   ===========================================
+:ref:`variable_operator_child <pre_processing_variable_operator_child>`         'child_object_type' of variable_operator.
+
+:ref:`equation_definition_child <pre_processing_equation_definition_child>`   'child_object_type' of equation_definition.
+
+:ref:`additional_variable_child <pre_processing_additional_variable_child>`   'child_object_type' of additional_variable.
+
+===========================================================================   ===========================================
+

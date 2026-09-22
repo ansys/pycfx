@@ -1,0 +1,42 @@
+:orphan:
+
+.. _pre_processing_reference_state:
+
+reference_state
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.reference_state.reference_state
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================================   ========================================
+
+Attribute                                                                                                          Summary
+
+===============================================================================   ========================================
+:ref:`enabled <pre_processing_enabled_6>`                                               Enable the REFERENCE STATE object.
+
+:ref:`option <pre_processing_option_16>`                                                     The 'Reference State' option.
+
+:ref:`reference_temperature <pre_processing_reference_temperature>`                     'Reference Temperature' parameter.
+
+:ref:`reference_pressure <pre_processing_reference_pressure>`                              'Reference Pressure' parameter.
+
+:ref:`reference_specific_enthalpy <pre_processing_reference_specific_enthalpy>`   'Reference Specific Enthalpy' parameter.
+
+:ref:`reference_specific_entropy <pre_processing_reference_specific_entropy>`      'Reference Specific Entropy' parameter.
+
+===============================================================================   ========================================
+
+.. rubric:: Included in:
+
+=============================================   ===============================================================
+
+Parent                                                                                                  Summary
+
+=============================================   ===============================================================
+:ref:`properties <pre_processing_properties>`   Holds the definition of all physical properties for a material.
+
+=============================================   ===============================================================
+

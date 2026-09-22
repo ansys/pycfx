@@ -1,0 +1,143 @@
+:orphan:
+
+.. _post_processing_turbo_line_child:
+
+turbo_line_child
+================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.turbo_line_child.turbo_line_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+============================================================================================   =====================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                                    Summary
+
+============================================================================================   =====================================================================================================================================================================================================
+:ref:`apply_instancing_transform <post_processing_apply_instancing_transform>`                                                                                                                                         Toggles the instancing transformation for this graphics object in the viewer.
+
+:ref:`circumferential_average_mode <post_processing_circumferential_average_mode>`                                                                                                                        Method used to calculate circumferential average for colouring variable on a turbo object.
+
+:ref:`colour <post_processing_colour>`                                                                                                 A list of three numbers between 0 and 1, which represent the RGB (Red/Green/Blue) values to be used when colouring the faces of an object by constant colour.
+
+:ref:`colour_map <post_processing_colour_map>`                                                                                                                                                                                          The name of the colour map to use when colouring the object.
+
+:ref:`colour_mode <post_processing_colour_mode_1>`                                                                                                                                                                                                                              'colour_mode' child.
+
+:ref:`colour_scale <post_processing_colour_scale>`                                                                                                                                     Sets whether to colour the object with a Linear or Logarithmic scale. By default, the colour scale is Linear.
+
+:ref:`colour_variable <post_processing_colour_variable_1>`                                                                                                                                                                                                                  'colour_variable' child.
+
+:ref:`colour_variable_boundary_values <post_processing_colour_variable_boundary_values_1>`                                                                                                                                                                  'colour_variable_boundary_values' child.
+
+:ref:`draw_contours <post_processing_draw_contours>`                                                                                                                                                                                                  Enables/disables drawing of the contour lines.
+
+:ref:`include_boundary_points <post_processing_include_boundary_points>`                                                                                                                                                         If true, place end points on range limits for a hub to shroud line.
+
+:ref:`instancing_transform <post_processing_instancing_transform>`                                                                                                                                                              Defines the TRANSFORM object that is used for the object instancing.
+
+:ref:`invert_line_bound <post_processing_invert_line_bound>`                                                                                                                                                                          Reverses the line bounds by selecting line outside line bound.
+
+:ref:`line_bound <post_processing_line_bound>`                                                                                                                                                                                                             Defines line bounding (End Points, None).
+
+:ref:`line_colour <post_processing_line_colour>`                                                                                                   A list of three numbers between 0 and 1, which represent the RGB (Red/Green/Blue) values to be used for colouring the lines on a graphics object.
+
+:ref:`line_type <post_processing_line_type>`                                                                                                                                                                                                          Indicates if the line is a cut or sample line.
+
+:ref:`line_width <post_processing_line_width_1>`                                                                                                                                                                                                                                 'line_width' child.
+
+:ref:`max <post_processing_max>`                                                                                                                                                                              The maximum value of a variable in the colour map when using a "User Specified" range.
+
+:ref:`maximum_number_of_items <post_processing_maximum_number_of_items_1>`                                                                                 Specifies the maximum number of items that should be displayed. This parameter is mutually exclusive with the Reduction Factor Parameter.
+
+:ref:`maximum_number_of_sampling_points <post_processing_maximum_number_of_sampling_points>`                                                                                                                          Specifies the maximum number of sampling points for circumferential averaging.
+
+:ref:`min <post_processing_min>`                                                                                                                                                                              The minimum value of a variable in the colour map when using a "User Specified" range.
+
+:ref:`number_of_contours <post_processing_number_of_contours>`                                                                                                                                                                                  Specifies number of contour lines in a contour plot.
+
+:ref:`option <post_processing_option>`                                                                                                                                                                                                                                               'option' child.
+
+:ref:`point_1 <post_processing_point_1>`                                                                                                                                                                                                     An XYZ triple defining the first point for this object.
+
+:ref:`point_2 <post_processing_point_2>`                                                                                                                                                                                                    An XYZ triple defining the second point for this object.
+
+:ref:`point_distribution_method <post_processing_point_distribution_method>`                                                                                                                                                          Method used to distribute points along the hub to shroud line.
+
+:ref:`point_type <post_processing_point_type>`                                                                                                                                                         The definition method for 'Hub to Shroud' Turbo Line under the option of 'Two Points Linear'.
+
+:ref:`position_1 <post_processing_position_1>`                                                                                                                                                                                       A real number that represents the first position of the object.
+
+:ref:`position_2 <post_processing_position_2>`                                                                                                                                                                                      A real number that represents the second position of the object.
+
+:ref:`range <post_processing_range>`                                                                  Sets the method used to calculate the extents of the colour map on an object. "Global" uses the range of values in the problem domain. "Local" uses the range of values on the current object.
+
+:ref:`reduction_factor <post_processing_reduction_factor>`                                                                                                                                                            Reduces the number of items that should be displayed for a particular locator.
+
+:ref:`reduction_or_max_number <post_processing_reduction_or_max_number>`                                                                                                        This indicates whether to use 'Reduction Factor' to reduce the number of items, or to use 'Maximum Number of Items'.
+
+:ref:`related_variable_list <post_processing_related_variable_list>`                                                                                                                                                                            The list of variables that are related to an object.
+
+:ref:`span <post_processing_span>`                                                                                                                                                                                       The normalized Span turbo coordinate value for the location of this object.
+
+:ref:`span_max <post_processing_span_max>`                                                                                                                                                                                                       Upper bound of Span coordinate for a turbo surface.
+
+:ref:`span_min <post_processing_span_min>`                                                                                                                                                                                                       Lower bound of Span coordinate for a turbo surface.
+
+:ref:`span_points <post_processing_span_points>`                                                                                                                                                                                          Number of Sample points in S direction (turbo coordinate).
+
+:ref:`streamwise_location <post_processing_streamwise_location>`                                                                                                                                                           The normalized M' turbo coordinate value for the location of this object.
+
+:ref:`streamwise_max <post_processing_streamwise_max>`                                                                                                                                                                                             Upper bound of M' coordinate for a turbo surface.
+
+:ref:`streamwise_min <post_processing_streamwise_min>`                                                                                                                                                                                             Lower bound of M' coordinate for a turbo surface.
+
+:ref:`streamwise_points <post_processing_streamwise_points>`                                                                                                                                                                              Number of Sample points in M direction (turbo coordinate).
+
+:ref:`theta <post_processing_theta>`                                                                                                                                                                                                     The Theta coordinate value for the location of this object.
+
+:ref:`theta_max <post_processing_theta_max>`                                                                                                                                                                                                        Upper bound of Theta coordinate for the surface.
+
+:ref:`theta_min <post_processing_theta_min>`                                                                                                                                                                                                        Lower bound of Theta coordinate for the surface.
+
+:ref:`theta_points <post_processing_theta_points>`                                                                                                                                                                                        Number of Sample points in T direction (turbo coordinate).
+
+:ref:`turbo_domain_list <post_processing_turbo_domain_list>`                                                                                                                                                                                   The list of domains over which to define this object.
+
+:ref:`turbo_line_mode <post_processing_turbo_line_mode>`                                                                                                                                                                                     The method of generation of 'Hub to Shroud' Turbo Line.
+
+:ref:`visibility <post_processing_visibility>`                                                                                                                                                          Toggles the visibility of this graphics object in the viewer. THIS PARAMETER IS DEPRECATED!.
+
+:ref:`object_view_transform <post_processing_object_view_transform>`                           This object contains object transformation info to be processed by the viewer. Like instance transform, this object should be associated with each geometry. It is usually specified as a sub-object.
+
+============================================================================================   =====================================================================================================================================================================================================
+
+.. rubric:: Methods
+
+============================================   ========================================
+
+Method                                                                          Summary
+
+============================================   ========================================
+:ref:`hide <post_processing_hide>`                  Hide the object in a given view(s).
+
+:ref:`show <post_processing_show>`                  Show the object in a given view(s).
+
+:ref:`suspend <post_processing_suspend>`       Suspend immediate update for the object.
+
+:ref:`unsuspend <post_processing_unsuspend>`   Restore immediate update for the object.
+
+============================================   ========================================
+
+.. rubric:: Included in:
+
+==============================================   ===================
+
+Parent                                                       Summary
+
+==============================================   ===================
+:ref:`turbo_line <post_processing_turbo_line>`   'turbo_line' child.
+
+==============================================   ===================
+

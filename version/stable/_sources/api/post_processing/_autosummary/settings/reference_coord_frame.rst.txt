@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_reference_coord_frame:
+
+reference_coord_frame
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.reference_coord_frame.reference_coord_frame
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+======================================================================   ========================================
+
+Parent                                                                                                    Summary
+
+======================================================================   ========================================
+:ref:`coordinate_frame_child <post_processing_coordinate_frame_child>`   'child_object_type' of coordinate_frame.
+
+======================================================================   ========================================
+

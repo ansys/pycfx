@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_excitation_frequency:
+
+excitation_frequency
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.excitation_frequency.excitation_frequency
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================   ==================================
+
+Attribute                                                                          Summary
+
+=====================================================   ==================================
+:ref:`option <pre_processing_option_393>`               The 'Excitation Frequency' option.
+
+:ref:`blade_boundary <pre_processing_blade_boundary>`          'Blade Boundary' parameter.
+
+:ref:`engine_order <pre_processing_engine_order>`                'Engine Order' parameter.
+
+:ref:`frequency <pre_processing_frequency>`                         'Frequency' parameter.
+
+=====================================================   ==================================
+
+.. rubric:: Included in:
+
+=================================================================   ======================================
+
+Parent                                                                                             Summary
+
+=================================================================   ======================================
+:ref:`export_surface_child <pre_processing_export_surface_child>`   'child_object_type' of export_surface.
+
+:ref:`pressure_definition <pre_processing_pressure_definition>`              'PRESSURE DEFINITION' object.
+
+=================================================================   ======================================
+

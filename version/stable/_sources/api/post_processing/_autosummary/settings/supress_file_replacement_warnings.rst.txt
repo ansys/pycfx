@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_supress_file_replacement_warnings:
+
+supress_file_replacement_warnings
+=================================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.supress_file_replacement_warnings.supress_file_replacement_warnings
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+========================================================   ============================================================================
+
+Parent                                                                                                                          Summary
+
+========================================================   ============================================================================
+:ref:`file_processing <post_processing_file_processing>`   Stores parameters indicating the state of processing state or session files.
+
+========================================================   ============================================================================
+

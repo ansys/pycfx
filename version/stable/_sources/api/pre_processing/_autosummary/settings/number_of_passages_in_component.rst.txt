@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_number_of_passages_in_component:
+
+number_of_passages_in_component
+===============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.number_of_passages_in_component.number_of_passages_in_component
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ==============================
+
+Parent                                                                                 Summary
+
+=============================================================   ==============================
+:ref:`domain_child <pre_processing_domain_child>`               'child_object_type' of domain.
+
+:ref:`passage_definition <pre_processing_passage_definition>`     'PASSAGE DEFINITION' object.
+
+=============================================================   ==============================
+

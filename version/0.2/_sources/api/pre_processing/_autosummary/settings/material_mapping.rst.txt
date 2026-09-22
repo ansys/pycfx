@@ -1,0 +1,32 @@
+:orphan:
+
+.. _pre_processing_material_mapping:
+
+material_mapping
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.material_mapping.material_mapping
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================   ==========================================
+
+Attribute                                                                                        Summary
+
+===========================================================   ==========================================
+:ref:`gt_suite_material <pre_processing_gt_suite_material>`   A container for Gt Suite Material objects.
+
+===========================================================   ==========================================
+
+.. rubric:: Included in:
+
+=================================================================   ======================================
+
+Parent                                                                                             Summary
+
+=================================================================   ======================================
+:ref:`gt_suite_model_child <pre_processing_gt_suite_model_child>`   'child_object_type' of gt_suite_model.
+
+=================================================================   ======================================
+

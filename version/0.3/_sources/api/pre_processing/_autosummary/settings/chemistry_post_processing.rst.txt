@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_chemistry_post_processing:
+
+chemistry_post_processing
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.chemistry_post_processing.chemistry_post_processing
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================   ============================================
+
+Attribute                                                                                    Summary
+
+=====================================================   ============================================
+:ref:`enabled <pre_processing_enabled_83>`              Enable the CHEMISTRY POST PROCESSING object.
+
+:ref:`materials_list <pre_processing_materials_list>`                    'Materials List' parameter.
+
+:ref:`reactions_list <pre_processing_reactions_list>`                    'Reactions List' parameter.
+
+=====================================================   ============================================
+
+.. rubric:: Included in:
+
+===========================================================   ========================================
+
+Parent                                                                                         Summary
+
+===========================================================   ========================================
+:ref:`combustion_model <pre_processing_combustion_model_1>`   Defines the combustion model to be used.
+
+===========================================================   ========================================
+

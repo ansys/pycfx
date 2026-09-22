@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_maximum_blend_factor:
+
+maximum_blend_factor
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.maximum_blend_factor.maximum_blend_factor
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ==============================================================================================
+
+Parent                                                                                                                                               Summary
+
+===========================================================   ==============================================================================================
+:ref:`advection_scheme <pre_processing_advection_scheme>`     Defines the scheme used by the solver to discretize the advection term in transport equations.
+
+:ref:`advection_scheme <pre_processing_advection_scheme_1>`   Defines the scheme used by the solver to discretize the advection term in transport equations.
+
+===========================================================   ==============================================================================================
+

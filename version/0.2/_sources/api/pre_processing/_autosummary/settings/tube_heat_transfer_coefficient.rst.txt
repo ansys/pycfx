@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_tube_heat_transfer_coefficient:
+
+tube_heat_transfer_coefficient
+==============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.tube_heat_transfer_coefficient.tube_heat_transfer_coefficient
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================   ============================================
+
+Attribute                                                                                                          Summary
+
+===========================================================================   ============================================
+:ref:`option <pre_processing_option_232>`                                     The 'Tube Heat Transfer Coefficient' option.
+
+:ref:`sieder_tate_coefficient <pre_processing_sieder_tate_coefficient>`           Coefficient for Sieder Tate correlation.
+
+:ref:`reference_viscosity <pre_processing_reference_viscosity>`                           'Reference Viscosity' parameter.
+
+:ref:`heat_transfer_coefficient <pre_processing_heat_transfer_coefficient>`         'Heat Transfer Coefficient' parameter.
+
+===========================================================================   ============================================
+
+.. rubric:: Included in:
+
+=========================================================================   ===========================================
+
+Parent                                                                                                          Summary
+
+=========================================================================   ===========================================
+:ref:`tube_heat_transfer_model <pre_processing_tube_heat_transfer_model>`   Holds the definition of tube heat transfer.
+
+=========================================================================   ===========================================
+

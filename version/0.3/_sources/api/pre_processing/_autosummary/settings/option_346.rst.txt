@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_option_346:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_346.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================   ====================================
+
+Parent                                                                                 Summary
+
+=======================================================   ====================================
+:ref:`boundary_model <pre_processing_boundary_model>`     Defines the immersed boundary model.
+
+:ref:`boundary_model <pre_processing_boundary_model_1>`   Defines the immersed boundary model.
+
+=======================================================   ====================================
+

@@ -1,0 +1,42 @@
+:orphan:
+
+.. _pre_processing_tube_speed_model:
+
+tube_speed_model
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.tube_speed_model.tube_speed_model
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================================   ===========================================================================================================================================
+
+Attribute                                                                                                                                                                                                           Summary
+
+=============================================================================   ===========================================================================================================================================
+:ref:`option <pre_processing_option_230>`                                                                                                                                                    The 'Tube Speed Model' option.
+
+:ref:`tube_speed <pre_processing_tube_speed>`                                                                                                                                                       'Tube Speed' parameter.
+
+:ref:`tube_speed_boundary_option <pre_processing_tube_speed_boundary_option>`                                                                                                       'Tube Speed Boundary Option' parameter.
+
+:ref:`delta_profile_threshold <pre_processing_delta_profile_threshold>`         Relative threshold value for grouping tube pressures at outlets into bands when computing Newton Raphson update for tube side fluid speeds.
+
+:ref:`newton_raphson_threshold <pre_processing_newton_raphson_threshold>`                                                                  Newton Raphson threshold used in the solver to determine tube side fluid speeds.
+
+:ref:`under_relaxation_factor <pre_processing_under_relaxation_factor>`                                                                                                                'Under Relaxation Factor' parameter.
+
+=============================================================================   ===========================================================================================================================================
+
+.. rubric:: Included in:
+
+=========================================================   ================================================================================================================
+
+Parent                                                                                                                                                               Summary
+
+=========================================================   ================================================================================================================
+:ref:`tube_side_models <pre_processing_tube_side_models>`   Holds the definition of tube fluid models for tube fluid equations, momentum loss and heat transfer coefficient.
+
+=========================================================   ================================================================================================================
+

@@ -1,0 +1,46 @@
+:orphan:
+
+.. _pre_processing_ray_tracing_control:
+
+ray_tracing_control
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.ray_tracing_control.ray_tracing_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================================   ==============================================================================================================================
+
+Attribute                                                                                                                                                                                                          Summary
+
+=========================================================================================   ==============================================================================================================================
+:ref:`enabled <pre_processing_enabled_186>`                                                                                                                                         Enable the RAY TRACING CONTROL object.
+
+:ref:`iteration_interval <pre_processing_iteration_interval>`                                                                                                                              'Iteration Interval' parameter.
+
+:ref:`iteration_convergence_criterion <pre_processing_iteration_convergence_criterion>`     Determines when iterations due to reflective walls have converged or due to Rigid Body Angular Momentum Solver have converged.
+
+:ref:`maximum_buffer_size <pre_processing_maximum_buffer_size>`                                                                                         Maximum size of buffer used to hold tracking information in words.
+
+:ref:`maximum_number_of_track_segments <pre_processing_maximum_number_of_track_segments>`                                                                                 Maximum number of segments in a radiation track.
+
+:ref:`maximum_number_of_iterations <pre_processing_maximum_number_of_iterations>`                                                                                                'Maximum Number of Iterations' parameter.
+
+:ref:`ray_reflection_threshold <pre_processing_ray_reflection_threshold>`                                                                                                 Ignore rays reflected with intensity below this.
+
+:ref:`file_path <pre_processing_file_path>`                                                                                                                                                 Path to store ray trace files.
+
+=========================================================================================   ==============================================================================================================================
+
+.. rubric:: Included in:
+
+===========================================================================   ============================================================================
+
+Parent                                                                                                                                             Summary
+
+===========================================================================   ============================================================================
+:ref:`thermal_radiation_control <pre_processing_thermal_radiation_control>`   Holds parameters and objects that control the solution of Thermal Radiation.
+
+===========================================================================   ============================================================================
+

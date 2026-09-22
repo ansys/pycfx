@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_response_surface_generation_seed:
+
+response_surface_generation_seed
+================================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.response_surface_generation_seed.response_surface_generation_seed
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==========================================================   ===============================================================================================
+
+Parent                                                                                                                                               Summary
+
+==========================================================   ===============================================================================================
+:ref:`response_surface <post_processing_response_surface>`   Controls response surface and response points generation related to an operating point results.
+
+==========================================================   ===============================================================================================
+

@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_tube_momentum_loss:
+
+tube_momentum_loss
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.tube_momentum_loss.tube_momentum_loss
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================   =================================
+
+Attribute                                                                                     Summary
+
+=================================================================   =================================
+:ref:`option <pre_processing_option_229>`                            The 'Tube Momentum Loss' option.
+
+:ref:`pressure_drop_factor <pre_processing_pressure_drop_factor>`   'Pressure Drop Factor' parameter.
+
+=================================================================   =================================
+
+.. rubric:: Included in:
+
+===============================================================   ============================================
+
+Parent                                                                                                 Summary
+
+===============================================================   ============================================
+:ref:`tube_pressure_model <pre_processing_tube_pressure_model>`   Holds the definition of tube pressure model.
+
+===============================================================   ============================================
+

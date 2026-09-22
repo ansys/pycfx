@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_321:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_321.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================   =================================================
+
+Parent                                                                                                      Summary
+
+===============================================================   =================================================
+:ref:`particle_absorption <pre_processing_particle_absorption>`   Specifies the particle absorption in sub-domains.
+
+===============================================================   =================================================
+

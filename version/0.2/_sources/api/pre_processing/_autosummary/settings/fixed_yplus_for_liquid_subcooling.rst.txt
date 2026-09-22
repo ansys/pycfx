@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_fixed_yplus_for_liquid_subcooling:
+
+fixed_yplus_for_liquid_subcooling
+=================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fixed_yplus_for_liquid_subcooling.fixed_yplus_for_liquid_subcooling
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================================================   ================================================================================================
+
+Parent                                                                                                                                                                                   Summary
+
+=============================================================================================   ================================================================================================
+:ref:`boundary_layer_liquid_temperature <pre_processing_boundary_layer_liquid_temperature_1>`   Controls calculation of boundary layer temperature to be used for bubble diameter and quenching.
+
+=============================================================================================   ================================================================================================
+

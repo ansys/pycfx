@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_pressure_excitation:
+
+pressure_excitation
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.pressure_excitation.pressure_excitation
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================   ====================================================
+
+Attribute                                                                                                      Summary
+
+===============================================================   ====================================================
+:ref:`enabled <pre_processing_enabled_130>`                                     Enable the PRESSURE EXCITATION object.
+
+:ref:`option <pre_processing_option_277>`                                            The 'Pressure Excitation' option.
+
+:ref:`time_averaged_value <pre_processing_time_averaged_value>`   Input expression for time averaged generic quantity.
+
+:ref:`relative_pressure <pre_processing_relative_pressure>`                             'Relative Pressure' parameter.
+
+===============================================================   ====================================================
+
+.. rubric:: Included in:
+
+===================================================================   =================================================================
+
+Parent                                                                                                                          Summary
+
+===================================================================   =================================================================
+:ref:`acoustic_reflectivity <pre_processing_acoustic_reflectivity>`   Specifies acoustic reflection attributes of a boundary condition.
+
+===================================================================   =================================================================
+

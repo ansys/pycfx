@@ -1,0 +1,43 @@
+:orphan:
+
+.. _pre_processing_xyvalue:
+
+xyvalue
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.xyvalue.xyvalue
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================   ==========================================
+
+Parent                                                                                                     Summary
+
+=====================================================================   ==========================================
+:ref:`variable_child <pre_processing_variable_child>`                             'child_object_type' of variable.
+
+:ref:`mass_moment_of_inertia <pre_processing_mass_moment_of_inertia>`   Defines rigid body mass moment of inertia.
+
+:ref:`mesh_stiffness <pre_processing_mesh_stiffness_1>`                              Defines mesh stiffness model.
+
+:ref:`equation_source_child <pre_processing_equation_source_child>`        'child_object_type' of equation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_1>`      'child_object_type' of equation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_2>`      'child_object_type' of equation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_3>`      'child_object_type' of equation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_4>`      'child_object_type' of equation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_5>`      'child_object_type' of equation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_6>`      'child_object_type' of equation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_7>`      'child_object_type' of equation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_8>`      'child_object_type' of equation_source.
+
+=====================================================================   ==========================================
+

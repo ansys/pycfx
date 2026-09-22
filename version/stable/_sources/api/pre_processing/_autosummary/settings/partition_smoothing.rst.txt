@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_partition_smoothing:
+
+partition_smoothing
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.partition_smoothing.partition_smoothing
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================================================   ===============================================
+
+Attribute                                                                                                                               Summary
+
+=============================================================================================   ===============================================
+:ref:`option <pre_processing_option_457>`                                                                     The 'Partition Smoothing' option.
+
+:ref:`maximum_partition_smoothing_sweeps <pre_processing_maximum_partition_smoothing_sweeps>`   'Maximum Partition Smoothing Sweeps' parameter.
+
+=============================================================================================   ===============================================
+
+.. rubric:: Included in:
+
+===========================================================================   ==================================
+
+Parent                                                                                                   Summary
+
+===========================================================================   ==================================
+:ref:`partitioner_step_control <pre_processing_partitioner_step_control>`     'PARTITIONER STEP CONTROL' object.
+
+:ref:`partitioner_step_control <pre_processing_partitioner_step_control_1>`   'PARTITIONER STEP CONTROL' object.
+
+===========================================================================   ==================================
+

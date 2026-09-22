@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_64:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_64.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   ================================================================
+
+Parent                                                                                                               Summary
+
+=========================================================   ================================================================
+:ref:`des_coefficients <pre_processing_des_coefficients>`   Controls blending between LES and RANS for DES turbulence model.
+
+=========================================================   ================================================================
+

@@ -1,0 +1,38 @@
+:orphan:
+
+.. _post_processing_units_quantity_map_child:
+
+units_quantity_map_child
+========================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.units_quantity_map_child.units_quantity_map_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+================================================================   ==================================================================================================
+
+Attribute                                                                                                                                                     Summary
+
+================================================================   ==================================================================================================
+:ref:`cfx_style_name <post_processing_cfx_style_name>`                                                                                    Equivalent CFX solver name.
+
+:ref:`external_name <post_processing_external_name>`                                       External name being used by the external application that wrote this file.
+
+:ref:`units_name <post_processing_units_name>`                     Units name for variable quantity. This is just for better readability and is not going to be used.
+
+:ref:`variable_dimensions <post_processing_variable_dimensions>`                                        The dimensions of the variable as read from the results file.
+
+================================================================   ==================================================================================================
+
+.. rubric:: Included in:
+
+==============================================================   ===========================
+
+Parent                                                                               Summary
+
+==============================================================   ===========================
+:ref:`units_quantity_map <post_processing_units_quantity_map>`   'units_quantity_map' child.
+
+==============================================================   ===========================
+

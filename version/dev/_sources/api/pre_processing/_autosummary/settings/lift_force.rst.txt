@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_lift_force:
+
+lift_force
+==========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.lift_force.lift_force
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================   ===========================================================
+
+Attribute                                                                                                       Summary
+
+=========================================================   ===========================================================
+:ref:`enabled <pre_processing_enabled_93>`                                                Enable the LIFT FORCE object.
+
+:ref:`option <pre_processing_option_159>`                                                      The 'Lift Force' option.
+
+:ref:`lift_coefficient <pre_processing_lift_coefficient>`   Coefficient for lift force in interfluid momentum transfer.
+
+=========================================================   ===========================================================
+
+.. rubric:: Included in:
+
+=================================================================   =============================================
+
+Parent                                                                                                    Summary
+
+=================================================================   =============================================
+:ref:`algebraic_slip_model <pre_processing_algebraic_slip_model>`   Sets the details of the Algebraic Slip Model.
+
+=================================================================   =============================================
+

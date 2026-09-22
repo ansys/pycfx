@@ -1,0 +1,32 @@
+:orphan:
+
+.. _pre_processing_transient_scheme:
+
+transient_scheme
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.transient_scheme.transient_scheme
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================   ==============================
+
+Attribute                                                          Summary
+
+=========================================   ==============================
+:ref:`option <pre_processing_option_348>`   The 'Transient Scheme' option.
+
+=========================================   ==============================
+
+.. rubric:: Included in:
+
+=====================================================   ====================================================================================
+
+Parent                                                                                                                               Summary
+
+=====================================================   ====================================================================================
+:ref:`solver_control <pre_processing_solver_control>`   Holds all objects that control discretization and execution of the solution process.
+
+=====================================================   ====================================================================================
+

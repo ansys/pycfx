@@ -1,0 +1,60 @@
+:orphan:
+
+.. _pre_processing_turbulent_flux_closure_1:
+
+turbulent_flux_closure
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.turbulent_flux_closure_1.turbulent_flux_closure
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================================   ==============================================================================================
+
+Attribute                                                                                                                                                                            Summary
+
+===========================================================================================   ==============================================================================================
+:ref:`enabled <pre_processing_enabled_48>`                                                                                                         Enable the TURBULENT FLUX CLOSURE object.
+
+:ref:`option <pre_processing_option_122>`                                                                                                               The 'Turbulent Flux Closure' option.
+
+:ref:`turbulent_schmidt_number <pre_processing_turbulent_schmidt_number>`                                     Turbulent Schmidt number for a quantity (density in buoyancy turbulence term).
+
+:ref:`anisotropic_diffusion_coefficient <pre_processing_anisotropic_diffusion_coefficient>`                      Coefficient for anisotropic turbulent diffusion for Turbulent Flux Closure.
+
+:ref:`cross_derivative_weighting <pre_processing_cross_derivative_weighting>`                 Weighting of cross derivatives for anisotropic turbulent diffusion for Turbulent Flux Closure.
+
+===========================================================================================   ==============================================================================================
+
+.. rubric:: Included in:
+
+===============================================================================================   =============================================================================================================
+
+Parent                                                                                                                                                                                                  Summary
+
+===============================================================================================   =============================================================================================================
+:ref:`k_coefficients <pre_processing_k_coefficients>`                                                                         Controls model coefficients for the Turbulence Kinetic Energy transport equation.
+
+:ref:`epsilon_coefficients <pre_processing_epsilon_coefficients>`                                                           Controls model coefficients for the Turbulence Eddy Dissipation transport equation.
+
+:ref:`rng_epsilon_coefficients <pre_processing_rng_epsilon_coefficients>`                                       Controls model coefficients for the Turbulence Eddy Dissipation transport equation (RNG model).
+
+:ref:`omega_coefficients <pre_processing_omega_coefficients>`                                                                 Controls model coefficients for the Turbulence Eddy Frequency transport equation.
+
+:ref:`lrr_ip_rs_coefficients <pre_processing_lrr_ip_rs_coefficients_1>`                           Controls model coefficients for the Reynolds Stress transport equations (simple pressure strain formulation).
+
+:ref:`flame_surface_density_coefficients <pre_processing_flame_surface_density_coefficients>`                                     Controls model coefficients for the Flame Surface Density transport equation.
+
+:ref:`component_child <pre_processing_component_child>`                                                                                                                       'child_object_type' of component.
+
+:ref:`additional_variable_child <pre_processing_additional_variable_child_1>`                                                                                       'child_object_type' of additional_variable.
+
+:ref:`equation_properties_for_fluid_child <pre_processing_equation_properties_for_fluid_child>`                                                           'child_object_type' of equation_properties_for_fluid.
+
+:ref:`component_child <pre_processing_component_child_1>`                                                                                                                     'child_object_type' of component.
+
+:ref:`additional_variable_child <pre_processing_additional_variable_child_2>`                                                                                       'child_object_type' of additional_variable.
+
+===============================================================================================   =============================================================================================================
+
