@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_send_to_viewer:
+
+send_to_viewer
+==============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.send_to_viewer.send_to_viewer
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+======================================   ===============================================================================
+
+Parent                                                                                                           Summary
+
+======================================   ===============================================================================
+:ref:`camera <post_processing_camera>`   Defines a camera that can be used to specify the current view in a VIEW object.
+
+======================================   ===============================================================================
+

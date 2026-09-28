@@ -1,0 +1,122 @@
+:orphan:
+
+.. _pre_processing_axis_definition:
+
+axis_definition
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.axis_definition.axis_definition
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================   ===========================================================================================
+
+Attribute                                                                                                                                           Summary
+
+=============================================================   ===========================================================================================
+:ref:`option <pre_processing_option_1>`                                                                                       The 'Axis Definition' option.
+
+:ref:`rotation_axis <pre_processing_rotation_axis>`             Coordinate Frame Axis for rotating domains or cylindrical boundary condition specification.
+
+:ref:`rotation_axis_from <pre_processing_rotation_axis_from>`                                                   First <x,y,z> position for a rotation axis.
+
+:ref:`rotation_axis_to <pre_processing_rotation_axis_to>`                                                      Second <x,y,z> position for a rotation axis.
+
+=============================================================   ===========================================================================================
+
+.. rubric:: Included in:
+
+=======================================================================================   ==================================================================================================================================================================================================================
+
+Parent                                                                                                                                                                                                                                                                                               Summary
+
+=======================================================================================   ==================================================================================================================================================================================================================
+:ref:`variable_child <pre_processing_variable_child>`                                                                                                                                                                                                                       'child_object_type' of variable.
+
+:ref:`gt_suite_motion <pre_processing_gt_suite_motion>`                                                                                                           Defines the motion of one or more domains from GT SUITE angular velocity. Note that GT SUITE angular velocity always uses the unit of RPM.
+
+:ref:`frame_motion <pre_processing_frame_motion>`                                                                                                                                                                             Defines the motion of a coordinate frame relative to another coordinate frame.
+
+:ref:`domain_motion <pre_processing_domain_motion>`                                       Defines the motion of a mesh relative to a stationary coordinate frame. NOTE - Speed and Direction, Specified Displacement and General Motion Options are not supported for domains other than the immersed solid.
+
+:ref:`origin_motion <pre_processing_origin_motion>`                                                                                                                   Defines the general motion of the origin point relative to an stationary coordinate frame. NOTE: It is only valid for immersed solids.
+
+:ref:`body_rotation <pre_processing_body_rotation>`                                                                                                    Defines the general rotation of a mesh around the origin point relative to a stationary coordinate frame. NOTE: It is only valid for immersed solids.
+
+:ref:`external_magnetic_field <pre_processing_external_magnetic_field>`                                                                                                                                                                                                    'EXTERNAL MAGNETIC FIELD' object.
+
+:ref:`solid_motion <pre_processing_solid_motion>`                                                                                                                                                                                     Describes the motion of the solid with respect to the reference frame.
+
+:ref:`injection_velocity <pre_processing_injection_velocity>`                                                                                                                                                                                                                   'INJECTION VELOCITY' object.
+
+:ref:`injection_velocity <pre_processing_injection_velocity_1>`                                                                                                                                                                                                                 'INJECTION VELOCITY' object.
+
+:ref:`streamwise_direction <pre_processing_streamwise_direction>`                                                                                                                                                                                                          Defines the streamwise direction.
+
+:ref:`mesh_motion <pre_processing_mesh_motion>`                                                                                                                                                                             Defines the motion of a mesh boundary. NOTE - Not fully supported by the solver.
+
+:ref:`displacement <pre_processing_displacement>`                                                                                                                                                                                                                      Defines displacement for mesh motion.
+
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum>`                                                                                                                                                                                         Specifies conditions on Mass and Momentum at a boundary.
+
+:ref:`shear_stress <pre_processing_shear_stress>`                                                                                                                                                                                                                       Specifies the shear force at a wall.
+
+:ref:`wall_velocity <pre_processing_wall_velocity>`                                                                                                                                                                                                                Specifies the velocity of a no-slip wall.
+
+:ref:`pressure_averaging <pre_processing_pressure_averaging>`                                                                                                                                                                                   Controls details of how pressure is averaged over an outlet.
+
+:ref:`flow_direction <pre_processing_flow_direction>`                                                                                                                                                                                                     Sets the velocity direction imposed at a boundary.
+
+:ref:`mesh_motion <pre_processing_mesh_motion_1>`                                                                                                                                                                           Defines the motion of a mesh boundary. NOTE - Not fully supported by the solver.
+
+:ref:`velocity <pre_processing_velocity>`                                                                                                                                                                                                        Sets velocity part of mass and momentum boundary condition.
+
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum_2>`                                                                                                                                                                                       Specifies conditions on Mass and Momentum at a boundary.
+
+:ref:`direction <pre_processing_direction>`                                                                                                                                                                                                    Defines the direction used for radiation boundary conditions.
+
+:ref:`equation_source_child <pre_processing_equation_source_child>`                                                                                                                                                                                                  'child_object_type' of equation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_1>`                                                                                                                                                                                                'child_object_type' of equation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_2>`                                                                                                                                                                                                'child_object_type' of equation_source.
+
+:ref:`injection_model <pre_processing_injection_model>`                                                                                                                                                                                                                            'INJECTION MODEL' object.
+
+:ref:`hole_direction <pre_processing_hole_direction>`                                                                                                                                                                                                                          Sets the injection direction.
+
+:ref:`polar_axis <pre_processing_polar_axis>`                                                                                                                                                                                              Defines the first reference direction used for Injection Regions.
+
+:ref:`auxiliary_axis <pre_processing_auxiliary_axis>`                                                                                                                                                                                     Defines the second reference direction used for Injection Regions.
+
+:ref:`flow_direction <pre_processing_flow_direction_1>`                                                                                                                                                                                                   Sets the velocity direction imposed at a boundary.
+
+:ref:`injection_variable_child <pre_processing_injection_variable_child>`                                                                                                                                                                                         'child_object_type' of injection_variable.
+
+:ref:`general_momentum_source <pre_processing_general_momentum_source>`                                                                                                                                                                              Defines a general momentum source term and coefficient.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_3>`                                                                                                                                                                                                'child_object_type' of equation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_4>`                                                                                                                                                                                                'child_object_type' of equation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_5>`                                                                                                                                                                                                'child_object_type' of equation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_6>`                                                                                                                                                                                                'child_object_type' of equation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_7>`                                                                                                                                                                                                'child_object_type' of equation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_8>`                                                                                                                                                                                                'child_object_type' of equation_source.
+
+:ref:`cylindrical_velocity_components <pre_processing_cylindrical_velocity_components>`                                                                                                                                                    Defines the initialization of velocity by Cylindrical components.
+
+:ref:`interface_models <pre_processing_interface_models>`                                                                                                                                                                                           Holds the definition of models specific to an interface.
+
+:ref:`pitch_change <pre_processing_pitch_change>`                                                                                                                                                                                          Defines how pitch change is calculated across a domain interface.
+
+:ref:`partitioning_type <pre_processing_partitioning_type>`                                                                                                                                                                                                                      'PARTITIONING TYPE' object.
+
+:ref:`projection_control <pre_processing_projection_control>`                                                                                                                                                                                                                   'PROJECTION CONTROL' object.
+
+=======================================================================================   ==================================================================================================================================================================================================================
+

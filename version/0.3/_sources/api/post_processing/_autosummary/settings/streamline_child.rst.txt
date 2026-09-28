@@ -1,0 +1,181 @@
+:orphan:
+
+.. _post_processing_streamline_child:
+
+streamline_child
+================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.streamline_child.streamline_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+============================================================================================   ===============================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                                              Summary
+
+============================================================================================   ===============================================================================================================================================================================================================
+:ref:`absolute_tolerance <post_processing_absolute_tolerance>`                                                                                                                                                                                                      Length to use as a maximum step tolerance.
+
+:ref:`add_sample_vertex_normals <post_processing_add_sample_vertex_normals>`                                                                                                                                                                                                'add_sample_vertex_normals' child.
+
+:ref:`apply_instancing_transform <post_processing_apply_instancing_transform>`                                                                                                                                                   Toggles the instancing transformation for this graphics object in the viewer.
+
+:ref:`colour <post_processing_colour>`                                                                                                           A list of three numbers between 0 and 1, which represent the RGB (Red/Green/Blue) values to be used when colouring the faces of an object by constant colour.
+
+:ref:`colour_map <post_processing_colour_map>`                                                                                                                                                                                                    The name of the colour map to use when colouring the object.
+
+:ref:`colour_mode <post_processing_colour_mode>`                                               Sets the mode used to colour the object. If set equal to "Constant" then the "Colour" parameter is used to determine the plot colour. If set equal to "Variable", then the "Colour Variable" parameter is used.
+
+:ref:`colour_scale <post_processing_colour_scale>`                                                                                                                                               Sets whether to colour the object with a Linear or Logarithmic scale. By default, the colour scale is Linear.
+
+:ref:`colour_variable <post_processing_colour_variable>`                                                                                                                  The name of the variable to be used in colouring the object. Should be set equal to the name of a currently defined VARIABLE object.
+
+:ref:`colour_variable_boundary_values <post_processing_colour_variable_boundary_values>`                                                                                                        Sets the type of boundary values to be presented for colour variables in this object (Conservative or Hybrid).
+
+:ref:`cross_periodics <post_processing_cross_periodics>`                                                                                                                                                                                             If true allows a streamline to cross a periodic boundary.
+
+:ref:`culling_mode <post_processing_culling_mode>`                                                                                                                                                                                                     Controls the face culling of this object in the viewer.
+
+:ref:`domain_list <post_processing_domain_list>`                                                                                                                                                                                                         The list of domains over which to define this object.
+
+:ref:`draw_contours <post_processing_draw_contours>`                                                                                                                                                                                                            Enables/disables drawing of the contour lines.
+
+:ref:`draw_faces <post_processing_draw_faces>`                                                                                                                                                                                     Toggles the visibility filled faces for this graphics object in the viewer.
+
+:ref:`draw_lines <post_processing_draw_lines>`                                                                                                                                                                                       Toggles the visibility of lines around each face of this graphics object.
+
+:ref:`draw_streams <post_processing_draw_streams>`                                                                                                                                                                                                 If false do not draw streams, but allow drawing of symbols.
+
+:ref:`draw_symbols <post_processing_draw_symbols>`                                                                                                                                                                                                             Draw symbols on the streams at specified times.
+
+:ref:`grid_tolerance <post_processing_grid_tolerance>`                                                                                                                                                                                         Fraction of local grid size to use as a maximum step tolerance.
+
+:ref:`instancing_transform <post_processing_instancing_transform>`                                                                                                                                                                        Defines the TRANSFORM object that is used for the object instancing.
+
+:ref:`lighting <post_processing_lighting>`                                                                                                                                                                                                         Toggles the lighting of this graphics object in the viewer.
+
+:ref:`line_colour <post_processing_line_colour>`                                                                                                             A list of three numbers between 0 and 1, which represent the RGB (Red/Green/Blue) values to be used for colouring the lines on a graphics object.
+
+:ref:`line_width <post_processing_line_width>`                                                                                                                                                                                         Controls the width (in pixels) of lines drawn for this graphics object.
+
+:ref:`location_list <post_processing_location_list>`                                                                                                                                                                                                                  A comma delimited list of locator names.
+
+:ref:`locator_sampling_method <post_processing_locator_sampling_method>`                                                                                                                                                                                   Specifies point cloud sampling method on a surface.
+
+:ref:`max <post_processing_max>`                                                                                                                                                                                        The maximum value of a variable in the colour map when using a "User Specified" range.
+
+:ref:`maximum_number_of_items <post_processing_maximum_number_of_items>`                                                                                                                                                                                                      'maximum_number_of_items' child.
+
+:ref:`min <post_processing_min>`                                                                                                                                                                                        The minimum value of a variable in the colour map when using a "User Specified" range.
+
+:ref:`number_of_contours <post_processing_number_of_contours>`                                                                                                                                                                                            Specifies number of contour lines in a contour plot.
+
+:ref:`number_of_samples <post_processing_number_of_samples>`                                                                                                                                                                                                                        'number_of_samples' child.
+
+:ref:`number_of_sides <post_processing_number_of_sides>`                                                                                                                                                                                                                The number of sides of a 'round' tube.
+
+:ref:`random_seed <post_processing_random_seed>`                                                                                                                                                                                                               The seed to be used for a random number series.
+
+:ref:`range <post_processing_range>`                                                                            Sets the method used to calculate the extents of the colour map on an object. "Global" uses the range of values in the problem domain. "Local" uses the range of values on the current object.
+
+:ref:`reduction_factor <post_processing_reduction_factor>`                                                                                                                                                                      Reduces the number of items that should be displayed for a particular locator.
+
+:ref:`reduction_or_max_number <post_processing_reduction_or_max_number>`                                                                                                                  This indicates whether to use 'Reduction Factor' to reduce the number of items, or to use 'Maximum Number of Items'.
+
+:ref:`sample_spacing <post_processing_sample_spacing>`                                                                                                                                         A value between 0 and 1 relative to domain extents indicating number points in one direction for grid sampling.
+
+:ref:`sampling_accuracy <post_processing_sampling_accuracy>`                                                                                                                                                                                                        An indicator for points sampling accuracy.
+
+:ref:`sampling_aspect_ratio <post_processing_sampling_aspect_ratio>`                                                                                                                                                                                         Specifies spacing aspect ratio for grid sampling.
+
+:ref:`sampling_grid_angle <post_processing_sampling_grid_angle>`                                                                                                                                                                                             Specifies the rotation angle for a sampling grid.
+
+:ref:`seed_location_list <post_processing_seed_location_list>`                                                                                                                                                                                                        A comma delimited list of locator names.
+
+:ref:`seed_point_type <post_processing_seed_point_type>`                                                                                                                                                                                                   Specifies seed points used for Surface Streamlines.
+
+:ref:`simplify_geometry <post_processing_simplify_geometry>`                                                                                                                                                                     Flag indicates if nodes would be 'coarsened' for surface streamline geometry.
+
+:ref:`specular_lighting <post_processing_specular_lighting>`                                                                                                                                                                                       Toggles the specular lighting of this object in the viewer.
+
+:ref:`stream_drawing_mode <post_processing_stream_drawing_mode>`                                                                                                                                                                                                                  The streamline drawing mode.
+
+:ref:`stream_initial_direction <post_processing_stream_initial_direction>`                                                                                                                                                                                       Defines the initial plane of a stream ribbon.
+
+:ref:`stream_size <post_processing_stream_size>`                                                                                                                                                                                                                 The initial width of stream ribbons or tubes.
+
+:ref:`stream_symbol <post_processing_stream_symbol>`                                                                                                                                                                                                            Name of streamline symbol to be used for plot.
+
+:ref:`streamline_direction <post_processing_streamline_direction>`                                                                                                                                                                                     The direction in which 3D streams are to be calculated.
+
+:ref:`streamline_maximum_periods <post_processing_streamline_maximum_periods>`                                                                                                                                                          Limits the number of times a streamline may cross a periodic boundary.
+
+:ref:`streamline_maximum_segments <post_processing_streamline_maximum_segments>`                                                                                                                                                            Stops streamline calculation when number of segments exceeds this.
+
+:ref:`streamline_maximum_time <post_processing_streamline_maximum_time>`                                                                                                                                                                          Stops streamline calculation when particle age exceeds this.
+
+:ref:`streamline_periodic_time_interval <post_processing_streamline_periodic_time_interval>`                                                                                                                                                             Time interval for streamline periodic time animation.
+
+:ref:`streamline_solver_type <post_processing_streamline_solver_type>`                                                                                                                                                                                         The solver to use to calculate the streamlines.
+
+:ref:`streamline_type <post_processing_streamline_type>`                                                                                                                                                              Specifies the streamline type. Surface Streamlines are restricted to a surface location.
+
+:ref:`streamline_width <post_processing_streamline_width>`                                                                                                                                                                                                                        The width of the streamline.
+
+:ref:`surface_drawing <post_processing_surface_drawing>`                                                                                                                                                                                  Sets the algorithm used to shade the faces for this graphics object.
+
+:ref:`surface_streamline_direction <post_processing_surface_streamline_direction>`                                                                                                                                                                The direction in which surface streams are to be calculated.
+
+:ref:`symbol_size <post_processing_symbol_size>`                                                                                                                                                                                                                 A scaling factor for all symbols in the plot.
+
+:ref:`symbol_start_time <post_processing_symbol_start_time>`                                                                                                                                                                                               The particle age at which to draw the first symbol.
+
+:ref:`symbol_stop_time <post_processing_symbol_stop_time>`                                                                                                                                                                                                  Draw no symbols with particle age lower than this.
+
+:ref:`symbol_time_interval <post_processing_symbol_time_interval>`                                                                                                                                                                                      Draw symbols at regular times separated by this value.
+
+:ref:`tolerance_mode <post_processing_tolerance_mode>`                                                                                                                                                                                                  Whether Grid Tolerance or Absolute Tolerance are used.
+
+:ref:`transparency <post_processing_transparency>`                                                                                                                               Set between 0.0 (fully opaque) and 1.0 (fully transparent) to control the transparency of this graphics object in the viewer.
+
+:ref:`variable <post_processing_variable>`                                                                                                                                         The name of the variable used to create the object. Should be set equal to the name of a currently defined VARIABLE object.
+
+:ref:`variable_boundary_values <post_processing_variable_boundary_values>`                                                                                                                                                                                                   'variable_boundary_values' child.
+
+:ref:`visibility <post_processing_visibility>`                                                                                                                                                                    Toggles the visibility of this graphics object in the viewer. THIS PARAMETER IS DEPRECATED!.
+
+:ref:`object_view_transform <post_processing_object_view_transform>`                                     This object contains object transformation info to be processed by the viewer. Like instance transform, this object should be associated with each geometry. It is usually specified as a sub-object.
+
+============================================================================================   ===============================================================================================================================================================================================================
+
+.. rubric:: Methods
+
+============================================   ========================================
+
+Method                                                                          Summary
+
+============================================   ========================================
+:ref:`hide <post_processing_hide>`                  Hide the object in a given view(s).
+
+:ref:`show <post_processing_show>`                  Show the object in a given view(s).
+
+:ref:`suspend <post_processing_suspend>`       Suspend immediate update for the object.
+
+:ref:`unsuspend <post_processing_unsuspend>`   Restore immediate update for the object.
+
+============================================   ========================================
+
+.. rubric:: Included in:
+
+================================================================   ============================
+
+Parent                                                                                  Summary
+
+================================================================   ============================
+:ref:`streamline <post_processing_streamline>`                              'streamline' child.
+
+:ref:`internal_streamline <post_processing_internal_streamline>`   'internal_streamline' child.
+
+================================================================   ============================
+

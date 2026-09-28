@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_scattering_coefficient:
+
+scattering_coefficient
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.scattering_coefficient.scattering_coefficient
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   =======================================================
+
+Parent                                                                                                                    Summary
+
+=======================================================================   =======================================================
+:ref:`scattering_coefficient <pre_processing_scattering_coefficient_1>`   Specifies how the scattering coefficient is calculated.
+
+=======================================================================   =======================================================
+

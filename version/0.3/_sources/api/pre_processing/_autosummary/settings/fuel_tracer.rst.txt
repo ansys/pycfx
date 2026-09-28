@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_fuel_tracer:
+
+fuel_tracer
+===========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fuel_tracer.fuel_tracer
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================   ========================================================================
+
+Parent                                                                                                               Summary
+
+=================================================   ========================================================================
+:ref:`mixture <pre_processing_mixture>`                                Specification of Fuel/Oxidiser mixture at a boundary.
+
+:ref:`fuel_tracer <pre_processing_fuel_tracer_1>`   Sets initial conditions for Fuel Tracer for the residual material model.
+
+=================================================   ========================================================================
+

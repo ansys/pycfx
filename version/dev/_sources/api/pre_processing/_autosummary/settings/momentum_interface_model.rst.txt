@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_momentum_interface_model:
+
+momentum_interface_model
+========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.momentum_interface_model.momentum_interface_model
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================================   =================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                 Summary
+
+=============================================================================   =================================================================================================================================================================================================
+:ref:`option <pre_processing_option_353>`                                                                                                                                                                                                  The 'Momentum Interface Model' option.
+
+:ref:`pressure_change <pre_processing_pressure_change>`                                                                                                                                                                    Pressure change from side 1 to side 2 of an interface.
+
+:ref:`mass_flow_rate <pre_processing_mass_flow_rate>`                                                                                                                                                                                                 'Mass Flow Rate' parameter.
+
+:ref:`pressure_update_multiplier <pre_processing_pressure_update_multiplier>`   When imposing a mass flow rate at a domain interface, the solver updates the pressure change to drive the mass flow rate toward the specified value. The update can be scaled by this multiplier.
+
+:ref:`porous_stress_jump <pre_processing_porous_stress_jump>`                                                                                                                                                                 Specifies options for porous stress jump condition.
+
+=============================================================================   =================================================================================================================================================================================================
+
+.. rubric:: Included in:
+
+=============================================================   ========================================================
+
+Parent                                                                                                           Summary
+
+=============================================================   ========================================================
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum_5>`   Specifies conditions on Mass and Momentum at a boundary.
+
+=============================================================   ========================================================
+

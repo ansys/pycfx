@@ -1,0 +1,46 @@
+:orphan:
+
+.. _pre_processing_executable_selection:
+
+executable_selection
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.executable_selection.executable_selection
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================   =============================
+
+Attribute                                                                         Summary
+
+=========================================================   =============================
+:ref:`double_precision <pre_processing_double_precision>`   'Double Precision' parameter.
+
+:ref:`large_problem <pre_processing_large_problem>`            'Large Problem' parameter.
+
+=========================================================   =============================
+
+.. rubric:: Included in:
+
+=======================================================================================   =========================================
+
+Parent                                                                                                                      Summary
+
+=======================================================================================   =========================================
+:ref:`configuration_execution_control <pre_processing_configuration_execution_control>`   'CONFIGURATION EXECUTION CONTROL' object.
+
+:ref:`solver_step_control <pre_processing_solver_step_control>`                                       'SOLVER STEP CONTROL' object.
+
+:ref:`partitioner_step_control <pre_processing_partitioner_step_control>`                        'PARTITIONER STEP CONTROL' object.
+
+:ref:`interpolator_step_control <pre_processing_interpolator_step_control>`                     'INTERPOLATOR STEP CONTROL' object.
+
+:ref:`execution_control <pre_processing_execution_control>`                                             'EXECUTION CONTROL' object.
+
+:ref:`solver_step_control <pre_processing_solver_step_control_1>`                                     'SOLVER STEP CONTROL' object.
+
+:ref:`partitioner_step_control <pre_processing_partitioner_step_control_1>`                      'PARTITIONER STEP CONTROL' object.
+
+=======================================================================================   =========================================
+

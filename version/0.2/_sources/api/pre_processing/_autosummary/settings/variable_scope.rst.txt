@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_variable_scope:
+
+variable_scope
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.variable_scope.variable_scope
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================================   ===========================================
+
+Parent                                                                                                            Summary
+
+===========================================================================   ===========================================
+:ref:`variable_operator_child <pre_processing_variable_operator_child>`         'child_object_type' of variable_operator.
+
+:ref:`additional_variable_child <pre_processing_additional_variable_child>`   'child_object_type' of additional_variable.
+
+===========================================================================   ===========================================
+

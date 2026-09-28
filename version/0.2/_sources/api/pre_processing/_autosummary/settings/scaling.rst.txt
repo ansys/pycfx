@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_scaling:
+
+scaling
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.scaling.scaling
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================   =====================================
+
+Parent                                                                                              Summary
+
+===================================================================   =====================================
+:ref:`mode_shape_child <pre_processing_mode_shape_child>`                'child_object_type' of mode_shape.
+
+:ref:`periodic_displacement <pre_processing_periodic_displacement>`   Defines displacement for mesh motion.
+
+===================================================================   =====================================
+

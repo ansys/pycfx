@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_nasa_a5:
+
+nasa_a5
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.nasa_a5.nasa_a5
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================================   ==========================================================================================
+
+Parent                                                                                                                                                               Summary
+
+===============================================================================   ==========================================================================================
+:ref:`upper_interval_coefficients <pre_processing_upper_interval_coefficients>`   Specifies polynomial coefficients for NASA upper temperature interval, NASA SP-273 format.
+
+:ref:`lower_interval_coefficients <pre_processing_lower_interval_coefficients>`   Specifies polynomial coefficients for NASA lower temperature interval, NASA SP-273 format.
+
+===============================================================================   ==========================================================================================
+

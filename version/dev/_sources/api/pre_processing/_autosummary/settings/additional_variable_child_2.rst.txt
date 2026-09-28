@@ -1,0 +1,46 @@
+:orphan:
+
+.. _pre_processing_additional_variable_child_2:
+
+additional_variable_child
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.additional_variable_child_2.additional_variable_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================   =============================================================
+
+Attribute                                                                                                                           Summary
+
+===========================================================================   =============================================================
+:ref:`option <pre_processing_option_3>`                                                                   The 'Additional Variable' option.
+
+:ref:`additional_variable_value <pre_processing_additional_variable_value>`                                      Additional Variable Value.
+
+:ref:`vector_xvalue <pre_processing_vector_xvalue>`                                                       X component of vector expression.
+
+:ref:`vector_yvalue <pre_processing_vector_yvalue>`                                                       Y component of vector expression.
+
+:ref:`vector_zvalue <pre_processing_vector_zvalue>`                                                       Z component of vector expression.
+
+:ref:`kinematic_diffusivity <pre_processing_kinematic_diffusivity>`                                      'Kinematic Diffusivity' parameter.
+
+:ref:`formulation_type <pre_processing_formulation_type>`                                     Formulation of the transport equation solved.
+
+:ref:`turbulent_flux_closure <pre_processing_turbulent_flux_closure_1>`       Controls the turbulent flux closure for a transport equation.
+
+===========================================================================   =============================================================
+
+.. rubric:: Included in:
+
+=================================================================   ============================================
+
+Parent                                                                                                   Summary
+
+=================================================================   ============================================
+:ref:`additional_variable <pre_processing_additional_variable_2>`   A container for Additional Variable objects.
+
+=================================================================   ============================================
+

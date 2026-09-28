@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_monitor_location_control:
+
+monitor_location_control
+========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.monitor_location_control.monitor_location_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================   ==========================================================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                                          Summary
+
+=============================================================   ==========================================================================================================================================================================================================================================
+:ref:`interpolation_type <pre_processing_interpolation_type>`                                                                                                                                                                                                              'Interpolation Type' parameter.
+
+:ref:`domain_name <pre_processing_domain_name>`                                                                                                                                                                                                                                   'Domain Name' parameter.
+
+:ref:`frame_type <pre_processing_frame_type>`                   Sets the frame in which velocity components or flow direction components are specified. If set to Rotating then the components are in the relative frame. If set to Stationary then the components are in the absolute frame of reference.
+
+=============================================================   ==========================================================================================================================================================================================================================================
+
+.. rubric:: Included in:
+
+===============================================================   =====================================
+
+Parent                                                                                          Summary
+
+===============================================================   =====================================
+:ref:`monitor_point_child <pre_processing_monitor_point_child>`   'child_object_type' of monitor_point.
+
+===============================================================   =====================================
+

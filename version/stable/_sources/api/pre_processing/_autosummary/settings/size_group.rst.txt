@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_size_group:
+
+size_group
+==========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.size_group.size_group
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`size_group_child <pre_processing_size_group_child>`
+
+
+.. rubric:: Included in:
+
+=======================================================================   ==================================================
+
+Parent                                                                                                               Summary
+
+=======================================================================   ==================================================
+:ref:`size_group_distribution <pre_processing_size_group_distribution>`   Defines the size groups for a polydispersed fluid.
+
+=======================================================================   ==================================================
+

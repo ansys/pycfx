@@ -1,0 +1,46 @@
+:orphan:
+
+.. _pre_processing_turbulence_2:
+
+turbulence
+==========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.turbulence_2.turbulence
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================   ===========================================
+
+Attribute                                                                                               Summary
+
+=================================================================   ===========================================
+:ref:`option <pre_processing_option_282>`                                              The 'Turbulence' option.
+
+:ref:`fractional_intensity <pre_processing_fractional_intensity>`             'Fractional Intensity' parameter.
+
+:ref:`k <pre_processing_k>`                                                                      'k' parameter.
+
+:ref:`epsilon <pre_processing_epsilon>`                                                    'Epsilon' parameter.
+
+:ref:`omega <pre_processing_omega>`                                                          'Omega' parameter.
+
+:ref:`eddy_viscosity_ratio <pre_processing_eddy_viscosity_ratio>`   Specify (Turb / Molecular) viscosity ratio.
+
+:ref:`eddy_length_scale <pre_processing_eddy_length_scale>`                      'Eddy Length Scale' parameter.
+
+=================================================================   ===========================================
+
+.. rubric:: Included in:
+
+===================================================================   ==============================================================
+
+Parent                                                                                                                       Summary
+
+===================================================================   ==============================================================
+:ref:`injection_conditions <pre_processing_injection_conditions_1>`   Specifies injection conditions for all equations being solved.
+
+:ref:`injection_conditions <pre_processing_injection_conditions_2>`   Specifies injection conditions for all equations being solved.
+
+===================================================================   ==============================================================
+

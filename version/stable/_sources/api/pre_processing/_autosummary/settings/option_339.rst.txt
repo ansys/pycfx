@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_339:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_339.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================   ======================================
+
+Parent                                                                     Summary
+
+=========================================   ======================================
+:ref:`epsilon <pre_processing_epsilon_1>`   Defines the initialization of epsilon.
+
+=========================================   ======================================
+

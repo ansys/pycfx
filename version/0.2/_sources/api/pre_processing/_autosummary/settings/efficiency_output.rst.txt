@@ -1,0 +1,50 @@
+:orphan:
+
+.. _pre_processing_efficiency_output:
+
+efficiency_output
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.efficiency_output.efficiency_output
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================================================   ===============================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                   Summary
+
+=================================================================================================   ===============================================================================================================================================
+:ref:`enabled <pre_processing_enabled_211>`                                                                                                                                                                    Enable the EFFICIENCY OUTPUT object.
+
+:ref:`option <pre_processing_option_423>`                                                                                                                                                                           The 'Efficiency Output' option.
+
+:ref:`inflow_boundary <pre_processing_inflow_boundary>`                                                                                                                                                                    Inflow boundary regions.
+
+:ref:`outflow_boundary <pre_processing_outflow_boundary>`                                                                                                                                                                          Outflow regions.
+
+:ref:`efficiency_type <pre_processing_efficiency_type>`                                                                    Sets the type of efficiency fields output by the solver when efficiency output is activated on the output control panel.
+
+:ref:`efficiency_calculation_method <pre_processing_efficiency_calculation_method>`                 Sets the efficiency calculation method used by the solver to output efficiency when efficiency output is activated on the output control panel.
+
+:ref:`averaging_type <pre_processing_averaging_type>`                                                                                                                     Method to average enthalpy and pressure to inflow and/or outflow regions.
+
+:ref:`reference_location_enthalpy <pre_processing_reference_location_enthalpy>`                                                                                                                            'Reference Location Enthalpy' parameter.
+
+:ref:`reference_location_entropy <pre_processing_reference_location_entropy>`                                                                                                                               'Reference Location Entropy' parameter.
+
+:ref:`reference_location_total_temperature <pre_processing_reference_location_total_temperature>`                                                                                                 'Reference Location Total Temperature' parameter.
+
+=================================================================================================   ===============================================================================================================================================
+
+.. rubric:: Included in:
+
+=======================================================   =========================
+
+Parent                                                                      Summary
+
+=======================================================   =========================
+:ref:`monitor_objects <pre_processing_monitor_objects>`   'MONITOR OBJECTS' object.
+
+=======================================================   =========================
+

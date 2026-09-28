@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_save_images_in_separate_folder:
+
+save_images_in_separate_folder
+==============================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.save_images_in_separate_folder.save_images_in_separate_folder
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+========================================   ===================
+
+Parent                                                 Summary
+
+========================================   ===================
+:ref:`publish <post_processing_publish>`   Defines the Report.
+
+========================================   ===================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_fluid1to2_mass_flux_fluid2_coefficient:
+
+fluid1to2_mass_flux_fluid2_coefficient
+======================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fluid1to2_mass_flux_fluid2_coefficient.fluid1to2_mass_flux_fluid2_coefficient
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   ============================================
+
+Parent                                                                                                         Summary
+
+=======================================================================   ============================================
+:ref:`specified_mass_transfer <pre_processing_specified_mass_transfer>`   Specifies the mass transfer rate explicitly.
+
+=======================================================================   ============================================
+

@@ -1,0 +1,44 @@
+:orphan:
+
+.. _pre_processing_injection_conditions_2:
+
+injection_conditions
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.injection_conditions_2.injection_conditions
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================   ================================================================
+
+Attribute                                                                                                                    Summary
+
+=================================================================   ================================================================
+:ref:`velocity <pre_processing_velocity_2>`                              Sets velocity part of mass and momentum boundary condition.
+
+:ref:`flow_direction <pre_processing_flow_direction_1>`                           Sets the velocity direction imposed at a boundary.
+
+:ref:`turbulence <pre_processing_turbulence_2>`                                         Sets conditions on turbulence at a boundary.
+
+:ref:`heat_transfer <pre_processing_heat_transfer_4>`                              Specifies heat transfer conditions at a boundary.
+
+:ref:`volume_fraction <pre_processing_volume_fraction_1>`           Sets boundary condition or initial condition on volume fraction.
+
+:ref:`component <pre_processing_component_2>`                                                     A container for Component objects.
+
+:ref:`additional_variable <pre_processing_additional_variable_4>`                       A container for Additional Variable objects.
+
+=================================================================   ================================================================
+
+.. rubric:: Included in:
+
+=================================================   =============================
+
+Parent                                                                    Summary
+
+=================================================   =============================
+:ref:`fluid_child <pre_processing_fluid_child_7>`   'child_object_type' of fluid.
+
+=================================================   =============================
+

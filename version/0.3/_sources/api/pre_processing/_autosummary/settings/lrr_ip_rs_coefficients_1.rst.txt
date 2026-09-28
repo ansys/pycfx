@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_lrr_ip_rs_coefficients_1:
+
+lrr_ip_rs_coefficients
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.lrr_ip_rs_coefficients_1.lrr_ip_rs_coefficients
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================   =============================================================
+
+Attribute                                                                                                                       Summary
+
+=======================================================================   =============================================================
+:ref:`enabled <pre_processing_enabled_66>`                                                    Enable the LRR IP RS COEFFICIENTS object.
+
+:ref:`c1_coefficient <pre_processing_c1_coefficient>`                                                             C1 model coefficient.
+
+:ref:`c2_coefficient <pre_processing_c2_coefficient>`                                                             C2 model coefficient.
+
+:ref:`turbulent_flux_closure <pre_processing_turbulent_flux_closure_1>`   Controls the turbulent flux closure for a transport equation.
+
+=======================================================================   =============================================================
+
+.. rubric:: Included in:
+
+===========================================================   =====================================================================================
+
+Parent                                                                                                                                      Summary
+
+===========================================================   =====================================================================================
+:ref:`rs_epsilon_regime <pre_processing_rs_epsilon_regime>`   Controls Menter turbulence model coefficients for the Reynolds Stress-Epsilon regime.
+
+:ref:`rs_omega_regime <pre_processing_rs_omega_regime>`         Controls Menter turbulence model coefficients for the Reynolds Stress-Omega regime.
+
+===========================================================   =====================================================================================
+

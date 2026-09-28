@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_file_name_1:
+
+file_name
+=========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.file_name_1.file_name
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==================================================   =============================
+
+Parent                                                                     Summary
+
+==================================================   =============================
+:ref:`load_session <post_processing_load_session>`   Load a CFD-Post session file.
+
+==================================================   =============================
+

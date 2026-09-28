@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_epsilon_1:
+
+epsilon
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.epsilon_1.epsilon
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================   =====================
+
+Attribute                                                 Summary
+
+=========================================   =====================
+:ref:`option <pre_processing_option_339>`   The 'Epsilon' option.
+
+:ref:`epsilon <pre_processing_epsilon>`      'Epsilon' parameter.
+
+=========================================   =====================
+
+.. rubric:: Included in:
+
+===================================================================================   ======================================
+
+Parent                                                                                                               Summary
+
+===================================================================================   ======================================
+:ref:`turbulence_initial_conditions <pre_processing_turbulence_initial_conditions>`   Sets initial conditions on turbulence.
+
+===================================================================================   ======================================
+

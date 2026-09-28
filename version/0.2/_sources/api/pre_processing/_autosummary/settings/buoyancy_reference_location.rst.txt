@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_buoyancy_reference_location:
+
+buoyancy_reference_location
+===========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.buoyancy_reference_location.buoyancy_reference_location
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================   ===================================================
+
+Attribute                                                                                                         Summary
+
+===================================================================   ===================================================
+:ref:`option <pre_processing_option_102>`                                       The 'Buoyancy Reference Location' option.
+
+:ref:`cartesian_coordinates <pre_processing_cartesian_coordinates>`   Position <x,y,z> specified by cartesian components.
+
+===================================================================   ===================================================
+
+.. rubric:: Included in:
+
+=====================================================   ==============================================================
+
+Parent                                                                                                         Summary
+
+=====================================================   ==============================================================
+:ref:`buoyancy_model <pre_processing_buoyancy_model>`   Defines type of buoyancy model and gravity vector in a domain.
+
+=====================================================   ==============================================================
+

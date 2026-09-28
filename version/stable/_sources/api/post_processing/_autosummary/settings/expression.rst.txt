@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_expression:
+
+expression
+==========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.expression.expression
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+====================================================================   =======================================
+
+Parent                                                                                                 Summary
+
+====================================================================   =======================================
+:ref:`scalar_variable_child <post_processing_scalar_variable_child>`   'child_object_type' of scalar_variable.
+
+====================================================================   =======================================
+

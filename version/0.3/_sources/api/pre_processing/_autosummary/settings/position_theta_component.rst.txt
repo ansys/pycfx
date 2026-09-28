@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_position_theta_component:
+
+position_theta_component
+========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.position_theta_component.position_theta_component
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================   =====================================
+
+Parent                                                                                          Summary
+
+===============================================================   =====================================
+:ref:`user_point_child <pre_processing_user_point_child>`            'child_object_type' of user_point.
+
+:ref:`monitor_point_child <pre_processing_monitor_point_child>`   'child_object_type' of monitor_point.
+
+===============================================================   =====================================
+

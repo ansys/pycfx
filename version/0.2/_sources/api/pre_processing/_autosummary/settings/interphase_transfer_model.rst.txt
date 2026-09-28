@@ -1,0 +1,66 @@
+:orphan:
+
+.. _pre_processing_interphase_transfer_model:
+
+interphase_transfer_model
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.interphase_transfer_model.interphase_transfer_model
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================================================   ==============================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                          Summary
+
+=========================================================================================================   ==============================================================================================================================================
+:ref:`option <pre_processing_option_177>`                                                                                                                                                                          The 'Interphase Transfer Model' option.
+
+:ref:`interface_length_scale <pre_processing_interface_length_scale>`                                       Specifies an effective length scale or interfacial area density available for transfer processes under the mixture model option on FLUID PAIR.
+
+:ref:`dilute_limit_diameter <pre_processing_dilute_limit_diameter>`                                                                                                                                                     'Dilute Limit Diameter' parameter.
+
+:ref:`fluid1_mean_diameter <pre_processing_fluid1_mean_diameter>`                                                                                                                                                        'Fluid1 Mean Diameter' parameter.
+
+:ref:`fluid2_mean_diameter <pre_processing_fluid2_mean_diameter>`                                                                                                                                                        'Fluid2 Mean Diameter' parameter.
+
+:ref:`fluid1_volume_fraction_limit <pre_processing_fluid1_volume_fraction_limit>`                                                                                                                                'Fluid1 Volume Fraction Limit' parameter.
+
+:ref:`fluid2_volume_fraction_limit <pre_processing_fluid2_volume_fraction_limit>`                                                                                                                                'Fluid2 Volume Fraction Limit' parameter.
+
+:ref:`fluid1_blending_exponent <pre_processing_fluid1_blending_exponent>`                                                                                                                                            'Fluid1 Blending Exponent' parameter.
+
+:ref:`fluid2_blending_exponent <pre_processing_fluid2_blending_exponent>`                                                                                                                                            'Fluid2 Blending Exponent' parameter.
+
+:ref:`maximum_length_scale_for_area_density <pre_processing_maximum_length_scale_for_area_density>`                                                                                                     'Maximum Length Scale for Area Density' parameter.
+
+:ref:`interface_delta_option <pre_processing_interface_delta_option>`                                                                                                                         Specifies the indicator option for a free surface interface.
+
+:ref:`interface_roughness_factor <pre_processing_interface_roughness_factor>`                                                                             Multiplying factor for free surface interfacial area density to account for interface roughness.
+
+:ref:`interfacial_area_density <pre_processing_interfacial_area_density>`                                                                                                                             Interfacial area per unit volume between two phases.
+
+:ref:`minimum_volume_fraction_for_area_density <pre_processing_minimum_volume_fraction_for_area_density>`                                                                                            'Minimum Volume Fraction for Area Density' parameter.
+
+:ref:`maximum_volume_fraction_for_area_density <pre_processing_maximum_volume_fraction_for_area_density>`                                                                                            'Maximum Volume Fraction for Area Density' parameter.
+
+:ref:`fluid1_area_density_coefficient <pre_processing_fluid1_area_density_coefficient>`                                                                                Interfacial area density linearization coefficient against fluid 1 volume fraction.
+
+:ref:`fluid2_area_density_coefficient <pre_processing_fluid2_area_density_coefficient>`                                                                                Interfacial area density linearization coefficient against fluid 1 volume fraction.
+
+:ref:`area_density_reduction_exponent <pre_processing_area_density_reduction_exponent>`                                                              Exponent for reducing unclipped area density for high volume fractions. Used for nondrag forces only.
+
+=========================================================================================================   ==============================================================================================================================================
+
+.. rubric:: Included in:
+
+=========================================================   ==================================
+
+Parent                                                                                 Summary
+
+=========================================================   ==================================
+:ref:`fluid_pair_child <pre_processing_fluid_pair_child>`   'child_object_type' of fluid_pair.
+
+=========================================================   ==================================
+

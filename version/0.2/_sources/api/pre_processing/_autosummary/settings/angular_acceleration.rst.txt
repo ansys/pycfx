@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_angular_acceleration:
+
+angular_acceleration
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.angular_acceleration.angular_acceleration
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================   =======================================================================
+
+Attribute                                                                                                     Summary
+
+===========================================   =======================================================================
+:ref:`enabled <pre_processing_enabled_219>`                                   Enable the ANGULAR ACCELERATION object.
+
+:ref:`option <pre_processing_option_430>`                                          The 'Angular Acceleration' option.
+
+:ref:`xvalue <pre_processing_xvalue>`         Input expression for vector VARIABLE component value in relevant units.
+
+:ref:`yvalue <pre_processing_yvalue>`         Input expression for vector VARIABLE component value in relevant units.
+
+:ref:`zvalue <pre_processing_zvalue>`         Input expression for vector VARIABLE component value in relevant units.
+
+===========================================   =======================================================================
+
+.. rubric:: Included in:
+
+===============================================================   ===============================================================================
+
+Parent                                                                                                                                    Summary
+
+===============================================================   ===============================================================================
+:ref:`initial_conditions <pre_processing_initial_conditions_6>`   Holds the details of initial condition specification for one or more equations.
+
+===============================================================   ===============================================================================
+

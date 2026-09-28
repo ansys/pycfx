@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_export_format_1:
+
+export_format
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.export_format_1.export_format
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================   ============================
+
+Attribute                                                                      Summary
+
+=======================================================   ============================
+:ref:`option <pre_processing_option_390>`                  The 'Export Format' option.
+
+:ref:`filename_prefix <pre_processing_filename_prefix>`   'Filename Prefix' parameter.
+
+=======================================================   ============================
+
+.. rubric:: Included in:
+
+=========================================================================   ==========================================
+
+Parent                                                                                                         Summary
+
+=========================================================================   ==========================================
+:ref:`particle_histogram_child <pre_processing_particle_histogram_child>`   'child_object_type' of particle_histogram.
+
+=========================================================================   ==========================================
+

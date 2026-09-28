@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_child_material_3:
+
+child_material
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.child_material_3.child_material
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`child_material_child <pre_processing_child_material_child_3>`
+
+
+.. rubric:: Included in:
+
+=============================================   ========================================================
+
+Parent                                                                                           Summary
+
+=============================================   ========================================================
+:ref:`reactants <pre_processing_reactants_1>`   Specifies the reactant materials in a chemical reaction.
+
+=============================================   ========================================================
+

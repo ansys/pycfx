@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_option_215:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_215.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================   =============================
+
+Parent                                                                                    Summary
+
+=================================================================   =============================
+:ref:`injection_direction <pre_processing_injection_direction>`     Sets the injection direction.
+
+:ref:`injection_direction <pre_processing_injection_direction_1>`   Sets the injection direction.
+
+=================================================================   =============================
+

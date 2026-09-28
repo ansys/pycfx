@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_time_period:
+
+time_period
+===========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.time_period.time_period
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================================================   ===================================================
+
+Attribute                                                                                                                                           Summary
+
+=====================================================================================================   ===================================================
+:ref:`option <pre_processing_option_440>`                                                                                         The 'Time Period' option.
+
+:ref:`domain <pre_processing_domain_1>`                                                                                                 'Domain' parameter.
+
+:ref:`period <pre_processing_period>`                                                                                                   'Period' parameter.
+
+:ref:`computed_passing_period <pre_processing_computed_passing_period>`                                                'Computed Passing Period' parameter.
+
+:ref:`minimum_number_of_timesteps_per_period <pre_processing_minimum_number_of_timesteps_per_period>`   'Minimum Number of Timesteps per Period' parameter.
+
+=====================================================================================================   ===================================================
+
+.. rubric:: Included in:
+
+=========================================================   ============================================================
+
+Parent                                                                                                           Summary
+
+=========================================================   ============================================================
+:ref:`transient_method <pre_processing_transient_method>`   Defines the discretization algorithm for the transient term.
+
+=========================================================   ============================================================
+

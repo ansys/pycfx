@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_icem_cfd_mesh_control:
+
+icem_cfd_mesh_control
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.icem_cfd_mesh_control.icem_cfd_mesh_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================   ================================================
+
+Attribute                                                                                                          Summary
+
+=======================================================================   ================================================
+:ref:`option <pre_processing_option_448>`                                              The 'Icem Cfd Mesh Control' option.
+
+:ref:`file_name <pre_processing_file_name_6>`                                                       'File Name' parameter.
+
+:ref:`icem_cfd_part_parameter <pre_processing_icem_cfd_part_parameter>`   A container for Icem Cfd Part Parameter objects.
+
+=======================================================================   ================================================
+
+.. rubric:: Included in:
+
+=================================================   ==============================
+
+Parent                                                                     Summary
+
+=================================================   ==============================
+:ref:`remesh_child <pre_processing_remesh_child>`   'child_object_type' of remesh.
+
+=================================================   ==============================
+

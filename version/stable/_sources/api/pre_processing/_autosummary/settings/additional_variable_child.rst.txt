@@ -1,0 +1,52 @@
+:orphan:
+
+.. _pre_processing_additional_variable_child:
+
+additional_variable_child
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.additional_variable_child.additional_variable_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================   ==================================================
+
+Attribute                                                                                                          Summary
+
+=====================================================================   ==================================================
+:ref:`option <pre_processing_option_3>`                                                  The 'Additional Variable' option.
+
+:ref:`variable_type <pre_processing_variable_type>`                                             'Variable Type' parameter.
+
+:ref:`units <pre_processing_units>`                                                                     'Units' parameter.
+
+:ref:`tensor_type <pre_processing_tensor_type>`                                                   'Tensor Type' parameter.
+
+:ref:`variable_scope <pre_processing_variable_scope>`                                          'Variable Scope' parameter.
+
+:ref:`update_loop <pre_processing_update_loop>`                                                   'Update Loop' parameter.
+
+:ref:`boundary_only_field <pre_processing_boundary_only_field>`         Specifies if a variable only exists on a boundary.
+
+:ref:`component_bounds_flag <pre_processing_component_bounds_flag>`                     'Component Bounds Flag' parameter.
+
+:ref:`component_lower_bounds <pre_processing_component_lower_bounds>`                  'Component Lower Bounds' parameter.
+
+:ref:`component_upper_bounds <pre_processing_component_upper_bounds>`                  'Component Upper Bounds' parameter.
+
+:ref:`component_clip_factors <pre_processing_component_clip_factors>`                  'Component Clip Factors' parameter.
+
+=====================================================================   ==================================================
+
+.. rubric:: Included in:
+
+===============================================================   ============================================
+
+Parent                                                                                                 Summary
+
+===============================================================   ============================================
+:ref:`additional_variable <pre_processing_additional_variable>`   A container for Additional Variable objects.
+
+===============================================================   ============================================
+

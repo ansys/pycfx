@@ -1,0 +1,44 @@
+:orphan:
+
+.. _pre_processing_duplicate:
+
+duplicate
+=========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.duplicate.duplicate
+    :show-inheritance:
+
+.. rubric:: Arguments
+
+===============================   ===================================
+
+Argument                                                      Summary
+
+===============================   ===================================
+:ref:`old <pre_processing_old>`       Select the object to duplicate.
+
+:ref:`new <pre_processing_new>`   Specify the name of the new object.
+
+===============================   ===================================
+
+.. rubric:: Included in:
+
+=======================================================================   ======================================================================================================
+
+Parent                                                                                                                                                                   Summary
+
+=======================================================================   ======================================================================================================
+:ref:`expressions <pre_processing_expressions>`                                                                                  Definition of CFX Command Language Expressions.
+
+:ref:`expressions_child <pre_processing_expressions_child>`                                                                                  'child_object_type' of expressions.
+
+:ref:`expert_parameters <pre_processing_expert_parameters>`                                           Hold advanced parameters used to control many aspects of solver operation.
+
+:ref:`expert_parameters_child <pre_processing_expert_parameters_child>`                                                                'child_object_type' of expert_parameters.
+
+:ref:`user <pre_processing_user>`                                         Object that stores user-defined parameters for use in user defined functions or junction box routines.
+
+:ref:`user_child <pre_processing_user_child>`                                                                                                       'child_object_type' of user.
+
+=======================================================================   ======================================================================================================
+

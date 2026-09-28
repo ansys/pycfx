@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_termination_control:
+
+termination_control
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.termination_control.termination_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================   ==========================================
+
+Attribute                                                                                          Summary
+
+=============================================================   ==========================================
+:ref:`enabled <pre_processing_enabled_240>`                         Enable the TERMINATION CONTROL object.
+
+:ref:`control_condition <pre_processing_control_condition_1>`   A container for Control Condition objects.
+
+=============================================================   ==========================================
+
+.. rubric:: Included in:
+
+=============================================================   =============================================
+
+Parent                                                                                                Summary
+
+=============================================================   =============================================
+:ref:`simulation_control <pre_processing_simulation_control>`   Container for all Simulation definition data.
+
+=============================================================   =============================================
+

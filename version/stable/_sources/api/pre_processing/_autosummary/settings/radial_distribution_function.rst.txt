@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_radial_distribution_function:
+
+radial_distribution_function
+============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.radial_distribution_function.radial_distribution_function
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================================   =============================================================
+
+Parent                                                                                                                                      Summary
+
+===================================================================================   =============================================================
+:ref:`radial_distribution_function <pre_processing_radial_distribution_function_1>`   Specifies radial distribution function for a dispersed solid.
+
+===================================================================================   =============================================================
+

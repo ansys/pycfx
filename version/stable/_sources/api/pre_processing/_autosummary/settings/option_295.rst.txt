@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_295:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_295.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================================   ===================================
+
+Parent                                                                                                    Summary
+
+===========================================================================   ===================================
+:ref:`particle_wall_interaction <pre_processing_particle_wall_interaction>`   'PARTICLE WALL INTERACTION' object.
+
+===========================================================================   ===================================
+

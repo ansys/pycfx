@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_paper_size:
+
+paper_size
+==========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.paper_size.paper_size
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==========================================   ====================================================================================================================================
+
+Parent                                                                                                                                                                    Summary
+
+==========================================   ====================================================================================================================================
+:ref:`hardcopy <post_processing_hardcopy>`   This object contains the settings used to control the creation of hardcopy output from the viewer. It is used by the "print" action.
+
+==========================================   ====================================================================================================================================
+

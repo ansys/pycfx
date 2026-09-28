@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_cfx_post_version:
+
+cfx_post_version
+================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.cfx_post_version.cfx_post_version
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==================================================   ===============================================
+
+Parent                                                                                       Summary
+
+==================================================   ===============================================
+:ref:`command_file <post_processing_command_file>`   Stores the Version of the current command file.
+
+==================================================   ===============================================
+

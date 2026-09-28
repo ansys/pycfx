@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_surface_area_factor:
+
+surface_area_factor
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.surface_area_factor.surface_area_factor
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================   ==============================================
+
+Parent                                                                                                         Summary
+
+=====================================================================   ==============================================
+:ref:`particle_shape_factors <pre_processing_particle_shape_factors>`   Defines the shape factor for a particle group.
+
+=====================================================================   ==============================================
+

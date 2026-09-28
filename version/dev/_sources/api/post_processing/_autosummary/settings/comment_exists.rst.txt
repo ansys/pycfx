@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_comment_exists:
+
+comment_exists
+==============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.comment_exists.comment_exists
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+====================================================   ===============================
+
+Parent                                                                         Summary
+
+====================================================   ===============================
+:ref:`comment_child <post_processing_comment_child>`   'child_object_type' of comment.
+
+====================================================   ===============================
+

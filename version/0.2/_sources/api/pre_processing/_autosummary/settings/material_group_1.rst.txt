@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_material_group_1:
+
+material_group
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.material_group_1.material_group
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`material_group_child <pre_processing_material_group_child>`
+
+
+.. rubric:: Included in:
+
+=======================================   ===============================================================================
+
+Parent                                                                                                            Summary
+
+=======================================   ===============================================================================
+:ref:`library <pre_processing_library>`   Stores common object descriptions for reference in the main problem definition.
+
+=======================================   ===============================================================================
+

@@ -1,0 +1,70 @@
+:orphan:
+
+.. _post_processing_case_comparison:
+
+case_comparison
+===============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.case_comparison.case_comparison
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+==============================================================================================   =================================================================
+
+Attribute                                                                                                                                                  Summary
+
+==============================================================================================   =================================================================
+:ref:`absolute_value_of_difference <post_processing_absolute_value_of_difference>`                      Use absolute value in the difference variable calculation.
+
+:ref:`case_name_1 <post_processing_case_name_1_1>`                                                                          First case name in results comparison.
+
+:ref:`case_name_2 <post_processing_case_name_2>`                                                                           Second case name in results comparison.
+
+:ref:`mode_is_active <post_processing_mode_is_active>`                                                    Indication of whether this comparison mode is turned on.
+
+:ref:`same_mesh_detection_mode <post_processing_same_mesh_detection_mode>`                       String to indicate how to detect same meshes for file comparison.
+
+:ref:`synchronize_camera_on_activate <post_processing_synchronize_camera_on_activate>`                         Turn on Camera Synchronization when mode activated.
+
+:ref:`synchronize_visibility_on_activate <post_processing_synchronize_visibility_on_activate>`             Turn on Visibility Synchronization when mode activated.
+
+:ref:`difference_object <post_processing_difference_object>`                                                                            'difference_object' child.
+
+:ref:`internal_vector <post_processing_internal_vector>`                                                                                  'internal_vector' child.
+
+:ref:`internal_contour <post_processing_internal_contour>`                                                                               'internal_contour' child.
+
+:ref:`internal_streamline <post_processing_internal_streamline>`                                                                      'internal_streamline' child.
+
+:ref:`internal_point <post_processing_internal_point>`                                                                                     'internal_point' child.
+
+:ref:`internal_point_cloud <post_processing_internal_point_cloud>`                                                                   'internal_point_cloud' child.
+
+:ref:`internal_polyline <post_processing_internal_polyline>`                                                                            'internal_polyline' child.
+
+:ref:`internal_volume <post_processing_internal_volume>`                                                                                  'internal_volume' child.
+
+:ref:`internal_volume_rendering <post_processing_internal_volume_rendering>`                                                    'internal_volume_rendering' child.
+
+:ref:`internal_line <post_processing_internal_line>`                                                                                        'internal_line' child.
+
+:ref:`internal_turbo_surface <post_processing_internal_turbo_surface>`                                                             'internal_turbo_surface' child.
+
+:ref:`internal_turbo_line <post_processing_internal_turbo_line>`                                                                      'internal_turbo_line' child.
+
+:ref:`legend <post_processing_legend>`                                                                                                             'legend' child.
+
+==============================================================================================   =================================================================
+
+.. rubric:: Included in:
+
+========================================   =========================================
+
+Parent                                                                       Summary
+
+========================================   =========================================
+:ref:`results <post_processing_results>`   Encapsulates a CFX post-processing setup.
+
+========================================   =========================================
+

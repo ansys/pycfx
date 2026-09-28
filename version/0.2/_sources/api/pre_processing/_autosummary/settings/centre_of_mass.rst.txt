@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_centre_of_mass:
+
+centre_of_mass
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.centre_of_mass.centre_of_mass
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================   =======================================================================
+
+Attribute                                                                                                     Summary
+
+===========================================   =======================================================================
+:ref:`enabled <pre_processing_enabled_214>`                                         Enable the CENTRE OF MASS object.
+
+:ref:`option <pre_processing_option_425>`                                                The 'Centre Of Mass' option.
+
+:ref:`xvalue <pre_processing_xvalue>`         Input expression for vector VARIABLE component value in relevant units.
+
+:ref:`yvalue <pre_processing_yvalue>`         Input expression for vector VARIABLE component value in relevant units.
+
+:ref:`zvalue <pre_processing_zvalue>`         Input expression for vector VARIABLE component value in relevant units.
+
+===========================================   =======================================================================
+
+.. rubric:: Included in:
+
+===============================================================   ===============================================================================
+
+Parent                                                                                                                                    Summary
+
+===============================================================   ===============================================================================
+:ref:`initial_conditions <pre_processing_initial_conditions_6>`   Holds the details of initial condition specification for one or more equations.
+
+===============================================================   ===============================================================================
+

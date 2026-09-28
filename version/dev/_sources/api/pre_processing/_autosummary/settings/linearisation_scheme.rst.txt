@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_linearisation_scheme:
+
+linearisation_scheme
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.linearisation_scheme.linearisation_scheme
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ==================================================================================================
+
+Parent                                                                                                                                                     Summary
+
+=============================================================   ==================================================================================================
+:ref:`lift_force <pre_processing_lift_force_1>`                         Specifies that lift force should be included in momentum transfer models for a fluid pair.
+
+:ref:`virtual_mass_force <pre_processing_virtual_mass_force>`   Specifies that virtual mass force should be included in momentum transfer models for a fluid pair.
+
+=============================================================   ==================================================================================================
+

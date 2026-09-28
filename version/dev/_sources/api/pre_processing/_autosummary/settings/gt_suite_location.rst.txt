@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_gt_suite_location:
+
+gt_suite_location
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.gt_suite_location.gt_suite_location
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================   =================================
+
+Attribute                                                                                     Summary
+
+=================================================================   =================================
+:ref:`option <pre_processing_option_420>`                             The 'Gt Suite Location' option.
+
+:ref:`output_boundary_list <pre_processing_output_boundary_list>`   'Output Boundary List' parameter.
+
+:ref:`function_list <pre_processing_function_list>`                        'Function List' parameter.
+
+=================================================================   =================================
+
+.. rubric:: Included in:
+
+=====================================================================   ========================================
+
+Parent                                                                                                   Summary
+
+=====================================================================   ========================================
+:ref:`monitor_gt_suite_child <pre_processing_monitor_gt_suite_child>`   'child_object_type' of monitor_gt_suite.
+
+=====================================================================   ========================================
+

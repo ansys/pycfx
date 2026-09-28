@@ -1,0 +1,44 @@
+:orphan:
+
+.. _pre_processing_knock_reaction_rate_1:
+
+knock_reaction_rate
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.knock_reaction_rate_1.knock_reaction_rate
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================   ====================================================================================
+
+Attribute                                                                                                                                            Summary
+
+=====================================================================   ====================================================================================
+:ref:`enabled <pre_processing_enabled_85>`                                                                            Enable the KNOCK REACTION RATE object.
+
+:ref:`option <pre_processing_option_150>`                                                                                  The 'Knock Reaction Rate' option.
+
+:ref:`pre_exponential_factor <pre_processing_pre_exponential_factor>`                                    Pre-exponential factor for Arrhenius reaction rate.
+
+:ref:`temperature_exponent <pre_processing_temperature_exponent>`                                                          'Temperature Exponent' parameter.
+
+:ref:`knock_reaction_rate <pre_processing_knock_reaction_rate>`                                                                         Knock Reaction Rate.
+
+:ref:`solution_change_factor <pre_processing_solution_change_factor>`   Solution Change Factor for improving robustness of Autoignition Knock Reaction Rate.
+
+:ref:`reaction_activation <pre_processing_reaction_activation>`                       Defines reaction energy/temperature for Arrhenius type reaction rates.
+
+=====================================================================   ====================================================================================
+
+.. rubric:: Included in:
+
+=============================================================   ================================
+
+Parent                                                                                   Summary
+
+=============================================================   ================================
+:ref:`autoignition_model <pre_processing_autoignition_model>`   Controls the autoignition model.
+
+=============================================================   ================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_output_to_postprocessor:
+
+output_to_postprocessor
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.output_to_postprocessor.output_to_postprocessor
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   =========================================
+
+Parent                                                                                                      Summary
+
+=======================================================================   =========================================
+:ref:`variable_operator_child <pre_processing_variable_operator_child>`   'child_object_type' of variable_operator.
+
+=======================================================================   =========================================
+

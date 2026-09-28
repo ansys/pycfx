@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_interrupt_condition:
+
+interrupt_condition
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.interrupt_condition.interrupt_condition
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`interrupt_condition_child <pre_processing_interrupt_condition_child>`
+
+
+.. rubric:: Included in:
+
+===========================================================   ===============================================================
+
+Parent                                                                                                                Summary
+
+===========================================================   ===============================================================
+:ref:`interrupt_control <pre_processing_interrupt_control>`   Container for control conditions that cause the solver to stop.
+
+===========================================================   ===============================================================
+

@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_aspect_ratio_filter:
+
+aspect_ratio_filter
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.aspect_ratio_filter.aspect_ratio_filter
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================   ======================================
+
+Attribute                                                                          Summary
+
+=================================================   ======================================
+:ref:`enabled <pre_processing_enabled_233>`         Enable the ASPECT RATIO FILTER object.
+
+:ref:`option <pre_processing_option_460>`                The 'Aspect Ratio Filter' option.
+
+:ref:`aspect_ratio <pre_processing_aspect_ratio>`    Criterion for aspect ratio filtering.
+
+=================================================   ======================================
+
+.. rubric:: Included in:
+
+===================================================================   ===============================
+
+Parent                                                                                        Summary
+
+===================================================================   ===============================
+:ref:`precoarsening_control <pre_processing_precoarsening_control>`   'PRECOARSENING CONTROL' object.
+
+===================================================================   ===============================
+

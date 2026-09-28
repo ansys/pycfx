@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_223:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_223.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================   =========================================
+
+Parent                                                                                                  Summary
+
+===================================================================   =========================================
+:ref:`configuration_control <pre_processing_configuration_control>`   The container for all Configuration data.
+
+===================================================================   =========================================
+

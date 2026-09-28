@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_c3_coefficient:
+
+c3_coefficient
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.c3_coefficient.c3_coefficient
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================================================   =============================================================================
+
+Parent                                                                                                                                                                Summary
+
+=============================================================================================   =============================================================================
+:ref:`flame_surface_density_coefficients <pre_processing_flame_surface_density_coefficients>`   Controls model coefficients for the Flame Surface Density transport equation.
+
+=============================================================================================   =============================================================================
+

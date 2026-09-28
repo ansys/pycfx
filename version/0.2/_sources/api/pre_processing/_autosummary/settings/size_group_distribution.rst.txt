@@ -1,0 +1,44 @@
+:orphan:
+
+.. _pre_processing_size_group_distribution:
+
+size_group_distribution
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.size_group_distribution.size_group_distribution
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================   ===================================================================================
+
+Attribute                                                                                                                                         Summary
+
+===================================================================   ===================================================================================
+:ref:`option <pre_processing_option_111>`                                                                           The 'Size Group Distribution' option.
+
+:ref:`number_of_size_groups <pre_processing_number_of_size_groups>`                                       Number of size groups in a polydispersed fluid.
+
+:ref:`minimum_diameter <pre_processing_minimum_diameter>`                                                                   'Minimum Diameter' parameter.
+
+:ref:`maximum_diameter <pre_processing_maximum_diameter>`                                                                   'Maximum Diameter' parameter.
+
+:ref:`reference_density <pre_processing_reference_density>`           Reference density when defining size groups for MUSIG fluids with variable density.
+
+:ref:`nominal_size_scale <pre_processing_nominal_size_scale>`                                     Nominal size scale used in normalizing DQMOM equations.
+
+:ref:`size_group <pre_processing_size_group>`                                                                         A container for Size Group objects.
+
+===================================================================   ===================================================================================
+
+.. rubric:: Included in:
+
+===========================================================================   ===========================================
+
+Parent                                                                                                            Summary
+
+===========================================================================   ===========================================
+:ref:`polydispersed_fluid_child <pre_processing_polydispersed_fluid_child>`   'child_object_type' of polydispersed_fluid.
+
+===========================================================================   ===========================================
+

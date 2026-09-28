@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_solve_ansys_fields:
+
+solve_ansys_fields
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.solve_ansys_fields.solve_ansys_fields
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================================   ===================================
+
+Parent                                                                                                    Summary
+
+===========================================================================   ===================================
+:ref:`solution_sequence_control <pre_processing_solution_sequence_control>`   'SOLUTION SEQUENCE CONTROL' object.
+
+===========================================================================   ===================================
+

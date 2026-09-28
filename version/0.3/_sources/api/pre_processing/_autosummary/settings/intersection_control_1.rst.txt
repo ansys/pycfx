@@ -1,0 +1,54 @@
+:orphan:
+
+.. _pre_processing_intersection_control_1:
+
+intersection_control
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.intersection_control_1.intersection_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================================================================   ====================================================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                                                                                          Summary
+
+===================================================================================================================   ====================================================================================================================================================================================================================================
+:ref:`enabled <pre_processing_enabled_145>`                                                                                                                                                                                                                                                                        Enable the INTERSECTION CONTROL object.
+
+:ref:`option <pre_processing_option_310>`                                                                                                                                                                                                                                                                               The 'Intersection Control' option.
+
+:ref:`permit_no_intersection <pre_processing_permit_no_intersection>`                                                 When true, the solver will run when there is no overlap between the two sides of a GGI/MFR interface. Use this parameter for transient rotor-stator cases with rotating valves etc. that sometimes are fully closed to the geometry.
+
+:ref:`discernible_fraction <pre_processing_discernible_fraction>`                                                                                                                                                                                                                                               Control surface discernible area fraction.
+
+:ref:`edge_scale_factor <pre_processing_edge_scale_factor>`                                                                                                                                                                                                                                                     Degenerate surface length scale tolerance.
+
+:ref:`periodic_axial_radial_tolerance <pre_processing_periodic_axial_radial_tolerance>`                                                             GGI periodic surfaces cannot be constant axial surfaces or constant radial surfaces. This parameter controls the tolerance used to determine if the surface is in one of these two invalid situations.
+
+:ref:`circumferential_normalized_coordinates_option <pre_processing_circumferential_normalized_coordinates_option>`                                                                                                                                                                                                   Sets the calculation recipe for eta.
+
+:ref:`face_search_tolerance_factor <pre_processing_face_search_tolerance_factor>`                                                                                                                                              Scaling factor applied to element sized based separation distance that is used to find candidates for the GGI intersection.
+
+:ref:`face_intersection_depth_factor <pre_processing_face_intersection_depth_factor>`                                                                                                                                            Scaling factor applied to element sized based separation distance that is used to intersect the sides of a GGI interface.
+
+:ref:`angle_tolerance <pre_processing_angle_tolerance>`                                                                                                Angle tolerance for intersection (in degrees) used for the direct intersector. The normal vectors of two intersected faces has to be in opposite direction with respect to the specified tolerance.
+
+:ref:`bitmap_resolution <pre_processing_bitmap_resolution>`                                                                                                                                                                              Bitmap resolution to use on a mesh face when calculating the mesh intersection for a nonmatched domain interface.
+
+===================================================================================================================   ====================================================================================================================================================================================================================================
+
+.. rubric:: Included in:
+
+=======================================================   ====================================================================================
+
+Parent                                                                                                                                 Summary
+
+=======================================================   ====================================================================================
+:ref:`mesh_connection <pre_processing_mesh_connection>`                            Defines how the meshes on a domain interface are connected.
+
+:ref:`solver_control <pre_processing_solver_control_1>`   Holds all objects that control discretization and execution of the solution process.
+
+=======================================================   ====================================================================================
+

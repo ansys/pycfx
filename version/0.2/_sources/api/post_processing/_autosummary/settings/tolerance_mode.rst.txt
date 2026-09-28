@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_tolerance_mode:
+
+tolerance_mode
+==============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.tolerance_mode.tolerance_mode
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==========================================================   ==================================
+
+Parent                                                                                  Summary
+
+==========================================================   ==================================
+:ref:`streamline_child <post_processing_streamline_child>`   'child_object_type' of streamline.
+
+==========================================================   ==================================
+

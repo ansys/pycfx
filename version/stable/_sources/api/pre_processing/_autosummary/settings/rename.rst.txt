@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_rename:
+
+rename
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.rename.rename
+    :show-inheritance:
+
+.. rubric:: Arguments
+
+=================================   ========================
+
+Argument                                             Summary
+
+=================================   ========================
+:ref:`new <pre_processing_new_1>`   New name for the object.
+
+:ref:`old <pre_processing_old_1>`   Select object to rename.
+
+=================================   ========================
+
+.. rubric:: Included in:
+
+===========================================================   ======================================================================================================
+
+Parent                                                                                                                                                       Summary
+
+===========================================================   ======================================================================================================
+:ref:`expressions <pre_processing_expressions>`                                                                      Definition of CFX Command Language Expressions.
+
+:ref:`expert_parameters <pre_processing_expert_parameters>`                               Hold advanced parameters used to control many aspects of solver operation.
+
+:ref:`user <pre_processing_user>`                             Object that stores user-defined parameters for use in user defined functions or junction box routines.
+
+===========================================================   ======================================================================================================
+

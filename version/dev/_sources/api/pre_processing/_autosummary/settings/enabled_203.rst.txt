@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_203:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_203.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================================================   ==========================================
+
+Parent                                                                                                                           Summary
+
+===========================================================================================   ==========================================
+:ref:`angular_momentum_equation_control <pre_processing_angular_momentum_equation_control>`   Angular momentum equation solver controls.
+
+===========================================================================================   ==========================================
+

@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_effective_azimuthal_angle:
+
+effective_azimuthal_angle
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.effective_azimuthal_angle.effective_azimuthal_angle
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================   =======================================
+
+Parent                                                                                              Summary
+
+=================================================================   =======================================
+:ref:`injection_trajectory <pre_processing_injection_trajectory>`   Defines the Injection Trajectory model.
+
+:ref:`injection_direction <pre_processing_injection_direction_1>`             Sets the injection direction.
+
+=================================================================   =======================================
+

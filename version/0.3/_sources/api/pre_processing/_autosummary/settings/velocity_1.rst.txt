@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_velocity_1:
+
+velocity
+========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.velocity_1.velocity
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================================================   =====================================================
+
+Attribute                                                                                                                                                 Summary
+
+=========================================================================================================   =====================================================
+:ref:`option <pre_processing_option_297>`                                                                                                  The 'Velocity' option.
+
+:ref:`perpendicular_coefficient_of_restitution <pre_processing_perpendicular_coefficient_of_restitution>`   'Perpendicular Coefficient of Restitution' parameter.
+
+:ref:`parallel_coefficient_of_restitution <pre_processing_parallel_coefficient_of_restitution>`                  'Parallel Coefficient of Restitution' parameter.
+
+=========================================================================================================   =====================================================
+
+.. rubric:: Included in:
+
+=================================================================   =============================================================
+
+Parent                                                                                                                    Summary
+
+=================================================================   =============================================================
+:ref:`boundary_conditions <pre_processing_boundary_conditions_6>`   Specifies boundary conditions for all equations being solved.
+
+=================================================================   =============================================================
+

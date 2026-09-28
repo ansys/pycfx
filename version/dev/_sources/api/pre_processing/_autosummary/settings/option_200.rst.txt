@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_200:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_200.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================================   ========================================================
+
+Parent                                                                                                                           Summary
+
+=============================================================================   ========================================================
+:ref:`free_surface_damping_model <pre_processing_free_surface_damping_model>`   Model settings for turbulence damping at a free surface.
+
+=============================================================================   ========================================================
+

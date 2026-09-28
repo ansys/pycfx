@@ -1,0 +1,32 @@
+:orphan:
+
+.. _pre_processing_position_update_frequency:
+
+position_update_frequency
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.position_update_frequency.position_update_frequency
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================   =======================================
+
+Attribute                                                                   Summary
+
+=========================================   =======================================
+:ref:`option <pre_processing_option_411>`   The 'Position Update Frequency' option.
+
+=========================================   =======================================
+
+.. rubric:: Included in:
+
+===============================================================   =====================================
+
+Parent                                                                                          Summary
+
+===============================================================   =====================================
+:ref:`monitor_point_child <pre_processing_monitor_point_child>`   'child_object_type' of monitor_point.
+
+===============================================================   =====================================
+

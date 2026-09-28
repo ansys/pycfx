@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_reference_velocity_1:
+
+reference_velocity_1
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.reference_velocity_1.reference_velocity_1
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================   =======================
+
+Parent                                                                  Summary
+
+=====================================================   =======================
+:ref:`erosion_model <pre_processing_erosion_model>`     Particle erosion model.
+
+:ref:`erosion_model <pre_processing_erosion_model_1>`   Particle erosion model.
+
+=====================================================   =======================
+

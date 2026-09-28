@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_minimum_volume_fraction_for_area_density:
+
+minimum_volume_fraction_for_area_density
+========================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.minimum_volume_fraction_for_area_density.minimum_volume_fraction_for_area_density
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================================   ========================================
+
+Parent                                                                                                         Summary
+
+===========================================================================   ========================================
+:ref:`interphase_transfer_model <pre_processing_interphase_transfer_model>`   Specifies transfer model between fluids.
+
+===========================================================================   ========================================
+

@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_option_303:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_303.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================   ================================================================
+
+Parent                                                                                                           Summary
+
+=====================================================   ================================================================
+:ref:`tube_pressure <pre_processing_tube_pressure_1>`   Defines either boundary or initial conditions for tube pressure.
+
+:ref:`tube_pressure <pre_processing_tube_pressure_2>`   Defines either boundary or initial conditions for tube pressure.
+
+:ref:`tube_pressure <pre_processing_tube_pressure_3>`   Defines either boundary or initial conditions for tube pressure.
+
+=====================================================   ================================================================
+

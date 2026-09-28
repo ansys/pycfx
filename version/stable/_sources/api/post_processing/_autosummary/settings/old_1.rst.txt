@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_old_1:
+
+old
+===
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.old_1.old
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+======================================   ==================
+
+Parent                                              Summary
+
+======================================   ==================
+:ref:`rename <post_processing_rename>`   Rename the object.
+
+======================================   ==================
+

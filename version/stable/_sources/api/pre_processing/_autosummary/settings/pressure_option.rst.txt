@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_pressure_option:
+
+pressure_option
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.pressure_option.pressure_option
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================   =================================================================================
+
+Attribute                                                                                                                                 Summary
+
+=============================================================   =================================================================================
+:ref:`enabled <pre_processing_enabled_131>`                                                                    Enable the PRESSURE OPTION object.
+
+:ref:`option <pre_processing_option_278>`                                                                           The 'Pressure Option' option.
+
+:ref:`elimination_factor <pre_processing_elimination_factor>`                                        Elimination Factor for Zero Gradient option.
+
+:ref:`blend_factor <pre_processing_blend_factor>`               Specifies the blend between pure UDS (0.0) and second order (1.0) discretization.
+
+=============================================================   =================================================================================
+
+.. rubric:: Included in:
+
+=============================================================   ========================================================
+
+Parent                                                                                                           Summary
+
+=============================================================   ========================================================
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum>`     Specifies conditions on Mass and Momentum at a boundary.
+
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum_2>`   Specifies conditions on Mass and Momentum at a boundary.
+
+=============================================================   ========================================================
+

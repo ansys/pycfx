@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_sas2_coefficient:
+
+sas2_coefficient
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.sas2_coefficient.sas2_coefficient
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   ========================================================
+
+Parent                                                                                                       Summary
+
+=========================================================   ========================================================
+:ref:`sas_coefficients <pre_processing_sas_coefficients>`   Parameters of the SAS source term in the omega equation.
+
+=========================================================   ========================================================
+

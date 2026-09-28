@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_maximum_number_of_integration_steps:
+
+maximum_number_of_integration_steps
+===================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.maximum_number_of_integration_steps.maximum_number_of_integration_steps
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================================   ============================================================
+
+Parent                                                                                                                                   Summary
+
+=================================================================================   ============================================================
+:ref:`particle_termination_control <pre_processing_particle_termination_control>`   Sets details of the particle tracking integration algorithm.
+
+=================================================================================   ============================================================
+

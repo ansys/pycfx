@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_optimization_level:
+
+optimization_level
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.optimization_level.optimization_level
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================   ====================================================================================
+
+Parent                                                                                                                                             Summary
+
+===================================================================   ====================================================================================
+:ref:`solver_control <pre_processing_solver_control_1>`               Holds all objects that control discretization and execution of the solution process.
+
+:ref:`multiphase_control <pre_processing_multiphase_control>`                                                   Defines multiphase solver control details.
+
+:ref:`linear_solver_control <pre_processing_linear_solver_control>`                                                        'LINEAR SOLVER CONTROL' object.
+
+===================================================================   ====================================================================================
+

@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_preheat_temperature_dependency:
+
+preheat_temperature_dependency
+==============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.preheat_temperature_dependency.preheat_temperature_dependency
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================   ==================================
+
+Attribute                                                                                        Summary
+
+===================================================================   ==================================
+:ref:`reference_temperature <pre_processing_reference_temperature>`   'Reference Temperature' parameter.
+
+:ref:`a0_coefficient <pre_processing_a0_coefficient>`                              A0 model coefficient.
+
+:ref:`a1_coefficient <pre_processing_a1_coefficient>`                              A1 model coefficient.
+
+:ref:`a2_coefficient <pre_processing_a2_coefficient>`                              A2 model coefficient.
+
+===================================================================   ==================================
+
+.. rubric:: Included in:
+
+===========================================================================   ===================================================================================
+
+Parent                                                                                                                                                    Summary
+
+===========================================================================   ===================================================================================
+:ref:`laminar_burning_velocity <pre_processing_laminar_burning_velocity_1>`   Defines the laminar burning velocity for premixed or partially premixed combustion.
+
+===========================================================================   ===================================================================================
+

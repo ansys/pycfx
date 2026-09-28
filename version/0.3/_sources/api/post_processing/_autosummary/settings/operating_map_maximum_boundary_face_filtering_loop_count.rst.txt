@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_operating_map_maximum_boundary_face_filtering_loop_count:
+
+operating_map_maximum_boundary_face_filtering_loop_count
+========================================================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.operating_map_maximum_boundary_face_filtering_loop_count.operating_map_maximum_boundary_face_filtering_loop_count
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==========================================================   ========================================================
+
+Parent                                                                                                        Summary
+
+==========================================================   ========================================================
+:ref:`operating_points <post_processing_operating_points>`   Contains information related to operating point results.
+
+==========================================================   ========================================================
+

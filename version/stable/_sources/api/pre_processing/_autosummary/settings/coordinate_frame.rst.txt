@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_coordinate_frame:
+
+coordinate_frame
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.coordinate_frame.coordinate_frame
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`coordinate_frame_child <pre_processing_coordinate_frame_child>`
+
+
+.. rubric:: Included in:
+
+=================================================================================   ================================
+
+Parent                                                                                                       Summary
+
+=================================================================================   ================================
+:ref:`coordinate_frame_definitions <pre_processing_coordinate_frame_definitions>`   Stores coordinate frame objects.
+
+=================================================================================   ================================
+

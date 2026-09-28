@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_operating_map:
+
+operating_map
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.operating_map.operating_map
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`operating_map_child <pre_processing_operating_map_child>`
+
+
+.. rubric:: Included in:
+
+=========================================================   =============================================
+
+Parent                                                                                            Summary
+
+=========================================================   =============================================
+:ref:`operating_points <pre_processing_operating_points>`   Overall container for operating points setup.
+
+=========================================================   =============================================
+

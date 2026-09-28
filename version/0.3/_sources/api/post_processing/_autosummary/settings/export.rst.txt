@@ -1,0 +1,129 @@
+:orphan:
+
+.. _post_processing_export:
+
+export
+======
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.export.export
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+================================================================================================   ===============================================================================================================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                                                                                                                                  Summary
+
+================================================================================================   ===============================================================================================================================================================================================================================================================================================
+:ref:`ansys_export_data <post_processing_ansys_export_data>`                                                                                                                                                                                                                                                                                                     The list of data items to export.
+
+:ref:`ansys_export_locator <post_processing_ansys_export_locator>`                                                                                                                                                                                                                                                                                              The locator to export the data on.
+
+:ref:`ansys_export_units <post_processing_ansys_export_units>`                                                                                                                                                                                                                                                              Specifies the units to which the exported data should be converted to.
+
+:ref:`ansys_file_format <post_processing_ansys_file_format>`                                                                                                                       Specifies the file format to write the FSI data in. The options are 'Simulation', which is used by Simulation, often when running under WB; and 'ANSYS' which is used when writing files used by ANSYS Classic.
+
+:ref:`ansys_fluid_selection <post_processing_ansys_fluid_selection>`                                                                                                                                                                       Specifies the fluid from which to obtain Wall Shear data if applicable. If "All Fluids" is selected, then the Wall Shear for all the fluids are summed.
+
+:ref:`ansys_reference_temperature <post_processing_ansys_reference_temperature>`                                                                                                                                                               Specifies the Reference Temperature to use when the ANSYS Specify Reference Temperature parameter is set to true when exporting Element Convection.
+
+:ref:`ansys_specify_reference_temperature <post_processing_ansys_specify_reference_temperature>`                                                                                                                                                                                  Indicates whether the user wishes to specify the Reference Temperature (Tref) when exporting Element Convection.
+
+:ref:`ansys_supplemental_htc <post_processing_ansys_supplemental_htc>`                                                                                                                                                                                        Supplemental HTC will replace any negative convection coefficient at the nodes where the choice of bulk temperature is not physical.
+
+:ref:`ansys_timestep_list <post_processing_ansys_timestep_list>`                                                                                                                                                                                                                                                    Specifies the list of timesteps to export the specified ANSYS export data for.
+
+:ref:`additional_variable_list <post_processing_additional_variable_list>`                                                                                                                                                                                                                                                                      List of variables to be exported to External Data.
+
+:ref:`bc_profile_type <post_processing_bc_profile_type>`                                                                                                                                                                                                                                                                                                         The type of BC Profile to export.
+
+:ref:`cfx_timestep_list <post_processing_cfx_timestep_list>`                                                                                                                                                                                                                                                          Specifies the list of timesteps to export the specified CFX export data for.
+
+:ref:`csv_type <post_processing_csv_type>`                                                                                                                                                                                                                                                                                                                                       'csv_type' child.
+
+:ref:`case_name <post_processing_case_name_1>`                                                                                                                                                                                                                                                                          Internal CFD-Post name for the analyzed problem or the results set to use.
+
+:ref:`case_summary_format <post_processing_case_summary_format>`                                                                                                                                                                                                                                                                               Sets the Export format for the Case Summary export.
+
+:ref:`case_summary_type <post_processing_case_summary_type>`                                                                                                                                                                                                                                                                                     Sets the export type for the Case Summary export.
+
+:ref:`export_chart_name <post_processing_export_chart_name>`                                                                                                                                                                                            Sets the name of the chart to export the data for. This parameter will be used if the >export command is sent with 'chart' as a parameter.
+
+:ref:`export_connectivity <post_processing_export_connectivity>`                                                                                                                                                                         Boolean indicating whether or not to export the locator connectivity along with the geometry. This will only be allowed if the geometry is also exported.
+
+:ref:`export_coord_frame <post_processing_export_coord_frame>`                                                                                                                                                                                                                                                                   The Coordinate Frame relative to which all data will be exported.
+
+:ref:`export_file <post_processing_export_file>`                                                                                                                                                                                                                                                                                          The filename to which the exported data will be written.
+
+:ref:`export_geometry <post_processing_export_geometry>`                                                                                                                                                                                                                                                Boolean indicating whether or not the locator geometry (i.e. X, Y & Z) should be exported.
+
+:ref:`export_geometry_location <post_processing_export_geometry_location>`                                                                                                                                                                                                                                                                                A comma delimited list of locator names.
+
+:ref:`export_location_aliases <post_processing_export_location_aliases>`                                                                   Allows the user to specify a list of names which will be assigned to each respective locator as the data is exported. If insufficient names are given, or if this parameter is blank, the locator name will be used for each locator that has no alias.
+
+:ref:`export_node_numbers <post_processing_export_node_numbers>`                                                                                                                                                                                                                                                     Boolean indicating whether to export the node number along with the geometry.
+
+:ref:`export_null_data <post_processing_export_null_data>`                                                                                                                                                                                                                                                                  Indicates whether to export points at which a variable is not defined.
+
+:ref:`export_type <post_processing_export_type>`                                                                                                                                                                                                                                                                                               Sets the rotation of the image on the printed page.
+
+:ref:`export_units_system <post_processing_export_units_system>`                                                                                                                                                                   Sets the Units System to convert all exported data to. By default the value is 'Preferred' which will use the users currently selected Preferred Units setting.
+
+:ref:`export_variable_type <post_processing_export_variable_type>`                                                                                                            Specifies what variable data to export. If 'Current' is selected, the varType for each variable is used. If Hybrid or Conservative is selected, then all variable have their Hybrid or Conservative values exported.
+
+:ref:`external_export_data <post_processing_external_export_data>`                                                                                                                                                                                                                                                                       The list of data items to export to External Data format.
+
+:ref:`heat_flow_sign_flipping <post_processing_heat_flow_sign_flipping>`                                                                                                                                                                                                                                                                                                                       ...
+
+:ref:`include_file_information <post_processing_include_file_information>`                                                                                                                                                                                                                  Indicates whether to include file information including file name version of Post, and date of export.
+
+:ref:`include_header <post_processing_include_header>`                                                                                                                                                                                                                                              Indicates whether to include header information in the exported file, or just output the data.
+
+:ref:`location <post_processing_location_1>`                                                                                                                                                                                                                                                                                                                                       A locator name.
+
+:ref:`location_list <post_processing_location_list>`                                                                                                                                                                                                                                                                                                      A comma delimited list of locator names.
+
+:ref:`null_token <post_processing_null_token>`                                                                                                                                                                                                                                                       The string that should be used in the export file if no data exists for a variable at a node.
+
+:ref:`overwrite <post_processing_overwrite>`                                                                                                                                                                                                                                                Indicates whether, if the specified filename exists, the file should be overwritten with the new data.
+
+:ref:`precision <post_processing_precision>`                                                                                                                                                                                                                                                                  Indicates the number of decimal points of precision to display the exported data to.
+
+:ref:`separator <post_processing_separator>`                                                                                                                                                                                                                                                   Indicates the string to use between each variable. The string must be delimited by quotation marks.
+
+:ref:`spatial_variables <post_processing_spatial_variables>`                                                                                                                                                                                                                                                                                              The list of Spatial variables to export.
+
+:ref:`split_cut_lines <post_processing_split_cut_lines>`                                                                                                                                                                                                                                   Indicates whether to split cut lines along connectivity boundaries, or just leave all points connected.
+
+:ref:`variable_list <post_processing_variable_list>`                                                                                                                                                                                                                                                                             A comma delimited list of variables whose data is to be exported.
+
+:ref:`vector_brackets <post_processing_vector_brackets>`                                           Indicates the kind of brackets to use around vector data when displayed as components. Any two character combination is valid, where the first character will be used as the open-bracket, and the second as the close-bracket. If "-" is specified (no quotes), no brackets will be displayed.
+
+:ref:`vector_display <post_processing_vector_display>`                                                                                                                                                                                                                                              Indicates the way that vector variables are to be displayed. Choices are: Components | Scalar.
+
+================================================================================================   ===============================================================================================================================================================================================================================================================================================
+
+.. rubric:: Methods
+
+============================================   ========================================
+
+Method                                                                          Summary
+
+============================================   ========================================
+:ref:`suspend <post_processing_suspend>`       Suspend immediate update for the object.
+
+:ref:`unsuspend <post_processing_unsuspend>`   Restore immediate update for the object.
+
+============================================   ========================================
+
+.. rubric:: Included in:
+
+========================================   =========================================
+
+Parent                                                                       Summary
+
+========================================   =========================================
+:ref:`results <post_processing_results>`   Encapsulates a CFX post-processing setup.
+
+========================================   =========================================
+

@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_porous_stress_jump:
+
+porous_stress_jump
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.porous_stress_jump.porous_stress_jump
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================================   ==============================================
+
+Attribute                                                                                                                            Summary
+
+===========================================================================================   ==============================================
+:ref:`enabled <pre_processing_enabled_156>`                                                            Enable the POROUS STRESS JUMP object.
+
+:ref:`option <pre_processing_option_354>`                                                                   The 'Porous Stress Jump' option.
+
+:ref:`linear_stress_jump_coefficient <pre_processing_linear_stress_jump_coefficient>`            'Linear Stress Jump Coefficient' parameter.
+
+:ref:`quadratic_stress_jump_coefficient <pre_processing_quadratic_stress_jump_coefficient>`   'Quadratic Stress Jump Coefficient' parameter.
+
+===========================================================================================   ==============================================
+
+.. rubric:: Included in:
+
+=========================================================================   ================================================
+
+Parent                                                                                                               Summary
+
+=========================================================================   ================================================
+:ref:`momentum_interface_model <pre_processing_momentum_interface_model>`   Momentum transfer models for a domain interface.
+
+=========================================================================   ================================================
+

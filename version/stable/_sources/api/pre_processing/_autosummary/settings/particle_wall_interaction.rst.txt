@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_particle_wall_interaction:
+
+particle_wall_interaction
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.particle_wall_interaction.particle_wall_interaction
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================   =======================================
+
+Attribute                                                                   Summary
+
+=========================================   =======================================
+:ref:`option <pre_processing_option_295>`   The 'Particle Wall Interaction' option.
+
+=========================================   =======================================
+
+.. rubric:: Included in:
+
+=================================================================   =============================================================
+
+Parent                                                                                                                    Summary
+
+=================================================================   =============================================================
+:ref:`boundary_conditions <pre_processing_boundary_conditions_2>`   Specifies boundary conditions for all equations being solved.
+
+:ref:`boundary_conditions <pre_processing_boundary_conditions_6>`   Specifies boundary conditions for all equations being solved.
+
+=================================================================   =============================================================
+

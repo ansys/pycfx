@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_41:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_41.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================   ======================================
+
+Parent                                                                   Summary
+
+=======================================   ======================================
+:ref:`gravity <pre_processing_gravity>`   The gravitational acceleration vector.
+
+=======================================   ======================================
+

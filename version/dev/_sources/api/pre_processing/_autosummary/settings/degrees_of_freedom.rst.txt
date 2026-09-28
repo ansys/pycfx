@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_degrees_of_freedom:
+
+degrees_of_freedom
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.degrees_of_freedom.degrees_of_freedom
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================================   ============================================================
+
+Attribute                                                                                                                                        Summary
+
+=========================================================================================   ============================================================
+:ref:`translational_degrees_of_freedom <pre_processing_translational_degrees_of_freedom>`   Translational degrees of freedom of the rigid body solution.
+
+:ref:`rotational_degrees_of_freedom <pre_processing_rotational_degrees_of_freedom>`            Rotational degrees of freedom of the rigid body solution.
+
+=========================================================================================   ============================================================
+
+.. rubric:: Included in:
+
+===========================================   =======================================
+
+Parent                                                                        Summary
+
+===========================================   =======================================
+:ref:`dynamics <pre_processing_dynamics>`     Defines rigid body dynamics attributes.
+
+:ref:`dynamics <pre_processing_dynamics_1>`   Defines rigid body dynamics attributes.
+
+===========================================   =======================================
+

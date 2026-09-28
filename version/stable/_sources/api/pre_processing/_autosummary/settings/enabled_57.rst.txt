@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_57:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_57.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================   ===================================================================================
+
+Parent                                                                                                                                          Summary
+
+=================================================================   ===================================================================================
+:ref:`epsilon_coefficients <pre_processing_epsilon_coefficients>`   Controls model coefficients for the Turbulence Eddy Dissipation transport equation.
+
+=================================================================   ===================================================================================
+

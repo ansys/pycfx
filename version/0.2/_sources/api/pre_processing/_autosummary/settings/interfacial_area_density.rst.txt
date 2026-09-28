@@ -1,0 +1,27 @@
+:orphan:
+
+.. _pre_processing_interfacial_area_density:
+
+interfacial_area_density
+========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.interfacial_area_density.interfacial_area_density
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================================   ============================================================================================================================================
+
+Parent                                                                                                                                                                                                                 Summary
+
+===============================================================================   ============================================================================================================================================
+:ref:`interphase_transfer_model <pre_processing_interphase_transfer_model>`                                                                                                           Specifies transfer model between fluids.
+
+:ref:`fluid_solid_area_density <pre_processing_fluid_solid_area_density>`                                                         Specifies heat transfer model between the solid and the fluid phases inside a porous domain.
+
+:ref:`interfacial_area_transport <pre_processing_interfacial_area_transport_1>`   Interfacial Area Transport Equation specification. Required when this option is selected for the interphase transfer model for a phase pair.
+
+:ref:`interfacial_area_transport <pre_processing_interfacial_area_transport_4>`   Interfacial Area Transport Equation specification. Required when this option is selected for the interphase transfer model for a phase pair.
+
+===============================================================================   ============================================================================================================================================
+

@@ -1,0 +1,27 @@
+:orphan:
+
+.. _post_processing_case_name_1:
+
+case_name
+=========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.case_name_1.case_name
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==========================================================================================================   ===========================================================================
+
+Parent                                                                                                                                                                           Summary
+
+==========================================================================================================   ===========================================================================
+:ref:`internal_particle_injection_region_child <post_processing_internal_particle_injection_region_child>`                    'child_object_type' of internal_particle_injection_region.
+
+:ref:`res_surface_child <post_processing_res_surface_child>`                                                                                         'child_object_type' of res_surface.
+
+:ref:`user_surface_child <post_processing_user_surface_child>`                                                                                      'child_object_type' of user_surface.
+
+:ref:`export <post_processing_export>`                                                                       Holds parameters which control the export of data to an external text file.
+
+==========================================================================================================   ===========================================================================
+

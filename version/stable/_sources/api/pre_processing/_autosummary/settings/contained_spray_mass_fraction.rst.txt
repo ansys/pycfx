@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_contained_spray_mass_fraction:
+
+contained_spray_mass_fraction
+=============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.contained_spray_mass_fraction.contained_spray_mass_fraction
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================================================   ======================================================
+
+Parent                                                                                                                                             Summary
+
+=================================================================================================   ======================================================
+:ref:`transient_particle_diagnostics_child <pre_processing_transient_particle_diagnostics_child>`   'child_object_type' of transient_particle_diagnostics.
+
+=================================================================================================   ======================================================
+

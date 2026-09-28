@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_adaption_criteria:
+
+adaption_criteria
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.adaption_criteria.adaption_criteria
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================================   =============================================
+
+Attribute                                                                                                                         Summary
+
+=========================================================================================   =============================================
+:ref:`variables_list <pre_processing_variables_list>`                                                         'Variables List' parameter.
+
+:ref:`maximum_number_of_adaption_steps <pre_processing_maximum_number_of_adaption_steps>`   'Maximum Number of Adaption Steps' parameter.
+
+:ref:`option <pre_processing_option_442>`                                                                 The 'Adaption Criteria' option.
+
+:ref:`node_factor <pre_processing_node_factor>`                                                                  'Node Factor' parameter.
+
+:ref:`number_of_nodes_in_adapted_mesh <pre_processing_number_of_nodes_in_adapted_mesh>`      'Number of Nodes in Adapted Mesh' parameter.
+
+=========================================================================================   =============================================
+
+.. rubric:: Included in:
+
+===================================================   =======================
+
+Parent                                                                Summary
+
+===================================================   =======================
+:ref:`mesh_adaption <pre_processing_mesh_adaption>`   'MESH ADAPTION' object.
+
+===================================================   =======================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_443:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_443.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================   =========================
+
+Parent                                                                      Summary
+
+=======================================================   =========================
+:ref:`adaption_method <pre_processing_adaption_method>`   'ADAPTION METHOD' object.
+
+=======================================================   =========================
+

@@ -1,0 +1,37 @@
+:orphan:
+
+.. _pre_processing_velocity_r_component:
+
+velocity_r_component
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.velocity_r_component.velocity_r_component
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================================   ==============================================================================
+
+Parent                                                                                                                                                           Summary
+
+=======================================================================================   ==============================================================================
+:ref:`solid_motion <pre_processing_solid_motion>`                                                 Describes the motion of the solid with respect to the reference frame.
+
+:ref:`injection_velocity <pre_processing_injection_velocity>`                                                                               'INJECTION VELOCITY' object.
+
+:ref:`injection_velocity <pre_processing_injection_velocity_1>`                                                                             'INJECTION VELOCITY' object.
+
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum>`                                                     Specifies conditions on Mass and Momentum at a boundary.
+
+:ref:`velocity_excitation <pre_processing_velocity_excitation>`                           Specifies velocity excitation at a non-reflecting velocity boundary condition.
+
+:ref:`velocity <pre_processing_velocity>`                                                                    Sets velocity part of mass and momentum boundary condition.
+
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum_2>`                                                   Specifies conditions on Mass and Momentum at a boundary.
+
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum_3>`                                                   Specifies conditions on Mass and Momentum at a boundary.
+
+:ref:`cylindrical_velocity_components <pre_processing_cylindrical_velocity_components>`                Defines the initialization of velocity by Cylindrical components.
+
+=======================================================================================   ==============================================================================
+

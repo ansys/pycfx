@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_point_2_axial_component:
+
+point_2_axial_component
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.point_2_axial_component.point_2_axial_component
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   ==========================
+
+Parent                                                                         Summary
+
+=========================================================   ==========================
+:ref:`point_definition <pre_processing_point_definition>`   'POINT DEFINITION' object.
+
+=========================================================   ==========================
+

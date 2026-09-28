@@ -1,0 +1,57 @@
+:orphan:
+
+.. _post_processing_operating_points:
+
+operating_points
+================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.operating_points.operating_points
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+==========================================================================================================================================   =============================================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                                                                                                          Summary
+
+==========================================================================================================================================   =============================================================================================================================================================================================================================
+:ref:`current_operating_point_index <post_processing_current_operating_point_index>`                                                                                                                                                                                                      The index of the current operating point results in an operating map simulation.
+
+:ref:`disable_filtering <post_processing_disable_filtering>`                                                                                                                                                                                                                                          The flag for controlling the application of variable data filtering.
+
+:ref:`number_of_response_points <post_processing_number_of_response_points>`                                                                                                                                                                                                                                                            'number_of_response_points' child.
+
+:ref:`operating_map_maximum_boundary_face_filtering_loop_count <post_processing_operating_map_maximum_boundary_face_filtering_loop_count>`                                                        The maximum number of loops that will be applied in removing skewed boundary faces. A negative value means that CFDPost will decide internally how many loops is needed.
+
+:ref:`operating_map_minimum_boundary_face_skewness <post_processing_operating_map_minimum_boundary_face_skewness>`                           The face skewness criterion by which skewed boundary faces will be removed in operating map contour chart construction. The skewness is defined as the boundary triangle element height divided by the element boundary edge.
+
+:ref:`variable_data_filter_rule_list <post_processing_variable_data_filter_rule_list>`                                                                                                                                                                                                                   The list of filtering rules used by an object for data gathering.
+
+==========================================================================================================================================   =============================================================================================================================================================================================================================
+
+.. rubric:: Methods
+
+============================================   ========================================
+
+Method                                                                          Summary
+
+============================================   ========================================
+:ref:`suspend <post_processing_suspend>`       Suspend immediate update for the object.
+
+:ref:`unsuspend <post_processing_unsuspend>`   Restore immediate update for the object.
+
+============================================   ========================================
+
+.. rubric:: Included in:
+
+==============================================   =========================================
+
+Parent                                                                             Summary
+
+==============================================   =========================================
+:ref:`results <post_processing_results>`         Encapsulates a CFX post-processing setup.
+
+:ref:`case_child <post_processing_case_child>`                'child_object_type' of case.
+
+==============================================   =========================================
+

@@ -1,0 +1,147 @@
+:orphan:
+
+.. _post_processing_domain_child:
+
+domain_child
+============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.domain_child.domain_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+========================================================================================================   ===============================================================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                                                                                          Summary
+
+========================================================================================================   ===============================================================================================================================================================================================================================================
+:ref:`angle_definition_method <post_processing_angle_definition_method>`                                                         Specifies angle definition method. If it is set to 'Value', parameter Rotation Angle value will be used for angular instancing. If it is set to 'Instances in 360', parameter 'Number of Components in 360' will be used.
+
+:ref:`apply_reflection <post_processing_apply_reflection>`                                                                                                                                                                                                                                                       Toggles reflection in the transformation.
+
+:ref:`apply_rotation <post_processing_apply_rotation>`                                                                                                                                                                                                                                                             Toggles rotation in the transformation.
+
+:ref:`apply_translation <post_processing_apply_translation>`                                                                                                                                                                                                                                                    Toggles translation in the transformation.
+
+:ref:`axis <post_processing_axis>`                                                                                                                                                                                                                                                                                                           'axis' child.
+
+:ref:`axis_from_file <post_processing_axis_from_file>`                                                                                                                                                                                                     Parameter indicating if axis of rotation is defined in the res file, or is a custom definition.
+
+:ref:`background_mesh_density <post_processing_background_mesh_density>`                                                                                                                                                                                                                                      Background mesh density for turbo component.
+
+:ref:`background_mesh_generation_method <post_processing_background_mesh_generation_method>`                                                                                                                                                                               The method that TurboTransform module will use to generate the background mesh.
+
+:ref:`blade_aligned_variable_available <post_processing_blade_aligned_variable_available>`                                                                                                                                           A domain parameter indicating if Nonlinear version of Blade Aligned Streamwise Location variable is created properly.
+
+:ref:`blade_region <post_processing_blade_region>`                                                                                                                                                                                                                                                                A comma delimited list of locator names.
+
+:ref:`components_to_ignore <post_processing_components_to_ignore>`                                                                                                                                                                                      The list of components that are tagged as non-turbo components. This a subset of 'Component List'.
+
+:ref:`components_to_initialize <post_processing_components_to_initialize>`                                                                                                                                                                                                                              The list of components to initialize for a domain.
+
+:ref:`components_to_update <post_processing_components_to_update>`                                                                                 The list of components to be initialized or updated. This list is used only by GUI for component initialization using popup menu or by apply/initialize button. It precede 'Components to Initialize',.
+
+:ref:`coord_frame <post_processing_coord_frame>`                                                                                                                                                                                                                                                                                      'coord_frame' child.
+
+:ref:`create_additional_turbo_variables <post_processing_create_additional_turbo_variables>`                                                                                                                                                                  A domain parameter indicating if additional turbo variables have been requested by the user.
+
+:ref:`do_cylindrical_initialization <post_processing_do_cylindrical_initialization>`                                                                                                                                                                                   Flag indicating whether cylindrical initialization will be performed on the domain.
+
+:ref:`domain_type <post_processing_domain_type>`                                                                                                                                                                                                    The type of the domain. For types other than Normal, additional geometric variables will be generated.
+
+:ref:`full_circle <post_processing_full_circle>`                                                                                                                                    If set to On, the instances are placed uniformly about the instance rotation axis. Note that the Number of Copies has to be greater than two when this option is used.
+
+:ref:`hub_curve_mode <post_processing_hub_curve_mode>`                                                              The type of line used to define Hub curve. The Hub line is needed for calculation of the Background Mesh. By default it is calculated from the corresponding Hub Region(s), but optionally it can be defined via a line or a polyline.
+
+:ref:`hub_line_object <post_processing_hub_line_object>`                                                                                                                                                      Specifies the line object(s) to be used for the definition of the Hub curve. This parameter is used when Hub Curve Mode is set to From Line.
+
+:ref:`hub_region <post_processing_hub_region>`                                                                                                                                                                                                                                                                    A comma delimited list of locator names.
+
+:ref:`inlet_curve_mode <post_processing_inlet_curve_mode>`                                                    The type of line used to define Inlet curve. The Inlet line is needed for calculation of the Background Mesh. By default it is calculated from the corresponding Inlet Region(s), but optionally it can be defined via a line or a polyline.
+
+:ref:`inlet_line_object <post_processing_inlet_line_object>`                                                                                                                                              Specifies the line object(s) to be used for the definition of the Inlet curve. This parameter is used when Inlet Curve Mode is set to From Line.
+
+:ref:`inlet_region <post_processing_inlet_region>`                                                                                                                                                                                                                                                                A comma delimited list of locator names.
+
+:ref:`instance_definition <post_processing_instance_definition>`                                                                                                                                                                                                   Logical parameter indicating if instances and passages info is defined in the res file.
+
+:ref:`linear_blade_aligned_variable_available <post_processing_linear_blade_aligned_variable_available>`                                                                                                                                A domain parameter indicating if linear version of Blade Aligned Streamwise Location variable is created properly.
+
+:ref:`number_of_components_in_360 <post_processing_number_of_components_in_360>`                                                                                                                                                                                                                                      Number of Components in 360 degrees.
+
+:ref:`number_of_copies <post_processing_number_of_copies>`                                                                                                                                                                                                                                                     Specifies the number of transformed copies.
+
+:ref:`number_of_data_instances <post_processing_number_of_data_instances>`                                                                                                                                                                "Specifies the number of replications of the original Geometry associated with the domain that are to be made.".
+
+:ref:`number_of_passages_in_360 <post_processing_number_of_passages_in_360>`                                                                                                                                                                                                                                            Number of passages in 360 degrees.
+
+:ref:`number_of_passages_in_component <post_processing_number_of_passages_in_component>`                                                                                                                                                                                                                                Number of passages in a component.
+
+:ref:`outlet_curve_mode <post_processing_outlet_curve_mode>`                                               The type of line used to define Outlet curve. The Outlet line is needed for calculation of the Background Mesh. By default it is calculated from the corresponding Outlet Region(s), but optionally it can be defined via a line or a polyline.
+
+:ref:`outlet_line_object <post_processing_outlet_line_object>`                                                                                                                                          Specifies the line object(s) to be used for the definition of the Outlet curve. This parameter is used when Outlet Curve Mode is set to From Line.
+
+:ref:`outlet_region <post_processing_outlet_region>`                                                                                                                                                                                                                                                              A comma delimited list of locator names.
+
+:ref:`periodic_1_region <post_processing_periodic_1_region>`                                                                                                                                                                                                                                                      A comma delimited list of locator names.
+
+:ref:`periodic_2_region <post_processing_periodic_2_region>`                                                                                                                                                                                                                                                      A comma delimited list of locator names.
+
+:ref:`principal_axis <post_processing_principal_axis_1>`                                                                                                                                                                                                                                                                           'principal_axis' child.
+
+:ref:`reflection_plane <post_processing_reflection_plane>`                                                                                                                                                                                                                               Specifies the REFLECTION PLANE object to use in a transformation.
+
+:ref:`reflection_plane_option <post_processing_reflection_plane_option>`                                                                                                           Specifies how to define the plane that is used to create the reflection plane. It can be defined as either some axis-parallel planes, or from an existing plane object.
+
+:ref:`rotation_angle <post_processing_rotation_angle>`                                                                                                                                                                                                                                                                       Specifies the rotation angle.
+
+:ref:`rotation_axis_from <post_processing_rotation_axis_from_1>`                                                                                                                                                                                                                                                               'rotation_axis_from' child.
+
+:ref:`rotation_axis_to <post_processing_rotation_axis_to_1>`                                                                                                                                                                                                                                                                     'rotation_axis_to' child.
+
+:ref:`rotation_axis_type <post_processing_rotation_axis_type_1>`                                                                                                                                                                                                                                                               'rotation_axis_type' child.
+
+:ref:`shroud_curve_mode <post_processing_shroud_curve_mode>`                                               The type of line used to define Shroud curve. The Shroud line is needed for calculation of the Background Mesh. By default it is calculated from the corresponding Shroud Region(s), but optionally it can be defined via a line or a polyline.
+
+:ref:`shroud_line_object <post_processing_shroud_line_object>`                                                                                                                                          Specifies the line object(s) to be used for the definition of the Shroud curve. This parameter is used when Shroud Curve Mode is set to From Line.
+
+:ref:`shroud_region <post_processing_shroud_region>`                                                                                                                                                                                                                                                              A comma delimited list of locator names.
+
+:ref:`tbr_user_theta_correction <post_processing_tbr_user_theta_correction>`                                                                                                                                                                                                              TBR User Theta Correction to provide pseudo TBR Passage control.
+
+:ref:`translation_vector <post_processing_translation_vector>`                                                                                                                                                                                                                                                           Specifies the translation vector.
+
+:ref:`turbo_360_case_without_periodics <post_processing_turbo_360_case_without_periodics>`                                                      A domain parameter indicating a 360 case without periodic regions. If true, engine will create an internal cut plane through axis and intersect it with other regions to generate background mesh outline.
+
+:ref:`x <post_processing_x_1>`                                                                                                                                                                                                                                                                                                                  'x' child.
+
+:ref:`y <post_processing_y_1>`                                                                                                                                                                                                                                                                                                                  'y' child.
+
+:ref:`z <post_processing_z_1>`                                                                                                                                                                                                                                                                                                                  'z' child.
+
+========================================================================================================   ===============================================================================================================================================================================================================================================
+
+.. rubric:: Methods
+
+============================================   ========================================
+
+Method                                                                          Summary
+
+============================================   ========================================
+:ref:`suspend <post_processing_suspend>`       Suspend immediate update for the object.
+
+:ref:`unsuspend <post_processing_unsuspend>`   Restore immediate update for the object.
+
+============================================   ========================================
+
+.. rubric:: Included in:
+
+======================================   ===============
+
+Parent                                           Summary
+
+======================================   ===============
+:ref:`domain <post_processing_domain>`   'domain' child.
+
+======================================   ===============
+

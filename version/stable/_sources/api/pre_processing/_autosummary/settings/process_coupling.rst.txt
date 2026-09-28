@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_process_coupling:
+
+process_coupling
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.process_coupling.process_coupling
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================   ===================================
+
+Attribute                                                                       Summary
+
+=================================================   ===================================
+:ref:`enabled <pre_processing_enabled_226>`         Enable the PROCESS COUPLING object.
+
+:ref:`process_name <pre_processing_process_name>`             'Process Name' parameter.
+
+:ref:`host_name <pre_processing_host_name>`                      'Host Name' parameter.
+
+:ref:`host_port <pre_processing_host_port>`                      'Host Port' parameter.
+
+=================================================   ===================================
+
+.. rubric:: Included in:
+
+=================================================================   =============================
+
+Parent                                                                                    Summary
+
+=================================================================   =============================
+:ref:`solver_step_control <pre_processing_solver_step_control>`     'SOLVER STEP CONTROL' object.
+
+:ref:`solver_step_control <pre_processing_solver_step_control_1>`   'SOLVER STEP CONTROL' object.
+
+=================================================================   =============================
+

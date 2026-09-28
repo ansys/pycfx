@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_349:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_349.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   ========================================================
+
+Parent                                                                                                       Summary
+
+=========================================================   ========================================================
+:ref:`interface_models <pre_processing_interface_models>`   Holds the definition of models specific to an interface.
+
+=========================================================   ========================================================
+

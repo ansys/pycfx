@@ -1,0 +1,32 @@
+:orphan:
+
+.. _post_processing_create_1:
+
+create_1
+========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.create_1.create_1
+    :show-inheritance:
+
+.. rubric:: Arguments
+
+==================================   ===========================
+
+Argument                                                 Summary
+
+==================================   ===========================
+:ref:`name <post_processing_name>`   Set the name of the object.
+
+==================================   ===========================
+
+.. rubric:: Included in:
+
+================================================   ====================
+
+Parent                                                          Summary
+
+================================================   ====================
+:ref:`expressions <post_processing_expressions>`   'expressions' child.
+
+================================================   ====================
+

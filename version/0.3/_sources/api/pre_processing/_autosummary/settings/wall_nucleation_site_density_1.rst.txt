@@ -1,0 +1,50 @@
+:orphan:
+
+.. _pre_processing_wall_nucleation_site_density_1:
+
+wall_nucleation_site_density
+============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.wall_nucleation_site_density_1.wall_nucleation_site_density
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================================   ========================================================================================================
+
+Attribute                                                                                                                                                                                      Summary
+
+===========================================================================================   ========================================================================================================
+:ref:`enabled <pre_processing_enabled_117>`                                                                                                            Enable the WALL NUCLEATION SITE DENSITY object.
+
+:ref:`option <pre_processing_option_256>`                                                                                                                   The 'Wall Nucleation Site Density' option.
+
+:ref:`wall_nucleation_site_density <pre_processing_wall_nucleation_site_density>`                                                     User defined nucleation site density for the wall boiling model.
+
+:ref:`reference_nucleation_site_density <pre_processing_reference_nucleation_site_density>`                                  Dimensional factor in nucleation site density for the wall boiling model.
+
+:ref:`reference_wall_superheat <pre_processing_reference_wall_superheat>`                     Temperature scale of wall superheat to calculate the nucleation site density for the wall boiling model.
+
+:ref:`power_law_index <pre_processing_power_law_index>`                                                                                                        Exponent for Power Law Viscosity Model.
+
+:ref:`wall_contact_angle <pre_processing_wall_contact_angle>`                                                                                    Contact angle for surface tension adhesion at a wall.
+
+:ref:`reference_cone_angle <pre_processing_reference_cone_angle>`                                                                                    Reference Cone Angle for Nucleation site density.
+
+:ref:`reference_length <pre_processing_reference_length>`                                                                                          Reference Length Scale for Nucleation site density.
+
+:ref:`suppression_factor <pre_processing_suppression_factor>`                                                                                                                      Suppression factor.
+
+===========================================================================================   ========================================================================================================
+
+.. rubric:: Included in:
+
+===============================================================   =================================
+
+Parent                                                                                      Summary
+
+===============================================================   =================================
+:ref:`wall_boiling_model <pre_processing_wall_boiling_model_1>`   Specifies the wall boiling model.
+
+===============================================================   =================================
+

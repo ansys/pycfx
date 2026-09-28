@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_child_material_4:
+
+child_material
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.child_material_4.child_material
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`child_material_child <pre_processing_child_material_child_4>`
+
+
+.. rubric:: Included in:
+
+=======================================================   ===========================================================
+
+Parent                                                                                                        Summary
+
+=======================================================   ===========================================================
+:ref:`third_body_term <pre_processing_third_body_term>`   Sets the Third Body (catalyst) term in a chemical reaction.
+
+=======================================================   ===========================================================
+

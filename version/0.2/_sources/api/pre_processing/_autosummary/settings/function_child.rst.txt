@@ -1,0 +1,100 @@
+:orphan:
+
+.. _pre_processing_function_child:
+
+function_child
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.function_child.function_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================================   ==========================================================================================================================================
+
+Attribute                                                                                                                                                                                                                    Summary
+
+=======================================================================================   ==========================================================================================================================================
+:ref:`profile_function <pre_processing_profile_function>`                                                                                                                                              'Profile Function' parameter.
+
+:ref:`table_function <pre_processing_table_function>`                                                                                                                                                    'Table Function' parameter.
+
+:ref:`fmui_function <pre_processing_fmui_function>`                                                                                                                                                       'FMUI Function' parameter.
+
+:ref:`gt_suite_function <pre_processing_gt_suite_function>`                                                                                                                                           'GT SUITE Function' parameter.
+
+:ref:`gt_suite_turboshaft <pre_processing_gt_suite_turboshaft>`                                                                                                                                     'GT SUITE Turboshaft' parameter.
+
+:ref:`option <pre_processing_option_4>`                                                                                                                                                                       The 'Function' option.
+
+:ref:`fmu_file_name <pre_processing_fmu_file_name>`                                                                                                                                                       'FMU File Name' parameter.
+
+:ref:`gt_suite_turbo_name <pre_processing_gt_suite_turbo_name>`                                                                                                                                     'GT SUITE Turbo Name' parameter.
+
+:ref:`gt_suite_model <pre_processing_gt_suite_model>`                                                                                                                                                    'GT SUITE Model' parameter.
+
+:ref:`gt_suite_patch <pre_processing_gt_suite_patch>`                                                                                                                                                    'GT SUITE Patch' parameter.
+
+:ref:`boundary <pre_processing_boundary>`                                                                                                                                                                      'Boundary' parameter.
+
+:ref:`user_routine_name <pre_processing_user_routine_name>`                                                                                                                                           'User Routine Name' parameter.
+
+:ref:`index_names <pre_processing_index_names>`                                                                                                                                                             'Index Names' parameter.
+
+:ref:`spatial_fields <pre_processing_spatial_fields>`                                                                                                                                                    'Spatial Fields' parameter.
+
+:ref:`argument_units <pre_processing_argument_units>`                                                                                                                      The list of arguments units in the user-defined function.
+
+:ref:`result_units <pre_processing_result_units>`                                                                                                                                                          'Result Units' parameter.
+
+:ref:`reference_coord_frame <pre_processing_reference_coord_frame>`                                                                                                                               'Reference Coord Frame' parameter.
+
+:ref:`visibility <pre_processing_visibility>`                                                                                                                                                                'Visibility' parameter.
+
+:ref:`extend_min <pre_processing_extend_min>`                                                                                                                                                                'Extend Min' parameter.
+
+:ref:`extend_max <pre_processing_extend_max>`                                                                                                                                                                'Extend Max' parameter.
+
+:ref:`render_type <pre_processing_render_type>`                                                                                                                                                             'Render Type' parameter.
+
+:ref:`data_source <pre_processing_data_source>`                                                                                                                                                                'DATA SOURCE' object.
+
+:ref:`interpolation_data <pre_processing_interpolation_data>`                                                                           Holds interpolation data for user-defined one and three dimensional interpolation functions.
+
+:ref:`data_field <pre_processing_data_field>`                                                                                                                                                    A container for Data Field objects.
+
+:ref:`transfer_value <pre_processing_transfer_value>`                                                                                                                                        A container for Transfer Value objects.
+
+:ref:`gt_suite_motion <pre_processing_gt_suite_motion>`                                   Defines the motion of one or more domains from GT SUITE angular velocity. Note that GT SUITE angular velocity always uses the unit of RPM.
+
+:ref:`gt_suite_torque <pre_processing_gt_suite_torque>`                                                                                                                                         Defines the torque sent to GT SUITE.
+
+:ref:`argument_constant <pre_processing_argument_constant>`                                                                                                                               A container for Argument Constant objects.
+
+:ref:`argument_value <pre_processing_argument_value>`                                                                                                                                        A container for Argument Value objects.
+
+:ref:`result_value <pre_processing_result_value>`                                                                                                                                              A container for Result Value objects.
+
+:ref:`data_value <pre_processing_data_value>`                                                                                                                                                    A container for Data Value objects.
+
+:ref:`profile_coord_system_definition <pre_processing_profile_coord_system_definition>`                                                                                                    'PROFILE COORD SYSTEM DEFINITION' object.
+
+:ref:`profile_contour <pre_processing_profile_contour>`                                                                                                                                                    'PROFILE CONTOUR' object.
+
+:ref:`profile_vector <pre_processing_profile_vector>`                                                                                                                                                       'PROFILE VECTOR' object.
+
+:ref:`table_value_generation <pre_processing_table_value_generation>`                                                                                                                               'TABLE VALUE GENERATION' object.
+
+=======================================================================================   ==========================================================================================================================================
+
+.. rubric:: Included in:
+
+=========================================   =================================
+
+Parent                                                                Summary
+
+=========================================   =================================
+:ref:`function <pre_processing_function>`   A container for Function objects.
+
+=========================================   =================================
+

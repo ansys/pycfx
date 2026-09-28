@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_a_coefficient:
+
+a_coefficient
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.a_coefficient.a_coefficient
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================================   ==========================================
+
+Parent                                                                                                         Summary
+
+=========================================================================   ==========================================
+:ref:`injection_variable_child <pre_processing_injection_variable_child>`   'child_object_type' of injection_variable.
+
+=========================================================================   ==========================================
+
