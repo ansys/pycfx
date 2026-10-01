@@ -1752,13 +1752,13 @@ _bases_by_class = {}
 
 
 # pylint: disable=missing-raises-doc
-def get_cls(name, info, parent=None, version=None, is_postprocessing=False):
+def get_cls(name, info, parent=None, version=None, rename_setup_to_results=False):
     """Create a class for the object identified by ``path``."""
     try:
         if name == "":
             pname = "root"
         elif (
-            is_postprocessing is True
+            rename_setup_to_results
             and name == "setup"
             and parent is not None
             and not parent.cfx_name
@@ -1853,7 +1853,11 @@ def get_cls(name, info, parent=None, version=None, is_postprocessing=False):
 
             for cname, cinfo in info_dict.items():
                 ccls, original_pname = get_cls(
-                    cname, cinfo, cls, version=version, is_postprocessing=is_postprocessing
+                    cname,
+                    cinfo,
+                    cls,
+                    version=version,
+                    rename_setup_to_results=rename_setup_to_results,
                 )
                 ccls_name = ccls.__name__
 
@@ -1913,7 +1917,7 @@ def get_cls(name, info, parent=None, version=None, is_postprocessing=False):
                 object_type,
                 cls,
                 version=version,
-                is_postprocessing=is_postprocessing,
+                rename_setup_to_results=rename_setup_to_results,
             )
             cls.child_object_type.get_name = lambda self: self._name
 
@@ -1996,8 +2000,15 @@ def get_root(
             raise RuntimeError("Mismatch in hash values.")
         cls = settings.root
     except Exception:
+        from ansys.cfx.core.utils.cfx_version import rename_setup_to_results
+
         cls, _ = get_cls(
-            "", obj_info, version=version, is_postprocessing=session_name == "post-processing"
+            "",
+            obj_info,
+            version=version,
+            rename_setup_to_results=rename_setup_to_results(
+                version, session_name == "post-processing"
+            ),
         )
     root = cls()
     root.set_flproxy(flproxy)

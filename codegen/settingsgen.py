@@ -61,7 +61,10 @@ import shutil
 
 from ansys.cfx.core import CODEGEN_OUTDIR, CFXMode, launch_cfx
 from ansys.cfx.core.common import flobject
-from ansys.cfx.core.utils.cfx_version import get_version_for_file_name
+from ansys.cfx.core.utils.cfx_version import (
+    get_version_for_file_name,
+    rename_setup_to_results,
+)
 from ansys.cfx.core.utils.fix_doc import fix_settings_doc
 
 hash_dict = {}
@@ -526,7 +529,12 @@ def generate(version, pycfx_path, sessions: dict, mode: CFXMode, static_info_fil
     sinfo = session._settings_service.get_static_info()
     sessions.pop(mode)
     session.exit()  # exiting the session here as it won't be required during allapigen anymore
-    cls, _ = flobject.get_cls("", sinfo, version=version, is_postprocessing=CFXMode.is_post(mode))
+    cls, _ = flobject.get_cls(
+        "",
+        sinfo,
+        version=version,
+        rename_setup_to_results=rename_setup_to_results(version, CFXMode.is_post(mode)),
+    )
 
     if static_info_file_path:
         with open(static_info_file_path, "w") as file:
