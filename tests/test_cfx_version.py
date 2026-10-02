@@ -22,7 +22,11 @@
 
 import pytest
 
-from ansys.cfx.core.utils.cfx_version import AnsysVersionNotFound, CFXVersion
+from ansys.cfx.core.utils.cfx_version import (
+    AnsysVersionNotFound,
+    CFXVersion,
+    rename_setup_to_results,
+)
 
 
 def test_examples():
@@ -77,3 +81,15 @@ def test_ne():
 def test_eq():
     assert CFXVersion.v252 == CFXVersion.v252
     assert CFXVersion.v261 == CFXVersion.v261
+
+
+@pytest.mark.parametrize(
+    ("version", "is_postprocessing", "expected"),
+    [
+        ("26.1.0", True, True),
+        ("27.1.0", True, False),
+        ("26.1.0", False, False),
+    ],
+)
+def test_rename_setup_to_results(version, is_postprocessing, expected):
+    assert rename_setup_to_results(version, is_postprocessing) is expected
