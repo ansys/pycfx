@@ -1982,6 +1982,11 @@ def get_root(
 
     from ansys.cfx.core import CODEGEN_OUTDIR
 
+    if not version:
+        from ansys.cfx.core.utils.cfx_version import CFXVersion
+
+        version = str(CFXVersion.current_release().number)
+
     obj_info = flproxy.get_static_info()
     try:
         settings = importlib.import_module(
