@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_398:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_398.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================================================   ==========================================
+
+Parent                                                                                                                         Summary
+
+=========================================================================================   ==========================================
+:ref:`penetration_origin_and_direction <pre_processing_penetration_origin_and_direction>`   'PENETRATION ORIGIN AND DIRECTION' object.
+
+=========================================================================================   ==========================================
+

@@ -1,0 +1,52 @@
+:orphan:
+
+.. _pre_processing_injection_method:
+
+injection_method
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.injection_method.injection_method
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================================================================   =======================================================================
+
+Attribute                                                                                                                                                                                 Summary
+
+=======================================================================================================================   =======================================================================
+:ref:`option <pre_processing_option_213>`                                                                                                                          The 'Injection Method' option.
+
+:ref:`injection_centre <pre_processing_injection_centre>`                                                                                                           'Injection Centre' parameter.
+
+:ref:`injection_velocity_magnitude <pre_processing_injection_velocity_magnitude>`                                                                       'Injection Velocity Magnitude' parameter.
+
+:ref:`particle_user_routine <pre_processing_particle_user_routine>`                                                                                                     Name of the user routine.
+
+:ref:`particle_volume_injection_return_variables_list <pre_processing_particle_volume_injection_return_variables_list>`              'Particle Volume Injection Return Variables List' parameter.
+
+:ref:`radius_of_injection_sphere <pre_processing_radius_of_injection_sphere>`                                                                             'Radius of Injection Sphere' parameter.
+
+:ref:`cone_definition <pre_processing_cone_definition>`                                                                                                                 'CONE DEFINITION' object.
+
+:ref:`number_of_positions <pre_processing_number_of_positions>`                                                                                         Defines the number of particle positions.
+
+:ref:`particle_primary_breakup <pre_processing_particle_primary_breakup>`                                                 Defines the primary break-up model used to determine spray atomization.
+
+:ref:`nozzle_definition <pre_processing_nozzle_definition>`                                                                                                           'NOZZLE DEFINITION' object.
+
+:ref:`injection_velocity <pre_processing_injection_velocity>`                                                                                                        'INJECTION VELOCITY' object.
+
+=======================================================================================================================   =======================================================================
+
+.. rubric:: Included in:
+
+=================================================================   ==============================================================
+
+Parent                                                                                                                     Summary
+
+=================================================================   ==============================================================
+:ref:`injection_conditions <pre_processing_injection_conditions>`   Specifies injection conditions for all equations being solved.
+
+=================================================================   ==============================================================
+

@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_executable_selection_1:
+
+executable_selection
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.executable_selection_1.executable_selection
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================   =======================================
+
+Attribute                                                                                   Summary
+
+=========================================================   =======================================
+:ref:`enabled <pre_processing_enabled_251>`                 Enable the EXECUTABLE SELECTION object.
+
+:ref:`double_precision <pre_processing_double_precision>`             'Double Precision' parameter.
+
+:ref:`large_problem <pre_processing_large_problem>`                      'Large Problem' parameter.
+
+=========================================================   =======================================
+
+.. rubric:: Included in:
+
+===================================================================   ===============================
+
+Parent                                                                                        Summary
+
+===================================================================   ===============================
+:ref:`cclsetup_step_control <pre_processing_cclsetup_step_control>`   'CCLSETUP STEP CONTROL' object.
+
+:ref:`refiner_step_control <pre_processing_refiner_step_control>`      'REFINER STEP CONTROL' object.
+
+===================================================================   ===============================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_profile_z_variable:
+
+profile_z_variable
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.profile_z_variable.profile_z_variable
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ============================
+
+Parent                                                                               Summary
+
+=============================================================   ============================
+:ref:`profile_components <pre_processing_profile_components>`   'PROFILE COMPONENTS' object.
+
+=============================================================   ============================
+

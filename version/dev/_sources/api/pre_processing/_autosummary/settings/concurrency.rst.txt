@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_concurrency:
+
+concurrency
+===========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.concurrency.concurrency
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================================   ==============================================
+
+Attribute                                                                                                                            Summary
+
+===========================================================================================   ==============================================
+:ref:`option <pre_processing_option_473>`                                                                          The 'Concurrency' option.
+
+:ref:`maximum_number_of_concurrent_jobs <pre_processing_maximum_number_of_concurrent_jobs>`   'Maximum Number of Concurrent Jobs' parameter.
+
+===========================================================================================   ==============================================
+
+.. rubric:: Included in:
+
+=======================================================================   =================================
+
+Parent                                                                                              Summary
+
+=======================================================================   =================================
+:ref:`operating_point_control <pre_processing_operating_point_control>`   'OPERATING POINT CONTROL' object.
+
+=======================================================================   =================================
+

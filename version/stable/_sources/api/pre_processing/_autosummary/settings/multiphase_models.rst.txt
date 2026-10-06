@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_multiphase_models:
+
+multiphase_models
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.multiphase_models.multiphase_models
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================   ==================================================
+
+Attribute                                                                                                      Summary
+
+=================================================================   ==================================================
+:ref:`homogeneous_model <pre_processing_homogeneous_model>`         Specifies whether the model is homogeneous or not.
+
+:ref:`free_surface_model <pre_processing_free_surface_model>`       Defines the type of free surface model to be used.
+
+:ref:`polydispersed_fluid <pre_processing_polydispersed_fluid_1>`         A container for Polydispersed Fluid objects.
+
+:ref:`multiphase_reactions <pre_processing_multiphase_reactions>`                       'MULTIPHASE REACTIONS' object.
+
+=================================================================   ==================================================
+
+.. rubric:: Included in:
+
+=================================================   ==============================
+
+Parent                                                                     Summary
+
+=================================================   ==============================
+:ref:`domain_child <pre_processing_domain_child>`   'child_object_type' of domain.
+
+=================================================   ==============================
+

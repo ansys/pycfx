@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_fluid2_drag_coefficient:
+
+fluid2_drag_coefficient
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fluid2_drag_coefficient.fluid2_drag_coefficient
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ==================================================================
+
+Parent                                                                                                                   Summary
+
+===========================================================   ==================================================================
+:ref:`fluid2_drag_force <pre_processing_fluid2_drag_force>`   Specifies drag force in low VF limit on 2nd. fluid for AIAD model.
+
+===========================================================   ==================================================================
+

@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_hydro_control:
+
+hydro_control
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.hydro_control.hydro_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================================   =================================================================================
+
+Attribute                                                                                                                                                           Summary
+
+=======================================================================================   =================================================================================
+:ref:`enabled <pre_processing_enabled_165>`                                                                                                Enable the HYDRO CONTROL object.
+
+:ref:`transition_iteration <pre_processing_transition_iteration>`                                                                         'Transition Iteration' parameter.
+
+:ref:`free_surface_harmonic_averaging <pre_processing_free_surface_harmonic_averaging>`   Harmonic average buoyancy force for free surface flow up to Transition Iteration.
+
+=======================================================================================   =================================================================================
+
+.. rubric:: Included in:
+
+===================================================================   ========================================================================================================
+
+Parent                                                                                                                                                                 Summary
+
+===================================================================   ========================================================================================================
+:ref:`dynamic_model_control <pre_processing_dynamic_model_control>`   Holds objects that control the temporary simplification of models to improve solver start-up robustness.
+
+===================================================================   ========================================================================================================
+

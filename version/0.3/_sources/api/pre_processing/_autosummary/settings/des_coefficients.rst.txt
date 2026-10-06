@@ -1,0 +1,52 @@
+:orphan:
+
+.. _pre_processing_des_coefficients:
+
+des_coefficients
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.des_coefficients.des_coefficients
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================================   =========================================================================================
+
+Attribute                                                                                                                                                             Summary
+
+=================================================================================   =========================================================================================
+:ref:`enabled <pre_processing_enabled_64>`                                                                                                Enable the DES COEFFICIENTS object.
+
+:ref:`shielding_function <pre_processing_shielding_function>`                                                                                    DES shielding function type.
+
+:ref:`c_des_for_k_omega_regime <pre_processing_c_des_for_k_omega_regime>`                                                                              DES model coefficient.
+
+:ref:`c_des_for_k_epsilon_regime <pre_processing_c_des_for_k_epsilon_regime>`                                                                          DES model coefficient.
+
+:ref:`bf1_blend_factor <pre_processing_bf1_blend_factor>`                                                                          DES turbulence model blending coefficient.
+
+:ref:`bf2_blend_factor <pre_processing_bf2_blend_factor>`                                                                          DES turbulence model blending coefficient.
+
+:ref:`c_delayed_des <pre_processing_c_delayed_des>`                                                                                                   DDES model coefficient.
+
+:ref:`c_shielded_des <pre_processing_c_shielded_des>`                                                                                         Shielded DES model coefficient.
+
+:ref:`csdes <pre_processing_csdes>`                                                                                                           Shielded DES model coefficient.
+
+:ref:`csdes_for_numerical_blending <pre_processing_csdes_for_numerical_blending>`   Coefficient for blending between upwind advection scheme and central differencing scheme.
+
+=================================================================================   =========================================================================================
+
+.. rubric:: Included in:
+
+===========================================================   ===========================================================================
+
+Parent                                                                                                                            Summary
+
+===========================================================   ===========================================================================
+:ref:`turbulence_model <pre_processing_turbulence_model>`     Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+:ref:`turbulence_model <pre_processing_turbulence_model_1>`   Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+===========================================================   ===========================================================================
+

@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_pitch_length:
+
+pitch_length
+============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.pitch_length.pitch_length
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================================   ==============================================
+
+Parent                                                                                                                     Summary
+
+=================================================================================   ==============================================
+:ref:`fourier_transformation_child <pre_processing_fourier_transformation_child>`   'child_object_type' of fourier_transformation.
+
+:ref:`time_transformation_child <pre_processing_time_transformation_child>`            'child_object_type' of time_transformation.
+
+=================================================================================   ==============================================
+

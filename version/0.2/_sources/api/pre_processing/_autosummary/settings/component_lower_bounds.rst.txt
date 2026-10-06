@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_component_lower_bounds:
+
+component_lower_bounds
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.component_lower_bounds.component_lower_bounds
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================================   ===========================================
+
+Parent                                                                                                            Summary
+
+===========================================================================   ===========================================
+:ref:`additional_variable_child <pre_processing_additional_variable_child>`   'child_object_type' of additional_variable.
+
+===========================================================================   ===========================================
+

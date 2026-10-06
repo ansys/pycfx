@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_use_screen_size:
+
+use_screen_size
+===============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.use_screen_size.use_screen_size
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==================================================   ===================================
+
+Parent                                                                           Summary
+
+==================================================   ===================================
+:ref:`save_picture <post_processing_save_picture>`   Saves an image of the current view.
+
+==================================================   ===================================
+

@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_specific_heat_type:
+
+specific_heat_type
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.specific_heat_type.specific_heat_type
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   ===================================================
+
+Parent                                                                                                                Summary
+
+=======================================================================   ===================================================
+:ref:`specific_heat_capacity <pre_processing_specific_heat_capacity_1>`   Specifies how specific heat capacity is calculated.
+
+:ref:`specific_heat_capacity <pre_processing_specific_heat_capacity_2>`   Specifies how specific heat capacity is calculated.
+
+=======================================================================   ===================================================
+

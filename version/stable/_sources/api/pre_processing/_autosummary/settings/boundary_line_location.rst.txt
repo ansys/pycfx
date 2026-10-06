@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_boundary_line_location:
+
+boundary_line_location
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.boundary_line_location.boundary_line_location
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================   ====================================
+
+Attribute                                                                                                  Summary
+
+===========================================================================   ====================================
+:ref:`option <pre_processing_option_63>`                                      The 'Boundary Line Location' option.
+
+:ref:`boundary_list <pre_processing_boundary_list>`                                            List of boundaries.
+
+:ref:`line_origin_mesh_location <pre_processing_line_origin_mesh_location>`         Locates first point on a line.
+
+===========================================================================   ====================================
+
+.. rubric:: Included in:
+
+===================================================================   =======================================
+
+Parent                                                                                                Summary
+
+===================================================================   =======================================
+:ref:`user_line_cloud_child <pre_processing_user_line_cloud_child>`   'child_object_type' of user_line_cloud.
+
+===================================================================   =======================================
+

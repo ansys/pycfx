@@ -1,0 +1,52 @@
+:orphan:
+
+.. _pre_processing_eddy_viscosity_coefficients:
+
+eddy_viscosity_coefficients
+===========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.eddy_viscosity_coefficients.eddy_viscosity_coefficients
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================================   =====================================================================================================
+
+Attribute                                                                                                                                                                                 Summary
+
+=========================================================================================   =====================================================================================================
+:ref:`enabled <pre_processing_enabled_56>`                                                                                                         Enable the EDDY VISCOSITY COEFFICIENTS object.
+
+:ref:`velocity_gradient_for_production <pre_processing_velocity_gradient_for_production>`        Type of the velocity gradient S in the production term of the Spalart-Allmaras turbulence model.
+
+:ref:`cprod_coefficient <pre_processing_cprod_coefficient>`                                         Cprod coefficient of the Spalart-Allmaras turbulence model, modified by Dacles-Mariani et al.
+
+:ref:`cb1_coefficient <pre_processing_cb1_coefficient>`                                                                                 Cb1 coefficient of the Spalart-Allmaras turbulence model.
+
+:ref:`cb2_coefficient <pre_processing_cb2_coefficient>`                                                                                 Cb2 coefficient of the Spalart-Allmaras turbulence model.
+
+:ref:`cw1_coefficient <pre_processing_cw1_coefficient>`                                                                                 Cw1 coefficient of the Spalart-Allmaras turbulence model.
+
+:ref:`cw2_coefficient <pre_processing_cw2_coefficient>`                                                                                 Cw2 coefficient of the Spalart-Allmaras turbulence model.
+
+:ref:`cw3_coefficient <pre_processing_cw3_coefficient>`                                                                                 Cw3 coefficient of the Spalart-Allmaras turbulence model.
+
+:ref:`velocity_gradient_modifier <pre_processing_velocity_gradient_modifier>`               Near-wall modification of the velocity gradient S in the Spalart-Allmaras turbulence model (S tilde).
+
+:ref:`turbulent_flux_closure <pre_processing_turbulent_flux_closure>`                                                               Controls the turbulent flux closure for a transport equation.
+
+=========================================================================================   =====================================================================================================
+
+.. rubric:: Included in:
+
+===========================================================   ===========================================================================
+
+Parent                                                                                                                            Summary
+
+===========================================================   ===========================================================================
+:ref:`turbulence_model <pre_processing_turbulence_model>`     Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+:ref:`turbulence_model <pre_processing_turbulence_model_1>`   Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+===========================================================   ===========================================================================
+

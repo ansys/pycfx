@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_velocity_fluctuation:
+
+velocity_fluctuation
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.velocity_fluctuation.velocity_fluctuation
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================================   =================================================================
+
+Parent                                                                                                                                              Summary
+
+=======================================================================================   =================================================================
+:ref:`cartesian_velocity_components <pre_processing_cartesian_velocity_components>`         Defines the initialization of velocity by Cartesian components.
+
+:ref:`cylindrical_velocity_components <pre_processing_cylindrical_velocity_components>`   Defines the initialization of velocity by Cylindrical components.
+
+=======================================================================================   =================================================================
+

@@ -1,0 +1,52 @@
+:orphan:
+
+.. _pre_processing_turbulence_initial_conditions:
+
+turbulence_initial_conditions
+=============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.turbulence_initial_conditions.turbulence_initial_conditions
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================================   =========================================================================================================================================
+
+Attribute                                                                                                                                                                                                         Summary
+
+=============================================================================   =========================================================================================================================================
+:ref:`option <pre_processing_option_335>`                                                                                                                                     The 'Turbulence Initial Conditions' option.
+
+:ref:`fractional_intensity <pre_processing_fractional_intensity_1>`                                                                                                   Defines the initialization of fractional intensity.
+
+:ref:`k <pre_processing_k_1>`                                                                                                                                     Defines the initialization of turbulent kinetic energy.
+
+:ref:`reynolds_stress_components <pre_processing_reynolds_stress_components>`                                                                                   Defines the initialization of Reynolds Stress components.
+
+:ref:`epsilon <pre_processing_epsilon_1>`                                                                                                                                          Defines the initialization of epsilon.
+
+:ref:`omega <pre_processing_omega_1>`                                                                                                                             Defines the initialization of turbulent eddy frequency.
+
+:ref:`eddy_viscosity_ratio <pre_processing_eddy_viscosity_ratio_1>`                                                                                                   Defines the initialization of eddy viscosity ratio.
+
+:ref:`eddy_length_scale <pre_processing_eddy_length_scale_1>`                                                                                                            Defines the initialization of eddy length scale.
+
+:ref:`visktrb <pre_processing_visktrb>`                                         Defines the initialization of turbulent eddy viscosity when running the ke-1e turbulence model which solves for turbulent eddy viscosity.
+
+=============================================================================   =========================================================================================================================================
+
+.. rubric:: Included in:
+
+===============================================================   ===============================================================================
+
+Parent                                                                                                                                    Summary
+
+===============================================================   ===============================================================================
+:ref:`initial_conditions <pre_processing_initial_conditions>`     Holds the details of initial condition specification for one or more equations.
+
+:ref:`initial_conditions <pre_processing_initial_conditions_1>`   Holds the details of initial condition specification for one or more equations.
+
+:ref:`initial_conditions <pre_processing_initial_conditions_5>`   Holds the details of initial condition specification for one or more equations.
+
+===============================================================   ===============================================================================
+

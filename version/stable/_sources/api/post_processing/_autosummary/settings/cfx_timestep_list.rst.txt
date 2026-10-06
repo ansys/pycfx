@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_cfx_timestep_list:
+
+cfx_timestep_list
+=================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.cfx_timestep_list.cfx_timestep_list
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+======================================   ===========================================================================
+
+Parent                                                                                                       Summary
+
+======================================   ===========================================================================
+:ref:`export <post_processing_export>`   Holds parameters which control the export of data to an external text file.
+
+======================================   ===========================================================================
+

@@ -1,0 +1,43 @@
+:orphan:
+
+.. _pre_processing_expressions:
+
+expressions
+===========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.expressions.expressions
+    :show-inheritance:
+
+.. rubric:: Methods
+
+===========================================   ============================
+
+Method                                                             Summary
+
+===========================================   ============================
+:ref:`create_1 <pre_processing_create_1>`             Create a new object.
+
+:ref:`delete <pre_processing_delete>`            Delete specified objects.
+
+:ref:`duplicate <pre_processing_duplicate>`   Create a copy of the object.
+
+:ref:`rename <pre_processing_rename>`                   Rename the object.
+
+===========================================   ============================
+
+.. rubric:: Named object type
+
+:ref:`expressions_child <pre_processing_expressions_child>`
+
+
+.. rubric:: Included in:
+
+===============================   ===================================================================
+
+Parent                                                                                        Summary
+
+===============================   ===================================================================
+:ref:`cel <pre_processing_cel>`   Stores user-defined CFX Command Language functions and expressions.
+
+===============================   ===================================================================
+

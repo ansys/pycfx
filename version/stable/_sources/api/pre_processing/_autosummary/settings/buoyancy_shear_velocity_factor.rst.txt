@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_buoyancy_shear_velocity_factor:
+
+buoyancy_shear_velocity_factor
+==============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.buoyancy_shear_velocity_factor.buoyancy_shear_velocity_factor
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================================================   ========================================
+
+Parent                                                                                                                             Summary
+
+===============================================================================================   ========================================
+:ref:`wall_buoyancy_shear_velocity_factor <pre_processing_wall_buoyancy_shear_velocity_factor>`   Sets bstar on a wall boundary condition.
+
+===============================================================================================   ========================================
+

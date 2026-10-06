@@ -1,0 +1,39 @@
+:orphan:
+
+.. _pre_processing_unit_vector_x_component:
+
+unit_vector_x_component
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.unit_vector_x_component.unit_vector_x_component
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================================================   ==================================================================
+
+Parent                                                                                                                                                 Summary
+
+=========================================================================================   ==================================================================
+:ref:`translation_direction <pre_processing_translation_direction>`                                         Defines the direction used for translating motion.
+
+:ref:`wall_lubrication_force_direction <pre_processing_wall_lubrication_force_direction>`             Defines the direction in which Wall Lubrication applies.
+
+:ref:`streamwise_direction <pre_processing_streamwise_direction>`                                                            Defines the streamwise direction.
+
+:ref:`flow_direction <pre_processing_flow_direction>`                                                       Sets the velocity direction imposed at a boundary.
+
+:ref:`direction <pre_processing_direction>`                                                      Defines the direction used for radiation boundary conditions.
+
+:ref:`hole_direction <pre_processing_hole_direction>`                                                                            Sets the injection direction.
+
+:ref:`polar_axis <pre_processing_polar_axis>`                                                Defines the first reference direction used for Injection Regions.
+
+:ref:`auxiliary_axis <pre_processing_auxiliary_axis>`                                       Defines the second reference direction used for Injection Regions.
+
+:ref:`flow_direction <pre_processing_flow_direction_1>`                                                     Sets the velocity direction imposed at a boundary.
+
+:ref:`direction <pre_processing_direction_1>`                                                    Defines the direction used for radiation boundary conditions.
+
+=========================================================================================   ==================================================================
+

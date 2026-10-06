@@ -1,0 +1,25 @@
+:orphan:
+
+.. _post_processing_reduction_or_max_number_1:
+
+reduction_or_max_number
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.reduction_or_max_number_1.reduction_or_max_number
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+====================================================================   =======================================
+
+Parent                                                                                                 Summary
+
+====================================================================   =======================================
+:ref:`particle_cloud_child <post_processing_particle_cloud_child>`      'child_object_type' of particle_cloud.
+
+:ref:`vector_child <post_processing_vector_child>`                              'child_object_type' of vector.
+
+:ref:`internal_vector_child <post_processing_internal_vector_child>`   'child_object_type' of internal_vector.
+
+====================================================================   =======================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_220:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_220.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================================   =========================================================
+
+Parent                                                                                                                                Summary
+
+=================================================================================   =========================================================
+:ref:`nozzle_discharge_coefficient <pre_processing_nozzle_discharge_coefficient>`   Holds information about the nozzle discharge coefficient.
+
+=================================================================================   =========================================================
+

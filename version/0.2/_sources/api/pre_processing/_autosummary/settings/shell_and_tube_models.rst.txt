@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_shell_and_tube_models:
+
+shell_and_tube_models
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.shell_and_tube_models.shell_and_tube_models
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================================   ================================================================================================================
+
+Attribute                                                                                                                                                                                        Summary
+
+=====================================================================================   ================================================================================================================
+:ref:`tube_side_models <pre_processing_tube_side_models>`                               Holds the definition of tube fluid models for tube fluid equations, momentum loss and heat transfer coefficient.
+
+:ref:`shell_side_models <pre_processing_shell_side_models>`                                                  Holds the definition of shell fluid models for momentum loss and heat transfer coefficient.
+
+:ref:`pipe_configuration <pre_processing_pipe_configuration>`                                                                                                              Specifies tube configuration.
+
+:ref:`shell_and_tube_interface_model <pre_processing_shell_and_tube_interface_model>`                  Specifies shell and tube interface models. Note that only heat transfer source terms are coupled.
+
+=====================================================================================   ================================================================================================================
+
+.. rubric:: Included in:
+
+=================================================   ==============================
+
+Parent                                                                     Summary
+
+=================================================   ==============================
+:ref:`domain_child <pre_processing_domain_child>`   'child_object_type' of domain.
+
+=================================================   ==============================
+

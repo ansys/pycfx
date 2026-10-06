@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_additional_variable_transfer_coefficient:
+
+additional_variable_transfer_coefficient
+========================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.additional_variable_transfer_coefficient.additional_variable_transfer_coefficient
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================================   ================================================
+
+Parent                                                                                                                             Summary
+
+=======================================================================================   ================================================
+:ref:`additional_variable_pair_child <pre_processing_additional_variable_pair_child>`     'child_object_type' of additional_variable_pair.
+
+:ref:`additional_variable_pair_child <pre_processing_additional_variable_pair_child_1>`   'child_object_type' of additional_variable_pair.
+
+=======================================================================================   ================================================
+

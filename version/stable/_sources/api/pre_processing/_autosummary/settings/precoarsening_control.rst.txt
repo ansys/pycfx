@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_precoarsening_control:
+
+precoarsening_control
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.precoarsening_control.precoarsening_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================================   ========================================
+
+Attribute                                                                                                          Summary
+
+===============================================================================   ========================================
+:ref:`enabled <pre_processing_enabled_232>`                                       Enable the PRECOARSENING CONTROL object.
+
+:ref:`option <pre_processing_option_459>`                                              The 'Precoarsening Control' option.
+
+:ref:`target_blocks_per_partition <pre_processing_target_blocks_per_partition>`          Controls coarsening of partition.
+
+:ref:`aspect_ratio_filter <pre_processing_aspect_ratio_filter>`                              'ASPECT RATIO FILTER' object.
+
+===============================================================================   ========================================
+
+.. rubric:: Included in:
+
+===========================================================================   ==================================
+
+Parent                                                                                                   Summary
+
+===========================================================================   ==================================
+:ref:`partitioner_step_control <pre_processing_partitioner_step_control>`     'PARTITIONER STEP CONTROL' object.
+
+:ref:`partitioner_step_control <pre_processing_partitioner_step_control_1>`   'PARTITIONER STEP CONTROL' object.
+
+===========================================================================   ==================================
+

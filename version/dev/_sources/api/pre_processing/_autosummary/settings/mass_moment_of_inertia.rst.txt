@@ -1,0 +1,44 @@
+:orphan:
+
+.. _pre_processing_mass_moment_of_inertia:
+
+mass_moment_of_inertia
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.mass_moment_of_inertia.mass_moment_of_inertia
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================   =================================================================================
+
+Attribute                                                                                                           Summary
+
+=======================================   =================================================================================
+:ref:`xxvalue <pre_processing_xxvalue>`   Input expression for symmetric tensor VARIABLE component value in relevant units.
+
+:ref:`yyvalue <pre_processing_yyvalue>`   Input expression for symmetric tensor VARIABLE component value in relevant units.
+
+:ref:`zzvalue <pre_processing_zzvalue>`   Input expression for symmetric tensor VARIABLE component value in relevant units.
+
+:ref:`xyvalue <pre_processing_xyvalue>`   Input expression for symmetric tensor VARIABLE component value in relevant units.
+
+:ref:`xzvalue <pre_processing_xzvalue>`   Input expression for symmetric tensor VARIABLE component value in relevant units.
+
+:ref:`yzvalue <pre_processing_yzvalue>`   Input expression for symmetric tensor VARIABLE component value in relevant units.
+
+=======================================   =================================================================================
+
+.. rubric:: Included in:
+
+=========================================================   ==================================================================================================================================================================================================================
+
+Parent                                                                                                                                                                                                                                                                 Summary
+
+=========================================================   ==================================================================================================================================================================================================================
+:ref:`domain_motion <pre_processing_domain_motion>`         Defines the motion of a mesh relative to a stationary coordinate frame. NOTE - Speed and Direction, Specified Displacement and General Motion Options are not supported for domains other than the immersed solid.
+
+:ref:`rigid_body_child <pre_processing_rigid_body_child>`                                                                                                                                                                                   'child_object_type' of rigid_body.
+
+=========================================================   ==================================================================================================================================================================================================================
+

@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_time_duration:
+
+time_duration
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.time_duration.time_duration
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================================   ========================================
+
+Attribute                                                                                                          Summary
+
+===============================================================================   ========================================
+:ref:`option <pre_processing_option_78>`                                                       The 'Time Duration' option.
+
+:ref:`total_time <pre_processing_total_time>`                                                      'Total Time' parameter.
+
+:ref:`time_per_run <pre_processing_time_per_run>`                                                'Time per Run' parameter.
+
+:ref:`maximum_number_of_timesteps <pre_processing_maximum_number_of_timesteps>`   'Maximum Number of Timesteps' parameter.
+
+:ref:`number_of_timesteps_per_run <pre_processing_number_of_timesteps_per_run>`   'Number of Timesteps per Run' parameter.
+
+===============================================================================   ========================================
+
+.. rubric:: Included in:
+
+===================================================   ==================================================
+
+Parent                                                                                           Summary
+
+===================================================   ==================================================
+:ref:`analysis_type <pre_processing_analysis_type>`   Controls if the simulation is Steady or Transient.
+
+===================================================   ==================================================
+

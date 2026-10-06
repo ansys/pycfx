@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_tube_child:
+
+tube_child
+==========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.tube_child.tube_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================   =============================================================
+
+Attribute                                                                                                                 Summary
+
+=================================================================   =============================================================
+:ref:`boundary_type <pre_processing_boundary_type>`                                                                Boundary Type.
+
+:ref:`boundary_conditions <pre_processing_boundary_conditions_4>`   Specifies boundary conditions for all equations being solved.
+
+=================================================================   =============================================================
+
+.. rubric:: Included in:
+
+=================================   =============================
+
+Parent                                                    Summary
+
+=================================   =============================
+:ref:`tube <pre_processing_tube>`   A container for Tube objects.
+
+=================================   =============================
+

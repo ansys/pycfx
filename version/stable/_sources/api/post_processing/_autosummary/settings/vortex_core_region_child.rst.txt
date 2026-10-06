@@ -1,0 +1,133 @@
+:orphan:
+
+.. _post_processing_vortex_core_region_child:
+
+vortex_core_region_child
+========================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.vortex_core_region_child.vortex_core_region_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+========================================================================================   ===============================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                                          Summary
+
+========================================================================================   ===============================================================================================================================================================================================================
+:ref:`apply_instancing_transform <post_processing_apply_instancing_transform>`                                                                                                                                               Toggles the instancing transformation for this graphics object in the viewer.
+
+:ref:`apply_texture <post_processing_apply_texture>`                                                                                                                                                                                                                       Toggles display of the texture.
+
+:ref:`blend_texture <post_processing_blend_texture>`                                                                                                                                                                                                                      Toggles blending of the texture.
+
+:ref:`colour <post_processing_colour>`                                                                                                       A list of three numbers between 0 and 1, which represent the RGB (Red/Green/Blue) values to be used when colouring the faces of an object by constant colour.
+
+:ref:`colour_map <post_processing_colour_map>`                                                                                                                                                                                                The name of the colour map to use when colouring the object.
+
+:ref:`colour_mode <post_processing_colour_mode>`                                           Sets the mode used to colour the object. If set equal to "Constant" then the "Colour" parameter is used to determine the plot colour. If set equal to "Variable", then the "Colour Variable" parameter is used.
+
+:ref:`colour_scale <post_processing_colour_scale>`                                                                                                                                           Sets whether to colour the object with a Linear or Logarithmic scale. By default, the colour scale is Linear.
+
+:ref:`colour_variable <post_processing_colour_variable>`                                                                                                              The name of the variable to be used in colouring the object. Should be set equal to the name of a currently defined VARIABLE object.
+
+:ref:`colour_variable_boundary_values <post_processing_colour_variable_boundary_values>`                                                                                                    Sets the type of boundary values to be presented for colour variables in this object (Conservative or Hybrid).
+
+:ref:`culling_mode <post_processing_culling_mode>`                                                                                                                                                                                                 Controls the face culling of this object in the viewer.
+
+:ref:`domain_list <post_processing_domain_list>`                                                                                                                                                                                                     The list of domains over which to define this object.
+
+:ref:`draw_contours <post_processing_draw_contours>`                                                                                                                                                                                                        Enables/disables drawing of the contour lines.
+
+:ref:`draw_faces <post_processing_draw_faces>`                                                                                                                                                                                 Toggles the visibility filled faces for this graphics object in the viewer.
+
+:ref:`draw_lines <post_processing_draw_lines>`                                                                                                                                                                                   Toggles the visibility of lines around each face of this graphics object.
+
+:ref:`fractional_value <post_processing_fractional_value>`                                                                                                                                                                  The fractional value of the variable at which the isosurface is to be plotted.
+
+:ref:`instancing_transform <post_processing_instancing_transform>`                                                                                                                                                                    Defines the TRANSFORM object that is used for the object instancing.
+
+:ref:`lighting <post_processing_lighting>`                                                                                                                                                                                                     Toggles the lighting of this graphics object in the viewer.
+
+:ref:`line_colour <post_processing_line_colour>`                                                                                                         A list of three numbers between 0 and 1, which represent the RGB (Red/Green/Blue) values to be used for colouring the lines on a graphics object.
+
+:ref:`line_colour_mode <post_processing_line_colour_mode>`                                                                                                                                                                                                   Determines where to get the line colour from.
+
+:ref:`line_width <post_processing_line_width>`                                                                                                                                                                                     Controls the width (in pixels) of lines drawn for this graphics object.
+
+:ref:`max <post_processing_max>`                                                                                                                                                                                    The maximum value of a variable in the colour map when using a "User Specified" range.
+
+:ref:`method_name <post_processing_method_name>`                                                                                                                                                                                 Parameter indicating the name of the method associated with the variable.
+
+:ref:`min <post_processing_min>`                                                                                                                                                                                    The minimum value of a variable in the colour map when using a "User Specified" range.
+
+:ref:`number_of_contours <post_processing_number_of_contours>`                                                                                                                                                                                        Specifies number of contour lines in a contour plot.
+
+:ref:`range <post_processing_range>`                                                                        Sets the method used to calculate the extents of the colour map on an object. "Global" uses the range of values in the problem domain. "Local" uses the range of values on the current object.
+
+:ref:`render_edge_angle <post_processing_render_edge_angle>`                                                                                                                                                                       The angle between two faces used to limit visible edges in a wireframe.
+
+:ref:`specular_lighting <post_processing_specular_lighting>`                                                                                                                                                                                   Toggles the specular lighting of this object in the viewer.
+
+:ref:`surface_drawing <post_processing_surface_drawing>`                                                                                                                                                                              Sets the algorithm used to shade the faces for this graphics object.
+
+:ref:`texture_angle <post_processing_texture_angle>`                                                                                                                                                                                                                         The texture angle in degrees.
+
+:ref:`texture_direction <post_processing_texture_direction>`                                                                                                                                                                                            The direction of texture projection to the object.
+
+:ref:`texture_file <post_processing_texture_file>`                                                                                                                                                                                                              The texture file to display on the object.
+
+:ref:`texture_material <post_processing_texture_material>`                                                                                                                                                                                                                The material to use for texture.
+
+:ref:`texture_position <post_processing_texture_position>`                                                                                                                                                                                                                    X-Y position of the texture.
+
+:ref:`texture_scale <post_processing_texture_scale>`                                                                                                                                                                                                                                    The texture scale.
+
+:ref:`texture_type <post_processing_texture_type>`                                                                                                                                                                                                                             The type of texture to use.
+
+:ref:`tile_texture <post_processing_tile_texture>`                                                                                                                                                                                                                          Toggles tiling of the texture.
+
+:ref:`transform_texture <post_processing_transform_texture>`                                                                                                                                                                                              Toggles transforming (spherical) of the texture.
+
+:ref:`transparency <post_processing_transparency>`                                                                                                                           Set between 0.0 (fully opaque) and 1.0 (fully transparent) to control the transparency of this graphics object in the viewer.
+
+:ref:`value <post_processing_value>`                                                                                                                                                                                                   The value of the variable at which the isosurface is to be plotted.
+
+:ref:`variable <post_processing_variable>`                                                                                                                                     The name of the variable used to create the object. Should be set equal to the name of a currently defined VARIABLE object.
+
+:ref:`variable_boundary_values <post_processing_variable_boundary_values_1>`                                                                                                                       Sets the type of boundary values to be presented for variables in this object (Conservative or Hybrid).
+
+:ref:`visibility <post_processing_visibility>`                                                                                                                                                                Toggles the visibility of this graphics object in the viewer. THIS PARAMETER IS DEPRECATED!.
+
+:ref:`object_view_transform <post_processing_object_view_transform>`                                 This object contains object transformation info to be processed by the viewer. Like instance transform, this object should be associated with each geometry. It is usually specified as a sub-object.
+
+========================================================================================   ===============================================================================================================================================================================================================
+
+.. rubric:: Methods
+
+============================================   ========================================
+
+Method                                                                          Summary
+
+============================================   ========================================
+:ref:`hide <post_processing_hide>`                  Hide the object in a given view(s).
+
+:ref:`show <post_processing_show>`                  Show the object in a given view(s).
+
+:ref:`suspend <post_processing_suspend>`       Suspend immediate update for the object.
+
+:ref:`unsuspend <post_processing_unsuspend>`   Restore immediate update for the object.
+
+============================================   ========================================
+
+.. rubric:: Included in:
+
+==============================================================   ===========================
+
+Parent                                                                               Summary
+
+==============================================================   ===========================
+:ref:`vortex_core_region <post_processing_vortex_core_region>`   'vortex_core_region' child.
+
+==============================================================   ===========================
+

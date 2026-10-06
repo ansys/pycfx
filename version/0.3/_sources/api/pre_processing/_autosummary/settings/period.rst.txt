@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_period:
+
+period
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.period.period
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================   =====================
+
+Parent                                                          Summary
+
+===============================================   =====================
+:ref:`time_period <pre_processing_time_period>`   'TIME PERIOD' object.
+
+===============================================   =====================
+

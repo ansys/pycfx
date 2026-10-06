@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_momentum_source_scaling_factor:
+
+momentum_source_scaling_factor
+==============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.momentum_source_scaling_factor.momentum_source_scaling_factor
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   ============================================================================
+
+Parent                                                                                                                                         Summary
+
+=======================================================================   ============================================================================
+:ref:`immersed_solid_control <pre_processing_immersed_solid_control>`     Holds advanced parameters to control the details of Immersed solid handling.
+
+:ref:`immersed_solid_control <pre_processing_immersed_solid_control_1>`   Holds advanced parameters to control the details of Immersed solid handling.
+
+=======================================================================   ============================================================================
+

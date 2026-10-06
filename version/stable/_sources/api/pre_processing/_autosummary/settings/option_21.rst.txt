@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_21:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_21.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================================   =======================================================================
+
+Parent                                                                                                                                          Summary
+
+=============================================================================   =======================================================================
+:ref:`thermal_conductivity_model <pre_processing_thermal_conductivity_model>`   Specifies kinetic theory model used for molecular thermal conductivity.
+
+=============================================================================   =======================================================================
+

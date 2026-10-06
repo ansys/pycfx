@@ -1,0 +1,32 @@
+:orphan:
+
+.. _pre_processing_tube_child_1:
+
+tube_child
+==========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.tube_child_1.tube_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================   ===============================================================================
+
+Attribute                                                                                                                                 Summary
+
+===============================================================   ===============================================================================
+:ref:`initial_conditions <pre_processing_initial_conditions_4>`   Holds the details of initial condition specification for one or more equations.
+
+===============================================================   ===============================================================================
+
+.. rubric:: Included in:
+
+===================================   =============================
+
+Parent                                                      Summary
+
+===================================   =============================
+:ref:`tube <pre_processing_tube_1>`   A container for Tube objects.
+
+===================================   =============================
+

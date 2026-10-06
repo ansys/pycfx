@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_130:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_130.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================   ==============================================================================
+
+Parent                                                                                                                                   Summary
+
+===============================================================   ==============================================================================
+:ref:`pressure_excitation <pre_processing_pressure_excitation>`   Specifies pressure excitation at a non-reflecting pressure boundary condition.
+
+===============================================================   ==============================================================================
+

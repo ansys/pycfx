@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_242:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_242.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================================   =========================================================================================
+
+Parent                                                                                                                                                              Summary
+
+===============================================================================   =========================================================================================
+:ref:`overall_heat_transfer_model <pre_processing_overall_heat_transfer_model>`   Specifies overall heat transfer model: the solver only supports Thermal Resistance Model.
+
+===============================================================================   =========================================================================================
+

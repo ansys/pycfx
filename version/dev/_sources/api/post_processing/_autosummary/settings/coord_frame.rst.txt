@@ -1,0 +1,29 @@
+:orphan:
+
+.. _post_processing_coord_frame:
+
+coord_frame
+===========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.coord_frame.coord_frame
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==========================================================================================   ==================================================
+
+Parent                                                                                                                                  Summary
+
+==========================================================================================   ==================================================
+:ref:`domain_child <post_processing_domain_child>`                                                               'child_object_type' of domain.
+
+:ref:`vector_child <post_processing_vector_child>`                                                               'child_object_type' of vector.
+
+:ref:`default_instance_transform_child <post_processing_default_instance_transform_child>`   'child_object_type' of default_instance_transform.
+
+:ref:`instance_transform_child <post_processing_instance_transform_child>`                           'child_object_type' of instance_transform.
+
+:ref:`internal_vector_child <post_processing_internal_vector_child>`                                    'child_object_type' of internal_vector.
+
+==========================================================================================   ==================================================
+

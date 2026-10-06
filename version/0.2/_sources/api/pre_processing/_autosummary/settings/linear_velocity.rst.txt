@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_linear_velocity:
+
+linear_velocity
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.linear_velocity.linear_velocity
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================   ==================================================================================================================================================================================================================
+
+Parent                                                                                                                                                                                                                                                           Summary
+
+===================================================   ==================================================================================================================================================================================================================
+:ref:`domain_motion <pre_processing_domain_motion>`   Defines the motion of a mesh relative to a stationary coordinate frame. NOTE - Speed and Direction, Specified Displacement and General Motion Options are not supported for domains other than the immersed solid.
+
+:ref:`origin_motion <pre_processing_origin_motion>`                                                                               Defines the general motion of the origin point relative to an stationary coordinate frame. NOTE: It is only valid for immersed solids.
+
+===================================================   ==================================================================================================================================================================================================================
+

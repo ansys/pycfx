@@ -1,0 +1,42 @@
+:orphan:
+
+.. _pre_processing_interpolation_scheme:
+
+interpolation_scheme
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.interpolation_scheme.interpolation_scheme
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================================================   =================================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                                                     Summary
+
+=================================================================================================   =================================================================================================================================================================================================================
+:ref:`enabled <pre_processing_enabled_190>`                                                                                                                                                                                                                                   Enable the INTERPOLATION SCHEME object.
+
+:ref:`pressure_interpolation_type <pre_processing_pressure_interpolation_type>`                     Interpolation method for pressure gradient assembly for the momentum equation, as well as for vertex gradients of pressure and density. Default is Linear-Linear, except for buoyant flows where it is Trilinear.
+
+:ref:`velocity_interpolation_type <pre_processing_velocity_interpolation_type>`                                                                                                                                                     Interpolation method for velocity divergence assembly in the continuity equation.
+
+:ref:`velocity_gradient_interpolation_type <pre_processing_velocity_gradient_interpolation_type>`                                                                                     Interpolation method for vertex velocity gradients. Default is Linear-Linear, except for buoyant problems when it is Trilinear.
+
+:ref:`generic_gradient_interpolation_type <pre_processing_generic_gradient_interpolation_type>`                                                                                                                                                          Interpolation method for vertex gradients of most variables.
+
+:ref:`shape_function_option <pre_processing_shape_function_option>`                                                                                                           Indicates shape function option to use for tets, wedges, and pyramids. Default is geometric for buoyant problems, otherwise parametric.
+
+=================================================================================================   =================================================================================================================================================================================================================
+
+.. rubric:: Included in:
+
+=======================================================   ====================================================================================
+
+Parent                                                                                                                                 Summary
+
+=======================================================   ====================================================================================
+:ref:`solver_control <pre_processing_solver_control_1>`   Holds all objects that control discretization and execution of the solution process.
+
+=======================================================   ====================================================================================
+

@@ -1,0 +1,71 @@
+:orphan:
+
+.. _pre_processing_zvalue:
+
+zvalue
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.zvalue.zvalue
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================================   ======================================================================
+
+Parent                                                                                                                                       Summary
+
+===========================================================================   ======================================================================
+:ref:`variable_child <pre_processing_variable_child>`                                                               'child_object_type' of variable.
+
+:ref:`reflection_definition <pre_processing_reflection_definition>`                                                            Defines a reflection.
+
+:ref:`mode_shape_child <pre_processing_mode_shape_child>`                                                         'child_object_type' of mode_shape.
+
+:ref:`linear_spring_origin <pre_processing_linear_spring_origin>`                Defines the origin of the linear spring as applied to a rigid body.
+
+:ref:`linear_spring_constant <pre_processing_linear_spring_constant>`                 Defines the linear spring constant as applied to a rigid body.
+
+:ref:`force <pre_processing_force>`                                                        Defines a general explicit force applied to a rigid body.
+
+:ref:`torsional_spring_origin <pre_processing_torsional_spring_origin>`       Defines the origin of the torsional spring as applied to a rigid body.
+
+:ref:`torsional_spring_constant <pre_processing_torsional_spring_constant>`        Defines the torsional spring constant as applied to a rigid body.
+
+:ref:`torque <pre_processing_torque>`                                                      Defines a general explicit force applied to a rigid body.
+
+:ref:`shear_stress <pre_processing_shear_stress>`                                                               Specifies the shear force at a wall.
+
+:ref:`equation_source_child <pre_processing_equation_source_child>`                                          'child_object_type' of equation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_1>`                                        'child_object_type' of equation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_2>`                                        'child_object_type' of equation_source.
+
+:ref:`injection_variable_child <pre_processing_injection_variable_child>`                                 'child_object_type' of injection_variable.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_3>`                                        'child_object_type' of equation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_4>`                                        'child_object_type' of equation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_5>`                                        'child_object_type' of equation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_6>`                                        'child_object_type' of equation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_7>`                                        'child_object_type' of equation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_8>`                                        'child_object_type' of equation_source.
+
+:ref:`centre_of_mass <pre_processing_centre_of_mass>`                                                 Defines the initial rigid body centre of mass.
+
+:ref:`orientation <pre_processing_orientation>`                                                          Defines the initial rigid body orientation.
+
+:ref:`linear_velocity <pre_processing_linear_velocity_1>`                                                   Defines the initial rigid body velocity.
+
+:ref:`angular_velocity <pre_processing_angular_velocity_1>`                                                 Defines the initial rigid body velocity.
+
+:ref:`linear_acceleration <pre_processing_linear_acceleration>`                                             Defines the initial rigid body velocity.
+
+:ref:`angular_acceleration <pre_processing_angular_acceleration>`                                           Defines the initial rigid body velocity.
+
+===========================================================================   ======================================================================
+

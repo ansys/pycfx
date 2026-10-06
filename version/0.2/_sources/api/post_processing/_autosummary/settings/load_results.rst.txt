@@ -1,0 +1,32 @@
+:orphan:
+
+.. _post_processing_load_results:
+
+load_results
+============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.load_results.load_results
+    :show-inheritance:
+
+.. rubric:: Arguments
+
+============================================   =========================
+
+Argument                                                         Summary
+
+============================================   =========================
+:ref:`file_name <post_processing_file_name>`   Name of the results file.
+
+============================================   =========================
+
+.. rubric:: Included in:
+
+==================================   ==========================================================
+
+Parent                                                                                  Summary
+
+==================================   ==========================================================
+:ref:`file <post_processing_file>`   File-related operations for a CFX post-processing session.
+
+==================================   ==========================================================
+

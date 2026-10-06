@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_child_material_child_2:
+
+child_material_child
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.child_material_child_2.child_material_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================   ================================================
+
+Attribute                                                                                            Summary
+
+=========================================================   ================================================
+:ref:`option <pre_processing_option_11>`                                        The 'Child Material' option.
+
+:ref:`mass_coefficient <pre_processing_mass_coefficient>`                                  Mass coefficient.
+
+:ref:`reaction_order <pre_processing_reaction_order>`       Reaction order for Arrhenius type reaction rate.
+
+=========================================================   ================================================
+
+.. rubric:: Included in:
+
+=======================================================   =======================================
+
+Parent                                                                                    Summary
+
+=======================================================   =======================================
+:ref:`child_material <pre_processing_child_material_2>`   A container for Child Material objects.
+
+=======================================================   =======================================
+

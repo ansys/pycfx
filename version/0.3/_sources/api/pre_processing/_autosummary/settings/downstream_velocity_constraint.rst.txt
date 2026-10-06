@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_downstream_velocity_constraint:
+
+downstream_velocity_constraint
+==============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.downstream_velocity_constraint.downstream_velocity_constraint
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================   ==========================================================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                          Summary
+
+=============================================   ==========================================================================================================================================================================================================================================
+:ref:`option <pre_processing_option_351>`                                                                                                                                                                                                     The 'Downstream Velocity Constraint' option.
+
+:ref:`frame_type <pre_processing_frame_type>`   Sets the frame in which velocity components or flow direction components are specified. If set to Rotating then the components are in the relative frame. If set to Stationary then the components are in the absolute frame of reference.
+
+=============================================   ==========================================================================================================================================================================================================================================
+
+.. rubric:: Included in:
+
+=================================================   ===================================================================================================================
+
+Parent                                                                                                                                                          Summary
+
+=================================================   ===================================================================================================================
+:ref:`frame_change <pre_processing_frame_change>`   Defines the turbo interface/mixing model to be used on a domain interface where there is frame and/or pitch change.
+
+=================================================   ===================================================================================================================
+

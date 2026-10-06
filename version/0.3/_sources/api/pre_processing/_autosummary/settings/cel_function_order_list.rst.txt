@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_cel_function_order_list:
+
+cel_function_order_list
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.cel_function_order_list.cel_function_order_list
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================   ===================================================================
+
+Parent                                                                                        Summary
+
+===============================   ===================================================================
+:ref:`cel <pre_processing_cel>`   Stores user-defined CFX Command Language functions and expressions.
+
+===============================   ===================================================================
+

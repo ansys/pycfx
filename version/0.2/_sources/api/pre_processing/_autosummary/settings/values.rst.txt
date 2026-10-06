@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_values:
+
+values
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.values.values
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================   ========================================
+
+Parent                                                                                                   Summary
+
+=====================================================================   ========================================
+:ref:`dynamic_variable_child <pre_processing_dynamic_variable_child>`   'child_object_type' of dynamic_variable.
+
+=====================================================================   ========================================
+

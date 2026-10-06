@@ -1,0 +1,48 @@
+:orphan:
+
+.. _pre_processing_mesh_adaption:
+
+mesh_adaption
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.mesh_adaption.mesh_adaption
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================================   =======================================
+
+Attribute                                                                                                             Summary
+
+===================================================================================   =======================================
+:ref:`enabled <pre_processing_enabled_222>`                                                  Enable the MESH ADAPTION object.
+
+:ref:`activate_adaption <pre_processing_activate_adaption>`                                    'Activate Adaption' parameter.
+
+:ref:`domain_name <pre_processing_domain_name_1>`                                                    'Domain Name' parameter.
+
+:ref:`subdomain_list <pre_processing_subdomain_list>`                                             'Subdomain List' parameter.
+
+:ref:`save_intermediate_files <pre_processing_save_intermediate_files>`                  'Save Intermediate Files' parameter.
+
+:ref:`adaption_criteria <pre_processing_adaption_criteria>`                                       'ADAPTION CRITERIA' object.
+
+:ref:`adaption_method <pre_processing_adaption_method>`                                             'ADAPTION METHOD' object.
+
+:ref:`adaption_convergence_criteria <pre_processing_adaption_convergence_criteria>`   'ADAPTION CONVERGENCE CRITERIA' object.
+
+:ref:`adaption_advanced_options <pre_processing_adaption_advanced_options>`               'ADAPTION ADVANCED OPTIONS' object.
+
+===================================================================================   =======================================
+
+.. rubric:: Included in:
+
+=============================================   ============================
+
+Parent                                                               Summary
+
+=============================================   ============================
+:ref:`flow_child <pre_processing_flow_child>`   'child_object_type' of flow.
+
+=============================================   ============================
+

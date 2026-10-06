@@ -1,0 +1,52 @@
+:orphan:
+
+.. _pre_processing_transient_results_child:
+
+transient_results_child
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.transient_results_child.transient_results_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================================================   =====================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                             Summary
+
+=====================================================================================================   =====================================================================================================================================================================
+:ref:`option <pre_processing_option_387>`                                                                                                                                                                                                     The 'Transient Results' option.
+
+:ref:`file_compression_level <pre_processing_file_compression_level>`                                                                                                                                                                     'File Compression Level' parameter.
+
+:ref:`output_variables_list <pre_processing_output_variables_list>`                                                                                                                                                                        'Output Variables List' parameter.
+
+:ref:`include_mesh <pre_processing_include_mesh>`                                                                                                                                           Indicates whether mesh is written to a Selected Variables results or backup file.
+
+:ref:`file_format <pre_processing_file_format>`                                                                                                                                                                                                      'File Format' parameter.
+
+:ref:`output_equation_residuals <pre_processing_output_equation_residuals>`                                                                                                                               Sets whether or not equation residuals are output to results files.
+
+:ref:`output_boundary_flows <pre_processing_output_boundary_flows>`                                     Sets whether or not boundary equation flows are output to results files. If these are in minimal files then accurate calculations of forces are possible in CFD-Post.
+
+:ref:`output_variable_operators <pre_processing_output_variable_operators>`                                                                                             Sets whether or not variable gradients and High Resolution "Beta" Fields are output to results files.
+
+:ref:`output_particle_boundary_vertex_fields <pre_processing_output_particle_boundary_vertex_fields>`                                                                                        Sets whether or not particle boundary vertex fields are output to results files.
+
+:ref:`extra_output_variables_list <pre_processing_extra_output_variables_list>`                                                                                                                                                      'Extra Output Variables List' parameter.
+
+:ref:`output_frequency <pre_processing_output_frequency_1>`                                                                                                            Holds options for controlling the frequency with which backup and transient results files are written.
+
+=====================================================================================================   =====================================================================================================================================================================
+
+.. rubric:: Included in:
+
+===========================================================   ==========================================
+
+Parent                                                                                           Summary
+
+===========================================================   ==========================================
+:ref:`transient_results <pre_processing_transient_results>`   A container for Transient Results objects.
+
+===========================================================   ==========================================
+

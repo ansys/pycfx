@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_save_intermediate_files:
+
+save_intermediate_files
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.save_intermediate_files.save_intermediate_files
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================   ========================================
+
+Parent                                                                                                   Summary
+
+=====================================================================   ========================================
+:ref:`dynamic_variable_child <pre_processing_dynamic_variable_child>`   'child_object_type' of dynamic_variable.
+
+:ref:`mesh_adaption <pre_processing_mesh_adaption>`                                      'MESH ADAPTION' object.
+
+=====================================================================   ========================================
+

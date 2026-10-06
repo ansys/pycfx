@@ -1,0 +1,59 @@
+:orphan:
+
+.. _post_processing_colour_1:
+
+colour
+======
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.colour_1.colour
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+================================================================================   =============================================
+
+Parent                                                                                                                   Summary
+
+================================================================================   =============================================
+:ref:`text_child <post_processing_text_child>`                                                      'child_object_type' of text.
+
+:ref:`point_child <post_processing_point_child>`                                                   'child_object_type' of point.
+
+:ref:`point_cloud_child <post_processing_point_cloud_child>`                                 'child_object_type' of point_cloud.
+
+:ref:`polyline_child <post_processing_polyline_child>`                                          'child_object_type' of polyline.
+
+:ref:`subdomain_child <post_processing_subdomain_child>`                                       'child_object_type' of subdomain.
+
+:ref:`primitive2d_child <post_processing_primitive2d_child>`                                 'child_object_type' of primitive2d.
+
+:ref:`primitive3d_child <post_processing_primitive3d_child>`                                 'child_object_type' of primitive3d.
+
+:ref:`composite_child <post_processing_composite_child>`                                       'child_object_type' of composite.
+
+:ref:`composite_periodic_child <post_processing_composite_periodic_child>`            'child_object_type' of composite_periodic.
+
+:ref:`composite_inter_block_child <post_processing_composite_inter_block_child>`   'child_object_type' of composite_inter_block.
+
+:ref:`boundary_child <post_processing_boundary_child>`                                          'child_object_type' of boundary.
+
+:ref:`injection_region_child <post_processing_injection_region_child>`                  'child_object_type' of injection_region.
+
+:ref:`res_surface_child <post_processing_res_surface_child>`                                 'child_object_type' of res_surface.
+
+:ref:`wireframe_child <post_processing_wireframe_child>`                                       'child_object_type' of wireframe.
+
+:ref:`line_child <post_processing_line_child>`                                                      'child_object_type' of line.
+
+:ref:`legend_child <post_processing_legend_child>`                                                'child_object_type' of legend.
+
+:ref:`default_legend_child <post_processing_default_legend_child>`                        'child_object_type' of default_legend.
+
+:ref:`internal_point_child <post_processing_internal_point_child>`                        'child_object_type' of internal_point.
+
+:ref:`internal_point_cloud_child <post_processing_internal_point_cloud_child>`      'child_object_type' of internal_point_cloud.
+
+:ref:`internal_polyline_child <post_processing_internal_polyline_child>`               'child_object_type' of internal_polyline.
+
+================================================================================   =============================================
+

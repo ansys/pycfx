@@ -1,0 +1,50 @@
+:orphan:
+
+.. _pre_processing_solid_motion:
+
+solid_motion
+============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.solid_motion.solid_motion
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================   =======================================================================================================
+
+Attribute                                                                                                                                                                   Summary
+
+=========================================================================   =======================================================================================================
+:ref:`enabled <pre_processing_enabled_99>`                                                                                                          Enable the SOLID MOTION object.
+
+:ref:`option <pre_processing_option_176>`                                                                                                                The 'Solid Motion' option.
+
+:ref:`u <pre_processing_u>`                                                                                                                                          'U' parameter.
+
+:ref:`v <pre_processing_v>`                                                                                                                                          'V' parameter.
+
+:ref:`w <pre_processing_w>`                                                                                                                                          'W' parameter.
+
+:ref:`velocity_axial_component <pre_processing_velocity_axial_component>`                                                                     'Velocity Axial Component' parameter.
+
+:ref:`velocity_r_component <pre_processing_velocity_r_component>`                                                                                 'Velocity r Component' parameter.
+
+:ref:`velocity_theta_component <pre_processing_velocity_theta_component>`                                                                     'Velocity Theta Component' parameter.
+
+:ref:`angular_velocity <pre_processing_angular_velocity>`                                                                             Rotating speed for a rotating domain or wall.
+
+:ref:`axis_definition <pre_processing_axis_definition>`                     Defines the axis for a cylindrical coordinate system or variables defined using cylindrical components.
+
+=========================================================================   =======================================================================================================
+
+.. rubric:: Included in:
+
+=================================================   =======================================================================
+
+Parent                                                                                                              Summary
+
+=================================================   =======================================================================
+:ref:`solid_models <pre_processing_solid_models>`   Defines the model details that operate on the solids within the domain.
+
+=================================================   =======================================================================
+

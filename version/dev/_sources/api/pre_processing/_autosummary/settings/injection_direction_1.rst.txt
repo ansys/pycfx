@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_injection_direction_1:
+
+injection_direction
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.injection_direction_1.injection_direction
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================   ======================================
+
+Attribute                                                                                                    Summary
+
+===========================================================================   ======================================
+:ref:`option <pre_processing_option_215>`                                          The 'Injection Direction' option.
+
+:ref:`effective_azimuthal_angle <pre_processing_effective_azimuthal_angle>`   'Effective Azimuthal Angle' parameter.
+
+:ref:`effective_elevation_angle <pre_processing_effective_elevation_angle>`   'Effective Elevation Angle' parameter.
+
+===========================================================================   ======================================
+
+.. rubric:: Included in:
+
+=====================================================================   ================================
+
+Parent                                                                                           Summary
+
+=====================================================================   ================================
+:ref:`injection_distribution <pre_processing_injection_distribution>`   'INJECTION DISTRIBUTION' object.
+
+=====================================================================   ================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_workbench_id:
+
+workbench_id
+============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.workbench_id.workbench_id
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==============================================   ============================
+
+Parent                                                                Summary
+
+==============================================   ============================
+:ref:`case_child <post_processing_case_child>`   'child_object_type' of case.
+
+==============================================   ============================
+

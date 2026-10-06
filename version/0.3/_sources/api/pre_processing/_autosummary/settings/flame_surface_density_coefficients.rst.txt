@@ -1,0 +1,48 @@
+:orphan:
+
+.. _pre_processing_flame_surface_density_coefficients:
+
+flame_surface_density_coefficients
+==================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.flame_surface_density_coefficients.flame_surface_density_coefficients
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================================   =============================================================
+
+Attribute                                                                                                                                       Summary
+
+=======================================================================================   =============================================================
+:ref:`enabled <pre_processing_enabled_88>`                                                        Enable the FLAME SURFACE DENSITY COEFFICIENTS object.
+
+:ref:`alpha_coefficient <pre_processing_alpha_coefficient>`                                                                    Alpha model coefficient.
+
+:ref:`beta_coefficient <pre_processing_beta_coefficient>`                                                                       Beta model coefficient.
+
+:ref:`c2_coefficient <pre_processing_c2_coefficient>`                                                                             C2 model coefficient.
+
+:ref:`c3_coefficient <pre_processing_c3_coefficient>`                                                                             C3 model coefficient.
+
+:ref:`p3_reaction_progress_blend <pre_processing_p3_reaction_progress_blend>`                                               P3 Reaction Progress Blend.
+
+:ref:`small_absolute_burning_velocity <pre_processing_small_absolute_burning_velocity>`                      Absolute value for small burning velocity.
+
+:ref:`small_relative_burning_velocity <pre_processing_small_relative_burning_velocity>`                      Relative value for small burning velocity.
+
+:ref:`turbulent_flux_closure <pre_processing_turbulent_flux_closure_1>`                   Controls the turbulent flux closure for a transport equation.
+
+=======================================================================================   =============================================================
+
+.. rubric:: Included in:
+
+===========================================================   ========================================
+
+Parent                                                                                         Summary
+
+===========================================================   ========================================
+:ref:`combustion_model <pre_processing_combustion_model_1>`   Defines the combustion model to be used.
+
+===========================================================   ========================================
+

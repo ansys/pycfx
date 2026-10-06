@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_scale_definition:
+
+scale_definition
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.scale_definition.scale_definition
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================   ==============================
+
+Attribute                                                                          Summary
+
+=========================================================   ==============================
+:ref:`option <pre_processing_option_72>`                    The 'Scale Definition' option.
+
+:ref:`uniform_scale <pre_processing_uniform_scale>`                          Scale factor.
+
+:ref:`nonuniform_scale <pre_processing_nonuniform_scale>`        Non uniform scale vector.
+
+:ref:`scale_origin <pre_processing_scale_origin>`                Position of scale origin.
+
+=========================================================   ==============================
+
+.. rubric:: Included in:
+
+=================================================================   ======================================
+
+Parent                                                                                             Summary
+
+=================================================================   ======================================
+:ref:`transformation_child <pre_processing_transformation_child>`   'child_object_type' of transformation.
+
+=================================================================   ======================================
+

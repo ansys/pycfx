@@ -1,0 +1,42 @@
+:orphan:
+
+.. _pre_processing_user_location_definitions:
+
+user_location_definitions
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.user_location_definitions.user_location_definitions
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================   ============================================
+
+Attribute                                                                                        Summary
+
+=========================================================   ============================================
+:ref:`enabled <pre_processing_enabled_30>`                  Enable the USER LOCATION DEFINITIONS object.
+
+:ref:`user_surface <pre_processing_user_surface>`                  A container for User Surface objects.
+
+:ref:`user_line <pre_processing_user_line>`                           A container for User Line objects.
+
+:ref:`user_line_cloud <pre_processing_user_line_cloud>`         A container for User Line Cloud objects.
+
+:ref:`user_point <pre_processing_user_point>`                        A container for User Point objects.
+
+:ref:`user_point_cloud <pre_processing_user_point_cloud>`      A container for User Point Cloud objects.
+
+=========================================================   ============================================
+
+.. rubric:: Included in:
+
+=======================================   ===============================================================================
+
+Parent                                                                                                            Summary
+
+=======================================   ===============================================================================
+:ref:`library <pre_processing_library>`   Stores common object descriptions for reference in the main problem definition.
+
+=======================================   ===============================================================================
+

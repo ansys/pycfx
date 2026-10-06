@@ -1,0 +1,23 @@
+:orphan:
+
+.. _post_processing_method:
+
+method
+======
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.method.method
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==================================================================   ======================================
+
+Parent                                                                                              Summary
+
+==================================================================   ======================================
+:ref:`input_field_child <post_processing_input_field_child>`            'child_object_type' of input_field.
+
+:ref:`response_field_child <post_processing_response_field_child>`   'child_object_type' of response_field.
+
+==================================================================   ======================================
+

@@ -1,0 +1,42 @@
+:orphan:
+
+.. _pre_processing_initial_conditions_6:
+
+initial_conditions
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.initial_conditions_6.initial_conditions
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================   ==============================================
+
+Attribute                                                                                                  Summary
+
+=================================================================   ==============================================
+:ref:`centre_of_mass <pre_processing_centre_of_mass>`               Defines the initial rigid body centre of mass.
+
+:ref:`orientation <pre_processing_orientation>`                        Defines the initial rigid body orientation.
+
+:ref:`linear_velocity <pre_processing_linear_velocity_1>`                 Defines the initial rigid body velocity.
+
+:ref:`angular_velocity <pre_processing_angular_velocity_1>`               Defines the initial rigid body velocity.
+
+:ref:`linear_acceleration <pre_processing_linear_acceleration>`           Defines the initial rigid body velocity.
+
+:ref:`angular_acceleration <pre_processing_angular_acceleration>`         Defines the initial rigid body velocity.
+
+=================================================================   ==============================================
+
+.. rubric:: Included in:
+
+=========================================================   ==================================
+
+Parent                                                                                 Summary
+
+=========================================================   ==================================
+:ref:`rigid_body_child <pre_processing_rigid_body_child>`   'child_object_type' of rigid_body.
+
+=========================================================   ==================================
+

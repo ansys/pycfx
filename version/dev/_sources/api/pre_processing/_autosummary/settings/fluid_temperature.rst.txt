@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_fluid_temperature:
+
+fluid_temperature
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fluid_temperature.fluid_temperature
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================================   =========================================================
+
+Parent                                                                                                                        Summary
+
+=========================================================================   =========================================================
+:ref:`heat_transfer_model <pre_processing_heat_transfer_model>`             Specifies the Heat Transfer Model to be used in a domain.
+
+:ref:`heat_transfer_model <pre_processing_heat_transfer_model_1>`           Specifies the Heat Transfer Model to be used in a domain.
+
+:ref:`tube_heat_transfer_model <pre_processing_tube_heat_transfer_model>`                 Holds the definition of tube heat transfer.
+
+=========================================================================   =========================================================
+

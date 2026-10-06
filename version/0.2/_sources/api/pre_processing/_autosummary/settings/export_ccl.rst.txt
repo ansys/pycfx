@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_export_ccl:
+
+export_ccl
+==========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.export_ccl.export_ccl
+    :show-inheritance:
+
+.. rubric:: Arguments
+
+===========================================   =============================================================
+
+Argument                                                                                            Summary
+
+===========================================   =============================================================
+:ref:`file_name <pre_processing_file_name>`                                  Name of the CCL file to write.
+
+:ref:`objects <pre_processing_objects>`       List of objects to save. An empty list will save all objects.
+
+===========================================   =============================================================
+
+.. rubric:: Included in:
+
+=================================   =========================================================
+
+Parent                                                                                Summary
+
+=================================   =========================================================
+:ref:`file <pre_processing_file>`   File-related operations for a CFX pre-processing session.
+
+=================================   =========================================================
+

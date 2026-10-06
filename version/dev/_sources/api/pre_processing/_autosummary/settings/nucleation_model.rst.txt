@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_nucleation_model:
+
+nucleation_model
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.nucleation_model.nucleation_model
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================================   ===============================================================================
+
+Attribute                                                                                                                                                             Summary
+
+===========================================================================================   ===============================================================================
+:ref:`enabled <pre_processing_enabled_96>`                                                                                                Enable the NUCLEATION MODEL object.
+
+:ref:`option <pre_processing_option_171>`                                                                                                      The 'Nucleation Model' option.
+
+:ref:`nucleation_rate <pre_processing_nucleation_rate>`                                                                Nucleation rate for nonequilibrium condensation model.
+
+:ref:`surface_tension_temperature_model <pre_processing_surface_tension_temperature_model>`   Specifies temperature to be used for surface tension in nucleation calculation.
+
+:ref:`nucleation_bulk_tension_factor <pre_processing_nucleation_bulk_tension_factor>`                                                                    Bulk Tension Factor.
+
+===========================================================================================   ===============================================================================
+
+.. rubric:: Included in:
+
+===============================================   =============================
+
+Parent                                                                  Summary
+
+===============================================   =============================
+:ref:`fluid_child <pre_processing_fluid_child>`   'child_object_type' of fluid.
+
+===============================================   =============================
+

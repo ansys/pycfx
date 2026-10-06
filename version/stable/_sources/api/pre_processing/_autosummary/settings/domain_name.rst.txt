@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_domain_name:
+
+domain_name
+===========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.domain_name.domain_name
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================================   =====================================
+
+Parent                                                                                                    Summary
+
+=========================================================================   =====================================
+:ref:`monitor_point_child <pre_processing_monitor_point_child>`             'child_object_type' of monitor_point.
+
+:ref:`monitor_location_control <pre_processing_monitor_location_control>`      'MONITOR LOCATION CONTROL' object.
+
+=========================================================================   =====================================
+

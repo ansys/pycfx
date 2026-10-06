@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_alignment_transformation_list:
+
+alignment_transformation_list
+=============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.alignment_transformation_list.alignment_transformation_list
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================================   =============================================
+
+Parent                                                                                                                  Summary
+
+===============================================================================   =============================================
+:ref:`interpolation_mapping_child <pre_processing_interpolation_mapping_child>`   'child_object_type' of interpolation_mapping.
+
+===============================================================================   =============================================
+

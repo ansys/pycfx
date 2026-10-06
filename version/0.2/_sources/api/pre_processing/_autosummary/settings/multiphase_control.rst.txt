@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_multiphase_control:
+
+multiphase_control
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.multiphase_control.multiphase_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================================   ====================================================
+
+Attribute                                                                                                                                  Summary
+
+===========================================================================================   ====================================================
+:ref:`enabled <pre_processing_enabled_193>`                                                                  Enable the MULTIPHASE CONTROL object.
+
+:ref:`volume_fraction_coupling <pre_processing_volume_fraction_coupling>`                     Volume fraction coupling option for multiphase flow.
+
+:ref:`initial_volume_fraction_smoothing <pre_processing_initial_volume_fraction_smoothing>`                 Method for smoothing volume fractions.
+
+:ref:`optimization_level <pre_processing_optimization_level>`                                                      'Optimization Level' parameter.
+
+===========================================================================================   ====================================================
+
+.. rubric:: Included in:
+
+=======================================================   ====================================================================================
+
+Parent                                                                                                                                 Summary
+
+=======================================================   ====================================================================================
+:ref:`solver_control <pre_processing_solver_control_1>`   Holds all objects that control discretization and execution of the solution process.
+
+=======================================================   ====================================================================================
+

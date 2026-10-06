@@ -1,0 +1,23 @@
+:orphan:
+
+.. _post_processing_symbol_1:
+
+symbol
+======
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.symbol_1.symbol
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+====================================================================   =======================================
+
+Parent                                                                                                 Summary
+
+====================================================================   =======================================
+:ref:`vector_child <post_processing_vector_child>`                              'child_object_type' of vector.
+
+:ref:`internal_vector_child <post_processing_internal_vector_child>`   'child_object_type' of internal_vector.
+
+====================================================================   =======================================
+

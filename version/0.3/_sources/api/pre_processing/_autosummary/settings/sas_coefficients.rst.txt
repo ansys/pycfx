@@ -1,0 +1,42 @@
+:orphan:
+
+.. _pre_processing_sas_coefficients:
+
+sas_coefficients
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.sas_coefficients.sas_coefficients
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================================   ===================================================================================
+
+Attribute                                                                                                                                                   Summary
+
+=============================================================================   ===================================================================================
+:ref:`sas1_coefficient <pre_processing_sas1_coefficient>`                                                      SAS external factor of the SAS SST turbulence model.
+
+:ref:`sas2_coefficient <pre_processing_sas2_coefficient>`                               SAS factor at the velocity laplacian value of the SAS SST turbulence model.
+
+:ref:`sas3_coefficient <pre_processing_sas3_coefficient>`                                   SAS factor at the omega gradient value of the SAS SST turbulence model.
+
+:ref:`squared_length_scale_ratio <pre_processing_squared_length_scale_ratio>`   Specifies whether to square the length scale ratio in the SST-SAS turbulence model.
+
+:ref:`high_wave_number_damping <pre_processing_high_wave_number_damping>`                                     Controls dissipation of the SST-SAS turbulence model.
+
+=============================================================================   ===================================================================================
+
+.. rubric:: Included in:
+
+===========================================================   ===========================================================================
+
+Parent                                                                                                                            Summary
+
+===========================================================   ===========================================================================
+:ref:`turbulence_model <pre_processing_turbulence_model>`     Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+:ref:`turbulence_model <pre_processing_turbulence_model_1>`   Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+===========================================================   ===========================================================================
+

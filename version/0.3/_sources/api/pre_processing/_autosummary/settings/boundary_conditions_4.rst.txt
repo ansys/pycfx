@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_boundary_conditions_4:
+
+boundary_conditions
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.boundary_conditions_4.boundary_conditions
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================   ================================================================
+
+Attribute                                                                                                                Summary
+
+=============================================================   ================================================================
+:ref:`tube_profile <pre_processing_tube_profile_1>`              Defines either boundary or initial conditions for tube profile.
+
+:ref:`tube_pressure <pre_processing_tube_pressure_1>`           Defines either boundary or initial conditions for tube pressure.
+
+:ref:`tube_heat_transfer <pre_processing_tube_heat_transfer>`             Specifies tube heat transfer conditions at a boundary.
+
+=============================================================   ================================================================
+
+.. rubric:: Included in:
+
+=============================================   ============================
+
+Parent                                                               Summary
+
+=============================================   ============================
+:ref:`tube_child <pre_processing_tube_child>`   'child_object_type' of tube.
+
+=============================================   ============================
+

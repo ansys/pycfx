@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_enabled_152:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_152.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================   ===================================================
+
+Parent                                                                                                Summary
+
+=======================================================   ===================================================
+:ref:`initialisation <pre_processing_initialisation>`     Defines the initialisation of flow-field variables.
+
+:ref:`initialisation <pre_processing_initialisation_1>`   Defines the initialisation of flow-field variables.
+
+=======================================================   ===================================================
+

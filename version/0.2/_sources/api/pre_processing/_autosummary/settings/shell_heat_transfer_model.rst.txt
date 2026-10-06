@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_shell_heat_transfer_model:
+
+shell_heat_transfer_model
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.shell_heat_transfer_model.shell_heat_transfer_model
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================================   ===============================================
+
+Attribute                                                                                                                         Summary
+
+=======================================================================================   ===============================================
+:ref:`enabled <pre_processing_enabled_113>`                                                  Enable the SHELL HEAT TRANSFER MODEL object.
+
+:ref:`option <pre_processing_option_237>`                                                         The 'Shell Heat Transfer Model' option.
+
+:ref:`shell_heat_transfer_coefficient <pre_processing_shell_heat_transfer_coefficient>`   Specifies shell side heat transfer coefficient.
+
+=======================================================================================   ===============================================
+
+.. rubric:: Included in:
+
+===========================================================   ===========================================================================================
+
+Parent                                                                                                                                            Summary
+
+===========================================================   ===========================================================================================
+:ref:`shell_side_models <pre_processing_shell_side_models>`   Holds the definition of shell fluid models for momentum loss and heat transfer coefficient.
+
+===========================================================   ===========================================================================================
+

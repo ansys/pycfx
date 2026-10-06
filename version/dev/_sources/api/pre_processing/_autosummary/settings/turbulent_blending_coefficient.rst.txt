@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_turbulent_blending_coefficient:
+
+turbulent_blending_coefficient
+==============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.turbulent_blending_coefficient.turbulent_blending_coefficient
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ====================================================================
+
+Parent                                                                                                                     Summary
+
+===========================================================   ====================================================================
+:ref:`geko_coefficients <pre_processing_geko_coefficients>`   Provides auxiliary model coefficients for the GEKO turbulence model.
+
+===========================================================   ====================================================================
+

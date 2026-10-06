@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_courant_number:
+
+courant_number
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.courant_number.courant_number
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ==============================================
+
+Parent                                                                                               Summary
+
+===========================================================   ==============================================
+:ref:`timestep_adaption <pre_processing_timestep_adaption>`   Controls method for adaption of timestep size.
+
+===========================================================   ==============================================
+

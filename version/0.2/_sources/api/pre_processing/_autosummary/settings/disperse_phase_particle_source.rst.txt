@@ -1,0 +1,35 @@
+:orphan:
+
+.. _pre_processing_disperse_phase_particle_source:
+
+disperse_phase_particle_source
+==============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.disperse_phase_particle_source.disperse_phase_particle_source
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   ============================================
+
+Parent                                                                                                         Summary
+
+=======================================================================   ============================================
+:ref:`specified_mass_transfer <pre_processing_specified_mass_transfer>`   Specifies the mass transfer rate explicitly.
+
+:ref:`phase_change_model <pre_processing_phase_change_model>`                          Specifies the cavitation model.
+
+:ref:`wall_boiling_model <pre_processing_wall_boiling_model_1>`                      Specifies the wall boiling model.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_1>`          'child_object_type' of equation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_3>`          'child_object_type' of equation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_4>`          'child_object_type' of equation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_6>`          'child_object_type' of equation_source.
+
+:ref:`equation_source_child <pre_processing_equation_source_child_7>`          'child_object_type' of equation_source.
+
+=======================================================================   ============================================
+

@@ -1,0 +1,42 @@
+:orphan:
+
+.. _pre_processing_specific_heat_capacity_2:
+
+specific_heat_capacity
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.specific_heat_capacity_2.specific_heat_capacity
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================   =========================================
+
+Attribute                                                                                                 Summary
+
+=====================================================================   =========================================
+:ref:`enabled <pre_processing_enabled_5>`                               Enable the SPECIFIC HEAT CAPACITY object.
+
+:ref:`option <pre_processing_option_14>`                                     The 'Specific Heat Capacity' option.
+
+:ref:`specific_heat_type <pre_processing_specific_heat_type>`                     'Specific Heat Type' parameter.
+
+:ref:`specific_heat_capacity <pre_processing_specific_heat_capacity>`         'Specific Heat Capacity' parameter.
+
+:ref:`specific_enthalpy <pre_processing_specific_enthalpy>`                        'Specific Enthalpy' parameter.
+
+:ref:`specific_entropy <pre_processing_specific_entropy>`                           'Specific Entropy' parameter.
+
+=====================================================================   =========================================
+
+.. rubric:: Included in:
+
+=============================================================   ========================================================================================================================================================================================================================================
+
+Parent                                                                                                                                                                                                                                                                                           Summary
+
+=============================================================   ========================================================================================================================================================================================================================================
+:ref:`mixture_properties <pre_processing_mixture_properties>`   Used as a container for specifying bulk properties of both fixed and variable composition mixtures. Ideal Mixture is the default rule for all properties. Individual properties can be overridden using the singleton for that property.
+
+=============================================================   ========================================================================================================================================================================================================================================
+

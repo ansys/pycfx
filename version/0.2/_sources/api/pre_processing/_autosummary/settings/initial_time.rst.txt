@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_initial_time:
+
+initial_time
+============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.initial_time.initial_time
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+========================================   ==========================
+
+Attribute                                                     Summary
+
+========================================   ==========================
+:ref:`option <pre_processing_option_79>`   The 'Initial Time' option.
+
+:ref:`time <pre_processing_time>`                   'Time' parameter.
+
+========================================   ==========================
+
+.. rubric:: Included in:
+
+===================================================   ==================================================
+
+Parent                                                                                           Summary
+
+===================================================   ==================================================
+:ref:`analysis_type <pre_processing_analysis_type>`   Controls if the simulation is Steady or Transient.
+
+===================================================   ==================================================
+

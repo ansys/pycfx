@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_interrupt_control:
+
+interrupt_control
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.interrupt_control.interrupt_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================   ============================================
+
+Attribute                                                                                                    Summary
+
+=====================================================================   ============================================
+:ref:`option <pre_processing_option_367>`                                            The 'Interrupt Control' option.
+
+:ref:`convergence_conditions <pre_processing_convergence_conditions>`          Solver condition for process control.
+
+:ref:`interrupt_condition <pre_processing_interrupt_condition>`         A container for Interrupt Condition objects.
+
+=====================================================================   ============================================
+
+.. rubric:: Included in:
+
+=======================================================   ====================================================================================
+
+Parent                                                                                                                                 Summary
+
+=======================================================   ====================================================================================
+:ref:`solver_control <pre_processing_solver_control_1>`   Holds all objects that control discretization and execution of the solution process.
+
+=======================================================   ====================================================================================
+

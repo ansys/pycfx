@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_36:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_36.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ====================================
+
+Parent                                                                                       Summary
+
+=============================================================   ====================================
+:ref:`proximate_analysis <pre_processing_proximate_analysis>`   Proximate hydrocarbon fuel analysis.
+
+=============================================================   ====================================
+

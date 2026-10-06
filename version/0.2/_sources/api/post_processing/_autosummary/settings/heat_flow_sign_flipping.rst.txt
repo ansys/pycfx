@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_heat_flow_sign_flipping:
+
+heat_flow_sign_flipping
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.heat_flow_sign_flipping.heat_flow_sign_flipping
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+======================================   ===========================================================================
+
+Parent                                                                                                       Summary
+
+======================================   ===========================================================================
+:ref:`export <post_processing_export>`   Holds parameters which control the export of data to an external text file.
+
+======================================   ===========================================================================
+

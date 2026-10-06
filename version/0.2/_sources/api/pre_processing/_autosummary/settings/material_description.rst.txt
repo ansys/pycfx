@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_material_description:
+
+material_description
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.material_description.material_description
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================   ================================
+
+Parent                                                                           Summary
+
+=====================================================   ================================
+:ref:`material_child <pre_processing_material_child>`   'child_object_type' of material.
+
+=====================================================   ================================
+

@@ -1,0 +1,42 @@
+:orphan:
+
+.. _post_processing_state:
+
+state
+=====
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.state.state
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+==========================================================================   =========================================================================================================================================
+
+Attribute                                                                                                                                                                                                      Summary
+
+==========================================================================   =========================================================================================================================================
+:ref:`keep_results_expressions <post_processing_keep_results_expressions>`                              Indicates whether to preserve the expressions from the currently loaded result file(s) when loading the state.
+
+:ref:`load_data <post_processing_load_data>`                                 This parameter indicates whether to load the results file or not if a DATA READER object exists in the STATE File for a READSTATE action.
+
+:ref:`read_state_mode <post_processing_read_state_mode>`                                                   This parameter indicates whether the current system state information should be overwritten or appended to.
+
+:ref:`save_state_mode <post_processing_save_state_mode>`                                                                           This parameter indicates whether the state file should be overwritten if it exists.
+
+:ref:`save_state_objects <post_processing_save_state_objects>`                                        A list of objects to save to the state file. If this list is empty, then all user created objects will be saved.
+
+:ref:`state_filename <post_processing_state_filename>`                                                                                                   The name of the state file to which state data will be saved.
+
+==========================================================================   =========================================================================================================================================
+
+.. rubric:: Included in:
+
+========================================   =========================================
+
+Parent                                                                       Summary
+
+========================================   =========================================
+:ref:`results <post_processing_results>`   Encapsulates a CFX post-processing setup.
+
+========================================   =========================================
+

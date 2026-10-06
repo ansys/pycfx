@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_component_name:
+
+component_name
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.component_name.component_name
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================   ===================================================================================================================================================================================================================================================================================
+
+Parent                                                                                                                                                                                                                                                                                                                                            Summary
+
+===================================================================   ===================================================================================================================================================================================================================================================================================
+:ref:`properties <pre_processing_properties>`                                                                                                                                                                                                                                             Holds the definition of all physical properties for a material.
+
+:ref:`saturation_properties <pre_processing_saturation_properties>`   Defines the saturation properties used for interphase mass transfer or equilibrium mass transfer models. This singleton would point to a data file. In this case only RGP files are currently supported. The saturation pressure and temperature singletons can override this data.
+
+===================================================================   ===================================================================================================================================================================================================================================================================================
+

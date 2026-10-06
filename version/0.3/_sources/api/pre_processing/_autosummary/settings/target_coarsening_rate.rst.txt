@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_target_coarsening_rate:
+
+target_coarsening_rate
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.target_coarsening_rate.target_coarsening_rate
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ==================================================================
+
+Parent                                                                                                                     Summary
+
+=============================================================   ==================================================================
+:ref:`coarsening_control <pre_processing_coarsening_control>`   Holds parameters to control creation of the radiation coarse grid.
+
+=============================================================   ==================================================================
+
