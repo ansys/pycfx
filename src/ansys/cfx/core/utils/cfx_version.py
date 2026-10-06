@@ -172,3 +172,11 @@ class CFXVersion(Enum):
     def __str__(self) -> str:
         """Get a string representation for the CFX version."""
         return f"Ansys CFX 20{self.value.split('.')[0]} R{self.value.split('.')[1]}"
+
+
+def rename_setup_to_results(version, is_postprocessing: bool) -> bool:
+    """Whether the post-processing 'setup' object must be exposed as 'results'.
+
+    Dropped in 2027 R1 and later.
+    """
+    return is_postprocessing and CFXVersion(version) < CFXVersion.v271
