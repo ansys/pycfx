@@ -6,7 +6,7 @@ repos:
         args: [--target-version=py310]
 
   - repo: https://github.com/pycqa/isort
-    rev: 131f4adcd5582bfc53928ab0d740eceb8b506b6c  # frozen: 9.0.1a3
+    rev: 9f905615631c545f5aea2516508109350d1d2f7d  # frozen: 9.0.2a3
     hooks:
       - id: isort
 
@@ -63,7 +63,7 @@ repos:
       - id: check-yaml
 
   - repo: https://github.com/PyCQA/pylint
-    rev: 303703fe107fa812c42a66edfc88a5702a63f1f1  # frozen: v4.0.9
+    rev: 40be3a2f729cdf667eae46272369aeffe1abf651  # frozen: v4.1.2
     hooks:
       - id: pylint
         args: ["--reports", "n", "--score", "n", "--rcfile=pylintrc"]
