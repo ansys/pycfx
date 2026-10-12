@@ -1,0 +1,80 @@
+:orphan:
+
+.. _pre_processing_combustion_model_1:
+
+combustion_model
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.combustion_model_1.combustion_model
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================================================   ===============================================================================================
+
+Attribute                                                                                                                                                                                   Summary
+
+=================================================================================================   ===============================================================================================
+:ref:`option <pre_processing_option_54>`                                                                                                                             The 'Combustion Model' option.
+
+:ref:`reactions_list <pre_processing_reactions_list>`                                                                                                                   'Reactions List' parameter.
+
+:ref:`additional_materials_list <pre_processing_additional_materials_list>`                                                                                  'Additional Materials List' parameter.
+
+:ref:`eddy_dissipation_model_coefficient_a <pre_processing_eddy_dissipation_model_coefficient_a>`                                                             Eddy Dissipation Model Coefficient A.
+
+:ref:`eddy_dissipation_model_coefficient_b <pre_processing_eddy_dissipation_model_coefficient_b>`                                                             Eddy Dissipation Model Coefficient B.
+
+:ref:`maximum_flame_temperature <pre_processing_maximum_flame_temperature>`                                                                               Maximum temperature achieved by reaction.
+
+:ref:`mixing_rate_limit <pre_processing_mixing_rate_limit>`                                                                                               Eddy Dissipation Mixing Rate Upper Limit.
+
+:ref:`chemical_timescale <pre_processing_chemical_timescale>`                                                                                              Chemical Timescale Limit For Extinction.
+
+:ref:`extinction_temperature <pre_processing_extinction_temperature>`                                                                                              Extinction-Ignition Temperature.
+
+:ref:`cs_coefficient <pre_processing_cs_coefficient>`                                                                                                              Cs G Equation model coefficient.
+
+:ref:`turbulent_burning_velocity <pre_processing_turbulent_burning_velocity_1>`                               Defines the turbulent burning velocity for premixed or partially premixed combustion.
+
+:ref:`laminar_flame_thickness <pre_processing_laminar_flame_thickness_1>`                                                                                      Defines the laminar flame thickness.
+
+:ref:`mixture_variance_coefficients <pre_processing_mixture_variance_coefficients>`                               Controls model coefficients for the Mixture Fraction Variance transport equation.
+
+:ref:`soot_model <pre_processing_soot_model>`                                                                                                          Sets parameters that control the soot model.
+
+:ref:`reaction_progress_variable <pre_processing_reaction_progress_variable>`                       Defines the primitive reaction progress variable for premixed or partially premixed combustion.
+
+:ref:`spark_ignition <pre_processing_spark_ignition>`                                                                                                            Controls the spark ignition model.
+
+:ref:`chemistry_post_processing <pre_processing_chemistry_post_processing>`                                                         Controls the post processing of minor components and reactions.
+
+:ref:`autoignition_model <pre_processing_autoignition_model>`                                                                                                      Controls the autoignition model.
+
+:ref:`residual_material_model <pre_processing_residual_material_model>`                                                          Controls the exhaust gas recirculation model (residual gas model).
+
+:ref:`flame_surface_density_coefficients <pre_processing_flame_surface_density_coefficients>`                         Controls model coefficients for the Flame Surface Density transport equation.
+
+:ref:`g_scalar_coefficients <pre_processing_g_scalar_coefficients>`                                                                Controls model coefficients for the G Scalar transport equation.
+
+:ref:`g_variance_coefficients <pre_processing_g_variance_coefficients>`                                                   Controls model coefficients for the G Scalar Variance transport equation.
+
+:ref:`g_scalar_damping <pre_processing_g_scalar_damping>`                                                                                          Controls far field damping for G Equation model.
+
+:ref:`turbulent_flame_thickness_limiter <pre_processing_turbulent_flame_thickness_limiter>`                                                             'TURBULENT FLAME THICKNESS LIMITER' object.
+
+=================================================================================================   ===============================================================================================
+
+.. rubric:: Included in:
+
+=================================================   ==============================================================================
+
+Parent                                                                                                                     Summary
+
+=================================================   ==============================================================================
+:ref:`fluid_models <pre_processing_fluid_models>`   Defines the model details that operate on individual fluids within the domain.
+
+:ref:`fluid_child <pre_processing_fluid_child>`                                                      'child_object_type' of fluid.
+
+=================================================   ==============================================================================
+

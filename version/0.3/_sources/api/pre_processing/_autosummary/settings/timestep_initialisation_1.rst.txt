@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_timestep_initialisation_1:
+
+timestep_initialisation
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.timestep_initialisation_1.timestep_initialisation
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================   =========================================================================================
+
+Attribute                                                                                                                                             Summary
+
+=================================================================   =========================================================================================
+:ref:`enabled <pre_processing_enabled_181>`                                                                        Enable the TIMESTEP INITIALISATION object.
+
+:ref:`option <pre_processing_option_370>`                                                                               The 'Timestep Initialisation' option.
+
+:ref:`lower_courant_number <pre_processing_lower_courant_number>`   Use pure extrapolation for timestep initialization for Courant numbers smaller than this.
+
+:ref:`upper_courant_number <pre_processing_upper_courant_number>`   Use pure extrapolation for timestep initialization for Courant numbers smaller than this.
+
+=================================================================   =========================================================================================
+
+.. rubric:: Included in:
+
+===========================================================   ============================================================
+
+Parent                                                                                                             Summary
+
+===========================================================   ============================================================
+:ref:`transient_scheme <pre_processing_transient_scheme_2>`   Defines the discretization algorithm for the transient term.
+
+===========================================================   ============================================================
+

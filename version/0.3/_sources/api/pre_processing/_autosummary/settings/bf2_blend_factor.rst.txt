@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_bf2_blend_factor:
+
+bf2_blend_factor
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.bf2_blend_factor.bf2_blend_factor
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   ================================================================
+
+Parent                                                                                                               Summary
+
+=========================================================   ================================================================
+:ref:`des_coefficients <pre_processing_des_coefficients>`   Controls blending between LES and RANS for DES turbulence model.
+
+=========================================================   ================================================================
+

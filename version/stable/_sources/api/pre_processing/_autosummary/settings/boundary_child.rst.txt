@@ -1,0 +1,74 @@
+:orphan:
+
+.. _pre_processing_boundary_child:
+
+boundary_child
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.boundary_child.boundary_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================   =============================================================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                                                     Summary
+
+=====================================================================   =============================================================================================================================================================================================================================================
+:ref:`interface_boundary <pre_processing_interface_boundary>`                                                                                                                                                                                                                         'Interface Boundary' parameter.
+
+:ref:`boundary_type <pre_processing_boundary_type>`                                                                                                                                                                                                                                                    Boundary Type.
+
+:ref:`location <pre_processing_location>`                                                                                                                                                                                                                                                       'Location' parameter.
+
+:ref:`frame_type <pre_processing_frame_type>`                              Sets the frame in which velocity components or flow direction components are specified. If set to Rotating then the components are in the relative frame. If set to Stationary then the components are in the absolute frame of reference.
+
+:ref:`create_other_side <pre_processing_create_other_side>`                                                                                                                                                                                                                            'Create Other Side' parameter.
+
+:ref:`use_profile_data <pre_processing_use_profile_data>`                                                                                                                                                                                                                               'Use Profile Data' parameter.
+
+:ref:`use_gt_suite_coupling <pre_processing_use_gt_suite_coupling>`                                                                                                                                                                                                                'Use GT SUITE Coupling' parameter.
+
+:ref:`coord_frame <pre_processing_coord_frame>`                         Local coordinate frame for computing expressions. The default at the top level of the command data structure is Coord 0, that is no transformation. The default at lower levels is to inherit the value from objects higher up the structure.
+
+:ref:`boundary_profile <pre_processing_boundary_profile>`                                                                                                                                                                                                                                  'BOUNDARY PROFILE' object.
+
+:ref:`gt_suite_coupling <pre_processing_gt_suite_coupling>`                                                                                                                                                                                                                               'GT SUITE COUPLING' object.
+
+:ref:`coupling_data_transfer <pre_processing_coupling_data_transfer>`                                                                                                                                                                                                 A container for Coupling Data Transfer objects.
+
+:ref:`wall_boiling_model <pre_processing_wall_boiling_model>`                                                                                                                                                                                                                       Specifies the wall boiling model.
+
+:ref:`boundary_conditions <pre_processing_boundary_conditions>`                                                                                                                                                                                         Specifies boundary conditions for all equations being solved.
+
+:ref:`interface_conditions <pre_processing_interface_conditions>`                                                                                                                                                                                                       A container for Interface Conditions objects.
+
+:ref:`fluid_pair <pre_processing_fluid_pair_2>`                                                                                                                                                                                                                                   A container for Fluid Pair objects.
+
+:ref:`fluid <pre_processing_fluid_4>`                                                                                                                                                                                                                                                  A container for Fluid objects.
+
+:ref:`solid <pre_processing_solid>`                                                                                                                                                                                                                                                    A container for Solid objects.
+
+:ref:`tube <pre_processing_tube>`                                                                                                                                                                                                                                                       A container for Tube objects.
+
+:ref:`nonoverlap_conditions <pre_processing_nonoverlap_conditions>`                                                                                                                                                                   Specifies boundary conditions on non overlap regions of a GGI domain interface.
+
+:ref:`boundary_source <pre_processing_boundary_source>`                                                                                                                                                                                   Stores sources and other local modifications on a specific boundary object.
+
+:ref:`boundary_contour <pre_processing_boundary_contour>`                                                                                                                                                                                                                                  'BOUNDARY CONTOUR' object.
+
+:ref:`boundary_vector <pre_processing_boundary_vector>`                                                                                                                                                                                                                                     'BOUNDARY VECTOR' object.
+
+=====================================================================   =============================================================================================================================================================================================================================================
+
+.. rubric:: Included in:
+
+===========================================   =================================
+
+Parent                                                                  Summary
+
+===========================================   =================================
+:ref:`boundary <pre_processing_boundary_1>`   A container for Boundary objects.
+
+===========================================   =================================
+

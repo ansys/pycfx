@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_fuel_consumption_reaction:
+
+fuel_consumption_reaction
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fuel_consumption_reaction.fuel_consumption_reaction
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================   ============================================
+
+Parent                                                                               Summary
+
+=============================================   ============================================
+:ref:`soot_model <pre_processing_soot_model>`   Sets parameters that control the soot model.
+
+=============================================   ============================================
+

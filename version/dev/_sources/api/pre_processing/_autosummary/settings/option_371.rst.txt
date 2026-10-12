@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_371:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_371.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================   ============================================================
+
+Parent                                                                                                                   Summary
+
+=================================================================   ============================================================
+:ref:`particle_integration <pre_processing_particle_integration>`   Sets details of the particle tracking integration algorithm.
+
+=================================================================   ============================================================
+

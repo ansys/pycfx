@@ -1,0 +1,30 @@
+:orphan:
+
+.. _pre_processing_size_group_1:
+
+size_group
+==========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.size_group_1.size_group
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`size_group_child <pre_processing_size_group_child_1>`
+
+
+.. rubric:: Included in:
+
+=================================================================   ===============================================================================
+
+Parent                                                                                                                                      Summary
+
+=================================================================   ===============================================================================
+:ref:`boundary_conditions <pre_processing_boundary_conditions_2>`                     Specifies boundary conditions for all equations being solved.
+
+:ref:`initial_conditions <pre_processing_initial_conditions_1>`     Holds the details of initial condition specification for one or more equations.
+
+:ref:`initial_conditions <pre_processing_initial_conditions_5>`     Holds the details of initial condition specification for one or more equations.
+
+=================================================================   ===============================================================================
+

@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_products:
+
+products
+========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.products.products
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================   ========================================
+
+Attribute                                                                                              Summary
+
+===================================================================   ========================================
+:ref:`option <pre_processing_option_44>`                                                The 'Products' option.
+
+:ref:`materials_list <pre_processing_materials_list>`                              'Materials List' parameter.
+
+:ref:`parent_materials_list <pre_processing_parent_materials_list>`                          Parent Materials.
+
+:ref:`child_material <pre_processing_child_material_1>`                A container for Child Material objects.
+
+:ref:`parent_material <pre_processing_parent_material>`               A container for Parent Material objects.
+
+===================================================================   ========================================
+
+.. rubric:: Included in:
+
+=====================================================   ================================
+
+Parent                                                                           Summary
+
+=====================================================   ================================
+:ref:`reaction_child <pre_processing_reaction_child>`   'child_object_type' of reaction.
+
+=====================================================   ================================
+

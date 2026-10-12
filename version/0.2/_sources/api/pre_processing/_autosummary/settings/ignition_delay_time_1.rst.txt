@@ -1,0 +1,42 @@
+:orphan:
+
+.. _pre_processing_ignition_delay_time_1:
+
+ignition_delay_time
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.ignition_delay_time_1.ignition_delay_time
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================   =================================
+
+Attribute                                                                                   Summary
+
+===============================================================   =================================
+:ref:`option <pre_processing_option_149>`                         The 'Ignition Delay Time' option.
+
+:ref:`octane_number <pre_processing_octane_number>`                      'Octane Number' parameter.
+
+:ref:`cetane_number <pre_processing_cetane_number>`                      'Cetane Number' parameter.
+
+:ref:`engine_speed <pre_processing_engine_speed>`                         'Engine Speed' parameter.
+
+:ref:`mean_piston_speed <pre_processing_mean_piston_speed>`          'Mean Piston Speed' parameter.
+
+:ref:`ignition_delay_time <pre_processing_ignition_delay_time>`    'Ignition Delay Time' parameter.
+
+===============================================================   =================================
+
+.. rubric:: Included in:
+
+=============================================================   ================================
+
+Parent                                                                                   Summary
+
+=============================================================   ================================
+:ref:`autoignition_model <pre_processing_autoignition_model>`   Controls the autoignition model.
+
+=============================================================   ================================
+

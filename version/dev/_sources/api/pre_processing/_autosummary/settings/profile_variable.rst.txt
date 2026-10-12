@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_profile_variable:
+
+profile_variable
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.profile_variable.profile_variable
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================================   ==================================
+
+Parent                                                                                                 Summary
+
+=========================================================================   ==================================
+:ref:`profile_contour <pre_processing_profile_contour>`                              'PROFILE CONTOUR' object.
+
+:ref:`boundary_contour <pre_processing_boundary_contour>`                           'BOUNDARY CONTOUR' object.
+
+:ref:`injection_region_contour <pre_processing_injection_region_contour>`   'INJECTION REGION CONTOUR' object.
+
+=========================================================================   ==================================
+

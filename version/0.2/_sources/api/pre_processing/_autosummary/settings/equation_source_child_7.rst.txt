@@ -1,0 +1,76 @@
+:orphan:
+
+.. _pre_processing_equation_source_child_7:
+
+equation_source_child
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.equation_source_child_7.equation_source_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================================================================   ======================================================================================================================
+
+Attribute                                                                                                                                                                                                                            Summary
+
+===================================================================================================================   ======================================================================================================================
+:ref:`option <pre_processing_option_307>`                                                                                                                                                                      The 'Equation Source' option.
+
+:ref:`total_source <pre_processing_total_source>`                                                                                                                                               Value of source strength, in relevant units.
+
+:ref:`xvalue <pre_processing_xvalue>`                                                                                                                                Input expression for vector VARIABLE component value in relevant units.
+
+:ref:`yvalue <pre_processing_yvalue>`                                                                                                                                Input expression for vector VARIABLE component value in relevant units.
+
+:ref:`zvalue <pre_processing_zvalue>`                                                                                                                                Input expression for vector VARIABLE component value in relevant units.
+
+:ref:`avalue <pre_processing_avalue>`                                                                                                                    Input expression for cylindrical vector VARIABLE component value in relevant units.
+
+:ref:`rvalue <pre_processing_rvalue>`                                                                                                                    Input expression for cylindrical vector VARIABLE component value in relevant units.
+
+:ref:`tvalue <pre_processing_tvalue>`                                                                                                                    Input expression for cylindrical vector VARIABLE component value in relevant units.
+
+:ref:`xxvalue <pre_processing_xxvalue>`                                                                                                                    Input expression for symmetric tensor VARIABLE component value in relevant units.
+
+:ref:`yyvalue <pre_processing_yyvalue>`                                                                                                                    Input expression for symmetric tensor VARIABLE component value in relevant units.
+
+:ref:`zzvalue <pre_processing_zzvalue>`                                                                                                                    Input expression for symmetric tensor VARIABLE component value in relevant units.
+
+:ref:`xyvalue <pre_processing_xyvalue>`                                                                                                                    Input expression for symmetric tensor VARIABLE component value in relevant units.
+
+:ref:`xzvalue <pre_processing_xzvalue>`                                                                                                                    Input expression for symmetric tensor VARIABLE component value in relevant units.
+
+:ref:`yzvalue <pre_processing_yzvalue>`                                                                                                                    Input expression for symmetric tensor VARIABLE component value in relevant units.
+
+:ref:`multiply_by_porosity <pre_processing_multiply_by_porosity>`                                                                                              Defines whether the source terms in porous domains is multiplied by porosity.
+
+:ref:`disperse_phase_particle_source <pre_processing_disperse_phase_particle_source>`                                                                                                             Specifies mass source generates particles.
+
+:ref:`sink_option <pre_processing_sink_option>`                                                                       Specifies whether to use specified or local values of mass fractions and temperature when the mass source is negative.
+
+:ref:`musig_sink_option <pre_processing_musig_sink_option>`                                                                           Specifies whether to use specified or local values of size fractions when the mass source is negative.
+
+:ref:`total_source_coefficient <pre_processing_total_source_coefficient>`                                                                                             Derivative of Total Source expression with respect to source variable.
+
+:ref:`total_mass_source_pressure_coefficient <pre_processing_total_mass_source_pressure_coefficient>`                                                                         Derivative of Mass Source expression with respect to pressure.
+
+:ref:`total_mass_source_volume_fraction_coefficient <pre_processing_total_mass_source_volume_fraction_coefficient>`                                                         Derivative of source expression with respect to volume fraction.
+
+:ref:`axis_definition <pre_processing_axis_definition>`                                                                              Defines the axis for a cylindrical coordinate system or variables defined using cylindrical components.
+
+:ref:`variable <pre_processing_variable>`                                                                                                                                                                  A container for Variable objects.
+
+===================================================================================================================   ======================================================================================================================
+
+.. rubric:: Included in:
+
+=========================================================   ========================================
+
+Parent                                                                                       Summary
+
+=========================================================   ========================================
+:ref:`equation_source <pre_processing_equation_source_7>`   A container for Equation Source objects.
+
+=========================================================   ========================================
+

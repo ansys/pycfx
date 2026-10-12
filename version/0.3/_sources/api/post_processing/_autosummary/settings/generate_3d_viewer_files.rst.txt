@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_generate_3d_viewer_files:
+
+generate_3d_viewer_files
+========================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.generate_3d_viewer_files.generate_3d_viewer_files
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+========================================   ===================
+
+Parent                                                 Summary
+
+========================================   ===================
+:ref:`publish <post_processing_publish>`   Defines the Report.
+
+========================================   ===================
+

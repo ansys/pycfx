@@ -1,0 +1,44 @@
+:orphan:
+
+.. _pre_processing_solution_units:
+
+solution_units
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.solution_units.solution_units
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================   =================================
+
+Attribute                                                                               Summary
+
+===========================================================   =================================
+:ref:`enabled <pre_processing_enabled_34>`                    Enable the SOLUTION UNITS object.
+
+:ref:`mass_units <pre_processing_mass_units>`                           'Mass Units' parameter.
+
+:ref:`length_units <pre_processing_length_units>`                     'Length Units' parameter.
+
+:ref:`time_units <pre_processing_time_units>`                           'Time Units' parameter.
+
+:ref:`temperature_units <pre_processing_temperature_units>`      'Temperature Units' parameter.
+
+:ref:`angle_units <pre_processing_angle_units>`                                    Angle Units.
+
+:ref:`solid_angle_units <pre_processing_solid_angle_units>`      'Solid Angle Units' parameter.
+
+===========================================================   =================================
+
+.. rubric:: Included in:
+
+=============================================   ============================
+
+Parent                                                               Summary
+
+=============================================   ============================
+:ref:`flow_child <pre_processing_flow_child>`   'child_object_type' of flow.
+
+=============================================   ============================
+

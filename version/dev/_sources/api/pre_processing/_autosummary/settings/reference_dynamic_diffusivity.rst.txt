@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_reference_dynamic_diffusivity:
+
+reference_dynamic_diffusivity
+=============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.reference_dynamic_diffusivity.reference_dynamic_diffusivity
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ============================
+
+Parent                                                                               Summary
+
+=============================================================   ============================
+:ref:`internal_diffusion <pre_processing_internal_diffusion>`   'INTERNAL DIFFUSION' object.
+
+:ref:`external_diffusion <pre_processing_external_diffusion>`   'EXTERNAL DIFFUSION' object.
+
+=============================================================   ============================
+

@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_mass:
+
+mass
+====
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.mass.mass
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   ==================================================================================================================================================================================================================
+
+Parent                                                                                                                                                                                                                                                                 Summary
+
+=========================================================   ==================================================================================================================================================================================================================
+:ref:`domain_motion <pre_processing_domain_motion>`         Defines the motion of a mesh relative to a stationary coordinate frame. NOTE - Speed and Direction, Specified Displacement and General Motion Options are not supported for domains other than the immersed solid.
+
+:ref:`rigid_body_child <pre_processing_rigid_body_child>`                                                                                                                                                                                   'child_object_type' of rigid_body.
+
+=========================================================   ==================================================================================================================================================================================================================
+

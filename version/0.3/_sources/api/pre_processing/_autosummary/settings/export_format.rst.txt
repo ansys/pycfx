@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_export_format:
+
+export_format
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.export_format.export_format
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================   ==================================================================================
+
+Attribute                                                                                                                                              Summary
+
+=========================================================================   ==================================================================================
+:ref:`option <pre_processing_option_390>`                                                                                          The 'Export Format' option.
+
+:ref:`filename_prefix <pre_processing_filename_prefix>`                                                                           'Filename Prefix' parameter.
+
+:ref:`include_topology <pre_processing_include_topology>`                                                                        'Include Topology' parameter.
+
+:ref:`include_file_info_header <pre_processing_include_file_info_header>`   Indicates whether file information header is written to the exported profile file.
+
+:ref:`precision <pre_processing_precision>`                                          Number of significant digits for real numbers in the CSV BC Profile file.
+
+=========================================================================   ==================================================================================
+
+.. rubric:: Included in:
+
+=================================================================   ======================================
+
+Parent                                                                                             Summary
+
+=================================================================   ======================================
+:ref:`export_results_child <pre_processing_export_results_child>`   'child_object_type' of export_results.
+
+=================================================================   ======================================
+

@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_boundary:
+
+boundary
+========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.boundary.boundary
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================   ======================================================================================
+
+Parent                                                                                                                                   Summary
+
+=======================================================   ======================================================================================
+:ref:`function_child <pre_processing_function_child>`                                                           'child_object_type' of function.
+
+:ref:`gt_suite_torque <pre_processing_gt_suite_torque>`                                                     Defines the torque sent to GT SUITE.
+
+:ref:`location_type <pre_processing_location_type>`       Defines the type of location, physics or mesh regions, to compute aerodynamic damping.
+
+=======================================================   ======================================================================================
+

@@ -1,0 +1,23 @@
+:orphan:
+
+.. _post_processing_theta_surface_variable:
+
+theta_surface_variable
+======================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.theta_surface_variable.theta_surface_variable
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==================================================================================   ==============================================
+
+Parent                                                                                                                      Summary
+
+==================================================================================   ==============================================
+:ref:`turbo_surface_child <post_processing_turbo_surface_child>`                              'child_object_type' of turbo_surface.
+
+:ref:`internal_turbo_surface_child <post_processing_internal_turbo_surface_child>`   'child_object_type' of internal_turbo_surface.
+
+==================================================================================   ==============================================
+

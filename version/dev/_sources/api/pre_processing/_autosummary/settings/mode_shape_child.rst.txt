@@ -1,0 +1,62 @@
+:orphan:
+
+.. _pre_processing_mode_shape_child:
+
+mode_shape_child
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.mode_shape_child.mode_shape_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================================   =======================================================================
+
+Attribute                                                                                                                                                     Summary
+
+===========================================================================================   =======================================================================
+:ref:`use_profile_data <pre_processing_use_profile_data>`                                                                               'Use Profile Data' parameter.
+
+:ref:`option <pre_processing_option_74>`                                                                                                     The 'Mode Shape' option.
+
+:ref:`structural_damping <pre_processing_structural_damping>`                                                                         'Structural Damping' parameter.
+
+:ref:`modal_mass <pre_processing_modal_mass>`                                                                                                 'Modal Mass' parameter.
+
+:ref:`xvalue <pre_processing_xvalue>`                                                         Input expression for vector VARIABLE component value in relevant units.
+
+:ref:`yvalue <pre_processing_yvalue>`                                                         Input expression for vector VARIABLE component value in relevant units.
+
+:ref:`zvalue <pre_processing_zvalue>`                                                         Input expression for vector VARIABLE component value in relevant units.
+
+:ref:`xivalue <pre_processing_xivalue>`                                                            Input expression for VARIABLE component of imaginary vector value.
+
+:ref:`yivalue <pre_processing_yivalue>`                                                            Input expression for VARIABLE component of imaginary vector value.
+
+:ref:`zivalue <pre_processing_zivalue>`                                                            Input expression for VARIABLE component of imaginary vector value.
+
+:ref:`frequency <pre_processing_frequency>`                                                                                                    'Frequency' parameter.
+
+:ref:`amplitude <pre_processing_amplitude>`                                                                           Scales the normalized mesh displacement vector.
+
+:ref:`scaling <pre_processing_scaling>`                                                                                          Scales the mesh displacement vector.
+
+:ref:`maximum_displacement_from_profile <pre_processing_maximum_displacement_from_profile>`                            'Maximum Displacement From Profile' parameter.
+
+:ref:`mode_shape_profile <pre_processing_mode_shape_profile>`                                                                            'MODE SHAPE PROFILE' object.
+
+:ref:`phase_angle <pre_processing_phase_angle>`                                                                                                 'PHASE ANGLE' object.
+
+===========================================================================================   =======================================================================
+
+.. rubric:: Included in:
+
+=============================================   ===================================
+
+Parent                                                                      Summary
+
+=============================================   ===================================
+:ref:`mode_shape <pre_processing_mode_shape>`   A container for Mode Shape objects.
+
+=============================================   ===================================
+

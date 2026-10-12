@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_421:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_421.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================================   =====================================
+
+Parent                                                                                                          Summary
+
+===============================================================================   =====================================
+:ref:`gt_suite_variable_selection <pre_processing_gt_suite_variable_selection>`   'GT SUITE VARIABLE SELECTION' object.
+
+===============================================================================   =====================================
+

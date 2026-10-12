@@ -1,0 +1,68 @@
+:orphan:
+
+.. _pre_processing_domain_motion:
+
+domain_motion
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.domain_motion.domain_motion
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================================   =====================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                           Summary
+
+===================================================================================   =====================================================================================================================================================
+:ref:`option <pre_processing_option_88>`                                                                                                                                                                        The 'Domain Motion' option.
+
+:ref:`turboshaft_name <pre_processing_turboshaft_name>`                                                                                                                                                        'Turboshaft Name' parameter.
+
+:ref:`angular_velocity <pre_processing_angular_velocity>`                                                                                                                                     Rotating speed for a rotating domain or wall.
+
+:ref:`linear_velocity <pre_processing_linear_velocity>`                                                                                                                                                        'Linear Velocity' parameter.
+
+:ref:`displacement_x_component <pre_processing_displacement_x_component>`                                                                                                                             'Displacement X Component' parameter.
+
+:ref:`displacement_y_component <pre_processing_displacement_y_component>`                                                                                                                             'Displacement Y Component' parameter.
+
+:ref:`displacement_z_component <pre_processing_displacement_z_component>`                                                                                                                             'Displacement Z Component' parameter.
+
+:ref:`mass <pre_processing_mass>`                                                                                                                                                                                       Mass of Rigid Body.
+
+:ref:`alternate_rotation_model <pre_processing_alternate_rotation_model>`                                                                                                              Specifies if the Alternate Rotation Model is active.
+
+:ref:`redistribute_in_rhie_chow <pre_processing_redistribute_in_rhie_chow>`                                                                                                             Indicates whether momentum source is redistributed.
+
+:ref:`rotational_reference_density <pre_processing_rotational_reference_density>`                                                                                                                             Rotational Reference Density.
+
+:ref:`rotational_offset <pre_processing_rotational_offset>`                                                         Controls the amount by which the child side domain on a GGI interface is rotated before the intersection is calculated.
+
+:ref:`axis_definition <pre_processing_axis_definition>`                                                                             Defines the axis for a cylindrical coordinate system or variables defined using cylindrical components.
+
+:ref:`translation_direction <pre_processing_translation_direction>`                                                                                                                      Defines the direction used for translating motion.
+
+:ref:`origin_motion <pre_processing_origin_motion>`                                                  Defines the general motion of the origin point relative to an stationary coordinate frame. NOTE: It is only valid for immersed solids.
+
+:ref:`body_rotation <pre_processing_body_rotation>`                                   Defines the general rotation of a mesh around the origin point relative to a stationary coordinate frame. NOTE: It is only valid for immersed solids.
+
+:ref:`mass_moment_of_inertia <pre_processing_mass_moment_of_inertia>`                                                                                                                            Defines rigid body mass moment of inertia.
+
+:ref:`rotational_reference_location <pre_processing_rotational_reference_location>`                                                                                           Sets the rotational reference location for absolute pressure.
+
+:ref:`dynamics <pre_processing_dynamics>`                                                                                                                                                           Defines rigid body dynamics attributes.
+
+===================================================================================   =====================================================================================================================================================
+
+.. rubric:: Included in:
+
+===================================================   ================================================================
+
+Parent                                                                                                         Summary
+
+===================================================   ================================================================
+:ref:`domain_models <pre_processing_domain_models>`   Defines the physical models that are associated with the domain.
+
+===================================================   ================================================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_solid_bulk_viscosity:
+
+solid_bulk_viscosity
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.solid_bulk_viscosity.solid_bulk_viscosity
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================   ================================================================================
+
+Parent                                                                                                                                         Summary
+
+===================================================================   ================================================================================
+:ref:`solid_bulk_viscosity <pre_processing_solid_bulk_viscosity_1>`   Sets the model to be used for solids bulk viscosity in a multiphase calculation.
+
+===================================================================   ================================================================================
+

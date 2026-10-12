@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_thickness:
+
+thickness
+=========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.thickness.thickness
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================================   =======================================================
+
+Parent                                                                                                                                Summary
+
+===================================================================================   =======================================================
+:ref:`tube_side_fouling_model <pre_processing_tube_side_fouling_model>`                Specifies the fouling material model on the tube side.
+
+:ref:`shell_side_fouling_model <pre_processing_shell_side_fouling_model>`             Specifies the fouling material model on the shell side.
+
+:ref:`heat_transfer_interface_model <pre_processing_heat_transfer_interface_model>`              Heat transfer models for a domain interface.
+
+===================================================================================   =======================================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_angular_velocity_y_component:
+
+angular_velocity_y_component
+============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.angular_velocity_y_component.angular_velocity_y_component
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================   =====================================================================================================================================================
+
+Parent                                                                                                                                                                                              Summary
+
+===================================================   =====================================================================================================================================================
+:ref:`body_rotation <pre_processing_body_rotation>`   Defines the general rotation of a mesh around the origin point relative to a stationary coordinate frame. NOTE: It is only valid for immersed solids.
+
+===================================================   =====================================================================================================================================================
+

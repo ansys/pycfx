@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_wall_adhesion:
+
+wall_adhesion
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.wall_adhesion.wall_adhesion
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================   =====================================================
+
+Attribute                                                                                                     Summary
+
+=============================================================   =====================================================
+:ref:`option <pre_processing_option_294>`                                                 The 'Wall Adhesion' option.
+
+:ref:`wall_contact_angle <pre_processing_wall_contact_angle>`   Contact angle for surface tension adhesion at a wall.
+
+=============================================================   =====================================================
+
+.. rubric:: Included in:
+
+=================================================================   =============================================================
+
+Parent                                                                                                                    Summary
+
+=================================================================   =============================================================
+:ref:`boundary_conditions <pre_processing_boundary_conditions_1>`   Specifies boundary conditions for all equations being solved.
+
+=================================================================   =============================================================
+

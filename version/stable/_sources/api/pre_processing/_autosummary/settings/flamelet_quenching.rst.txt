@@ -1,0 +1,32 @@
+:orphan:
+
+.. _pre_processing_flamelet_quenching:
+
+flamelet_quenching
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.flamelet_quenching.flamelet_quenching
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================================   ========================================================
+
+Attribute                                                                                                                                    Summary
+
+=========================================================================================   ========================================================
+:ref:`critical_scalar_dissipation_rate <pre_processing_critical_scalar_dissipation_rate>`   Critical scalar dissipation rate for flamelet quenching.
+
+=========================================================================================   ========================================================
+
+.. rubric:: Included in:
+
+===============================================================================   =====================================================================================
+
+Parent                                                                                                                                                          Summary
+
+===============================================================================   =====================================================================================
+:ref:`turbulent_burning_velocity <pre_processing_turbulent_burning_velocity_1>`   Defines the turbulent burning velocity for premixed or partially premixed combustion.
+
+===============================================================================   =====================================================================================
+

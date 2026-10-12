@@ -1,0 +1,42 @@
+:orphan:
+
+.. _pre_processing_location_1:
+
+location
+========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.location_1.location
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================   =================================
+
+Attribute                                                                                     Summary
+
+=================================================================   =================================
+:ref:`option <pre_processing_option_268>`                                      The 'Location' option.
+
+:ref:`location_x_component <pre_processing_location_x_component>`   'Location X Component' parameter.
+
+:ref:`location_y_component <pre_processing_location_y_component>`   'Location Y Component' parameter.
+
+:ref:`location_z_component <pre_processing_location_z_component>`   'Location Z Component' parameter.
+
+=================================================================   =================================
+
+.. rubric:: Included in:
+
+=================================================   ================================================================================
+
+Parent                                                                                                                       Summary
+
+=================================================   ================================================================================
+:ref:`mesh_motion <pre_processing_mesh_motion>`     Defines the motion of a mesh boundary. NOTE - Not fully supported by the solver.
+
+:ref:`mesh_motion <pre_processing_mesh_motion_1>`   Defines the motion of a mesh boundary. NOTE - Not fully supported by the solver.
+
+:ref:`mesh_motion <pre_processing_mesh_motion_2>`   Defines the motion of a mesh boundary. NOTE - Not fully supported by the solver.
+
+=================================================   ================================================================================
+

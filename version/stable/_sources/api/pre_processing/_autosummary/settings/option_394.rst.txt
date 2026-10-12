@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_option_394:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_394.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================   =============================
+
+Parent                                                                                    Summary
+
+=================================================================   =============================
+:ref:`accumulation_period <pre_processing_accumulation_period>`     'ACCUMULATION PERIOD' object.
+
+:ref:`accumulation_period <pre_processing_accumulation_period_1>`   'ACCUMULATION PERIOD' object.
+
+=================================================================   =============================
+

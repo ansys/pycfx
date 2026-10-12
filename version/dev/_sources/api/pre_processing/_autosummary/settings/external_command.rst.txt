@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_external_command:
+
+external_command
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.external_command.external_command
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================   ==============================
+
+Parent                                                                     Summary
+
+=================================================   ==============================
+:ref:`remesh_child <pre_processing_remesh_child>`   'child_object_type' of remesh.
+
+=================================================   ==============================
+

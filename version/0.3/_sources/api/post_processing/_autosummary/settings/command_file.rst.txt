@@ -1,0 +1,32 @@
+:orphan:
+
+.. _post_processing_command_file:
+
+command_file
+============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.command_file.command_file
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+==========================================================   =====================================================
+
+Attribute                                                                                                  Summary
+
+==========================================================   =====================================================
+:ref:`cfx_post_version <post_processing_cfx_post_version>`   Indicates the type of file currently being processed.
+
+==========================================================   =====================================================
+
+.. rubric:: Included in:
+
+========================================   =========================================
+
+Parent                                                                       Summary
+
+========================================   =========================================
+:ref:`results <post_processing_results>`   Encapsulates a CFX post-processing setup.
+
+========================================   =========================================
+

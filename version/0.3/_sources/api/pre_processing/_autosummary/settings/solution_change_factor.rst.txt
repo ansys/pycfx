@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_solution_change_factor:
+
+solution_change_factor
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.solution_change_factor.solution_change_factor
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================   =============================
+
+Parent                                                                                    Summary
+
+=================================================================   =============================
+:ref:`knock_reaction_rate <pre_processing_knock_reaction_rate_1>`   'KNOCK REACTION RATE' object.
+
+=================================================================   =============================
+

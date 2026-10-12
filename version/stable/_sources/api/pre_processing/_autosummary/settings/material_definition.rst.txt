@@ -1,0 +1,32 @@
+:orphan:
+
+.. _pre_processing_material_definition:
+
+material_definition
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.material_definition.material_definition
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+========================================   =================================
+
+Attribute                                                            Summary
+
+========================================   =================================
+:ref:`option <pre_processing_option_87>`   The 'Material Definition' option.
+
+========================================   =================================
+
+.. rubric:: Included in:
+
+=====================================================================   ========================================
+
+Parent                                                                                                   Summary
+
+=====================================================================   ========================================
+:ref:`fluid_definition_child <pre_processing_fluid_definition_child>`   'child_object_type' of fluid_definition.
+
+=====================================================================   ========================================
+

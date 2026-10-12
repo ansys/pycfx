@@ -1,0 +1,26 @@
+:orphan:
+
+.. _post_processing_vortex_core_region:
+
+vortex_core_region
+==================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.vortex_core_region.vortex_core_region
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`vortex_core_region_child <post_processing_vortex_core_region_child>`
+
+
+.. rubric:: Included in:
+
+========================================   =========================================
+
+Parent                                                                       Summary
+
+========================================   =========================================
+:ref:`results <post_processing_results>`   Encapsulates a CFX post-processing setup.
+
+========================================   =========================================
+

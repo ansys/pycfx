@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_351:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_351.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================================   ==================================================
+
+Parent                                                                                                                             Summary
+
+=====================================================================================   ==================================================
+:ref:`downstream_velocity_constraint <pre_processing_downstream_velocity_constraint>`   Downstream velocity constraint at stage interface.
+
+=====================================================================================   ==================================================
+

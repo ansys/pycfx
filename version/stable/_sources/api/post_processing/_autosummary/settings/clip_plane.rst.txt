@@ -1,0 +1,26 @@
+:orphan:
+
+.. _post_processing_clip_plane:
+
+clip_plane
+==========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.clip_plane.clip_plane
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`clip_plane_child <post_processing_clip_plane_child>`
+
+
+.. rubric:: Included in:
+
+========================================   =========================================
+
+Parent                                                                       Summary
+
+========================================   =========================================
+:ref:`results <post_processing_results>`   Encapsulates a CFX post-processing setup.
+
+========================================   =========================================
+

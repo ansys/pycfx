@@ -1,0 +1,23 @@
+:orphan:
+
+.. _post_processing_table_cells:
+
+table_cells
+===========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.table_cells.table_cells
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+================================================   =========================================
+
+Parent                                                                               Summary
+
+================================================   =========================================
+:ref:`results <post_processing_results>`           Encapsulates a CFX post-processing setup.
+
+:ref:`table_child <post_processing_table_child>`               'child_object_type' of table.
+
+================================================   =========================================
+

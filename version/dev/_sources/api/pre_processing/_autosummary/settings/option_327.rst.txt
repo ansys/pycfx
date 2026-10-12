@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_327:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_327.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================   ==================================================
+
+Parent                                                                                                         Summary
+
+=================================================================   ==================================================
+:ref:`radiation_intensity <pre_processing_radiation_intensity_1>`   Defines the initialization of radiation intensity.
+
+=================================================================   ==================================================
+

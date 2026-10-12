@@ -1,0 +1,26 @@
+:orphan:
+
+.. _post_processing_table:
+
+table
+=====
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.table.table
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`table_child <post_processing_table_child>`
+
+
+.. rubric:: Included in:
+
+========================================   =========================================
+
+Parent                                                                       Summary
+
+========================================   =========================================
+:ref:`results <post_processing_results>`   Encapsulates a CFX post-processing setup.
+
+========================================   =========================================
+

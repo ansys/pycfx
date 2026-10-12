@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_draw_streams:
+
+draw_streams
+============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.draw_streams.draw_streams
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==========================================================   ==================================
+
+Parent                                                                                  Summary
+
+==========================================================   ==================================
+:ref:`streamline_child <post_processing_streamline_child>`   'child_object_type' of streamline.
+
+==========================================================   ==================================
+

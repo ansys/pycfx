@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_swirl_definition:
+
+swirl_definition
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.swirl_definition.swirl_definition
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================================================   =====================================================
+
+Attribute                                                                                                                                                 Summary
+
+=========================================================================================================   =====================================================
+:ref:`enabled <pre_processing_enabled_107>`                                                                                   Enable the SWIRL DEFINITION object.
+
+:ref:`option <pre_processing_option_221>`                                                                                          The 'Swirl Definition' option.
+
+:ref:`fraction_of_injection_velocity_magnitude <pre_processing_fraction_of_injection_velocity_magnitude>`   'Fraction of Injection Velocity Magnitude' parameter.
+
+=========================================================================================================   =====================================================
+
+.. rubric:: Included in:
+
+=========================================================================   =======================================================================
+
+Parent                                                                                                                                      Summary
+
+=========================================================================   =======================================================================
+:ref:`particle_primary_breakup <pre_processing_particle_primary_breakup>`   Defines the primary break-up model used to determine spray atomization.
+
+=========================================================================   =======================================================================
+

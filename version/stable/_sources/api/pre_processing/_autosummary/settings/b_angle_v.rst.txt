@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_b_angle_v:
+
+b_angle_v
+=========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.b_angle_v.b_angle_v
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================================   ==========================================
+
+Parent                                                                                                         Summary
+
+=========================================================================   ==========================================
+:ref:`injection_variable_child <pre_processing_injection_variable_child>`   'child_object_type' of injection_variable.
+
+=========================================================================   ==========================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_74:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_74.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================   ================================
+
+Parent                                                                                           Summary
+
+=====================================================================   ================================
+:ref:`high_lift_modification <pre_processing_high_lift_modification>`   'HIGH LIFT MODIFICATION' object.
+
+=====================================================================   ================================
+

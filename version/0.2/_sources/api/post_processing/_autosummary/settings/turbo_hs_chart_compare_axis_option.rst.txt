@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_turbo_hs_chart_compare_axis_option:
+
+turbo_hs_chart_compare_axis_option
+==================================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.turbo_hs_chart_compare_axis_option.turbo_hs_chart_compare_axis_option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+============================================================   ===================================
+
+Parent                                                                                     Summary
+
+============================================================   ===================================
+:ref:`turbo_plots_child <post_processing_turbo_plots_child>`   'child_object_type' of turbo_plots.
+
+============================================================   ===================================
+

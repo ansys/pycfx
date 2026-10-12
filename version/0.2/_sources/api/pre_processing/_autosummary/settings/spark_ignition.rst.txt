@@ -1,0 +1,54 @@
+:orphan:
+
+.. _pre_processing_spark_ignition:
+
+spark_ignition
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.spark_ignition.spark_ignition
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================   =============================================================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                                           Summary
+
+===========================================================   =============================================================================================================================================================================================================================================
+:ref:`enabled <pre_processing_enabled_82>`                                                                                                                                                                                                                                Enable the SPARK IGNITION object.
+
+:ref:`option <pre_processing_option_145>`                                                                                                                                                                                                                                      The 'Spark Ignition' option.
+
+:ref:`reaction_progress <pre_processing_reaction_progress>`                                                                                                                                                                       Reaction progress variable for premixed or partially premixed combustion.
+
+:ref:`duration <pre_processing_duration>`                                                                                                                                                                                                                                                         Duration.
+
+:ref:`kernel_centre <pre_processing_kernel_centre>`                                                                                                                                                                                                                                    Spark Kernel Centre.
+
+:ref:`kernel_radius <pre_processing_kernel_radius>`                                                                                                                                                                                                       Maximum Radius for User Advecting Spark Ignition.
+
+:ref:`growth_duration <pre_processing_growth_duration>`                                                                                                                                                                                                   Duration of growth phase in User Advecting Spark.
+
+:ref:`initial_volume <pre_processing_initial_volume>`                                                                                                                                                                                                                       Initial Volume of Spark Kernel.
+
+:ref:`transition_radius <pre_processing_transition_radius>`                                                                                                                                                                                                           Transition Radius for Spark Ignition.
+
+:ref:`coord_frame <pre_processing_coord_frame>`               Local coordinate frame for computing expressions. The default at the top level of the command data structure is Coord 0, that is no transformation. The default at lower levels is to inherit the value from objects higher up the structure.
+
+:ref:`ignition_time <pre_processing_ignition_time>`                                                                                                                                                                                                                        Defines time for spark ignition.
+
+:ref:`spark_energy <pre_processing_spark_energy_1>`                                                                                                                                                                                                                        Defines the energy of the spark.
+
+===========================================================   =============================================================================================================================================================================================================================================
+
+.. rubric:: Included in:
+
+===========================================================   ========================================
+
+Parent                                                                                         Summary
+
+===========================================================   ========================================
+:ref:`combustion_model <pre_processing_combustion_model_1>`   Defines the combustion model to be used.
+
+===========================================================   ========================================
+

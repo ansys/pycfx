@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_transient_statistics_child:
+
+transient_statistics_child
+==========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.transient_statistics_child.transient_statistics_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================   ==================================
+
+Attribute                                                                                        Summary
+
+===================================================================   ==================================
+:ref:`option <pre_processing_option_388>`                             The 'Transient Statistics' option.
+
+:ref:`output_variables_list <pre_processing_output_variables_list>`   'Output Variables List' parameter.
+
+:ref:`start_iteration_list <pre_processing_start_iteration_list>`      'Start Iteration List' parameter.
+
+:ref:`stop_iteration_list <pre_processing_stop_iteration_list>`         'Stop Iteration List' parameter.
+
+===================================================================   ==================================
+
+.. rubric:: Included in:
+
+=================================================================   =============================================
+
+Parent                                                                                                    Summary
+
+=================================================================   =============================================
+:ref:`transient_statistics <pre_processing_transient_statistics>`   A container for Transient Statistics objects.
+
+=================================================================   =============================================
+

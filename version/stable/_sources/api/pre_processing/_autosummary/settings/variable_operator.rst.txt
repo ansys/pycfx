@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_variable_operator:
+
+variable_operator
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.variable_operator.variable_operator
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`variable_operator_child <pre_processing_variable_operator_child>`
+
+
+.. rubric:: Included in:
+
+=======================================   ===============================================================================
+
+Parent                                                                                                            Summary
+
+=======================================   ===============================================================================
+:ref:`library <pre_processing_library>`   Stores common object descriptions for reference in the main problem definition.
+
+=======================================   ===============================================================================
+

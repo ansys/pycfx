@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_boundary_vector:
+
+boundary_vector
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.boundary_vector.boundary_vector
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================   ========================================
+
+Attribute                                                                                                      Summary
+
+===========================================================================   ========================================
+:ref:`enabled <pre_processing_enabled_143>`                                         Enable the BOUNDARY VECTOR object.
+
+:ref:`profile_vector_components <pre_processing_profile_vector_components>`   The option value of the relevant option.
+
+:ref:`visibility <pre_processing_visibility>`                                                  'Visibility' parameter.
+
+===========================================================================   ========================================
+
+.. rubric:: Included in:
+
+=====================================================   ================================
+
+Parent                                                                           Summary
+
+=====================================================   ================================
+:ref:`boundary_child <pre_processing_boundary_child>`   'child_object_type' of boundary.
+
+=====================================================   ================================
+

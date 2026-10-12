@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_constant_x:
+
+constant_x
+==========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.constant_x.constant_x
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================   =======================
+
+Parent                                                                  Summary
+
+=====================================================   =======================
+:ref:`erosion_model <pre_processing_erosion_model>`     Particle erosion model.
+
+:ref:`erosion_model <pre_processing_erosion_model_1>`   Particle erosion model.
+
+=====================================================   =======================
+

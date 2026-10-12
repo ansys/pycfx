@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_include_coefficient_in_rhie_chow:
+
+include_coefficient_in_rhie_chow
+================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.include_coefficient_in_rhie_chow.include_coefficient_in_rhie_chow
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   =======================================================
+
+Parent                                                                                                                    Summary
+
+=======================================================================   =======================================================
+:ref:`isotropic_loss_model <pre_processing_isotropic_loss_model>`                         Defines an isotropic resistance source.
+
+:ref:`directional_loss_model <pre_processing_directional_loss_model>`                           Defines a directional loss model.
+
+:ref:`general_momentum_source <pre_processing_general_momentum_source>`   Defines a general momentum source term and coefficient.
+
+=======================================================================   =======================================================
+

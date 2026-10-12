@@ -1,0 +1,26 @@
+:orphan:
+
+.. _post_processing_turbo_plots:
+
+turbo_plots
+===========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.turbo_plots.turbo_plots
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`turbo_plots_child <post_processing_turbo_plots_child>`
+
+
+.. rubric:: Included in:
+
+========================================   =========================================
+
+Parent                                                                       Summary
+
+========================================   =========================================
+:ref:`results <post_processing_results>`   Encapsulates a CFX post-processing setup.
+
+========================================   =========================================
+

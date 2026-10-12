@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_mesh_deformation_option:
+
+mesh_deformation_option
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.mesh_deformation_option.mesh_deformation_option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================================   =====================================
+
+Parent                                                                                                          Summary
+
+===============================================================================   =====================================
+:ref:`interpolation_model_control <pre_processing_interpolation_model_control>`   'INTERPOLATION MODEL CONTROL' object.
+
+===============================================================================   =====================================
+

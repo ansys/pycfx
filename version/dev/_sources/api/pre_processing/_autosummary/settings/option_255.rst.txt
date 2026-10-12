@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_255:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_255.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================================   ==================================================================
+
+Parent                                                                                                                                           Summary
+
+===================================================================================   ==================================================================
+:ref:`bubble_departure_temperature <pre_processing_bubble_departure_temperature_1>`   Specifies bubble departure temperature for the wall boiling model.
+
+===================================================================================   ==================================================================
+

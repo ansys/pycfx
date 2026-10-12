@@ -1,0 +1,29 @@
+:orphan:
+
+.. _pre_processing_profile_name:
+
+profile_name
+============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.profile_name.profile_name
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================   ==================================
+
+Parent                                                                                       Summary
+
+===============================================================   ==================================
+:ref:`point_definition <pre_processing_point_definition>`                 'POINT DEFINITION' object.
+
+:ref:`user_point_child <pre_processing_user_point_child>`         'child_object_type' of user_point.
+
+:ref:`mode_shape_profile <pre_processing_mode_shape_profile>`           'MODE SHAPE PROFILE' object.
+
+:ref:`boundary_profile <pre_processing_boundary_profile>`                 'BOUNDARY PROFILE' object.
+
+:ref:`injection_positions <pre_processing_injection_positions>`        'INJECTION POSITIONS' object.
+
+===============================================================   ==================================
+

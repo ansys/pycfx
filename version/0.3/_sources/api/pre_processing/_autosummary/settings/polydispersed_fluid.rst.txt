@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_polydispersed_fluid:
+
+polydispersed_fluid
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.polydispersed_fluid.polydispersed_fluid
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================================   ===========================================
+
+Parent                                                                                                            Summary
+
+===========================================================================   ===========================================
+:ref:`polydispersed_fluid_child <pre_processing_polydispersed_fluid_child>`   'child_object_type' of polydispersed_fluid.
+
+:ref:`size_group_child <pre_processing_size_group_child>`                              'child_object_type' of size_group.
+
+===========================================================================   ===========================================
+

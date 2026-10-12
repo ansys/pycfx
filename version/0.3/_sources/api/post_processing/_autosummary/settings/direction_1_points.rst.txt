@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_direction_1_points:
+
+direction_1_points
+==================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.direction_1_points.direction_1_points
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+================================================   =============================
+
+Parent                                                                   Summary
+
+================================================   =============================
+:ref:`plane_child <post_processing_plane_child>`   'child_object_type' of plane.
+
+================================================   =============================
+

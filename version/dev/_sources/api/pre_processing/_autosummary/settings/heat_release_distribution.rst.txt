@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_heat_release_distribution:
+
+heat_release_distribution
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.heat_release_distribution.heat_release_distribution
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================   ========================================
+
+Attribute                                                                                              Summary
+
+===================================================================   ========================================
+:ref:`parent_materials_list <pre_processing_parent_materials_list>`                          Parent Materials.
+
+:ref:`parent_material <pre_processing_parent_material_1>`             A container for Parent Material objects.
+
+===================================================================   ========================================
+
+.. rubric:: Included in:
+
+=====================================================   ================================
+
+Parent                                                                           Summary
+
+=====================================================   ================================
+:ref:`reaction_child <pre_processing_reaction_child>`   'child_object_type' of reaction.
+
+=====================================================   ================================
+

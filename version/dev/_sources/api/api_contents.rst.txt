@@ -1,0 +1,53 @@
+.. _ref_api:
+
+API reference
+=============
+
+This API reference corresponds to Ansys CFX 2026 R1.
+
+This section provides the class and function reference for PyCFX. For comprehensive guidelines on
+using PyCFX, see the :ref:`ref_user_guide`.
+
+All public APIs for PyCFX appear in the left pane. Descriptions of some key APIs follow.
+
+PreProcessing mode
+------------------
+The PreProcessing :ref:`settings API <ref_pre_processing_root>` is the main interface for using
+the CFX preprocessor (CFX-Pre).
+
+Solution mode
+-------------
+The :ref:`Solver session<ref_session_solver>` is the main interface for running and controlling the
+CFX-Solver. This module offers very limited control in this first PyCFX release.
+
+
+PostProcessing mode
+-------------------
+The PostProcessing :ref:`settings API <ref_post_processing_root>` is the main interface for using
+the CFX postprocessor (CFD-Post).
+
+
+.. toctree::
+    :maxdepth: 2
+    :hidden:
+    :caption: ansys.cfx.core
+
+    common/common_contents
+    launcher/launcher_contents
+    services/services_contents
+    streaming_services/streaming_services_contents
+    utils/utils_contents
+
+    cfx_connection
+    exceptions
+    get_build_details
+    logging
+    post_processing
+    pre_processing
+    session_post
+    session_pre
+    session_solver
+    session_utilities
+    session
+    solver_controller
+    warnings

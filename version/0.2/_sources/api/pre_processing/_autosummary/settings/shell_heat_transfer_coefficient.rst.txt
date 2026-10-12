@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_shell_heat_transfer_coefficient:
+
+shell_heat_transfer_coefficient
+===============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.shell_heat_transfer_coefficient.shell_heat_transfer_coefficient
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================   ====================================================
+
+Attribute                                                                                                                  Summary
+
+===========================================================================   ====================================================
+:ref:`option <pre_processing_option_238>`                                            The 'Shell Heat Transfer Coefficient' option.
+
+:ref:`reference_viscosity <pre_processing_reference_viscosity>`                                   'Reference Viscosity' parameter.
+
+:ref:`heat_transfer_coefficient <pre_processing_heat_transfer_coefficient>`                 'Heat Transfer Coefficient' parameter.
+
+:ref:`colburn_correlation <pre_processing_colburn_correlation>`               Specifies shell side Colburn correlation parameters.
+
+===========================================================================   ====================================================
+
+.. rubric:: Included in:
+
+===========================================================================   ============================================
+
+Parent                                                                                                             Summary
+
+===========================================================================   ============================================
+:ref:`shell_heat_transfer_model <pre_processing_shell_heat_transfer_model>`   Holds the definition of shell heat transfer.
+
+===========================================================================   ============================================
+

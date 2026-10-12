@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_newmark_gamma_coefficient:
+
+newmark_gamma_coefficient
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.newmark_gamma_coefficient.newmark_gamma_coefficient
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================================================   ============================================================================
+
+Parent                                                                                                                                                           Summary
+
+=========================================================================================   ============================================================================
+:ref:`linear_momentum_equation_control <pre_processing_linear_momentum_equation_control>`                                      Linear momentum equation solver controls.
+
+:ref:`integration_method <pre_processing_integration_method>`                               Specifies the angular momentum integration method for the rigid body solver.
+
+=========================================================================================   ============================================================================
+

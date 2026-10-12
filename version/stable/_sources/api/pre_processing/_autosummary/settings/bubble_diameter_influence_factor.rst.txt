@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_bubble_diameter_influence_factor:
+
+bubble_diameter_influence_factor
+================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.bubble_diameter_influence_factor.bubble_diameter_influence_factor
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================   =================================
+
+Parent                                                                                      Summary
+
+===============================================================   =================================
+:ref:`wall_boiling_model <pre_processing_wall_boiling_model_1>`   Specifies the wall boiling model.
+
+===============================================================   =================================
+

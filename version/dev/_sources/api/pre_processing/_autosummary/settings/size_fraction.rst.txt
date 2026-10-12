@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_size_fraction:
+
+size_fraction
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.size_fraction.size_fraction
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ==================================
+
+Parent                                                                                   Summary
+
+===========================================================   ==================================
+:ref:`size_group_child <pre_processing_size_group_child_1>`   'child_object_type' of size_group.
+
+===========================================================   ==================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_profile_axial_variable:
+
+profile_axial_variable
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.profile_axial_variable.profile_axial_variable
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ============================
+
+Parent                                                                               Summary
+
+=============================================================   ============================
+:ref:`profile_components <pre_processing_profile_components>`   'PROFILE COMPONENTS' object.
+
+=============================================================   ============================
+

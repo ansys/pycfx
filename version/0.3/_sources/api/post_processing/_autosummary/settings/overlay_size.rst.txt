@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_overlay_size:
+
+overlay_size
+============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.overlay_size.overlay_size
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==============================================   ============================
+
+Parent                                                                Summary
+
+==============================================   ============================
+:ref:`text_child <post_processing_text_child>`   'child_object_type' of text.
+
+==============================================   ============================
+
