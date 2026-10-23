@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_rigid_body_solver_coupling_control:
+
+rigid_body_solver_coupling_control
+==================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.rigid_body_solver_coupling_control.rigid_body_solver_coupling_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================================================   ==================================================================================
+
+Attribute                                                                                                                                                                            Summary
+
+=======================================================================================================   ==================================================================================
+:ref:`update_frequency <pre_processing_update_frequency>`                                                                                                      'Update Frequency' parameter.
+
+:ref:`internal_coupling_step_control <pre_processing_internal_coupling_step_control>`                                                               'INTERNAL COUPLING STEP CONTROL' object.
+
+:ref:`internal_coupling_data_transfer_control <pre_processing_internal_coupling_data_transfer_control>`   Define data transfer between internal solvers (flow solver and rigid body solver).
+
+=======================================================================================================   ==================================================================================
+
+.. rubric:: Included in:
+
+=============================================================   =================================================
+
+Parent                                                                                                    Summary
+
+=============================================================   =================================================
+:ref:`rigid_body_control <pre_processing_rigid_body_control>`   Holds objects that control the rigid body solver.
+
+=============================================================   =================================================
+

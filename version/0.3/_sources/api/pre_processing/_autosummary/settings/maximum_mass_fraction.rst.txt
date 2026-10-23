@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_maximum_mass_fraction:
+
+maximum_mass_fraction
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.maximum_mass_fraction.maximum_mass_fraction
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================   ==============================
+
+Parent                                                                                     Summary
+
+=================================================================   ==============================
+:ref:`mass_fraction_limits <pre_processing_mass_fraction_limits>`   'MASS FRACTION LIMITS' object.
+
+=================================================================   ==============================
+

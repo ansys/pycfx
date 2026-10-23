@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_341:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_341.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================   ===================================================
+
+Parent                                                                                                            Summary
+
+===================================================================   ===================================================
+:ref:`eddy_viscosity_ratio <pre_processing_eddy_viscosity_ratio_1>`   Defines the initialization of eddy viscosity ratio.
+
+===================================================================   ===================================================
+

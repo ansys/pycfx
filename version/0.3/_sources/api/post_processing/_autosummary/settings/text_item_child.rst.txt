@@ -1,0 +1,63 @@
+:orphan:
+
+.. _post_processing_text_item_child:
+
+text_item_child
+===============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.text_item_child.text_item_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+========================================================================================================================   ==================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             Summary
+
+========================================================================================================================   ==================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+:ref:`auto_annotation_expression <post_processing_auto_annotation_expression>`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           Specifies the expression to display.
+
+:ref:`auto_annotation_file_date_format <post_processing_auto_annotation_file_date_format>`                                 Specifies the Date display format. 'D' or 'DD' specifies the day of the month, 'M' or 'MM' specifies the month as a number (e.g. 06 = June), 'MMM' specifies the month as a short form text (e.g. Jun = June, Aug = August), 'MMMM' specifies the full month name as text, 'Y' or 'YY' specifies a two digit year (e.g. 03 = 2003), and 'YYY' or 'YYYY' specifies a four digit year. Any consecutive duplicates beyond what is already stated will be reduced to the closest form.
+
+:ref:`auto_annotation_file_time_format <post_processing_auto_annotation_file_time_format>`                                                                                                                                                                                                                                                                 Specifies the Time display format. 'H' is hours in 24 hour format, 'h' is hours in 12 hour format, 'm' is minutes, 's' is seconds, and 't' is AM or PM, depending on the time of day. Any consecutive duplicates will be reduced to a single item.
+
+:ref:`auto_annotation_filename_format <post_processing_auto_annotation_filename_format>`                                                                                                                                                                                                                                                                                                                                                                                                                                                                               Specifies the Filename display format.
+
+:ref:`auto_annotation_float_format <post_processing_auto_annotation_float_format>`                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Specifies the floating point number display format.
+
+:ref:`auto_annotation_type <post_processing_auto_annotation_type>`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Specifies which type of annotation to show.
+
+:ref:`auto_annotation_use_automatic_number_formatting <post_processing_auto_annotation_use_automatic_number_formatting>`                                                                                                                                                                                                                                                                                                                                                                                                                          Specifies whether the floating point number format is used.
+
+:ref:`embed_auto_annotation <post_processing_embed_auto_annotation>`                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Specifies whether to embed an auto annotation item in the string.
+
+:ref:`text_item_active <post_processing_text_item_active>`                                                                                                                                                                                                                                                                                                                                                                   Indicates whether to use this TEXT ITEM object in the final output of the TEXT overlay. This is used to disable the TEXT ITEM objects that the user no longer wishes to display.
+
+:ref:`text_string <post_processing_text_string>`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             The contents of an item of text.
+
+========================================================================================================================   ==================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+
+.. rubric:: Methods
+
+============================================   ========================================
+
+Method                                                                          Summary
+
+============================================   ========================================
+:ref:`suspend <post_processing_suspend>`       Suspend immediate update for the object.
+
+:ref:`unsuspend <post_processing_unsuspend>`   Restore immediate update for the object.
+
+============================================   ========================================
+
+.. rubric:: Included in:
+
+============================================   ==================
+
+Parent                                                    Summary
+
+============================================   ==================
+:ref:`text_item <post_processing_text_item>`   'text_item' child.
+
+============================================   ==================
+

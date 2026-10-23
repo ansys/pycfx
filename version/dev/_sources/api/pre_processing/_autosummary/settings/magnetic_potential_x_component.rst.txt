@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_magnetic_potential_x_component:
+
+magnetic_potential_x_component
+==============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.magnetic_potential_x_component.magnetic_potential_x_component
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================================   ========================================================
+
+Parent                                                                                                                         Summary
+
+===========================================================================   ========================================================
+:ref:`magnetic_field <pre_processing_magnetic_field>`                                                         'MAGNETIC FIELD' object.
+
+:ref:`magnetic_vector_potential <pre_processing_magnetic_vector_potential>`   Defines the initialization of magnetic vector potential.
+
+===========================================================================   ========================================================
+

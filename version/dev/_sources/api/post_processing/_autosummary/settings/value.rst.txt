@@ -1,0 +1,23 @@
+:orphan:
+
+.. _post_processing_value:
+
+value
+=====
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.value.value
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==========================================================================   ==========================================
+
+Parent                                                                                                          Summary
+
+==========================================================================   ==========================================
+:ref:`isosurface_child <post_processing_isosurface_child>`                           'child_object_type' of isosurface.
+
+:ref:`vortex_core_region_child <post_processing_vortex_core_region_child>`   'child_object_type' of vortex_core_region.
+
+==========================================================================   ==========================================
+

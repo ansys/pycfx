@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_cclsetup:
+
+cclsetup
+========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.cclsetup.cclsetup
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================   =====================================
+
+Attribute                                                                                                 Summary
+
+=========================================================================   =====================================
+:ref:`enabled <pre_processing_enabled_213>`                                           Enable the CCLSETUP object.
+
+:ref:`ccl_setup_debug_level <pre_processing_ccl_setup_debug_level>`            'CCL Setup Debug Level' parameter.
+
+:ref:`solver_setup_debug_level <pre_processing_solver_setup_debug_level>`   'Solver Setup Debug Level' parameter.
+
+=========================================================================   =====================================
+
+.. rubric:: Included in:
+
+=============================================   ============================
+
+Parent                                                               Summary
+
+=============================================   ============================
+:ref:`flow_child <pre_processing_flow_child>`   'child_object_type' of flow.
+
+=============================================   ============================
+

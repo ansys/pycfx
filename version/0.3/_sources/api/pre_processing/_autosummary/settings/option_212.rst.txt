@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_212:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_212.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ====================================
+
+Parent                                                                                       Summary
+
+=============================================================   ====================================
+:ref:`iate_sources_child <pre_processing_iate_sources_child>`   'child_object_type' of iate_sources.
+
+=============================================================   ====================================
+

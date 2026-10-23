@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_component_child_2:
+
+component_child
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.component_child_2.component_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================   ==========================
+
+Attribute                                                                Summary
+
+===================================================   ==========================
+:ref:`option <pre_processing_option_156>`                The 'Component' option.
+
+:ref:`mass_fraction <pre_processing_mass_fraction>`   'Mass Fraction' parameter.
+
+===================================================   ==========================
+
+.. rubric:: Included in:
+
+=============================================   ==================================
+
+Parent                                                                     Summary
+
+=============================================   ==================================
+:ref:`component <pre_processing_component_2>`   A container for Component objects.
+
+=============================================   ==================================
+

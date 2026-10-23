@@ -1,0 +1,56 @@
+:orphan:
+
+.. _pre_processing_velocity:
+
+velocity
+========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.velocity.velocity
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================================================   =======================================================================================================
+
+Attribute                                                                                                                                                                                                   Summary
+
+=========================================================================================================   =======================================================================================================
+:ref:`option <pre_processing_option_297>`                                                                                                                                                    The 'Velocity' option.
+
+:ref:`normal_speed <pre_processing_normal_speed>`                                                                                                                                         'Normal Speed' parameter.
+
+:ref:`velocity_axial_component <pre_processing_velocity_axial_component>`                                                                                                     'Velocity Axial Component' parameter.
+
+:ref:`velocity_r_component <pre_processing_velocity_r_component>`                                                                                                                 'Velocity r Component' parameter.
+
+:ref:`velocity_theta_component <pre_processing_velocity_theta_component>`                                                                                                     'Velocity Theta Component' parameter.
+
+:ref:`u <pre_processing_u>`                                                                                                                                                                          'U' parameter.
+
+:ref:`v <pre_processing_v>`                                                                                                                                                                          'V' parameter.
+
+:ref:`w <pre_processing_w>`                                                                                                                                                                          'W' parameter.
+
+:ref:`mass_flow_rate <pre_processing_mass_flow_rate>`                                                                                                                                   'Mass Flow Rate' parameter.
+
+:ref:`perpendicular_coefficient_of_restitution <pre_processing_perpendicular_coefficient_of_restitution>`                                                     'Perpendicular Coefficient of Restitution' parameter.
+
+:ref:`parallel_coefficient_of_restitution <pre_processing_parallel_coefficient_of_restitution>`                                                                    'Parallel Coefficient of Restitution' parameter.
+
+:ref:`minimum_impact_angle <pre_processing_minimum_impact_angle>`                                                                                                                 'Minimum Impact Angle' parameter.
+
+:ref:`axis_definition <pre_processing_axis_definition>`                                                     Defines the axis for a cylindrical coordinate system or variables defined using cylindrical components.
+
+=========================================================================================================   =======================================================================================================
+
+.. rubric:: Included in:
+
+=================================================================   =============================================================
+
+Parent                                                                                                                    Summary
+
+=================================================================   =============================================================
+:ref:`boundary_conditions <pre_processing_boundary_conditions_2>`   Specifies boundary conditions for all equations being solved.
+
+=================================================================   =============================================================
+

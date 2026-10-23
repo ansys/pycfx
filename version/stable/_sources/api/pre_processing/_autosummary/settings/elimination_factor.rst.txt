@@ -1,0 +1,27 @@
+:orphan:
+
+.. _pre_processing_elimination_factor:
+
+elimination_factor
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.elimination_factor.elimination_factor
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   =============================================================
+
+Parent                                                                                                                Summary
+
+=============================================================   =============================================================
+:ref:`pressure_option <pre_processing_pressure_option>`              Specifies the pressure choice at an entrainment opening.
+
+:ref:`flow_direction <pre_processing_flow_direction>`                      Sets the velocity direction imposed at a boundary.
+
+:ref:`turbulence <pre_processing_turbulence>`                                    Sets conditions on turbulence at a boundary.
+
+:ref:`reaction_progress <pre_processing_reaction_progress_1>`   Defines the initialization of the reaction progress variable.
+
+=============================================================   =============================================================
+

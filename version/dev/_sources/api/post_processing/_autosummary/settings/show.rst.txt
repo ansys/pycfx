@@ -1,0 +1,116 @@
+:orphan:
+
+.. _post_processing_show:
+
+show
+====
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.show.show
+    :show-inheritance:
+
+.. rubric:: Arguments
+
+==================================   ==================================================================================
+
+Argument                                                                                                        Summary
+
+==================================   ==================================================================================
+:ref:`view <post_processing_view>`   View path or name. The default is for all four views if the view is not specified.
+
+==================================   ==================================================================================
+
+.. rubric:: Included in:
+
+==================================================================================   ==============================================
+
+Parent                                                                                                                      Summary
+
+==================================================================================   ==============================================
+:ref:`streamline_child <post_processing_streamline_child>`                                       'child_object_type' of streamline.
+
+:ref:`text_child <post_processing_text_child>`                                                         'child_object_type' of text.
+
+:ref:`turbo_surface_child <post_processing_turbo_surface_child>`                              'child_object_type' of turbo_surface.
+
+:ref:`turbo_line_child <post_processing_turbo_line_child>`                                       'child_object_type' of turbo_line.
+
+:ref:`point_child <post_processing_point_child>`                                                      'child_object_type' of point.
+
+:ref:`point_cloud_child <post_processing_point_cloud_child>`                                    'child_object_type' of point_cloud.
+
+:ref:`particle_cloud_child <post_processing_particle_cloud_child>`                           'child_object_type' of particle_cloud.
+
+:ref:`polyline_child <post_processing_polyline_child>`                                             'child_object_type' of polyline.
+
+:ref:`particle_track_child <post_processing_particle_track_child>`                           'child_object_type' of particle_track.
+
+:ref:`res_particle_track_child <post_processing_res_particle_track_child>`               'child_object_type' of res_particle_track.
+
+:ref:`subdomain_child <post_processing_subdomain_child>`                                          'child_object_type' of subdomain.
+
+:ref:`primitive2d_child <post_processing_primitive2d_child>`                                    'child_object_type' of primitive2d.
+
+:ref:`primitive3d_child <post_processing_primitive3d_child>`                                    'child_object_type' of primitive3d.
+
+:ref:`composite_child <post_processing_composite_child>`                                          'child_object_type' of composite.
+
+:ref:`composite_periodic_child <post_processing_composite_periodic_child>`               'child_object_type' of composite_periodic.
+
+:ref:`composite_inter_block_child <post_processing_composite_inter_block_child>`      'child_object_type' of composite_inter_block.
+
+:ref:`boundary_child <post_processing_boundary_child>`                                             'child_object_type' of boundary.
+
+:ref:`injection_region_child <post_processing_injection_region_child>`                     'child_object_type' of injection_region.
+
+:ref:`res_surface_child <post_processing_res_surface_child>`                                    'child_object_type' of res_surface.
+
+:ref:`wireframe_child <post_processing_wireframe_child>`                                          'child_object_type' of wireframe.
+
+:ref:`vector_child <post_processing_vector_child>`                                                   'child_object_type' of vector.
+
+:ref:`isosurface_child <post_processing_isosurface_child>`                                       'child_object_type' of isosurface.
+
+:ref:`iso_clip_child <post_processing_iso_clip_child>`                                             'child_object_type' of iso_clip.
+
+:ref:`vortex_core_region_child <post_processing_vortex_core_region_child>`               'child_object_type' of vortex_core_region.
+
+:ref:`user_surface_child <post_processing_user_surface_child>`                                 'child_object_type' of user_surface.
+
+:ref:`plane_child <post_processing_plane_child>`                                                      'child_object_type' of plane.
+
+:ref:`volume_child <post_processing_volume_child>`                                                   'child_object_type' of volume.
+
+:ref:`line_child <post_processing_line_child>`                                                         'child_object_type' of line.
+
+:ref:`contour_child <post_processing_contour_child>`                                                'child_object_type' of contour.
+
+:ref:`surface_group_child <post_processing_surface_group_child>`                              'child_object_type' of surface_group.
+
+:ref:`volume_rendering_child <post_processing_volume_rendering_child>`                     'child_object_type' of volume_rendering.
+
+:ref:`surface_of_revolution_child <post_processing_surface_of_revolution_child>`      'child_object_type' of surface_of_revolution.
+
+:ref:`legend_child <post_processing_legend_child>`                                                   'child_object_type' of legend.
+
+:ref:`default_legend_child <post_processing_default_legend_child>`                           'child_object_type' of default_legend.
+
+:ref:`coordinate_frame_child <post_processing_coordinate_frame_child>`                     'child_object_type' of coordinate_frame.
+
+:ref:`difference_object_child <post_processing_difference_object_child>`                  'child_object_type' of difference_object.
+
+:ref:`internal_vector_child <post_processing_internal_vector_child>`                        'child_object_type' of internal_vector.
+
+:ref:`internal_contour_child <post_processing_internal_contour_child>`                     'child_object_type' of internal_contour.
+
+:ref:`internal_point_child <post_processing_internal_point_child>`                           'child_object_type' of internal_point.
+
+:ref:`internal_point_cloud_child <post_processing_internal_point_cloud_child>`         'child_object_type' of internal_point_cloud.
+
+:ref:`internal_polyline_child <post_processing_internal_polyline_child>`                  'child_object_type' of internal_polyline.
+
+:ref:`internal_turbo_surface_child <post_processing_internal_turbo_surface_child>`   'child_object_type' of internal_turbo_surface.
+
+:ref:`internal_turbo_line_child <post_processing_internal_turbo_line_child>`            'child_object_type' of internal_turbo_line.
+
+==================================================================================   ==============================================
+

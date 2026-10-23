@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_fluid_child_8:
+
+fluid_child
+===========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fluid_child_8.fluid_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================   ==========================================================
+
+Attribute                                                                                                            Summary
+
+===============================================================   ==========================================================
+:ref:`sources <pre_processing_sources_5>`                         Holds the definition of sources for one or more equations.
+
+:ref:`particle_absorption <pre_processing_particle_absorption>`            Specifies the particle absorption in sub-domains.
+
+===============================================================   ==========================================================
+
+.. rubric:: Included in:
+
+=====================================   ==============================
+
+Parent                                                         Summary
+
+=====================================   ==============================
+:ref:`fluid <pre_processing_fluid_8>`   A container for Fluid objects.
+
+=====================================   ==============================
+

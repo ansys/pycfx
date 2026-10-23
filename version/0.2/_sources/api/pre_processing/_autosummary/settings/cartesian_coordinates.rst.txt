@@ -1,0 +1,37 @@
+:orphan:
+
+.. _pre_processing_cartesian_coordinates:
+
+cartesian_coordinates
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.cartesian_coordinates.cartesian_coordinates
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================================   ==============================================================================
+
+Parent                                                                                                                                                       Summary
+
+===================================================================================   ==============================================================================
+:ref:`user_point_child <pre_processing_user_point_child>`                                                                         'child_object_type' of user_point.
+
+:ref:`reflection_definition <pre_processing_reflection_definition>`                                                                            Defines a reflection.
+
+:ref:`reference_location <pre_processing_reference_location>`                         Defines the reference location of the Origin point in ORIGIN MOTION singleton.
+
+:ref:`rotational_reference_location <pre_processing_rotational_reference_location>`                    Sets the rotational reference location for absolute pressure.
+
+:ref:`buoyancy_reference_location <pre_processing_buoyancy_reference_location>`                          Sets the buoyancy reference location for absolute pressure.
+
+:ref:`source_point_child <pre_processing_source_point_child>`                                                                   'child_object_type' of source_point.
+
+:ref:`pressure_level_information <pre_processing_pressure_level_information>`                Sets the pressure level and location if not set by boundary conditions.
+
+:ref:`monitor_point_child <pre_processing_monitor_point_child>`                                                                'child_object_type' of monitor_point.
+
+:ref:`radiometer_child <pre_processing_radiometer_child>`                                                                         'child_object_type' of radiometer.
+
+===================================================================================   ==============================================================================
+

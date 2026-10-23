@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_centre_point_for_normal_distribution:
+
+centre_point_for_normal_distribution
+====================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.centre_point_for_normal_distribution.centre_point_for_normal_distribution
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ===================================================================
+
+Parent                                                                                                                    Summary
+
+===========================================================   ===================================================================
+:ref:`particle_position <pre_processing_particle_position>`   Defines how particle positions are to be distributed on a boundary.
+
+===========================================================   ===================================================================
+

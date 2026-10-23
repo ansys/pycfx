@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_variance_coefficient:
+
+variance_coefficient
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.variance_coefficient.variance_coefficient
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================   ====================================================
+
+Parent                                                                                             Summary
+
+===================================================   ====================================================
+:ref:`flame_stretch <pre_processing_flame_stretch>`   Flame stretch effect for turbulent burning velocity.
+
+===================================================   ====================================================
+

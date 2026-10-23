@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_turbulence_production_factor:
+
+turbulence_production_factor
+============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.turbulence_production_factor.turbulence_production_factor
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================================   ======================================
+
+Parent                                                                                                             Summary
+
+=================================================================================   ======================================
+:ref:`shear_velocity_scaling_model <pre_processing_shear_velocity_scaling_model>`   Sets the shear velocity scaling model.
+
+=================================================================================   ======================================
+

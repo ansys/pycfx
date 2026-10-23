@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_k_epsilon_regime:
+
+k_epsilon_regime
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.k_epsilon_regime.k_epsilon_regime
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================   =================================================================================
+
+Attribute                                                                                                                                 Summary
+
+=============================================================   =================================================================================
+:ref:`enabled <pre_processing_enabled_61>`                                                                    Enable the K EPSILON REGIME object.
+
+:ref:`k_coefficients <pre_processing_k_coefficients>`           Controls model coefficients for the Turbulence Kinetic Energy transport equation.
+
+:ref:`omega_coefficients <pre_processing_omega_coefficients>`   Controls model coefficients for the Turbulence Eddy Frequency transport equation.
+
+=============================================================   =================================================================================
+
+.. rubric:: Included in:
+
+===========================================================   ===========================================================================
+
+Parent                                                                                                                            Summary
+
+===========================================================   ===========================================================================
+:ref:`turbulence_model <pre_processing_turbulence_model>`     Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+:ref:`turbulence_model <pre_processing_turbulence_model_1>`   Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+===========================================================   ===========================================================================
+

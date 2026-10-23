@@ -1,0 +1,39 @@
+:orphan:
+
+.. _post_processing_reduction_factor:
+
+reduction_factor
+================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.reduction_factor.reduction_factor
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==============================================================================   ============================================
+
+Parent                                                                                                                Summary
+
+==============================================================================   ============================================
+:ref:`streamline_child <post_processing_streamline_child>`                                 'child_object_type' of streamline.
+
+:ref:`turbo_line_child <post_processing_turbo_line_child>`                                 'child_object_type' of turbo_line.
+
+:ref:`point_cloud_child <post_processing_point_cloud_child>`                              'child_object_type' of point_cloud.
+
+:ref:`particle_cloud_child <post_processing_particle_cloud_child>`                     'child_object_type' of particle_cloud.
+
+:ref:`particle_track_child <post_processing_particle_track_child>`                     'child_object_type' of particle_track.
+
+:ref:`res_particle_track_child <post_processing_res_particle_track_child>`         'child_object_type' of res_particle_track.
+
+:ref:`vector_child <post_processing_vector_child>`                                             'child_object_type' of vector.
+
+:ref:`internal_vector_child <post_processing_internal_vector_child>`                  'child_object_type' of internal_vector.
+
+:ref:`internal_point_cloud_child <post_processing_internal_point_cloud_child>`   'child_object_type' of internal_point_cloud.
+
+:ref:`internal_turbo_line_child <post_processing_internal_turbo_line_child>`      'child_object_type' of internal_turbo_line.
+
+==============================================================================   ============================================
+

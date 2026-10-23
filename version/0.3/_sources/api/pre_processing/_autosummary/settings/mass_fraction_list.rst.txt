@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_mass_fraction_list:
+
+mass_fraction_list
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.mass_fraction_list.mass_fraction_list
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================================   ===================================================
+
+Parent                                                                                                                              Summary
+
+=====================================================================================   ===================================================
+:ref:`particle_diameter_distribution <pre_processing_particle_diameter_distribution>`   Defines the size distribution for a particle group.
+
+=====================================================================================   ===================================================
+

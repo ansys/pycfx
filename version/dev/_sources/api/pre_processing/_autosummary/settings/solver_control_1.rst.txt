@@ -1,0 +1,88 @@
+:orphan:
+
+.. _pre_processing_solver_control_1:
+
+solver_control
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.solver_control_1.solver_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================================   =====================================================================================================================================
+
+Attribute                                                                                                                                                                                                                 Summary
+
+=========================================================================================   =====================================================================================================================================
+:ref:`enabled <pre_processing_enabled_154>`                                                                                                                                                     Enable the SOLVER CONTROL object.
+
+:ref:`turbulence_numerics <pre_processing_turbulence_numerics>`                                                                                                                        Numerics details for turbulence equations.
+
+:ref:`optimization_level <pre_processing_optimization_level>`                                                                                                                                     'Optimization Level' parameter.
+
+:ref:`advection_scheme <pre_processing_advection_scheme>`                                                                          Defines the scheme used by the solver to discretize the advection term in transport equations.
+
+:ref:`dynamic_model_control <pre_processing_dynamic_model_control>`                                                      Holds objects that control the temporary simplification of models to improve solver start-up robustness.
+
+:ref:`convergence_criteria <pre_processing_convergence_criteria>`                                                                                                          Specifies the criteria for final solution convergence.
+
+:ref:`convergence_control <pre_processing_convergence_control_3>`                                                                                                          Holds basic parameters that affect solver convergence.
+
+:ref:`interrupt_control <pre_processing_interrupt_control>`                                                                                                       Container for control conditions that cause the solver to stop.
+
+:ref:`transient_scheme <pre_processing_transient_scheme_1>`                                                                                                          Defines the discretization algorithm for the transient term.
+
+:ref:`immersed_solid_control <pre_processing_immersed_solid_control_1>`                                                                              Holds advanced parameters to control the details of Immersed solid handling.
+
+:ref:`particle_control <pre_processing_particle_control>`                                                                                          Holds objects that control the execution and convergence of particle tracking.
+
+:ref:`external_solver_coupling_control <pre_processing_external_solver_coupling_control>`                                                                                              'EXTERNAL SOLVER COUPLING CONTROL' object.
+
+:ref:`equation_class <pre_processing_equation_class_1>`                                                                                                                                   A container for Equation Class objects.
+
+:ref:`thermal_radiation_control <pre_processing_thermal_radiation_control>`                                                                          Holds parameters and objects that control the solution of Thermal Radiation.
+
+:ref:`body_forces <pre_processing_body_forces>`                                                                                                                             Defines the details of discretization of body forces.
+
+:ref:`junction_box_routines <pre_processing_junction_box_routines>`                                                                                                                               'JUNCTION BOX ROUTINES' object.
+
+:ref:`pressure_level_information <pre_processing_pressure_level_information>`                                                                             Sets the pressure level and location if not set by boundary conditions.
+
+:ref:`interpolation_scheme <pre_processing_interpolation_scheme>`                                                                                                      Defines discretization details for variable interpolation.
+
+:ref:`compressibility_control <pre_processing_compressibility_control>`                                                                                   Holds parameters that affect solver convergence for compressible flows.
+
+:ref:`mcf_energy_diffusion <pre_processing_mcf_energy_diffusion>`                           Defines the option for assembly of secondary enthalpy transport terms derived from species diffusion in multi-component fluids (MCF).
+
+:ref:`multiphase_control <pre_processing_multiphase_control>`                                                                                                                          Defines multiphase solver control details.
+
+:ref:`temperature_damping <pre_processing_temperature_damping>`                                                                                                                   Controls the relaxation/damping of temperature.
+
+:ref:`velocity_pressure_coupling <pre_processing_velocity_pressure_coupling>`                                                                                      Defines discretization details for velocity/pressure coupling.
+
+:ref:`elapsed_wall_clock_time <pre_processing_elapsed_wall_clock_time>`                                                                                                                Control run using wall clock time options.
+
+:ref:`rigid_body_control <pre_processing_rigid_body_control>`                                                                                                                   Holds objects that control the rigid body solver.
+
+:ref:`injection_control <pre_processing_injection_control>`                                                                                                                        Defines global controls for Injection Regions.
+
+:ref:`intersection_control <pre_processing_intersection_control_1>`                                                                                 Holds advanced parameters to control the details of interface discretization.
+
+:ref:`g_scalar_reinitialisation <pre_processing_g_scalar_reinitialisation>`                                                                                                   Controls reinitialization for the G Equation model.
+
+:ref:`linear_solver_control <pre_processing_linear_solver_control>`                                                                                                                               'LINEAR SOLVER CONTROL' object.
+
+=========================================================================================   =====================================================================================================================================
+
+.. rubric:: Included in:
+
+=============================================   ============================
+
+Parent                                                               Summary
+
+=============================================   ============================
+:ref:`flow_child <pre_processing_flow_child>`   'child_object_type' of flow.
+
+=============================================   ============================
+

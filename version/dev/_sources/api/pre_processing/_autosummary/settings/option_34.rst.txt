@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_34:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_34.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================   ==============
+
+Parent                                                         Summary
+
+=====================================================   ==============
+:ref:`heating_value <pre_processing_heating_value_1>`   Heating value.
+
+=====================================================   ==============
+

@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_transition_onset_correlation:
+
+transition_onset_correlation
+============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.transition_onset_correlation.transition_onset_correlation
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================================   =================================================================
+
+Attribute                                                                                                                                             Summary
+
+=========================================================================================   =================================================================
+:ref:`option <pre_processing_option_121>`                                                                          The 'Transition Onset Correlation' option.
+
+:ref:`transition_onset_reynolds_number <pre_processing_transition_onset_reynolds_number>`   Transition onset momentum thickness Reynolds number (Re_theta,c).
+
+=========================================================================================   =================================================================
+
+.. rubric:: Included in:
+
+=======================================================================   ==============================================
+
+Parent                                                                                                           Summary
+
+=======================================================================   ==============================================
+:ref:`transitional_turbulence <pre_processing_transitional_turbulence>`   Defines the model for transitional turbulence.
+
+=======================================================================   ==============================================
+

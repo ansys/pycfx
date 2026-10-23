@@ -1,0 +1,33 @@
+:orphan:
+
+.. _pre_processing_materials_list:
+
+materials_list
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.materials_list.materials_list
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================================   ===============================================================
+
+Parent                                                                                                                                Summary
+
+===========================================================================   ===============================================================
+:ref:`material_child <pre_processing_material_child>`                                                        'child_object_type' of material.
+
+:ref:`reactants <pre_processing_reactants>`                                          Specifies the reactant materials in a chemical reaction.
+
+:ref:`parent_material_child <pre_processing_parent_material_child>`                                   'child_object_type' of parent_material.
+
+:ref:`products <pre_processing_products>`                                             Defines the method of product generation in a reaction.
+
+:ref:`reactants <pre_processing_reactants_1>`                                        Specifies the reactant materials in a chemical reaction.
+
+:ref:`third_body_term <pre_processing_third_body_term>`                           Sets the Third Body (catalyst) term in a chemical reaction.
+
+:ref:`chemistry_post_processing <pre_processing_chemistry_post_processing>`   Controls the post processing of minor components and reactions.
+
+===========================================================================   ===============================================================
+

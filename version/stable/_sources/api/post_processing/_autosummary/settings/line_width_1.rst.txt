@@ -1,0 +1,37 @@
+:orphan:
+
+.. _post_processing_line_width_1:
+
+line_width
+==========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.line_width_1.line_width
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==============================================================================   ============================================
+
+Parent                                                                                                                Summary
+
+==============================================================================   ============================================
+:ref:`turbo_line_child <post_processing_turbo_line_child>`                                 'child_object_type' of turbo_line.
+
+:ref:`point_child <post_processing_point_child>`                                                'child_object_type' of point.
+
+:ref:`point_cloud_child <post_processing_point_cloud_child>`                              'child_object_type' of point_cloud.
+
+:ref:`polyline_child <post_processing_polyline_child>`                                       'child_object_type' of polyline.
+
+:ref:`line_child <post_processing_line_child>`                                                   'child_object_type' of line.
+
+:ref:`internal_point_child <post_processing_internal_point_child>`                     'child_object_type' of internal_point.
+
+:ref:`internal_point_cloud_child <post_processing_internal_point_cloud_child>`   'child_object_type' of internal_point_cloud.
+
+:ref:`internal_polyline_child <post_processing_internal_polyline_child>`            'child_object_type' of internal_polyline.
+
+:ref:`internal_turbo_line_child <post_processing_internal_turbo_line_child>`      'child_object_type' of internal_turbo_line.
+
+==============================================================================   ============================================
+

@@ -1,0 +1,44 @@
+:orphan:
+
+.. _pre_processing_source_point_child:
+
+source_point_child
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.source_point_child.source_point_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================   =============================================================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                                                   Summary
+
+===================================================================   =============================================================================================================================================================================================================================================
+:ref:`option <pre_processing_option_322>`                                                                                                                                                                                                                                                The 'Source Point' option.
+
+:ref:`cartesian_coordinates <pre_processing_cartesian_coordinates>`                                                                                                                                                                                             Position <x,y,z> specified by cartesian components.
+
+:ref:`coord_frame <pre_processing_coord_frame>`                       Local coordinate frame for computing expressions. The default at the top level of the command data structure is Coord 0, that is no transformation. The default at lower levels is to inherit the value from objects higher up the structure.
+
+:ref:`sources <pre_processing_sources_8>`                                                                                                                                                                                                                Holds the definition of sources for one or more equations.
+
+:ref:`bulk_sources <pre_processing_bulk_sources_2>`                                                                                                                                                                                                                     Specifies bulk sources in multi-fluid flow.
+
+:ref:`fluid <pre_processing_fluid_9>`                                                                                                                                                                                                                                                A container for Fluid objects.
+
+:ref:`solid <pre_processing_solid_4>`                                                                                                                                                                                                                                                A container for Solid objects.
+
+===================================================================   =============================================================================================================================================================================================================================================
+
+.. rubric:: Included in:
+
+=================================================   =====================================
+
+Parent                                                                            Summary
+
+=================================================   =====================================
+:ref:`source_point <pre_processing_source_point>`   A container for Source Point objects.
+
+=================================================   =====================================
+

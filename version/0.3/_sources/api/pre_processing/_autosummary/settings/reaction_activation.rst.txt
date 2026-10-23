@@ -1,0 +1,46 @@
+:orphan:
+
+.. _pre_processing_reaction_activation:
+
+reaction_activation
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.reaction_activation.reaction_activation
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================   =====================================
+
+Attribute                                                                                             Summary
+
+=====================================================================   =====================================
+:ref:`option <pre_processing_option_46>`                                    The 'Reaction Activation' option.
+
+:ref:`activation_energy <pre_processing_activation_energy>`                  Activation Energy of a reaction.
+
+:ref:`activation_temperature <pre_processing_activation_temperature>`   Activation Temperature of a reaction.
+
+=====================================================================   =====================================
+
+.. rubric:: Included in:
+
+=========================================================================   ===================================================
+
+Parent                                                                                                                  Summary
+
+=========================================================================   ===================================================
+:ref:`multiphase_reaction_rate <pre_processing_multiphase_reaction_rate>`                    'MULTIPHASE REACTION RATE' object.
+
+:ref:`char_oxidation_rate <pre_processing_char_oxidation_rate>`                                   'CHAR OXIDATION RATE' object.
+
+:ref:`char_product_ratio <pre_processing_char_product_ratio>`                                      'CHAR PRODUCT RATIO' object.
+
+:ref:`forward_reaction_rate <pre_processing_forward_reaction_rate>`                             'FORWARD REACTION RATE' object.
+
+:ref:`backward_reaction_rate <pre_processing_backward_reaction_rate>`       Defines the backwards rate for a chemical reaction.
+
+:ref:`knock_reaction_rate <pre_processing_knock_reaction_rate_1>`                                 'KNOCK REACTION RATE' object.
+
+=========================================================================   ===================================================
+

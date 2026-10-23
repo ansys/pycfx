@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_particle_mass_flow_absorption:
+
+particle_mass_flow_absorption
+=============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.particle_mass_flow_absorption.particle_mass_flow_absorption
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================================   ================================================
+
+Attribute                                                                                                                            Summary
+
+=========================================================================================   ================================================
+:ref:`enabled <pre_processing_enabled_134>`                                                 Enable the PARTICLE MASS FLOW ABSORPTION object.
+
+:ref:`mass_flow_absorption_coefficient <pre_processing_mass_flow_absorption_coefficient>`      'Mass Flow Absorption Coefficient' parameter.
+
+=========================================================================================   ================================================
+
+.. rubric:: Included in:
+
+=================================================================   =============================================================
+
+Parent                                                                                                                    Summary
+
+=================================================================   =============================================================
+:ref:`boundary_conditions <pre_processing_boundary_conditions_2>`   Specifies boundary conditions for all equations being solved.
+
+:ref:`boundary_conditions <pre_processing_boundary_conditions_6>`   Specifies boundary conditions for all equations being solved.
+
+=================================================================   =============================================================
+

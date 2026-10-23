@@ -1,0 +1,42 @@
+:orphan:
+
+.. _pre_processing_coarsening_control:
+
+coarsening_control
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.coarsening_control.coarsening_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================   =================================================
+
+Attribute                                                                                                           Summary
+
+=======================================================================   =================================================
+:ref:`enabled <pre_processing_enabled_185>`                                           Enable the COARSENING CONTROL object.
+
+:ref:`target_coarsening_rate <pre_processing_target_coarsening_rate>`          Target coarsening rate for radiation solver.
+
+:ref:`minimum_blocking_factor <pre_processing_minimum_blocking_factor>`   Minimum blocking factor per level for coarsening.
+
+:ref:`maximum_blocking_factor <pre_processing_maximum_blocking_factor>`   Maximum blocking factor per level for coarsening.
+
+:ref:`small_coarse_grid_size <pre_processing_small_coarse_grid_size>`              Size at which to stop coarsening a grid.
+
+:ref:`diagnostic_output_level <pre_processing_diagnostic_output_level>`                            Diagnostic Output Level.
+
+=======================================================================   =================================================
+
+.. rubric:: Included in:
+
+===========================================================================   ============================================================================
+
+Parent                                                                                                                                             Summary
+
+===========================================================================   ============================================================================
+:ref:`thermal_radiation_control <pre_processing_thermal_radiation_control>`   Holds parameters and objects that control the solution of Thermal Radiation.
+
+===========================================================================   ============================================================================
+

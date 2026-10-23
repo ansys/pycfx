@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_volume_resolution:
+
+volume_resolution
+=================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.volume_resolution.volume_resolution
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+======================================================================   ========================================
+
+Parent                                                                                                    Summary
+
+======================================================================   ========================================
+:ref:`volume_rendering_child <post_processing_volume_rendering_child>`   'child_object_type' of volume_rendering.
+
+======================================================================   ========================================
+

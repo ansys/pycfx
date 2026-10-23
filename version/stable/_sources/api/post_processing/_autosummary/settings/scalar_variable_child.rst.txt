@@ -1,0 +1,36 @@
+:orphan:
+
+.. _post_processing_scalar_variable_child:
+
+scalar_variable_child
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.scalar_variable_child.scalar_variable_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+========================================================   ============================================================================================
+
+Attribute                                                                                                                                       Summary
+
+========================================================   ============================================================================================
+:ref:`boundary_values <post_processing_boundary_values>`   Sets the type of boundary values to be presented for this variable (Conservative or Hybrid).
+
+:ref:`expression <post_processing_expression>`                                                                                      'expression' child.
+
+:ref:`user_units <post_processing_user_units>`                                                                                      'user_units' child.
+
+========================================================   ============================================================================================
+
+.. rubric:: Included in:
+
+========================================================   ========================
+
+Parent                                                                      Summary
+
+========================================================   ========================
+:ref:`scalar_variable <post_processing_scalar_variable>`   'scalar_variable' child.
+
+========================================================   ========================
+

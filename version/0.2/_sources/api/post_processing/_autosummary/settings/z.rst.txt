@@ -1,0 +1,25 @@
+:orphan:
+
+.. _post_processing_z:
+
+z
+=
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.z.z
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+====================================================================   =====================================================================================================================================================================================================
+
+Parent                                                                                                                                                                                                                                                               Summary
+
+====================================================================   =====================================================================================================================================================================================================
+:ref:`object_view_transform <post_processing_object_view_transform>`   This object contains object transformation info to be processed by the viewer. Like instance transform, this object should be associated with each geometry. It is usually specified as a sub-object.
+
+:ref:`plane_child <post_processing_plane_child>`                                                                                                                                                                                               'child_object_type' of plane.
+
+:ref:`clip_plane_child <post_processing_clip_plane_child>`                                                                                                                                                                                'child_object_type' of clip_plane.
+
+====================================================================   =====================================================================================================================================================================================================
+

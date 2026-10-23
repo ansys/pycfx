@@ -1,0 +1,58 @@
+:orphan:
+
+.. _pre_processing_fluid_pair_child:
+
+fluid_pair_child
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fluid_pair_child.fluid_pair_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================================   ============================================================================================================================================
+
+Attribute                                                                                                                                                                                                                Summary
+
+=================================================================================   ============================================================================================================================================
+:ref:`particle_coupling <pre_processing_particle_coupling>`                                                                                                                                       'Particle Coupling' parameter.
+
+:ref:`surface_tension_coefficient <pre_processing_surface_tension_coefficient>`                                                                                    Specifies a surface tension coefficient between a fluid pair.
+
+:ref:`interphase_transfer_model <pre_processing_interphase_transfer_model>`                                                                                                             Specifies transfer model between fluids.
+
+:ref:`mass_transfer <pre_processing_mass_transfer>`                                                                                                                                       Mass transfer models for a fluid pair.
+
+:ref:`momentum_transfer <pre_processing_momentum_transfer>`                                                                                                                 Specifies momentum transfer models for a fluid pair.
+
+:ref:`interphase_heat_transfer <pre_processing_interphase_heat_transfer>`                                                                                                    Specifies heat transfer model between a fluid pair.
+
+:ref:`turbulence_transfer <pre_processing_turbulence_transfer>`                                                                                                                Specifies turbulence transfer between two phases.
+
+:ref:`surface_tension_model <pre_processing_surface_tension_model>`                                                                    Sets parameters that control the surface tension force model at a free surface interface.
+
+:ref:`interphase_thermal_radiation <pre_processing_interphase_thermal_radiation>`                                                                                              Specifies radiative heat transfer between fluids.
+
+:ref:`additional_variable_pair <pre_processing_additional_variable_pair>`                                                                                                      A container for Additional Variable Pair objects.
+
+:ref:`component_pair <pre_processing_component_pair>`                                                                                                                                    A container for Component Pair objects.
+
+:ref:`particle_breakup <pre_processing_particle_breakup>`                                                                                                                                            Defines the breakup method.
+
+:ref:`particle_collision_model <pre_processing_particle_collision_model>`                                                                                                         Defines the particle-particle collision model.
+
+:ref:`interfacial_area_transport <pre_processing_interfacial_area_transport>`       Interfacial Area Transport Equation specification. Required when this option is selected for the interphase transfer model for a phase pair.
+
+=================================================================================   ============================================================================================================================================
+
+.. rubric:: Included in:
+
+=============================================   ===================================
+
+Parent                                                                      Summary
+
+=============================================   ===================================
+:ref:`fluid_pair <pre_processing_fluid_pair>`   A container for Fluid Pair objects.
+
+=============================================   ===================================
+

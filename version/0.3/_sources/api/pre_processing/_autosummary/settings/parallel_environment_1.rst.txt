@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_parallel_environment_1:
+
+parallel_environment
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.parallel_environment_1.parallel_environment
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================================   ========================================
+
+Attribute                                                                                                          Summary
+
+===============================================================================   ========================================
+:ref:`start_method <pre_processing_start_method>`                                                'Start Method' parameter.
+
+:ref:`maximum_number_of_processes <pre_processing_maximum_number_of_processes>`   'Maximum Number of Processes' parameter.
+
+:ref:`parallel_host_list <pre_processing_parallel_host_list>`                              'Parallel Host List' parameter.
+
+:ref:`job_submission <pre_processing_job_submission>`                                             'JOB SUBMISSION' object.
+
+===============================================================================   ========================================
+
+.. rubric:: Included in:
+
+=================================================================   =============================
+
+Parent                                                                                    Summary
+
+=================================================================   =============================
+:ref:`solver_step_control <pre_processing_solver_step_control>`     'SOLVER STEP CONTROL' object.
+
+:ref:`solver_step_control <pre_processing_solver_step_control_1>`   'SOLVER STEP CONTROL' object.
+
+=================================================================   =============================
+

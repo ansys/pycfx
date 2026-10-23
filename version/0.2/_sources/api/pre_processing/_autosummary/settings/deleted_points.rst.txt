@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_deleted_points:
+
+deleted_points
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.deleted_points.deleted_points
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================   =================================
+
+Attribute                                                               Summary
+
+===========================================   =================================
+:ref:`enabled <pre_processing_enabled_246>`   Enable the DELETED POINTS object.
+
+:ref:`option <pre_processing_option_465>`          The 'Deleted Points' option.
+
+===========================================   =================================
+
+.. rubric:: Included in:
+
+=======================================================================   =================================
+
+Parent                                                                                              Summary
+
+=======================================================================   =================================
+:ref:`operating_point_changes <pre_processing_operating_point_changes>`   'OPERATING POINT CHANGES' object.
+
+=======================================================================   =================================
+

@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_output_boundary_list:
+
+output_boundary_list
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.output_boundary_list.output_boundary_list
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================   ======================================
+
+Parent                                                                                             Summary
+
+=================================================================   ======================================
+:ref:`export_surface_child <pre_processing_export_surface_child>`   'child_object_type' of export_surface.
+
+:ref:`gt_suite_location <pre_processing_gt_suite_location>`                    'GT SUITE LOCATION' object.
+
+=================================================================   ======================================
+

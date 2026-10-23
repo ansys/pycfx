@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_reference_velocity:
+
+reference_velocity
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.reference_velocity.reference_velocity
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================================   ===============================================================
+
+Parent                                                                                                                                  Summary
+
+=============================================================================   ===============================================================
+:ref:`erosion_model <pre_processing_erosion_model>`                                                                     Particle erosion model.
+
+:ref:`bubble_departure_diameter <pre_processing_bubble_departure_diameter_1>`   Specifies bubble departure diameter for the wall boiling model.
+
+:ref:`erosion_model <pre_processing_erosion_model_1>`                                                                   Particle erosion model.
+
+=============================================================================   ===============================================================
+

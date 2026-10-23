@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_fraction_of_injection_velocity_magnitude:
+
+fraction_of_injection_velocity_magnitude
+========================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fraction_of_injection_velocity_magnitude.fraction_of_injection_velocity_magnitude
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   ============================================
+
+Parent                                                                                           Summary
+
+=========================================================   ============================================
+:ref:`swirl_definition <pre_processing_swirl_definition>`   Defines the initial droplet swirl component.
+
+=========================================================   ============================================
+

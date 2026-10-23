@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_engine_order:
+
+engine_order
+============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.engine_order.engine_order
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================   ==============================
+
+Parent                                                                                     Summary
+
+=================================================================   ==============================
+:ref:`excitation_frequency <pre_processing_excitation_frequency>`   'EXCITATION FREQUENCY' object.
+
+=================================================================   ==============================
+

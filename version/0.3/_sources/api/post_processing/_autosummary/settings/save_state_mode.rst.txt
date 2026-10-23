@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_save_state_mode:
+
+save_state_mode
+===============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.save_state_mode.save_state_mode
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+====================================   ===============================================================
+
+Parent                                                                                         Summary
+
+====================================   ===============================================================
+:ref:`state <post_processing_state>`   Stores parameters used by the readstate and savestate commands.
+
+====================================   ===============================================================
+

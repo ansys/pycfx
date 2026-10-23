@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_define_particle_data:
+
+define_particle_data
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.define_particle_data.define_particle_data
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================   =============================================================
+
+Parent                                                                                                                    Summary
+
+=================================================================   =============================================================
+:ref:`boundary_conditions <pre_processing_boundary_conditions_2>`   Specifies boundary conditions for all equations being solved.
+
+=================================================================   =============================================================
+

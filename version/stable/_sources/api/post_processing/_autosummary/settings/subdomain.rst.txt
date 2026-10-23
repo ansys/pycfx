@@ -1,0 +1,28 @@
+:orphan:
+
+.. _post_processing_subdomain:
+
+subdomain
+=========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.subdomain.subdomain
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`subdomain_child <post_processing_subdomain_child>`
+
+
+.. rubric:: Included in:
+
+==============================================   =========================================
+
+Parent                                                                             Summary
+
+==============================================   =========================================
+:ref:`results <post_processing_results>`         Encapsulates a CFX post-processing setup.
+
+:ref:`case_child <post_processing_case_child>`                'child_object_type' of case.
+
+==============================================   =========================================
+

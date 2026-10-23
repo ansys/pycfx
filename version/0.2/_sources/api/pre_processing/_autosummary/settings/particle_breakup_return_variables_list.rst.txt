@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_particle_breakup_return_variables_list:
+
+particle_breakup_return_variables_list
+======================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.particle_breakup_return_variables_list.particle_breakup_return_variables_list
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   ===========================
+
+Parent                                                                          Summary
+
+=========================================================   ===========================
+:ref:`particle_breakup <pre_processing_particle_breakup>`   Defines the breakup method.
+
+=========================================================   ===========================
+

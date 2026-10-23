@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_autoignition_model:
+
+autoignition_model
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.autoignition_model.autoignition_model
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================   ========================================
+
+Attribute                                                                                            Summary
+
+=================================================================   ========================================
+:ref:`enabled <pre_processing_enabled_84>`                             Enable the AUTOIGNITION MODEL object.
+
+:ref:`option <pre_processing_option_148>`                                   The 'Autoignition Model' option.
+
+:ref:`fuel_material <pre_processing_fuel_material>`                                      Main Fuel Material.
+
+:ref:`ignition_delay_time <pre_processing_ignition_delay_time_1>`   Correlation for autoignition delay time.
+
+:ref:`knock_reaction_rate <pre_processing_knock_reaction_rate_1>`              'KNOCK REACTION RATE' object.
+
+=================================================================   ========================================
+
+.. rubric:: Included in:
+
+===========================================================   ========================================
+
+Parent                                                                                         Summary
+
+===========================================================   ========================================
+:ref:`combustion_model <pre_processing_combustion_model_1>`   Defines the combustion model to be used.
+
+===========================================================   ========================================
+

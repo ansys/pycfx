@@ -1,0 +1,31 @@
+:orphan:
+
+.. _pre_processing_mass_fraction:
+
+mass_fraction
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.mass_fraction.mass_fraction
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================   ======================================
+
+Parent                                                                                             Summary
+
+=================================================================   ======================================
+:ref:`child_material_child <pre_processing_child_material_child>`   'child_object_type' of child_material.
+
+:ref:`component_child <pre_processing_component_child>`                  'child_object_type' of component.
+
+:ref:`component_child <pre_processing_component_child_1>`                'child_object_type' of component.
+
+:ref:`component_child <pre_processing_component_child_2>`                'child_object_type' of component.
+
+:ref:`soot <pre_processing_soot>`                                      Defines the initialization of Soot.
+
+:ref:`soot <pre_processing_soot_1>`                                    Defines the initialization of Soot.
+
+=================================================================   ======================================
+

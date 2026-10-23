@@ -1,0 +1,41 @@
+:orphan:
+
+.. _pre_processing_output_variables_list:
+
+output_variables_list
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.output_variables_list.output_variables_list
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================================   ======================================================
+
+Parent                                                                                                                           Summary
+
+===============================================================================   ======================================================
+:ref:`results <pre_processing_results>`                                           Defines the contents of the final solver results file.
+
+:ref:`backup_results_child <pre_processing_backup_results_child>`                                 'child_object_type' of backup_results.
+
+:ref:`transient_results_child <pre_processing_transient_results_child>`                        'child_object_type' of transient_results.
+
+:ref:`transient_statistics_child <pre_processing_transient_statistics_child>`               'child_object_type' of transient_statistics.
+
+:ref:`export_surface_child <pre_processing_export_surface_child>`                                 'child_object_type' of export_surface.
+
+:ref:`export_track_data <pre_processing_export_track_data>`                                                  'EXPORT TRACK DATA' object.
+
+:ref:`transient_blade_row_output <pre_processing_transient_blade_row_output>`                       'TRANSIENT BLADE ROW OUTPUT' object.
+
+:ref:`monitor_point_child <pre_processing_monitor_point_child>`                                    'child_object_type' of monitor_point.
+
+:ref:`monitor_surface_child <pre_processing_monitor_surface_child>`                              'child_object_type' of monitor_surface.
+
+:ref:`monitor_line_cloud_child <pre_processing_monitor_line_cloud_child>`                     'child_object_type' of monitor_line_cloud.
+
+:ref:`gt_suite_variable_selection <pre_processing_gt_suite_variable_selection>`                    'GT SUITE VARIABLE SELECTION' object.
+
+===============================================================================   ======================================================
+

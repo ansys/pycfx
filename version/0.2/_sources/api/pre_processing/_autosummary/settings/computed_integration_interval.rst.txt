@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_computed_integration_interval:
+
+computed_integration_interval
+=============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.computed_integration_interval.computed_integration_interval
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================================   =======================================
+
+Parent                                                                                                                  Summary
+
+=====================================================================================   =======================================
+:ref:`computed_integration_interval <pre_processing_computed_integration_interval_1>`   'COMPUTED INTEGRATION INTERVAL' object.
+
+=====================================================================================   =======================================
+

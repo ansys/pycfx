@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_sources:
+
+sources
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.sources.sources
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================   =========================================
+
+Attribute                                                                                     Summary
+
+=========================================================   =========================================
+:ref:`enabled <pre_processing_enabled_140>`                                Enable the SOURCES object.
+
+:ref:`radiation_source <pre_processing_radiation_source>`   A container for Radiation Source objects.
+
+:ref:`equation_source <pre_processing_equation_source>`      A container for Equation Source objects.
+
+=========================================================   =========================================
+
+.. rubric:: Included in:
+
+=======================================================   ===========================================================================
+
+Parent                                                                                                                        Summary
+
+=======================================================   ===========================================================================
+:ref:`boundary_source <pre_processing_boundary_source>`   Stores sources and other local modifications on a specific boundary object.
+
+=======================================================   ===========================================================================
+

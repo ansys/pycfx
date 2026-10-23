@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_create_1:
+
+create_1
+========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.create_1.create_1
+    :show-inheritance:
+
+.. rubric:: Arguments
+
+=================================   ===========================
+
+Argument                                                Summary
+
+=================================   ===========================
+:ref:`name <pre_processing_name>`   Set the name of the object.
+
+=================================   ===========================
+
+.. rubric:: Included in:
+
+===========================================================   ======================================================================================================
+
+Parent                                                                                                                                                       Summary
+
+===========================================================   ======================================================================================================
+:ref:`expressions <pre_processing_expressions>`                                                                      Definition of CFX Command Language Expressions.
+
+:ref:`expert_parameters <pre_processing_expert_parameters>`                               Hold advanced parameters used to control many aspects of solver operation.
+
+:ref:`user <pre_processing_user>`                             Object that stores user-defined parameters for use in user defined functions or junction box routines.
+
+===========================================================   ======================================================================================================
+

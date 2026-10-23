@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_heat_transfer_6:
+
+heat_transfer
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.heat_transfer_6.heat_transfer
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================================   ============================================
+
+Attribute                                                                                                                  Summary
+
+===================================================================================   ============================================
+:ref:`option <pre_processing_option_284>`                                                              The 'Heat Transfer' option.
+
+:ref:`heat_transfer_interface_model <pre_processing_heat_transfer_interface_model>`   Heat transfer models for a domain interface.
+
+===================================================================================   ============================================
+
+.. rubric:: Included in:
+
+=====================================================================   ========================================================
+
+Parent                                                                                                                   Summary
+
+=====================================================================   ========================================================
+:ref:`solid_interface_models <pre_processing_solid_interface_models>`   Holds the definition of models specific to an interface.
+
+=====================================================================   ========================================================
+

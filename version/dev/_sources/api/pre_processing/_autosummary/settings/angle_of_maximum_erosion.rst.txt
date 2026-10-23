@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_angle_of_maximum_erosion:
+
+angle_of_maximum_erosion
+========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.angle_of_maximum_erosion.angle_of_maximum_erosion
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================   =======================
+
+Parent                                                                  Summary
+
+=====================================================   =======================
+:ref:`erosion_model <pre_processing_erosion_model>`     Particle erosion model.
+
+:ref:`erosion_model <pre_processing_erosion_model_1>`   Particle erosion model.
+
+=====================================================   =======================
+

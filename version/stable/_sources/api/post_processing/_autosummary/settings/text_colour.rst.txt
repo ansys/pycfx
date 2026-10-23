@@ -1,0 +1,27 @@
+:orphan:
+
+.. _post_processing_text_colour:
+
+text_colour
+===========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.text_colour.text_colour
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==========================================================================   ==========================================
+
+Parent                                                                                                          Summary
+
+==========================================================================   ==========================================
+:ref:`particle_track_child <post_processing_particle_track_child>`               'child_object_type' of particle_track.
+
+:ref:`res_particle_track_child <post_processing_res_particle_track_child>`   'child_object_type' of res_particle_track.
+
+:ref:`contour_child <post_processing_contour_child>`                                    'child_object_type' of contour.
+
+:ref:`internal_contour_child <post_processing_internal_contour_child>`         'child_object_type' of internal_contour.
+
+==========================================================================   ==========================================
+

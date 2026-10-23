@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_blade_boundary:
+
+blade_boundary
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.blade_boundary.blade_boundary
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================================   ==============================================
+
+Parent                                                                                                                     Summary
+
+=================================================================================   ==============================================
+:ref:`excitation_frequency <pre_processing_excitation_frequency>`                                   'EXCITATION FREQUENCY' object.
+
+:ref:`fourier_transformation_child <pre_processing_fourier_transformation_child>`   'child_object_type' of fourier_transformation.
+
+=================================================================================   ==============================================
+

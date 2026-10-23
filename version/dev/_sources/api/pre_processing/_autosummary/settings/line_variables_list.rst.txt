@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_line_variables_list:
+
+line_variables_list
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.line_variables_list.line_variables_list
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================================================================   ===========================================================
+
+Parent                                                                                                                                                            Summary
+
+===========================================================================================================   ===========================================================
+:ref:`line_averaging_child <pre_processing_line_averaging_child>`                                                                  'child_object_type' of line_averaging.
+
+:ref:`line_interpolation_variable_options_child <pre_processing_line_interpolation_variable_options_child>`   'child_object_type' of line_interpolation_variable_options.
+
+===========================================================================================================   ===========================================================
+

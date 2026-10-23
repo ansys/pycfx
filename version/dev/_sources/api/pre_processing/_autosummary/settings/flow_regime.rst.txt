@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_flow_regime:
+
+flow_regime
+===========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.flow_regime.flow_regime
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================   ===================================================================================================
+
+Attribute                                                                                                                                                           Summary
+
+=====================================================================   ===================================================================================================
+:ref:`option <pre_processing_option_263>`                                                                                                         The 'Flow Regime' option.
+
+:ref:`blend_mach_number_type <pre_processing_blend_mach_number_type>`   Controls how the Mach number is calculated that is used in the Mach blending for mixed type inlets.
+
+:ref:`sonic_limiter <pre_processing_sonic_limiter>`                                                          States if a subsonic boundary should choke to remain subsonic.
+
+=====================================================================   ===================================================================================================
+
+.. rubric:: Included in:
+
+===============================================================   =============================================================
+
+Parent                                                                                                                  Summary
+
+===============================================================   =============================================================
+:ref:`boundary_conditions <pre_processing_boundary_conditions>`   Specifies boundary conditions for all equations being solved.
+
+===============================================================   =============================================================
+

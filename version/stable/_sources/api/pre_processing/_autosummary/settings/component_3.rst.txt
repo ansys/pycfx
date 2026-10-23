@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_component_3:
+
+component
+=========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.component_3.component
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`component_child <pre_processing_component_child_3>`
+
+
+.. rubric:: Included in:
+
+=================================================================   =============================================================
+
+Parent                                                                                                                    Summary
+
+=================================================================   =============================================================
+:ref:`boundary_conditions <pre_processing_boundary_conditions_5>`   Specifies boundary conditions for all equations being solved.
+
+=================================================================   =============================================================
+

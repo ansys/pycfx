@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_report_title:
+
+report_title
+============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.report_title.report_title
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==============================================   ====================================
+
+Parent                                                                        Summary
+
+==============================================   ====================================
+:ref:`title_page <post_processing_title_page>`   Defines the Title Page for a report.
+
+==============================================   ====================================
+

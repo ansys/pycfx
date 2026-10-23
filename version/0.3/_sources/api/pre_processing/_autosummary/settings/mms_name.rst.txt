@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_mms_name:
+
+mms_name
+========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.mms_name.mms_name
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================================   ===========================================
+
+Parent                                                                                                            Summary
+
+===========================================================================   ===========================================
+:ref:`variable_operator_child <pre_processing_variable_operator_child>`         'child_object_type' of variable_operator.
+
+:ref:`equation_definition_child <pre_processing_equation_definition_child>`   'child_object_type' of equation_definition.
+
+:ref:`hybrid_order_option_child <pre_processing_hybrid_order_option_child>`   'child_object_type' of hybrid_order_option.
+
+===========================================================================   ===========================================
+

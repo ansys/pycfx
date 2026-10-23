@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_solid_1:
+
+solid
+=====
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.solid_1.solid
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`solid_child <pre_processing_solid_child_1>`
+
+
+.. rubric:: Included in:
+
+===================================================================   ===============================================================================
+
+Parent                                                                                                                                        Summary
+
+===================================================================   ===============================================================================
+:ref:`nonoverlap_conditions <pre_processing_nonoverlap_conditions>`   Specifies boundary conditions on non overlap regions of a GGI domain interface.
+
+===================================================================   ===============================================================================
+

@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_mode_shape_definitions:
+
+mode_shape_definitions
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.mode_shape_definitions.mode_shape_definitions
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================   =========================================
+
+Attribute                                                                         Summary
+
+=============================================   =========================================
+:ref:`enabled <pre_processing_enabled_33>`      Enable the MODE SHAPE DEFINITIONS object.
+
+:ref:`mode_shape <pre_processing_mode_shape>`         A container for Mode Shape objects.
+
+=============================================   =========================================
+
+.. rubric:: Included in:
+
+=======================================   ===============================================================================
+
+Parent                                                                                                            Summary
+
+=======================================   ===============================================================================
+:ref:`library <pre_processing_library>`   Stores common object descriptions for reference in the main problem definition.
+
+=======================================   ===============================================================================
+

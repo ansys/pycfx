@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_target_blocks_per_partition:
+
+target_blocks_per_partition
+===========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.target_blocks_per_partition.target_blocks_per_partition
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================   ===============================
+
+Parent                                                                                        Summary
+
+===================================================================   ===============================
+:ref:`precoarsening_control <pre_processing_precoarsening_control>`   'PRECOARSENING CONTROL' object.
+
+===================================================================   ===============================
+

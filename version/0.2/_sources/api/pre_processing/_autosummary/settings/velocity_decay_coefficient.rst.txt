@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_velocity_decay_coefficient:
+
+velocity_decay_coefficient
+==========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.velocity_decay_coefficient.velocity_decay_coefficient
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================================   ================================================
+
+Parent                                                                                                                   Summary
+
+=============================================================================   ================================================
+:ref:`reference_burning_velocity <pre_processing_reference_burning_velocity>`   Laminar burning velocity at reference condition.
+
+=============================================================================   ================================================
+

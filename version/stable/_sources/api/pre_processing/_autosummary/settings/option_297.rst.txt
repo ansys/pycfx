@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_option_297:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_297.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================   ===========================================================
+
+Parent                                                                                            Summary
+
+===========================================   ===========================================================
+:ref:`velocity <pre_processing_velocity>`     Sets velocity part of mass and momentum boundary condition.
+
+:ref:`velocity <pre_processing_velocity_1>`   Sets velocity part of mass and momentum boundary condition.
+
+:ref:`velocity <pre_processing_velocity_2>`   Sets velocity part of mass and momentum boundary condition.
+
+===========================================   ===========================================================
+

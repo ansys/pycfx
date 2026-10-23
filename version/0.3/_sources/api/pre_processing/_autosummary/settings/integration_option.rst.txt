@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_integration_option:
+
+integration_option
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.integration_option.integration_option
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================================   ======================================================================
+
+Attribute                                                                                                                                              Summary
+
+=====================================================================================   ======================================================================
+:ref:`option <pre_processing_option_412>`                                                                                     The 'Integration Option' option.
+
+:ref:`normalisation <pre_processing_normalisation>`                                                                                 'Normalisation' parameter.
+
+:ref:`integration_multiplier <pre_processing_integration_multiplier>`                   Increases the baseline integration interval size by an integer number.
+
+:ref:`computed_integration_interval <pre_processing_computed_integration_interval_1>`                                  'COMPUTED INTEGRATION INTERVAL' object.
+
+=====================================================================================   ======================================================================
+
+.. rubric:: Included in:
+
+===============================================================   =====================================
+
+Parent                                                                                          Summary
+
+===============================================================   =====================================
+:ref:`monitor_point_child <pre_processing_monitor_point_child>`   'child_object_type' of monitor_point.
+
+===============================================================   =====================================
+

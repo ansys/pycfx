@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_188:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_188.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================   ===============================
+
+Parent                                                                                        Summary
+
+===================================================================   ===============================
+:ref:`junction_box_routines <pre_processing_junction_box_routines>`   'JUNCTION BOX ROUTINES' object.
+
+===================================================================   ===============================
+

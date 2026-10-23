@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_squared_length_scale_ratio:
+
+squared_length_scale_ratio
+==========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.squared_length_scale_ratio.squared_length_scale_ratio
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   ========================================================
+
+Parent                                                                                                       Summary
+
+=========================================================   ========================================================
+:ref:`sas_coefficients <pre_processing_sas_coefficients>`   Parameters of the SAS source term in the omega equation.
+
+=========================================================   ========================================================
+
