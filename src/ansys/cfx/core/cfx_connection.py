@@ -304,6 +304,7 @@ def _get_tls_channel(
     address: str,
     certificates_folder: str | None,
     options: list[tuple[str, int]] | None = None,
+    ready_timeout: float = 10,
 ):
     cert_file = f"{certificates_folder}/client.crt"
     key_file = f"{certificates_folder}/client.key"
@@ -314,7 +315,7 @@ def _get_tls_channel(
         raise RuntimeError(f"Missing required TLS files for mutual TLS: {', '.join(missing)}")
 
     certificate_chain, private_key, root_certificates = (
-        open(path, "rb").read() for path in (cert_file, key_file, ca_file)
+        Path(path).read_bytes() for path in (cert_file, key_file, ca_file)
     )
 
     creds = grpc.ssl_channel_credentials(
@@ -322,8 +323,20 @@ def _get_tls_channel(
         private_key=private_key,
         certificate_chain=certificate_chain,
     )
-    return grpc.secure_channel(target=address, credentials=creds, options=options)
+    channel = grpc.secure_channel(target=address, credentials=creds, options=options)
 
+    # Force the TLS handshake now. No RPC is sent, so the password is not required here.
+    try:
+        grpc.channel_ready_future(channel).result(timeout=ready_timeout)
+    except grpc.FutureTimeoutError as exc:
+        channel.close()
+        raise RuntimeError(
+            f"Could not establish a TLS connection to {address} within {ready_timeout} s. "
+            "Verify that the server is running, the address is correct, and the certificates "
+            f"in '{certificates_folder}' are valid for this server. Set "
+            "GRPC_VERBOSITY=debug and GRPC_TRACE=tsi,handshaker for handshake details."
+        ) from exc
+    return channel
 
 def _is_localhost(address: str) -> bool:
     # Unix domain sockets
