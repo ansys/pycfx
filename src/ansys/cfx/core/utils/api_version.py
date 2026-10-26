@@ -65,9 +65,7 @@ def _probe_engine_version(channel, metadata, api_tag: str) -> CFXVersion | None:
                 f"Details: {exc.details()}"
             ) from exc
         if code == grpc.StatusCode.UNAVAILABLE:
-            raise RuntimeError(
-                f"Could not reach the CFX server. Details: {exc.details()}"
-            ) from exc
+            raise RuntimeError(f"Could not reach the CFX server. Details: {exc.details()}") from exc
         raise
     return CFXVersion(response.output)
 

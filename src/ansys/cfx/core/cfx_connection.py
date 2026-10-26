@@ -338,6 +338,7 @@ def _get_tls_channel(
         ) from exc
     return channel
 
+
 def _is_localhost(address: str) -> bool:
     # Unix domain sockets
     if address.startswith("unix:/"):
