@@ -304,7 +304,7 @@ def _get_tls_channel(
     address: str,
     certificates_folder: str | None,
     options: list[tuple[str, int]] | None = None,
-    ready_timeout: float = 10,
+    ready_timeout: float = 10.0,
 ):
     cert_file = f"{certificates_folder}/client.crt"
     key_file = f"{certificates_folder}/client.key"
