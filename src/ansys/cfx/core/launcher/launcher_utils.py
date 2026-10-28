@@ -63,7 +63,7 @@ def check_docker_support():
 def _get_subprocess_kwargs_for_cfx(env: Dict[str, Any], argvals) -> Dict[str, Any]:
     scheduler_options = argvals.get("scheduler_options")
     is_slurm = scheduler_options and scheduler_options["scheduler"] == "slurm"
-    kwargs: Dict[str, Any] = {}
+    kwargs: Dict[str, Any] = {"stdin": subprocess.DEVNULL}
     if is_slurm:
         kwargs.update(stdout=subprocess.PIPE)
     if is_windows():
