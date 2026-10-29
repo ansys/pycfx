@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_solver_setup_debug_level:
+
+solver_setup_debug_level
+========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.solver_setup_debug_level.solver_setup_debug_level
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================   ========================================================================
+
+Parent                                                                                                       Summary
+
+=========================================   ========================================================================
+:ref:`cclsetup <pre_processing_cclsetup>`   Internal parameter settings for CCL to solver data structure processing.
+
+=========================================   ========================================================================
+

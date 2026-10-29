@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_motion_constraints:
+
+motion_constraints
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.motion_constraints.motion_constraints
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================   ================================================================================
+
+Parent                                                                                                                       Summary
+
+=================================================   ================================================================================
+:ref:`mesh_motion <pre_processing_mesh_motion>`     Defines the motion of a mesh boundary. NOTE - Not fully supported by the solver.
+
+:ref:`mesh_motion <pre_processing_mesh_motion_2>`   Defines the motion of a mesh boundary. NOTE - Not fully supported by the solver.
+
+=================================================   ================================================================================
+

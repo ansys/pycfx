@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_user_surface_child:
+
+user_surface_child
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.user_surface_child.user_surface_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================   ==========================
+
+Attribute                                                              Summary
+
+=================================================   ==========================
+:ref:`option <pre_processing_option_59>`            The 'User Surface' option.
+
+:ref:`visibility <pre_processing_visibility>`          'Visibility' parameter.
+
+:ref:`data_source <pre_processing_data_source_1>`        'DATA SOURCE' object.
+
+=================================================   ==========================
+
+.. rubric:: Included in:
+
+=================================================   =====================================
+
+Parent                                                                            Summary
+
+=================================================   =====================================
+:ref:`user_surface <pre_processing_user_surface>`   A container for User Surface objects.
+
+=================================================   =====================================
+

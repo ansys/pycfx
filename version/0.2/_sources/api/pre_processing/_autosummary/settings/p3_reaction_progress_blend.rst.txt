@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_p3_reaction_progress_blend:
+
+p3_reaction_progress_blend
+==========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.p3_reaction_progress_blend.p3_reaction_progress_blend
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================================================   =============================================================================
+
+Parent                                                                                                                                                                Summary
+
+=============================================================================================   =============================================================================
+:ref:`flame_surface_density_coefficients <pre_processing_flame_surface_density_coefficients>`   Controls model coefficients for the Flame Surface Density transport equation.
+
+=============================================================================================   =============================================================================
+

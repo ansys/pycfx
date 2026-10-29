@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_background_mesh_density:
+
+background_mesh_density
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.background_mesh_density.background_mesh_density
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==================================================   ==============================
+
+Parent                                                                      Summary
+
+==================================================   ==============================
+:ref:`domain_child <post_processing_domain_child>`   'child_object_type' of domain.
+
+==================================================   ==============================
+

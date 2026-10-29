@@ -1,0 +1,177 @@
+:orphan:
+
+.. _post_processing_internal_turbo_surface_child:
+
+internal_turbo_surface_child
+============================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.internal_turbo_surface_child.internal_turbo_surface_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+============================================================================================   =====================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                                    Summary
+
+============================================================================================   =====================================================================================================================================================================================================
+:ref:`apply_instancing_transform <post_processing_apply_instancing_transform>`                                                                                                                                         Toggles the instancing transformation for this graphics object in the viewer.
+
+:ref:`apply_texture <post_processing_apply_texture>`                                                                                                                                                                                                                 Toggles display of the texture.
+
+:ref:`axial_points <post_processing_axial_points>`                                                                                                                                                                                       Number of Sample points in Axial direction (AR coordinate).
+
+:ref:`blend_texture <post_processing_blend_texture>`                                                                                                                                                                                                                Toggles blending of the texture.
+
+:ref:`circumferential_average_mode <post_processing_circumferential_average_mode>`                                                                                                                        Method used to calculate circumferential average for colouring variable on a turbo object.
+
+:ref:`clip_cone <post_processing_clip_cone>`                                                                                                                                                                                                            Enables/disables clipping in a cone surface.
+
+:ref:`colour <post_processing_colour>`                                                                                                 A list of three numbers between 0 and 1, which represent the RGB (Red/Green/Blue) values to be used when colouring the faces of an object by constant colour.
+
+:ref:`colour_map <post_processing_colour_map>`                                                                                                                                                                                          The name of the colour map to use when colouring the object.
+
+:ref:`colour_mode <post_processing_colour_mode_1>`                                                                                                                                                                                                                              'colour_mode' child.
+
+:ref:`colour_scale <post_processing_colour_scale>`                                                                                                                                     Sets whether to colour the object with a Linear or Logarithmic scale. By default, the colour scale is Linear.
+
+:ref:`colour_variable <post_processing_colour_variable_1>`                                                                                                                                                                                                                  'colour_variable' child.
+
+:ref:`colour_variable_boundary_values <post_processing_colour_variable_boundary_values_1>`                                                                                                                                                                  'colour_variable_boundary_values' child.
+
+:ref:`culling_mode <post_processing_culling_mode>`                                                                                                                                                                                           Controls the face culling of this object in the viewer.
+
+:ref:`draw_contours <post_processing_draw_contours>`                                                                                                                                                                                                  Enables/disables drawing of the contour lines.
+
+:ref:`draw_faces <post_processing_draw_faces>`                                                                                                                                                                           Toggles the visibility filled faces for this graphics object in the viewer.
+
+:ref:`draw_lines <post_processing_draw_lines>`                                                                                                                                                                             Toggles the visibility of lines around each face of this graphics object.
+
+:ref:`instancing_transform <post_processing_instancing_transform>`                                                                                                                                                              Defines the TRANSFORM object that is used for the object instancing.
+
+:ref:`invert_surface_bound <post_processing_invert_surface_bound>`                                                                                                                                                            Reverses the surface bounds by selecting region outside surface bound.
+
+:ref:`lighting <post_processing_lighting>`                                                                                                                                                                                               Toggles the lighting of this graphics object in the viewer.
+
+:ref:`line_colour <post_processing_line_colour>`                                                                                                   A list of three numbers between 0 and 1, which represent the RGB (Red/Green/Blue) values to be used for colouring the lines on a graphics object.
+
+:ref:`line_colour_mode <post_processing_line_colour_mode>`                                                                                                                                                                                             Determines where to get the line colour from.
+
+:ref:`line_width <post_processing_line_width>`                                                                                                                                                                               Controls the width (in pixels) of lines drawn for this graphics object.
+
+:ref:`max <post_processing_max>`                                                                                                                                                                              The maximum value of a variable in the colour map when using a "User Specified" range.
+
+:ref:`maximum_number_of_sampling_points <post_processing_maximum_number_of_sampling_points>`                                                                                                                          Specifies the maximum number of sampling points for circumferential averaging.
+
+:ref:`min <post_processing_min>`                                                                                                                                                                              The minimum value of a variable in the colour map when using a "User Specified" range.
+
+:ref:`number_of_contours <post_processing_number_of_contours>`                                                                                                                                                                                  Specifies number of contour lines in a contour plot.
+
+:ref:`option <post_processing_option>`                                                                                                                                                                                                                                               'option' child.
+
+:ref:`point_1 <post_processing_point_1>`                                                                                                                                                                                                     An XYZ triple defining the first point for this object.
+
+:ref:`point_2 <post_processing_point_2>`                                                                                                                                                                                                    An XYZ triple defining the second point for this object.
+
+:ref:`point_coord_system <post_processing_point_coord_system>`                                                                                                                                                                    Specifies the coordinate system in which the points are specified.
+
+:ref:`radial_points <post_processing_radial_points>`                                                                                                                                                                                    Number of Sample points in Radial direction (AR coordinate).
+
+:ref:`range <post_processing_range>`                                                                  Sets the method used to calculate the extents of the colour map on an object. "Global" uses the range of values in the problem domain. "Local" uses the range of values on the current object.
+
+:ref:`related_variable_list <post_processing_related_variable_list>`                                                                                                                                                                            The list of variables that are related to an object.
+
+:ref:`render_edge_angle <post_processing_render_edge_angle>`                                                                                                                                                                 The angle between two faces used to limit visible edges in a wireframe.
+
+:ref:`span <post_processing_span>`                                                                                                                                                                                       The normalized Span turbo coordinate value for the location of this object.
+
+:ref:`span_max <post_processing_span_max>`                                                                                                                                                                                                       Upper bound of Span coordinate for a turbo surface.
+
+:ref:`span_min <post_processing_span_min>`                                                                                                                                                                                                       Lower bound of Span coordinate for a turbo surface.
+
+:ref:`span_points <post_processing_span_points>`                                                                                                                                                                                          Number of Sample points in S direction (turbo coordinate).
+
+:ref:`specular_lighting <post_processing_specular_lighting>`                                                                                                                                                                             Toggles the specular lighting of this object in the viewer.
+
+:ref:`streamwise_location <post_processing_streamwise_location>`                                                                                                                                                           The normalized M' turbo coordinate value for the location of this object.
+
+:ref:`streamwise_max <post_processing_streamwise_max>`                                                                                                                                                                                             Upper bound of M' coordinate for a turbo surface.
+
+:ref:`streamwise_min <post_processing_streamwise_min>`                                                                                                                                                                                             Lower bound of M' coordinate for a turbo surface.
+
+:ref:`streamwise_points <post_processing_streamwise_points>`                                                                                                                                                                              Number of Sample points in M direction (turbo coordinate).
+
+:ref:`surface_bound <post_processing_surface_bound>`                                                                                                                                                                                                   Defines surface bounding (Rectangular, None).
+
+:ref:`surface_drawing <post_processing_surface_drawing>`                                                                                                                                                                        Sets the algorithm used to shade the faces for this graphics object.
+
+:ref:`surface_type <post_processing_surface_type>`                                                                                                                                                                                            Indicates if the surface is a slice or sample surface.
+
+:ref:`texture_angle <post_processing_texture_angle>`                                                                                                                                                                                                                   The texture angle in degrees.
+
+:ref:`texture_direction <post_processing_texture_direction>`                                                                                                                                                                                      The direction of texture projection to the object.
+
+:ref:`texture_file <post_processing_texture_file>`                                                                                                                                                                                                        The texture file to display on the object.
+
+:ref:`texture_material <post_processing_texture_material>`                                                                                                                                                                                                          The material to use for texture.
+
+:ref:`texture_position <post_processing_texture_position>`                                                                                                                                                                                                              X-Y position of the texture.
+
+:ref:`texture_scale <post_processing_texture_scale>`                                                                                                                                                                                                                              The texture scale.
+
+:ref:`texture_type <post_processing_texture_type>`                                                                                                                                                                                                                       The type of texture to use.
+
+:ref:`theta <post_processing_theta>`                                                                                                                                                                                                     The Theta coordinate value for the location of this object.
+
+:ref:`theta_max <post_processing_theta_max>`                                                                                                                                                                                                        Upper bound of Theta coordinate for the surface.
+
+:ref:`theta_min <post_processing_theta_min>`                                                                                                                                                                                                        Lower bound of Theta coordinate for the surface.
+
+:ref:`theta_points <post_processing_theta_points>`                                                                                                                                                                                        Number of Sample points in T direction (turbo coordinate).
+
+:ref:`theta_surface_variable <post_processing_theta_surface_variable>`                                                                                                                                                         The name of the variable used to create turbo constant theta surface.
+
+:ref:`tile_texture <post_processing_tile_texture>`                                                                                                                                                                                                                    Toggles tiling of the texture.
+
+:ref:`transform_texture <post_processing_transform_texture>`                                                                                                                                                                                        Toggles transforming (spherical) of the texture.
+
+:ref:`transparency <post_processing_transparency>`                                                                                                                     Set between 0.0 (fully opaque) and 1.0 (fully transparent) to control the transparency of this graphics object in the viewer.
+
+:ref:`turbo_domain_list <post_processing_turbo_domain_list>`                                                                                                                                                                                   The list of domains over which to define this object.
+
+:ref:`turbo_view_plot_type <post_processing_turbo_view_plot_type>`                                                                                                                                                                            Plot types for B2B and Meridional plots in Turbo View.
+
+:ref:`visibility <post_processing_visibility>`                                                                                                                                                          Toggles the visibility of this graphics object in the viewer. THIS PARAMETER IS DEPRECATED!.
+
+:ref:`object_view_transform <post_processing_object_view_transform>`                           This object contains object transformation info to be processed by the viewer. Like instance transform, this object should be associated with each geometry. It is usually specified as a sub-object.
+
+============================================================================================   =====================================================================================================================================================================================================
+
+.. rubric:: Methods
+
+============================================   ========================================
+
+Method                                                                          Summary
+
+============================================   ========================================
+:ref:`hide <post_processing_hide>`                  Hide the object in a given view(s).
+
+:ref:`show <post_processing_show>`                  Show the object in a given view(s).
+
+:ref:`suspend <post_processing_suspend>`       Suspend immediate update for the object.
+
+:ref:`unsuspend <post_processing_unsuspend>`   Restore immediate update for the object.
+
+============================================   ========================================
+
+.. rubric:: Included in:
+
+======================================================================   ===============================
+
+Parent                                                                                           Summary
+
+======================================================================   ===============================
+:ref:`internal_turbo_surface <post_processing_internal_turbo_surface>`   'internal_turbo_surface' child.
+
+======================================================================   ===============================
+

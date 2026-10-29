@@ -1,0 +1,50 @@
+:orphan:
+
+.. _pre_processing_mesh_motion:
+
+mesh_motion
+===========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.mesh_motion.mesh_motion
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================   =======================================================================================================
+
+Attribute                                                                                                                                                             Summary
+
+===================================================================   =======================================================================================================
+:ref:`option <pre_processing_option_265>`                                                                                                           The 'Mesh Motion' option.
+
+:ref:`receive_from_ansys <pre_processing_receive_from_ansys>`                                                                                 'Receive from ANSYS' parameter.
+
+:ref:`ansys_interface <pre_processing_ansys_interface>`                                                                                          'ANSYS Interface' parameter.
+
+:ref:`send_to_ansys <pre_processing_send_to_ansys>`                                                             Short list of pre-defined data transfers to ANSYS Multifield.
+
+:ref:`rigid_body <pre_processing_rigid_body>`                                                                                                    Refers to RIGID BODY object.
+
+:ref:`motion_constraints <pre_processing_motion_constraints>`                                                          Motion constraints applied on the Rigid Body Solution.
+
+:ref:`displacement <pre_processing_displacement>`                                                                                       Defines displacement for mesh motion.
+
+:ref:`periodic_displacement <pre_processing_periodic_displacement>`                                                                     Defines displacement for mesh motion.
+
+:ref:`axis_definition <pre_processing_axis_definition>`               Defines the axis for a cylindrical coordinate system or variables defined using cylindrical components.
+
+:ref:`location <pre_processing_location_1>`                                                                                                Defines locations for mesh motion.
+
+===================================================================   =======================================================================================================
+
+.. rubric:: Included in:
+
+===============================================================   =============================================================
+
+Parent                                                                                                                  Summary
+
+===============================================================   =============================================================
+:ref:`boundary_conditions <pre_processing_boundary_conditions>`   Specifies boundary conditions for all equations being solved.
+
+===============================================================   =============================================================
+

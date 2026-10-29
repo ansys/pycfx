@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_open_case:
+
+open_case
+=========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.open_case.open_case
+    :show-inheritance:
+
+.. rubric:: Arguments
+
+===========================================================   =============================================================
+
+Argument                                                                                                            Summary
+
+===========================================================   =============================================================
+:ref:`file_name <pre_processing_file_name_2>`                                                        Name of the case file.
+
+:ref:`recover_case_file <pre_processing_recover_case_file>`   For CFX-Solver input files, locate and open the original case
+
+:ref:`replace_flow_data <pre_processing_replace_flow_data>`      For CFX-Solver input files, when the original case file is
+
+===========================================================   =============================================================
+
+.. rubric:: Included in:
+
+=================================   =========================================================
+
+Parent                                                                                Summary
+
+=================================   =========================================================
+:ref:`file <pre_processing_file>`   File-related operations for a CFX pre-processing session.
+
+=================================   =========================================================
+

@@ -1,0 +1,38 @@
+:orphan:
+
+.. _post_processing_file_processing:
+
+file_processing
+===============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.file_processing.file_processing
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+============================================================================================   =====================================================
+
+Attribute                                                                                                                                    Summary
+
+============================================================================================   =====================================================
+:ref:`path_stack <post_processing_path_stack>`                                                                  Stack of paths to look in for files.
+
+:ref:`processing_mode <post_processing_processing_mode>`                                       Indicates the type of file currently being processed.
+
+:ref:`supress_file_replacement_warnings <post_processing_supress_file_replacement_warnings>`              'supress_file_replacement_warnings' child.
+
+:ref:`user_files_directory <post_processing_user_files_directory>`                                                     'user_files_directory' child.
+
+============================================================================================   =====================================================
+
+.. rubric:: Included in:
+
+========================================   =========================================
+
+Parent                                                                       Summary
+
+========================================   =========================================
+:ref:`results <post_processing_results>`   Encapsulates a CFX post-processing setup.
+
+========================================   =========================================
+

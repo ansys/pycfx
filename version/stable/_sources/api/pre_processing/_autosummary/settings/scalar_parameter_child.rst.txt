@@ -1,0 +1,32 @@
+:orphan:
+
+.. _pre_processing_scalar_parameter_child:
+
+scalar_parameter_child
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.scalar_parameter_child.scalar_parameter_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================   ==================================
+
+Attribute                                                                          Summary
+
+=====================================================   ==================================
+:ref:`monitor_point <pre_processing_monitor_point_1>`   Name of an existing monitor point.
+
+=====================================================   ==================================
+
+.. rubric:: Included in:
+
+=========================================================   =========================================
+
+Parent                                                                                        Summary
+
+=========================================================   =========================================
+:ref:`scalar_parameter <pre_processing_scalar_parameter>`   A container for Scalar Parameter objects.
+
+=========================================================   =========================================
+

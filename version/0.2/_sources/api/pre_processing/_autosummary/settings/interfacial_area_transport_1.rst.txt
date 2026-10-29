@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_interfacial_area_transport_1:
+
+interfacial_area_transport
+==========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.interfacial_area_transport_1.interfacial_area_transport
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================   ==============================================================================================================================================
+
+Attribute                                                                                                                                                                                                          Summary
+
+=========================================================================   ==============================================================================================================================================
+:ref:`option <pre_processing_option_211>`                                                                                                                                         The 'Interfacial Area Transport' option.
+
+:ref:`interfacial_area_density <pre_processing_interfacial_area_density>`                                                                                             Interfacial area per unit volume between two phases.
+
+:ref:`interface_length_scale <pre_processing_interface_length_scale>`       Specifies an effective length scale or interfacial area density available for transfer processes under the mixture model option on FLUID PAIR.
+
+=========================================================================   ==============================================================================================================================================
+
+.. rubric:: Included in:
+
+=================================================================   =============================================================
+
+Parent                                                                                                                    Summary
+
+=================================================================   =============================================================
+:ref:`boundary_conditions <pre_processing_boundary_conditions_1>`   Specifies boundary conditions for all equations being solved.
+
+=================================================================   =============================================================
+

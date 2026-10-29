@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_number_of_timesteps:
+
+number_of_timesteps
+===================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.number_of_timesteps.number_of_timesteps
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+================================================   ====================
+
+Parent                                                          Summary
+
+================================================   ====================
+:ref:`tbr_options <post_processing_tbr_options>`   'tbr_options' child.
+
+================================================   ====================
+

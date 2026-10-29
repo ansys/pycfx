@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_maximum_number_of_processes:
+
+maximum_number_of_processes
+===========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.maximum_number_of_processes.maximum_number_of_processes
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================   ==============================
+
+Parent                                                                                       Summary
+
+===================================================================   ==============================
+:ref:`parallel_environment <pre_processing_parallel_environment_1>`   'PARALLEL ENVIRONMENT' object.
+
+===================================================================   ==============================
+

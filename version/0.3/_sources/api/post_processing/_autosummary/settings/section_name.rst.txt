@@ -1,0 +1,29 @@
+:orphan:
+
+.. _post_processing_section_name:
+
+section_name
+============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.section_name.section_name
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==============================================================================   ============================================
+
+Parent                                                                                                                Summary
+
+==============================================================================   ============================================
+:ref:`point_cloud_child <post_processing_point_cloud_child>`                              'child_object_type' of point_cloud.
+
+:ref:`polyline_child <post_processing_polyline_child>`                                       'child_object_type' of polyline.
+
+:ref:`user_surface_child <post_processing_user_surface_child>`                           'child_object_type' of user_surface.
+
+:ref:`internal_point_cloud_child <post_processing_internal_point_cloud_child>`   'child_object_type' of internal_point_cloud.
+
+:ref:`internal_polyline_child <post_processing_internal_polyline_child>`            'child_object_type' of internal_polyline.
+
+==============================================================================   ============================================
+

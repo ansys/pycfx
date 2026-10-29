@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_gt_suite_model:
+
+gt_suite_model
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.gt_suite_model.gt_suite_model
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ================================
+
+Parent                                                                                 Summary
+
+===========================================================   ================================
+:ref:`function_child <pre_processing_function_child>`         'child_object_type' of function.
+
+:ref:`gt_suite_coupling <pre_processing_gt_suite_coupling>`        'GT SUITE COUPLING' object.
+
+===========================================================   ================================
+

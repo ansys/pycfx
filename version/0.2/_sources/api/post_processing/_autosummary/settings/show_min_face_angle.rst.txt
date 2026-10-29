@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_show_min_face_angle:
+
+show_min_face_angle
+===================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.show_min_face_angle.show_min_face_angle
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+========================================================================   ================================
+
+Parent                                                                                              Summary
+
+========================================================================   ================================
+:ref:`mesh_statistics_options <post_processing_mesh_statistics_options>`   'mesh_statistics_options' child.
+
+========================================================================   ================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_309:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_309.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   =============================================================================================
+
+Parent                                                                                                                                                          Summary
+
+=======================================================================   =============================================================================================
+:ref:`injection_location_type <pre_processing_injection_location_type>`   Defines the type of location, physics or mesh regions, for the injection points to intersect.
+
+=======================================================================   =============================================================================================
+

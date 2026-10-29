@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_run_continuation_specification:
+
+run_continuation_specification
+==============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.run_continuation_specification.run_continuation_specification
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================   =================================================
+
+Attribute                                                                                 Summary
+
+=============================================   =================================================
+:ref:`enabled <pre_processing_enabled_242>`     Enable the RUN CONTINUATION SPECIFICATION object.
+
+:ref:`file_name <pre_processing_file_name_6>`                              'File Name' parameter.
+
+=============================================   =================================================
+
+.. rubric:: Included in:
+
+=========================================================================   ==================================
+
+Parent                                                                                                 Summary
+
+=========================================================================   ==================================
+:ref:`run_continuation_actions <pre_processing_run_continuation_actions>`   'RUN CONTINUATION ACTIONS' object.
+
+=========================================================================   ==================================
+

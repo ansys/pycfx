@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_95:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_95.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================   =========================================================
+
+Parent                                                                                  Summary
+
+===================================   =========================================================
+:ref:`force <pre_processing_force>`   Defines a general explicit force applied to a rigid body.
+
+===================================   =========================================================
+

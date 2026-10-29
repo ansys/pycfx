@@ -1,0 +1,89 @@
+:orphan:
+
+.. _post_processing_legend_child:
+
+legend_child
+============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.legend_child.legend_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+======================================================================   ============================================================================================
+
+Attribute                                                                                                                                                     Summary
+
+======================================================================   ============================================================================================
+:ref:`colour <post_processing_colour_1>`                                                                                                              'colour' child.
+
+:ref:`font <post_processing_font>`                                                                                                 The font name for an item of text.
+
+:ref:`legend_aspect <post_processing_legend_aspect>`                                                                              Legend bar width control parameter.
+
+:ref:`legend_format <post_processing_legend_format>`                                                           Parameter to modify string format of values on legend.
+
+:ref:`legend_orientation <post_processing_legend_orientation>`                                    Specifies whether to display the legend Vertically or Horizontally.
+
+:ref:`legend_plot <post_processing_legend_plot>`                                                                                                 'legend_plot' child.
+
+:ref:`legend_position <post_processing_legend_position>`                                                                                   XY position of the legend.
+
+:ref:`legend_resolution <post_processing_legend_resolution>`                                                         Number of colour subdivisions on the legend bar.
+
+:ref:`legend_shading <post_processing_legend_shading>`                                                     Controls interpolated shading of colour on the legend bar.
+
+:ref:`legend_size <post_processing_legend_size>`                                                                                     Scale factor to apply to legend.
+
+:ref:`legend_ticks <post_processing_legend_ticks>`                                                Number of points to provide variable values next to the Legend bar.
+
+:ref:`legend_title <post_processing_legend_title>`                                        Specifies the legend title when Legend Title Mode is set to User Specified.
+
+:ref:`legend_title_mode <post_processing_legend_title_mode>`                                                                          Controls the legend title type.
+
+:ref:`legend_x_justification <post_processing_legend_x_justification>`                              Specifies the horizontal justification of a text or overlay item.
+
+:ref:`legend_y_justification <post_processing_legend_y_justification>`                                Specifies the vertical justification of a text or overlay item.
+
+:ref:`related_object <post_processing_related_object>`                                                           Specifies the Object that this object is related to.
+
+:ref:`show_legend_units <post_processing_show_legend_units>`                                                                  Toggles display of units in the legend.
+
+:ref:`text_colour_mode <post_processing_text_colour_mode>`                                                              Determines where to get the text colour from.
+
+:ref:`text_height <post_processing_text_height>`                                                    The height an item of text should be, proportional to the screen.
+
+:ref:`text_rotation <post_processing_text_rotation>`                                            Counter-clockwise rotation, in degrees, to be applied to a text item.
+
+:ref:`visibility <post_processing_visibility>`                           Toggles the visibility of this graphics object in the viewer. THIS PARAMETER IS DEPRECATED!.
+
+======================================================================   ============================================================================================
+
+.. rubric:: Methods
+
+============================================   ========================================
+
+Method                                                                          Summary
+
+============================================   ========================================
+:ref:`hide <post_processing_hide>`                  Hide the object in a given view(s).
+
+:ref:`show <post_processing_show>`                  Show the object in a given view(s).
+
+:ref:`suspend <post_processing_suspend>`       Suspend immediate update for the object.
+
+:ref:`unsuspend <post_processing_unsuspend>`   Restore immediate update for the object.
+
+============================================   ========================================
+
+.. rubric:: Included in:
+
+======================================   ===============
+
+Parent                                           Summary
+
+======================================   ===============
+:ref:`legend <post_processing_legend>`   'legend' child.
+
+======================================   ===============
+

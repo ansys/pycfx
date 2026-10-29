@@ -1,0 +1,23 @@
+:orphan:
+
+.. _post_processing_recipe:
+
+recipe
+======
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.recipe.recipe
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==============================================================================   ============================================
+
+Parent                                                                                                                Summary
+
+==============================================================================   ============================================
+:ref:`user_scalar_variable_child <post_processing_user_scalar_variable_child>`   'child_object_type' of user_scalar_variable.
+
+:ref:`user_vector_variable_child <post_processing_user_vector_variable_child>`   'child_object_type' of user_vector_variable.
+
+==============================================================================   ============================================
+

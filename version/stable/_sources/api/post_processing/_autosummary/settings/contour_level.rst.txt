@@ -1,0 +1,25 @@
+:orphan:
+
+.. _post_processing_contour_level:
+
+contour_level
+=============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.contour_level.contour_level
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+========================================================================   =========================================
+
+Parent                                                                                                       Summary
+
+========================================================================   =========================================
+:ref:`polyline_child <post_processing_polyline_child>`                              'child_object_type' of polyline.
+
+:ref:`user_surface_child <post_processing_user_surface_child>`                  'child_object_type' of user_surface.
+
+:ref:`internal_polyline_child <post_processing_internal_polyline_child>`   'child_object_type' of internal_polyline.
+
+========================================================================   =========================================
+

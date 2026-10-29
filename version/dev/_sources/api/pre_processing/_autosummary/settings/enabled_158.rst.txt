@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_158:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_158.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   =======================================================
+
+Parent                                                                                                          Summary
+
+=============================================================   =======================================================
+:ref:`thermal_radiation <pre_processing_thermal_radiation_2>`   Sets the conditions on Thermal Radiation at a boundary.
+
+=============================================================   =======================================================
+

@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_turbulent_flame_thickness_limiter:
+
+turbulent_flame_thickness_limiter
+=================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.turbulent_flame_thickness_limiter.turbulent_flame_thickness_limiter
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================   ====================================================
+
+Attribute                                                                                                              Summary
+
+=======================================================================   ====================================================
+:ref:`enabled <pre_processing_enabled_92>`                                Enable the TURBULENT FLAME THICKNESS LIMITER object.
+
+:ref:`option <pre_processing_option_154>`                                      The 'Turbulent Flame Thickness Limiter' option.
+
+:ref:`minimum_flame_thickness <pre_processing_minimum_flame_thickness>`             Lower limit for turbulent flame thickness.
+
+:ref:`thickness_multiplier <pre_processing_thickness_multiplier>`                   Laminar flame thickness model coefficient.
+
+=======================================================================   ====================================================
+
+.. rubric:: Included in:
+
+===========================================================   ========================================
+
+Parent                                                                                         Summary
+
+===========================================================   ========================================
+:ref:`combustion_model <pre_processing_combustion_model_1>`   Defines the combustion model to be used.
+
+===========================================================   ========================================
+

@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_option_26:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_26.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ==========================
+
+Parent                                                                           Summary
+
+===========================================================   ==========================
+:ref:`table_generation <pre_processing_table_generation>`     'TABLE GENERATION' object.
+
+:ref:`table_generation <pre_processing_table_generation_1>`   'TABLE GENERATION' object.
+
+===========================================================   ==========================
+

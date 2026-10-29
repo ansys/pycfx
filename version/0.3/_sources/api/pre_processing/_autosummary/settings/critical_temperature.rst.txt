@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_critical_temperature:
+
+critical_temperature
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.critical_temperature.critical_temperature
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   ============================================================
+
+Parent                                                                                                                         Summary
+
+=======================================================================   ============================================================
+:ref:`equation_of_state <pre_processing_equation_of_state>`                                           Specifies the equation of state.
+
+:ref:`dynamic_viscosity_model <pre_processing_dynamic_viscosity_model>`   Specifies kinetic theory model used for molecular viscosity.
+
+=======================================================================   ============================================================
+

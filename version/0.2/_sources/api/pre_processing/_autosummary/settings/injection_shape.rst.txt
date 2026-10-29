@@ -1,0 +1,42 @@
+:orphan:
+
+.. _pre_processing_injection_shape:
+
+injection_shape
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.injection_shape.injection_shape
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================   ===================================
+
+Attribute                                                                                           Summary
+
+=====================================================================   ===================================
+:ref:`option <pre_processing_option_318>`                                     The 'Injection Shape' option.
+
+:ref:`fourier_a0_coefficient <pre_processing_fourier_a0_coefficient>`   'Fourier A0 Coefficient' parameter.
+
+:ref:`fourier_a1_coefficient <pre_processing_fourier_a1_coefficient>`   'Fourier A1 Coefficient' parameter.
+
+:ref:`fourier_b1_coefficient <pre_processing_fourier_b1_coefficient>`   'Fourier B1 Coefficient' parameter.
+
+:ref:`fourier_a2_coefficient <pre_processing_fourier_a2_coefficient>`   'Fourier A2 Coefficient' parameter.
+
+:ref:`fourier_b2_coefficient <pre_processing_fourier_b2_coefficient>`   'Fourier B2 Coefficient' parameter.
+
+=====================================================================   ===================================
+
+.. rubric:: Included in:
+
+=====================================================================   ================================
+
+Parent                                                                                           Summary
+
+=====================================================================   ================================
+:ref:`injection_distribution <pre_processing_injection_distribution>`   'INJECTION DISTRIBUTION' object.
+
+=====================================================================   ================================
+

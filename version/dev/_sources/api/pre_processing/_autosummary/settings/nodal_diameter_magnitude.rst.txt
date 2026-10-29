@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_nodal_diameter_magnitude:
+
+nodal_diameter_magnitude
+========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.nodal_diameter_magnitude.nodal_diameter_magnitude
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================   =====================
+
+Parent                                                          Summary
+
+===============================================   =====================
+:ref:`phase_angle <pre_processing_phase_angle>`   'PHASE ANGLE' object.
+
+===============================================   =====================
+

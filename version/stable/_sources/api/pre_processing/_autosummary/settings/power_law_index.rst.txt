@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_power_law_index:
+
+power_law_index
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.power_law_index.power_law_index
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================================   =========================================================================
+
+Parent                                                                                                                                                  Summary
+
+===================================================================================   =========================================================================
+:ref:`non_newtonian_viscosity_model <pre_processing_non_newtonian_viscosity_model>`          Hold the details for an advanced description of dynamic viscosity.
+
+:ref:`wall_nucleation_site_density <pre_processing_wall_nucleation_site_density_1>`   Specifies number of nuclei per unit wall area for the wall boiling model.
+
+===================================================================================   =========================================================================
+

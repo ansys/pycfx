@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_235:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_235.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================   ===============================
+
+Parent                                                                                        Summary
+
+===================================================================   ===============================
+:ref:`domain_search_control <pre_processing_domain_search_control>`   'DOMAIN SEARCH CONTROL' object.
+
+===================================================================   ===============================
+

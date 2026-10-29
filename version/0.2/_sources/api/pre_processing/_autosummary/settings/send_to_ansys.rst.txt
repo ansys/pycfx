@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_send_to_ansys:
+
+send_to_ansys
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.send_to_ansys.send_to_ansys
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================   ================================================================================
+
+Parent                                                                                                                           Summary
+
+=====================================================   ================================================================================
+:ref:`mesh_motion <pre_processing_mesh_motion>`         Defines the motion of a mesh boundary. NOTE - Not fully supported by the solver.
+
+:ref:`heat_transfer <pre_processing_heat_transfer>`                                    Specifies heat transfer conditions at a boundary.
+
+:ref:`heat_transfer <pre_processing_heat_transfer_2>`                                  Specifies heat transfer conditions at a boundary.
+
+=====================================================   ================================================================================
+

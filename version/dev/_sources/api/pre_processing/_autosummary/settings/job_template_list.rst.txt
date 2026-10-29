@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_job_template_list:
+
+job_template_list
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.job_template_list.job_template_list
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================================   =================================================
+
+Parent                                                                                                                              Summary
+
+=======================================================================================   =================================================
+:ref:`job_submission_definition_child <pre_processing_job_submission_definition_child>`   'child_object_type' of job_submission_definition.
+
+=======================================================================================   =================================================
+

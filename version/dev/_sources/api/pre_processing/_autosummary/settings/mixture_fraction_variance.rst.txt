@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_mixture_fraction_variance:
+
+mixture_fraction_variance
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.mixture_fraction_variance.mixture_fraction_variance
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================================   ========================================================
+
+Parent                                                                                                                           Summary
+
+=============================================================================   ========================================================
+:ref:`mixture <pre_processing_mixture>`                                            Specification of Fuel/Oxidiser mixture at a boundary.
+
+:ref:`mixture_fraction_variance <pre_processing_mixture_fraction_variance_1>`   Defines the initialization of mixture fraction variance.
+
+=============================================================================   ========================================================
+

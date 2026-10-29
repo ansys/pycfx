@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_create_other_side:
+
+create_other_side
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.create_other_side.create_other_side
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================   ================================
+
+Parent                                                                           Summary
+
+=====================================================   ================================
+:ref:`boundary_child <pre_processing_boundary_child>`   'child_object_type' of boundary.
+
+=====================================================   ================================
+

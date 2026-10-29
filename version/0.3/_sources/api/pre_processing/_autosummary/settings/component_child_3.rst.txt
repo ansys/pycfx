@@ -1,0 +1,32 @@
+:orphan:
+
+.. _pre_processing_component_child_3:
+
+component_child
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.component_child_3.component_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================   =======================
+
+Attribute                                                   Summary
+
+=========================================   =======================
+:ref:`option <pre_processing_option_156>`   The 'Component' option.
+
+=========================================   =======================
+
+.. rubric:: Included in:
+
+=============================================   ==================================
+
+Parent                                                                     Summary
+
+=============================================   ==================================
+:ref:`component <pre_processing_component_3>`   A container for Component objects.
+
+=============================================   ==================================
+

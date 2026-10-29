@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_injection_location_type:
+
+injection_location_type
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.injection_location_type.injection_location_type
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================   =================================================
+
+Attribute                                                                                                               Summary
+
+===========================================================================   =================================================
+:ref:`option <pre_processing_option_309>`                                                 The 'Injection Location Type' option.
+
+:ref:`location <pre_processing_location>`                                                                 'Location' parameter.
+
+:ref:`diagnostic_output_level <pre_processing_diagnostic_output_level>`                                Diagnostic Output Level.
+
+:ref:`surface_injection_control <pre_processing_surface_injection_control>`   Defines global controls for 2D Injection Regions.
+
+===========================================================================   =================================================
+
+.. rubric:: Included in:
+
+=====================================================================   ========================================
+
+Parent                                                                                                   Summary
+
+=====================================================================   ========================================
+:ref:`injection_region_child <pre_processing_injection_region_child>`   'child_object_type' of injection_region.
+
+=====================================================================   ========================================
+

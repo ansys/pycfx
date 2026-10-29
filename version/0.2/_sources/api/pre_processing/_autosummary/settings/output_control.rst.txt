@@ -1,0 +1,54 @@
+:orphan:
+
+.. _pre_processing_output_control:
+
+output_control
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.output_control.output_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================================   =======================================================
+
+Attribute                                                                                                                               Summary
+
+=====================================================================================   =======================================================
+:ref:`enabled <pre_processing_enabled_207>`                                                                   Enable the OUTPUT CONTROL object.
+
+:ref:`results <pre_processing_results>`                                                  Defines the contents of the final solver results file.
+
+:ref:`backup_results <pre_processing_backup_results>`                                                   A container for Backup Results objects.
+
+:ref:`backup_data_retention <pre_processing_backup_data_retention_1>`                    Controls how scheduled backup files are deleted/saved.
+
+:ref:`transient_results <pre_processing_transient_results>`                                          A container for Transient Results objects.
+
+:ref:`transient_statistics <pre_processing_transient_statistics>`                                 A container for Transient Statistics objects.
+
+:ref:`export_results <pre_processing_export_results>`                                                   A container for Export Results objects.
+
+:ref:`transient_particle_diagnostics <pre_processing_transient_particle_diagnostics>`   A container for Transient Particle Diagnostics objects.
+
+:ref:`particle_histogram <pre_processing_particle_histogram>`                                       A container for Particle Histogram objects.
+
+:ref:`transient_blade_row_output <pre_processing_transient_blade_row_output>`                              'TRANSIENT BLADE ROW OUTPUT' object.
+
+:ref:`monitor_objects <pre_processing_monitor_objects>`                                                               'MONITOR OBJECTS' object.
+
+:ref:`particle_track_file <pre_processing_particle_track_file>`                                      Controls output of particle track records.
+
+=====================================================================================   =======================================================
+
+.. rubric:: Included in:
+
+=============================================   ============================
+
+Parent                                                               Summary
+
+=============================================   ============================
+:ref:`flow_child <pre_processing_flow_child>`   'child_object_type' of flow.
+
+=============================================   ============================
+

@@ -1,0 +1,78 @@
+:orphan:
+
+.. _pre_processing_erosion_model_1:
+
+erosion_model
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.erosion_model_1.erosion_model
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================================   ===========================================
+
+Attribute                                                                                                                   Summary
+
+=====================================================================================   ===========================================
+:ref:`enabled <pre_processing_enabled_135>`                                                        Enable the EROSION MODEL object.
+
+:ref:`option <pre_processing_option_168>`                                                               The 'Erosion Model' option.
+
+:ref:`velocity_power_factor <pre_processing_velocity_power_factor>`                              'Velocity Power Factor' parameter.
+
+:ref:`reference_velocity <pre_processing_reference_velocity>`                                       'Reference Velocity' parameter.
+
+:ref:`k12_constant <pre_processing_k12_constant>`                                                         'K12 Constant' parameter.
+
+:ref:`reference_velocity_1 <pre_processing_reference_velocity_1>`                                 'Reference Velocity 1' parameter.
+
+:ref:`reference_velocity_2 <pre_processing_reference_velocity_2>`                                 'Reference Velocity 2' parameter.
+
+:ref:`reference_velocity_3 <pre_processing_reference_velocity_3>`                                 'Reference Velocity 3' parameter.
+
+:ref:`angle_of_maximum_erosion <pre_processing_angle_of_maximum_erosion>`                     'Angle of Maximum Erosion' parameter.
+
+:ref:`transition_angle <pre_processing_transition_angle>`                                             'Transition Angle' parameter.
+
+:ref:`wall_material_brinell_hardness <pre_processing_wall_material_brinell_hardness>`   'Wall Material Brinell Hardness' parameter.
+
+:ref:`constant_b <pre_processing_constant_b>`                                                               'Constant B' parameter.
+
+:ref:`constant_c <pre_processing_constant_c>`                                                               'Constant C' parameter.
+
+:ref:`constant_x <pre_processing_constant_x>`                                                               'Constant X' parameter.
+
+:ref:`constant_y <pre_processing_constant_y>`                                                               'Constant Y' parameter.
+
+:ref:`constant_w <pre_processing_constant_w>`                                                               'Constant W' parameter.
+
+:ref:`reference_diameter <pre_processing_reference_diameter>`                                       'Reference Diameter' parameter.
+
+:ref:`reference_erosion_rate <pre_processing_reference_erosion_rate>`                           'Reference Erosion Rate' parameter.
+
+:ref:`wall_material_vickers_hardness <pre_processing_wall_material_vickers_hardness>`   'Wall Material Vickers Hardness' parameter.
+
+:ref:`constant_n1 <pre_processing_constant_n1>`                                                            'Constant N1' parameter.
+
+:ref:`constant_n2 <pre_processing_constant_n2>`                                                            'Constant N2' parameter.
+
+:ref:`velocity_exponent <pre_processing_velocity_exponent>`                                          'Velocity Exponent' parameter.
+
+:ref:`diameter_exponent <pre_processing_diameter_exponent>`                                          'Diameter Exponent' parameter.
+
+=====================================================================================   ===========================================
+
+.. rubric:: Included in:
+
+=================================================================   =============================================================
+
+Parent                                                                                                                    Summary
+
+=================================================================   =============================================================
+:ref:`boundary_conditions <pre_processing_boundary_conditions_2>`   Specifies boundary conditions for all equations being solved.
+
+:ref:`boundary_conditions <pre_processing_boundary_conditions_6>`   Specifies boundary conditions for all equations being solved.
+
+=================================================================   =============================================================
+

@@ -1,0 +1,46 @@
+:orphan:
+
+.. _pre_processing_auxiliary_axis:
+
+auxiliary_axis
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.auxiliary_axis.auxiliary_axis
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================================   =======================================================================================================
+
+Attribute                                                                                                                                                                         Summary
+
+===============================================================================   =======================================================================================================
+:ref:`option <pre_processing_option_315>`                                                                                                                    The 'Auxiliary Axis' option.
+
+:ref:`unit_vector_x_component <pre_processing_unit_vector_x_component>`                                                                              'Unit Vector X Component' parameter.
+
+:ref:`unit_vector_y_component <pre_processing_unit_vector_y_component>`                                                                              'Unit Vector Y Component' parameter.
+
+:ref:`unit_vector_z_component <pre_processing_unit_vector_z_component>`                                                                              'Unit Vector Z Component' parameter.
+
+:ref:`unit_vector_axial_component <pre_processing_unit_vector_axial_component>`                                                                  'Unit Vector Axial Component' parameter.
+
+:ref:`unit_vector_r_component <pre_processing_unit_vector_r_component>`                                                                              'Unit Vector r Component' parameter.
+
+:ref:`unit_vector_theta_component <pre_processing_unit_vector_theta_component>`                                                                  'Unit Vector Theta Component' parameter.
+
+:ref:`axis_definition <pre_processing_axis_definition>`                           Defines the axis for a cylindrical coordinate system or variables defined using cylindrical components.
+
+===============================================================================   =======================================================================================================
+
+.. rubric:: Included in:
+
+=====================================================   =============================
+
+Parent                                                                        Summary
+
+=====================================================   =============================
+:ref:`hole_direction <pre_processing_hole_direction>`   Sets the injection direction.
+
+=====================================================   =============================
+

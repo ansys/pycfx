@@ -1,0 +1,60 @@
+:orphan:
+
+.. _pre_processing_variable_child:
+
+variable_child
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.variable_child.variable_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================   =======================================================================================================
+
+Attribute                                                                                                                                                 Summary
+
+=======================================================   =======================================================================================================
+:ref:`option <pre_processing_option>`                                                                                                      The 'Variable' option.
+
+:ref:`value <pre_processing_value>`                                                                        Input expression for VARIABLE value in relevant units.
+
+:ref:`xvalue <pre_processing_xvalue>`                                                     Input expression for vector VARIABLE component value in relevant units.
+
+:ref:`yvalue <pre_processing_yvalue>`                                                     Input expression for vector VARIABLE component value in relevant units.
+
+:ref:`zvalue <pre_processing_zvalue>`                                                     Input expression for vector VARIABLE component value in relevant units.
+
+:ref:`avalue <pre_processing_avalue>`                                         Input expression for cylindrical vector VARIABLE component value in relevant units.
+
+:ref:`rvalue <pre_processing_rvalue>`                                         Input expression for cylindrical vector VARIABLE component value in relevant units.
+
+:ref:`tvalue <pre_processing_tvalue>`                                         Input expression for cylindrical vector VARIABLE component value in relevant units.
+
+:ref:`xxvalue <pre_processing_xxvalue>`                                         Input expression for symmetric tensor VARIABLE component value in relevant units.
+
+:ref:`yyvalue <pre_processing_yyvalue>`                                         Input expression for symmetric tensor VARIABLE component value in relevant units.
+
+:ref:`zzvalue <pre_processing_zzvalue>`                                         Input expression for symmetric tensor VARIABLE component value in relevant units.
+
+:ref:`xyvalue <pre_processing_xyvalue>`                                         Input expression for symmetric tensor VARIABLE component value in relevant units.
+
+:ref:`xzvalue <pre_processing_xzvalue>`                                         Input expression for symmetric tensor VARIABLE component value in relevant units.
+
+:ref:`yzvalue <pre_processing_yzvalue>`                                         Input expression for symmetric tensor VARIABLE component value in relevant units.
+
+:ref:`axis_definition <pre_processing_axis_definition>`   Defines the axis for a cylindrical coordinate system or variables defined using cylindrical components.
+
+=======================================================   =======================================================================================================
+
+.. rubric:: Included in:
+
+=========================================   =================================
+
+Parent                                                                Summary
+
+=========================================   =================================
+:ref:`variable <pre_processing_variable>`   A container for Variable objects.
+
+=========================================   =================================
+

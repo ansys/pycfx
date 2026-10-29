@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_mfx_run_definition:
+
+mfx_run_definition
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.mfx_run_definition.mfx_run_definition
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================================   ========================================
+
+Attribute                                                                                                          Summary
+
+===============================================================================   ========================================
+:ref:`enabled <pre_processing_enabled_254>`                                          Enable the MFX RUN DEFINITION object.
+
+:ref:`mfx_run_mode <pre_processing_mfx_run_mode>`                                                'MFX Run Mode' parameter.
+
+:ref:`process_ansys_input_file <pre_processing_process_ansys_input_file>`            'Process ANSYS Input File' parameter.
+
+:ref:`restart_ansys_run <pre_processing_restart_ansys_run>`                                 'Restart ANSYS Run' parameter.
+
+:ref:`previous_ansys_run_database <pre_processing_previous_ansys_run_database>`   'Previous ANSYS Run Database' parameter.
+
+===============================================================================   ========================================
+
+.. rubric:: Included in:
+
+=======================================================   =========================
+
+Parent                                                                      Summary
+
+=======================================================   =========================
+:ref:`mfx_run_control <pre_processing_mfx_run_control>`   'MFX RUN CONTROL' object.
+
+=======================================================   =========================
+

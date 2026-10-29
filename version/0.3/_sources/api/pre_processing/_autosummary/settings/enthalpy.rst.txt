@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_enthalpy:
+
+enthalpy
+========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enthalpy.enthalpy
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================   ===========================
+
+Attribute                                                                       Summary
+
+=========================================================   ===========================
+:ref:`enabled <pre_processing_enabled_14>`                  Enable the ENTHALPY object.
+
+:ref:`table_generation <pre_processing_table_generation>`    'TABLE GENERATION' object.
+
+=========================================================   ===========================
+
+.. rubric:: Included in:
+
+=============================================================   ========================================================================================================================================================================================================================================
+
+Parent                                                                                                                                                                                                                                                                                           Summary
+
+=============================================================   ========================================================================================================================================================================================================================================
+:ref:`properties <pre_processing_properties>`                                                                                                                                                                                            Holds the definition of all physical properties for a material.
+
+:ref:`mixture_properties <pre_processing_mixture_properties>`   Used as a container for specifying bulk properties of both fixed and variable composition mixtures. Ideal Mixture is the default rule for all properties. Individual properties can be overridden using the singleton for that property.
+
+=============================================================   ========================================================================================================================================================================================================================================
+

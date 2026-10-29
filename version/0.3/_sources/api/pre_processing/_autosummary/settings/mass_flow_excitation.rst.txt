@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_mass_flow_excitation:
+
+mass_flow_excitation
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.mass_flow_excitation.mass_flow_excitation
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================   ====================================================
+
+Attribute                                                                                                      Summary
+
+===============================================================   ====================================================
+:ref:`enabled <pre_processing_enabled_129>`                                    Enable the MASS FLOW EXCITATION object.
+
+:ref:`option <pre_processing_option_276>`                                           The 'Mass Flow Excitation' option.
+
+:ref:`time_averaged_value <pre_processing_time_averaged_value>`   Input expression for time averaged generic quantity.
+
+:ref:`mass_flow_rate <pre_processing_mass_flow_rate>`                                      'Mass Flow Rate' parameter.
+
+===============================================================   ====================================================
+
+.. rubric:: Included in:
+
+===================================================================   =================================================================
+
+Parent                                                                                                                          Summary
+
+===================================================================   =================================================================
+:ref:`acoustic_reflectivity <pre_processing_acoustic_reflectivity>`   Specifies acoustic reflection attributes of a boundary condition.
+
+===================================================================   =================================================================
+

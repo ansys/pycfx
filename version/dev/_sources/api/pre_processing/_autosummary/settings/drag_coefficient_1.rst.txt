@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_drag_coefficient_1:
+
+drag_coefficient_1
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.drag_coefficient_1.drag_coefficient_1
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================================================================   ============================================================
+
+Attribute                                                                                                                                                                      Summary
+
+=======================================================================================================================   ============================================================
+:ref:`option <pre_processing_option_185>`                                                                                                               The 'Drag Coefficient' option.
+
+:ref:`drag_coefficient <pre_processing_drag_coefficient>`                                                                                                'Drag Coefficient' parameter.
+
+:ref:`particle_user_routine <pre_processing_particle_user_routine>`                                                                                          Name of the user routine.
+
+:ref:`argument_variables_list <pre_processing_argument_variables_list>`                                                                           'Argument Variables List' parameter.
+
+:ref:`particle_drag_coefficient_return_variables_list <pre_processing_particle_drag_coefficient_return_variables_list>`   'Particle Drag Coefficient Return Variables List' parameter.
+
+=======================================================================================================================   ============================================================
+
+.. rubric:: Included in:
+
+===============================================   ========================================
+
+Parent                                                                             Summary
+
+===============================================   ========================================
+:ref:`drag_force <pre_processing_drag_force_1>`   Specifies drag force between two phases.
+
+===============================================   ========================================
+

@@ -1,0 +1,59 @@
+:orphan:
+
+.. _post_processing_camera:
+
+camera
+======
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.camera.camera
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+================================================================   ======================================================================================================================================================
+
+Attribute                                                                                                                                                                                                         Summary
+
+================================================================   ======================================================================================================================================================
+:ref:`option <post_processing_option>`                                                                                                                                                                    'option' child.
+
+:ref:`pan <post_processing_pan>`                                                                          Defines the camera pan in screen (X, Y) coordinates, with positive X pointing right and positive Y pointing up.
+
+:ref:`pivot_point <post_processing_pivot_point>`                                                                                                             Defines the center of rotation (pivot point) for the camera.
+
+:ref:`rotation <post_processing_rotation>`                         Defines the camera rotation in terms of angles about X, Y and Z axis, respectively. X axis is pointing right, Y is pointing up and Z towards the user.
+
+:ref:`rotation_quaternion <post_processing_rotation_quaternion>`                                                                                                                  Defines the camera rotation quaternion.
+
+:ref:`scale <post_processing_scale>`                                                           Defines the relative scale of the camera view. With the default scale (1.0), the scene completely fills the viewer window.
+
+:ref:`send_to_viewer <post_processing_send_to_viewer>`                                                           A parameter that indicates whether or not the parent VIEW object should be updated with this CAMERA CCL.
+
+================================================================   ======================================================================================================================================================
+
+.. rubric:: Methods
+
+============================================   ========================================
+
+Method                                                                          Summary
+
+============================================   ========================================
+:ref:`suspend <post_processing_suspend>`       Suspend immediate update for the object.
+
+:ref:`unsuspend <post_processing_unsuspend>`   Restore immediate update for the object.
+
+============================================   ========================================
+
+.. rubric:: Included in:
+
+==============================================   =========================================
+
+Parent                                                                             Summary
+
+==============================================   =========================================
+:ref:`results <post_processing_results>`         Encapsulates a CFX post-processing setup.
+
+:ref:`view_child <post_processing_view_child>`                'child_object_type' of view.
+
+==============================================   =========================================
+

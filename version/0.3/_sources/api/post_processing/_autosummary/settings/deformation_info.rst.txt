@@ -1,0 +1,45 @@
+:orphan:
+
+.. _post_processing_deformation_info:
+
+deformation_info
+================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.deformation_info.deformation_info
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+============================================================   ===================================================
+
+Attribute                                                                                                  Summary
+
+============================================================   ===================================================
+:ref:`deformation_scale <post_processing_deformation_scale>`   The deformation scale currently used in the system.
+
+============================================================   ===================================================
+
+.. rubric:: Methods
+
+============================================   ========================================
+
+Method                                                                          Summary
+
+============================================   ========================================
+:ref:`suspend <post_processing_suspend>`       Suspend immediate update for the object.
+
+:ref:`unsuspend <post_processing_unsuspend>`   Restore immediate update for the object.
+
+============================================   ========================================
+
+.. rubric:: Included in:
+
+========================================   =========================================
+
+Parent                                                                       Summary
+
+========================================   =========================================
+:ref:`results <post_processing_results>`   Encapsulates a CFX post-processing setup.
+
+========================================   =========================================
+

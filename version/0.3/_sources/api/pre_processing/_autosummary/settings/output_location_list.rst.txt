@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_output_location_list:
+
+output_location_list
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.output_location_list.output_location_list
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================================   ==========================================
+
+Parent                                                                                                         Summary
+
+=========================================================================   ==========================================
+:ref:`monitor_surface_child <pre_processing_monitor_surface_child>`            'child_object_type' of monitor_surface.
+
+:ref:`monitor_line_cloud_child <pre_processing_monitor_line_cloud_child>`   'child_object_type' of monitor_line_cloud.
+
+=========================================================================   ==========================================
+

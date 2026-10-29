@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_sherwood_number:
+
+sherwood_number
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.sherwood_number.sherwood_number
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================================   ================================================
+
+Parent                                                                                                                           Summary
+
+=====================================================================================   ================================================
+:ref:`additional_variable_pair_child <pre_processing_additional_variable_pair_child>`   'child_object_type' of additional_variable_pair.
+
+:ref:`component_pair_child <pre_processing_component_pair_child>`                                 'child_object_type' of component_pair.
+
+=====================================================================================   ================================================
+

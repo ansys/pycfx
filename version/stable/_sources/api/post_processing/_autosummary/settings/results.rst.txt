@@ -1,0 +1,224 @@
+:orphan:
+
+.. _post_processing_results:
+
+results
+=======
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.results.results
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+==============================================================================================   =====================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                                      Summary
+
+==============================================================================================   =====================================================================================================================================================================================================
+:ref:`streamline <post_processing_streamline>`                                                                                                                                                                                                                                     'streamline' child.
+
+:ref:`text <post_processing_text>`                                                                                                                                                                                                                                                       'text' child.
+
+:ref:`text_item <post_processing_text_item>`                                                                                                                                                                                                                                        'text_item' child.
+
+:ref:`colour_map <post_processing_colour_map_1>`                                                                                                                                                                                                                                   'colour_map' child.
+
+:ref:`domain <post_processing_domain>`                                                                                                                                                                                                                                                 'domain' child.
+
+:ref:`turbo_surface <post_processing_turbo_surface>`                                                                                                                                                                                                                            'turbo_surface' child.
+
+:ref:`turbo_line <post_processing_turbo_line>`                                                                                                                                                                                                                                     'turbo_line' child.
+
+:ref:`chart <post_processing_chart>`                                                                                                                                                                                                                                                    'chart' child.
+
+:ref:`chart_series <post_processing_chart_series>`                                                                                                                                                                                                                               'chart_series' child.
+
+:ref:`chart_line <post_processing_chart_line>`                                                                                                                                                                                                                                     'chart_line' child.
+
+:ref:`point <post_processing_point_3>`                                                                                                                                                                                                                                                  'point' child.
+
+:ref:`internal_particle_injection_region <post_processing_internal_particle_injection_region>`                                                                                                                                                             'internal_particle_injection_region' child.
+
+:ref:`point_cloud <post_processing_point_cloud>`                                                                                                                                                                                                                                  'point_cloud' child.
+
+:ref:`particle_cloud <post_processing_particle_cloud>`                                                                                                                                                                                                                         'particle_cloud' child.
+
+:ref:`polyline <post_processing_polyline>`                                                                                                                                                                                                                                           'polyline' child.
+
+:ref:`particle_track <post_processing_particle_track>`                                                                                                                                                                                                                         'particle_track' child.
+
+:ref:`res_particle_track <post_processing_res_particle_track>`                                                                                                                                                                                                             'res_particle_track' child.
+
+:ref:`subdomain <post_processing_subdomain>`                                                                                                                                                                                                                                        'subdomain' child.
+
+:ref:`primitive2d <post_processing_primitive2d>`                                                                                                                                                                                                                                  'primitive2d' child.
+
+:ref:`primitive3d <post_processing_primitive3d>`                                                                                                                                                                                                                                  'primitive3d' child.
+
+:ref:`composite <post_processing_composite>`                                                                                                                                                                                                                                        'composite' child.
+
+:ref:`composite_periodic <post_processing_composite_periodic>`                                                                                                                                                                                                             'composite_periodic' child.
+
+:ref:`composite_inter_block <post_processing_composite_inter_block>`                                                                                                                                                                                                    'composite_inter_block' child.
+
+:ref:`boundary <post_processing_boundary>`                                                                                                                                                                                                                                           'boundary' child.
+
+:ref:`injection_region <post_processing_injection_region>`                                                                                                                                                                                                                   'injection_region' child.
+
+:ref:`res_surface <post_processing_res_surface>`                                                                                                                                                                                                                                  'res_surface' child.
+
+:ref:`wireframe <post_processing_wireframe>`                                                                                                                                                                                                                                        'wireframe' child.
+
+:ref:`vector <post_processing_vector>`                                                                                                                                                                                                                                                 'vector' child.
+
+:ref:`symbol <post_processing_symbol_2>`                                                                                                                                                                                                                                               'symbol' child.
+
+:ref:`isosurface <post_processing_isosurface>`                                                                                                                                                                                                                                     'isosurface' child.
+
+:ref:`iso_clip <post_processing_iso_clip>`                                                                                                                                                                                                                                           'iso_clip' child.
+
+:ref:`iso_clip_limiter <post_processing_iso_clip_limiter>`                                                                                                                                                                                                                   'iso_clip_limiter' child.
+
+:ref:`vortex_core_region <post_processing_vortex_core_region>`                                                                                                                                                                                                             'vortex_core_region' child.
+
+:ref:`user_surface <post_processing_user_surface>`                                                                                                                                                                                                                               'user_surface' child.
+
+:ref:`plane <post_processing_plane>`                                                                                                                                                                                                                                                    'plane' child.
+
+:ref:`clip_plane <post_processing_clip_plane>`                                                                                                                                                                                                                                     'clip_plane' child.
+
+:ref:`volume <post_processing_volume>`                                                                                                                                                                                                                                                 'volume' child.
+
+:ref:`line <post_processing_line>`                                                                                                                                                                                                                                                       'line' child.
+
+:ref:`contour <post_processing_contour>`                                                                                                                                                                                                                                              'contour' child.
+
+:ref:`surface_group <post_processing_surface_group>`                                                                                                                                                                                                                            'surface_group' child.
+
+:ref:`volume_rendering <post_processing_volume_rendering>`                                                                                                                                                                                                                   'volume_rendering' child.
+
+:ref:`surface_of_revolution <post_processing_surface_of_revolution>`                                                                                                                                                                                                    'surface_of_revolution' child.
+
+:ref:`case <post_processing_case>`                                                                                                                                                                                                                                                       'case' child.
+
+:ref:`view <post_processing_view_1>`                                                                                                                                                                                                                                                     'view' child.
+
+:ref:`vector_variable <post_processing_vector_variable>`                                                                                                                                                                                                                      'vector_variable' child.
+
+:ref:`scalar_variable <post_processing_scalar_variable>`                                                                                                                                                                                                                      'scalar_variable' child.
+
+:ref:`user_scalar_variable <post_processing_user_scalar_variable>`                                                                                                                                                                                                       'user_scalar_variable' child.
+
+:ref:`user_vector_variable <post_processing_user_vector_variable>`                                                                                                                                                                                                       'user_vector_variable' child.
+
+:ref:`table <post_processing_table>`                                                                                                                                                                                                                                                    'table' child.
+
+:ref:`comment <post_processing_comment>`                                                                                                                                                                                                                                              'comment' child.
+
+:ref:`keyframe <post_processing_keyframe>`                                                                                                                                                                                                                                           'keyframe' child.
+
+:ref:`default_instance_transform <post_processing_default_instance_transform>`                                                                                                                                                                                     'default_instance_transform' child.
+
+:ref:`instance_transform <post_processing_instance_transform>`                                                                                                                                                                                                             'instance_transform' child.
+
+:ref:`legend <post_processing_legend>`                                                                                                                                                                                                                                                 'legend' child.
+
+:ref:`default_legend <post_processing_default_legend>`                                                                                                                                                                                                                         'default_legend' child.
+
+:ref:`coordinate_frame <post_processing_coordinate_frame>`                                                                                                                                                                                                                   'coordinate_frame' child.
+
+:ref:`input_field <post_processing_input_field>`                                                                                                                                                                                                                                  'input_field' child.
+
+:ref:`response_field <post_processing_response_field>`                                                                                                                                                                                                                         'response_field' child.
+
+:ref:`turbo_plots <post_processing_turbo_plots>`                                                                                                                                                                                                                                  'turbo_plots' child.
+
+:ref:`external_names_map <post_processing_external_names_map>`                                                                                                                                                                                                             'external_names_map' child.
+
+:ref:`units_quantity_map <post_processing_units_quantity_map>`                                                                                                                                                                                                             'units_quantity_map' child.
+
+:ref:`variable_name_map <post_processing_variable_name_map>`                                                                                                                                                                                                                'variable_name_map' child.
+
+:ref:`variable_data_filter_rule <post_processing_variable_data_filter_rule>`                                                                                                                                                                                        'variable_data_filter_rule' child.
+
+:ref:`object_report_options <post_processing_object_report_options>`                                                                                                                                                                          Defines options for the Report, specific to each object.
+
+:ref:`library <post_processing_library>`                                                                                                                                                                                                LIBRARY is automatically read from the VARIABLES library file.
+
+:ref:`symbol_control <post_processing_symbol_control>`                                                                                                                                                                                                                         'symbol_control' child.
+
+:ref:`hardcopy <post_processing_hardcopy>`                                                                                                                        This object contains the settings used to control the creation of hardcopy output from the viewer. It is used by the "print" action.
+
+:ref:`data_reader <post_processing_data_reader>`                                                                                                                                This object contains the settings used to read results files into the post-processor. It is used by the "load" action.
+
+:ref:`tbr_options <post_processing_tbr_options>`                                                                                                                                                                                                                                  'tbr_options' child.
+
+:ref:`case_comparison <post_processing_case_comparison>`                                                                                               This object contains information and settings for the comparison of two (for now) results files or timesteps. It is used by DATA READER object.
+
+:ref:`deformation_info <post_processing_deformation_info>`                                                                                                                                                    This object contains the settings used to render deformation for all GeometricCCLObject.
+
+:ref:`export <post_processing_export>`                                                                                                                                                                                     Holds parameters which control the export of data to an external text file.
+
+:ref:`session <post_processing_session>`                                                                                                                                                                                                            Stores parameters used by the readsession command.
+
+:ref:`state <post_processing_state>`                                                                                                                                                                                                   Stores parameters used by the readstate and savestate commands.
+
+:ref:`viewport_manager <post_processing_viewport_manager>`                                                                                                                                                                This object stores the parameters that control the global viewport controls.
+
+:ref:`camera <post_processing_camera>`                                                                                                                                                                                 Defines a camera that can be used to specify the current view in a VIEW object.
+
+:ref:`cel <post_processing_cel>`                                                                                                                                                                                                                                                          'cel' child.
+
+:ref:`expressions <post_processing_expressions>`                                                                                                                                                                                                                                  'expressions' child.
+
+:ref:`table_cells <post_processing_table_cells>`                                                                                                                                                                                                                       Definition of the TABLE object.
+
+:ref:`title_page <post_processing_title_page>`                                                                                                                                                                                                                    Defines the Title Page for a report.
+
+:ref:`file_information_options <post_processing_file_information_options>`                                                                                                                                                                                           'file_information_options' child.
+
+:ref:`mesh_statistics_options <post_processing_mesh_statistics_options>`                                                                                                                                                                                              'mesh_statistics_options' child.
+
+:ref:`physics_summary_options <post_processing_physics_summary_options>`                                                                                                                                                                                              'physics_summary_options' child.
+
+:ref:`solution_summary_options <post_processing_solution_summary_options>`                                                                                                                                                                                           'solution_summary_options' child.
+
+:ref:`operating_maps <post_processing_operating_maps>`                                                                                                                                                                                                                         'operating_maps' child.
+
+:ref:`report_properties <post_processing_report_properties>`                                                                                                                                                                                                                'report_properties' child.
+
+:ref:`output_settings <post_processing_output_settings>`                                                                                                                                                                                                               Defines options for the Report.
+
+:ref:`publish <post_processing_publish>`                                                                                                                                                                                                                                           Defines the Report.
+
+:ref:`preview <post_processing_preview>`                                                                                                                                                                                                                                           Defines the Report.
+
+:ref:`report <post_processing_report>`                                                                                                                                                                                                                                             Defines the Report.
+
+:ref:`animation <post_processing_animation>`                                                                                                                                       Defines a Keyframe animation sequence. A list of KEYFRAME objects indicate the states between which to interpolate.
+
+:ref:`object_view_transform <post_processing_object_view_transform>`                             This object contains object transformation info to be processed by the viewer. Like instance transform, this object should be associated with each geometry. It is usually specified as a sub-object.
+
+:ref:`file_processing <post_processing_file_processing>`                                                                                                                                                                  Stores parameters indicating the state of processing state or session files.
+
+:ref:`parameterization <post_processing_parameterization>`                                                                                                                                                                                                                   'parameterization' child.
+
+:ref:`command_file <post_processing_command_file>`                                                                                                                                                                                                     Stores the Version of the current command file.
+
+:ref:`operating_points <post_processing_operating_points>`                                                                                                                                                                                    Contains information related to operating point results.
+
+:ref:`response_surface <post_processing_response_surface>`                                                                                                                                             Controls response surface and response points generation related to an operating point results.
+
+==============================================================================================   =====================================================================================================================================================================================================
+
+.. rubric:: Included in:
+
+======================================   ===========================================
+
+Parent                                                                       Summary
+
+======================================   ===========================================
+:ref:`root <ref_post_processing_root>`   Encapsulates a CFX post-processing session.
+
+======================================   ===========================================
+

@@ -1,0 +1,32 @@
+:orphan:
+
+.. _pre_processing_rotational_degrees_of_freedom:
+
+rotational_degrees_of_freedom
+=============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.rotational_degrees_of_freedom.rotational_degrees_of_freedom
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+========================================   ===========================================
+
+Attribute                                                                      Summary
+
+========================================   ===========================================
+:ref:`option <pre_processing_option_99>`   The 'Rotational Degrees Of Freedom' option.
+
+========================================   ===========================================
+
+.. rubric:: Included in:
+
+=============================================================   =======================================================
+
+Parent                                                                                                          Summary
+
+=============================================================   =======================================================
+:ref:`degrees_of_freedom <pre_processing_degrees_of_freedom>`   Defines the rigid body degrees of freedom to solve for.
+
+=============================================================   =======================================================
+

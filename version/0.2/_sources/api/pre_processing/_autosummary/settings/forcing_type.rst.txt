@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_forcing_type:
+
+forcing_type
+============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.forcing_type.forcing_type
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================   ====================================
+
+Parent                                                                                 Summary
+
+=======================================================   ====================================
+:ref:`boundary_model <pre_processing_boundary_model>`     Defines the immersed boundary model.
+
+:ref:`boundary_model <pre_processing_boundary_model_1>`   Defines the immersed boundary model.
+
+=======================================================   ====================================
+

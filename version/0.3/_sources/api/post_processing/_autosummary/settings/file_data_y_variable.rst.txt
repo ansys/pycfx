@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_file_data_y_variable:
+
+file_data_y_variable
+====================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.file_data_y_variable.file_data_y_variable
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==============================================================   ====================================
+
+Parent                                                                                        Summary
+
+==============================================================   ====================================
+:ref:`chart_series_child <post_processing_chart_series_child>`   'child_object_type' of chart_series.
+
+==============================================================   ====================================
+

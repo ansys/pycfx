@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_direction_1:
+
+direction
+=========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.direction_1.direction
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================   ====================================
+
+Attribute                                                                                              Summary
+
+=======================================================================   ====================================
+:ref:`option <pre_processing_option_306>`                                              The 'Direction' option.
+
+:ref:`unit_vector_x_component <pre_processing_unit_vector_x_component>`   'Unit Vector X Component' parameter.
+
+:ref:`unit_vector_y_component <pre_processing_unit_vector_y_component>`   'Unit Vector Y Component' parameter.
+
+:ref:`unit_vector_z_component <pre_processing_unit_vector_z_component>`   'Unit Vector Z Component' parameter.
+
+=======================================================================   ====================================
+
+.. rubric:: Included in:
+
+=========================================================   ==================================
+
+Parent                                                                                 Summary
+
+=========================================================   ==================================
+:ref:`radiometer_child <pre_processing_radiometer_child>`   'child_object_type' of radiometer.
+
+=========================================================   ==================================
+

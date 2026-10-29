@@ -1,0 +1,42 @@
+:orphan:
+
+.. _pre_processing_internal_diffusion:
+
+internal_diffusion
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.internal_diffusion.internal_diffusion
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================================   ============================================================================================================
+
+Attribute                                                                                                                                                                                          Summary
+
+===========================================================================================   ============================================================================================================
+:ref:`void_fraction <pre_processing_void_fraction>`                                                  Void fraction of the char particle, used for the internal diffusion in the Gibb char oxidation model.
+
+:ref:`volume_over_internal_surface_area <pre_processing_volume_over_internal_surface_area>`     Volume over internal surface area ratio, used for the internal diffusion in the Gibb char oxidation model.
+
+:ref:`internal_diffusion_efficiency <pre_processing_internal_diffusion_efficiency>`           Effective Internal diffusion coefficient of oxygen within the pores, used for the Gibb char oxidation model.
+
+:ref:`reference_dynamic_diffusivity <pre_processing_reference_dynamic_diffusivity>`                                                                                         Reference dynamic diffusivity.
+
+:ref:`reference_temperature <pre_processing_reference_temperature>`                                                                                                     'Reference Temperature' parameter.
+
+:ref:`temperature_exponent <pre_processing_temperature_exponent>`                                                                                                        'Temperature Exponent' parameter.
+
+===========================================================================================   ============================================================================================================
+
+.. rubric:: Included in:
+
+=========================================================================   ==================================
+
+Parent                                                                                                 Summary
+
+=========================================================================   ==================================
+:ref:`multiphase_reaction_rate <pre_processing_multiphase_reaction_rate>`   'MULTIPHASE REACTION RATE' object.
+
+=========================================================================   ==================================
+

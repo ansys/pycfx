@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_251:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_251.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================   ==============================
+
+Parent                                                                                       Summary
+
+===================================================================   ==============================
+:ref:`executable_selection <pre_processing_executable_selection_1>`   'EXECUTABLE SELECTION' object.
+
+===================================================================   ==============================
+

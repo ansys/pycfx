@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_components_to_ignore:
+
+components_to_ignore
+====================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.components_to_ignore.components_to_ignore
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==================================================   ==============================
+
+Parent                                                                      Summary
+
+==================================================   ==============================
+:ref:`domain_child <post_processing_domain_child>`   'child_object_type' of domain.
+
+==================================================   ==============================
+

@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_intermittency_coefficients:
+
+intermittency_coefficients
+==========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.intermittency_coefficients.intermittency_coefficients
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================   =============================================================
+
+Attribute                                                                                                                     Summary
+
+=====================================================================   =============================================================
+:ref:`enabled <pre_processing_enabled_47>`                                              Enable the INTERMITTENCY COEFFICIENTS object.
+
+:ref:`ci1_coefficient <pre_processing_ci1_coefficient>`                                       CI1 intermittency equation coefficient.
+
+:ref:`ci2_coefficient <pre_processing_ci2_coefficient>`                                       CI2 intermittency equation coefficient.
+
+:ref:`ci3_coefficient <pre_processing_ci3_coefficient>`                                       CI3 intermittency equation coefficient.
+
+:ref:`turbulent_flux_closure <pre_processing_turbulent_flux_closure>`   Controls the turbulent flux closure for a transport equation.
+
+=====================================================================   =============================================================
+
+.. rubric:: Included in:
+
+=======================================================================   ==============================================
+
+Parent                                                                                                           Summary
+
+=======================================================================   ==============================================
+:ref:`transitional_turbulence <pre_processing_transitional_turbulence>`   Defines the model for transitional turbulence.
+
+=======================================================================   ==============================================
+

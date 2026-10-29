@@ -1,0 +1,48 @@
+:orphan:
+
+.. _pre_processing_specified_mass_transfer:
+
+specified_mass_transfer
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.specified_mass_transfer.specified_mass_transfer
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================================================   ==============================================================
+
+Attribute                                                                                                                                                      Summary
+
+=====================================================================================================   ==============================================================
+:ref:`option <pre_processing_option_179>`                                                                                        The 'Specified Mass Transfer' option.
+
+:ref:`fluid1to2_mass_flux <pre_processing_fluid1to2_mass_flux>`                                                                           Mass flux from fluid 1 to 2.
+
+:ref:`fluid1to2_mass_flow <pre_processing_fluid1to2_mass_flow>`                                                             Mass flow rate from first fluid to second.
+
+:ref:`disperse_phase_particle_source <pre_processing_disperse_phase_particle_source>`                                       Specifies mass source generates particles.
+
+:ref:`under_relaxation_factor <pre_processing_under_relaxation_factor>`                                                           'Under Relaxation Factor' parameter.
+
+:ref:`fluid1to2_mass_flux_fluid1_coefficient <pre_processing_fluid1to2_mass_flux_fluid1_coefficient>`   Fluid 1 linearization coefficient of a mass flux from fluid 1.
+
+:ref:`fluid1to2_mass_flux_fluid2_coefficient <pre_processing_fluid1to2_mass_flux_fluid2_coefficient>`   Fluid 2 linearization coefficient of a mass flux from fluid 1.
+
+:ref:`fluid1to2_mass_flow_fluid1_coefficient <pre_processing_fluid1to2_mass_flow_fluid1_coefficient>`   Fluid 1 linearization coefficient of a mass flow from fluid 1.
+
+:ref:`fluid1to2_mass_flow_fluid2_coefficient <pre_processing_fluid1to2_mass_flow_fluid2_coefficient>`   Fluid 2 linearization coefficient of a mass flow from fluid 1.
+
+=====================================================================================================   ==============================================================
+
+.. rubric:: Included in:
+
+===================================================   ======================================
+
+Parent                                                                               Summary
+
+===================================================   ======================================
+:ref:`mass_transfer <pre_processing_mass_transfer>`   Mass transfer models for a fluid pair.
+
+===================================================   ======================================
+

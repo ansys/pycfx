@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_refiner_step_control:
+
+refiner_step_control
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.refiner_step_control.refiner_step_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================   =======================================
+
+Attribute                                                                                             Summary
+
+===================================================================   =======================================
+:ref:`enabled <pre_processing_enabled_252>`                           Enable the REFINER STEP CONTROL object.
+
+:ref:`runtime_priority <pre_processing_runtime_priority>`                       'Runtime Priority' parameter.
+
+:ref:`executable_selection <pre_processing_executable_selection_1>`            'EXECUTABLE SELECTION' object.
+
+===================================================================   =======================================
+
+.. rubric:: Included in:
+
+===========================================================   ===========================
+
+Parent                                                                            Summary
+
+===========================================================   ===========================
+:ref:`execution_control <pre_processing_execution_control>`   'EXECUTION CONTROL' object.
+
+===========================================================   ===========================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_134:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_134.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================================   =================================
+
+Parent                                                                                                          Summary
+
+===================================================================================   =================================
+:ref:`particle_mass_flow_absorption <pre_processing_particle_mass_flow_absorption>`   Defines the mass flow absorption.
+
+===================================================================================   =================================
+

@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_operating_point_changes:
+
+operating_point_changes
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.operating_point_changes.operating_point_changes
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================   ==========================================
+
+Attribute                                                                                        Summary
+
+===========================================================   ==========================================
+:ref:`enabled <pre_processing_enabled_245>`                   Enable the OPERATING POINT CHANGES object.
+
+:ref:`deleted_points <pre_processing_deleted_points>`                           'DELETED POINTS' object.
+
+:ref:`new_points <pre_processing_new_points>`                                       'NEW POINTS' object.
+
+:ref:`unmodified_points <pre_processing_unmodified_points>`                  'UNMODIFIED POINTS' object.
+
+:ref:`modified_points <pre_processing_modified_points>`                        'MODIFIED POINTS' object.
+
+===========================================================   ==========================================
+
+.. rubric:: Included in:
+
+=========================================================================================   ==========================================
+
+Parent                                                                                                                         Summary
+
+=========================================================================================   ==========================================
+:ref:`operating_point_run_continuation <pre_processing_operating_point_run_continuation>`   'OPERATING POINT RUN CONTINUATION' object.
+
+=========================================================================================   ==========================================
+

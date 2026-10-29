@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_124:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_124.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================   =========================================
+
+Parent                                                                                  Summary
+
+===================================================   =========================================
+:ref:`wall_velocity <pre_processing_wall_velocity>`   Specifies the velocity of a no-slip wall.
+
+===================================================   =========================================
+
