@@ -36,7 +36,7 @@ updates:
     cooldown:
       default-days: 7 # semver-* options are not applicable for GitHub Actions
       exclude:
-        - "ansys/actions/*"
+        - "ansys/actions"
     groups:
       actions:
         patterns:
@@ -55,7 +55,7 @@ updates:
     cooldown:
       default-days: 7 # semver-* options are not applicable for pre-commit
       exclude:
-        - "ansys/pre-commit-hooks/*"
+        - "ansys/pre-commit-hooks"
     groups:
       pre-commit:
         patterns:
