@@ -14,7 +14,14 @@ updates:
     ignore:
       - dependency-name: "attrs"
     cooldown:
-      default-days: 7
+      default-days: 7 # Fallback cooldown if no specific rule applies
+      semver-major-days: 30 # Cooldown for major version updates
+      semver-minor-days: 7 # Cooldown for minor version updates
+      semver-patch-days: 3 # Cooldown for patch updates
+      exclude:
+        - "ansys-platform-instancemanagement"
+        - "ansys-sphinx-theme"
+        - "ansys-tools-common"
 
   - package-ecosystem: "github-actions"
     directory: "/"
@@ -27,7 +34,9 @@ updates:
     commit-message:
       prefix: "build(actions)"
     cooldown:
-      default-days: 7
+      default-days: 7 # semver-* options are not applicable for GitHub Actions
+      exclude:
+        - "ansys/actions"
     groups:
       actions:
         patterns:
@@ -44,7 +53,9 @@ updates:
     commit-message:
       prefix: "build(pre-commit)"
     cooldown:
-      default-days: 7
+      default-days: 7 # semver-* options are not applicable for pre-commit
+      exclude:
+        - "ansys/pre-commit-hooks"
     groups:
       pre-commit:
         patterns:

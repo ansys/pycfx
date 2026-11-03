@@ -54,6 +54,7 @@ repos:
     rev: 3e8a8703264a2f4a69428a0aa4dcb512790b2c8c  # frozen: v6.0.0
     hooks:
       - id: check-merge-conflict
+      - id: check-yaml
       - id: trailing-whitespace
         exclude: ".(def|gtm|res)$|session.rst"
 
