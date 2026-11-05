@@ -1490,7 +1490,50 @@ def _get_new_keywords(obj, args, kwds):
     return newkwds
 
 
-class Action(_ChildObjectsMixin, Base, Generic[ChildTypeT]):
+class _CreatableNamedObjectMixin(collections.abc.MutableMapping, Generic[ChildTypeT]):
+    def create(self, name: str = "") -> ChildTypeT:
+        """Create a named object.
+
+        Parameters
+        ----------
+        name: str
+            Name of the new object.
+
+        Returns
+        -------
+        Object
+            Object that has been created.
+        """
+        with self._while_creating():
+            self.flproxy.create(self.path, name)
+        return self._create_child_object(name)
+
+    def __setitem__(self, name: str, value):
+        if name not in self.get_object_names() and (
+            not isinstance(value, collections.abc.Mapping) or not value
+        ):
+            # Don't create the object in the engine before sending the state as a dictionary,
+            # unless value is an empty dictionary.
+            with self._while_creating():
+                self.flproxy.create(self.path, name)
+
+        child = self._objects.get(name)
+        if not child:
+            child = self._create_child_object(name)
+        child.set_state(value)
+
+
+class _NonCreatableNamedObjectMixin(collections.abc.MutableMapping, Generic[ChildTypeT]):
+    def __setitem__(self, name: str, value):
+        if name not in self.get_object_names():
+            raise KeyError(name)
+        child = self._objects.get(name)
+        if not child:
+            child = self._create_child_object(name)
+        child.set_state(value)
+
+
+class Action(_ChildObjectsMixin, _CreatableNamedObjectMixin, Base, Generic[ChildTypeT]):
     """Provides an intermediate base class for the ``Command`` and ``Query`` classes."""
 
     _child_classes = {}
@@ -1739,49 +1782,6 @@ class _ChildNamedObjectAccessorMixin(collections.abc.MutableMapping):  # pragma:
         return l
 
 
-class _CreatableNamedObjectMixin(collections.abc.MutableMapping, Generic[ChildTypeT]):
-    def create(self, name: str = "") -> ChildTypeT:
-        """Create a named object.
-
-        Parameters
-        ----------
-        name: str
-            Name of the new object.
-
-        Returns
-        -------
-        Object
-            Object that has been created.
-        """
-        with self._while_creating():
-            self.flproxy.create(self.path, name)
-        return self._create_child_object(name)
-
-    def __setitem__(self, name: str, value):
-        if name not in self.get_object_names() and (
-            not isinstance(value, collections.abc.Mapping) or not value
-        ):
-            # Don't create the object in the engine before sending the state as a dictionary,
-            # unless value is an empty dictionary.
-            with self._while_creating():
-                self.flproxy.create(self.path, name)
-
-        child = self._objects.get(name)
-        if not child:
-            child = self._create_child_object(name)
-        child.set_state(value)
-
-
-class _NonCreatableNamedObjectMixin(collections.abc.MutableMapping, Generic[ChildTypeT]):
-    def __setitem__(self, name: str, value):
-        if name not in self.get_object_names():
-            raise KeyError(name)
-        child = self._objects.get(name)
-        if not child:
-            child = self._create_child_object(name)
-        child.set_state(value)
-
-
 class _HasAllowedValuesMixin:
     def allowed_values(self):
         """Get the allowed values of the object."""
@@ -1844,11 +1844,7 @@ def get_cls(name, info, parent=None, version=None, rename_setup_to_results=False
         if include_child_named_objects:  # pragma: no cover (inclusion of child named \
             # objects not used)
             bases = bases + (_ChildNamedObjectAccessorMixin,)
-        if (
-            (obj_type == "named-object" and user_creatable)
-            or (obj_type == "command")
-            or (obj_type == "query")
-        ):
+        if obj_type == "named-object" and user_creatable:
             bases = bases + (_CreatableNamedObjectMixin,)
         elif obj_type == "named-object":
             bases = bases + (_NonCreatableNamedObjectMixin,)
