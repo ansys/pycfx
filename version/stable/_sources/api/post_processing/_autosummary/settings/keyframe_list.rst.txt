@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_keyframe_list:
+
+keyframe_list
+=============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.keyframe_list.keyframe_list
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+============================================   ===================================================================================================================
+
+Parent                                                                                                                                                     Summary
+
+============================================   ===================================================================================================================
+:ref:`animation <post_processing_animation>`   Defines a Keyframe animation sequence. A list of KEYFRAME objects indicate the states between which to interpolate.
+
+============================================   ===================================================================================================================
+

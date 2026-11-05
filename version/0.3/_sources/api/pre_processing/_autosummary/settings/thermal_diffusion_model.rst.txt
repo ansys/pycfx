@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_thermal_diffusion_model:
+
+thermal_diffusion_model
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.thermal_diffusion_model.thermal_diffusion_model
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================================================   ===========================================================
+
+Attribute                                                                                                                                                   Summary
+
+=====================================================================================================   ===========================================================
+:ref:`option <pre_processing_option_197>`                                                                                     The 'Thermal Diffusion Model' option.
+
+:ref:`small_droplet_condensation_coefficient <pre_processing_small_droplet_condensation_coefficient>`   Condensation coefficient for Young droplet diffusion model.
+
+:ref:`young_alpha <pre_processing_young_alpha>`                                                                Alpha coefficient for Young droplet diffusion model.
+
+:ref:`young_beta <pre_processing_young_beta>`                                                                   Beta coefficient for Young droplet diffusion model.
+
+:ref:`mean_free_path_coefficient <pre_processing_mean_free_path_coefficient>`                                       Coefficient for mean free path diffusion model.
+
+=====================================================================================================   ===========================================================
+
+.. rubric:: Included in:
+
+=========================================================================   ===================================================
+
+Parent                                                                                                                  Summary
+
+=========================================================================   ===================================================
+:ref:`interphase_heat_transfer <pre_processing_interphase_heat_transfer>`   Specifies heat transfer model between a fluid pair.
+
+=========================================================================   ===================================================
+

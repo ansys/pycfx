@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_transformation:
+
+transformation
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.transformation.transformation
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`transformation_child <pre_processing_transformation_child>`
+
+
+.. rubric:: Included in:
+
+=============================================================================   ==========================================
+
+Parent                                                                                                             Summary
+
+=============================================================================   ==========================================
+:ref:`transformation_definitions <pre_processing_transformation_definitions>`   Contains alignment transformation objects.
+
+=============================================================================   ==========================================
+

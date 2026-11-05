@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_cr5_coefficient:
+
+cr5_coefficient
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.cr5_coefficient.cr5_coefficient
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================   ==============================================================================================================
+
+Parent                                                                                                                                                           Summary
+
+=======================================================   ==============================================================================================================
+:ref:`rs_coefficients <pre_processing_rs_coefficients>`   Controls model coefficients for the Reynolds Stress transport equations (general pressure strain formulation).
+
+=======================================================   ==============================================================================================================
+

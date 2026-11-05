@@ -1,0 +1,32 @@
+:orphan:
+
+.. _pre_processing_fluid_child_5:
+
+fluid_child
+===========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fluid_child_5.fluid_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================   =============================================================
+
+Attribute                                                                                                                 Summary
+
+=================================================================   =============================================================
+:ref:`boundary_conditions <pre_processing_boundary_conditions_6>`   Specifies boundary conditions for all equations being solved.
+
+=================================================================   =============================================================
+
+.. rubric:: Included in:
+
+=====================================   ==============================
+
+Parent                                                         Summary
+
+=====================================   ==============================
+:ref:`fluid <pre_processing_fluid_5>`   A container for Fluid objects.
+
+=====================================   ==============================
+

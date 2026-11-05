@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_run_mode:
+
+run_mode
+========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.run_mode.run_mode
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================   ========================
+
+Parent                                                                   Summary
+
+=====================================================   ========================
+:ref:`run_definition <pre_processing_run_definition>`   'RUN DEFINITION' object.
+
+=====================================================   ========================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_secondary_droplet_multiplier:
+
+secondary_droplet_multiplier
+============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.secondary_droplet_multiplier.secondary_droplet_multiplier
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================================   ===============================================
+
+Parent                                                                                                                          Summary
+
+=====================================================================================   ===============================================
+:ref:`particle_wall_film_interaction <pre_processing_particle_wall_film_interaction>`   Specifies particle-wall film interaction model.
+
+=====================================================================================   ===============================================
+

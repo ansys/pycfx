@@ -1,0 +1,60 @@
+:orphan:
+
+.. _pre_processing_library:
+
+library
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.library.library
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================================   ===================================================================
+
+Attribute                                                                                                                                       Summary
+
+=================================================================================   ===================================================================
+:ref:`variable <pre_processing_variable>`                                                                             A container for Variable objects.
+
+:ref:`variable_operator <pre_processing_variable_operator>`                                                  A container for Variable Operator objects.
+
+:ref:`equation_definitions <pre_processing_equation_definitions>`                                          Contains definitions for standard equations.
+
+:ref:`additional_variable <pre_processing_additional_variable>`                                            A container for Additional Variable objects.
+
+:ref:`cel <pre_processing_cel>`                                                     Stores user-defined CFX Command Language functions and expressions.
+
+:ref:`gt_suite_model <pre_processing_gt_suite_model_1>`                                                         A container for Gt Suite Model objects.
+
+:ref:`material <pre_processing_material>`                                                                             A container for Material objects.
+
+:ref:`reaction <pre_processing_reaction>`                                                                             A container for Reaction objects.
+
+:ref:`user_routine_definitions <pre_processing_user_routine_definitions>`                                       Contains definitions for user routines.
+
+:ref:`material_group <pre_processing_material_group_1>`                                                         A container for Material Group objects.
+
+:ref:`hybrid_order_option <pre_processing_hybrid_order_option>`                                            A container for Hybrid Order Option objects.
+
+:ref:`coordinate_frame_definitions <pre_processing_coordinate_frame_definitions>`                                      Stores coordinate frame objects.
+
+:ref:`user_location_definitions <pre_processing_user_location_definitions>`                                    Contains definitions for user locations.
+
+:ref:`transformation_definitions <pre_processing_transformation_definitions>`                                Contains alignment transformation objects.
+
+:ref:`mode_shape_definitions <pre_processing_mode_shape_definitions>`                                                        Container for Mode Shapes.
+
+=================================================================================   ===================================================================
+
+.. rubric:: Included in:
+
+===================================   ========================================
+
+Parent                                                                 Summary
+
+===================================   ========================================
+:ref:`setup <pre_processing_setup>`   Encapsulates a CFX pre-processing setup.
+
+===================================   ========================================
+

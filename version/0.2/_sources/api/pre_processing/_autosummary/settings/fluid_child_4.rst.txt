@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_fluid_child_4:
+
+fluid_child
+===========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fluid_child_4.fluid_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================   =============================================================
+
+Attribute                                                                                                                   Summary
+
+===================================================================   =============================================================
+:ref:`wall_boiling_model <pre_processing_wall_boiling_model_2>`                                   Specifies the wall boiling model.
+
+:ref:`boundary_conditions <pre_processing_boundary_conditions_2>`     Specifies boundary conditions for all equations being solved.
+
+:ref:`interface_conditions <pre_processing_interface_conditions_1>`                   A container for Interface Conditions objects.
+
+===================================================================   =============================================================
+
+.. rubric:: Included in:
+
+=====================================   ==============================
+
+Parent                                                         Summary
+
+=====================================   ==============================
+:ref:`fluid <pre_processing_fluid_4>`   A container for Fluid objects.
+
+=====================================   ==============================
+

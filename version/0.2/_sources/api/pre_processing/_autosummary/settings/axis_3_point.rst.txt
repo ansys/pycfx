@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_axis_3_point:
+
+axis_3_point
+============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.axis_3_point.axis_3_point
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================   ========================================
+
+Parent                                                                                                   Summary
+
+=====================================================================   ========================================
+:ref:`coordinate_frame_child <pre_processing_coordinate_frame_child>`   'child_object_type' of coordinate_frame.
+
+=====================================================================   ========================================
+

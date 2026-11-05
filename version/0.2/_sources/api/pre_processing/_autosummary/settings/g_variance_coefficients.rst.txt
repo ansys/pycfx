@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_g_variance_coefficients:
+
+g_variance_coefficients
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.g_variance_coefficients.g_variance_coefficients
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================   =============================================================
+
+Attribute                                                                                                                       Summary
+
+=======================================================================   =============================================================
+:ref:`enabled <pre_processing_enabled_90>`                                                   Enable the G VARIANCE COEFFICIENTS object.
+
+:ref:`turbulent_flux_closure <pre_processing_turbulent_flux_closure_3>`   Controls the turbulent flux closure for a transport equation.
+
+=======================================================================   =============================================================
+
+.. rubric:: Included in:
+
+===========================================================   ========================================
+
+Parent                                                                                         Summary
+
+===========================================================   ========================================
+:ref:`combustion_model <pre_processing_combustion_model_1>`   Defines the combustion model to be used.
+
+===========================================================   ========================================
+

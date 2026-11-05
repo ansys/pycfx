@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_28:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_28.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================================   ================================
+
+Parent                                                                                                       Summary
+
+=================================================================================   ================================
+:ref:`coordinate_frame_definitions <pre_processing_coordinate_frame_definitions>`   Stores coordinate frame objects.
+
+=================================================================================   ================================
+

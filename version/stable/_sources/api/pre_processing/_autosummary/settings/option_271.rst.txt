@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_271:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_271.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================   ====================================
+
+Parent                                                                           Summary
+
+=================================================   ====================================
+:ref:`shear_stress <pre_processing_shear_stress>`   Specifies the shear force at a wall.
+
+=================================================   ====================================
+

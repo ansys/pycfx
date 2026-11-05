@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_vector_zvalue:
+
+vector_zvalue
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.vector_zvalue.vector_zvalue
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================================   ===========================================
+
+Parent                                                                                                              Summary
+
+=============================================================================   ===========================================
+:ref:`additional_variable_child <pre_processing_additional_variable_child_1>`   'child_object_type' of additional_variable.
+
+:ref:`additional_variable_child <pre_processing_additional_variable_child_2>`   'child_object_type' of additional_variable.
+
+:ref:`additional_variable_child <pre_processing_additional_variable_child_3>`   'child_object_type' of additional_variable.
+
+=============================================================================   ===========================================
+

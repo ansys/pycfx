@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_tube_interface_models:
+
+tube_interface_models
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.tube_interface_models.tube_interface_models
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================   ================================================================
+
+Attribute                                                                                                                  Summary
+
+===============================================================   ================================================================
+:ref:`tube_geometry <pre_processing_tube_geometry_1>`                Defines either boundary initial conditions for tube geometry.
+
+:ref:`tube_profile <pre_processing_tube_profile_2>`                Defines either boundary or initial conditions for tube profile.
+
+:ref:`tube_pressure <pre_processing_tube_pressure_3>`             Defines either boundary or initial conditions for tube pressure.
+
+:ref:`tube_heat_transfer <pre_processing_tube_heat_transfer_1>`             Specifies tube heat transfer conditions at a boundary.
+
+===============================================================   ================================================================
+
+.. rubric:: Included in:
+
+=====================================================================   ========================================
+
+Parent                                                                                                   Summary
+
+=====================================================================   ========================================
+:ref:`domain_interface_child <pre_processing_domain_interface_child>`   'child_object_type' of domain_interface.
+
+=====================================================================   ========================================
+

@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_equation_definition:
+
+equation_definition
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.equation_definition.equation_definition
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`equation_definition_child <pre_processing_equation_definition_child>`
+
+
+.. rubric:: Included in:
+
+=================================================================   ============================================
+
+Parent                                                                                                   Summary
+
+=================================================================   ============================================
+:ref:`equation_definitions <pre_processing_equation_definitions>`   Contains definitions for standard equations.
+
+=================================================================   ============================================
+

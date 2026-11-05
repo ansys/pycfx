@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_reaction_progress:
+
+reaction_progress
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.reaction_progress.reaction_progress
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   =============================================================
+
+Parent                                                                                                                Summary
+
+=============================================================   =============================================================
+:ref:`spark_ignition <pre_processing_spark_ignition>`                                      Controls the spark ignition model.
+
+:ref:`reaction_progress <pre_processing_reaction_progress_1>`   Defines the initialization of the reaction progress variable.
+
+:ref:`reaction_progress <pre_processing_reaction_progress_2>`   Defines the initialization of the reaction progress variable.
+
+=============================================================   =============================================================
+

@@ -1,0 +1,46 @@
+:orphan:
+
+.. _pre_processing_external_magnetic_field:
+
+external_magnetic_field
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.external_magnetic_field.external_magnetic_field
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================================================================   =======================================================================================================
+
+Attribute                                                                                                                                                                                                         Summary
+
+===============================================================================================================   =======================================================================================================
+:ref:`option <pre_processing_option_175>`                                                                                                                                           The 'External Magnetic Field' option.
+
+:ref:`external_magnetic_induction_x_component <pre_processing_external_magnetic_induction_x_component>`                                                              'External Magnetic Induction X Component' parameter.
+
+:ref:`external_magnetic_induction_y_component <pre_processing_external_magnetic_induction_y_component>`                                                              'External Magnetic Induction Y Component' parameter.
+
+:ref:`external_magnetic_induction_z_component <pre_processing_external_magnetic_induction_z_component>`                                                              'External Magnetic Induction Z Component' parameter.
+
+:ref:`external_magnetic_induction_axial_component <pre_processing_external_magnetic_induction_axial_component>`                                                  'External Magnetic Induction Axial Component' parameter.
+
+:ref:`external_magnetic_induction_r_component <pre_processing_external_magnetic_induction_r_component>`                                                              'External Magnetic Induction r Component' parameter.
+
+:ref:`external_magnetic_induction_theta_component <pre_processing_external_magnetic_induction_theta_component>`                                                  'External Magnetic Induction Theta Component' parameter.
+
+:ref:`axis_definition <pre_processing_axis_definition>`                                                           Defines the axis for a cylindrical coordinate system or variables defined using cylindrical components.
+
+===============================================================================================================   =======================================================================================================
+
+.. rubric:: Included in:
+
+=================================================================   ====================================================
+
+Parent                                                                                                           Summary
+
+=================================================================   ====================================================
+:ref:`magnetic_field_model <pre_processing_magnetic_field_model>`   Specifies the magnetic model to be used in a domain.
+
+=================================================================   ====================================================
+

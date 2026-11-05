@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_chart_contour_range_min:
+
+chart_contour_range_min
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.chart_contour_range_min.chart_contour_range_min
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==============================================================   ====================================
+
+Parent                                                                                        Summary
+
+==============================================================   ====================================
+:ref:`chart_series_child <post_processing_chart_series_child>`   'child_object_type' of chart_series.
+
+==============================================================   ====================================
+

@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_additional_interface_models:
+
+additional_interface_models
+===========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.additional_interface_models.additional_interface_models
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`additional_interface_models_child <pre_processing_additional_interface_models_child>`
+
+
+.. rubric:: Included in:
+
+=====================================================================   ========================================
+
+Parent                                                                                                   Summary
+
+=====================================================================   ========================================
+:ref:`domain_interface_child <pre_processing_domain_interface_child>`   'child_object_type' of domain_interface.
+
+=====================================================================   ========================================
+

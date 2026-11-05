@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_normalised_displacement_y_component:
+
+normalised_displacement_y_component
+===================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.normalised_displacement_y_component.normalised_displacement_y_component
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================   =====================================
+
+Parent                                                                                              Summary
+
+===================================================================   =====================================
+:ref:`periodic_displacement <pre_processing_periodic_displacement>`   Defines displacement for mesh motion.
+
+===================================================================   =====================================
+

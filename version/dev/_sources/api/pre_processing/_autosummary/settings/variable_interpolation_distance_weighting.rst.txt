@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_variable_interpolation_distance_weighting:
+
+variable_interpolation_distance_weighting
+=========================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.variable_interpolation_distance_weighting.variable_interpolation_distance_weighting
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================================================================   =======================================================================
+
+Parent                                                                                                                                                                        Summary
+
+===========================================================================================================   =======================================================================
+:ref:`line_interpolation <pre_processing_line_interpolation>`                                                 Sets parameters that control line point interpolation to mesh vertices.
+
+:ref:`line_interpolation_variable_options_child <pre_processing_line_interpolation_variable_options_child>`               'child_object_type' of line_interpolation_variable_options.
+
+===========================================================================================================   =======================================================================
+

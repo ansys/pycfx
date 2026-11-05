@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_additional_variable_child_7:
+
+additional_variable_child
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.additional_variable_child_7.additional_variable_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================================================   ===========================================================
+
+Attribute                                                                                                                                             Summary
+
+===============================================================================================   ===========================================================
+:ref:`option <pre_processing_option_3>`                                                                                     The 'Additional Variable' option.
+
+:ref:`additional_variable_interface_model <pre_processing_additional_variable_interface_model>`   Additional variable transfer models for a domain interface.
+
+:ref:`turbulent_wall_functions <pre_processing_turbulent_wall_functions_2>`                             Sets the turbulent near-wall treatment at a boundary.
+
+===============================================================================================   ===========================================================
+
+.. rubric:: Included in:
+
+=================================================================   ============================================
+
+Parent                                                                                                   Summary
+
+=================================================================   ============================================
+:ref:`additional_variable <pre_processing_additional_variable_7>`   A container for Additional Variable objects.
+
+=================================================================   ============================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_write_session_mode:
+
+write_session_mode
+==================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.write_session_mode.write_session_mode
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+========================================   ==================================================
+
+Parent                                                                                Summary
+
+========================================   ==================================================
+:ref:`session <post_processing_session>`   Stores parameters used by the readsession command.
+
+========================================   ==================================================
+

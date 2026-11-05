@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_406:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_406.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================   ==============================================================
+
+Parent                                                                                                         Summary
+
+=====================================================   ==============================================================
+:ref:`monitor_forces <pre_processing_monitor_forces>`   Defines the extent of force data recorded in the monitor file.
+
+=====================================================   ==============================================================
+

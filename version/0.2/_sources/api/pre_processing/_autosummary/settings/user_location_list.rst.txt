@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_user_location_list:
+
+user_location_list
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.user_location_list.user_location_list
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================================   ====================================
+
+Parent                                                                                                       Summary
+
+=============================================================================   ====================================
+:ref:`injection_positions <pre_processing_injection_positions>`                        'INJECTION POSITIONS' object.
+
+:ref:`user_location_regeneration <pre_processing_user_location_regeneration>`   'USER LOCATION REGENERATION' object.
+
+=============================================================================   ====================================
+

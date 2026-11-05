@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_51:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_51.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================================================   ======================================================================
+
+Parent                                                                                                                                                     Summary
+
+=========================================================================================   ======================================================================
+:ref:`intermittency_model_coefficients <pre_processing_intermittency_model_coefficients>`   Controls model coefficients for the turbulence intermittency equation.
+
+=========================================================================================   ======================================================================
+

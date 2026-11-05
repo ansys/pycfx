@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_implicit_stage_averaging:
+
+implicit_stage_averaging
+========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.implicit_stage_averaging.implicit_stage_averaging
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================   ===================================================================================================================
+
+Parent                                                                                                                                                          Summary
+
+=================================================   ===================================================================================================================
+:ref:`frame_change <pre_processing_frame_change>`   Defines the turbo interface/mixing model to be used on a domain interface where there is frame and/or pitch change.
+
+=================================================   ===================================================================================================================
+

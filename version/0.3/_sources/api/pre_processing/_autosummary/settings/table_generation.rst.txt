@@ -1,0 +1,52 @@
+:orphan:
+
+.. _pre_processing_table_generation:
+
+table_generation
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.table_generation.table_generation
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================================   ============================================
+
+Attribute                                                                                                                      Summary
+
+=======================================================================================   ============================================
+:ref:`option <pre_processing_option_26>`                                                                The 'Table Generation' option.
+
+:ref:`minimum_temperature <pre_processing_minimum_temperature>`                                       'Minimum Temperature' parameter.
+
+:ref:`maximum_temperature <pre_processing_maximum_temperature>`                                       'Maximum Temperature' parameter.
+
+:ref:`minimum_absolute_pressure <pre_processing_minimum_absolute_pressure>`                     'Minimum Absolute Pressure' parameter.
+
+:ref:`maximum_absolute_pressure <pre_processing_maximum_absolute_pressure>`                     'Maximum Absolute Pressure' parameter.
+
+:ref:`temperature_extrapolation <pre_processing_temperature_extrapolation>`                     'Temperature Extrapolation' parameter.
+
+:ref:`pressure_extrapolation <pre_processing_pressure_extrapolation>`                              'Pressure Extrapolation' parameter.
+
+:ref:`check_entropy_table_consistency <pre_processing_check_entropy_table_consistency>`   'Check Entropy Table Consistency' parameter.
+
+:ref:`maximum_points <pre_processing_maximum_points>`                                         Maximum number of property table points.
+
+:ref:`error_tolerance <pre_processing_error_tolerance>`                                      Table generator relative error tolerance.
+
+=======================================================================================   ============================================
+
+.. rubric:: Included in:
+
+=========================================   ==================
+
+Parent                                                 Summary
+
+=========================================   ==================
+:ref:`entropy <pre_processing_entropy>`      'ENTROPY' object.
+
+:ref:`enthalpy <pre_processing_enthalpy>`   'ENTHALPY' object.
+
+=========================================   ==================
+

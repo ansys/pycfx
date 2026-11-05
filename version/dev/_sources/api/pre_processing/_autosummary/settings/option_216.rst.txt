@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_216:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_216.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================   =========================================
+
+Parent                                                                                              Summary
+
+===============================================================   =========================================
+:ref:`number_of_positions <pre_processing_number_of_positions>`   Defines the number of particle positions.
+
+===============================================================   =========================================
+

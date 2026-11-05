@@ -1,0 +1,28 @@
+:orphan:
+
+.. _pre_processing_external_force:
+
+external_force
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.external_force.external_force
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`external_force_child <pre_processing_external_force_child>`
+
+
+.. rubric:: Included in:
+
+===========================================   =======================================
+
+Parent                                                                        Summary
+
+===========================================   =======================================
+:ref:`dynamics <pre_processing_dynamics>`     Defines rigid body dynamics attributes.
+
+:ref:`dynamics <pre_processing_dynamics_1>`   Defines rigid body dynamics attributes.
+
+===========================================   =======================================
+

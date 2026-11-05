@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_4:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_4.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================   ================================
+
+Parent                                                                                           Summary
+
+=====================================================================   ================================
+:ref:`table_value_generation <pre_processing_table_value_generation>`   'TABLE VALUE GENERATION' object.
+
+=====================================================================   ================================
+

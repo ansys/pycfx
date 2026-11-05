@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_immersed_solid_control:
+
+immersed_solid_control
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.immersed_solid_control.immersed_solid_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================================   =========================================================================================================================================
+
+Attribute                                                                                                                                                                                                                 Summary
+
+=====================================================================================   =========================================================================================================================================
+:ref:`momentum_source_scaling_factor <pre_processing_momentum_source_scaling_factor>`   This parameter allow the user to modify the scaling factor for the momentum source coefficient due to the presence of the immersed solid.
+
+:ref:`boundary_model <pre_processing_boundary_model>`                                                                                                                                        Defines the immersed boundary model.
+
+=====================================================================================   =========================================================================================================================================
+
+.. rubric:: Included in:
+
+=====================================================   ====================================================================================
+
+Parent                                                                                                                               Summary
+
+=====================================================   ====================================================================================
+:ref:`solver_control <pre_processing_solver_control>`   Holds all objects that control discretization and execution of the solution process.
+
+=====================================================   ====================================================================================
+

@@ -1,0 +1,59 @@
+:orphan:
+
+.. _post_processing_option:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.option.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==================================================================================   ===============================================================================
+
+Parent                                                                                                                                                       Summary
+
+==================================================================================   ===============================================================================
+:ref:`turbo_surface_child <post_processing_turbo_surface_child>`                                                               'child_object_type' of turbo_surface.
+
+:ref:`turbo_line_child <post_processing_turbo_line_child>`                                                                        'child_object_type' of turbo_line.
+
+:ref:`point_child <post_processing_point_child>`                                                                                       'child_object_type' of point.
+
+:ref:`point_cloud_child <post_processing_point_cloud_child>`                                                                     'child_object_type' of point_cloud.
+
+:ref:`polyline_child <post_processing_polyline_child>`                                                                              'child_object_type' of polyline.
+
+:ref:`particle_track_child <post_processing_particle_track_child>`                                                            'child_object_type' of particle_track.
+
+:ref:`res_particle_track_child <post_processing_res_particle_track_child>`                                                'child_object_type' of res_particle_track.
+
+:ref:`user_surface_child <post_processing_user_surface_child>`                                                                  'child_object_type' of user_surface.
+
+:ref:`plane_child <post_processing_plane_child>`                                                                                       'child_object_type' of plane.
+
+:ref:`clip_plane_child <post_processing_clip_plane_child>`                                                                        'child_object_type' of clip_plane.
+
+:ref:`volume_child <post_processing_volume_child>`                                                                                    'child_object_type' of volume.
+
+:ref:`line_child <post_processing_line_child>`                                                                                          'child_object_type' of line.
+
+:ref:`surface_of_revolution_child <post_processing_surface_of_revolution_child>`                                       'child_object_type' of surface_of_revolution.
+
+:ref:`camera <post_processing_camera>`                                               Defines a camera that can be used to specify the current view in a VIEW object.
+
+:ref:`coordinate_frame_child <post_processing_coordinate_frame_child>`                                                      'child_object_type' of coordinate_frame.
+
+:ref:`internal_point_child <post_processing_internal_point_child>`                                                            'child_object_type' of internal_point.
+
+:ref:`internal_point_cloud_child <post_processing_internal_point_cloud_child>`                                          'child_object_type' of internal_point_cloud.
+
+:ref:`internal_polyline_child <post_processing_internal_polyline_child>`                                                   'child_object_type' of internal_polyline.
+
+:ref:`internal_turbo_surface_child <post_processing_internal_turbo_surface_child>`                                    'child_object_type' of internal_turbo_surface.
+
+:ref:`internal_turbo_line_child <post_processing_internal_turbo_line_child>`                                             'child_object_type' of internal_turbo_line.
+
+==================================================================================   ===============================================================================
+

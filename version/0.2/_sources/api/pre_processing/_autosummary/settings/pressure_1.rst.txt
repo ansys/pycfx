@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_pressure_1:
+
+pressure
+========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.pressure_1.pressure
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================   =============================
+
+Parent                                                                                  Summary
+
+===============================================================   =============================
+:ref:`pressure_definition <pre_processing_pressure_definition>`   'PRESSURE DEFINITION' object.
+
+===============================================================   =============================
+

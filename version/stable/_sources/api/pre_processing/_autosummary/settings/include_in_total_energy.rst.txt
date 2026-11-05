@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_include_in_total_energy:
+
+include_in_total_energy
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.include_in_total_energy.include_in_total_energy
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   ================================
+
+Parent                                                                               Summary
+
+=========================================================   ================================
+:ref:`momentum_source <pre_processing_momentum_source>`     Holds source terms for momentum.
+
+:ref:`momentum_source <pre_processing_momentum_source_1>`   Holds source terms for momentum.
+
+=========================================================   ================================
+

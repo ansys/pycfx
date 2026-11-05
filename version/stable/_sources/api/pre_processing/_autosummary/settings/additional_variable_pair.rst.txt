@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_additional_variable_pair:
+
+additional_variable_pair
+========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.additional_variable_pair.additional_variable_pair
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`additional_variable_pair_child <pre_processing_additional_variable_pair_child>`
+
+
+.. rubric:: Included in:
+
+=========================================================   ==================================
+
+Parent                                                                                 Summary
+
+=========================================================   ==================================
+:ref:`fluid_pair_child <pre_processing_fluid_pair_child>`   'child_object_type' of fluid_pair.
+
+=========================================================   ==================================
+

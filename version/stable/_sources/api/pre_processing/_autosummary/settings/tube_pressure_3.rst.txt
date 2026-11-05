@@ -1,0 +1,32 @@
+:orphan:
+
+.. _pre_processing_tube_pressure_3:
+
+tube_pressure
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.tube_pressure_3.tube_pressure
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================   ===========================
+
+Attribute                                                       Summary
+
+=========================================   ===========================
+:ref:`option <pre_processing_option_303>`   The 'Tube Pressure' option.
+
+=========================================   ===========================
+
+.. rubric:: Included in:
+
+===================================================================   ===============================
+
+Parent                                                                                        Summary
+
+===================================================================   ===============================
+:ref:`tube_interface_models <pre_processing_tube_interface_models>`   'TUBE INTERFACE MODELS' object.
+
+===================================================================   ===============================
+

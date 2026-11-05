@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_fractional_intensity:
+
+fractional_intensity
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fractional_intensity.fractional_intensity
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================   ===================================================
+
+Parent                                                                                                            Summary
+
+===================================================================   ===================================================
+:ref:`turbulence <pre_processing_turbulence>`                                Sets conditions on turbulence at a boundary.
+
+:ref:`turbulence <pre_processing_turbulence_2>`                              Sets conditions on turbulence at a boundary.
+
+:ref:`fractional_intensity <pre_processing_fractional_intensity_1>`   Defines the initialization of fractional intensity.
+
+===================================================================   ===================================================
+

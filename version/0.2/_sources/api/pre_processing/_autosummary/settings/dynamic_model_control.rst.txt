@@ -1,0 +1,44 @@
+:orphan:
+
+.. _pre_processing_dynamic_model_control:
+
+dynamic_model_control
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.dynamic_model_control.dynamic_model_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================================   ====================================================================================================================
+
+Attribute                                                                                                                                                                                        Summary
+
+=================================================================================   ====================================================================================================================
+:ref:`global_dynamic_model_control <pre_processing_global_dynamic_model_control>`                                                                              'Global Dynamic Model Control' parameter.
+
+:ref:`combustion_control <pre_processing_combustion_control>`                                                                        Holds information specific to combustion for dynamic model control.
+
+:ref:`harmonic_balance_control <pre_processing_harmonic_balance_control>`                                                      Holds information specific to harmonic balance for dynamic model control.
+
+:ref:`hydro_control <pre_processing_hydro_control>`                                                                               Holds information specific to hydrodynamics for dynamic model control.
+
+:ref:`turbulence_control <pre_processing_turbulence_control>`                       Sets the iteration number when the solver switches from Zero Equation turbulence model to the full turbulence model.
+
+:ref:`dynamic_variable <pre_processing_dynamic_variable>`                                                                                                      A container for Dynamic Variable objects.
+
+:ref:`backup_data_retention <pre_processing_backup_data_retention>`                                                                               Controls how scheduled backup files are deleted/saved.
+
+=================================================================================   ====================================================================================================================
+
+.. rubric:: Included in:
+
+=======================================================   ====================================================================================
+
+Parent                                                                                                                                 Summary
+
+=======================================================   ====================================================================================
+:ref:`solver_control <pre_processing_solver_control_1>`   Holds all objects that control discretization and execution of the solution process.
+
+=======================================================   ====================================================================================
+

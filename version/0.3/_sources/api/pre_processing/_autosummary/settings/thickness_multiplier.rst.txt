@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_thickness_multiplier:
+
+thickness_multiplier
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.thickness_multiplier.thickness_multiplier
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================================================   ===========================================
+
+Parent                                                                                                                            Summary
+
+===========================================================================================   ===========================================
+:ref:`laminar_flame_thickness <pre_processing_laminar_flame_thickness_1>`                            Defines the laminar flame thickness.
+
+:ref:`turbulent_flame_thickness_limiter <pre_processing_turbulent_flame_thickness_limiter>`   'TURBULENT FLAME THICKNESS LIMITER' object.
+
+===========================================================================================   ===========================================
+

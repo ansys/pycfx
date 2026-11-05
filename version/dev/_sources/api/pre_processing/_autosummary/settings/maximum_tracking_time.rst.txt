@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_maximum_tracking_time:
+
+maximum_tracking_time
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.maximum_tracking_time.maximum_tracking_time
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================================   ============================================================
+
+Parent                                                                                                                                   Summary
+
+=================================================================================   ============================================================
+:ref:`particle_termination_control <pre_processing_particle_termination_control>`   Sets details of the particle tracking integration algorithm.
+
+=================================================================================   ============================================================
+

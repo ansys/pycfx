@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_fluid_4:
+
+fluid
+=====
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fluid_4.fluid
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`fluid_child <pre_processing_fluid_child_4>`
+
+
+.. rubric:: Included in:
+
+=====================================================   ================================
+
+Parent                                                                           Summary
+
+=====================================================   ================================
+:ref:`boundary_child <pre_processing_boundary_child>`   'child_object_type' of boundary.
+
+=====================================================   ================================
+

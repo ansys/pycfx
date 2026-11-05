@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_spark_energy:
+
+spark_energy
+============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.spark_energy.spark_energy
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================   ================================
+
+Parent                                                                         Summary
+
+===================================================   ================================
+:ref:`spark_energy <pre_processing_spark_energy_1>`   Defines the energy of the spark.
+
+===================================================   ================================
+

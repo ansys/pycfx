@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_state_filename:
+
+state_filename
+==============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.state_filename.state_filename
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+====================================   ===============================================================
+
+Parent                                                                                         Summary
+
+====================================   ===============================================================
+:ref:`state <post_processing_state>`   Stores parameters used by the readstate and savestate commands.
+
+====================================   ===============================================================
+

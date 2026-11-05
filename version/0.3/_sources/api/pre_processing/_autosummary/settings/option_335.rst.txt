@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_335:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_335.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================================   ======================================
+
+Parent                                                                                                               Summary
+
+===================================================================================   ======================================
+:ref:`turbulence_initial_conditions <pre_processing_turbulence_initial_conditions>`   Sets initial conditions on turbulence.
+
+===================================================================================   ======================================
+

@@ -1,0 +1,62 @@
+:orphan:
+
+.. _pre_processing_boundary_conditions_6:
+
+boundary_conditions
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.boundary_conditions_6.boundary_conditions
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================================   ===============================================================================================================
+
+Attribute                                                                                                                                                                                       Summary
+
+=====================================================================================   ===============================================================================================================
+:ref:`particle_wall_interaction <pre_processing_particle_wall_interaction>`                                                                                         'PARTICLE WALL INTERACTION' object.
+
+:ref:`particle_wall_film_interaction <pre_processing_particle_wall_film_interaction>`                                                                   Specifies particle-wall film interaction model.
+
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum_3>`                                                                                  Specifies conditions on Mass and Momentum at a boundary.
+
+:ref:`particle_position <pre_processing_particle_position>`                                                                         Defines how particle positions are to be distributed on a boundary.
+
+:ref:`particle_mass_flow_rate <pre_processing_particle_mass_flow_rate_1>`                                                                          Defines the mass flow rate for a group of particles.
+
+:ref:`wall_roughness <pre_processing_wall_roughness>`                                                                                                 Sets wall roughness on a wall boundary condition.
+
+:ref:`heat_transfer <pre_processing_heat_transfer_1>`                                                                                                 Specifies heat transfer conditions at a boundary.
+
+:ref:`thermal_radiation <pre_processing_thermal_radiation_1>`                                                                                   Sets the conditions on Thermal Radiation at a boundary.
+
+:ref:`wall_contact_area <pre_processing_wall_contact_area>`                             Specifies fluid-wall contact area for a given fluid under the WALL CONTACT MODEL: Option=Specify Area Fraction.
+
+:ref:`additional_variable <pre_processing_additional_variable_5>`                                                                                          A container for Additional Variable objects.
+
+:ref:`velocity <pre_processing_velocity_1>`                                                                                                 Sets velocity part of mass and momentum boundary condition.
+
+:ref:`particle_diameter_distribution <pre_processing_particle_diameter_distribution>`                                                               Defines the size distribution for a particle group.
+
+:ref:`particle_mass_flow_absorption <pre_processing_particle_mass_flow_absorption>`                                                                                   Defines the mass flow absorption.
+
+:ref:`erosion_model <pre_processing_erosion_model_1>`                                                                                                                           Particle erosion model.
+
+:ref:`particle_rough_wall_model <pre_processing_particle_rough_wall_model_1>`                                                                                 Particle rough wall (virtual wall) model.
+
+:ref:`particle_user_wall_interaction <pre_processing_particle_user_wall_interaction>`                                                                          'PARTICLE USER WALL INTERACTION' object.
+
+=====================================================================================   ===============================================================================================================
+
+.. rubric:: Included in:
+
+=================================================   =============================
+
+Parent                                                                    Summary
+
+=================================================   =============================
+:ref:`fluid_child <pre_processing_fluid_child_5>`   'child_object_type' of fluid.
+
+=================================================   =============================
+

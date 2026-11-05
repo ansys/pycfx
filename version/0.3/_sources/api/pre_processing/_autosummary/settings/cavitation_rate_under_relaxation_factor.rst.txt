@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_cavitation_rate_under_relaxation_factor:
+
+cavitation_rate_under_relaxation_factor
+=======================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.cavitation_rate_under_relaxation_factor.cavitation_rate_under_relaxation_factor
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   ===============================
+
+Parent                                                                              Summary
+
+=========================================================   ===============================
+:ref:`cavitation_model <pre_processing_cavitation_model>`   Specifies the cavitation model.
+
+=========================================================   ===============================
+

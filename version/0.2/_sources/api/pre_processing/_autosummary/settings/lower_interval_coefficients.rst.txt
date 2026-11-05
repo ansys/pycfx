@@ -1,0 +1,46 @@
+:orphan:
+
+.. _pre_processing_lower_interval_coefficients:
+
+lower_interval_coefficients
+===========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.lower_interval_coefficients.lower_interval_coefficients
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================   ====================
+
+Attribute                                              Summary
+
+=======================================   ====================
+:ref:`nasa_a1 <pre_processing_nasa_a1>`   'NASA a1' parameter.
+
+:ref:`nasa_a2 <pre_processing_nasa_a2>`   'NASA a2' parameter.
+
+:ref:`nasa_a3 <pre_processing_nasa_a3>`   'NASA a3' parameter.
+
+:ref:`nasa_a4 <pre_processing_nasa_a4>`   'NASA a4' parameter.
+
+:ref:`nasa_a5 <pre_processing_nasa_a5>`   'NASA a5' parameter.
+
+:ref:`nasa_a6 <pre_processing_nasa_a6>`   'NASA a6' parameter.
+
+:ref:`nasa_a7 <pre_processing_nasa_a7>`   'NASA a7' parameter.
+
+=======================================   ====================
+
+.. rubric:: Included in:
+
+=============================================================================   ====================================================================================
+
+Parent                                                                                                                                                       Summary
+
+=============================================================================   ====================================================================================
+:ref:`specific_heat_capacity <pre_processing_specific_heat_capacity_1>`                                          Specifies how specific heat capacity is calculated.
+
+:ref:`zero_pressure_coefficients <pre_processing_zero_pressure_coefficients>`   Specifies ideal gas specific heat capacity for use with real gas equations of state.
+
+=============================================================================   ====================================================================================
+

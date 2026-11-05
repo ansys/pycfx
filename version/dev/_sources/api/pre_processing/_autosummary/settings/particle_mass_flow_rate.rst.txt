@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_particle_mass_flow_rate:
+
+particle_mass_flow_rate
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.particle_mass_flow_rate.particle_mass_flow_rate
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================   ==========================================
+
+Attribute                                                                                  Summary
+
+=====================================================   ==========================================
+:ref:`enabled <pre_processing_enabled_111>`             Enable the PARTICLE MASS FLOW RATE object.
+
+:ref:`mass_flow_rate <pre_processing_mass_flow_rate>`                  'Mass Flow Rate' parameter.
+
+=====================================================   ==========================================
+
+.. rubric:: Included in:
+
+=================================================================   ==============================================================
+
+Parent                                                                                                                     Summary
+
+=================================================================   ==============================================================
+:ref:`injection_conditions <pre_processing_injection_conditions>`   Specifies injection conditions for all equations being solved.
+
+=================================================================   ==============================================================
+

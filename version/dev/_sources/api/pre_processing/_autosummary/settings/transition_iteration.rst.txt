@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_transition_iteration:
+
+transition_iteration
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.transition_iteration.transition_iteration
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ====================================================================================================================
+
+Parent                                                                                                                                                                       Summary
+
+=============================================================   ====================================================================================================================
+:ref:`combustion_control <pre_processing_combustion_control>`                                                    Holds information specific to combustion for dynamic model control.
+
+:ref:`hydro_control <pre_processing_hydro_control>`                                                           Holds information specific to hydrodynamics for dynamic model control.
+
+:ref:`turbulence_control <pre_processing_turbulence_control>`   Sets the iteration number when the solver switches from Zero Equation turbulence model to the full turbulence model.
+
+=============================================================   ====================================================================================================================
+

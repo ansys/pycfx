@@ -1,0 +1,27 @@
+:orphan:
+
+.. _pre_processing_temperature:
+
+temperature
+===========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.temperature.temperature
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   ===============================================
+
+Parent                                                                                              Summary
+
+=========================================================   ===============================================
+:ref:`temperature <pre_processing_temperature_1>`                Defines the initialization of Temperature.
+
+:ref:`temperature <pre_processing_temperature_2>`                Defines the initialization of Temperature.
+
+:ref:`tube_temperature <pre_processing_tube_temperature>`   Defines the initialization of tube temperature.
+
+:ref:`radiometer_child <pre_processing_radiometer_child>`                'child_object_type' of radiometer.
+
+=========================================================   ===============================================
+

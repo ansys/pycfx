@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_dissipation_timescale_model:
+
+dissipation_timescale_model
+===========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.dissipation_timescale_model.dissipation_timescale_model
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================   =======================================================================================
+
+Attribute                                                                                                                                                 Summary
+
+=======================================================================   =======================================================================================
+:ref:`option <pre_processing_option_199>`                                                                               The 'Dissipation Timescale Model' option.
+
+:ref:`dissipation_timescale <pre_processing_dissipation_timescale>`              Timescale for enhanced production of epsilon due to particle-induced turbulence.
+
+:ref:`dissipation_coefficient <pre_processing_dissipation_coefficient>`   Scale factor for buoyancy turbulence dissipation and particle induced turbulence terms.
+
+=======================================================================   =======================================================================================
+
+.. rubric:: Included in:
+
+=================================================================================================   =============================================================
+
+Parent                                                                                                                                                    Summary
+
+=================================================================================================   =============================================================
+:ref:`enhanced_turbulence_production_model <pre_processing_enhanced_turbulence_production_model>`   Model settings for multiphase enhanced turbulence production.
+
+=================================================================================================   =============================================================
+

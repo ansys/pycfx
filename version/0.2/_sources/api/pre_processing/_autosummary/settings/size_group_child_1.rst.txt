@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_size_group_child_1:
+
+size_group_child
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.size_group_child_1.size_group_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================   ===================================================
+
+Attribute                                                                                         Summary
+
+===================================================   ===================================================
+:ref:`option <pre_processing_option_112>`                                        The 'Size Group' option.
+
+:ref:`size_fraction <pre_processing_size_fraction>`                            'Size Fraction' parameter.
+
+:ref:`size_scale <pre_processing_size_scale>`         Specified size scale for DQMOM polydispersed fluid.
+
+===================================================   ===================================================
+
+.. rubric:: Included in:
+
+===============================================   ===================================
+
+Parent                                                                        Summary
+
+===============================================   ===================================
+:ref:`size_group <pre_processing_size_group_1>`   A container for Size Group objects.
+
+===============================================   ===================================
+

@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_electric_potential_1:
+
+electric_potential
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.electric_potential_1.electric_potential
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================   ================================
+
+Attribute                                                                                Summary
+
+=============================================================   ================================
+:ref:`option <pre_processing_option_333>`                       The 'Electric Potential' option.
+
+:ref:`electric_potential <pre_processing_electric_potential>`    'Electric Potential' parameter.
+
+=============================================================   ================================
+
+.. rubric:: Included in:
+
+===============================================================   ===============================================================================
+
+Parent                                                                                                                                    Summary
+
+===============================================================   ===============================================================================
+:ref:`initial_conditions <pre_processing_initial_conditions>`     Holds the details of initial condition specification for one or more equations.
+
+:ref:`initial_conditions <pre_processing_initial_conditions_2>`   Holds the details of initial condition specification for one or more equations.
+
+===============================================================   ===============================================================================
+

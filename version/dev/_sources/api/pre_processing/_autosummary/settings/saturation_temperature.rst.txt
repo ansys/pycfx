@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_saturation_temperature:
+
+saturation_temperature
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.saturation_temperature.saturation_temperature
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ===============================
+
+Parent                                                                                  Summary
+
+=============================================================   ===============================
+:ref:`phase_change_model <pre_processing_phase_change_model>`   Specifies the cavitation model.
+
+=============================================================   ===============================
+

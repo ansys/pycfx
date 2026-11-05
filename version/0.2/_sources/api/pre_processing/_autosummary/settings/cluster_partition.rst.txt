@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_cluster_partition:
+
+cluster_partition
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.cluster_partition.cluster_partition
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================   ========================
+
+Parent                                                                   Summary
+
+=====================================================   ========================
+:ref:`job_submission <pre_processing_job_submission>`   'JOB SUBMISSION' object.
+
+=====================================================   ========================
+

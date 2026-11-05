@@ -1,0 +1,23 @@
+:orphan:
+
+.. _post_processing_invert_surface_bound:
+
+invert_surface_bound
+====================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.invert_surface_bound.invert_surface_bound
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==================================================================================   ==============================================
+
+Parent                                                                                                                      Summary
+
+==================================================================================   ==============================================
+:ref:`turbo_surface_child <post_processing_turbo_surface_child>`                              'child_object_type' of turbo_surface.
+
+:ref:`internal_turbo_surface_child <post_processing_internal_turbo_surface_child>`   'child_object_type' of internal_turbo_surface.
+
+==================================================================================   ==============================================
+

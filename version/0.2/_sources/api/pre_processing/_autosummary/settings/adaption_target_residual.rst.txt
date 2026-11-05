@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_adaption_target_residual:
+
+adaption_target_residual
+========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.adaption_target_residual.adaption_target_residual
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================================   =======================================
+
+Parent                                                                                                                Summary
+
+===================================================================================   =======================================
+:ref:`adaption_convergence_criteria <pre_processing_adaption_convergence_criteria>`   'ADAPTION CONVERGENCE CRITERIA' object.
+
+===================================================================================   =======================================
+

@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_outer_radius_of_injection_plane:
+
+outer_radius_of_injection_plane
+===============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.outer_radius_of_injection_plane.outer_radius_of_injection_plane
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ===========================
+
+Parent                                                                            Summary
+
+===========================================================   ===========================
+:ref:`cone_definition <pre_processing_cone_definition>`         'CONE DEFINITION' object.
+
+:ref:`nozzle_definition <pre_processing_nozzle_definition>`   'NOZZLE DEFINITION' object.
+
+===========================================================   ===========================
+

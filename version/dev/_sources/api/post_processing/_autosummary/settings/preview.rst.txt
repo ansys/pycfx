@@ -1,0 +1,49 @@
+:orphan:
+
+.. _post_processing_preview:
+
+preview
+=======
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.preview.preview
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+========================================================   ============================================
+
+Attribute                                                                                       Summary
+
+========================================================   ============================================
+:ref:`this_exists <post_processing_this_exists>`           Indicates whether this object exists or not.
+
+:ref:`output_settings <post_processing_output_settings>`                Defines options for the Report.
+
+========================================================   ============================================
+
+.. rubric:: Methods
+
+============================================   ========================================
+
+Method                                                                          Summary
+
+============================================   ========================================
+:ref:`suspend <post_processing_suspend>`       Suspend immediate update for the object.
+
+:ref:`unsuspend <post_processing_unsuspend>`   Restore immediate update for the object.
+
+============================================   ========================================
+
+.. rubric:: Included in:
+
+========================================   =========================================
+
+Parent                                                                       Summary
+
+========================================   =========================================
+:ref:`results <post_processing_results>`   Encapsulates a CFX post-processing setup.
+
+:ref:`report <post_processing_report>`                           Defines the Report.
+
+========================================   =========================================
+

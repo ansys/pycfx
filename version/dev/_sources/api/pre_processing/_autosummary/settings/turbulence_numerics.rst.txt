@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_turbulence_numerics:
+
+turbulence_numerics
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.turbulence_numerics.turbulence_numerics
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================   ====================================================================================
+
+Parent                                                                                                                                 Summary
+
+=======================================================   ====================================================================================
+:ref:`solver_control <pre_processing_solver_control_1>`   Holds all objects that control discretization and execution of the solution process.
+
+=======================================================   ====================================================================================
+

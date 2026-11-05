@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_parent_material_child_1:
+
+parent_material_child
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.parent_material_child_1.parent_material_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================   ===================================================
+
+Attribute                                                                                                                 Summary
+
+===========================================================================   ===================================================
+:ref:`option <pre_processing_option_43>`                                                            The 'Parent Material' option.
+
+:ref:`fraction_of_heat_released <pre_processing_fraction_of_heat_released>`   Fraction of heat released in a multiphase reaction.
+
+===========================================================================   ===================================================
+
+.. rubric:: Included in:
+
+=========================================================   ========================================
+
+Parent                                                                                       Summary
+
+=========================================================   ========================================
+:ref:`parent_material <pre_processing_parent_material_1>`   A container for Parent Material objects.
+
+=========================================================   ========================================
+

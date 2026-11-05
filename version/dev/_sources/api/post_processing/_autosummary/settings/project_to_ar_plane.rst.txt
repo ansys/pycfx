@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_project_to_ar_plane:
+
+project_to_ar_plane
+===================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.project_to_ar_plane.project_to_ar_plane
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+================================================================================   =============================================
+
+Parent                                                                                                                   Summary
+
+================================================================================   =============================================
+:ref:`surface_of_revolution_child <post_processing_surface_of_revolution_child>`   'child_object_type' of surface_of_revolution.
+
+================================================================================   =============================================
+

@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_data_field_child:
+
+data_field_child
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.data_field_child.data_field_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================================   =========================================
+
+Attribute                                                                                                             Summary
+
+=================================================================================   =========================================
+:ref:`result_units <pre_processing_result_units>`                                                   'Result Units' parameter.
+
+:ref:`field_name <pre_processing_field_name>`                                                         'Field Name' parameter.
+
+:ref:`parameter_list <pre_processing_parameter_list>`                                             'Parameter List' parameter.
+
+:ref:`table_generation_upper_bound <pre_processing_table_generation_upper_bound>`   'Table Generation Upper Bound' parameter.
+
+:ref:`table_generation_lower_bound <pre_processing_table_generation_lower_bound>`   'Table Generation Lower Bound' parameter.
+
+=================================================================================   =========================================
+
+.. rubric:: Included in:
+
+=============================================   ===================================
+
+Parent                                                                      Summary
+
+=============================================   ===================================
+:ref:`data_field <pre_processing_data_field>`   A container for Data Field objects.
+
+=============================================   ===================================
+

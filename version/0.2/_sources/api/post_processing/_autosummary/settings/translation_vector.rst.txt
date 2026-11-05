@@ -1,0 +1,29 @@
+:orphan:
+
+.. _post_processing_translation_vector:
+
+translation_vector
+==================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.translation_vector.translation_vector
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==========================================================================================   =====================================================================================================================================================================================================
+
+Parent                                                                                                                                                                                                                                                                                     Summary
+
+==========================================================================================   =====================================================================================================================================================================================================
+:ref:`object_view_transform <post_processing_object_view_transform>`                         This object contains object transformation info to be processed by the viewer. Like instance transform, this object should be associated with each geometry. It is usually specified as a sub-object.
+
+:ref:`domain_child <post_processing_domain_child>`                                                                                                                                                                                                                  'child_object_type' of domain.
+
+:ref:`user_surface_child <post_processing_user_surface_child>`                                                                                                                                                                                                'child_object_type' of user_surface.
+
+:ref:`default_instance_transform_child <post_processing_default_instance_transform_child>`                                                                                                                                                      'child_object_type' of default_instance_transform.
+
+:ref:`instance_transform_child <post_processing_instance_transform_child>`                                                                                                                                                                              'child_object_type' of instance_transform.
+
+==========================================================================================   =====================================================================================================================================================================================================
+

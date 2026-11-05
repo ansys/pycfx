@@ -1,0 +1,26 @@
+:orphan:
+
+.. _post_processing_point_3:
+
+point
+=====
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.point_3.point
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`point_child <post_processing_point_child>`
+
+
+.. rubric:: Included in:
+
+========================================   =========================================
+
+Parent                                                                       Summary
+
+========================================   =========================================
+:ref:`results <post_processing_results>`   Encapsulates a CFX post-processing setup.
+
+========================================   =========================================
+

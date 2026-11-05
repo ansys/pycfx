@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_multiphase_reactions:
+
+multiphase_reactions
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.multiphase_reactions.multiphase_reactions
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================   =======================================
+
+Attribute                                                                               Summary
+
+=====================================================   =======================================
+:ref:`enabled <pre_processing_enabled_44>`              Enable the MULTIPHASE REACTIONS object.
+
+:ref:`reactions_list <pre_processing_reactions_list>`               'Reactions List' parameter.
+
+=====================================================   =======================================
+
+.. rubric:: Included in:
+
+===========================================================   ==============================================================================
+
+Parent                                                                                                                               Summary
+
+===========================================================   ==============================================================================
+:ref:`multiphase_models <pre_processing_multiphase_models>`   Defines the overall models that control the interaction of two or more phases.
+
+===========================================================   ==============================================================================
+

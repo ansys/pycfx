@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_434:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_434.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================================   =======================================
+
+Parent                                                                                                                Summary
+
+===================================================================================   =======================================
+:ref:`fourier_transformation_side_2 <pre_processing_fourier_transformation_side_2>`   'FOURIER TRANSFORMATION SIDE 2' object.
+
+===================================================================================   =======================================
+

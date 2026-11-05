@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_meridional_point_2:
+
+meridional_point_2
+==================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.meridional_point_2.meridional_point_2
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+================================================================================   =============================================
+
+Parent                                                                                                                   Summary
+
+================================================================================   =============================================
+:ref:`surface_of_revolution_child <post_processing_surface_of_revolution_child>`   'child_object_type' of surface_of_revolution.
+
+================================================================================   =============================================
+

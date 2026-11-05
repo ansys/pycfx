@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_image_width:
+
+image_width
+===========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.image_width.image_width
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================   ===================================
+
+Parent                                                                          Summary
+
+=================================================   ===================================
+:ref:`save_picture <pre_processing_save_picture>`   Saves an image of the current view.
+
+=================================================   ===================================
+

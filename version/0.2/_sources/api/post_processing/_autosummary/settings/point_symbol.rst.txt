@@ -1,0 +1,27 @@
+:orphan:
+
+.. _post_processing_point_symbol:
+
+point_symbol
+============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.point_symbol.point_symbol
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==============================================================================   ============================================
+
+Parent                                                                                                                Summary
+
+==============================================================================   ============================================
+:ref:`point_child <post_processing_point_child>`                                                'child_object_type' of point.
+
+:ref:`point_cloud_child <post_processing_point_cloud_child>`                              'child_object_type' of point_cloud.
+
+:ref:`internal_point_child <post_processing_internal_point_child>`                     'child_object_type' of internal_point.
+
+:ref:`internal_point_cloud_child <post_processing_internal_point_cloud_child>`   'child_object_type' of internal_point_cloud.
+
+==============================================================================   ============================================
+

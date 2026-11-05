@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_run_definition:
+
+run_definition
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.run_definition.run_definition
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================================   ======================================
+
+Attribute                                                                                                          Summary
+
+=================================================================================   ======================================
+:ref:`solver_input_file <pre_processing_solver_input_file>`                                 'Solver Input File' parameter.
+
+:ref:`run_mode <pre_processing_run_mode>`                                                            'Run Mode' parameter.
+
+:ref:`adaption_database_file <pre_processing_adaption_database_file>`                  'Adaption Database File' parameter.
+
+:ref:`run_continuation_actions <pre_processing_run_continuation_actions>`               'RUN CONTINUATION ACTIONS' object.
+
+:ref:`initial_values_specification <pre_processing_initial_values_specification>`   'INITIAL VALUES SPECIFICATION' object.
+
+=================================================================================   ======================================
+
+.. rubric:: Included in:
+
+===========================================================   ===========================
+
+Parent                                                                            Summary
+
+===========================================================   ===========================
+:ref:`execution_control <pre_processing_execution_control>`   'EXECUTION CONTROL' object.
+
+===========================================================   ===========================
+

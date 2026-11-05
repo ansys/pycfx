@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_rotation_axis_definition:
+
+rotation_axis_definition
+========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.rotation_axis_definition.rotation_axis_definition
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================   =======================================================
+
+Attribute                                                                                                         Summary
+
+===============================================================   =======================================================
+:ref:`option <pre_processing_option_69>`                                           The 'Rotation Axis Definition' option.
+
+:ref:`principal_axis <pre_processing_principal_axis>`             Specifies the principal axis used in instance rotation.
+
+:ref:`rotation_axis_begin <pre_processing_rotation_axis_begin>`                             Root of rotation axis vector.
+
+:ref:`rotation_axis_end <pre_processing_rotation_axis_end>`                                  Tip of rotation axis vector.
+
+===============================================================   =======================================================
+
+.. rubric:: Included in:
+
+=================================================================   =============================================================================================
+
+Parent                                                                                                                                                    Summary
+
+=================================================================   =============================================================================================
+:ref:`transformation_child <pre_processing_transformation_child>`                                                          'child_object_type' of transformation.
+
+:ref:`replication_control <pre_processing_replication_control>`     Defines how the replicated components are connected to the properly aligned source component.
+
+=================================================================   =============================================================================================
+

@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_mfx_run_control:
+
+mfx_run_control
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.mfx_run_control.mfx_run_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================   ==================================
+
+Attribute                                                                                  Summary
+
+=============================================================   ==================================
+:ref:`enabled <pre_processing_enabled_253>`                     Enable the MFX RUN CONTROL object.
+
+:ref:`mfx_run_definition <pre_processing_mfx_run_definition>`         'MFX RUN DEFINITION' object.
+
+:ref:`mfx_solver_control <pre_processing_mfx_solver_control>`         'MFX SOLVER CONTROL' object.
+
+=============================================================   ==================================
+
+.. rubric:: Included in:
+
+===========================================================   ===========================
+
+Parent                                                                            Summary
+
+===========================================================   ===========================
+:ref:`execution_control <pre_processing_execution_control>`   'EXECUTION CONTROL' object.
+
+===========================================================   ===========================
+

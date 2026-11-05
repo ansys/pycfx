@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_48:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_48.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================================   ===================================================================
+
+Parent                                                                                                                                                Summary
+
+=======================================================================================   ===================================================================
+:ref:`stoichiometric_mixture_fraction <pre_processing_stoichiometric_mixture_fraction>`   Defines the stoichiometric mixture fraction for a Flamelet library.
+
+=======================================================================================   ===================================================================
+

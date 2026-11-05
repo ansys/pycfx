@@ -1,0 +1,76 @@
+:orphan:
+
+.. _pre_processing_domain_child:
+
+domain_child
+============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.domain_child.domain_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================================   =============================================================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                                                                       Summary
+
+=======================================================================================   =============================================================================================================================================================================================================================================
+:ref:`location <pre_processing_location>`                                                                                                                                                                                                                                                                         'Location' parameter.
+
+:ref:`domain_type <pre_processing_domain_type>`                                                                                                                                                                                                                                                                'Domain Type' parameter.
+
+:ref:`coord_frame <pre_processing_coord_frame>`                                           Local coordinate frame for computing expressions. The default at the top level of the command data structure is Coord 0, that is no transformation. The default at lower levels is to inherit the value from objects higher up the structure.
+
+:ref:`number_of_passages_in_360 <pre_processing_number_of_passages_in_360>`                                                                                                                                                                                                                      'Number of Passages in 360' parameter.
+
+:ref:`number_of_passages_in_component <pre_processing_number_of_passages_in_component>`                                                                                                                                                                                                    'Number of Passages in Component' parameter.
+
+:ref:`solid_definition <pre_processing_solid_definition>`                                                                                                                                                                                                                                     A container for Solid Definition objects.
+
+:ref:`fluid_definition <pre_processing_fluid_definition>`                                                                                                                                                                                                                                     A container for Fluid Definition objects.
+
+:ref:`domain_models <pre_processing_domain_models>`                                                                                                                                                                                                                    Defines the physical models that are associated with the domain.
+
+:ref:`multiphase_models <pre_processing_multiphase_models>`                                                                                                                                                                                              Defines the overall models that control the interaction of two or more phases.
+
+:ref:`fluid_models <pre_processing_fluid_models>`                                                                                                                                                                                                        Defines the model details that operate on individual fluids within the domain.
+
+:ref:`solid_models <pre_processing_solid_models>`                                                                                                                                                                                                               Defines the model details that operate on the solids within the domain.
+
+:ref:`fluid_pair <pre_processing_fluid_pair>`                                                                                                                                                                                                                                                       A container for Fluid Pair objects.
+
+:ref:`particle_injection_region <pre_processing_particle_injection_region>`                                                                                                                                                                                                          A container for Particle Injection Region objects.
+
+:ref:`tube_definition <pre_processing_tube_definition>`                                                                                                                                                                                                                                        A container for Tube Definition objects.
+
+:ref:`shell_and_tube_models <pre_processing_shell_and_tube_models>`                                                                                                                                                                                                                      Holds the definition of shell and tube models.
+
+:ref:`porosity_models <pre_processing_porosity_models>`                                                                                                                                                                                                                                       Describes loss model for a porous domain.
+
+:ref:`boundary_models <pre_processing_boundary_models>`                                                                                                                                                                                                                Defines the physical models that are associated with boundaries.
+
+:ref:`boundary <pre_processing_boundary_1>`                                                                                                                                                                                                                                                           A container for Boundary objects.
+
+:ref:`injection_region <pre_processing_injection_region>`                                                                                                                                                                                                                                     A container for Injection Region objects.
+
+:ref:`subdomain <pre_processing_subdomain>`                                                                                                                                                                                                                                                          A container for Subdomain objects.
+
+:ref:`source_point <pre_processing_source_point>`                                                                                                                                                                                                                                                 A container for Source Point objects.
+
+:ref:`initialisation <pre_processing_initialisation>`                                                                                                                                                                                                                               Defines the initialisation of flow-field variables.
+
+:ref:`solver_control <pre_processing_solver_control>`                                                                                                                                                                                              Holds all objects that control discretization and execution of the solution process.
+
+=======================================================================================   =============================================================================================================================================================================================================================================
+
+.. rubric:: Included in:
+
+=====================================   ===============================
+
+Parent                                                          Summary
+
+=====================================   ===============================
+:ref:`domain <pre_processing_domain>`   A container for Domain objects.
+
+=====================================   ===============================
+

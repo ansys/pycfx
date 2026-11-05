@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_adaption_method:
+
+adaption_method
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.adaption_method.adaption_method
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================   ================================
+
+Attribute                                                                                  Summary
+
+===============================================================   ================================
+:ref:`option <pre_processing_option_443>`                            The 'Adaption Method' option.
+
+:ref:`minimum_edge_length <pre_processing_minimum_edge_length>`   'Minimum Edge Length' parameter.
+
+===============================================================   ================================
+
+.. rubric:: Included in:
+
+===================================================   =======================
+
+Parent                                                                Summary
+
+===================================================   =======================
+:ref:`mesh_adaption <pre_processing_mesh_adaption>`   'MESH ADAPTION' object.
+
+===================================================   =======================
+

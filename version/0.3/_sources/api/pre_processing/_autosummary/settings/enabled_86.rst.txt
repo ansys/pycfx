@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_86:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_86.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   ==================================================================
+
+Parent                                                                                                                               Summary
+
+=======================================================================   ==================================================================
+:ref:`residual_material_model <pre_processing_residual_material_model>`   Controls the exhaust gas recirculation model (residual gas model).
+
+=======================================================================   ==================================================================
+

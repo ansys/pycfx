@@ -1,0 +1,27 @@
+:orphan:
+
+.. _pre_processing_ansys_interface:
+
+ansys_interface
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.ansys_interface.ansys_interface
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================================   ================================================================================
+
+Parent                                                                                                                                                       Summary
+
+=================================================================================   ================================================================================
+:ref:`coupling_data_transfer_child <pre_processing_coupling_data_transfer_child>`                                     'child_object_type' of coupling_data_transfer.
+
+:ref:`mesh_motion <pre_processing_mesh_motion>`                                     Defines the motion of a mesh boundary. NOTE - Not fully supported by the solver.
+
+:ref:`heat_transfer <pre_processing_heat_transfer>`                                                                Specifies heat transfer conditions at a boundary.
+
+:ref:`heat_transfer <pre_processing_heat_transfer_2>`                                                              Specifies heat transfer conditions at a boundary.
+
+=================================================================================   ================================================================================
+

@@ -1,0 +1,46 @@
+:orphan:
+
+.. _pre_processing_polydispersed_fluid_child:
+
+polydispersed_fluid_child
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.polydispersed_fluid_child.polydispersed_fluid_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================   ============================================================
+
+Attribute                                                                                                                          Summary
+
+===========================================================================   ============================================================
+:ref:`option <pre_processing_option_110>`                                                                The 'Polydispersed Fluid' option.
+
+:ref:`polydispersed_fluids_list <pre_processing_polydispersed_fluids_list>`               List of fluids comprising a polydispersed fluid.
+
+:ref:`polydispersed_fluid <pre_processing_polydispersed_fluid>`                     The polydispersed fluid to which a size group belongs.
+
+:ref:`size_group_distribution <pre_processing_size_group_distribution>`                 Defines the size groups for a polydispersed fluid.
+
+:ref:`breakup_model <pre_processing_breakup_model>`                                   Defines the breakup model for a polydispersed fluid.
+
+:ref:`coalescence_model <pre_processing_coalescence_model>`                       Defines the coalescence model for a polydispersed fluid.
+
+:ref:`volume_range <pre_processing_volume_range>`                                      Defines the volume range of an IATE velocity group.
+
+:ref:`fragment_model <pre_processing_fragment_model>`                         Defines the fragment distribution for a polydispersed fluid.
+
+===========================================================================   ============================================================
+
+.. rubric:: Included in:
+
+=================================================================   ============================================
+
+Parent                                                                                                   Summary
+
+=================================================================   ============================================
+:ref:`polydispersed_fluid <pre_processing_polydispersed_fluid_1>`   A container for Polydispersed Fluid objects.
+
+=================================================================   ============================================
+

@@ -1,0 +1,201 @@
+:orphan:
+
+.. _post_processing_user_surface_child:
+
+user_surface_child
+==================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.user_surface_child.user_surface_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+====================================================================================================   ======================================================================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                                                                                             Summary
+
+====================================================================================================   ======================================================================================================================================================================================================================================================
+:ref:`ansys_diagnostics_file <post_processing_ansys_diagnostics_file>`                                                                                                                                                                                                                Specifies the file to which to write the Import and Export Diagnostics.
+
+:ref:`ansys_volumetric_temperature_transfer <post_processing_ansys_volumetric_temperature_transfer>`                                                                                                                                                                     Indicates whether the User Surface defines a Volumetric Temperature Transfer or not.
+
+:ref:`apply_instancing_transform <post_processing_apply_instancing_transform>`                                                                                                                                                                                                  Toggles the instancing transformation for this graphics object in the viewer.
+
+:ref:`apply_rotation <post_processing_apply_rotation>`                                                                                                                                                                                                                                                                Toggles rotation in the transformation.
+
+:ref:`apply_scale <post_processing_apply_scale>`                                                                                                                                                                                                                                                                         Toggles scale in the transformation.
+
+:ref:`apply_texture <post_processing_apply_texture>`                                                                                                                                                                                                                                                                          Toggles display of the texture.
+
+:ref:`apply_translation <post_processing_apply_translation>`                                                                                                                                                                                                                                                       Toggles translation in the transformation.
+
+:ref:`associated_boundary <post_processing_associated_boundary>`                                                                                                                                                                                                     The name of the boundary that the user wishes to associate with the imported ANSYS mesh.
+
+:ref:`associated_boundary_specified <post_processing_associated_boundary_specified>`                                                                                                                                                                                                            Indicates whether to associate a boundary with this geometry.
+
+:ref:`blend_texture <post_processing_blend_texture>`                                                                                                                                                                                                                                                                         Toggles blending of the texture.
+
+:ref:`boundary_list <post_processing_boundary_list>`                                                                                                                                                                                                                                                                              A list of boundary objects.
+
+:ref:`case_name <post_processing_case_name_1>`                                                                                                                                                                                                                                     Internal CFD-Post name for the analyzed problem or the results set to use.
+
+:ref:`chart_data_source <post_processing_chart_data_source>`                                                                                The data source for a scatter chart. The 'Chart Points' option refers to the original chart points data. The 'Response Points' option refers to the sampled points on the response surfaces for the chart points.
+
+:ref:`chart_path <post_processing_chart_path>`                                                                                                                                                                                                                                                             The path of the chart specified in a user surface.
+
+:ref:`colour <post_processing_colour>`                                                                                                                                                          A list of three numbers between 0 and 1, which represent the RGB (Red/Green/Blue) values to be used when colouring the faces of an object by constant colour.
+
+:ref:`colour_map <post_processing_colour_map>`                                                                                                                                                                                                                                                   The name of the colour map to use when colouring the object.
+
+:ref:`colour_mode <post_processing_colour_mode>`                                                                                              Sets the mode used to colour the object. If set equal to "Constant" then the "Colour" parameter is used to determine the plot colour. If set equal to "Variable", then the "Colour Variable" parameter is used.
+
+:ref:`colour_scale <post_processing_colour_scale>`                                                                                                                                                                                              Sets whether to colour the object with a Linear or Logarithmic scale. By default, the colour scale is Linear.
+
+:ref:`colour_variable <post_processing_colour_variable>`                                                                                                                                                                 The name of the variable to be used in colouring the object. Should be set equal to the name of a currently defined VARIABLE object.
+
+:ref:`colour_variable_boundary_values <post_processing_colour_variable_boundary_values>`                                                                                                                                                       Sets the type of boundary values to be presented for colour variables in this object (Conservative or Hybrid).
+
+:ref:`contour_level <post_processing_contour_level>`                                                                                                                                                                                                                                                           The contour level specified in a user surface.
+
+:ref:`contour_name <post_processing_contour_name>`                                                                                                                                                                                                                                                The name of the contour object specified in a user surface.
+
+:ref:`culling_mode <post_processing_culling_mode>`                                                                                                                                                                                                                                                    Controls the face culling of this object in the viewer.
+
+:ref:`domain_list <post_processing_domain_list>`                                                                                                                                                                                                                                                        The list of domains over which to define this object.
+
+:ref:`draw_contours <post_processing_draw_contours>`                                                                                                                                                                                                                                                           Enables/disables drawing of the contour lines.
+
+:ref:`draw_faces <post_processing_draw_faces>`                                                                                                                                                                                                                                    Toggles the visibility filled faces for this graphics object in the viewer.
+
+:ref:`draw_lines <post_processing_draw_lines>`                                                                                                                                                                                                                                      Toggles the visibility of lines around each face of this graphics object.
+
+:ref:`file_units <post_processing_file_units>`                                                                                                                                                                                                                                          Specifies the units of the data in the ANSYS CDB file to be imported.
+
+:ref:`input_file <post_processing_input_file>`                                                                                                                                                                          The name of the file to be read that contains the definition of one or more polylines or user surfaces and associated path variables.
+
+:ref:`instancing_transform <post_processing_instancing_transform>`                                                                                                                                                                                                                       Defines the TRANSFORM object that is used for the object instancing.
+
+:ref:`lighting <post_processing_lighting>`                                                                                                                                                                                                                                                        Toggles the lighting of this graphics object in the viewer.
+
+:ref:`line_colour <post_processing_line_colour>`                                                                                                                                                            A list of three numbers between 0 and 1, which represent the RGB (Red/Green/Blue) values to be used for colouring the lines on a graphics object.
+
+:ref:`line_colour_mode <post_processing_line_colour_mode>`                                                                                                                                                                                                                                                      Determines where to get the line colour from.
+
+:ref:`line_width <post_processing_line_width>`                                                                                                                                                                                                                                        Controls the width (in pixels) of lines drawn for this graphics object.
+
+:ref:`location <post_processing_location>`                                                                                                                                                                                                                                                                                                    A locator name.
+
+:ref:`maintain_conservative_values <post_processing_maintain_conservative_values>`                                                                                                 Indicates whether to scale the variable values by an appropriate factor to ensure that the results are conservative with respect to the values on the Associated Boundary.
+
+:ref:`max <post_processing_max>`                                                                                                                                                                                                                                       The maximum value of a variable in the colour map when using a "User Specified" range.
+
+:ref:`min <post_processing_min>`                                                                                                                                                                                                                                       The minimum value of a variable in the colour map when using a "User Specified" range.
+
+:ref:`number_of_contours <post_processing_number_of_contours>`                                                                                                                                                                                                                                           Specifies number of contour lines in a contour plot.
+
+:ref:`offset_direction <post_processing_offset_direction>`                                                                                                                                                                                                                          Specifies the offset direction vector (used in Offset From Surface mode).
+
+:ref:`offset_distance <post_processing_offset_distance>`                                                                                                                                                                                                                                              The offset distance (used in Offset From Surface mode).
+
+:ref:`offset_mode <post_processing_offset_mode>`                                                                                                                                                                                                                                                Specifies the offset mode (used in Offset From Surface mode).
+
+:ref:`offset_type <post_processing_offset_type>`                                                                                                                                                                                                                                                Specifies the offset type (used in Offset From Surface mode).
+
+:ref:`offset_variable <post_processing_offset_variable>`                                                                                                                                                                                                                 Specifies the variable to be used for the offset (used in Offset From Surface mode).
+
+:ref:`option <post_processing_option>`                                                                                                                                                                                                                                                                                                        'option' child.
+
+:ref:`output_variable_name <post_processing_output_variable_name>`                                                                                                                                                                                                                                    The name of the output variable for a response surface.
+
+:ref:`output_variable_name_list <post_processing_output_variable_name_list>`                                                                                                                                                                                                                 The list of the output variable names for a 2D response surface.
+
+:ref:`principal_axis <post_processing_principal_axis>`                                                                                                                                                                                                                                                Specifies the principal axis used in instance rotation.
+
+:ref:`range <post_processing_range>`                                                                                                                           Sets the method used to calculate the extents of the colour map on an object. "Global" uses the range of values in the problem domain. "Local" uses the range of values on the current object.
+
+:ref:`render_edge_angle <post_processing_render_edge_angle>`                                                                                                                                                                                                                          The angle between two faces used to limit visible edges in a wireframe.
+
+:ref:`rotation_angle <post_processing_rotation_angle>`                                                                                                                                                                                                                                                                          Specifies the rotation angle.
+
+:ref:`rotation_axis_from <post_processing_rotation_axis_from>`                                                                                                                                                                                                                                   An XYZ triple defining the first point of the rotation axis.
+
+:ref:`rotation_axis_to <post_processing_rotation_axis_to>`                                                                                                                                                                                                                                      An XYZ triple defining the second point of the rotation axis.
+
+:ref:`rotation_axis_type <post_processing_rotation_axis_type>`                                         Specifies the rotation axis type in the transformation. If it is set to 'Principal Axis', Principal Axis parameter setting is used. It is set to 'Rotation Axis', parameters Rotation Axis From and Rotation Axis To are used for the axis definition.
+
+:ref:`scale_factor <post_processing_scale_factor>`                                                                                                                                                                                                                                                        The object scale factor used in the transformation.
+
+:ref:`section_name <post_processing_section_name>`                                                                                                                                                                        The section name in the file to be read that contains the definition of the polyline or user surface and associated path variables.
+
+:ref:`specular_lighting <post_processing_specular_lighting>`                                                                                                                                                                                                                                      Toggles the specular lighting of this object in the viewer.
+
+:ref:`surface_drawing <post_processing_surface_drawing>`                                                                                                                                                                                                                                 Sets the algorithm used to shade the faces for this graphics object.
+
+:ref:`surface_name <post_processing_surface_name>`                                                                                                                                                                                                                                                             The name of the surface object to offset from.
+
+:ref:`texture_angle <post_processing_texture_angle>`                                                                                                                                                                                                                                                                            The texture angle in degrees.
+
+:ref:`texture_direction <post_processing_texture_direction>`                                                                                                                                                                                                                                               The direction of texture projection to the object.
+
+:ref:`texture_file <post_processing_texture_file>`                                                                                                                                                                                                                                                                 The texture file to display on the object.
+
+:ref:`texture_material <post_processing_texture_material>`                                                                                                                                                                                                                                                                   The material to use for texture.
+
+:ref:`texture_position <post_processing_texture_position>`                                                                                                                                                                                                                                                                       X-Y position of the texture.
+
+:ref:`texture_scale <post_processing_texture_scale>`                                                                                                                                                                                                                                                                                       The texture scale.
+
+:ref:`texture_type <post_processing_texture_type>`                                                                                                                                                                                                                                                                                The type of texture to use.
+
+:ref:`tile_texture <post_processing_tile_texture>`                                                                                                                                                                                                                                                                             Toggles tiling of the texture.
+
+:ref:`transform_texture <post_processing_transform_texture>`                                                                                                                                                                                                                                                 Toggles transforming (spherical) of the texture.
+
+:ref:`translation_vector <post_processing_translation_vector>`                                                                                                                                                                                                                                                              Specifies the translation vector.
+
+:ref:`transparency <post_processing_transparency>`                                                                                                                                                                              Set between 0.0 (fully opaque) and 1.0 (fully transparent) to control the transparency of this graphics object in the viewer.
+
+:ref:`use_mid_side_nodes <post_processing_use_mid_side_nodes>`                                                                                                                                 Indicates whether to include reading the mid-side nodes when reading the ANSYS surface. The mid-side nodes will only be used when exporting Node Temperatures.
+
+:ref:`visibility <post_processing_visibility>`                                                                                                                                                                                                                   Toggles the visibility of this graphics object in the viewer. THIS PARAMETER IS DEPRECATED!.
+
+:ref:`x_input_variable_name <post_processing_x_input_variable_name>`                                                                                                                                                                                                                      The input variable name for the X coordinate of a response surface.
+
+:ref:`x_number_of_samples <post_processing_x_number_of_samples>`                                                                                                                                                                                                     The number of sample points in X direction for building a response surface user surface.
+
+:ref:`y_input_variable_name <post_processing_y_input_variable_name>`                                                                                                                                                                                                                      The input variable name for the Y coordinate of a response surface.
+
+:ref:`y_number_of_samples <post_processing_y_number_of_samples>`                                                                                                                                                                                                     The number of sample points in Y direction for building a response surface user surface.
+
+:ref:`object_view_transform <post_processing_object_view_transform>`                                                                                    This object contains object transformation info to be processed by the viewer. Like instance transform, this object should be associated with each geometry. It is usually specified as a sub-object.
+
+====================================================================================================   ======================================================================================================================================================================================================================================================
+
+.. rubric:: Methods
+
+============================================   ========================================
+
+Method                                                                          Summary
+
+============================================   ========================================
+:ref:`hide <post_processing_hide>`                  Hide the object in a given view(s).
+
+:ref:`show <post_processing_show>`                  Show the object in a given view(s).
+
+:ref:`suspend <post_processing_suspend>`       Suspend immediate update for the object.
+
+:ref:`unsuspend <post_processing_unsuspend>`   Restore immediate update for the object.
+
+============================================   ========================================
+
+.. rubric:: Included in:
+
+==================================================   =====================
+
+Parent                                                             Summary
+
+==================================================   =====================
+:ref:`user_surface <post_processing_user_surface>`   'user_surface' child.
+
+==================================================   =====================
+

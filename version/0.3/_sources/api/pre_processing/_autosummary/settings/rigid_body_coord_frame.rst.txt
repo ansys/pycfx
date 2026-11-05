@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_rigid_body_coord_frame:
+
+rigid_body_coord_frame
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.rigid_body_coord_frame.rigid_body_coord_frame
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   ==================================
+
+Parent                                                                                 Summary
+
+=========================================================   ==================================
+:ref:`rigid_body_child <pre_processing_rigid_body_child>`   'child_object_type' of rigid_body.
+
+=========================================================   ==================================
+

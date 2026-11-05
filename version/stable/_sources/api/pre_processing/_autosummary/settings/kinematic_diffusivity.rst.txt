@@ -1,0 +1,31 @@
+:orphan:
+
+.. _pre_processing_kinematic_diffusivity:
+
+kinematic_diffusivity
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.kinematic_diffusivity.kinematic_diffusivity
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================================================   =====================================================
+
+Parent                                                                                                                                          Summary
+
+===============================================================================================   =====================================================
+:ref:`component_child <pre_processing_component_child>`                                                               'child_object_type' of component.
+
+:ref:`additional_variable_child <pre_processing_additional_variable_child_1>`                               'child_object_type' of additional_variable.
+
+:ref:`equation_properties_for_fluid_child <pre_processing_equation_properties_for_fluid_child>`   'child_object_type' of equation_properties_for_fluid.
+
+:ref:`component_child <pre_processing_component_child_1>`                                                             'child_object_type' of component.
+
+:ref:`additional_variable_child <pre_processing_additional_variable_child_2>`                               'child_object_type' of additional_variable.
+
+:ref:`additional_variable_child <pre_processing_additional_variable_child_3>`                               'child_object_type' of additional_variable.
+
+===============================================================================================   =====================================================
+

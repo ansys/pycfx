@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_particle_wall_interaction_return_variables_list:
+
+particle_wall_interaction_return_variables_list
+===============================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.particle_wall_interaction_return_variables_list.particle_wall_interaction_return_variables_list
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================================   ========================================
+
+Parent                                                                                                                   Summary
+
+=====================================================================================   ========================================
+:ref:`particle_user_wall_interaction <pre_processing_particle_user_wall_interaction>`   'PARTICLE USER WALL INTERACTION' object.
+
+=====================================================================================   ========================================
+

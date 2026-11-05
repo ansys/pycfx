@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_earsm_coefficients:
+
+earsm_coefficients
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.earsm_coefficients.earsm_coefficients
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================================================   ==========================================================
+
+Attribute                                                                                                                                            Summary
+
+===============================================================================================   ==========================================================
+:ref:`enabled <pre_processing_enabled_55>`                                                                             Enable the EARSM COEFFICIENTS object.
+
+:ref:`diff_coefficient <pre_processing_diff_coefficient>`                                         DIFF explicit algebraic Reynolds stress model coefficient.
+
+:ref:`a0_curvature_correction_coefficient <pre_processing_a0_curvature_correction_coefficient>`     A0 explicit algebraic Reynolds stress model coefficient.
+
+:ref:`curvature_correction_limiter <pre_processing_curvature_correction_limiter>`                                 Limiter for the curvature correction term.
+
+===============================================================================================   ==========================================================
+
+.. rubric:: Included in:
+
+===========================================================   ===========================================================================
+
+Parent                                                                                                                            Summary
+
+===========================================================   ===========================================================================
+:ref:`turbulence_model <pre_processing_turbulence_model>`     Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+:ref:`turbulence_model <pre_processing_turbulence_model_1>`   Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+===========================================================   ===========================================================================
+

@@ -1,0 +1,32 @@
+:orphan:
+
+.. _pre_processing_activation_control:
+
+activation_control
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.activation_control.activation_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================   ==========================================
+
+Attribute                                                                                        Summary
+
+===========================================================   ==========================================
+:ref:`control_condition <pre_processing_control_condition>`   A container for Control Condition objects.
+
+===========================================================   ==========================================
+
+.. rubric:: Included in:
+
+===============================================================   =====================================
+
+Parent                                                                                          Summary
+
+===============================================================   =====================================
+:ref:`configuration_child <pre_processing_configuration_child>`   'child_object_type' of configuration.
+
+===============================================================   =====================================
+

@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_interfacial_area_transport_4:
+
+interfacial_area_transport
+==========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.interfacial_area_transport_4.interfacial_area_transport
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================   ====================================================
+
+Attribute                                                                                                                Summary
+
+=========================================================================   ====================================================
+:ref:`option <pre_processing_option_211>`                                               The 'Interfacial Area Transport' option.
+
+:ref:`interfacial_area_density <pre_processing_interfacial_area_density>`   Interfacial area per unit volume between two phases.
+
+=========================================================================   ====================================================
+
+.. rubric:: Included in:
+
+===============================================================   ===============================================================================
+
+Parent                                                                                                                                    Summary
+
+===============================================================   ===============================================================================
+:ref:`initial_conditions <pre_processing_initial_conditions_3>`   Holds the details of initial condition specification for one or more equations.
+
+===============================================================   ===============================================================================
+

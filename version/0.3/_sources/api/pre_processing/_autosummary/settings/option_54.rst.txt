@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_option_54:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_54.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ========================================
+
+Parent                                                                                         Summary
+
+===========================================================   ========================================
+:ref:`combustion_model <pre_processing_combustion_model>`     Defines the combustion model to be used.
+
+:ref:`combustion_model <pre_processing_combustion_model_1>`   Defines the combustion model to be used.
+
+===========================================================   ========================================
+

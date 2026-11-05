@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_penetration_origin_and_direction:
+
+penetration_origin_and_direction
+================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.penetration_origin_and_direction.penetration_origin_and_direction
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================================   ==============================================
+
+Attribute                                                                                                              Summary
+
+=============================================================================   ==============================================
+:ref:`option <pre_processing_option_398>`                                       The 'Penetration Origin And Direction' option.
+
+:ref:`particle_injection_region <pre_processing_particle_injection_region_1>`             Name of a particle injection region.
+
+:ref:`injection_centre <pre_processing_injection_centre>`                                        'Injection Centre' parameter.
+
+:ref:`injection_direction <pre_processing_injection_direction>`                                  Sets the injection direction.
+
+=============================================================================   ==============================================
+
+.. rubric:: Included in:
+
+=================================================================================================   ======================================================
+
+Parent                                                                                                                                             Summary
+
+=================================================================================================   ======================================================
+:ref:`transient_particle_diagnostics_child <pre_processing_transient_particle_diagnostics_child>`   'child_object_type' of transient_particle_diagnostics.
+
+=================================================================================================   ======================================================
+

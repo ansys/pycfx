@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_hybrid_order_option_child:
+
+hybrid_order_option_child
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.hybrid_order_option_child.hybrid_order_option_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================   ==========================================================================
+
+Attribute                                                                                                                          Summary
+
+=============================================================   ==========================================================================
+:ref:`option <pre_processing_option_56>`                                                                 The 'Hybrid Order Option' option.
+
+:ref:`mms_name <pre_processing_mms_name>`                                                                            'MMS Name' parameter.
+
+:ref:`boundary_hierarchy <pre_processing_boundary_hierarchy>`   List of boundary types which gives the hybridization order for a variable.
+
+=============================================================   ==========================================================================
+
+.. rubric:: Included in:
+
+===============================================================   ============================================
+
+Parent                                                                                                 Summary
+
+===============================================================   ============================================
+:ref:`hybrid_order_option <pre_processing_hybrid_order_option>`   A container for Hybrid Order Option objects.
+
+===============================================================   ============================================
+

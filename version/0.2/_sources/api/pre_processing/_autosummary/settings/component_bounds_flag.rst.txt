@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_component_bounds_flag:
+
+component_bounds_flag
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.component_bounds_flag.component_bounds_flag
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================================   ===========================================
+
+Parent                                                                                                            Summary
+
+===========================================================================   ===========================================
+:ref:`additional_variable_child <pre_processing_additional_variable_child>`   'child_object_type' of additional_variable.
+
+===========================================================================   ===========================================
+

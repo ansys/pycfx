@@ -1,0 +1,54 @@
+:orphan:
+
+.. _pre_processing_fluid_models:
+
+fluid_models
+============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fluid_models.fluid_models
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================================================   ===============================================================================
+
+Attribute                                                                                                                                                               Summary
+
+=============================================================================================   ===============================================================================
+:ref:`heat_transfer_model <pre_processing_heat_transfer_model>`                                                       Specifies the Heat Transfer Model to be used in a domain.
+
+:ref:`turbulence_model <pre_processing_turbulence_model>`                                           Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+:ref:`turbulent_wall_functions <pre_processing_turbulent_wall_functions>`                                                 Sets the turbulent near-wall treatment at a boundary.
+
+:ref:`turbulent_heat_transfer <pre_processing_turbulent_heat_transfer>`                         Singleton holding model interactions among Turbulence and Heat Transfer Models.
+
+:ref:`turbulent_volume_fraction_transfer <pre_processing_turbulent_volume_fraction_transfer>`   Singleton holding model interactions among Turbulence and Heat Transfer Models.
+
+:ref:`thermal_radiation_model <pre_processing_thermal_radiation_model>`                                           Defines the Thermal Radiation model to be used in the domain.
+
+:ref:`combustion_model <pre_processing_combustion_model_1>`                                                                            Defines the combustion model to be used.
+
+:ref:`wall_condensation_model <pre_processing_wall_condensation_model>`                                       Specifies the wall condensation model for multi-component vapour.
+
+:ref:`component <pre_processing_component>`                                                                                                  A container for Component objects.
+
+:ref:`additional_variable <pre_processing_additional_variable_1>`                                                                  A container for Additional Variable objects.
+
+:ref:`fluid <pre_processing_fluid>`                                                                                                              A container for Fluid objects.
+
+:ref:`electromagnetic_model <pre_processing_electromagnetic_model>`                                                 Specifies the electromagnetic model to be used in a domain.
+
+=============================================================================================   ===============================================================================
+
+.. rubric:: Included in:
+
+=================================================   ==============================
+
+Parent                                                                     Summary
+
+=================================================   ==============================
+:ref:`domain_child <pre_processing_domain_child>`   'child_object_type' of domain.
+
+=================================================   ==============================
+

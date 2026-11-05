@@ -1,0 +1,27 @@
+:orphan:
+
+.. _pre_processing_homogeneous_model:
+
+homogeneous_model
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.homogeneous_model.homogeneous_model
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================   ==============================================================================
+
+Parent                                                                                                                                   Summary
+
+===============================================================   ==============================================================================
+:ref:`multiphase_models <pre_processing_multiphase_models>`       Defines the overall models that control the interaction of two or more phases.
+
+:ref:`heat_transfer_model <pre_processing_heat_transfer_model>`                        Specifies the Heat Transfer Model to be used in a domain.
+
+:ref:`turbulence_model <pre_processing_turbulence_model>`            Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+:ref:`turbulence_model <pre_processing_turbulence_model_1>`          Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+===============================================================   ==============================================================================
+

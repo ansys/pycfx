@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_morphology:
+
+morphology
+==========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.morphology.morphology
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+========================================   ========================
+
+Attribute                                                   Summary
+
+========================================   ========================
+:ref:`option <pre_processing_option_83>`   The 'Morphology' option.
+
+========================================   ========================
+
+.. rubric:: Included in:
+
+=====================================================================   ========================================
+
+Parent                                                                                                   Summary
+
+=====================================================================   ========================================
+:ref:`solid_definition_child <pre_processing_solid_definition_child>`   'child_object_type' of solid_definition.
+
+:ref:`tube_definition_child <pre_processing_tube_definition_child>`      'child_object_type' of tube_definition.
+
+=====================================================================   ========================================
+

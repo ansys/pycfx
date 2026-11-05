@@ -1,0 +1,23 @@
+:orphan:
+
+.. _post_processing_position_2:
+
+position_2
+==========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.position_2.position_2
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+============================================================================   ===========================================
+
+Parent                                                                                                             Summary
+
+============================================================================   ===========================================
+:ref:`turbo_line_child <post_processing_turbo_line_child>`                              'child_object_type' of turbo_line.
+
+:ref:`internal_turbo_line_child <post_processing_internal_turbo_line_child>`   'child_object_type' of internal_turbo_line.
+
+============================================================================   ===========================================
+

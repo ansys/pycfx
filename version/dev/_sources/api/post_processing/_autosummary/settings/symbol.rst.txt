@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_symbol:
+
+symbol
+======
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.symbol.symbol
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==================================================================   ======================================
+
+Parent                                                                                              Summary
+
+==================================================================   ======================================
+:ref:`particle_cloud_child <post_processing_particle_cloud_child>`   'child_object_type' of particle_cloud.
+
+==================================================================   ======================================
+

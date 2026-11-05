@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_adaption_convergence_criteria:
+
+adaption_convergence_criteria
+=============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.adaption_convergence_criteria.adaption_convergence_criteria
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================================   ===========================================
+
+Attribute                                                                                                             Summary
+
+===============================================================================   ===========================================
+:ref:`maximum_iterations_per_step <pre_processing_maximum_iterations_per_step>`      'Maximum Iterations per Step' parameter.
+
+:ref:`option <pre_processing_option_444>`                                         The 'Adaption Convergence Criteria' option.
+
+:ref:`adaption_target_residual <pre_processing_adaption_target_residual>`               'Adaption Target Residual' parameter.
+
+===============================================================================   ===========================================
+
+.. rubric:: Included in:
+
+===================================================   =======================
+
+Parent                                                                Summary
+
+===================================================   =======================
+:ref:`mesh_adaption <pre_processing_mesh_adaption>`   'MESH ADAPTION' object.
+
+===================================================   =======================
+

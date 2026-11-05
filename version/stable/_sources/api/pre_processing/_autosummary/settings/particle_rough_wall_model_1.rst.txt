@@ -1,0 +1,42 @@
+:orphan:
+
+.. _pre_processing_particle_rough_wall_model_1:
+
+particle_rough_wall_model
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.particle_rough_wall_model_1.particle_rough_wall_model
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================================================================================================   ==============================================================================
+
+Attribute                                                                                                                                                                                                                            Summary
+
+===========================================================================================================================================================   ==============================================================================
+:ref:`enabled <pre_processing_enabled_136>`                                                                                                                                                     Enable the PARTICLE ROUGH WALL MODEL object.
+
+:ref:`option <pre_processing_option_169>`                                                                                                                                                            The 'Particle Rough Wall Model' option.
+
+:ref:`roughness_length_for_particle_wall_interaction <pre_processing_roughness_length_for_particle_wall_interaction>`                                                            'Roughness Length for Particle Wall Interaction' parameter.
+
+:ref:`roughness_height_for_particle_wall_interaction <pre_processing_roughness_height_for_particle_wall_interaction>`                                                            'Roughness Height for Particle Wall Interaction' parameter.
+
+:ref:`roughness_height_standard_deviation_for_particle_wall_interaction <pre_processing_roughness_height_standard_deviation_for_particle_wall_interaction>`   'Roughness Height Standard Deviation for Particle Wall Interaction' parameter.
+
+===========================================================================================================================================================   ==============================================================================
+
+.. rubric:: Included in:
+
+=================================================================   =============================================================
+
+Parent                                                                                                                    Summary
+
+=================================================================   =============================================================
+:ref:`boundary_conditions <pre_processing_boundary_conditions_2>`   Specifies boundary conditions for all equations being solved.
+
+:ref:`boundary_conditions <pre_processing_boundary_conditions_6>`   Specifies boundary conditions for all equations being solved.
+
+=================================================================   =============================================================
+

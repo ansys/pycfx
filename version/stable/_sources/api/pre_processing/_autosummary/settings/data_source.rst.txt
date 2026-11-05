@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_data_source:
+
+data_source
+===========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.data_source.data_source
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================   =================================
+
+Attribute                                                                                     Summary
+
+=================================================================   =================================
+:ref:`option <pre_processing_option_5>`                                     The 'Data Source' option.
+
+:ref:`file_name <pre_processing_file_name_6>`                                  'File Name' parameter.
+
+:ref:`section_name <pre_processing_section_name>`                           'Section Name' parameter.
+
+:ref:`copy_data_into_setup <pre_processing_copy_data_into_setup>`   'Copy Data Into Setup' parameter.
+
+=================================================================   =================================
+
+.. rubric:: Included in:
+
+=====================================================   ================================
+
+Parent                                                                           Summary
+
+=====================================================   ================================
+:ref:`function_child <pre_processing_function_child>`   'child_object_type' of function.
+
+=====================================================   ================================
+

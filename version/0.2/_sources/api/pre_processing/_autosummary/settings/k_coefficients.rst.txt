@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_k_coefficients:
+
+k_coefficients
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.k_coefficients.k_coefficients
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================   =============================================================
+
+Attribute                                                                                                                       Summary
+
+=======================================================================   =============================================================
+:ref:`enabled <pre_processing_enabled_54>`                                                            Enable the K COEFFICIENTS object.
+
+:ref:`turbulent_flux_closure <pre_processing_turbulent_flux_closure_1>`   Controls the turbulent flux closure for a transport equation.
+
+=======================================================================   =============================================================
+
+.. rubric:: Included in:
+
+===========================================================   ===========================================================================
+
+Parent                                                                                                                            Summary
+
+===========================================================   ===========================================================================
+:ref:`turbulence_model <pre_processing_turbulence_model>`     Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+:ref:`k_omega_regime <pre_processing_k_omega_regime>`               Controls Menter turbulence model coefficients for the k-Omega regime.
+
+:ref:`k_epsilon_regime <pre_processing_k_epsilon_regime>`         Controls Menter turbulence model coefficients for the k-Epsilon regime.
+
+:ref:`turbulence_model <pre_processing_turbulence_model_1>`   Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+===========================================================   ===========================================================================
+

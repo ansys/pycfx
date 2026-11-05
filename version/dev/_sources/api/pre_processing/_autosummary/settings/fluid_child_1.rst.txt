@@ -1,0 +1,32 @@
+:orphan:
+
+.. _pre_processing_fluid_child_1:
+
+fluid_child
+===========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fluid_child_1.fluid_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================   ==============================================================
+
+Attribute                                                                                                                  Summary
+
+=================================================================   ==============================================================
+:ref:`injection_conditions <pre_processing_injection_conditions>`   Specifies injection conditions for all equations being solved.
+
+=================================================================   ==============================================================
+
+.. rubric:: Included in:
+
+=====================================   ==============================
+
+Parent                                                         Summary
+
+=====================================   ==============================
+:ref:`fluid <pre_processing_fluid_1>`   A container for Fluid objects.
+
+=====================================   ==============================
+

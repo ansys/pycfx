@@ -1,0 +1,42 @@
+:orphan:
+
+.. _pre_processing_pressure_level_information:
+
+pressure_level_information
+==========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.pressure_level_information.pressure_level_information
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================================================   ==========================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                  Summary
+
+=====================================================================================================   ==========================================================================================================================================================
+:ref:`enabled <pre_processing_enabled_189>`                                                                                                                                                                          Enable the PRESSURE LEVEL INFORMATION object.
+
+:ref:`option <pre_processing_option_377>`                                                                                                                                                                                 The 'Pressure Level Information' option.
+
+:ref:`cartesian_coordinates <pre_processing_cartesian_coordinates>`                                                                                                                                            Position <x,y,z> specified by cartesian components.
+
+:ref:`pressure_level <pre_processing_pressure_level>`                                                                                                                                                                    Pressure level set at reference location.
+
+:ref:`compressible_transient_option <pre_processing_compressible_transient_option>`                     Determines whether the pressure field is shifted to accelerate mass conservation for compressible transient simulations which have no pressure boundaries.
+
+:ref:`pressure_level_under_relaxation_factor <pre_processing_pressure_level_under_relaxation_factor>`                                                                           Pressure level underrelaxation factor for compressible transients using Automatic.
+
+=====================================================================================================   ==========================================================================================================================================================
+
+.. rubric:: Included in:
+
+=======================================================   ====================================================================================
+
+Parent                                                                                                                                 Summary
+
+=======================================================   ====================================================================================
+:ref:`solver_control <pre_processing_solver_control_1>`   Holds all objects that control discretization and execution of the solution process.
+
+=======================================================   ====================================================================================
+

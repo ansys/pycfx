@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_location_type_1:
+
+location_type
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.location_type_1.location_type
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================   ===========================
+
+Attribute                                                         Summary
+
+===========================================   ===========================
+:ref:`option <pre_processing_option_392>`     The 'Location Type' option.
+
+:ref:`boundary <pre_processing_boundary_2>`         'Boundary' parameter.
+
+:ref:`location <pre_processing_location>`           'Location' parameter.
+
+===========================================   ===========================
+
+.. rubric:: Included in:
+
+===============================================================   =====================================
+
+Parent                                                                                          Summary
+
+===============================================================   =====================================
+:ref:`monitor_point_child <pre_processing_monitor_point_child>`   'child_object_type' of monitor_point.
+
+===============================================================   =====================================
+

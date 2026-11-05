@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_file_name_5:
+
+file_name
+=========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.file_name_5.file_name
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   ==============================================
+
+Parent                                                                                                           Summary
+
+=======================================================================   ==============================================
+:ref:`write_solver_input_file <pre_processing_write_solver_input_file>`   Write a solver input file (\*.def or \*.mdef).
+
+=======================================================================   ==============================================
+

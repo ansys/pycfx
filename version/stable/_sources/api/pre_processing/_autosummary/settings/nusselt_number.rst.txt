@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_nusselt_number:
+
+nusselt_number
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.nusselt_number.nusselt_number
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================================   ===================================================
+
+Parent                                                                                                                  Summary
+
+=========================================================================   ===================================================
+:ref:`interphase_heat_transfer <pre_processing_interphase_heat_transfer>`   Specifies heat transfer model between a fluid pair.
+
+=========================================================================   ===================================================
+

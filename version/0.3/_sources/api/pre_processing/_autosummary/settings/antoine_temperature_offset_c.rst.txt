@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_antoine_temperature_offset_c:
+
+antoine_temperature_offset_c
+============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.antoine_temperature_offset_c.antoine_temperature_offset_c
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================   =========================================================================
+
+Parent                                                                                                        Summary
+
+=========================================   =========================================================================
+:ref:`pressure <pre_processing_pressure>`   Defines the Saturation Pressure used in a multiphase mass transfer model.
+
+=========================================   =========================================================================
+
