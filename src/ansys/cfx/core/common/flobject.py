@@ -1583,9 +1583,11 @@ class Action(_ChildObjectsMixin[ChildTypeT], _CreatableNamedObjectMixin, Base, G
         RuntimeError
             If the action object could not be created.
         """
-        try:
+
+        # Don't attempt to create an action object on engine releases that don't support it
+        if hasattr(self.__class__, "child_object_type"):
             return super().create(name)
-        except AttributeError:
+        else:
             raise RuntimeError(
                 f"Failed to create action object '{name}'.\n"
                 "Command and query objects are only supported in Release 2027 R2 "
