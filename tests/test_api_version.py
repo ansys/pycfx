@@ -102,11 +102,15 @@ def test_get_health_check_modules_old(monkeypatch):
 
 
 class _FakeRpcError(grpc.RpcError):
-    def __init__(self, code):
+    def __init__(self, code, details="fake details"):
         self._code = code
+        self._details = details
 
     def code(self):
         return self._code
+
+    def details(self):
+        return self._details
 
 
 def test_detect_engine_version_v1_success(monkeypatch):
@@ -154,21 +158,13 @@ def test_detect_engine_version_raises_when_all_fail(monkeypatch):
 
 
 def test_probe_engine_version_returns_none_on_fallback_status(monkeypatch):
-    stub = mock.Mock()
-    stub.InfoQuery.side_effect = _FakeRpcError(grpc.StatusCode.UNIMPLEMENTED)
-    fake_pb2 = mock.Mock()
-    fake_pb2_grpc = mock.Mock(EngineEvalStub=mock.Mock(return_value=stub))
-
-    def fake_import(name):
-        return fake_pb2_grpc if name.endswith("_grpc") else fake_pb2
-
-    monkeypatch.setattr(api_version.importlib, "import_module", fake_import)
+    _patch_probe_stub(monkeypatch, _FakeRpcError(grpc.StatusCode.UNIMPLEMENTED))
     assert api_version._probe_engine_version(mock.Mock(), [], "v1") is None
 
 
-def test_probe_engine_version_reraises_unexpected_rpc_error(monkeypatch):
+def _patch_probe_stub(monkeypatch, error):
     stub = mock.Mock()
-    stub.InfoQuery.side_effect = _FakeRpcError(grpc.StatusCode.UNAVAILABLE)
+    stub.InfoQuery.side_effect = error
     fake_pb2 = mock.Mock()
     fake_pb2_grpc = mock.Mock(EngineEvalStub=mock.Mock(return_value=stub))
 
@@ -176,5 +172,30 @@ def test_probe_engine_version_reraises_unexpected_rpc_error(monkeypatch):
         return fake_pb2_grpc if name.endswith("_grpc") else fake_pb2
 
     monkeypatch.setattr(api_version.importlib, "import_module", fake_import)
+
+
+@pytest.mark.parametrize(
+    "code", [grpc.StatusCode.UNAUTHENTICATED, grpc.StatusCode.PERMISSION_DENIED]
+)
+def test_probe_engine_version_raises_on_auth_failure(monkeypatch, code):
+    error = _FakeRpcError(code, "bad password")
+    _patch_probe_stub(monkeypatch, error)
+    with pytest.raises(RuntimeError, match="Authentication with the CFX server failed") as excinfo:
+        api_version._probe_engine_version(mock.Mock(), [], "v1")
+    assert "bad password" in str(excinfo.value)
+    assert excinfo.value.__cause__ is error
+
+
+def test_probe_engine_version_raises_on_unavailable(monkeypatch):
+    error = _FakeRpcError(grpc.StatusCode.UNAVAILABLE, "connection refused")
+    _patch_probe_stub(monkeypatch, error)
+    with pytest.raises(RuntimeError, match="Could not reach the CFX server") as excinfo:
+        api_version._probe_engine_version(mock.Mock(), [], "v1")
+    assert "connection refused" in str(excinfo.value)
+    assert excinfo.value.__cause__ is error
+
+
+def test_probe_engine_version_reraises_unexpected_rpc_error(monkeypatch):
+    _patch_probe_stub(monkeypatch, _FakeRpcError(grpc.StatusCode.DEADLINE_EXCEEDED))
     with pytest.raises(grpc.RpcError):
         api_version._probe_engine_version(mock.Mock(), [], "v1")

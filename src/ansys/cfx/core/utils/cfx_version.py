@@ -79,6 +79,8 @@ class CFXVersion(Enum):
     CFXVersion.v252.awp_var == 'AWP_ROOT252'
     """
 
+    v272 = "27.2.0"
+    """Version 2027 R2"""
     v271 = "27.1.0"
     """Version 2027 R1"""
     v261 = "26.1.0"

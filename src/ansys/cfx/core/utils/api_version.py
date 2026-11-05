@@ -55,9 +55,17 @@ def _probe_engine_version(channel, metadata, api_tag: str) -> CFXVersion | None:
     try:
         response = stub.InfoQuery(request, metadata=metadata, timeout=10)
     except grpc.RpcError as exc:
-        if exc.code() in _PROBE_FALLBACK_STATUSES:
-            logger.debug(f"API probe with {api_tag} failed ({exc.code().name}).")
+        code = exc.code()
+        if code in _PROBE_FALLBACK_STATUSES:
+            logger.debug(f"API probe with {api_tag} failed ({code.name}).")
             return None
+        if code in (grpc.StatusCode.UNAUTHENTICATED, grpc.StatusCode.PERMISSION_DENIED):
+            raise RuntimeError(
+                f"Authentication with the CFX server failed. Check the password. "
+                f"Details: {exc.details()}"
+            ) from exc
+        if code == grpc.StatusCode.UNAVAILABLE:
+            raise RuntimeError(f"Could not reach the CFX server. Details: {exc.details()}") from exc
         raise
     return CFXVersion(response.output)
 

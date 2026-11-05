@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/psf/black
-    rev: 87928e6d6761a4a6d22250e1fee5601b3998086e  # frozen: 26.5.1
+    rev: 258e7dbf348bc23cb70b8cdf693481c04634ebcc  # frozen: 26.10.1
     hooks:
       - id: black
         args: [--target-version=py310]
@@ -54,6 +54,7 @@ repos:
     rev: 3e8a8703264a2f4a69428a0aa4dcb512790b2c8c  # frozen: v6.0.0
     hooks:
       - id: check-merge-conflict
+      - id: check-yaml
       - id: trailing-whitespace
         exclude: ".(def|gtm|res)$|session.rst"
 
@@ -63,7 +64,7 @@ repos:
       - id: check-yaml
 
   - repo: https://github.com/PyCQA/pylint
-    rev: 40be3a2f729cdf667eae46272369aeffe1abf651  # frozen: v4.1.2
+    rev: e75de10c69103381c875601f638d4b977ff0fcaf  # frozen: v4.1.3
     hooks:
       - id: pylint
         args: ["--reports", "n", "--score", "n", "--rcfile=pylintrc"]
