@@ -24,7 +24,7 @@ from ansys.cfx.core.session_pre import PreProcessing
 from ansys.cfx.core.utils.cfx_version import CFXVersion
 
 
-def test_action_object(pypre: PreProcessing, pytestconfig):
+def test_action_object(pypre: PreProcessing):
 
     if pypre.get_cfx_version() < CFXVersion.v272:
         try:
@@ -38,6 +38,9 @@ def test_action_object(pypre: PreProcessing, pytestconfig):
         else:
             assert False, "Expected RuntimeError"
         return
+
+    # Open a new case to allow for the creation of a new action object for a query later on
+    pypre.file.new_case()
 
     assert pypre.file.open_case.get_object_names() == []
     pypre.file.open_case.create("OpenCaseObject")
@@ -65,7 +68,7 @@ def test_action_object(pypre: PreProcessing, pytestconfig):
     file_name = pypre.file.open_case["OpenCaseObject"].file_name()
     assert file_name == "TurboCase.cfx"
     recover_case_file = pypre.file.open_case["OpenCaseObject"].recover_case_file()
-    assert recover_case_file == True
+    assert recover_case_file is True
 
     assert list(pypre.file.open_case.keys()) == ["OpenCaseObject"]
     assert list(pypre.file.open_case.values()) == [pypre.file.open_case["OpenCaseObject"]]
@@ -79,9 +82,6 @@ def test_action_object(pypre: PreProcessing, pytestconfig):
 
     pypre.file.open_case.delete("OpenCaseObject")
     assert pypre.file.open_case.get_object_names() == ["OpenCaseObject2"]
-
-    # Open a new case to allow for the creation of a new action object for a query
-    pypre.file.new_case()
 
     solver_control = pypre.setup.flow["Flow Analysis 1"].solver_control
     solver_control.get_physics_messages.create("GetMessagesObject")

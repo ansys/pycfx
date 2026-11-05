@@ -1159,7 +1159,7 @@ class NamedObjectWildcardPath(WildcardPath):  # pragma: no cover (wildcards not 
 ChildTypeT = TypeVar("ChildTypeT")
 
 
-class _ChildObjectsMixin:
+class _ChildObjectsMixin(Generic[ChildTypeT]):
     """Provides dictionary-style access to named child objects cached in ``_objects``."""
 
     # New objects could get inserted by other operations, so we cannot assume
@@ -1172,7 +1172,7 @@ class _ChildObjectsMixin:
 
     def _create_child_object(self, cname: str):
         ret = self._objects.get(cname)
-        if not ret:
+        if ret is None:
             cls = self.__class__.child_object_type
             ret = self._objects[cname] = _create_child(cls, cname, self)
         ret._setattr("_python_name", f'["{cname}"]')
@@ -1249,12 +1249,12 @@ class _ChildObjectsMixin:
             )
 
         obj = self._objects.get(name)
-        if not obj:
+        if obj is None:
             obj = self._create_child_object(name)
         return obj
 
 
-class NamedObject(_ChildObjectsMixin, SettingsBase[DictStateType], Generic[ChildTypeT]):
+class NamedObject(_ChildObjectsMixin[ChildTypeT], SettingsBase[DictStateType], Generic[ChildTypeT]):
     """A ``NamedObject`` container is a container object similar to a Python dictionary
     object. Generally, many such objects can be created with different names.
 
@@ -1518,7 +1518,7 @@ class _CreatableNamedObjectMixin(collections.abc.MutableMapping, Generic[ChildTy
                 self.flproxy.create(self.path, name)
 
         child = self._objects.get(name)
-        if not child:
+        if child is None:
             child = self._create_child_object(name)
         child.set_state(value)
 
@@ -1528,12 +1528,12 @@ class _NonCreatableNamedObjectMixin(collections.abc.MutableMapping, Generic[Chil
         if name not in self.get_object_names():
             raise KeyError(name)
         child = self._objects.get(name)
-        if not child:
+        if child is None:
             child = self._create_child_object(name)
         child.set_state(value)
 
 
-class Action(_ChildObjectsMixin, _CreatableNamedObjectMixin, Base, Generic[ChildTypeT]):
+class Action(_ChildObjectsMixin[ChildTypeT], _CreatableNamedObjectMixin, Base, Generic[ChildTypeT]):
     """Provides an intermediate base class for the ``Command`` and ``Query`` classes."""
 
     _child_classes = {}
@@ -1585,14 +1585,14 @@ class Action(_ChildObjectsMixin, _CreatableNamedObjectMixin, Base, Generic[Child
         """
         try:
             return super().create(name)
-        except Exception as e:
+        except AttributeError:
             raise RuntimeError(
                 f"Failed to create action object '{name}'.\n"
                 "Command and query objects are only supported in Release 2027 R2 "
                 "and later."
             )
 
-    def delete(self, name: str = ""):
+    def delete(self, name: str):
         """Delete a named action object.
 
         Parameters
@@ -1612,8 +1612,6 @@ class Action(_ChildObjectsMixin, _CreatableNamedObjectMixin, Base, Generic[Child
                     obj.__class__, None, obj.parent, alias
                 )
             return alias_obj
-        elif name != "_objects" and name in self._objects.keys():
-            return self._objects[name]
         else:
             return getattr(super(), name)
 
