@@ -305,6 +305,7 @@ def _populate_classes(parent_dir):
                 stub_f.write("from typing import Union, List, Tuple\n\n")
             f.write("from ansys.cfx.core.common.flobject import (\n")
             f.write(f"{istr1}_ChildNamedObjectAccessorMixin,\n")
+            f.write(f"{istr1}_ChildObjectsMixin,\n")
             f.write(f"{istr1}_CreatableNamedObjectMixin,\n")
             f.write(f"{istr1}_NonCreatableNamedObjectMixin,\n")
             f.write(f"{istr1}_HasAllowedValuesMixin,\n")
