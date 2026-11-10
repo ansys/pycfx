@@ -1159,64 +1159,20 @@ class NamedObjectWildcardPath(WildcardPath):  # pragma: no cover (wildcards not 
 ChildTypeT = TypeVar("ChildTypeT")
 
 
-class NamedObject(SettingsBase[DictStateType], Generic[ChildTypeT]):
-    """A ``NamedObject`` container is a container object similar to a Python dictionary
-    object. Generally, many such objects can be created with different names.
-
-    Attributes
-    ----------
-    command_names: list[str]
-        Names of the commands.
-    """
+class _ChildObjectsMixin(Generic[ChildTypeT]):
+    """Provides dictionary-style access to named child objects cached in ``_objects``."""
 
     # New objects could get inserted by other operations, so we cannot assume
     # that the local cache in self._objects is always up-to-date
+
     def __init__(self, name: Optional[str] = None, parent=None):
-        """Initialize an instance of the ``NamedObject`` class."""
+        """Initialize an instance of the ``_ChildObjectsMixin`` class."""
         super().__init__(name, parent)
         self._setattr("_objects", {})
-        for cmd in self.command_names:
-            cls = self.__class__._child_classes[cmd]
-            self._setattr(cmd, _create_child(cls, None, self))
-        for query in self.query_names:
-            cls = self.__class__._child_classes[query]
-            self._setattr(query, _create_child(cls, None, self))
-        if not hasattr(self, "rename"):  # if rename command is not available from settings API
-            self._setattr(
-                "rename",
-                types.MethodType(lambda obj, new, old: _rename(obj, new, old), self),
-            )
-
-    @classmethod
-    def to_engine_keys(cls, value):
-        """Convert the state in ``value`` to have keys with engine names."""
-        if isinstance(value, collections.abc.Mapping):
-            ret = {}
-            for k, v in value.items():
-                ret[k] = cls.child_object_type.to_engine_keys(v)
-            return ret
-        else:
-            return value
-
-    @classmethod
-    def to_python_keys(cls, value):
-        """Convert the state in ``value`` to have keys with Python names."""
-        if isinstance(value, collections.abc.Mapping):
-            ret = {}
-            for k, v in value.items():
-                ret[k] = cls.child_object_type.to_python_keys(v)
-            return ret
-        else:
-            return value
-
-    _child_classes = {}
-    command_names = []
-    query_names = []
-    _child_aliases = {}
 
     def _create_child_object(self, cname: str):
         ret = self._objects.get(cname)
-        if not ret:
+        if ret is None:
             cls = self.__class__.child_object_type
             ret = self._objects[cname] = _create_child(cls, cname, self)
         ret._setattr("_python_name", f'["{cname}"]')
@@ -1266,31 +1222,11 @@ class NamedObject(SettingsBase[DictStateType], Generic[ChildTypeT]):
         self._update_objects()
         return self._objects.items()
 
-    def user_creatable(self) -> bool:
-        """Check if the object is user-creatable."""
-        return self.get_attr(_InlineConstants.user_creatable, bool)
-
     def get_object_names(self):
         """Get object names."""
         obj_names = self.flproxy.get_object_names(self.path)
         obj_names_list = obj_names if isinstance(obj_names, list) else list(obj_names)
         return obj_names_list
-
-    def get_completer_info(self, prefix="", excluded=None) -> List[List[str]]:
-        """Get completer information of all children.
-
-        Returns
-        -------
-        List[List[str]]
-            Name, type, and docstring of all children.
-        """
-        excluded = excluded or []
-        ret = []
-        command_info = _command_query_name_filter(self, "command_names", prefix, excluded)
-        query_info = _command_query_name_filter(self, "query_names", prefix, excluded)
-        for items in [command_info, query_info]:
-            ret.extend(items)
-        return ret
 
     def __getitem__(self, name: str) -> ChildTypeT:
         if name not in self.get_object_names():
@@ -1313,9 +1249,82 @@ class NamedObject(SettingsBase[DictStateType], Generic[ChildTypeT]):
             )
 
         obj = self._objects.get(name)
-        if not obj:
+        if obj is None:
             obj = self._create_child_object(name)
         return obj
+
+
+class NamedObject(_ChildObjectsMixin[ChildTypeT], SettingsBase[DictStateType], Generic[ChildTypeT]):
+    """A ``NamedObject`` container is a container object similar to a Python dictionary
+    object. Generally, many such objects can be created with different names.
+
+    Attributes
+    ----------
+    command_names: list[str]
+        Names of the commands.
+    """
+
+    def __init__(self, name: Optional[str] = None, parent=None):
+        """Initialize an instance of the ``NamedObject`` class."""
+        super().__init__(name, parent)
+        for cmd in self.command_names:
+            cls = self.__class__._child_classes[cmd]
+            self._setattr(cmd, _create_child(cls, None, self))
+        for query in self.query_names:
+            cls = self.__class__._child_classes[query]
+            self._setattr(query, _create_child(cls, None, self))
+        if not hasattr(self, "rename"):  # if rename command is not available from settings API
+            self._setattr(
+                "rename",
+                types.MethodType(lambda obj, new, old: _rename(obj, new, old), self),
+            )
+
+    @classmethod
+    def to_engine_keys(cls, value):
+        """Convert the state in ``value`` to have keys with engine names."""
+        if isinstance(value, collections.abc.Mapping):
+            ret = {}
+            for k, v in value.items():
+                ret[k] = cls.child_object_type.to_engine_keys(v)
+            return ret
+        else:
+            return value
+
+    @classmethod
+    def to_python_keys(cls, value):
+        """Convert the state in ``value`` to have keys with Python names."""
+        if isinstance(value, collections.abc.Mapping):
+            ret = {}
+            for k, v in value.items():
+                ret[k] = cls.child_object_type.to_python_keys(v)
+            return ret
+        else:
+            return value
+
+    _child_classes = {}
+    command_names = []
+    query_names = []
+    _child_aliases = {}
+
+    def user_creatable(self) -> bool:
+        """Check if the object is user-creatable."""
+        return self.get_attr(_InlineConstants.user_creatable, bool)
+
+    def get_completer_info(self, prefix="", excluded=None) -> List[List[str]]:
+        """Get completer information of all children.
+
+        Returns
+        -------
+        List[List[str]]
+            Name, type, and docstring of all children.
+        """
+        excluded = excluded or []
+        ret = []
+        command_info = _command_query_name_filter(self, "command_names", prefix, excluded)
+        query_info = _command_query_name_filter(self, "query_names", prefix, excluded)
+        for items in [command_info, query_info]:
+            ret.extend(items)
+        return ret
 
     def __getattr__(self, name: str):
         alias = self._child_aliases.get(name)
@@ -1481,7 +1490,50 @@ def _get_new_keywords(obj, args, kwds):
     return newkwds
 
 
-class Action(Base):
+class _CreatableNamedObjectMixin(collections.abc.MutableMapping, Generic[ChildTypeT]):
+    def create(self, name: str = "") -> ChildTypeT:
+        """Create a named object.
+
+        Parameters
+        ----------
+        name: str
+            Name of the new object.
+
+        Returns
+        -------
+        Object
+            Object that has been created.
+        """
+        with self._while_creating():
+            self.flproxy.create(self.path, name)
+        return self._create_child_object(name)
+
+    def __setitem__(self, name: str, value):
+        if name not in self.get_object_names() and (
+            not isinstance(value, collections.abc.Mapping) or not value
+        ):
+            # Don't create the object in the engine before sending the state as a dictionary,
+            # unless value is an empty dictionary.
+            with self._while_creating():
+                self.flproxy.create(self.path, name)
+
+        child = self._objects.get(name)
+        if child is None:
+            child = self._create_child_object(name)
+        child.set_state(value)
+
+
+class _NonCreatableNamedObjectMixin(collections.abc.MutableMapping, Generic[ChildTypeT]):
+    def __setitem__(self, name: str, value):
+        if name not in self.get_object_names():
+            raise KeyError(name)
+        child = self._objects.get(name)
+        if child is None:
+            child = self._create_child_object(name)
+        child.set_state(value)
+
+
+class Action(_ChildObjectsMixin[ChildTypeT], _CreatableNamedObjectMixin, Base, Generic[ChildTypeT]):
     """Provides an intermediate base class for the ``Command`` and ``Query`` classes."""
 
     _child_classes = {}
@@ -1518,6 +1570,40 @@ class Action(Base):
                     )
         return ret
 
+    def create(self, name: str = "") -> ChildTypeT:
+        """Create a named action object.
+
+        Parameters
+        ----------
+        name: str
+            Name of the object to create.
+
+        Raises
+        ------
+        RuntimeError
+            If the action object could not be created.
+        """
+
+        # Don't attempt to create an action object on engine releases that don't support it
+        if hasattr(self.__class__, "child_object_type"):
+            return super().create(name)
+        else:
+            raise RuntimeError(
+                f"Failed to create action object '{name}'.\n"
+                "Command and query objects are only supported in Release 2027 R2 "
+                "and later."
+            )
+
+    def delete(self, name: str):
+        """Delete a named action object.
+
+        Parameters
+        ----------
+        name: str
+            Name of the object to delete.
+        """
+        del self[name]
+
     def __getattr__(self, name: str):
         alias = self._child_aliases.get(name)
         if alias:
@@ -1532,7 +1618,7 @@ class Action(Base):
             return getattr(super(), name)
 
 
-class BaseCommand(Action):
+class BaseCommand(Action[ChildTypeT]):
     """Provides for executing a command."""
 
     def execute_command(self, *args, **kwds):
@@ -1555,7 +1641,7 @@ class BaseCommand(Action):
         return self.execute_command(*args, **kwds)
 
 
-class Command(BaseCommand):
+class Command(BaseCommand[ChildTypeT]):
     """Provides for executing a base command."""
 
     def _execute_command(self, **kwds):
@@ -1583,7 +1669,7 @@ class Command(BaseCommand):
         return self.execute_command(**kwds)
 
 
-class CommandWithPositionalArgs(BaseCommand):
+class CommandWithPositionalArgs(BaseCommand[ChildTypeT]):
     """Provides for executing a base with keyword arguments."""
 
     def _execute_command(self, *args, **kwds):
@@ -1611,7 +1697,7 @@ class CommandWithPositionalArgs(BaseCommand):
         return self.execute_command(*args, **kwds)
 
 
-class Query(Action):
+class Query(Action[ChildTypeT]):
     """Provides for querying objects."""
 
     def __call__(self, **kwds):
@@ -1694,49 +1780,6 @@ class _ChildNamedObjectAccessorMixin(collections.abc.MutableMapping):  # pragma:
             if isinstance(cobj, NamedObject):
                 l += len(cobj)
         return l
-
-
-class _CreatableNamedObjectMixin(collections.abc.MutableMapping, Generic[ChildTypeT]):
-    def create(self, name: str = "") -> ChildTypeT:
-        """Create a named object.
-
-        Parameters
-        ----------
-        name: str
-            Name of the new object.
-
-        Returns
-        -------
-        Object
-            Object that has been created.
-        """
-        with self._while_creating():
-            self.flproxy.create(self.path, name)
-        return self._create_child_object(name)
-
-    def __setitem__(self, name: str, value):
-        if name not in self.get_object_names() and (
-            not isinstance(value, collections.abc.Mapping) or not value
-        ):
-            # Don't create the object in the engine before sending the state as a dictionary,
-            # unless value is an empty dictionary.
-            with self._while_creating():
-                self.flproxy.create(self.path, name)
-
-        child = self._objects.get(name)
-        if not child:
-            child = self._create_child_object(name)
-        child.set_state(value)
-
-
-class _NonCreatableNamedObjectMixin(collections.abc.MutableMapping, Generic[ChildTypeT]):
-    def __setitem__(self, name: str, value):
-        if name not in self.get_object_names():
-            raise KeyError(name)
-        child = self._objects.get(name)
-        if not child:
-            child = self._create_child_object(name)
-        child.set_state(value)
 
 
 class _HasAllowedValuesMixin:
