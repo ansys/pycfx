@@ -30,12 +30,12 @@ Engineers, product designers, consultants, and academia use PyCFX.
 
 Which Python version should I use?
 ----------------------------------
-PyCFX supports Python 3.10 through Python 3.14 on Windows and Linux.
+PyCFX supports Python 3.12 through Python 3.14 on Windows and Linux.
 
-You can use a suitable Python version from your Ansys installation. Python 3.10 ships with
-Ansys 2023 R2 and later. For example, in a 2025 R2 Windows installation, the
-executable file for Python 3.10 is typically located at:
-``C:\Program Files\ANSYS Inc\v252\commonfiles\CPython\3_10\winx64\Release\python.exe``.
+You can use a suitable Python version from your Ansys installation. Python 3.13 ships with
+Ansys 2026 R1 and later. For example, in a 2026 R1 Windows installation, the
+executable file for Python 3.13 is typically located at:
+``C:\Program Files\ANSYS Inc\v261\commonfiles\CPython\3_13\winx64\Release\python.exe``.
 
 If you use Python from an Ansys installation, install PyCFX
 in a Python virtual environment to prevent conflicts with
