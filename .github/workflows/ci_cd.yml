@@ -47,6 +47,19 @@ jobs:
     name: "Check library vulnerabilities"
     runs-on: ubuntu-latest
     steps:
+      # Job-scoped env (not ~/.gitconfig) so the token does not persist on the runner.
+      - &allow-private-deps
+        name: Allow pip to clone private variable-descriptors
+        shell: bash
+        env:
+          DEPS_TOKEN: ${{ secrets.PYANSYS_CI_BOT_TOKEN }}
+        run: |
+          {
+            echo "GIT_CONFIG_COUNT=1"
+            echo "GIT_CONFIG_KEY_0=url.https://x-access-token:${DEPS_TOKEN}@github.com/ansys/variable-descriptors.insteadOf"
+            echo "GIT_CONFIG_VALUE_0=https://github.com/ansys/variable-descriptors"
+          } >> "$GITHUB_ENV"
+
       - uses: ansys/actions/check-vulnerabilities@87ff2e65e8884121f9afc97728ca9f213228ecc2 # v11.1.4
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
@@ -98,6 +111,8 @@ jobs:
         os: [ubuntu-latest, windows-latest]
         python-version: ["3.10", "3.11", "3.12", "3.13", "3.14"]
     steps:
+      - *allow-private-deps
+
       - name: Build wheelhouse and perform smoke test
         uses: ansys/actions/build-wheelhouse@87ff2e65e8884121f9afc97728ca9f213228ecc2 # v11.1.4
         with:
@@ -143,6 +158,8 @@ jobs:
       - name: Add version information
         if: ${{ !contains(github.event.pull_request.title, '[skip tests]') }}
         run: make version-info
+
+      - *allow-private-deps
 
       - name: Install PyCFX
         if: ${{ !contains(github.event.pull_request.title, '[skip tests]') }}
@@ -280,6 +297,8 @@ jobs:
       - name: Add version information
         run: make version-info
 
+      - *allow-private-deps
+
       - name: Install PyCFX
         run: |
           make install
@@ -380,6 +399,8 @@ jobs:
 
       - name: Add version information
         run: make version-info
+
+      - *allow-private-deps
 
       - name: Install PyCFX
         run: |
@@ -497,6 +518,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: [doc-build, tests]
     steps:
+      - *allow-private-deps
+
       - uses: ansys/actions/build-library@87ff2e65e8884121f9afc97728ca9f213228ecc2 # v11.1.4
         with:
           library-name: ${{ env.LIBRARY_NAME }}

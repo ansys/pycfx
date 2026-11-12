@@ -74,10 +74,15 @@ import warnings
 import weakref
 
 import ansys.units
+from ansys.variable_descriptor import VariableDescriptor
+
+from ansys.cfx.core._variable_strategies import CFXCelNamingStrategy
 
 from .error_message import allowed_name_error_message, allowed_values_error
 
 settings_logger = logging.getLogger("pycfx.settings_api")
+
+_to_cfx_variable_name = CFXCelNamingStrategy().to_string
 
 
 class InactiveObjectError(RuntimeError):
@@ -764,9 +769,19 @@ class Real(SettingsBase[RealType], RealNumerical):
 
 
 class String(SettingsBase[str], Textual):
-    """Provides an object representing a string value setting."""
+    """Provides an object representing a string value setting.
+
+    A ``VariableDescriptor`` can be assigned and is converted to its CFX variable name.
+    """
 
     _state_type = str
+
+    @classmethod
+    def to_engine_keys(cls, value):
+        """Convert a ``VariableDescriptor`` value to its CFX variable name."""
+        if isinstance(value, VariableDescriptor):
+            return _to_cfx_variable_name(value)
+        return value
 
 
 class Filename(SettingsBase[str], Textual):  # pragma: no cover (type not used)
@@ -842,9 +857,19 @@ class RealVector(SettingsBase[RealVectorType], Numerical):
 
 
 class StringList(SettingsBase[StringListType], Textual):
-    """Provides an object representing a string list setting."""
+    """Provides an object representing a string list setting.
+
+    ``VariableDescriptor`` elements are converted to their CFX variable names.
+    """
 
     _state_type = StringListType
+
+    @classmethod
+    def to_engine_keys(cls, value):
+        """Convert ``VariableDescriptor`` elements to their CFX variable names."""
+        if isinstance(value, (list, tuple)):
+            return [String.to_engine_keys(v) for v in value]
+        return value
 
 
 class BooleanList(SettingsBase[BoolListType], Property):

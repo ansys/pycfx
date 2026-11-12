@@ -28,7 +28,10 @@ dependencies = [
     "ansys-platform-instancemanagement>=1.0.0",
     "ansys-tools-common>=0.1,<1.0",
     "ansys-tools-filetransfer>=0.1,<1.0",
-    "ansys-units>=0.10.0",
+    # Temporary until ansys-units 0.17 is released; then use "ansys-units>=0.17,<1.0".
+    "ansys-units @ git+https://github.com/ansys/pyansys-units.git@refactor/units_variable_descriptor_expressions",
+    # Temporary until ansys-variable-descriptors is released.
+    "ansys-variable-descriptors @ git+https://github.com/ansys/variable-descriptors.git@main",
     "beartype>=0.17",
     "docker>=7.1.0",
     "grpcio-health-checking>=1.30.0,<1.86.0",

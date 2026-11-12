@@ -51,6 +51,18 @@ jobs:
       - name: Add version information
         run: make version-info
 
+      # Job-scoped env (not ~/.gitconfig) so the token does not persist on the runner.
+      - name: Allow pip to clone private variable-descriptors
+        shell: bash
+        env:
+          DEPS_TOKEN: ${{ secrets.PYANSYS_CI_BOT_TOKEN }}
+        run: |
+          {
+            echo "GIT_CONFIG_COUNT=1"
+            echo "GIT_CONFIG_KEY_0=url.https://x-access-token:${DEPS_TOKEN}@github.com/ansys/variable-descriptors.insteadOf"
+            echo "GIT_CONFIG_VALUE_0=https://github.com/ansys/variable-descriptors"
+          } >> "$GITHUB_ENV"
+
       - name: Install PyCFX
         run: |
           make install

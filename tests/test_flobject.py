@@ -31,6 +31,7 @@ import pytest
 from ansys.cfx.core.common import flobject
 from ansys.cfx.core.common.flobject import DeprecatedSettingWarning, InactiveObjectError
 from ansys.cfx.core.session_pre import PreProcessing
+from ansys.variable_descriptor import VariableCatalog
 
 
 class Setting:
@@ -798,6 +799,21 @@ def test_aliases():
         }
     )
     assert r.g_1.s_4() == 66
+
+
+def test_variable_descriptor():
+    r = flobject.get_root(Proxy())
+    r.g_1.s_4 = VariableCatalog.TEMPERATURE
+    assert r.g_1.s_4() == "Temperature"
+    r.g_1 = {"s_4": VariableCatalog.VELOCITY_X}
+    assert r.g_1.s_4() == "Velocity u"
+    r.g_1.s_4.set_state(VariableCatalog.PRESSURE)
+    assert r.g_1.s_4() == "Pressure"
+    r.n_1["n1"] = {"sl_1": [VariableCatalog.TOTAL_PRESSURE, "Velocity in Stn Frame"]}
+    assert r.n_1["n1"].sl_1() == ["Total Pressure", "Velocity in Stn Frame"]
+    with pytest.raises(ValueError):
+        r.g_1.s_4 = VariableCatalog.WALL_SHEAR_STRESS
+    assert r.g_1.s_4() == "Pressure"
 
 
 def test_to_python_name():
