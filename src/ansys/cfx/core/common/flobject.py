@@ -73,10 +73,9 @@ from typing import (
 import warnings
 import weakref
 
+from ansys.cfx.core._variable_strategies import CFXCelNamingStrategy
 import ansys.units
 from ansys.variable_descriptor import VariableDescriptor
-
-from ansys.cfx.core._variable_strategies import CFXCelNamingStrategy
 
 from .error_message import allowed_name_error_message, allowed_values_error
 
