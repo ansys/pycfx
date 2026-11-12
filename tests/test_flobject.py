@@ -809,8 +809,8 @@ def test_variable_descriptor():
     assert r.g_1.s_4() == "Velocity u"
     r.g_1.s_4.set_state(VariableCatalog.PRESSURE)
     assert r.g_1.s_4() == "Pressure"
-    r.n_1["n1"] = {"sl_1": [VariableCatalog.TOTAL_PRESSURE, "Velocity in Stn Frame"]}
-    assert r.n_1["n1"].sl_1() == ["Total Pressure", "Velocity in Stn Frame"]
+    r.n_1["n1"] = {"sl_1": [VariableCatalog.TOTAL_PRESSURE, "Static Entropy"]}
+    assert r.n_1["n1"].sl_1() == ["Total Pressure", "Static Entropy"]
     with pytest.raises(ValueError):
         r.g_1.s_4 = VariableCatalog.WALL_SHEAR_STRESS
     assert r.g_1.s_4() == "Pressure"

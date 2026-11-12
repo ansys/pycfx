@@ -778,9 +778,12 @@ class String(SettingsBase[str], Textual):
 
     @classmethod
     def to_engine_keys(cls, value):
-        """Convert a ``VariableDescriptor`` value to its CFX variable name."""
+        """Convert ``VariableDescriptor`` values to their CFX variable names."""
         if isinstance(value, VariableDescriptor):
             return _to_cfx_variable_name(value)
+        # Some CFX string parameters also accept a list of names.
+        if isinstance(value, (list, tuple)):
+            return [cls.to_engine_keys(v) for v in value]
         return value
 
 
@@ -1087,6 +1090,10 @@ class Group(SettingsBase[DictStateType]):
         except Exception as ex:
             if hasattr(attr, "allowed_values"):
                 allowed = attr.allowed_values()
+                try:
+                    value = attr.to_engine_keys(value)
+                except Exception:
+                    raise ex
                 if allowed and value not in allowed:
                     raise allowed_values_error(name, value, allowed) from ex
             raise ex

@@ -22,6 +22,8 @@
 
 """Tests for ``VariableDescriptor`` support."""
 
+import re
+
 import pytest
 
 from ansys.cfx.core._variable_strategies import CFXCelNamingStrategy
@@ -104,10 +106,14 @@ def test_variable_descriptor_monitor_point_in_pre(pre_load_static_mixer_case: Pr
     monitor.output_variables_list = [
         VariableCatalog.PRESSURE,
         VariableCatalog.TOTAL_TEMPERATURE,
-        "Velocity in Stn Frame",
+        "Static Entropy",
     ]
     assert monitor.output_variables_list() == [
         "Pressure",
         "Total Temperature",
-        "Velocity in Stn Frame",
+        "Static Entropy",
     ]
+
+    # Rotating-frame variables are not available in the static mixer case.
+    with pytest.raises(ValueError, match=re.escape("['Pressure', 'Velocity in Stn Frame']")):
+        monitor.output_variables_list = [VariableCatalog.PRESSURE, "Velocity in Stn Frame"]

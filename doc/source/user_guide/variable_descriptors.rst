@@ -79,5 +79,5 @@ Monitor variables in CFX-Pre
    monitors.monitor_point["Outlet Monitor"].output_variables_list = [
        VariableCatalog.PRESSURE,
        VariableCatalog.TOTAL_TEMPERATURE,
-       "Velocity in Stn Frame",  # A CFX variable name without a descriptor.
+       "Static Entropy",  # A CFX variable name without a descriptor.
    ]
