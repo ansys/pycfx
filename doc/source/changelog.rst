@@ -9,6 +9,159 @@ This document contains the release notes for the project.
 
 .. towncrier release notes start
 
+`0.4.0 <https://github.com/ansys/pycfx/releases/tag/v0.4.0>`_ - November 13, 2026
+=================================================================================
+
+.. tab-set::
+
+
+  .. tab-item:: Added
+
+    .. list-table::
+        :header-rows: 0
+        :widths: auto
+
+        * - Add action named objects
+          - `#180 <https://github.com/ansys/pycfx/pull/180>`_
+
+
+  .. tab-item:: Fixed
+
+    .. list-table::
+        :header-rows: 0
+        :widths: auto
+
+        * - Gate post-processing \`setup\` -> \`results\` rename by CFX version
+          - `#164 <https://github.com/ansys/pycfx/pull/164>`_
+
+        * - Empty input stream
+          - `#168 <https://github.com/ansys/pycfx/pull/168>`_
+
+        * - Improve grpc connection error diagnostics
+          - `#173 <https://github.com/ansys/pycfx/pull/173>`_
+
+
+  .. tab-item:: Documentation
+
+    .. list-table::
+        :header-rows: 0
+        :widths: auto
+
+        * - Update CONTRIBUTORS.md with the latest contributors
+          - `#183 <https://github.com/ansys/pycfx/pull/183>`_
+
+
+  .. tab-item:: Dependencies
+
+    .. list-table::
+        :header-rows: 0
+        :widths: auto
+
+        * - Bump the actions group with 13 updates
+          - `#145 <https://github.com/ansys/pycfx/pull/145>`_
+
+        * - Update grpcio-health-checking requirement from <1.83.0,>=1.30.0 to >=1.30.0,<1.84.0
+          - `#146 <https://github.com/ansys/pycfx/pull/146>`_
+
+        * - Bump the actions group across 1 directory with 3 updates
+          - `#147 <https://github.com/ansys/pycfx/pull/147>`_
+
+        * - Update ansys/actions to fix vulnerability check
+          - `#148 <https://github.com/ansys/pycfx/pull/148>`_
+
+        * - Update flit-core requirement from <4,>=3.2 to >=3.2,<5
+          - `#151 <https://github.com/ansys/pycfx/pull/151>`_
+
+        * - Bump https://github.com/PyCQA/pylint from v4.0.6 to 4.0.7 in the pre-commit group
+          - `#152 <https://github.com/ansys/pycfx/pull/152>`_
+
+        * - Bump the actions group with 10 updates
+          - `#153 <https://github.com/ansys/pycfx/pull/153>`_, `#154 <https://github.com/ansys/pycfx/pull/154>`_, `#158 <https://github.com/ansys/pycfx/pull/158>`_, `#159 <https://github.com/ansys/pycfx/pull/159>`_, `#179 <https://github.com/ansys/pycfx/pull/179>`_
+
+        * - Bump https://github.com/pycqa/isort from 8.0.1 to 9.0.1 in the pre-commit group
+          - `#155 <https://github.com/ansys/pycfx/pull/155>`_
+
+        * - Bump the actions group with 11 updates
+          - `#156 <https://github.com/ansys/pycfx/pull/156>`_
+
+        * - Bump https://github.com/PyCQA/pylint from v4.0.7 to 4.0.8 in the pre-commit group
+          - `#157 <https://github.com/ansys/pycfx/pull/157>`_
+
+        * - Update grpcio-health-checking requirement from <1.84.0,>=1.30.0 to >=1.30.0,<1.85.0
+          - `#162 <https://github.com/ansys/pycfx/pull/162>`_
+
+        * - Bump codecov/codecov-action from 7.0.0 to 7.1.1 in the actions group
+          - `#163 <https://github.com/ansys/pycfx/pull/163>`_
+
+        * - Bump the pre-commit group with 2 updates
+          - `#165 <https://github.com/ansys/pycfx/pull/165>`_, `#167 <https://github.com/ansys/pycfx/pull/167>`_, `#182 <https://github.com/ansys/pycfx/pull/182>`_
+
+        * - Bump pytest-mock from 3.15.1 to 3.16.0
+          - `#166 <https://github.com/ansys/pycfx/pull/166>`_
+
+        * - Bump https://github.com/psf/black from 26.5.1 to 26.10.1 in the pre-commit group
+          - `#169 <https://github.com/ansys/pycfx/pull/169>`_
+
+        * - Bump the actions group with 2 updates
+          - `#170 <https://github.com/ansys/pycfx/pull/170>`_
+
+        * - Bump https://github.com/PyCQA/pylint from v4.1.2 to 4.1.3 in the pre-commit group
+          - `#171 <https://github.com/ansys/pycfx/pull/171>`_
+
+        * - Bump pytest-mock from 3.16.0 to 3.17.0
+          - `#176 <https://github.com/ansys/pycfx/pull/176>`_
+
+        * - Bump the actions group with 3 updates
+          - `#177 <https://github.com/ansys/pycfx/pull/177>`_
+
+        * - Update grpcio-health-checking requirement from <1.85.0,>=1.30.0 to >=1.30.0,<1.86.0
+          - `#178 <https://github.com/ansys/pycfx/pull/178>`_
+
+        * - Bump pytest from 9.1.1 to 9.2.0
+          - `#181 <https://github.com/ansys/pycfx/pull/181>`_
+
+
+  .. tab-item:: Maintenance
+
+    .. list-table::
+        :header-rows: 0
+        :widths: auto
+
+        * - Update version on main to 0.4.dev0
+          - `#141 <https://github.com/ansys/pycfx/pull/141>`_
+
+        * - Update CHANGELOG for v0.3.0
+          - `#142 <https://github.com/ansys/pycfx/pull/142>`_
+
+        * - Update missing or outdated files
+          - `#150 <https://github.com/ansys/pycfx/pull/150>`_
+
+        * - Update ansys/actions
+          - `#172 <https://github.com/ansys/pycfx/pull/172>`_
+
+        * - Update to support v272
+          - `#174 <https://github.com/ansys/pycfx/pull/174>`_
+
+        * - Update dependabot configuration
+          - `#175 <https://github.com/ansys/pycfx/pull/175>`_
+
+        * - Update version for 0.4
+          - `#185 <https://github.com/ansys/pycfx/pull/185>`_
+
+
+  .. tab-item:: Test
+
+    .. list-table::
+        :header-rows: 0
+        :widths: auto
+
+        * - Extend the mesh queries test
+          - `#143 <https://github.com/ansys/pycfx/pull/143>`_
+
+        * - Update tests for new engine features
+          - `#149 <https://github.com/ansys/pycfx/pull/149>`_
+
+
 `0.3.0 <https://github.com/ansys/pycfx/releases/tag/v0.3.0>`_ - July 21, 2026
 =============================================================================
 
