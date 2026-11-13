@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_control_condition_child:
+
+control_condition_child
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.control_condition_child.control_condition_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================   ====================================
+
+Attribute                                                                                              Summary
+
+=======================================================================   ====================================
+:ref:`option <pre_processing_option_445>`                                      The 'Control Condition' option.
+
+:ref:`configuration_name_list <pre_processing_configuration_name_list>`   'Configuration Name List' parameter.
+
+=======================================================================   ====================================
+
+.. rubric:: Included in:
+
+===========================================================   ==========================================
+
+Parent                                                                                           Summary
+
+===========================================================   ==========================================
+:ref:`control_condition <pre_processing_control_condition>`   A container for Control Condition objects.
+
+===========================================================   ==========================================
+

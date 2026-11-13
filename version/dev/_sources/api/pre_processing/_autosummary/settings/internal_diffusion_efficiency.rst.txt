@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_internal_diffusion_efficiency:
+
+internal_diffusion_efficiency
+=============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.internal_diffusion_efficiency.internal_diffusion_efficiency
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ============================
+
+Parent                                                                               Summary
+
+=============================================================   ============================
+:ref:`internal_diffusion <pre_processing_internal_diffusion>`   'INTERNAL DIFFUSION' object.
+
+=============================================================   ============================
+

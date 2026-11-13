@@ -1,0 +1,110 @@
+:orphan:
+
+.. _post_processing_data_reader:
+
+data_reader
+===========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.data_reader.data_reader
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+====================================================================================================================   ===================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                                          Summary
+
+====================================================================================================================   ===================================================================================================================================================================================
+:ref:`active_case_name <post_processing_active_case_name>`                                                                                                                                                                                      Internal CFD-Post name for the currently analyzed problem.
+
+:ref:`append_results <post_processing_append_results>`                                                                                                                                                                      Parameter indicating whether or not to append the results when loading a file.
+
+:ref:`apply_x_offset <post_processing_apply_x_offset>`                                                                                                                                                        If set to true, appended file is offset in X direction so that it is outside domain extents.
+
+:ref:`apply_y_offset <post_processing_apply_y_offset>`                                                                                                                                                        If set to true, appended file is offset in Y direction so that it is outside domain extents.
+
+:ref:`apply_z_offset <post_processing_apply_z_offset>`                                                                                                                                                        If set to true, appended file is offset in Z direction so that it is outside domain extents.
+
+:ref:`clear_all_objects <post_processing_clear_all_objects>`                                                                                                                                      Parameter indicating whether or not to remove all objects in the system before loading the new res file.
+
+:ref:`construct_variables_from_fourier_coefficients <post_processing_construct_variables_from_fourier_coefficients>`                                                                                                  Parameter to indicate if variables should be constructed using Fourier Coefficients.
+
+:ref:`current_case_list <post_processing_current_case_list>`                                                                                                                                    The list of cases that are currently loaded in the post-processor. The list order reflects the load order.
+
+:ref:`current_case_name <post_processing_current_case_name>`                                                                                                                                                                                    Internal CFD-Post name for the currently analyzed problem.
+
+:ref:`current_results_file <post_processing_current_results_file>`                                                                                                                                                                        The name of the results file to be read into the post-processor.
+
+:ref:`current_timestep <post_processing_current_timestep>`                                                                                                                                                                                  The timestep to be used when reading a transient results file.
+
+:ref:`current_timevalue <post_processing_current_timevalue>`                                                                                                                              The time value of the currently loaded results file. To change current timestep, use Current Timestep parameter.
+
+:ref:`domains_to_load <post_processing_domains_to_load>`                                                                                                                                                                                                                 A list of domains for processing.
+
+:ref:`edit_case_names <post_processing_edit_case_names>`                                                               Parameter to save the users choice for the load dialog option on whether the user wants to specify and edit the case name instead of using the default case name generated by post.
+
+:ref:`file_angle_units <post_processing_file_angle_units>`                                                                                                                                                                                                                 Angle units read from the file.
+
+:ref:`file_chemical_amount_units <post_processing_file_chemical_amount_units>`                                                                                                                                                                                   Chemical Amount units read from the file.
+
+:ref:`file_current_units <post_processing_file_current_units>`                                                                                                                                                                                                           Current units read from the file.
+
+:ref:`file_length_units <post_processing_file_length_units>`                                                                                                                                                                                                              Length units read from the file.
+
+:ref:`file_light_units <post_processing_file_light_units>`                                                                                                                                                                                                                 Light units read from the file.
+
+:ref:`file_mass_units <post_processing_file_mass_units>`                                                                                                                                                                                                                    Mass units read from the file.
+
+:ref:`file_money_units <post_processing_file_money_units>`                                                                                                                                                                                                                 Money units read from the file.
+
+:ref:`file_solid_angle_units <post_processing_file_solid_angle_units>`                                                                                                                                                                                               Solid Angle units read from the file.
+
+:ref:`file_temperature_units <post_processing_file_temperature_units>`                                                                                                                                                                                               Temperature units read from the file.
+
+:ref:`file_time_units <post_processing_file_time_units>`                                                                                                                                                                                                                    Time units read from the file.
+
+:ref:`files_to_compare <post_processing_files_to_compare>`                                                                                                                                                                                       List of files (no more than 2) to use in comparison mode.
+
+:ref:`force_file_reload <post_processing_force_file_reload>`                                                                                                                  Parameter indicating whether or not to force a reload of the file even if the filename is the same as that currently loaded.
+
+:ref:`keep_camera_position <post_processing_keep_camera_position>`                                                                                                                                        Parameter indicating whether or not to reset the camera position after loading the new res file.
+
+:ref:`load_particle_tracks <post_processing_load_particle_tracks>`                                                                                                                                                     Parameter indicating whether to load the Particle tracks from a result file or not.
+
+:ref:`master_results_file <post_processing_master_results_file>`                                                                                                                                The name of the results file that is used as the base for synchronization in multiple transient file load.
+
+:ref:`multi_configuration_file_load_option <post_processing_multi_configuration_file_load_option>`                                                                                                                                            Load option for files that contains multiple configurations.
+
+:ref:`open_in_new_view <post_processing_open_in_new_view>`                                                                                                                                                      If set to true, view based filtering is used to open each results file in a separate view.
+
+:ref:`open_to_compare <post_processing_open_to_compare>`                                                                                                                                                                               If set to true, comparison mode will be entered after opening file.
+
+:ref:`reference_acoustic_pressure <post_processing_reference_acoustic_pressure>`                                                                                                                                        Reference pressure value when calculating Sound Pressure Level in FFT calculation.
+
+:ref:`reference_length <post_processing_reference_length>`                                                                                                                                                             Reference length value used in using Strouhal Number X Function in FFT calculation.
+
+:ref:`reference_velocity <post_processing_reference_velocity>`                                                                                                                                                       Reference velocity value used in using Strouhal Number X Function in FFT calculation.
+
+:ref:`run_selection <post_processing_run_selection>`                                                                                                                                                                                                                       A list of runs to be processed.
+
+:ref:`timestep_match_criterion <post_processing_timestep_match_criterion>`                                                                                                                                       Defines timestep matching mode for timestep synchronization for multiple transient files.
+
+:ref:`timestep_sync_mode <post_processing_timestep_sync_mode>`                                                                                                                                                                       Defines timestep synchronization method for multiple transient files.
+
+:ref:`timevalue_match_criterion <post_processing_timevalue_match_criterion>`                                                                                                                    Defines real value matching mode for timestep or crank angle synchronization for multiple transient files.
+
+:ref:`case <post_processing_case>`                                                                                                                                                                                                                                                           'case' child.
+
+====================================================================================================================   ===================================================================================================================================================================================
+
+.. rubric:: Included in:
+
+========================================   =========================================
+
+Parent                                                                       Summary
+
+========================================   =========================================
+:ref:`results <post_processing_results>`   Encapsulates a CFX post-processing setup.
+
+========================================   =========================================
+

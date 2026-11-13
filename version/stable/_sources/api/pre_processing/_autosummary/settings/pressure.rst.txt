@@ -1,0 +1,42 @@
+:orphan:
+
+.. _pre_processing_pressure:
+
+pressure
+========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.pressure.pressure
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================================================   =======================================================
+
+Attribute                                                                                                                                       Summary
+
+=============================================================================================   =======================================================
+:ref:`option <pre_processing_option_31>`                                                                                         The 'Pressure' option.
+
+:ref:`absolute_pressure <pre_processing_absolute_pressure>`                                                              'Absolute Pressure' parameter.
+
+:ref:`antoine_reference_state_constant_a <pre_processing_antoine_reference_state_constant_a>`                Data for Antoine vapour pressure equation.
+
+:ref:`antoine_enthalpic_coefficient_b <pre_processing_antoine_enthalpic_coefficient_b>`                      Data for Antoine vapour pressure equation.
+
+:ref:`antoine_temperature_offset_c <pre_processing_antoine_temperature_offset_c>`                            Data for Antoine vapour pressure equation.
+
+:ref:`antoine_pressure_scale <pre_processing_antoine_pressure_scale>`                           Units of pressure for Antoine vapour pressure equation.
+
+=============================================================================================   =======================================================
+
+.. rubric:: Included in:
+
+===================================================================   ===================================================================================================================================================================================================================================================================================
+
+Parent                                                                                                                                                                                                                                                                                                                                            Summary
+
+===================================================================   ===================================================================================================================================================================================================================================================================================
+:ref:`saturation_properties <pre_processing_saturation_properties>`   Defines the saturation properties used for interphase mass transfer or equilibrium mass transfer models. This singleton would point to a data file. In this case only RGP files are currently supported. The saturation pressure and temperature singletons can override this data.
+
+===================================================================   ===================================================================================================================================================================================================================================================================================
+

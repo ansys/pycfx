@@ -1,0 +1,46 @@
+:orphan:
+
+.. _pre_processing_interfacial_equilibrium_model:
+
+interfacial_equilibrium_model
+=============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.interfacial_equilibrium_model.interfacial_equilibrium_model
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================================================   =======================================================
+
+Attribute                                                                                                                                             Summary
+
+===================================================================================================   =======================================================
+:ref:`enabled <pre_processing_enabled_103>`                                                                  Enable the INTERFACIAL EQUILIBRIUM MODEL object.
+
+:ref:`option <pre_processing_option_208>`                                                                         The 'Interfacial Equilibrium Model' option.
+
+:ref:`molar_concentration_equilibrium_ratio <pre_processing_molar_concentration_equilibrium_ratio>`        'Molar Concentration Equilibrium Ratio' parameter.
+
+:ref:`molar_fraction_equilibrium_ratio <pre_processing_molar_fraction_equilibrium_ratio>`                       'Molar Fraction Equilibrium Ratio' parameter.
+
+:ref:`mass_fraction_equilibrium_ratio <pre_processing_mass_fraction_equilibrium_ratio>`                          'Mass Fraction Equilibrium Ratio' parameter.
+
+:ref:`molar_concentration_henry_coefficient <pre_processing_molar_concentration_henry_coefficient>`        'Molar Concentration Henry Coefficient' parameter.
+
+:ref:`molar_fraction_henry_coefficient <pre_processing_molar_fraction_henry_coefficient>`                       'Molar Fraction Henry Coefficient' parameter.
+
+:ref:`saturation_pressure <pre_processing_saturation_pressure>`                                       Saturation pressure for cavitation of a pure substance.
+
+===================================================================================================   =======================================================
+
+.. rubric:: Included in:
+
+=================================================================   ======================================
+
+Parent                                                                                             Summary
+
+=================================================================   ======================================
+:ref:`component_pair_child <pre_processing_component_pair_child>`   'child_object_type' of component_pair.
+
+=================================================================   ======================================
+

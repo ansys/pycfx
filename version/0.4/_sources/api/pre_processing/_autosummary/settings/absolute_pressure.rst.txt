@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_absolute_pressure:
+
+absolute_pressure
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.absolute_pressure.absolute_pressure
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   =========================================================================
+
+Parent                                                                                                                            Summary
+
+=============================================================   =========================================================================
+:ref:`pressure <pre_processing_pressure>`                       Defines the Saturation Pressure used in a multiphase mass transfer model.
+
+:ref:`equation_of_state <pre_processing_equation_of_state_1>`                                            Specifies the equation of state.
+
+=============================================================   =========================================================================
+

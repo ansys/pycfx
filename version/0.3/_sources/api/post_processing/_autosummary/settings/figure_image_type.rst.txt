@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_figure_image_type:
+
+figure_image_type
+=================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.figure_image_type.figure_image_type
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+========================================================   ===============================
+
+Parent                                                                             Summary
+
+========================================================   ===============================
+:ref:`output_settings <post_processing_output_settings>`   Defines options for the Report.
+
+========================================================   ===============================
+

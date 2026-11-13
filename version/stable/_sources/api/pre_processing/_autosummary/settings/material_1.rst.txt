@@ -1,0 +1,27 @@
+:orphan:
+
+.. _pre_processing_material_1:
+
+material
+========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.material_1.material
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================================   ============================================
+
+Parent                                                                                                                     Summary
+
+===================================================================================   ============================================
+:ref:`solid_definition_child <pre_processing_solid_definition_child>`                     'child_object_type' of solid_definition.
+
+:ref:`fluid_definition_child <pre_processing_fluid_definition_child>`                     'child_object_type' of fluid_definition.
+
+:ref:`tube_definition_child <pre_processing_tube_definition_child>`                        'child_object_type' of tube_definition.
+
+:ref:`heat_transfer_interface_model <pre_processing_heat_transfer_interface_model>`   Heat transfer models for a domain interface.
+
+===================================================================================   ============================================
+

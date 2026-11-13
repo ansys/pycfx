@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_argument_value_child:
+
+argument_value_child
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.argument_value_child.argument_value_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================   =============================
+
+Attribute                                                                         Summary
+
+=========================================================   =============================
+:ref:`value_name <pre_processing_value_name>`                     'Value Name' parameter.
+
+:ref:`result_units <pre_processing_result_units>`               'Result Units' parameter.
+
+:ref:`expression_value <pre_processing_expression_value>`   Single valued CEL expression.
+
+=========================================================   =============================
+
+.. rubric:: Included in:
+
+=====================================================   =======================================
+
+Parent                                                                                  Summary
+
+=====================================================   =======================================
+:ref:`argument_value <pre_processing_argument_value>`   A container for Argument Value objects.
+
+=====================================================   =======================================
+

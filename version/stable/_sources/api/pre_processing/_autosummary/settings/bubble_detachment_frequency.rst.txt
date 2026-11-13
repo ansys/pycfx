@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_bubble_detachment_frequency:
+
+bubble_detachment_frequency
+===========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.bubble_detachment_frequency.bubble_detachment_frequency
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================================   ===========================================================================================
+
+Parent                                                                                                                                                                  Summary
+
+=================================================================================   ===========================================================================================
+:ref:`bubble_detachment_frequency <pre_processing_bubble_detachment_frequency_1>`   Specifies frequency of bubble detachment from a nucleation site for the wall boiling model.
+
+=================================================================================   ===========================================================================================
+

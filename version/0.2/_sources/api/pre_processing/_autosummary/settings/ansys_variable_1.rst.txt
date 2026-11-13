@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_ansys_variable_1:
+
+ansys_variable
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.ansys_variable_1.ansys_variable
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`ansys_variable_child <pre_processing_ansys_variable_child>`
+
+
+.. rubric:: Included in:
+
+=====================================================================================   ========================================
+
+Parent                                                                                                                   Summary
+
+=====================================================================================   ========================================
+:ref:`coupling_data_transfer_control <pre_processing_coupling_data_transfer_control>`   'COUPLING DATA TRANSFER CONTROL' object.
+
+=====================================================================================   ========================================
+

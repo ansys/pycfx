@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_chart_line_label_font_size:
+
+chart_line_label_font_size
+==========================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.chart_line_label_font_size.chart_line_label_font_size
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==============================================================   ====================================
+
+Parent                                                                                        Summary
+
+==============================================================   ====================================
+:ref:`chart_series_child <post_processing_chart_series_child>`   'child_object_type' of chart_series.
+
+==============================================================   ====================================
+

@@ -1,0 +1,73 @@
+:orphan:
+
+.. _post_processing_hardcopy:
+
+hardcopy
+========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.hardcopy.hardcopy
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+======================================================================   ====================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                             Summary
+
+======================================================================   ====================================================================================================================================================================================
+:ref:`antialiasing <post_processing_antialiasing>`                                                                                                                                                   Enables the antialiasing of the graphics (smooth edges).
+
+:ref:`hardcopy_filename <post_processing_hardcopy_filename>`                                                                                                                                                  Sets the file name for the output from "print".
+
+:ref:`hardcopy_format <post_processing_hardcopy_format>`                                                                                                                                                     Sets the format of hardcopy output from "print".
+
+:ref:`hardcopy_tolerance <post_processing_hardcopy_tolerance>`           A non-dimensional tolerance used in face-sorting when generating hardcopy output. Higher values will result in faster printing times, but may cause defects in the resulting output.
+
+:ref:`image_height <post_processing_image_height_1>`                                                                                                                                              The image height (used when Use Screen Size is set to Off).
+
+:ref:`image_scale <post_processing_image_scale_1>`                                                                                                             Scales the size of bitmap images to a fraction (in percent) of the current viewer window size.
+
+:ref:`image_size_option <post_processing_image_size_option_1>`                                                                                                                                               Selects the size with which to create the image.
+
+:ref:`image_width <post_processing_image_width_1>`                                                                                                                                                 The image width (used when Use Screen Size is set to Off).
+
+:ref:`jpeg_image_quality <post_processing_jpeg_image_quality>`                                                                                                 The quality factor for jpeg image output. Higher values results in clearer, but larger, files.
+
+:ref:`paper_orientation <post_processing_paper_orientation>`                                                                                                                                              Sets the rotation of the image on the printed page.
+
+:ref:`paper_size <post_processing_paper_size>`                                                                                                                                                            Scales hardcopy output to the specified paper size.
+
+:ref:`print_line_width <post_processing_print_line_width>`                                                                                  The width of lines in hardcopy output. Increasing this value may give better results on high-resolution printers.
+
+:ref:`print_quality <post_processing_print_quality>`                                                                                                                                                           Controls quality vs. speed of hardcopy output.
+
+:ref:`transparent_background <post_processing_transparent_background>`                                                                                                      Toggles if hardcopy output is produced on a transparent or CFX viewer background.
+
+:ref:`use_screen_size <post_processing_use_screen_size_1>`                                                                                                                                 When set to On, the current screen size is used as the image size.
+
+:ref:`white_background <post_processing_white_background>`                                                                                                                        Toggles if hardcopy output is produced on a white or CFX viewer background.
+
+======================================================================   ====================================================================================================================================================================================
+
+.. rubric:: Methods
+
+==================================================   ===================================
+
+Method                                                                           Summary
+
+==================================================   ===================================
+:ref:`save_picture <post_processing_save_picture>`   Saves an image of the current view.
+
+==================================================   ===================================
+
+.. rubric:: Included in:
+
+========================================   =========================================
+
+Parent                                                                       Summary
+
+========================================   =========================================
+:ref:`results <post_processing_results>`   Encapsulates a CFX post-processing setup.
+
+========================================   =========================================
+

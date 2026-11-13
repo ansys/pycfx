@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_curvature_correction_limiter:
+
+curvature_correction_limiter
+============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.curvature_correction_limiter.curvature_correction_limiter
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   =============================================================================
+
+Parent                                                                                                                                Summary
+
+=============================================================   =============================================================================
+:ref:`earsm_coefficients <pre_processing_earsm_coefficients>`   Controls model coefficients for the explicit algebraic Reynolds stress model.
+
+=============================================================   =============================================================================
+

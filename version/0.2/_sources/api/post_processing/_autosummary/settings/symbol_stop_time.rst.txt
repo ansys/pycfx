@@ -1,0 +1,25 @@
+:orphan:
+
+.. _post_processing_symbol_stop_time:
+
+symbol_stop_time
+================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.symbol_stop_time.symbol_stop_time
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==========================================================================   ==========================================
+
+Parent                                                                                                          Summary
+
+==========================================================================   ==========================================
+:ref:`streamline_child <post_processing_streamline_child>`                           'child_object_type' of streamline.
+
+:ref:`particle_track_child <post_processing_particle_track_child>`               'child_object_type' of particle_track.
+
+:ref:`res_particle_track_child <post_processing_res_particle_track_child>`   'child_object_type' of res_particle_track.
+
+==========================================================================   ==========================================
+

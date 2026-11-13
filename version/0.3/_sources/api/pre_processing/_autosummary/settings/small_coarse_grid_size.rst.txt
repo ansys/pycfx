@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_small_coarse_grid_size:
+
+small_coarse_grid_size
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.small_coarse_grid_size.small_coarse_grid_size
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ==================================================================
+
+Parent                                                                                                                     Summary
+
+=============================================================   ==================================================================
+:ref:`coarsening_control <pre_processing_coarsening_control>`   Holds parameters to control creation of the radiation coarse grid.
+
+=============================================================   ==================================================================
+

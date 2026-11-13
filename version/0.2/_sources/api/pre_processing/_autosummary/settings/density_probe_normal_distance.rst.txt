@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_density_probe_normal_distance:
+
+density_probe_normal_distance
+=============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.density_probe_normal_distance.density_probe_normal_distance
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================================   =======================================================================
+
+Parent                                                                                                                                      Summary
+
+=========================================================================   =======================================================================
+:ref:`particle_primary_breakup <pre_processing_particle_primary_breakup>`   Defines the primary break-up model used to determine spray atomization.
+
+:ref:`cone_angle <pre_processing_cone_angle_1>`                                                        Defines the initial droplet injection angle.
+
+=========================================================================   =======================================================================
+

@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_spatial_partitioning_1:
+
+spatial_partitioning
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.spatial_partitioning_1.spatial_partitioning
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================================   =========================================
+
+Attribute                                                                                                             Summary
+
+=================================================================================   =========================================
+:ref:`option <pre_processing_option_453>`                                                  The 'Spatial Partitioning' option.
+
+:ref:`maximum_number_of_partitions <pre_processing_maximum_number_of_partitions>`   'Maximum Number of Partitions' parameter.
+
+:ref:`number_of_partitions <pre_processing_number_of_partitions>`                           'Number of Partitions' parameter.
+
+:ref:`initial_partition_file <pre_processing_initial_partition_file>`                     'Initial Partition File' parameter.
+
+=================================================================================   =========================================
+
+.. rubric:: Included in:
+
+===========================================================================   ==================================
+
+Parent                                                                                                   Summary
+
+===========================================================================   ==================================
+:ref:`partitioner_step_control <pre_processing_partitioner_step_control_1>`   'PARTITIONER STEP CONTROL' object.
+
+===========================================================================   ==================================
+

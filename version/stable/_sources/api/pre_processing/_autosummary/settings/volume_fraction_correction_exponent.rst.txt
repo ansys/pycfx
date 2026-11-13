@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_volume_fraction_correction_exponent:
+
+volume_fraction_correction_exponent
+===================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.volume_fraction_correction_exponent.volume_fraction_correction_exponent
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================   ========================================
+
+Parent                                                                             Summary
+
+===============================================   ========================================
+:ref:`drag_force <pre_processing_drag_force_1>`   Specifies drag force between two phases.
+
+===============================================   ========================================
+

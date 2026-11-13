@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_electric_potential:
+
+electric_potential
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.electric_potential.electric_potential
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================   =================================================
+
+Parent                                                                                                      Summary
+
+===============================================================   =================================================
+:ref:`electric_potential <pre_processing_electric_potential_1>`   Defines the initialization of electric potential.
+
+===============================================================   =================================================
+

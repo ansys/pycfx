@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_definition:
+
+definition
+==========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.definition.definition
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   =========================================
+
+Parent                                                                                                      Summary
+
+=======================================================================   =========================================
+:ref:`expressions_child <pre_processing_expressions_child>`                     'child_object_type' of expressions.
+
+:ref:`expert_parameters_child <pre_processing_expert_parameters_child>`   'child_object_type' of expert_parameters.
+
+:ref:`user_child <pre_processing_user_child>`                                          'child_object_type' of user.
+
+=======================================================================   =========================================
+

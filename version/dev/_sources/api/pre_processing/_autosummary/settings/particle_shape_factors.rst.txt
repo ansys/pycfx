@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_particle_shape_factors:
+
+particle_shape_factors
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.particle_shape_factors.particle_shape_factors
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================================   =========================================
+
+Attribute                                                                                                           Summary
+
+===============================================================================   =========================================
+:ref:`enabled <pre_processing_enabled_37>`                                        Enable the PARTICLE SHAPE FACTORS object.
+
+:ref:`cross_sectional_area_factor <pre_processing_cross_sectional_area_factor>`    'Cross Sectional Area Factor' parameter.
+
+:ref:`surface_area_factor <pre_processing_surface_area_factor>`                            'Surface Area Factor' parameter.
+
+===============================================================================   =========================================
+
+.. rubric:: Included in:
+
+===============================================   ======================================
+
+Parent                                                                           Summary
+
+===============================================   ======================================
+:ref:`morphology <pre_processing_morphology_1>`   Fluid morphology in multifluid models.
+
+===============================================   ======================================
+

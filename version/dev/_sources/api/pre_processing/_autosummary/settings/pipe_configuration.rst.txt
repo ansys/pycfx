@@ -1,0 +1,46 @@
+:orphan:
+
+.. _pre_processing_pipe_configuration:
+
+pipe_configuration
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.pipe_configuration.pipe_configuration
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================   ==================================================
+
+Attribute                                                                                                                Summary
+
+===========================================================================   ==================================================
+:ref:`pipe_material <pre_processing_pipe_material>`                                                   'Pipe Material' parameter.
+
+:ref:`pipe_outer_diameter <pre_processing_pipe_outer_diameter>`                                 'Pipe Outer Diameter' parameter.
+
+:ref:`pipe_thickness <pre_processing_pipe_thickness>`                                                'Pipe Thickness' parameter.
+
+:ref:`pipe_pitch <pre_processing_pipe_pitch>`                                                            'Pipe Pitch' parameter.
+
+:ref:`pipe_parallel_offset <pre_processing_pipe_parallel_offset>`                              'Pipe Parallel Offset' parameter.
+
+:ref:`pipe_perpendicular_offset <pre_processing_pipe_perpendicular_offset>`               'Pipe Perpendicular Offset' parameter.
+
+:ref:`shell_side_area_fraction <pre_processing_shell_side_area_fraction>`     Holds the definition of shell fluid area fraction.
+
+:ref:`tube_side_area_fraction <pre_processing_tube_side_area_fraction>`        Holds the definition of tube fluid area fraction.
+
+===========================================================================   ==================================================
+
+.. rubric:: Included in:
+
+===================================================================   ==============================================
+
+Parent                                                                                                       Summary
+
+===================================================================   ==============================================
+:ref:`shell_and_tube_models <pre_processing_shell_and_tube_models>`   Holds the definition of shell and tube models.
+
+===================================================================   ==============================================
+

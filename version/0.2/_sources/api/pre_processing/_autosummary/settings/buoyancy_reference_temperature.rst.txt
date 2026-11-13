@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_buoyancy_reference_temperature:
+
+buoyancy_reference_temperature
+==============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.buoyancy_reference_temperature.buoyancy_reference_temperature
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================   ====================================================================================
+
+Parent                                                                                                                                           Summary
+
+=================================================================   ====================================================================================
+:ref:`buoyancy_model <pre_processing_buoyancy_model>`                                     Defines type of buoyancy model and gravity vector in a domain.
+
+:ref:`fluid_buoyancy_model <pre_processing_fluid_buoyancy_model>`   Sets the buoyancy model to be used for a specific fluid in a multiphase calculation.
+
+=================================================================   ====================================================================================
+

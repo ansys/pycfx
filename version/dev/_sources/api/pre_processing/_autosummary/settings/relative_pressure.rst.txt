@@ -1,0 +1,29 @@
+:orphan:
+
+.. _pre_processing_relative_pressure:
+
+relative_pressure
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.relative_pressure.relative_pressure
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================   ==============================================================================
+
+Parent                                                                                                                                   Summary
+
+===============================================================   ==============================================================================
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum>`                             Specifies conditions on Mass and Momentum at a boundary.
+
+:ref:`pressure_excitation <pre_processing_pressure_excitation>`   Specifies pressure excitation at a non-reflecting pressure boundary condition.
+
+:ref:`pressure_profile <pre_processing_pressure_profile>`                                 Specifies pressure profile information for outlet BCs.
+
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum_2>`                           Specifies conditions on Mass and Momentum at a boundary.
+
+:ref:`static_pressure <pre_processing_static_pressure>`                                           Defines the initialization of Static Pressure.
+
+===============================================================   ==============================================================================
+

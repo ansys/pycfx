@@ -1,0 +1,58 @@
+:orphan:
+
+.. _pre_processing_particle_position:
+
+particle_position
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.particle_position.particle_position
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================================================================   =======================================================
+
+Attribute                                                                                                                                                       Summary
+
+=============================================================================================================   =======================================================
+:ref:`option <pre_processing_option_298>`                                                                                               The 'Particle Position' option.
+
+:ref:`first_point_of_axis <pre_processing_first_point_of_axis>`                                                                        'First Point of Axis' parameter.
+
+:ref:`second_point_of_axis <pre_processing_second_point_of_axis>`                                                                     'Second Point of Axis' parameter.
+
+:ref:`minimum_distance_from_axis <pre_processing_minimum_distance_from_axis>`                                                   'Minimum Distance from Axis' parameter.
+
+:ref:`maximum_distance_from_axis <pre_processing_maximum_distance_from_axis>`                                                   'Maximum Distance from Axis' parameter.
+
+:ref:`first_line_point_for_normal_distribution <pre_processing_first_line_point_for_normal_distribution>`         'First Line Point for Normal Distribution' parameter.
+
+:ref:`second_line_point_for_normal_distribution <pre_processing_second_line_point_for_normal_distribution>`      'Second Line Point for Normal Distribution' parameter.
+
+:ref:`standard_deviation_for_normal_distribution <pre_processing_standard_deviation_for_normal_distribution>`   'Standard Deviation for Normal Distribution' parameter.
+
+:ref:`centre_point_for_normal_distribution <pre_processing_centre_point_for_normal_distribution>`                     'Centre Point for Normal Distribution' parameter.
+
+:ref:`distance_from_centre_point <pre_processing_distance_from_centre_point>`                                                   'Distance from Centre Point' parameter.
+
+:ref:`face_weighting_factor <pre_processing_face_weighting_factor>`                                                                  'Face Weighting Factor' parameter.
+
+:ref:`particle_locations <pre_processing_particle_locations>`                                                                           'Particle Locations' parameter.
+
+:ref:`number_of_positions <pre_processing_number_of_positions>`                                                               Defines the number of particle positions.
+
+=============================================================================================================   =======================================================
+
+.. rubric:: Included in:
+
+=================================================================   =============================================================
+
+Parent                                                                                                                    Summary
+
+=================================================================   =============================================================
+:ref:`boundary_conditions <pre_processing_boundary_conditions_2>`   Specifies boundary conditions for all equations being solved.
+
+:ref:`boundary_conditions <pre_processing_boundary_conditions_6>`   Specifies boundary conditions for all equations being solved.
+
+=================================================================   =============================================================
+

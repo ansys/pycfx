@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_cab_bag_breakup_factor:
+
+cab_bag_breakup_factor
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.cab_bag_breakup_factor.cab_bag_breakup_factor
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   ===========================
+
+Parent                                                                          Summary
+
+=========================================================   ===========================
+:ref:`particle_breakup <pre_processing_particle_breakup>`   Defines the breakup method.
+
+=========================================================   ===========================
+

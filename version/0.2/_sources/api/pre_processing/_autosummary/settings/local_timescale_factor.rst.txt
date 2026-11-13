@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_local_timescale_factor:
+
+local_timescale_factor
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.local_timescale_factor.local_timescale_factor
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================   ======================================================
+
+Parent                                                                                                             Summary
+
+=================================================================   ======================================================
+:ref:`convergence_control <pre_processing_convergence_control>`     Holds basic parameters that affect solver convergence.
+
+:ref:`convergence_control <pre_processing_convergence_control_3>`   Holds basic parameters that affect solver convergence.
+
+:ref:`convergence_control <pre_processing_convergence_control_4>`   Holds basic parameters that affect solver convergence.
+
+=================================================================   ======================================================
+

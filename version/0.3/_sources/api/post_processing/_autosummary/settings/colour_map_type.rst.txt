@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_colour_map_type:
+
+colour_map_type
+===============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.colour_map_type.colour_map_type
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==========================================================   ==================================
+
+Parent                                                                                  Summary
+
+==========================================================   ==================================
+:ref:`colour_map_child <post_processing_colour_map_child>`   'child_object_type' of colour_map.
+
+==========================================================   ==================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_337:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_337.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================   =======================================================
+
+Parent                                                                          Summary
+
+=============================   =======================================================
+:ref:`k <pre_processing_k_1>`   Defines the initialization of turbulent kinetic energy.
+
+=============================   =======================================================
+

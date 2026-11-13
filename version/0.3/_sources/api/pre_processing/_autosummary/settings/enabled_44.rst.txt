@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_44:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_44.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================   ==============================
+
+Parent                                                                                     Summary
+
+=================================================================   ==============================
+:ref:`multiphase_reactions <pre_processing_multiphase_reactions>`   'MULTIPHASE REACTIONS' object.
+
+=================================================================   ==============================
+

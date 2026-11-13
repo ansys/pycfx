@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_spray_radius_at_penetration_origin:
+
+spray_radius_at_penetration_origin
+==================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.spray_radius_at_penetration_origin.spray_radius_at_penetration_origin
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================   =====================
+
+Parent                                                          Summary
+
+===============================================   =====================
+:ref:`spray_angle <pre_processing_spray_angle>`   'SPRAY ANGLE' object.
+
+===============================================   =====================
+

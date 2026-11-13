@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_track_file_format:
+
+track_file_format
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.track_file_format.track_file_format
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================   ==========================================
+
+Parent                                                                                               Summary
+
+===============================================================   ==========================================
+:ref:`particle_track_file <pre_processing_particle_track_file>`   Controls output of particle track records.
+
+===============================================================   ==========================================
+

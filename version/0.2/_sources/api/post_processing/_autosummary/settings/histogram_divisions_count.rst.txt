@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_histogram_divisions_count:
+
+histogram_divisions_count
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.histogram_divisions_count.histogram_divisions_count
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+================================================   =============================
+
+Parent                                                                   Summary
+
+================================================   =============================
+:ref:`chart_child <post_processing_chart_child>`   'child_object_type' of chart.
+
+================================================   =============================
+

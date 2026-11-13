@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_streamwise_loss:
+
+streamwise_loss
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.streamwise_loss.streamwise_loss
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================================   =============================================
+
+Attribute                                                                                                                         Summary
+
+=========================================================================================   =============================================
+:ref:`option <pre_processing_option_247>`                                                                   The 'Streamwise Loss' option.
+
+:ref:`permeability <pre_processing_permeability>`                                                               'Permeability' parameter.
+
+:ref:`resistance_loss_coefficient <pre_processing_resistance_loss_coefficient>`                  'Resistance Loss Coefficient' parameter.
+
+:ref:`linear_resistance_coefficient <pre_processing_linear_resistance_coefficient>`            'Linear Resistance Coefficient' parameter.
+
+:ref:`quadratic_resistance_coefficient <pre_processing_quadratic_resistance_coefficient>`   'Quadratic Resistance Coefficient' parameter.
+
+=========================================================================================   =============================================
+
+.. rubric:: Included in:
+
+=====================================================================   =================================
+
+Parent                                                                                            Summary
+
+=====================================================================   =================================
+:ref:`directional_loss_model <pre_processing_directional_loss_model>`   Defines a directional loss model.
+
+=====================================================================   =================================
+

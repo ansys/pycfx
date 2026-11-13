@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_initial_values_control:
+
+initial_values_control
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.initial_values_control.initial_values_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================   =========================================
+
+Attribute                                                                                               Summary
+
+===================================================================   =========================================
+:ref:`enabled <pre_processing_enabled_239>`                           Enable the INITIAL VALUES CONTROL object.
+
+:ref:`use_mesh_from <pre_processing_use_mesh_from>`                                  'Use Mesh From' parameter.
+
+:ref:`continue_history_from <pre_processing_continue_history_from>`          'Continue History From' parameter.
+
+===================================================================   =========================================
+
+.. rubric:: Included in:
+
+=================================================================================   ======================================
+
+Parent                                                                                                             Summary
+
+=================================================================================   ======================================
+:ref:`initial_values_specification <pre_processing_initial_values_specification>`   'INITIAL VALUES SPECIFICATION' object.
+
+=================================================================================   ======================================
+

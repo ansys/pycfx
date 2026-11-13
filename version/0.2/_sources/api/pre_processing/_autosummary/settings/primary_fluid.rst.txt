@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_primary_fluid:
+
+primary_fluid
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.primary_fluid.primary_fluid
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================   =========================================================================================
+
+Parent                                                                                                                                                  Summary
+
+===================================================================   =========================================================================================
+:ref:`surface_tension_model <pre_processing_surface_tension_model>`   Sets parameters that control the surface tension force model at a free surface interface.
+
+===================================================================   =========================================================================================
+

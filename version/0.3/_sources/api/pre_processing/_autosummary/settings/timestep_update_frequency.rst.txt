@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_timestep_update_frequency:
+
+timestep_update_frequency
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.timestep_update_frequency.timestep_update_frequency
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================   =============================================
+
+Parent                                                                                Summary
+
+=============================================   =============================================
+:ref:`time_steps <pre_processing_time_steps>`   Specifies the time steps for a transient run.
+
+=============================================   =============================================
+

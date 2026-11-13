@@ -1,0 +1,70 @@
+:orphan:
+
+.. _pre_processing_mesh_stiffness_1:
+
+mesh_stiffness
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.mesh_stiffness_1.mesh_stiffness
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================================   ===================================================================================
+
+Attribute                                                                                                                                                     Summary
+
+===============================================================================   ===================================================================================
+:ref:`option <pre_processing_option_106>`                                                                                                The 'Mesh Stiffness' option.
+
+:ref:`stiffness_model_exponent <pre_processing_stiffness_model_exponent>`                                                       'Stiffness Model Exponent' parameter.
+
+:ref:`mesh_stiffness <pre_processing_mesh_stiffness>`                                                                 Diffusivity used in mesh displacement equation.
+
+:ref:`xxvalue <pre_processing_xxvalue>`                                             Input expression for symmetric tensor VARIABLE component value in relevant units.
+
+:ref:`yyvalue <pre_processing_yyvalue>`                                             Input expression for symmetric tensor VARIABLE component value in relevant units.
+
+:ref:`zzvalue <pre_processing_zzvalue>`                                             Input expression for symmetric tensor VARIABLE component value in relevant units.
+
+:ref:`xyvalue <pre_processing_xyvalue>`                                             Input expression for symmetric tensor VARIABLE component value in relevant units.
+
+:ref:`xzvalue <pre_processing_xzvalue>`                                             Input expression for symmetric tensor VARIABLE component value in relevant units.
+
+:ref:`yzvalue <pre_processing_yzvalue>`                                             Input expression for symmetric tensor VARIABLE component value in relevant units.
+
+:ref:`maximum_mesh_stiffness <pre_processing_maximum_mesh_stiffness>`                                              Max value for recipe based stiffness calculations.
+
+:ref:`minimum_mesh_stiffness <pre_processing_minimum_mesh_stiffness>`                                              Min value for recipe based stiffness calculations.
+
+:ref:`include_jacobian_multiplier <pre_processing_include_jacobian_multiplier>`   Determines whether principle model variable is multiplied by displacement Jacobian.
+
+:ref:`minimum_jacobian <pre_processing_minimum_jacobian>`                                                                               'Minimum Jacobian' parameter.
+
+:ref:`log_stiffness_range <pre_processing_log_stiffness_range>`                                                                      'Log Stiffness Range' parameter.
+
+:ref:`minimum_wall_distance <pre_processing_minimum_wall_distance>`                                                                'Minimum Wall Distance' parameter.
+
+:ref:`distance_exponent <pre_processing_distance_exponent>`                                                                            'Distance Exponent' parameter.
+
+:ref:`volume_exponent <pre_processing_volume_exponent>`                                                                                  'Volume Exponent' parameter.
+
+:ref:`volume_weighting <pre_processing_volume_weighting>`                                                                               'Volume Weighting' parameter.
+
+:ref:`reference_volume <pre_processing_reference_volume_1>`                                                             Defines reference volume for stiffness model.
+
+:ref:`reference_distance <pre_processing_reference_distance_1>`                                                       Defines reference distance for stiffness model.
+
+===============================================================================   ===================================================================================
+
+.. rubric:: Included in:
+
+===========================================================   ==========================
+
+Parent                                                                           Summary
+
+===========================================================   ==========================
+:ref:`mesh_motion_model <pre_processing_mesh_motion_model>`   Defines mesh motion model.
+
+===========================================================   ==========================
+

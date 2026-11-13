@@ -1,0 +1,54 @@
+:orphan:
+
+.. _pre_processing_hole_direction:
+
+hole_direction
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.hole_direction.hole_direction
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================================   =======================================================================================================
+
+Attribute                                                                                                                                                                         Summary
+
+===============================================================================   =======================================================================================================
+:ref:`option <pre_processing_option_313>`                                                                                                                    The 'Hole Direction' option.
+
+:ref:`inclination_angle <pre_processing_inclination_angle>`                                                                                                'Inclination Angle' parameter.
+
+:ref:`azimuthal_angle <pre_processing_azimuthal_angle>`                                                                                                      'Azimuthal Angle' parameter.
+
+:ref:`unit_vector_x_component <pre_processing_unit_vector_x_component>`                                                                              'Unit Vector X Component' parameter.
+
+:ref:`unit_vector_y_component <pre_processing_unit_vector_y_component>`                                                                              'Unit Vector Y Component' parameter.
+
+:ref:`unit_vector_z_component <pre_processing_unit_vector_z_component>`                                                                              'Unit Vector Z Component' parameter.
+
+:ref:`unit_vector_axial_component <pre_processing_unit_vector_axial_component>`                                                                  'Unit Vector Axial Component' parameter.
+
+:ref:`unit_vector_r_component <pre_processing_unit_vector_r_component>`                                                                              'Unit Vector r Component' parameter.
+
+:ref:`unit_vector_theta_component <pre_processing_unit_vector_theta_component>`                                                                  'Unit Vector Theta Component' parameter.
+
+:ref:`axis_definition <pre_processing_axis_definition>`                           Defines the axis for a cylindrical coordinate system or variables defined using cylindrical components.
+
+:ref:`polar_axis <pre_processing_polar_axis>`                                                                           Defines the first reference direction used for Injection Regions.
+
+:ref:`auxiliary_axis <pre_processing_auxiliary_axis>`                                                                  Defines the second reference direction used for Injection Regions.
+
+===============================================================================   =======================================================================================================
+
+.. rubric:: Included in:
+
+=======================================================   =========================
+
+Parent                                                                      Summary
+
+=======================================================   =========================
+:ref:`injection_model <pre_processing_injection_model>`   'INJECTION MODEL' object.
+
+=======================================================   =========================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_fit_views:
+
+fit_views
+=========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.fit_views.fit_views
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+========================================================   ===============================
+
+Parent                                                                             Summary
+
+========================================================   ===============================
+:ref:`output_settings <post_processing_output_settings>`   Defines options for the Report.
+
+========================================================   ===============================
+

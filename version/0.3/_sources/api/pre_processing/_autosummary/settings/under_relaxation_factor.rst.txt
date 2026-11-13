@@ -1,0 +1,55 @@
+:orphan:
+
+.. _pre_processing_under_relaxation_factor:
+
+under_relaxation_factor
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.under_relaxation_factor.under_relaxation_factor
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================================================   ======================================================================================================
+
+Parent                                                                                                                                                                                       Summary
+
+===========================================================================================   ======================================================================================================
+:ref:`variable_operator_child <pre_processing_variable_operator_child>`                                                                                    'child_object_type' of variable_operator.
+
+:ref:`solid_pressure_model <pre_processing_solid_pressure_model>`                                                  Sets the model to be used for solids pressure forces in a multiphase calculation.
+
+:ref:`solid_shear_viscosity <pre_processing_solid_shear_viscosity_1>`                                              Sets the model to be used for solids shear viscosity in a multiphase calculation.
+
+:ref:`solid_bulk_viscosity <pre_processing_solid_bulk_viscosity_1>`                                                 Sets the model to be used for solids bulk viscosity in a multiphase calculation.
+
+:ref:`specified_mass_transfer <pre_processing_specified_mass_transfer>`                                                                                 Specifies the mass transfer rate explicitly.
+
+:ref:`equation_pair_child <pre_processing_equation_pair_child>`                                                                                                'child_object_type' of equation_pair.
+
+:ref:`lift_force <pre_processing_lift_force_1>`                                                           Specifies that lift force should be included in momentum transfer models for a fluid pair.
+
+:ref:`virtual_mass_force <pre_processing_virtual_mass_force>`                                     Specifies that virtual mass force should be included in momentum transfer models for a fluid pair.
+
+:ref:`wall_lubrication_force <pre_processing_wall_lubrication_force>`                         Specifies that wall lubrication force should be included in momentum transfer models for a fluid pair.
+
+:ref:`additional_variable_pair_child <pre_processing_additional_variable_pair_child>`                                                               'child_object_type' of additional_variable_pair.
+
+:ref:`tube_speed_model <pre_processing_tube_speed_model>`                                                                                                  Holds the definition of tube fluid speed.
+
+:ref:`slip_model <pre_processing_slip_model>`                                                                                                                           Specifies a wall slip model.
+
+:ref:`coupling_data_transfer_control <pre_processing_coupling_data_transfer_control>`                                                                       'COUPLING DATA TRANSFER CONTROL' object.
+
+:ref:`ansys_variable_child <pre_processing_ansys_variable_child>`                                                                                             'child_object_type' of ansys_variable.
+
+:ref:`temperature_damping <pre_processing_temperature_damping>`                                                                                      Controls the relaxation/damping of temperature.
+
+:ref:`mesh_motion_data_transfer_control <pre_processing_mesh_motion_data_transfer_control>`                                                              'MESH MOTION DATA TRANSFER CONTROL' object.
+
+:ref:`force_data_transfer_control <pre_processing_force_data_transfer_control>`                                                                                'FORCE DATA TRANSFER CONTROL' object.
+
+:ref:`torque_data_transfer_control <pre_processing_torque_data_transfer_control>`                                                                             'TORQUE DATA TRANSFER CONTROL' object.
+
+===========================================================================================   ======================================================================================================
+

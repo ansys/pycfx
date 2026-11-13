@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_transient_particle_diagnostics:
+
+transient_particle_diagnostics
+==============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.transient_particle_diagnostics.transient_particle_diagnostics
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`transient_particle_diagnostics_child <pre_processing_transient_particle_diagnostics_child>`
+
+
+.. rubric:: Included in:
+
+=====================================================   ==============================================================================
+
+Parent                                                                                                                         Summary
+
+=====================================================   ==============================================================================
+:ref:`output_control <pre_processing_output_control>`   Holds object definitions that control output from the solver during execution.
+
+=====================================================   ==============================================================================
+

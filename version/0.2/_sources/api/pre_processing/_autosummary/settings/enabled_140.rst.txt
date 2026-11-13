@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_enabled_140:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_140.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================   ==========================================================
+
+Parent                                                                                         Summary
+
+=========================================   ==========================================================
+:ref:`sources <pre_processing_sources>`     Holds the definition of sources for one or more equations.
+
+:ref:`sources <pre_processing_sources_4>`   Holds the definition of sources for one or more equations.
+
+:ref:`sources <pre_processing_sources_8>`   Holds the definition of sources for one or more equations.
+
+=========================================   ==========================================================
+

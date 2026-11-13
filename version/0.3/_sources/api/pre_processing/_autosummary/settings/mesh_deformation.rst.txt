@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_mesh_deformation:
+
+mesh_deformation
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.mesh_deformation.mesh_deformation
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================   ========================================================================================================================
+
+Attribute                                                                                                                                                                                    Summary
+
+=========================================================================   ========================================================================================================================
+:ref:`option <pre_processing_option_104>`                                                                                                                             The 'Mesh Deformation' option.
+
+:ref:`displacement_relative_to <pre_processing_displacement_relative_to>`                                          Periodic motion is ensured by solving displacements relative to the initial mesh.
+
+:ref:`periodic_model <pre_processing_periodic_model>`                       Periodic Regions of Motion model, which dictates how the meshes for each step of a given period are going to be created.
+
+:ref:`junction_box_routine <pre_processing_junction_box_routine>`                                                                                      List of junction box routines to be executed.
+
+:ref:`mesh_motion_model <pre_processing_mesh_motion_model>`                                                                                                               Defines mesh motion model.
+
+=========================================================================   ========================================================================================================================
+
+.. rubric:: Included in:
+
+===================================================   ================================================================
+
+Parent                                                                                                         Summary
+
+===================================================   ================================================================
+:ref:`domain_models <pre_processing_domain_models>`   Defines the physical models that are associated with the domain.
+
+===================================================   ================================================================
+

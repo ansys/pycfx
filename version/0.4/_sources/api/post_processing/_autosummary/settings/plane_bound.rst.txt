@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_plane_bound:
+
+plane_bound
+===========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.plane_bound.plane_bound
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+================================================   =============================
+
+Parent                                                                   Summary
+
+================================================   =============================
+:ref:`plane_child <post_processing_plane_child>`   'child_object_type' of plane.
+
+================================================   =============================
+

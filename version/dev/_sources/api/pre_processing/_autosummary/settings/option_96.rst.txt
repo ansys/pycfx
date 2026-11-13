@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_96:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_96.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================   =======================================
+
+Parent                                                                                                Summary
+
+===================================================================   =======================================
+:ref:`external_torque_child <pre_processing_external_torque_child>`   'child_object_type' of external_torque.
+
+===================================================================   =======================================
+

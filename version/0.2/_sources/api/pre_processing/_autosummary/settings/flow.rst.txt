@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_flow:
+
+flow
+====
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.flow.flow
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`flow_child <pre_processing_flow_child>`
+
+
+.. rubric:: Included in:
+
+===================================   ========================================
+
+Parent                                                                 Summary
+
+===================================   ========================================
+:ref:`setup <pre_processing_setup>`   Encapsulates a CFX pre-processing setup.
+
+===================================   ========================================
+

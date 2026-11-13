@@ -1,0 +1,28 @@
+:orphan:
+
+.. _pre_processing_equation_source:
+
+equation_source
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.equation_source.equation_source
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`equation_source_child <pre_processing_equation_source_child>`
+
+
+.. rubric:: Included in:
+
+=================================================   ==========================================================
+
+Parent                                                                                                 Summary
+
+=================================================   ==========================================================
+:ref:`sources <pre_processing_sources>`             Holds the definition of sources for one or more equations.
+
+:ref:`bulk_sources <pre_processing_bulk_sources>`                  Specifies bulk sources in multi-fluid flow.
+
+=================================================   ==========================================================
+

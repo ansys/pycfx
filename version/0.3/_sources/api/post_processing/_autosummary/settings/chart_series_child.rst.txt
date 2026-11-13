@@ -1,0 +1,151 @@
+:orphan:
+
+.. _post_processing_chart_series_child:
+
+chart_series_child
+==================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.chart_series_child.chart_series_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+==================================================================================================================   ========================================================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                                                                                             Summary
+
+==================================================================================================================   ========================================================================================================================================================================================================================================
+:ref:`add_chart_line_label <post_processing_add_chart_line_label>`                                                                                                                                                                                                                         If true, will display chart line labels in the chart if available.
+
+:ref:`add_chart_line_label_border <post_processing_add_chart_line_label_border>`                                                                                                                                                                                                             If true, will add a non-transparent border for chart line label.
+
+:ref:`chart_contour_data_source <post_processing_chart_contour_data_source>`                                                                                                                                                                                                                                       The chart source data for a chart contour.
+
+:ref:`chart_contour_level_count <post_processing_chart_contour_level_count>`                                                                                                                                                                                                                      Specifies number of contour lines for a chart contour plot.
+
+:ref:`chart_contour_parent <post_processing_chart_contour_parent>`                                                                                                                                                                                                         The name of the parent chart series for a contour plot across a chart point cloud.
+
+:ref:`chart_contour_range_max <post_processing_chart_contour_range_max>`                                                                                                                                                                                                                                The maximum value specified for a chart contour plot.
+
+:ref:`chart_contour_range_min <post_processing_chart_contour_range_min>`                                                                                                                                                                                                                                The minimum value specified for a chart contour plot.
+
+:ref:`chart_contour_range_type <post_processing_chart_contour_range_type>`                                                                                                                                                                                                                                  Sets contour range type for a chart contour plot.
+
+:ref:`chart_contour_range_value_list <post_processing_chart_contour_range_value_list>`                                                                                                                                                                                           Specifies a list of values for the contour variable on a chart contour plot.
+
+:ref:`chart_contour_variable <post_processing_chart_contour_variable>`                                                                                                                                                                                                                                 The name of contour variable for a chart contour plot.
+
+:ref:`chart_data_source <post_processing_chart_data_source>`                                                                                The data source for a scatter chart. The 'Chart Points' option refers to the original chart points data. The 'Response Points' option refers to the sampled points on the response surfaces for the chart points.
+
+:ref:`chart_line_custom_data_selection <post_processing_chart_line_custom_data_selection>`                                                                                                                                                                                                           If true, use variable information stored in line object.
+
+:ref:`chart_line_filename <post_processing_chart_line_filename>`                                                                                                                                                                                                                                         Specifies the file from which to read the line data.
+
+:ref:`chart_line_label_background_colour <post_processing_chart_line_label_background_colour>`                                                                                                                A list of three numbers between 0 and 1, which represent the RGB (Red/Green/Blue) values to be used when colouring chart line label background.
+
+:ref:`chart_line_label_font_size <post_processing_chart_line_label_font_size>`                                                                                                                                                                                                                                 Parameter to control the line label font size.
+
+:ref:`chart_line_label_number_automatic_formatting <post_processing_chart_line_label_number_automatic_formatting>`                                                                                                                                                                                 Parameter to display label numbers in an automatic format.
+
+:ref:`chart_line_label_number_format <post_processing_chart_line_label_number_format>`                                                                                                                                                                            Parameter to modify string format of numeric values on a chart line, i.e., a contour level.
+
+:ref:`chart_line_label_position <post_processing_chart_line_label_position>`                                                                                                                                                                                                                                    Parameter to control the line label position.
+
+:ref:`chart_line_label_text_colour <post_processing_chart_line_label_text_colour>`                                                                                                                                  A list of three numbers between 0 and 1, which represent the RGB (Red/Green/Blue) values to be used when colouring chart line label text.
+
+:ref:`chart_plot_option <post_processing_chart_plot_option>`                                                                                                                                                                                                                                           The parameter used to define the type of a chart plot.
+
+:ref:`chart_series_type <post_processing_chart_series_type>`                                                                                                                                                Indicates whether this line should be defined the regular way (i.e. get data from a locator in the loaded file), or defined via data from a file.
+
+:ref:`chart_x_variable <post_processing_chart_x_variable>`                                                                                                                                                  Specifies the name of the X-Axis variable to chart. The default value of 'Chart Count' indicates that the X-Axis will be a locator point counter.
+
+:ref:`chart_y_variable <post_processing_chart_y_variable>`                                                                                                                                                                                                                                                Specifies the name of the Y-Axis variable to chart.
+
+:ref:`file_data_section_name <post_processing_file_data_section_name>`                                                                                                                                                                                                                                         The name of file section to read xy data from.
+
+:ref:`file_data_x_variable <post_processing_file_data_x_variable>`                                                                                                                                                                                                                                                The name of variable to plot on the X Axis.
+
+:ref:`file_data_y_variable <post_processing_file_data_y_variable>`                                                                                                                                                                                                                                                The name of variable to plot on the Y Axis.
+
+:ref:`histogram_y_axis_weighting <post_processing_histogram_y_axis_weighting>`                                                                                                                                                                                                                               Specifies how to calculate mesh bin information.
+
+:ref:`location <post_processing_location>`                                                                                                                                                                                                                                                                                                    A locator name.
+
+:ref:`monitor_data_filename <post_processing_monitor_data_filename>`                                                                                                                                                                                                                               The name of file from which the monitor data will be read.
+
+:ref:`monitor_data_source <post_processing_monitor_data_source>`                                                                                                                                                                                                                            Whether the monitor data is to be read from the case or filename.
+
+:ref:`monitor_data_x_variable <post_processing_monitor_data_x_variable>`                                                                                                                                                                                                                                          The name of variable to plot on the X Axis.
+
+:ref:`monitor_data_x_variable_absolute_value <post_processing_monitor_data_x_variable_absolute_value>`                                                                                          Indicates whether to take the absolute value of the X Axis data before plotting the chart. If plotting a logarithmic chart, the minimum value will be 1e-100.
+
+:ref:`monitor_data_y_variable <post_processing_monitor_data_y_variable>`                                                                                                                                                                                                                                          The name of variable to plot on the Y Axis.
+
+:ref:`monitor_data_y_variable_absolute_value <post_processing_monitor_data_y_variable_absolute_value>`                                                                                          Indicates whether to take the absolute value of the Y Axis data before plotting the chart. If plotting a logarithmic chart, the minimum value will be 1e-100.
+
+:ref:`operating_point_data_case <post_processing_operating_point_data_case>`                                                                                                                                                                                                                   The name of the case from which the monitor data will be read.
+
+:ref:`operating_point_data_filename <post_processing_operating_point_data_filename>`                                                                                                                                                                                                               The name of file from which the monitor data will be read.
+
+:ref:`operating_point_data_source <post_processing_operating_point_data_source>`                                                                                                                                                                                                            Whether the monitor data is to be read from the case or filename.
+
+:ref:`operating_point_data_x_variable <post_processing_operating_point_data_x_variable>`                                                                                                                                                                                                                          The name of variable to plot on the X Axis.
+
+:ref:`operating_point_data_y_variable <post_processing_operating_point_data_y_variable>`                                                                                                                                                                                                                          The name of variable to plot on the Y Axis.
+
+:ref:`random_seed <post_processing_random_seed>`                                                                                                                                                                                                                                                              The seed to be used for a random number series.
+
+:ref:`results_set <post_processing_results_set>`                                                                                                                                                                                                                                                                          Specifies which result sets to use.
+
+:ref:`series_name <post_processing_series_name>`                                                                                                                                                                                                        The name of this chart line. This string will be used as the label in the Legend if one is displayed.
+
+:ref:`time_chart_expression <post_processing_time_chart_expression>`                                                                                                                                                                                               Specifies the expression to evaluate at each timestep and plot in the chart on the y axis.
+
+:ref:`time_chart_location <post_processing_time_chart_location>`                                                                                                                                                                                                                                            Specifies the location to use for the Time Chart.
+
+:ref:`time_chart_type <post_processing_time_chart_type>`                                                             Indicates the type of Time Chart to create - the options are 'Point', which will track the value of a variable at that point over time, or 'Expression', which must evaluate to a single value, and will be evaluated for each timestep.
+
+:ref:`time_chart_variable <post_processing_time_chart_variable>`                                                                                                                                                                                                                Specifies the name of the variable to track over time at the specified point.
+
+:ref:`time_chart_x_expression <post_processing_time_chart_x_expression>`                                                                                                                                                                                                         Specifies the expression to evaluate at each timestep and plot in the chart.
+
+:ref:`time_variable_absolute_value <post_processing_time_variable_absolute_value>`                                                                                                       Indicates whether to take the absolute value of the Time Variable data before plotting the chart. If plotting a logarithmic chart, the minimum value will be 1e-100.
+
+:ref:`time_variable_boundary_values <post_processing_time_variable_boundary_values>`                                                                                                                                                                        Sets the type of boundary values to be used for the Time Chart variable (Conservative or Hybrid).
+
+:ref:`x_variable_absolute_value <post_processing_x_variable_absolute_value>`                                                                                                                    Indicates whether to take the absolute value of the X Axis data before plotting the chart. If plotting a logarithmic chart, the minimum value will be 1e-100.
+
+:ref:`x_variable_boundary_values <post_processing_x_variable_boundary_values>`                                                                                                                                                                                  Sets the type of boundary values to be used for the X Axis variable (Conservative or Hybrid).
+
+:ref:`y_variable_absolute_value <post_processing_y_variable_absolute_value>`                                                                                                                    Indicates whether to take the absolute value of the Y Axis data before plotting the chart. If plotting a logarithmic chart, the minimum value will be 1e-100.
+
+:ref:`y_variable_boundary_values <post_processing_y_variable_boundary_values>`                                                                                                                                                                                  Sets the type of boundary values to be used for the Y Axis variable (Conservative or Hybrid).
+
+:ref:`chart_line <post_processing_chart_line>`                                                                                                                                                                                                                                                                                            'chart_line' child.
+
+==================================================================================================================   ========================================================================================================================================================================================================================================
+
+.. rubric:: Methods
+
+============================================   ========================================
+
+Method                                                                          Summary
+
+============================================   ========================================
+:ref:`suspend <post_processing_suspend>`       Suspend immediate update for the object.
+
+:ref:`unsuspend <post_processing_unsuspend>`   Restore immediate update for the object.
+
+============================================   ========================================
+
+.. rubric:: Included in:
+
+==================================================   =====================
+
+Parent                                                             Summary
+
+==================================================   =====================
+:ref:`chart_series <post_processing_chart_series>`   'chart_series' child.
+
+==================================================   =====================
+

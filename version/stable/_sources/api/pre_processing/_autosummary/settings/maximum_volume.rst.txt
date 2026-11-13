@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_maximum_volume:
+
+maximum_volume
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.maximum_volume.maximum_volume
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================   ===================================================
+
+Parent                                                                                          Summary
+
+=================================================   ===================================================
+:ref:`volume_range <pre_processing_volume_range>`   Defines the volume range of an IATE velocity group.
+
+=================================================   ===================================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_260:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_260.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================   ====================================================
+
+Parent                                                                                                         Summary
+
+===============================================================   ====================================================
+:ref:`flux_transfer_model <pre_processing_flux_transfer_model>`   Specifies the model heat transfer model for boiling.
+
+===============================================================   ====================================================
+

@@ -1,0 +1,42 @@
+:orphan:
+
+.. _pre_processing_cds_blending:
+
+cds_blending
+============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.cds_blending.cds_blending
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================================================   =======================================================================================================================================
+
+Attribute                                                                                                                                                                                                                       Summary
+
+=============================================================================================   =======================================================================================================================================
+:ref:`enabled <pre_processing_enabled_162>`                                                                                                                                                             Enable the CDS BLENDING object.
+
+:ref:`option <pre_processing_option_362>`                                                                                                                                                                    The 'Cds Blending' option.
+
+:ref:`minimum_rans_blend <pre_processing_minimum_rans_blend>`                                                                                                                                DES turbulence model blending coefficient.
+
+:ref:`maximum_rans_blend <pre_processing_maximum_rans_blend>`                                                                                                                                DES turbulence model blending coefficient.
+
+:ref:`maximum_courant_number_of_pure_cds <pre_processing_maximum_courant_number_of_pure_cds>`              Maximum Courant number, for which pure CDS is allowed in blended CDS advection scheme, used with the hybrid RANS-LES models.
+
+:ref:`limiter_exponent <pre_processing_limiter_exponent>`                                       Courant number power degree, controlling the CDS weight decrease in blended CDS advection scheme, used with the hybrid RANS-LES models.
+
+=============================================================================================   =======================================================================================================================================
+
+.. rubric:: Included in:
+
+=========================================================   ==============================================================================================
+
+Parent                                                                                                                                             Summary
+
+=========================================================   ==============================================================================================
+:ref:`advection_scheme <pre_processing_advection_scheme>`   Defines the scheme used by the solver to discretize the advection term in transport equations.
+
+=========================================================   ==============================================================================================
+

@@ -1,0 +1,46 @@
+:orphan:
+
+.. _pre_processing_file:
+
+file
+====
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.file.file
+    :show-inheritance:
+
+.. rubric:: Methods
+
+=======================================================================   =====================================================
+
+Method                                                                                                                  Summary
+
+=======================================================================   =====================================================
+:ref:`close_case <pre_processing_close_case>`                                                           Close the current case.
+
+:ref:`export_ccl <pre_processing_export_ccl>`                             Export a file containing some or all CCL definitions.
+
+:ref:`import_mesh <pre_processing_import_mesh>`                            Import a mesh file into the current CFX-Pre session.
+
+:ref:`new_case <pre_processing_new_case>`                                                                     Start a new case.
+
+:ref:`open_case <pre_processing_open_case>`                                        Open a case file. Supported formats include:
+
+:ref:`save_case <pre_processing_save_case>`                                                          Save a case (\*.cfx) file.
+
+:ref:`save_picture <pre_processing_save_picture>`                                           Saves an image of the current view.
+
+:ref:`write_solver_input_file <pre_processing_write_solver_input_file>`          Write a solver input file (\*.def or \*.mdef).
+
+=======================================================================   =====================================================
+
+.. rubric:: Included in:
+
+=====================================   ==========================================
+
+Parent                                                                     Summary
+
+=====================================   ==========================================
+:ref:`root <ref_pre_processing_root>`   Encapsulates a CFX pre-processing session.
+
+=====================================   ==========================================
+

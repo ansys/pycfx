@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_free_surface_model:
+
+free_surface_model
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.free_surface_model.free_surface_model
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================================   ==================================================================================================
+
+Attribute                                                                                                                                                                    Summary
+
+===============================================================================   ==================================================================================================
+:ref:`option <pre_processing_option_109>`                                                                                                           The 'Free Surface Model' option.
+
+:ref:`maximum_density_ratio <pre_processing_maximum_density_ratio>`                                                                               'Maximum Density Ratio' parameter.
+
+:ref:`interface_compression_level <pre_processing_interface_compression_level>`   Compression level for interface sharpness: 0=none, 1=standard compression, 2=enhanced compression.
+
+===============================================================================   ==================================================================================================
+
+.. rubric:: Included in:
+
+===========================================================   ==============================================================================
+
+Parent                                                                                                                               Summary
+
+===========================================================   ==============================================================================
+:ref:`multiphase_models <pre_processing_multiphase_models>`   Defines the overall models that control the interaction of two or more phases.
+
+===========================================================   ==============================================================================
+

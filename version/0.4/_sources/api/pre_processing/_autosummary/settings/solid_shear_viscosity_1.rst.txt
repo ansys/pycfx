@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_solid_shear_viscosity_1:
+
+solid_shear_viscosity
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.solid_shear_viscosity_1.solid_shear_viscosity
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================   =====================================
+
+Attribute                                                                                               Summary
+
+=======================================================================   =====================================
+:ref:`option <pre_processing_option_166>`                                   The 'Solid Shear Viscosity' option.
+
+:ref:`solid_shear_viscosity <pre_processing_solid_shear_viscosity>`       User specified solid shear viscosity.
+
+:ref:`under_relaxation_factor <pre_processing_under_relaxation_factor>`    'Under Relaxation Factor' parameter.
+
+=======================================================================   =====================================
+
+.. rubric:: Included in:
+
+===============================================   =============================
+
+Parent                                                                  Summary
+
+===============================================   =============================
+:ref:`fluid_child <pre_processing_fluid_child>`   'child_object_type' of fluid.
+
+===============================================   =============================
+

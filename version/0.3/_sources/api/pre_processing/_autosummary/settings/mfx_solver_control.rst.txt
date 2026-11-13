@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_mfx_solver_control:
+
+mfx_solver_control
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.mfx_solver_control.mfx_solver_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================================   ==============================================
+
+Attribute                                                                                                                            Summary
+
+===========================================================================================   ==============================================
+:ref:`enabled <pre_processing_enabled_255>`                                                            Enable the MFX SOLVER CONTROL object.
+
+:ref:`ansys_installation_root <pre_processing_ansys_installation_root>`                                 'ANSYS Installation Root' parameter.
+
+:ref:`additional_ansys_solver_arguments <pre_processing_additional_ansys_solver_arguments>`   'Additional ANSYS Solver Arguments' parameter.
+
+:ref:`ansys_license <pre_processing_ansys_license>`                                                               'ANSYS License' parameter.
+
+===========================================================================================   ==============================================
+
+.. rubric:: Included in:
+
+=======================================================   =========================
+
+Parent                                                                      Summary
+
+=======================================================   =========================
+:ref:`mfx_run_control <pre_processing_mfx_run_control>`   'MFX RUN CONTROL' object.
+
+=======================================================   =========================
+

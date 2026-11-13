@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_transient_particle_diagnostics_routine:
+
+transient_particle_diagnostics_routine
+======================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.transient_particle_diagnostics_routine.transient_particle_diagnostics_routine
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================================================   ======================================================
+
+Parent                                                                                                                                             Summary
+
+=================================================================================================   ======================================================
+:ref:`transient_particle_diagnostics_child <pre_processing_transient_particle_diagnostics_child>`   'child_object_type' of transient_particle_diagnostics.
+
+=================================================================================================   ======================================================
+

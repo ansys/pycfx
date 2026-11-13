@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_residual_material_model:
+
+residual_material_model
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.residual_material_model.residual_material_model
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================   ==========================================
+
+Attribute                                                                                      Summary
+
+=========================================================   ==========================================
+:ref:`enabled <pre_processing_enabled_86>`                  Enable the RESIDUAL MATERIAL MODEL object.
+
+:ref:`option <pre_processing_option_151>`                        The 'Residual Material Model' option.
+
+:ref:`reinitialisation <pre_processing_reinitialisation>`       Defines time for EGR reinitialization.
+
+=========================================================   ==========================================
+
+.. rubric:: Included in:
+
+===========================================================   ========================================
+
+Parent                                                                                         Summary
+
+===========================================================   ========================================
+:ref:`combustion_model <pre_processing_combustion_model_1>`   Defines the combustion model to be used.
+
+===========================================================   ========================================
+

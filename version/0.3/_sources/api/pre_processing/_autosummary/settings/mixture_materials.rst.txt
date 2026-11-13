@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_mixture_materials:
+
+mixture_materials
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.mixture_materials.mixture_materials
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================   ==========================================================================
+
+Attribute                                                                                                                                    Summary
+
+=======================================================================   ==========================================================================
+:ref:`binary_mixture_material <pre_processing_binary_mixture_material>`                                                     Binary mixture material.
+
+:ref:`particle_mixture <pre_processing_particle_mixture>`                     Material names for particle components used by hydrocarbon fuel model.
+
+:ref:`gas_mixture <pre_processing_gas_mixture>`                           Material names for components of gas phase used by hydrocarbon fuel model.
+
+=======================================================================   ==========================================================================
+
+.. rubric:: Included in:
+
+=====================================================   ================================
+
+Parent                                                                           Summary
+
+=====================================================   ================================
+:ref:`material_child <pre_processing_material_child>`   'child_object_type' of material.
+
+=====================================================   ================================
+

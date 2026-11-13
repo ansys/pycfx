@@ -1,0 +1,26 @@
+:orphan:
+
+.. _post_processing_surface_group:
+
+surface_group
+=============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.surface_group.surface_group
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`surface_group_child <post_processing_surface_group_child>`
+
+
+.. rubric:: Included in:
+
+========================================   =========================================
+
+Parent                                                                       Summary
+
+========================================   =========================================
+:ref:`results <post_processing_results>`   Encapsulates a CFX post-processing setup.
+
+========================================   =========================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_split_cut_lines:
+
+split_cut_lines
+===============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.split_cut_lines.split_cut_lines
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+======================================   ===========================================================================
+
+Parent                                                                                                       Summary
+
+======================================   ===========================================================================
+:ref:`export <post_processing_export>`   Holds parameters which control the export of data to an external text file.
+
+======================================   ===========================================================================
+

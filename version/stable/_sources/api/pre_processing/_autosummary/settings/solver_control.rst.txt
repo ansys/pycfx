@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_solver_control:
+
+solver_control
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.solver_control.solver_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================   ============================================================================
+
+Attribute                                                                                                                                    Summary
+
+=====================================================================   ============================================================================
+:ref:`enabled <pre_processing_enabled_154>`                                                                        Enable the SOLVER CONTROL object.
+
+:ref:`convergence_control <pre_processing_convergence_control>`                               Holds basic parameters that affect solver convergence.
+
+:ref:`immersed_solid_control <pre_processing_immersed_solid_control>`   Holds advanced parameters to control the details of Immersed solid handling.
+
+:ref:`transient_scheme <pre_processing_transient_scheme>`                               Defines the discretization algorithm for the transient term.
+
+=====================================================================   ============================================================================
+
+.. rubric:: Included in:
+
+=================================================   ==============================
+
+Parent                                                                     Summary
+
+=================================================   ==============================
+:ref:`domain_child <pre_processing_domain_child>`   'child_object_type' of domain.
+
+=================================================   ==============================
+

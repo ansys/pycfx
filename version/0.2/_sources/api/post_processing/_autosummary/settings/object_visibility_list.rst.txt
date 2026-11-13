@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_object_visibility_list:
+
+object_visibility_list
+======================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.object_visibility_list.object_visibility_list
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==============================================   ============================
+
+Parent                                                                Summary
+
+==============================================   ============================
+:ref:`view_child <post_processing_view_child>`   'child_object_type' of view.
+
+==============================================   ============================
+

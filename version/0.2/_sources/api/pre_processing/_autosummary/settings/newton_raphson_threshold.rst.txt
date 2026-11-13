@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_newton_raphson_threshold:
+
+newton_raphson_threshold
+========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.newton_raphson_threshold.newton_raphson_threshold
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   =========================================
+
+Parent                                                                                        Summary
+
+=========================================================   =========================================
+:ref:`tube_speed_model <pre_processing_tube_speed_model>`   Holds the definition of tube fluid speed.
+
+=========================================================   =========================================
+

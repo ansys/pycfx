@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_extend_min:
+
+extend_min
+==========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.extend_min.extend_min
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ============================================================================================
+
+Parent                                                                                                                                               Summary
+
+=============================================================   ============================================================================================
+:ref:`function_child <pre_processing_function_child>`                                                                       'child_object_type' of function.
+
+:ref:`interpolation_data <pre_processing_interpolation_data>`   Holds interpolation data for user-defined one and three dimensional interpolation functions.
+
+=============================================================   ============================================================================================
+

@@ -1,0 +1,31 @@
+:orphan:
+
+.. _pre_processing_blend_factor:
+
+blend_factor
+============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.blend_factor.blend_factor
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ==============================================================================================
+
+Parent                                                                                                                                                 Summary
+
+=============================================================   ==============================================================================================
+:ref:`pressure_option <pre_processing_pressure_option>`                                               Specifies the pressure choice at an entrainment opening.
+
+:ref:`flow_direction <pre_processing_flow_direction>`                                                       Sets the velocity direction imposed at a boundary.
+
+:ref:`turbulence <pre_processing_turbulence>`                                                                     Sets conditions on turbulence at a boundary.
+
+:ref:`reaction_progress <pre_processing_reaction_progress_1>`                                    Defines the initialization of the reaction progress variable.
+
+:ref:`advection_scheme <pre_processing_advection_scheme>`       Defines the scheme used by the solver to discretize the advection term in transport equations.
+
+:ref:`advection_scheme <pre_processing_advection_scheme_1>`     Defines the scheme used by the solver to discretize the advection term in transport equations.
+
+=============================================================   ==============================================================================================
+

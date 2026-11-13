@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_option_445:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_445.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================================   =========================================
+
+Parent                                                                                                        Summary
+
+=========================================================================   =========================================
+:ref:`control_condition_child <pre_processing_control_condition_child>`     'child_object_type' of control_condition.
+
+:ref:`control_condition_child <pre_processing_control_condition_child_1>`   'child_object_type' of control_condition.
+
+=========================================================================   =========================================
+

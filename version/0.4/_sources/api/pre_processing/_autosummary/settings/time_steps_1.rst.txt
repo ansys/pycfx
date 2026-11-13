@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_time_steps_1:
+
+time_steps
+==========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.time_steps_1.time_steps
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================================   ===========================================
+
+Attribute                                                                                                                   Summary
+
+=====================================================================================   ===========================================
+:ref:`option <pre_processing_option_80>`                                                                   The 'Time Steps' option.
+
+:ref:`number_of_timesteps_per_period <pre_processing_number_of_timesteps_per_period>`   'Number of Timesteps per Period' parameter.
+
+:ref:`timestep_multiplier <pre_processing_timestep_multiplier>`                                    'Timestep Multiplier' parameter.
+
+:ref:`computed_timestep <pre_processing_computed_timestep>`                                          'Computed Timestep' parameter.
+
+=====================================================================================   ===========================================
+
+.. rubric:: Included in:
+
+=========================================================   ============================================================
+
+Parent                                                                                                           Summary
+
+=========================================================   ============================================================
+:ref:`transient_method <pre_processing_transient_method>`   Defines the discretization algorithm for the transient term.
+
+=========================================================   ============================================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_initial_partition_file:
+
+initial_partition_file
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.initial_partition_file.initial_partition_file
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================   ==============================
+
+Parent                                                                                       Summary
+
+===================================================================   ==============================
+:ref:`spatial_partitioning <pre_processing_spatial_partitioning_1>`   'SPATIAL PARTITIONING' object.
+
+===================================================================   ==============================
+

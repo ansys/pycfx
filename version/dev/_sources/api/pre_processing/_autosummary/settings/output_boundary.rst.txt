@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_output_boundary:
+
+output_boundary
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.output_boundary.output_boundary
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ===========================
+
+Parent                                                                            Summary
+
+===========================================================   ===========================
+:ref:`export_track_data <pre_processing_export_track_data>`   'EXPORT TRACK DATA' object.
+
+===========================================================   ===========================
+

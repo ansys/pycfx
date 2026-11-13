@@ -1,0 +1,48 @@
+:orphan:
+
+.. _pre_processing_job_submission:
+
+job_submission
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.job_submission.job_submission
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================   ========================================
+
+Attribute                                                                                            Summary
+
+=================================================================   ========================================
+:ref:`enabled <pre_processing_enabled_225>`                                Enable the JOB SUBMISSION object.
+
+:ref:`option <pre_processing_option_449>`                                       The 'Job Submission' option.
+
+:ref:`remote_host <pre_processing_remote_host>`                     Host name on which to run start command.
+
+:ref:`queue_name <pre_processing_queue_name>`                                        'Queue Name' parameter.
+
+:ref:`job_template <pre_processing_job_template>`                                  'Job Template' parameter.
+
+:ref:`cluster_partition <pre_processing_cluster_partition>`                   'Cluster Partition' parameter.
+
+:ref:`parallel_environment <pre_processing_parallel_environment>`          'Parallel Environment' parameter.
+
+:ref:`node_groups <pre_processing_node_groups>`                                     'Node Groups' parameter.
+
+:ref:`node_group_operator <pre_processing_node_group_operator>`             'Node Group Operator' parameter.
+
+=================================================================   ========================================
+
+.. rubric:: Included in:
+
+===================================================================   ==============================
+
+Parent                                                                                       Summary
+
+===================================================================   ==============================
+:ref:`parallel_environment <pre_processing_parallel_environment_1>`   'PARALLEL ENVIRONMENT' object.
+
+===================================================================   ==============================
+

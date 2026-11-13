@@ -1,0 +1,54 @@
+:orphan:
+
+.. _pre_processing_turbulent_burning_velocity_1:
+
+turbulent_burning_velocity
+==========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.turbulent_burning_velocity_1.turbulent_burning_velocity
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================================   =========================================================
+
+Attribute                                                                                                                                       Summary
+
+===========================================================================================   =========================================================
+:ref:`option <pre_processing_option_141>`                                                                      The 'Turbulent Burning Velocity' option.
+
+:ref:`turbulent_burning_velocity <pre_processing_turbulent_burning_velocity>`                                               Turbulent burning velocity.
+
+:ref:`turbulent_burning_velocity_factor <pre_processing_turbulent_burning_velocity_factor>`   Factor for turbulent Zimont burning velocity correlation.
+
+:ref:`a1_coefficient <pre_processing_a1_coefficient>`                                                                             A1 model coefficient.
+
+:ref:`a4_coefficient <pre_processing_a4_coefficient>`                                                                             A4 model coefficient.
+
+:ref:`b1_coefficient <pre_processing_b1_coefficient>`                                                                             B1 model coefficient.
+
+:ref:`b3_coefficient <pre_processing_b3_coefficient>`                                                                             B3 model coefficient.
+
+:ref:`q_coefficient <pre_processing_q_coefficient>`                                                                                Q model coefficient.
+
+:ref:`q_factor <pre_processing_q_factor>`                                                                                               Q model factor.
+
+:ref:`b2_coefficient <pre_processing_b2_coefficient>`                                                                             B2 model coefficient.
+
+:ref:`flame_stretch <pre_processing_flame_stretch>`                                                Flame stretch effect for turbulent burning velocity.
+
+:ref:`flamelet_quenching <pre_processing_flamelet_quenching>`                                        Flamelet quenching for turbulent burning velocity.
+
+===========================================================================================   =========================================================
+
+.. rubric:: Included in:
+
+===========================================================   ========================================
+
+Parent                                                                                         Summary
+
+===========================================================   ========================================
+:ref:`combustion_model <pre_processing_combustion_model_1>`   Defines the combustion model to be used.
+
+===========================================================   ========================================
+

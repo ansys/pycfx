@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_mapping_control:
+
+mapping_control
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.mapping_control.mapping_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================================   ===================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                               Summary
+
+=========================================================================================   ===================================================================================================================================================================================================
+:ref:`add_node_mapping_status_variable <pre_processing_add_node_mapping_status_variable>`                                                                                                                 Specifies whether to add the Node Mapping Status variable to mapped exported results.
+
+:ref:`normal_vector_alignment <pre_processing_normal_vector_alignment>`                                                                                                                                                                                    'Normal Vector Alignment' parameter.
+
+:ref:`angle_tolerance <pre_processing_angle_tolerance>`                                     Angle tolerance for intersection (in degrees) used for the direct intersector. The normal vectors of two intersected faces has to be in opposite direction with respect to the specified tolerance.
+
+=========================================================================================   ===================================================================================================================================================================================================
+
+.. rubric:: Included in:
+
+=====================================================   ========================
+
+Parent                                                                   Summary
+
+=====================================================   ========================
+:ref:`export_mapping <pre_processing_export_mapping>`   'EXPORT MAPPING' object.
+
+=====================================================   ========================
+

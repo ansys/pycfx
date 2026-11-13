@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_nucleation_rate:
+
+nucleation_rate
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.nucleation_rate.nucleation_rate
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   ==================================================
+
+Parent                                                                                                 Summary
+
+=========================================================   ==================================================
+:ref:`nucleation_model <pre_processing_nucleation_model>`   Specifies the nucleation model for small droplets.
+
+=========================================================   ==================================================
+

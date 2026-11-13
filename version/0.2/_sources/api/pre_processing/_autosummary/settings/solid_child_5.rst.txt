@@ -1,0 +1,32 @@
+:orphan:
+
+.. _pre_processing_solid_child_5:
+
+solid_child
+===========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.solid_child_5.solid_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================   ===============================================================================
+
+Attribute                                                                                                                                 Summary
+
+===============================================================   ===============================================================================
+:ref:`initial_conditions <pre_processing_initial_conditions_2>`   Holds the details of initial condition specification for one or more equations.
+
+===============================================================   ===============================================================================
+
+.. rubric:: Included in:
+
+=====================================   ==============================
+
+Parent                                                         Summary
+
+=====================================   ==============================
+:ref:`solid <pre_processing_solid_5>`   A container for Solid objects.
+
+=====================================   ==============================
+

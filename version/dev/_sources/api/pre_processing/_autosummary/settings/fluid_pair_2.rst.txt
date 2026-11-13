@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_fluid_pair_2:
+
+fluid_pair
+==========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fluid_pair_2.fluid_pair
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`fluid_pair_child <pre_processing_fluid_pair_child_2>`
+
+
+.. rubric:: Included in:
+
+=====================================================   ================================
+
+Parent                                                                           Summary
+
+=====================================================   ================================
+:ref:`boundary_child <pre_processing_boundary_child>`   'child_object_type' of boundary.
+
+=====================================================   ================================
+

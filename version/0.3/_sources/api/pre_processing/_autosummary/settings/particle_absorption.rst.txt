@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_particle_absorption:
+
+particle_absorption
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.particle_absorption.particle_absorption
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================   =================================
+
+Attribute                                                                                   Summary
+
+===============================================================   =================================
+:ref:`option <pre_processing_option_321>`                         The 'Particle Absorption' option.
+
+:ref:`absorption_diameter <pre_processing_absorption_diameter>`    'Absorption Diameter' parameter.
+
+===============================================================   =================================
+
+.. rubric:: Included in:
+
+=================================================   =============================
+
+Parent                                                                    Summary
+
+=================================================   =============================
+:ref:`fluid_child <pre_processing_fluid_child_8>`   'child_object_type' of fluid.
+
+:ref:`fluid_child <pre_processing_fluid_child_9>`   'child_object_type' of fluid.
+
+=================================================   =============================
+

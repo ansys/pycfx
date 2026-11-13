@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_junction_box_routine_list:
+
+junction_box_routine_list
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.junction_box_routine_list.junction_box_routine_list
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================   ===============================
+
+Parent                                                                                        Summary
+
+===================================================================   ===============================
+:ref:`junction_box_routines <pre_processing_junction_box_routines>`   'JUNCTION BOX ROUTINES' object.
+
+===================================================================   ===============================
+

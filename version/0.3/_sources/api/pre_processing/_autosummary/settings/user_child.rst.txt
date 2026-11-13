@@ -1,0 +1,43 @@
+:orphan:
+
+.. _pre_processing_user_child:
+
+user_child
+==========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.user_child.user_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================   ===================
+
+Attribute                                                   Summary
+
+=============================================   ===================
+:ref:`definition <pre_processing_definition>`   'definition' child.
+
+=============================================   ===================
+
+.. rubric:: Methods
+
+===========================================   ============================
+
+Method                                                             Summary
+
+===========================================   ============================
+:ref:`duplicate <pre_processing_duplicate>`   Create a copy of the object.
+
+===========================================   ============================
+
+.. rubric:: Included in:
+
+=================================   ======================================================================================================
+
+Parent                                                                                                                             Summary
+
+=================================   ======================================================================================================
+:ref:`user <pre_processing_user>`   Object that stores user-defined parameters for use in user defined functions or junction box routines.
+
+=================================   ======================================================================================================
+

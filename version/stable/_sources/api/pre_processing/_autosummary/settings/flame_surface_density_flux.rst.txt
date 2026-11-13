@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_flame_surface_density_flux:
+
+flame_surface_density_flux
+==========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.flame_surface_density_flux.flame_surface_density_flux
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================   ==============================================================
+
+Parent                                                                                                                         Summary
+
+=====================================================================   ==============================================================
+:ref:`flame_surface_density <pre_processing_flame_surface_density_1>`   Sets boundary or initial conditions for Flame Surface Density.
+
+=====================================================================   ==============================================================
+

@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_output_equation_residuals:
+
+output_equation_residuals
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.output_equation_residuals.output_equation_residuals
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   ======================================================
+
+Parent                                                                                                                   Summary
+
+=======================================================================   ======================================================
+:ref:`results <pre_processing_results>`                                   Defines the contents of the final solver results file.
+
+:ref:`backup_results_child <pre_processing_backup_results_child>`                         'child_object_type' of backup_results.
+
+:ref:`transient_results_child <pre_processing_transient_results_child>`                'child_object_type' of transient_results.
+
+=======================================================================   ======================================================
+

@@ -1,0 +1,43 @@
+:orphan:
+
+.. _post_processing_expressions_child:
+
+expressions_child
+=================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.expressions_child.expressions_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+==============================================   ===================
+
+Attribute                                                    Summary
+
+==============================================   ===================
+:ref:`definition <post_processing_definition>`   'definition' child.
+
+==============================================   ===================
+
+.. rubric:: Methods
+
+============================================   ============================
+
+Method                                                              Summary
+
+============================================   ============================
+:ref:`duplicate <post_processing_duplicate>`   Create a copy of the object.
+
+============================================   ============================
+
+.. rubric:: Included in:
+
+================================================   ====================
+
+Parent                                                          Summary
+
+================================================   ====================
+:ref:`expressions <post_processing_expressions>`   'expressions' child.
+
+================================================   ====================
+

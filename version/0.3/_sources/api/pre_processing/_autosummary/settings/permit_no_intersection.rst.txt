@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_permit_no_intersection:
+
+permit_no_intersection
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.permit_no_intersection.permit_no_intersection
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================   =============================================================================
+
+Parent                                                                                                                                      Summary
+
+===================================================================   =============================================================================
+:ref:`intersection_control <pre_processing_intersection_control_1>`   Holds advanced parameters to control the details of interface discretization.
+
+===================================================================   =============================================================================
+

@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_linear_resistance_coefficient:
+
+linear_resistance_coefficient
+=============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.linear_resistance_coefficient.linear_resistance_coefficient
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================   =======================================
+
+Parent                                                                                              Summary
+
+=================================================================   =======================================
+:ref:`isotropic_loss_model <pre_processing_isotropic_loss_model>`   Defines an isotropic resistance source.
+
+:ref:`streamwise_loss <pre_processing_streamwise_loss>`                      Defines streamwise loss model.
+
+:ref:`transverse_loss <pre_processing_transverse_loss>`                      Defines transverse loss model.
+
+=================================================================   =======================================
+

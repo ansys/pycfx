@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_simulation_control:
+
+simulation_control
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.simulation_control.simulation_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================   =============================================
+
+Attribute                                                                                                   Summary
+
+===================================================================   =============================================
+:ref:`configuration_control <pre_processing_configuration_control>`       The container for all Configuration data.
+
+:ref:`termination_control <pre_processing_termination_control>`                 Termination conditions for context.
+
+:ref:`execution_control <pre_processing_execution_control>`                             'EXECUTION CONTROL' object.
+
+:ref:`operating_points <pre_processing_operating_points>`             Overall container for operating points setup.
+
+===================================================================   =============================================
+
+.. rubric:: Included in:
+
+===================================   ========================================
+
+Parent                                                                 Summary
+
+===================================   ========================================
+:ref:`setup <pre_processing_setup>`   Encapsulates a CFX pre-processing setup.
+
+===================================   ========================================
+

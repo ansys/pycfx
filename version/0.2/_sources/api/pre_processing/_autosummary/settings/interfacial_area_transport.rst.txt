@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_interfacial_area_transport:
+
+interfacial_area_transport
+==========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.interfacial_area_transport.interfacial_area_transport
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================   =============================================
+
+Attribute                                                                                 Summary
+
+=================================================   =============================================
+:ref:`enabled <pre_processing_enabled_106>`         Enable the INTERFACIAL AREA TRANSPORT object.
+
+:ref:`option <pre_processing_option_211>`                The 'Interfacial Area Transport' option.
+
+:ref:`iate_sources <pre_processing_iate_sources>`           A container for Iate Sources objects.
+
+=================================================   =============================================
+
+.. rubric:: Included in:
+
+=========================================================   ==================================
+
+Parent                                                                                 Summary
+
+=========================================================   ==================================
+:ref:`fluid_pair_child <pre_processing_fluid_pair_child>`   'child_object_type' of fluid_pair.
+
+=========================================================   ==================================
+

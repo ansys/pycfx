@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_time_per_run:
+
+time_per_run
+============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.time_per_run.time_per_run
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================   =====================================================================
+
+Parent                                                                                                              Summary
+
+===================================================   =====================================================================
+:ref:`time_duration <pre_processing_time_duration>`   Specifies the length of time to be simulated in a transient analysis.
+
+===================================================   =====================================================================
+

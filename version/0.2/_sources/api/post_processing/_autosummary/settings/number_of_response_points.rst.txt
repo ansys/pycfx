@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_number_of_response_points:
+
+number_of_response_points
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.number_of_response_points.number_of_response_points
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==========================================================   ========================================================
+
+Parent                                                                                                        Summary
+
+==========================================================   ========================================================
+:ref:`operating_points <post_processing_operating_points>`   Contains information related to operating point results.
+
+==========================================================   ========================================================
+

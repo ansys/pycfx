@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_reference_elasticity_modulus:
+
+reference_elasticity_modulus
+============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.reference_elasticity_modulus.reference_elasticity_modulus
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================   =================================================================================
+
+Parent                                                                                                                                        Summary
+
+=================================================================   =================================================================================
+:ref:`solid_pressure_model <pre_processing_solid_pressure_model>`   Sets the model to be used for solids pressure forces in a multiphase calculation.
+
+=================================================================   =================================================================================
+

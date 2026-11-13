@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_option_302:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_302.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================   ===============================================================
+
+Parent                                                                                                        Summary
+
+===================================================   ===============================================================
+:ref:`tube_profile <pre_processing_tube_profile_1>`   Defines either boundary or initial conditions for tube profile.
+
+:ref:`tube_profile <pre_processing_tube_profile_2>`   Defines either boundary or initial conditions for tube profile.
+
+===================================================   ===============================================================
+

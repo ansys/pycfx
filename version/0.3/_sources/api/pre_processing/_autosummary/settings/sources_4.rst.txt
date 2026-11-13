@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_sources_4:
+
+sources
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.sources_4.sources
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================   =========================================
+
+Attribute                                                                                       Summary
+
+===========================================================   =========================================
+:ref:`enabled <pre_processing_enabled_140>`                                  Enable the SOURCES object.
+
+:ref:`radiation_source <pre_processing_radiation_source_2>`   A container for Radiation Source objects.
+
+:ref:`momentum_source <pre_processing_momentum_source>`                Holds source terms for momentum.
+
+:ref:`equation_source <pre_processing_equation_source_3>`      A container for Equation Source objects.
+
+===========================================================   =========================================
+
+.. rubric:: Included in:
+
+=======================================================   =================================
+
+Parent                                                                              Summary
+
+=======================================================   =================================
+:ref:`subdomain_child <pre_processing_subdomain_child>`   'child_object_type' of subdomain.
+
+=======================================================   =================================
+

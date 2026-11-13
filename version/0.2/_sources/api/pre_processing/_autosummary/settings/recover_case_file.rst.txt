@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_recover_case_file:
+
+recover_case_file
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.recover_case_file.recover_case_file
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================   ============================================
+
+Parent                                                                             Summary
+
+===========================================   ============================================
+:ref:`open_case <pre_processing_open_case>`   Open a case file. Supported formats include:
+
+===========================================   ============================================
+
