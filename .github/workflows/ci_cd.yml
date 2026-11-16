@@ -17,7 +17,7 @@ env:
   PYCFX_WATCHDOG_DEBUG: "OFF"
   PYCFX_HIDE_LOG_SECRETS: 1
   DOCUMENTATION_CNAME: "cfx.docs.pyansys.com"
-  DOC_DEPLOYMENT_IMAGE_TAG: "v26.1.0"
+  DOC_DEPLOYMENT_IMAGE_TAG: "v27.1.0"
   LIBRARY_NAME: "ansys-cfx-core"
 
 concurrency:
@@ -114,7 +114,7 @@ jobs:
       - name: Set image tag
         id: set-matrix
         run: |
-          echo "matrix=[{\"image-tag\":\"v25.2.3\",\"version\":\"252\"},{\"image-tag\":\"v26.1.0\",\"version\":\"261\"}]" >> $GITHUB_OUTPUT
+          echo "matrix=[{\"image-tag\":\"v25.2.3\",\"version\":\"252\"},{\"image-tag\":\"v26.1.0\",\"version\":\"261\"},{\"image-tag\":\"v27.1.0\",\"version\":\"271\"}]" >> $GITHUB_OUTPUT
 
   tests:
     name: Unit Testing
@@ -210,7 +210,7 @@ jobs:
 
       - name: Update coverage badge
         id: update-coverage-badge
-        if: ${{ !contains(github.event.pull_request.title, '[skip tests]') && matrix.image-tag == 'v26.1.0' }}
+        if: ${{ !contains(github.event.pull_request.title, '[skip tests]') && matrix.image-tag == 'v27.1.0' }}
         env:
           BRANCH: ${{ github.event.pull_request.head.ref }}
           COVERAGE_JSON_PATH: ".cov/cov.json"
@@ -407,7 +407,7 @@ jobs:
           path: |
             src/ansys/cfx/core/generated
           # Combined cache key for all versions:
-          key: API-Code-v${{ env.API_CODE_CACHE }}-${{ steps.version.outputs.PYCFX_VERSION }}-v25.2.3-v26.1.0-${{ hashFiles('codegen/**') }}
+          key: API-Code-v${{ env.API_CODE_CACHE }}-${{ steps.version.outputs.PYCFX_VERSION }}-v25.2.3-v26.1.0-v27.1.0-${{ hashFiles('codegen/**') }}
           lookup-only: false # zizmor: ignore[cache-poisoning]
 
       - name: Check if generated directory exists
@@ -468,6 +468,28 @@ jobs:
           cat src/ansys/cfx/core/generated/cfx_version_261.py
           python -c "from ansys.cfx.core.generated.pre_processing.settings_261 import SHASH; print(f'SETTINGS_HASH = {SHASH}')"
           python -c "from ansys.cfx.core.generated.post_processing.settings_261 import SHASH; print(f'SETTINGS_HASH = {SHASH}')"
+
+      - name: Remove all docker images
+        if: always()
+        run: make docker-clean-images
+
+      - name: Pull 27.1 CFX docker image
+        if: steps.cache-api-code.outputs.cache-hit != 'true' || steps.check_generated.outputs.exists != 'true'
+        run: make docker-pull
+        env:
+          CFX_IMAGE_TAG: v27.1.0
+
+      - name: Run 27.1 API codegen
+        if: steps.cache-api-code.outputs.cache-hit != 'true' || steps.check_generated.outputs.exists != 'true'
+        run: make api-codegen
+        env:
+          CFX_IMAGE_TAG: v27.1.0
+
+      - name: Print 27.1 CFX version info
+        run: |
+          cat src/ansys/cfx/core/generated/cfx_version_271.py
+          python -c "from ansys.cfx.core.generated.pre_processing.settings_271 import SHASH; print(f'SETTINGS_HASH = {SHASH}')"
+          python -c "from ansys.cfx.core.generated.post_processing.settings_271 import SHASH; print(f'SETTINGS_HASH = {SHASH}')"
 
       - name: Remove all docker images
         if: always()

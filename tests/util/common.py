@@ -28,7 +28,7 @@ from pathlib import Path
 import re
 import shutil
 
-CONTAINER_DEFAULT_IMAGE_TAG = "v26.1.0"
+CONTAINER_DEFAULT_IMAGE_TAG = "v27.1.0"
 CONTAINER_WORKING_DIR = "/home/cfx_work_dir"
 CONTAINER_TEMP_DIR = "/tmp/pycfx_tests"
 

@@ -20,11 +20,16 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+import pytest
+
 from ansys.cfx.core.session_post import PostProcessing
 from ansys.cfx.core.utils.cfx_version import CFXVersion
 
 
 def test_post_attributes(pypost: PostProcessing, pytestconfig, capsys):
+
+    if pypost.get_cfx_version() == CFXVersion.v271:
+        pytest.skip("This test is temporarily excluded in Release 27.1.")
 
     pypost.file.load_results(
         file_name=f"{pytestconfig.test_data_directory_path}/data/StaticMixer.def"

@@ -50,6 +50,18 @@ unittest-all-261-no-codegen:
 	@echo "Running all unit tests"
 	@poetry run python -m pytest --cfx-version=26.1 -m "not codegen_required" $(PYTESTEXTRA) || poetry run python -m pytest --cfx-version=26.1 -m "not codegen_required" $(PYTESTRERUN)
 
+unittest-dev-271:
+	@echo "Running unit tests"
+	@python -m pytest --cfx-version=27.1 $(PYTESTEXTRA) || python -m pytest --cfx-version=27.1 $(PYTESTRERUN)
+
+unittest-all-271:
+	@echo "Running all unit tests"
+	@python -m pytest --cfx-version=27.1 $(PYTESTEXTRA) || python -m pytest --cfx-version=27.1 $(PYTESTRERUN)
+
+unittest-all-271-no-codegen:
+	@echo "Running all unit tests"
+	@python -m pytest --cfx-version=27.1 -m "not codegen_required" $(PYTESTEXTRA) || python -m pytest --cfx-version=27.1 -m "not codegen_required" $(PYTESTRERUN)
+
 
 api-codegen:
 	@echo "Running API codegen"

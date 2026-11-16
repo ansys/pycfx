@@ -265,7 +265,7 @@ def configure_container_dict(
 
     cfx_version = None
     if not image_tag:
-        image_tag = os.getenv("CFX_IMAGE_TAG", "v26.1.0")
+        image_tag = os.getenv("CFX_IMAGE_TAG", "v27.1.0")
     if cfx_version := re.match(r"^v(\d+(?:\.\d+)+)", image_tag):
         cfx_version = cfx_version.group(1)
     if cfx_version and CFXVersion(cfx_version) < CFXVersion.v261:
@@ -343,7 +343,7 @@ def configure_container_dict(
 
     if not cfx_image:
         if not image_tag:
-            image_tag = os.getenv("CFX_IMAGE_TAG", "v26.1.0")
+            image_tag = os.getenv("CFX_IMAGE_TAG", "v27.1.0")
         if not image_name:
             image_name = os.getenv("CFX_IMAGE_NAME", "ghcr.io/ansys/pycfx")
         cfx_image = f"{image_name}:{image_tag}"
