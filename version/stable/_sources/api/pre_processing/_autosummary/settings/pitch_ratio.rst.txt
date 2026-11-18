@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_pitch_ratio:
+
+pitch_ratio
+===========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.pitch_ratio.pitch_ratio
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================   =================================================================
+
+Parent                                                                                                        Summary
+
+=================================================   =================================================================
+:ref:`pitch_change <pre_processing_pitch_change>`   Defines how pitch change is calculated across a domain interface.
+
+=================================================   =================================================================
+

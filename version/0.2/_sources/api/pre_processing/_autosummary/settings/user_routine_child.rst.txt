@@ -1,0 +1,42 @@
+:orphan:
+
+.. _pre_processing_user_routine_child:
+
+user_routine_child
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.user_routine_child.user_routine_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================   =====================================================================================
+
+Attribute                                                                                                                                           Summary
+
+===================================================================   =====================================================================================
+:ref:`option <pre_processing_option_55>`                                                                                         The 'User Routine' option.
+
+:ref:`calling_name <pre_processing_calling_name>`                     Symbolic name for user routine. For FORTRAN routines, this name should be lower case.
+
+:ref:`library_name <pre_processing_library_name>`                                                    Name of shared library for entry point "Calling Name".
+
+:ref:`library_path <pre_processing_library_path>`                          Directory path for shared object library directories for each platform required.
+
+:ref:`junction_box_location <pre_processing_junction_box_location>`                       Locations in solver where junction box routines are to be called.
+
+:ref:`user_variables_list <pre_processing_user_variables_list>`                                                            'User Variables List' parameter.
+
+===================================================================   =====================================================================================
+
+.. rubric:: Included in:
+
+=================================================   =====================================
+
+Parent                                                                            Summary
+
+=================================================   =====================================
+:ref:`user_routine <pre_processing_user_routine>`   A container for User Routine objects.
+
+=================================================   =====================================
+

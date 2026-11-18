@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_wall_scale_1:
+
+wall_scale
+==========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.wall_scale_1.wall_scale
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================   =============================
+
+Attribute                                                             Summary
+
+=============================================   =============================
+:ref:`enabled <pre_processing_enabled_153>`     Enable the WALL SCALE object.
+
+:ref:`option <pre_processing_option_344>`            The 'Wall Scale' option.
+
+:ref:`wall_scale <pre_processing_wall_scale>`         'Wall Scale' parameter.
+
+=============================================   =============================
+
+.. rubric:: Included in:
+
+=============================================================   ===============================================================================
+
+Parent                                                                                                                                  Summary
+
+=============================================================   ===============================================================================
+:ref:`initial_conditions <pre_processing_initial_conditions>`   Holds the details of initial condition specification for one or more equations.
+
+=============================================================   ===============================================================================
+

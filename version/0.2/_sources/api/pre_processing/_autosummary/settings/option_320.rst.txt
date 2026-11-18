@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_320:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_320.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   =======================================================
+
+Parent                                                                                                                    Summary
+
+=======================================================================   =======================================================
+:ref:`general_momentum_source <pre_processing_general_momentum_source>`   Defines a general momentum source term and coefficient.
+
+=======================================================================   =======================================================
+

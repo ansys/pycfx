@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_host_name:
+
+host_name
+=========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.host_name.host_name
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   ==========================
+
+Parent                                                                         Summary
+
+=========================================================   ==========================
+:ref:`process_coupling <pre_processing_process_coupling>`   'PROCESS COUPLING' object.
+
+=========================================================   ==========================
+

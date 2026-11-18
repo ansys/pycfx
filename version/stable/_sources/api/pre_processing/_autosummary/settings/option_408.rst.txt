@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_408:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_408.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================   ==============================================================================
+
+Parent                                                                                                                         Summary
+
+=====================================================   ==============================================================================
+:ref:`monitor_totals <pre_processing_monitor_totals>`   Defines the extent of total flow and source data recorded in the monitor file.
+
+=====================================================   ==============================================================================
+

@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_temperature_limits:
+
+temperature_limits
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.temperature_limits.temperature_limits
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================   =================================
+
+Attribute                                                                                     Summary
+
+=================================================================   =================================
+:ref:`lower_temperature <pre_processing_lower_temperature>`            'Lower Temperature' parameter.
+
+:ref:`midpoint_temperature <pre_processing_midpoint_temperature>`   'Midpoint Temperature' parameter.
+
+:ref:`upper_temperature <pre_processing_upper_temperature>`            'Upper Temperature' parameter.
+
+=================================================================   =================================
+
+.. rubric:: Included in:
+
+=============================================================================   ====================================================================================
+
+Parent                                                                                                                                                       Summary
+
+=============================================================================   ====================================================================================
+:ref:`specific_heat_capacity <pre_processing_specific_heat_capacity_1>`                                          Specifies how specific heat capacity is calculated.
+
+:ref:`zero_pressure_coefficients <pre_processing_zero_pressure_coefficients>`   Specifies ideal gas specific heat capacity for use with real gas equations of state.
+
+=============================================================================   ====================================================================================
+

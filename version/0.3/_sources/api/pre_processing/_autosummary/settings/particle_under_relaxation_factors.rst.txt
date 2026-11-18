@@ -1,0 +1,50 @@
+:orphan:
+
+.. _pre_processing_particle_under_relaxation_factors:
+
+particle_under_relaxation_factors
+=================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.particle_under_relaxation_factors.particle_under_relaxation_factors
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================================================================================================   ============================================================================
+
+Attribute                                                                                                                                                                                                                      Summary
+
+=======================================================================================================================================================   ============================================================================
+:ref:`enabled <pre_processing_enabled_169>`                                                                                                                                       Enable the PARTICLE UNDER RELAXATION FACTORS object.
+
+:ref:`velocity_under_relaxation_factor <pre_processing_velocity_under_relaxation_factor>`                                                                                                'Velocity Under Relaxation Factor' parameter.
+
+:ref:`energy_under_relaxation_factor <pre_processing_energy_under_relaxation_factor>`                                                                                                      'Energy Under Relaxation Factor' parameter.
+
+:ref:`mass_under_relaxation_factor <pre_processing_mass_under_relaxation_factor>`                                                                                                            'Mass Under Relaxation Factor' parameter.
+
+:ref:`velocity_under_relaxation_factor_for_first_particle_integration <pre_processing_velocity_under_relaxation_factor_for_first_particle_integration>`   'Velocity Under Relaxation Factor for First Particle Integration' parameter.
+
+:ref:`energy_under_relaxation_factor_for_first_particle_integration <pre_processing_energy_under_relaxation_factor_for_first_particle_integration>`         'Energy Under Relaxation Factor for First Particle Integration' parameter.
+
+:ref:`mass_under_relaxation_factor_for_first_particle_integration <pre_processing_mass_under_relaxation_factor_for_first_particle_integration>`               'Mass Under Relaxation Factor for First Particle Integration' parameter.
+
+:ref:`velocity_under_relaxation_factor_at_time_step_start <pre_processing_velocity_under_relaxation_factor_at_time_step_start>`                                       'Velocity Under Relaxation Factor at Time Step Start' parameter.
+
+:ref:`energy_under_relaxation_factor_at_time_step_start <pre_processing_energy_under_relaxation_factor_at_time_step_start>`                                             'Energy Under Relaxation Factor at Time Step Start' parameter.
+
+:ref:`mass_under_relaxation_factor_at_time_step_start <pre_processing_mass_under_relaxation_factor_at_time_step_start>`                                                   'Mass Under Relaxation Factor at Time Step Start' parameter.
+
+=======================================================================================================================================================   ============================================================================
+
+.. rubric:: Included in:
+
+=========================================================   ==============================================================================
+
+Parent                                                                                                                             Summary
+
+=========================================================   ==============================================================================
+:ref:`particle_control <pre_processing_particle_control>`   Holds objects that control the execution and convergence of particle tracking.
+
+=========================================================   ==============================================================================
+

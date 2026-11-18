@@ -1,0 +1,44 @@
+:orphan:
+
+.. _pre_processing_solver_step_control_1:
+
+solver_step_control
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.solver_step_control_1.solver_step_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================================   ====================================
+
+Attribute                                                                                                    Summary
+
+=============================================================================   ====================================
+:ref:`runtime_priority <pre_processing_runtime_priority>`                              'Runtime Priority' parameter.
+
+:ref:`executable_selection <pre_processing_executable_selection>`                     'EXECUTABLE SELECTION' object.
+
+:ref:`parallel_environment <pre_processing_parallel_environment_1>`                   'PARALLEL ENVIRONMENT' object.
+
+:ref:`process_coupling <pre_processing_process_coupling>`                                 'PROCESS COUPLING' object.
+
+:ref:`license_control <pre_processing_license_control>`                                    'LICENSE CONTROL' object.
+
+:ref:`memory_control <pre_processing_memory_control_1>`                                     'MEMORY CONTROL' object.
+
+:ref:`user_location_regeneration <pre_processing_user_location_regeneration>`   'USER LOCATION REGENERATION' object.
+
+=============================================================================   ====================================
+
+.. rubric:: Included in:
+
+===========================================================   ===========================
+
+Parent                                                                            Summary
+
+===========================================================   ===========================
+:ref:`execution_control <pre_processing_execution_control>`   'EXECUTION CONTROL' object.
+
+===========================================================   ===========================
+

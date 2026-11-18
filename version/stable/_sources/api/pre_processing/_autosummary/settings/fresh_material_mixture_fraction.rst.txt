@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_fresh_material_mixture_fraction:
+
+fresh_material_mixture_fraction
+===============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fresh_material_mixture_fraction.fresh_material_mixture_fraction
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================   =====================================================
+
+Parent                                                                                  Summary
+
+=======================================   =====================================================
+:ref:`mixture <pre_processing_mixture>`   Specification of Fuel/Oxidiser mixture at a boundary.
+
+=======================================   =====================================================
+

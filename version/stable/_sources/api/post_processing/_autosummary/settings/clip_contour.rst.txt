@@ -1,0 +1,23 @@
+:orphan:
+
+.. _post_processing_clip_contour:
+
+clip_contour
+============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.clip_contour.clip_contour
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+======================================================================   ========================================
+
+Parent                                                                                                    Summary
+
+======================================================================   ========================================
+:ref:`contour_child <post_processing_contour_child>`                              'child_object_type' of contour.
+
+:ref:`internal_contour_child <post_processing_internal_contour_child>`   'child_object_type' of internal_contour.
+
+======================================================================   ========================================
+

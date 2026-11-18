@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_382:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_382.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================================   ===================================================
+
+Parent                                                                                                                    Summary
+
+===========================================================================   ===================================================
+:ref:`g_scalar_reinitialisation <pre_processing_g_scalar_reinitialisation>`   Controls reinitialization for the G Equation model.
+
+===========================================================================   ===================================================
+

@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_particle_source_control:
+
+particle_source_control
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.particle_source_control.particle_source_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================================================   ===========================================================
+
+Attribute                                                                                                                                           Summary
+
+=============================================================================================   ===========================================================
+:ref:`enabled <pre_processing_enabled_172>`                                                                      Enable the PARTICLE SOURCE CONTROL object.
+
+:ref:`particle_heat_source_bounding <pre_processing_particle_heat_source_bounding>`                  Set details of the particle heat source term bounding.
+
+:ref:`particle_momentum_source_bounding <pre_processing_particle_momentum_source_bounding>`      Set details of the particle momentum source term bounding.
+
+:ref:`particle_mass_source_linearization <pre_processing_particle_mass_source_linearization>`   Set details of the particle mass source term linearization.
+
+=============================================================================================   ===========================================================
+
+.. rubric:: Included in:
+
+=========================================================   ==============================================================================
+
+Parent                                                                                                                             Summary
+
+=========================================================   ==============================================================================
+:ref:`particle_control <pre_processing_particle_control>`   Holds objects that control the execution and convergence of particle tracking.
+
+=========================================================   ==============================================================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_processing_mode:
+
+processing_mode
+===============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.processing_mode.processing_mode
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+========================================================   ============================================================================
+
+Parent                                                                                                                          Summary
+
+========================================================   ============================================================================
+:ref:`file_processing <post_processing_file_processing>`   Stores parameters indicating the state of processing state or session files.
+
+========================================================   ============================================================================
+

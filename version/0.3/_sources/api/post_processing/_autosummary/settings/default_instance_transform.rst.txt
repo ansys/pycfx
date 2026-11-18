@@ -1,0 +1,26 @@
+:orphan:
+
+.. _post_processing_default_instance_transform:
+
+default_instance_transform
+==========================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.default_instance_transform.default_instance_transform
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`default_instance_transform_child <post_processing_default_instance_transform_child>`
+
+
+.. rubric:: Included in:
+
+========================================   =========================================
+
+Parent                                                                       Summary
+
+========================================   =========================================
+:ref:`results <post_processing_results>`   Encapsulates a CFX post-processing setup.
+
+========================================   =========================================
+

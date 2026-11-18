@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_double_interval_definition:
+
+double_interval_definition
+==========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_271.double_interval_definition.double_interval_definition
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================   ========================================
+
+Attribute                                                                                                      Summary
+
+===========================================================================   ========================================
+:ref:`option <pre_processing_option_417>`                                     The 'Double Interval Definition' option.
+
+:ref:`inner_number_of_timesteps <pre_processing_inner_number_of_timesteps>`     'Inner Number of Timesteps' parameter.
+
+:ref:`outer_number_of_timesteps <pre_processing_outer_number_of_timesteps>`     'Outer Number of Timesteps' parameter.
+
+===========================================================================   ========================================
+
+.. rubric:: Included in:
+
+=============================================================   ================================================
+
+Parent                                                                                                   Summary
+
+=============================================================   ================================================
+:ref:`monitor_statistics <pre_processing_monitor_statistics>`   Defines the transient statistics of the monitor.
+
+=============================================================   ================================================
+

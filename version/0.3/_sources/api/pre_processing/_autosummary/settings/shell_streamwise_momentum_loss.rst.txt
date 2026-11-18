@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_shell_streamwise_momentum_loss:
+
+shell_streamwise_momentum_loss
+==============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.shell_streamwise_momentum_loss.shell_streamwise_momentum_loss
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================   ============================================
+
+Attribute                                                                                                Summary
+
+=================================================================   ============================================
+:ref:`option <pre_processing_option_234>`                           The 'Shell Streamwise Momentum Loss' option.
+
+:ref:`pressure_drop_factor <pre_processing_pressure_drop_factor>`              'Pressure Drop Factor' parameter.
+
+=================================================================   ============================================
+
+.. rubric:: Included in:
+
+===========================================================   ===========================================================================================
+
+Parent                                                                                                                                            Summary
+
+===========================================================   ===========================================================================================
+:ref:`shell_side_models <pre_processing_shell_side_models>`   Holds the definition of shell fluid models for momentum loss and heat transfer coefficient.
+
+===========================================================   ===========================================================================================
+

@@ -1,0 +1,32 @@
+:orphan:
+
+.. _pre_processing_monitor_balances:
+
+monitor_balances
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.monitor_balances.monitor_balances
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================   ==============================
+
+Attribute                                                          Summary
+
+=========================================   ==============================
+:ref:`option <pre_processing_option_405>`   The 'Monitor Balances' option.
+
+=========================================   ==============================
+
+.. rubric:: Included in:
+
+=======================================================   =========================
+
+Parent                                                                      Summary
+
+=======================================================   =========================
+:ref:`monitor_objects <pre_processing_monitor_objects>`   'MONITOR OBJECTS' object.
+
+=======================================================   =========================
+

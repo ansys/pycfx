@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_185:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_185.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ==================================================================
+
+Parent                                                                                                                     Summary
+
+=============================================================   ==================================================================
+:ref:`coarsening_control <pre_processing_coarsening_control>`   Holds parameters to control creation of the radiation coarse grid.
+
+=============================================================   ==================================================================
+

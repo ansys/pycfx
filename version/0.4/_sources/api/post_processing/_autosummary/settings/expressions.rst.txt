@@ -1,0 +1,45 @@
+:orphan:
+
+.. _post_processing_expressions:
+
+expressions
+===========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.expressions.expressions
+    :show-inheritance:
+
+.. rubric:: Methods
+
+============================================   ============================
+
+Method                                                              Summary
+
+============================================   ============================
+:ref:`create_1 <post_processing_create_1>`             Create a new object.
+
+:ref:`delete <post_processing_delete>`            Delete specified objects.
+
+:ref:`duplicate <post_processing_duplicate>`   Create a copy of the object.
+
+:ref:`rename <post_processing_rename>`                   Rename the object.
+
+============================================   ============================
+
+.. rubric:: Named object type
+
+:ref:`expressions_child <post_processing_expressions_child>`
+
+
+.. rubric:: Included in:
+
+========================================   =========================================
+
+Parent                                                                       Summary
+
+========================================   =========================================
+:ref:`results <post_processing_results>`   Encapsulates a CFX post-processing setup.
+
+:ref:`cel <post_processing_cel>`                                        'cel' child.
+
+========================================   =========================================
+

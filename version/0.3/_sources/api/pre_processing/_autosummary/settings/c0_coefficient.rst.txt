@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_c0_coefficient:
+
+c0_coefficient
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.c0_coefficient.c0_coefficient
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================================   ==========================================================
+
+Parent                                                                                                                                 Summary
+
+=================================================================================   ==========================================================
+:ref:`residual_material_dependency <pre_processing_residual_material_dependency>`   Residual material dependency for laminar burning velocity.
+
+=================================================================================   ==========================================================
+

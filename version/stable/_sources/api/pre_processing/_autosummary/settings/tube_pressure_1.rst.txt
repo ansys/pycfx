@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_tube_pressure_1:
+
+tube_pressure
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.tube_pressure_1.tube_pressure
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================   ===========================
+
+Attribute                                                                   Summary
+
+=====================================================   ===========================
+:ref:`option <pre_processing_option_303>`               The 'Tube Pressure' option.
+
+:ref:`tube_pressure <pre_processing_tube_pressure>`      'Tube Pressure' parameter.
+
+:ref:`mass_flow_rate <pre_processing_mass_flow_rate>`   'Mass Flow Rate' parameter.
+
+=====================================================   ===========================
+
+.. rubric:: Included in:
+
+=================================================================   =============================================================
+
+Parent                                                                                                                    Summary
+
+=================================================================   =============================================================
+:ref:`boundary_conditions <pre_processing_boundary_conditions_4>`   Specifies boundary conditions for all equations being solved.
+
+=================================================================   =============================================================
+

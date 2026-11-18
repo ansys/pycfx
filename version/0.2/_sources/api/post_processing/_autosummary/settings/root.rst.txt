@@ -1,0 +1,34 @@
+:orphan:
+
+.. _ref_post_processing_root:
+
+root
+====
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.root.root
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+========================================   ==========================================================
+
+Attribute                                                                                     Summary
+
+========================================   ==========================================================
+:ref:`file <post_processing_file>`         File-related operations for a CFX post-processing session.
+
+:ref:`results <post_processing_results>`                    Encapsulates a CFX post-processing setup.
+
+========================================   ==========================================================
+
+.. rubric:: Methods
+
+==================================   =============
+
+Method                                     Summary
+
+==================================   =============
+:ref:`exit <post_processing_exit>`   Exit program.
+
+==================================   =============
+

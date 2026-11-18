@@ -1,0 +1,68 @@
+:orphan:
+
+.. _pre_processing_convergence_control_3:
+
+convergence_control
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.convergence_control_3.convergence_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================================================   ===================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                       Summary
+
+=================================================================================================   ===================================================================================================================================================================
+:ref:`timescale_control <pre_processing_timescale_control>`                                                                                                                                                                              'Timescale Control' parameter.
+
+:ref:`timescale_factor <pre_processing_timescale_factor>`                                                                                                                                                    The estimated auto timescale is multiplied by this number.
+
+:ref:`local_timescale_factor <pre_processing_local_timescale_factor>`                                                                                                                                                               'Local Timescale Factor' parameter.
+
+:ref:`physical_timescale <pre_processing_physical_timescale>`                                                                                                                                                                           'Physical Timescale' parameter.
+
+:ref:`maximum_number_of_iterations <pre_processing_maximum_number_of_iterations>`                                                                                                                                             'Maximum Number of Iterations' parameter.
+
+:ref:`maximum_number_of_coefficient_loops <pre_processing_maximum_number_of_coefficient_loops>`                                                                                                                        'Maximum Number of Coefficient Loops' parameter.
+
+:ref:`minimum_number_of_coefficient_loops <pre_processing_minimum_number_of_coefficient_loops>`                                                                                                                        'Minimum Number of Coefficient Loops' parameter.
+
+:ref:`minimum_number_of_iterations <pre_processing_minimum_number_of_iterations>`                                                                                                                                             'Minimum Number of Iterations' parameter.
+
+:ref:`length_scale_option <pre_processing_length_scale_option>`                                     Option for calculating Auto Timestep length scale. Conservative uses the cube root of the fluid volume, and Aggressive uses the maximum extent of the fluid volume.
+
+:ref:`length_scale <pre_processing_length_scale>`                                                                                                                                                                             Specified length scale for Auto Timestep.
+
+:ref:`solid_timescale_control <pre_processing_solid_timescale_control>`                                                                                                                                                            'Solid Timescale Control' parameter.
+
+:ref:`solid_timescale <pre_processing_solid_timescale>`                                                                                                                                                                                    'Solid Timescale' parameter.
+
+:ref:`number_of_dependent_variable_updates <pre_processing_number_of_dependent_variable_updates>`                                                                                                          Maximum number of dependent variable updates in a time step.
+
+:ref:`maximum_timescale <pre_processing_maximum_timescale>`                                                                                                                                                                              'Maximum Timescale' parameter.
+
+:ref:`timescale_ramping_factor <pre_processing_timescale_ramping_factor>`                                                                                                                                                         'Timescale Ramping Factor' parameter.
+
+:ref:`number_of_timescale_updates <pre_processing_number_of_timescale_updates>`                                                                                                                                                'Number of Timescale Updates' parameter.
+
+:ref:`residual_relaxation_iterations <pre_processing_residual_relaxation_iterations>`                                                                                                                                           Number of iteration to relax residuals.
+
+:ref:`solid_timescale_factor <pre_processing_solid_timescale_factor>`                                                                                                             For solids, the auto timescale is equal to the estimated timescale times this factor.
+
+:ref:`stabilisation_control <pre_processing_stabilisation_control>`                                                                                                                                                Determines what action to take if a time step fails.
+
+=================================================================================================   ===================================================================================================================================================================
+
+.. rubric:: Included in:
+
+=======================================================   ====================================================================================
+
+Parent                                                                                                                                 Summary
+
+=======================================================   ====================================================================================
+:ref:`solver_control <pre_processing_solver_control_1>`   Holds all objects that control discretization and execution of the solution process.
+
+=======================================================   ====================================================================================
+

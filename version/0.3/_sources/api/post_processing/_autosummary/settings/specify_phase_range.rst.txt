@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_specify_phase_range:
+
+specify_phase_range
+===================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.specify_phase_range.specify_phase_range
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+================================================   ====================
+
+Parent                                                          Summary
+
+================================================   ====================
+:ref:`tbr_options <post_processing_tbr_options>`   'tbr_options' child.
+
+================================================   ====================
+

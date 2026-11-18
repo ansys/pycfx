@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_dispersion_angle_1:
+
+dispersion_angle
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.dispersion_angle_1.dispersion_angle
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================================================   ===================================================
+
+Attribute                                                                                                                                           Summary
+
+=====================================================================================================   ===================================================
+:ref:`enabled <pre_processing_enabled_108>`                                                                             Enable the DISPERSION ANGLE object.
+
+:ref:`option <pre_processing_option_224>`                                                                                    The 'Dispersion Angle' option.
+
+:ref:`dispersion_angle <pre_processing_dispersion_angle>`                                                                     'Dispersion Angle' parameter.
+
+:ref:`standard_deviation_of_dispersion_angle <pre_processing_standard_deviation_of_dispersion_angle>`   'Standard Deviation of Dispersion Angle' parameter.
+
+=====================================================================================================   ===================================================
+
+.. rubric:: Included in:
+
+===============================================================   ============================
+
+Parent                                                                                 Summary
+
+===============================================================   ============================
+:ref:`injection_velocity <pre_processing_injection_velocity>`     'INJECTION VELOCITY' object.
+
+:ref:`injection_velocity <pre_processing_injection_velocity_1>`   'INJECTION VELOCITY' object.
+
+===============================================================   ============================
+

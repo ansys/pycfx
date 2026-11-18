@@ -1,0 +1,48 @@
+:orphan:
+
+.. _post_processing_user_vector_variable_child:
+
+user_vector_variable_child
+==========================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.user_vector_variable_child.user_vector_variable_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+======================================================================   ======================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                               Summary
+
+======================================================================   ======================================================================================================================================================================
+:ref:`boundary_values <post_processing_boundary_values>`                                                                                           Sets the type of boundary values to be presented for this variable (Conservative or Hybrid).
+
+:ref:`calculate_global_range <post_processing_calculate_global_range>`                                                                                                 If toggled on, the global range of the user variable will be calculated.
+
+:ref:`recipe <post_processing_recipe>`                                                                                                                                     Contains instructions on how to build a value list for the variable.
+
+:ref:`user_units <post_processing_user_units_1>`                         Specifies the preferred units to display this variable in if different from the default units setting. To use the default units, this parameter must be empty (blank).
+
+:ref:`variable_to_copy <post_processing_variable_to_copy>`                                                          The name of the variable used to create the object. Should be set equal to the name of a currently defined VARIABLE object.
+
+:ref:`variable_to_gradient <post_processing_variable_to_gradient>`                                                                                                             The name of the scalar variable used to calculate gradient upon.
+
+:ref:`x_expression <post_processing_x_expression_1>`                                                                                                            A CFX Expression Language expression defining X component of a vector variable.
+
+:ref:`y_expression <post_processing_y_expression_1>`                                                                                                            A CFX Expression Language expression defining Y component of a vector variable.
+
+:ref:`z_expression <post_processing_z_expression_1>`                                                                                                            A CFX Expression Language expression defining Z component of a vector variable.
+
+======================================================================   ======================================================================================================================================================================
+
+.. rubric:: Included in:
+
+==================================================================   =============================
+
+Parent                                                                                     Summary
+
+==================================================================   =============================
+:ref:`user_vector_variable <post_processing_user_vector_variable>`   'user_vector_variable' child.
+
+==================================================================   =============================
+

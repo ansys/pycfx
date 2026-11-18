@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_additional_variable:
+
+additional_variable
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.additional_variable.additional_variable
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`additional_variable_child <pre_processing_additional_variable_child>`
+
+
+.. rubric:: Included in:
+
+=======================================   ===============================================================================
+
+Parent                                                                                                            Summary
+
+=======================================   ===============================================================================
+:ref:`library <pre_processing_library>`   Stores common object descriptions for reference in the main problem definition.
+
+=======================================   ===============================================================================
+

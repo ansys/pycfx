@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_148:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_148.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ================================
+
+Parent                                                                                   Summary
+
+=============================================================   ================================
+:ref:`autoignition_model <pre_processing_autoignition_model>`   Controls the autoignition model.
+
+=============================================================   ================================
+

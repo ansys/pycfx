@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_user_location_regeneration:
+
+user_location_regeneration
+==========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.user_location_regeneration.user_location_regeneration
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================   =============================================
+
+Attribute                                                                                             Summary
+
+=============================================================   =============================================
+:ref:`enabled <pre_processing_enabled_229>`                     Enable the USER LOCATION REGENERATION object.
+
+:ref:`option <pre_processing_option_451>`                            The 'User Location Regeneration' option.
+
+:ref:`user_location_list <pre_processing_user_location_list>`                 'User Location List' parameter.
+
+=============================================================   =============================================
+
+.. rubric:: Included in:
+
+=================================================================   =============================
+
+Parent                                                                                    Summary
+
+=================================================================   =============================
+:ref:`solver_step_control <pre_processing_solver_step_control>`     'SOLVER STEP CONTROL' object.
+
+:ref:`solver_step_control <pre_processing_solver_step_control_1>`   'SOLVER STEP CONTROL' object.
+
+=================================================================   =============================
+

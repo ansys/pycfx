@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_147:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_271.option_147.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================   ================================
+
+Parent                                                                         Summary
+
+===================================================   ================================
+:ref:`ignition_time <pre_processing_ignition_time>`   Defines time for spark ignition.
+
+===================================================   ================================
+

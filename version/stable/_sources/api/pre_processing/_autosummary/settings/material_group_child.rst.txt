@@ -1,0 +1,32 @@
+:orphan:
+
+.. _pre_processing_material_group_child:
+
+material_group_child
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.material_group_child.material_group_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================   ==============================
+
+Attribute                                                                            Summary
+
+===========================================================   ==============================
+:ref:`group_description <pre_processing_group_description>`   'Group Description' parameter.
+
+===========================================================   ==============================
+
+.. rubric:: Included in:
+
+=======================================================   =======================================
+
+Parent                                                                                    Summary
+
+=======================================================   =======================================
+:ref:`material_group <pre_processing_material_group_1>`   A container for Material Group objects.
+
+=======================================================   =======================================
+

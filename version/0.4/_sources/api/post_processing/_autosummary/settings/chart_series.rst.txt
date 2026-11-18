@@ -1,0 +1,28 @@
+:orphan:
+
+.. _post_processing_chart_series:
+
+chart_series
+============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.chart_series.chart_series
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`chart_series_child <post_processing_chart_series_child>`
+
+
+.. rubric:: Included in:
+
+================================================   =========================================
+
+Parent                                                                               Summary
+
+================================================   =========================================
+:ref:`results <post_processing_results>`           Encapsulates a CFX post-processing setup.
+
+:ref:`chart_child <post_processing_chart_child>`               'child_object_type' of chart.
+
+================================================   =========================================
+

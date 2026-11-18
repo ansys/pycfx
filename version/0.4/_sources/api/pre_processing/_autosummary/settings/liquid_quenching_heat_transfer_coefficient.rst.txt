@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_liquid_quenching_heat_transfer_coefficient:
+
+liquid_quenching_heat_transfer_coefficient
+==========================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.liquid_quenching_heat_transfer_coefficient.liquid_quenching_heat_transfer_coefficient
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================================================   ============================================================================
+
+Attribute                                                                                                                                                              Summary
+
+===============================================================================================   ============================================================================
+:ref:`enabled <pre_processing_enabled_120>`                                                                      Enable the LIQUID QUENCHING HEAT TRANSFER COEFFICIENT object.
+
+:ref:`option <pre_processing_option_259>`                                                                             The 'Liquid Quenching Heat Transfer Coefficient' option.
+
+:ref:`quenching_heat_transfer_coefficient <pre_processing_quenching_heat_transfer_coefficient>`   User defined quenching heat transfer coefficient for the wall boiling model.
+
+===============================================================================================   ============================================================================
+
+.. rubric:: Included in:
+
+===============================================================   =================================
+
+Parent                                                                                      Summary
+
+===============================================================   =================================
+:ref:`wall_boiling_model <pre_processing_wall_boiling_model_1>`   Specifies the wall boiling model.
+
+===============================================================   =================================
+

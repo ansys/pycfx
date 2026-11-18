@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_junction_box_routines:
+
+junction_box_routines
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.junction_box_routines.junction_box_routines
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================   =============================================
+
+Attribute                                                                                                           Summary
+
+===========================================================================   =============================================
+:ref:`enabled <pre_processing_enabled_188>`                                        Enable the JUNCTION BOX ROUTINES object.
+
+:ref:`junction_box_routine_list <pre_processing_junction_box_routine_list>`   List of junction box routines to be executed.
+
+===========================================================================   =============================================
+
+.. rubric:: Included in:
+
+=======================================================   ====================================================================================
+
+Parent                                                                                                                                 Summary
+
+=======================================================   ====================================================================================
+:ref:`solver_control <pre_processing_solver_control_1>`   Holds all objects that control discretization and execution of the solution process.
+
+=======================================================   ====================================================================================
+

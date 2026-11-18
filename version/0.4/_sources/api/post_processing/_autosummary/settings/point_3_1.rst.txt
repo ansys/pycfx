@@ -1,0 +1,23 @@
+:orphan:
+
+.. _post_processing_point_3_1:
+
+point_3
+=======
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.point_3_1.point_3
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==========================================================   ==================================
+
+Parent                                                                                  Summary
+
+==========================================================   ==================================
+:ref:`plane_child <post_processing_plane_child>`                  'child_object_type' of plane.
+
+:ref:`clip_plane_child <post_processing_clip_plane_child>`   'child_object_type' of clip_plane.
+
+==========================================================   ==================================
+

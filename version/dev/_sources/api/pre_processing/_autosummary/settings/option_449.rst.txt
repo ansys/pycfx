@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_449:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_271.option_449.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================================   ===========================================
+
+Parent                                                                                                            Summary
+
+===========================================================================   ===========================================
+:ref:`icem_cfd_geometry_control <pre_processing_icem_cfd_geometry_control>`   Add geometry controls for ICEM CFD meshing.
+
+===========================================================================   ===========================================
+

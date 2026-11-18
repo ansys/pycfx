@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_radiation_intensity:
+
+radiation_intensity
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.radiation_intensity.radiation_intensity
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================   =======================================================
+
+Parent                                                                                                              Summary
+
+=================================================================   =======================================================
+:ref:`thermal_radiation <pre_processing_thermal_radiation>`         Sets the conditions on Thermal Radiation at a boundary.
+
+:ref:`radiation_intensity <pre_processing_radiation_intensity_1>`        Defines the initialization of radiation intensity.
+
+=================================================================   =======================================================
+

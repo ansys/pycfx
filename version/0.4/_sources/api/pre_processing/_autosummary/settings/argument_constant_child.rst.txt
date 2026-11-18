@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_argument_constant_child:
+
+argument_constant_child
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.argument_constant_child.argument_constant_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================   ======================================================
+
+Attribute                                                                                                                    Summary
+
+===========================================================================   ======================================================
+:ref:`value_name <pre_processing_value_name>`                                                                'Value Name' parameter.
+
+:ref:`result_units <pre_processing_result_units>`                                                          'Result Units' parameter.
+
+:ref:`value <pre_processing_value>`                                           Input expression for VARIABLE value in relevant units.
+
+:ref:`fmu_parameter_variability <pre_processing_fmu_parameter_variability>`                   'FMU Parameter Variability' parameter.
+
+===========================================================================   ======================================================
+
+.. rubric:: Included in:
+
+===========================================================   ==========================================
+
+Parent                                                                                           Summary
+
+===========================================================   ==========================================
+:ref:`argument_constant <pre_processing_argument_constant>`   A container for Argument Constant objects.
+
+===========================================================   ==========================================
+

@@ -1,0 +1,43 @@
+:orphan:
+
+.. _pre_processing_mesh_child:
+
+mesh_child
+==========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_271.mesh_child.mesh_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================   ===========================================================
+
+Attribute                                                                                         Summary
+
+===========================================   ===========================================================
+:ref:`file_path <pre_processing_file_path>`   The path to the mesh file corresponding to the mesh object.
+
+===========================================   ===========================================================
+
+.. rubric:: Methods
+
+=====================================================   =========================================================================
+
+Method                                                                                                                    Summary
+
+=====================================================   =========================================================================
+:ref:`transform_mesh <pre_processing_transform_mesh>`   Transform the mesh. Various types of transformation are available: 'Turbo
+
+=====================================================   =========================================================================
+
+.. rubric:: Included in:
+
+=================================   =============================
+
+Parent                                                    Summary
+
+=================================   =============================
+:ref:`mesh <pre_processing_mesh>`   A container for Mesh objects.
+
+=================================   =============================
+

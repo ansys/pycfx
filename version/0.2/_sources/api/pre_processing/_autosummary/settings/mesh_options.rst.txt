@@ -1,0 +1,32 @@
+:orphan:
+
+.. _pre_processing_mesh_options:
+
+mesh_options
+============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.mesh_options.mesh_options
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================   =======================
+
+Attribute                                                             Summary
+
+===================================================   =======================
+:ref:`mesh_ordering <pre_processing_mesh_ordering>`   'MESH ORDERING' object.
+
+===================================================   =======================
+
+.. rubric:: Included in:
+
+===========================================================   ===========================
+
+Parent                                                                            Summary
+
+===========================================================   ===========================
+:ref:`execution_control <pre_processing_execution_control>`   'EXECUTION CONTROL' object.
+
+===========================================================   ===========================
+

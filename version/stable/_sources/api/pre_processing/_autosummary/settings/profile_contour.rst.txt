@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_profile_contour:
+
+profile_contour
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.profile_contour.profile_contour
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================   ==================================
+
+Attribute                                                                              Summary
+
+=========================================================   ==================================
+:ref:`enabled <pre_processing_enabled_2>`                   Enable the PROFILE CONTOUR object.
+
+:ref:`profile_variable <pre_processing_profile_variable>`        The contour colour parameter.
+
+=========================================================   ==================================
+
+.. rubric:: Included in:
+
+=====================================================   ================================
+
+Parent                                                                           Summary
+
+=====================================================   ================================
+:ref:`function_child <pre_processing_function_child>`   'child_object_type' of function.
+
+=====================================================   ================================
+

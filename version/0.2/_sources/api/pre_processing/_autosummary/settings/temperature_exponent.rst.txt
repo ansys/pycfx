@@ -1,0 +1,45 @@
+:orphan:
+
+.. _pre_processing_temperature_exponent:
+
+temperature_exponent
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.temperature_exponent.temperature_exponent
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================================   ======================================================================
+
+Parent                                                                                                                                     Summary
+
+=========================================================================   ======================================================================
+:ref:`dynamic_viscosity <pre_processing_dynamic_viscosity_1>`                   Hold the details for an advanced description of dynamic viscosity.
+
+:ref:`thermal_conductivity <pre_processing_thermal_conductivity_1>`         Hold the details for an advanced descriptions of Thermal Conductivity.
+
+:ref:`thermal_conductivity <pre_processing_thermal_conductivity_2>`         Hold the details for an advanced descriptions of Thermal Conductivity.
+
+:ref:`dynamic_viscosity <pre_processing_dynamic_viscosity_2>`                   Hold the details for an advanced description of dynamic viscosity.
+
+:ref:`multiphase_reaction_rate <pre_processing_multiphase_reaction_rate>`                                       'MULTIPHASE REACTION RATE' object.
+
+:ref:`char_oxidation_rate <pre_processing_char_oxidation_rate>`                                                      'CHAR OXIDATION RATE' object.
+
+:ref:`internal_diffusion <pre_processing_internal_diffusion>`                                                         'INTERNAL DIFFUSION' object.
+
+:ref:`external_diffusion <pre_processing_external_diffusion>`                                                         'EXTERNAL DIFFUSION' object.
+
+:ref:`char_product_ratio <pre_processing_char_product_ratio>`                                                         'CHAR PRODUCT RATIO' object.
+
+:ref:`forward_reaction_rate <pre_processing_forward_reaction_rate>`                                                'FORWARD REACTION RATE' object.
+
+:ref:`backward_reaction_rate <pre_processing_backward_reaction_rate>`                          Defines the backwards rate for a chemical reaction.
+
+:ref:`laminar_flame_thickness <pre_processing_laminar_flame_thickness_1>`                                     Defines the laminar flame thickness.
+
+:ref:`knock_reaction_rate <pre_processing_knock_reaction_rate_1>`                                                    'KNOCK REACTION RATE' object.
+
+=========================================================================   ======================================================================
+

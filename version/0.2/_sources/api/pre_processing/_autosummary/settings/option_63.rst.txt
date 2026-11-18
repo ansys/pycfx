@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_63:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_63.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================   ===========================
+
+Parent                                                                                      Summary
+
+=====================================================================   ===========================
+:ref:`boundary_line_location <pre_processing_boundary_line_location>`   Locates lines in the model.
+
+=====================================================================   ===========================
+

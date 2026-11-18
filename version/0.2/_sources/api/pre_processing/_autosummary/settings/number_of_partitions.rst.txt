@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_number_of_partitions:
+
+number_of_partitions
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.number_of_partitions.number_of_partitions
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================   ==============================
+
+Parent                                                                                       Summary
+
+===================================================================   ==============================
+:ref:`spatial_partitioning <pre_processing_spatial_partitioning>`     'SPATIAL PARTITIONING' object.
+
+:ref:`time_partitioning <pre_processing_time_partitioning>`              'TIME PARTITIONING' object.
+
+:ref:`spatial_partitioning <pre_processing_spatial_partitioning_1>`   'SPATIAL PARTITIONING' object.
+
+===================================================================   ==============================
+

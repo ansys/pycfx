@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_additional_variable_5:
+
+additional_variable
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.additional_variable_5.additional_variable
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`additional_variable_child <pre_processing_additional_variable_child_5>`
+
+
+.. rubric:: Included in:
+
+===============================================================================   =============================================================
+
+Parent                                                                                                                                  Summary
+
+===============================================================================   =============================================================
+:ref:`boundary_conditions <pre_processing_boundary_conditions>`                   Specifies boundary conditions for all equations being solved.
+
+:ref:`interface_conditions_child <pre_processing_interface_conditions_child>`                      'child_object_type' of interface_conditions.
+
+:ref:`boundary_conditions <pre_processing_boundary_conditions_2>`                 Specifies boundary conditions for all equations being solved.
+
+:ref:`interface_conditions_child <pre_processing_interface_conditions_child_1>`                    'child_object_type' of interface_conditions.
+
+:ref:`boundary_conditions <pre_processing_boundary_conditions_5>`                 Specifies boundary conditions for all equations being solved.
+
+:ref:`boundary_conditions <pre_processing_boundary_conditions_6>`                 Specifies boundary conditions for all equations being solved.
+
+===============================================================================   =============================================================
+

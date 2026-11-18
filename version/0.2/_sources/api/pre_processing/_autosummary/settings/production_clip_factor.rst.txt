@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_production_clip_factor:
+
+production_clip_factor
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.production_clip_factor.production_clip_factor
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ============================
+
+Parent                                                                               Summary
+
+=============================================================   ============================
+:ref:`production_limiter <pre_processing_production_limiter>`   'PRODUCTION LIMITER' object.
+
+=============================================================   ============================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_50:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_50.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================   ===================================================
+
+Parent                                                                                                              Summary
+
+=====================================================================   ===================================================
+:ref:`backward_reaction_rate <pre_processing_backward_reaction_rate>`   Defines the backwards rate for a chemical reaction.
+
+=====================================================================   ===================================================
+

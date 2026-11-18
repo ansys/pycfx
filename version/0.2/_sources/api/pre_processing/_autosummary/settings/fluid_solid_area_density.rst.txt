@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_fluid_solid_area_density:
+
+fluid_solid_area_density
+========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fluid_solid_area_density.fluid_solid_area_density
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================   ====================================================
+
+Attribute                                                                                                                Summary
+
+=========================================================================   ====================================================
+:ref:`option <pre_processing_option_251>`                                                 The 'Fluid Solid Area Density' option.
+
+:ref:`interfacial_area_density <pre_processing_interfacial_area_density>`   Interfacial area per unit volume between two phases.
+
+=========================================================================   ====================================================
+
+.. rubric:: Included in:
+
+=======================================================   =========================================
+
+Parent                                                                                      Summary
+
+=======================================================   =========================================
+:ref:`porosity_models <pre_processing_porosity_models>`   Describes loss model for a porous domain.
+
+=======================================================   =========================================
+

@@ -1,0 +1,42 @@
+:orphan:
+
+.. _pre_processing_momentum_source:
+
+momentum_source
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.momentum_source.momentum_source
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================   =========================================================
+
+Attribute                                                                                                                   Summary
+
+=======================================================================   =========================================================
+:ref:`enabled <pre_processing_enabled_149>`                                                      Enable the MOMENTUM SOURCE object.
+
+:ref:`include_in_total_energy <pre_processing_include_in_total_energy>`   Indicates whether mom source appears in total energy eqn.
+
+:ref:`loss_model <pre_processing_loss_model_1>`                                           Describes loss model for a porous domain.
+
+:ref:`general_momentum_source <pre_processing_general_momentum_source>`     Defines a general momentum source term and coefficient.
+
+=======================================================================   =========================================================
+
+.. rubric:: Included in:
+
+===================================================   ==========================================================
+
+Parent                                                                                                   Summary
+
+===================================================   ==========================================================
+:ref:`sources <pre_processing_sources_4>`             Holds the definition of sources for one or more equations.
+
+:ref:`bulk_sources <pre_processing_bulk_sources_1>`                  Specifies bulk sources in multi-fluid flow.
+
+:ref:`sources <pre_processing_sources_5>`             Holds the definition of sources for one or more equations.
+
+===================================================   ==========================================================
+

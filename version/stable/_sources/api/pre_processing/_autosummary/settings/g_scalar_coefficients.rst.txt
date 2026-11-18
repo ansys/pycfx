@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_g_scalar_coefficients:
+
+g_scalar_coefficients
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.g_scalar_coefficients.g_scalar_coefficients
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================   =========================================================================================
+
+Attribute                                                                                                                                                       Summary
+
+===========================================================================   =========================================================================================
+:ref:`enabled <pre_processing_enabled_89>`                                                                                     Enable the G SCALAR COEFFICIENTS object.
+
+:ref:`curvature_correction_term <pre_processing_curvature_correction_term>`   Specifies whether the curvature source term in the G-scalar transport equation is active.
+
+:ref:`turbulent_flux_closure <pre_processing_turbulent_flux_closure_3>`                                   Controls the turbulent flux closure for a transport equation.
+
+===========================================================================   =========================================================================================
+
+.. rubric:: Included in:
+
+===========================================================   ========================================
+
+Parent                                                                                         Summary
+
+===========================================================   ========================================
+:ref:`combustion_model <pre_processing_combustion_model_1>`   Defines the combustion model to be used.
+
+===========================================================   ========================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_base_emissivity:
+
+base_emissivity
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.base_emissivity.base_emissivity
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================================   =================================================
+
+Parent                                                                                                                        Summary
+
+=================================================================================   =================================================
+:ref:`interphase_thermal_radiation <pre_processing_interphase_thermal_radiation>`   Specifies radiative heat transfer between fluids.
+
+=================================================================================   =================================================
+

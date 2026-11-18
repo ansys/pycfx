@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_density:
+
+density
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.density.density
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ================================
+
+Parent                                                                                   Summary
+
+=============================================================   ================================
+:ref:`equation_of_state <pre_processing_equation_of_state>`     Specifies the equation of state.
+
+:ref:`equation_of_state <pre_processing_equation_of_state_1>`   Specifies the equation of state.
+
+=============================================================   ================================
+

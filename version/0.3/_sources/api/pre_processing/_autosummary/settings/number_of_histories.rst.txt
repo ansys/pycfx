@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_number_of_histories:
+
+number_of_histories
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.number_of_histories.number_of_histories
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================================   =============================================================
+
+Parent                                                                                                                            Summary
+
+=========================================================================   =============================================================
+:ref:`thermal_radiation_model <pre_processing_thermal_radiation_model>`     Defines the Thermal Radiation model to be used in the domain.
+
+:ref:`thermal_radiation_model <pre_processing_thermal_radiation_model_1>`   Defines the Thermal Radiation model to be used in the domain.
+
+:ref:`thermal_radiation_model <pre_processing_thermal_radiation_model_2>`   Defines the Thermal Radiation model to be used in the domain.
+
+=========================================================================   =============================================================
+

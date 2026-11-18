@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_subdomain_list:
+
+subdomain_list
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.subdomain_list.subdomain_list
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================   =======================
+
+Parent                                                                Summary
+
+===================================================   =======================
+:ref:`mesh_adaption <pre_processing_mesh_adaption>`   'MESH ADAPTION' object.
+
+===================================================   =======================
+

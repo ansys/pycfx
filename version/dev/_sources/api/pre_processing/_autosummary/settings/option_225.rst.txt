@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_225:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_271.option_225.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ==========================
+
+Parent                                                                           Summary
+
+===========================================================   ==========================
+:ref:`dispersion_angle <pre_processing_dispersion_angle_1>`   'DISPERSION ANGLE' object.
+
+===========================================================   ==========================
+

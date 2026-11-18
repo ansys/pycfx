@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_option_302:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_271.option_302.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================   ======================================================
+
+Parent                                                                                                   Summary
+
+=======================================================   ======================================================
+:ref:`droplet_number <pre_processing_droplet_number_1>`   Specifies droplet number equation boundary conditions.
+
+:ref:`droplet_number <pre_processing_droplet_number_2>`   Specifies droplet number equation boundary conditions.
+
+=======================================================   ======================================================
+

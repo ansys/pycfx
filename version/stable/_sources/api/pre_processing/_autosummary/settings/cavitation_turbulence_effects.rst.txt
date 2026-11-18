@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_cavitation_turbulence_effects:
+
+cavitation_turbulence_effects
+=============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.cavitation_turbulence_effects.cavitation_turbulence_effects
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================================================   ========================================================================================================
+
+Attribute                                                                                                                                                                                        Summary
+
+=============================================================================================   ========================================================================================================
+:ref:`enabled <pre_processing_enabled_101>`                                                                                                             Enable the CAVITATION TURBULENCE EFFECTS object.
+
+:ref:`option <pre_processing_option_183>`                                                                                                                    The 'Cavitation Turbulence Effects' option.
+
+:ref:`turbulence_fluctuation_coefficient <pre_processing_turbulence_fluctuation_coefficient>`   Coefficient of the turbulence fluctuation correction to the saturation pressure in the cavitation model.
+
+=============================================================================================   ========================================================================================================
+
+.. rubric:: Included in:
+
+=========================================================   ===============================
+
+Parent                                                                              Summary
+
+=========================================================   ===============================
+:ref:`cavitation_model <pre_processing_cavitation_model>`   Specifies the cavitation model.
+
+=========================================================   ===============================
+

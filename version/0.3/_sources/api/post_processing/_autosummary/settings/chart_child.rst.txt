@@ -1,0 +1,189 @@
+:orphan:
+
+.. _post_processing_chart_child:
+
+chart_child
+===========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.chart_child.chart_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+==========================================================================================================   =================================================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                                                                              Summary
+
+==========================================================================================================   =================================================================================================================================================================================================================================
+:ref:`chart_axes <post_processing_chart_axes>`                                                                                                                                                                              Indicates whether the X=0 or Y=0 lines should be displayed on the chart. Neither, either or both may be displayed.
+
+:ref:`chart_axes_font <post_processing_chart_axes_font>`                                                            The font definition for the Chart Axes. The parameter is a comma delimited list of four items: Font Name, Font Size, Bold (True or False), Italics (True or False), Underline (True or False), Strike Out (True or False).
+
+:ref:`chart_axes_titles_font <post_processing_chart_axes_titles_font>`                                       The font definition for the Chart Axes Titles. The parameter is a comma delimited list of four items: Font Name, Font Size, Bold (True or False), Italics (True or False), Underline (True or False), Strike Out (True or False).
+
+:ref:`chart_grid_line_width <post_processing_chart_grid_line_width>`                                                                                                                                                                                                                          Defines the line width for the major grid lines.
+
+:ref:`chart_horizontal_grid <post_processing_chart_horizontal_grid>`                                                                                                                                                                                                                                 Shows or hides the horizontal major grid.
+
+:ref:`chart_legend <post_processing_chart_legend>`                                                                                                                                                                                                                                      Specifies whether a legend should be displayed or not.
+
+:ref:`chart_legend_font <post_processing_chart_legend_font>`                                                      The font definition for the Chart Legend. The parameter is a comma delimited list of four items: Font Name, Font Size, Bold (True or False), Italics (True or False), Underline (True or False), Strike Out (True or False).
+
+:ref:`chart_legend_inside <post_processing_chart_legend_inside>`                                                                                                                                                                                                                        Specifies whether a legend should be displayed or not.
+
+:ref:`chart_legend_justification <post_processing_chart_legend_justification>`                                                                                                                                                                                               Specifies the justification of the legend items inside of legend.
+
+:ref:`chart_legend_position <post_processing_chart_legend_position>`                                                                                                                                                                                                                    Specifies which side of the chart to place the legend.
+
+:ref:`chart_legend_width_height <post_processing_chart_legend_width_height>`                                                                                                                                                                                                                         Specifies the width-height of the legend.
+
+:ref:`chart_legend_x_justification <post_processing_chart_legend_x_justification>`                                                                                                                                                                                                 Specifies the legend orientation inside of chart on x-axis.
+
+:ref:`chart_legend_xy_position <post_processing_chart_legend_xy_position>`                                                                                                                                                                                                                     Specifies the left-bottom corner of the legend.
+
+:ref:`chart_legend_y_justification <post_processing_chart_legend_y_justification>`                                                                                                                                                                                                 Specifies the legend orientation inside of chart on y-axis.
+
+:ref:`chart_line_width <post_processing_chart_line_width>`                                                                                                                                                                                                                                         Defines the line width for the chart lines.
+
+:ref:`chart_lines_order <post_processing_chart_lines_order>`                                                                                                                                                                                                                                         List of line names that determines order.
+
+:ref:`chart_minor_grid <post_processing_chart_minor_grid>`                                                                                                                                                                                                                             Shows or hides both Horizontal and Vertical Minor grid.
+
+:ref:`chart_minor_grid_line_width <post_processing_chart_minor_grid_line_width>`                                                                                                                                                                                                              Defines the line width for the minor grid lines.
+
+:ref:`chart_print_base_height <post_processing_chart_print_base_height>`                                                                                                                                                                                                                   The image height for which the scaling is based on.
+
+:ref:`chart_print_base_width <post_processing_chart_print_base_width>`                                                                                                                                                                                                                      The image width for which the scaling is based on.
+
+:ref:`chart_symbol_size <post_processing_chart_symbol_size>`                                                                                                                                                                                                                                            Defines the size of the chart symbols.
+
+:ref:`chart_text_colour <post_processing_chart_text_colour>`                                                                                                                                                                                                                  The colour of the chart title and X & Y Axis Labels. DEPRECATED.
+
+:ref:`chart_title <post_processing_chart_title>`                                                                                                                                                                                                                                                            Specifies the title for the chart.
+
+:ref:`chart_title_font <post_processing_chart_title_font>`                                                         The font definition for the Chart Title. The parameter is a comma delimited list of four items: Font Name, Font Size, Bold (True or False), Italics (True or False), Underline (True or False), Strike Out (True or False).
+
+:ref:`chart_title_visibility <post_processing_chart_title_visibility>`                                                                                                                                                                                                                  Specifies whether the Chart Title should be displayed.
+
+:ref:`chart_type <post_processing_chart_type>`                                                                                                                                                                                                                                                          Specifies the type of chart to create.
+
+:ref:`chart_vertical_grid <post_processing_chart_vertical_grid>`                                                                                                                                                                                                                                       Shows or hides the Vertical major grid.
+
+:ref:`chart_viewport_colour <post_processing_chart_viewport_colour>`                                                                                                                                                                              The colour of the chart viewport including axes, tick marks, and axis numbering. DEPRECATED.
+
+:ref:`chart_x_axis_automatic_number_formatting <post_processing_chart_x_axis_automatic_number_formatting>`                                                                                                                                                                         Parameter to display x axis numbers in an automatic format.
+
+:ref:`chart_x_axis_label <post_processing_chart_x_axis_label>`                                                                                                                                                       The label to use for the X-Axis. The <units> token will be replaced with the X Axis units of the first line in the chart.
+
+:ref:`chart_x_axis_number_format <post_processing_chart_x_axis_number_format>`                                                                                                                                                                                                      Parameter to modify string format of values on the x axis.
+
+:ref:`chart_y_axis_automatic_number_formatting <post_processing_chart_y_axis_automatic_number_formatting>`                                                                                                                                                                         Parameter to display y axis numbers in an automatic format.
+
+:ref:`chart_y_axis_label <post_processing_chart_y_axis_label>`                                                                                                                                                       The label to use for the Y-Axis. The <units> token will be replaced with the Y Axis units of the first line in the chart.
+
+:ref:`chart_y_axis_number_format <post_processing_chart_y_axis_number_format>`                                                                                                                                                                                                      Parameter to modify string format of values on the y axis.
+
+:ref:`default_chart_x_variable <post_processing_default_chart_x_variable>`                                                                                                                                                                                                                 Specifies the name of the X-Axis variable to chart.
+
+:ref:`default_chart_y_variable <post_processing_default_chart_y_variable>`                                                                                                                                                                                                                 Specifies the name of the Y-Axis variable to chart.
+
+:ref:`default_difference_line_calculation <post_processing_default_difference_line_calculation>`                                                                                                                                                                                                  'default_difference_line_calculation' child.
+
+:ref:`default_histogram_y_axis_weighting <post_processing_default_histogram_y_axis_weighting>`                                                                                                                                                                                                Specifies how to calculate mesh bin information.
+
+:ref:`default_time_chart_variable <post_processing_default_time_chart_variable>`                                                                                                                                                                                 Specifies the name of the variable to track over time at the specified point.
+
+:ref:`default_time_chart_x_expression <post_processing_default_time_chart_x_expression>`                                                                                                                                                                          Specifies the expression to evaluate at each timestep and plot in the chart.
+
+:ref:`default_time_variable_absolute_value <post_processing_default_time_variable_absolute_value>`                                                                        Indicates whether to take the absolute value of the Time Variable data before plotting the chart. If plotting a logarithmic chart, the minimum value will be 1e-100.
+
+:ref:`default_time_variable_boundary_values <post_processing_default_time_variable_boundary_values>`                                                                                                                                         Sets the type of boundary values to be used for the Time Chart variable (Conservative or Hybrid).
+
+:ref:`default_x_variable_absolute_value <post_processing_default_x_variable_absolute_value>`                                                                                     Indicates whether to take the absolute value of the X Axis data before plotting the chart. If plotting a logarithmic chart, the minimum value will be 1e-100.
+
+:ref:`default_x_variable_boundary_values <post_processing_default_x_variable_boundary_values>`                                                                                                                                                   Sets the type of boundary values to be used for the X Axis variable (Conservative or Hybrid).
+
+:ref:`default_y_variable_absolute_value <post_processing_default_y_variable_absolute_value>`                                                                                     Indicates whether to take the absolute value of the Y Axis data before plotting the chart. If plotting a logarithmic chart, the minimum value will be 1e-100.
+
+:ref:`default_y_variable_boundary_values <post_processing_default_y_variable_boundary_values>`                                                                                                                                                   Sets the type of boundary values to be used for the Y Axis variable (Conservative or Hybrid).
+
+:ref:`fft_full_input_range <post_processing_fft_full_input_range>`                                                                                                                                                                                                                          The data should be clipped to the specified range.
+
+:ref:`fft_max <post_processing_fft_max>`                                                                                                                                                                                                                                                        The maximum range value to clip fft signal by.
+
+:ref:`fft_min <post_processing_fft_min>`                                                                                                                                                                                                                                                        The minimum range value to clip fft signal by.
+
+:ref:`fft_subtract_mean <post_processing_fft_subtract_mean>`                                                                                                                                                                                                                                       Subtract the mean value of the signal data.
+
+:ref:`fft_window_type <post_processing_fft_window_type>`                                                                                                                                                                                                                                 The window type to be used in processing signal data.
+
+:ref:`fft_x_function <post_processing_fft_x_function>`                                                                                                                                                                                                                              The x function to be applied to the FFT signal processing.
+
+:ref:`fft_y_function <post_processing_fft_y_function>`                                                                                                                                                                                                                              The x function to be applied to the FFT signal processing.
+
+:ref:`histogram_automatic_divisions <post_processing_histogram_automatic_divisions>`                                                                                                                                                                                                             Determines how to process the histogram bins.
+
+:ref:`histogram_divisions <post_processing_histogram_divisions>`                                                                                                                                                                                                                                 List of user defined category histogram bins.
+
+:ref:`histogram_divisions_count <post_processing_histogram_divisions_count>`                                                                                                                                                                                   The number of divisions when automatically calculating category histogram bins.
+
+:ref:`histogram_y_axis_value <post_processing_histogram_y_axis_value>`                                                                                                                                                                                                                             Specifies how to calculate bin information.
+
+:ref:`is_fft_chart <post_processing_is_fft_chart>`                                                                                                                                                                                                                                                   Toggles if FFT should be run on the data.
+
+:ref:`max_x <post_processing_max_x>`                                                                                                                                                                                          If the 'X Axis Automatic Range' parameter is False, this parameter will indicate the maximum X value to display.
+
+:ref:`max_y <post_processing_max_y>`                                                                                                                                                                                          If the 'Y Axis Automatic Range' parameter is False, this parameter will indicate the maximum Y value to display.
+
+:ref:`min_x <post_processing_min_x>`                                                                                                                                                                                          If the 'X Axis Automatic Range' parameter is False, this parameter will indicate the minimum X value to display.
+
+:ref:`min_y <post_processing_min_y>`                                                                                                                                                                                          If the 'Y Axis Automatic Range' parameter is False, this parameter will indicate the minimum Y value to display.
+
+:ref:`time_chart_keep_single_case <post_processing_time_chart_keep_single_case>`                                                                                                                                      If true, then do not calculate the time chart using multi-case or comparison, if originally created in single case mode.
+
+:ref:`use_data_for_x_axis_labels <post_processing_use_data_for_x_axis_labels>`                                                                                                       Boolean indicating whether to use the line axis data as the X axis labels. (e.g. When plotting Pressure vs. X, the axis labels would be Pressure and X.).
+
+:ref:`use_data_for_y_axis_labels <post_processing_use_data_for_y_axis_labels>`                                                                                                                                                                                      Boolean indicating whether to use the line axis data as the Y axis labels.
+
+:ref:`x_axis_automatic_range <post_processing_x_axis_automatic_range>`                                                                                                                                                      Indicates whether the Min and Max X values shown on the chart will be automatically (true) or manually determined.
+
+:ref:`x_axis_inverted <post_processing_x_axis_inverted>`                                                                                                                                                                                                                                               Indicates whether to invert the X Axis.
+
+:ref:`x_axis_logarithmic_scaling <post_processing_x_axis_logarithmic_scaling>`                                                                                                                                                                                              Indicates whether to scale the X Axis linearly or logarithmically.
+
+:ref:`y_axis_automatic_range <post_processing_y_axis_automatic_range>`                                                                                                                                                      Indicates whether the Min and Max Y values shown on the chart will be automatically (true) or manually determined.
+
+:ref:`y_axis_inverted <post_processing_y_axis_inverted>`                                                                                                                                                                                                                                               Indicates whether to invert the Y Axis.
+
+:ref:`y_axis_logarithmic_scaling <post_processing_y_axis_logarithmic_scaling>`                                                                                                                                                                                              Indicates whether to scale the Y Axis linearly or logarithmically.
+
+:ref:`chart_series <post_processing_chart_series>`                                                                                                                                                                                                                                                                       'chart_series' child.
+
+:ref:`object_report_options <post_processing_object_report_options>`                                                                                                                                                                                                                  Defines options for the Report, specific to each object.
+
+==========================================================================================================   =================================================================================================================================================================================================================================
+
+.. rubric:: Methods
+
+============================================   ========================================
+
+Method                                                                          Summary
+
+============================================   ========================================
+:ref:`suspend <post_processing_suspend>`       Suspend immediate update for the object.
+
+:ref:`unsuspend <post_processing_unsuspend>`   Restore immediate update for the object.
+
+============================================   ========================================
+
+.. rubric:: Included in:
+
+====================================   ==============
+
+Parent                                        Summary
+
+====================================   ==============
+:ref:`chart <post_processing_chart>`   'chart' child.
+
+====================================   ==============
+

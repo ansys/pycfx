@@ -1,0 +1,46 @@
+:orphan:
+
+.. _pre_processing_host_definition_child:
+
+host_definition_child
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.host_definition_child.host_definition_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================   ==================================================
+
+Attribute                                                                                                                Summary
+
+===========================================================================   ==================================================
+:ref:`host_architecture_string <pre_processing_host_architecture_string>`                  'Host Architecture String' parameter.
+
+:ref:`number_of_processors <pre_processing_number_of_processors>`                              'Number of Processors' parameter.
+
+:ref:`relative_speed <pre_processing_relative_speed>`                                                'Relative Speed' parameter.
+
+:ref:`installation_root <pre_processing_installation_root>`                                       'Installation Root' parameter.
+
+:ref:`solver_executable <pre_processing_solver_executable>`                                       'Solver Executable' parameter.
+
+:ref:`remote_host_name <pre_processing_remote_host_name>`                                          'Remote Host Name' parameter.
+
+:ref:`remote_user_name <pre_processing_remote_user_name>`                                          'Remote User Name' parameter.
+
+:ref:`job_submission_definition <pre_processing_job_submission_definition>`   A container for Job Submission Definition objects.
+
+===========================================================================   ==================================================
+
+.. rubric:: Included in:
+
+=======================================================   ========================================
+
+Parent                                                                                     Summary
+
+=======================================================   ========================================
+:ref:`host_definition <pre_processing_host_definition>`   A container for Host Definition objects.
+
+=======================================================   ========================================
+

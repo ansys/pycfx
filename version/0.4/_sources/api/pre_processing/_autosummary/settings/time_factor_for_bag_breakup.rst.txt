@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_time_factor_for_bag_breakup:
+
+time_factor_for_bag_breakup
+===========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.time_factor_for_bag_breakup.time_factor_for_bag_breakup
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   ===========================
+
+Parent                                                                          Summary
+
+=========================================================   ===========================
+:ref:`particle_breakup <pre_processing_particle_breakup>`   Defines the breakup method.
+
+=========================================================   ===========================
+

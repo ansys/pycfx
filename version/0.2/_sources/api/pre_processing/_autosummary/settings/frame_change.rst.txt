@@ -1,0 +1,44 @@
+:orphan:
+
+.. _pre_processing_frame_change:
+
+frame_change
+============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.frame_change.frame_change
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================================   ==========================================================================================================================================
+
+Attribute                                                                                                                                                                                                                  Summary
+
+=====================================================================================   ==========================================================================================================================================
+:ref:`option <pre_processing_option_350>`                                                                                                                                                               The 'Frame Change' option.
+
+:ref:`implicit_averaging <pre_processing_implicit_averaging>`                           Identical to Implicit Stage Averaging. Same Solver Name but has a different default value. Used with the Circumferential Averaging option.
+
+:ref:`rotational_offset <pre_processing_rotational_offset>`                                                Controls the amount by which the child side domain on a GGI interface is rotated before the intersection is calculated.
+
+:ref:`pressure_profile_decay <pre_processing_pressure_profile_decay>`                                                                                                                 Pressure profile decay on a stage interface.
+
+:ref:`implicit_pressure_averaging <pre_processing_implicit_pressure_averaging>`                                                                                                  Indicates whether pressure averaging is implicit.
+
+:ref:`implicit_stage_averaging <pre_processing_implicit_stage_averaging>`                                                            Indicates whether stage group equations are implicit or use frozen rotor active coefficients.
+
+:ref:`downstream_velocity_constraint <pre_processing_downstream_velocity_constraint>`                                                                                           Downstream velocity constraint at stage interface.
+
+=====================================================================================   ==========================================================================================================================================
+
+.. rubric:: Included in:
+
+=========================================================   ========================================================
+
+Parent                                                                                                       Summary
+
+=========================================================   ========================================================
+:ref:`interface_models <pre_processing_interface_models>`   Holds the definition of models specific to an interface.
+
+=========================================================   ========================================================
+

@@ -1,0 +1,120 @@
+:orphan:
+
+.. _pre_processing_transform_mesh:
+
+transform_mesh
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_271.transform_mesh.transform_mesh
+    :show-inheritance:
+
+.. rubric:: Arguments
+
+=======================================================================================   ========================================================================
+
+Argument                                                                                                                                                   Summary
+
+=======================================================================================   ========================================================================
+:ref:`angle_end <pre_processing_angle_end>`                                                                          The second point used to calculate the angle.
+
+:ref:`angle_start <pre_processing_angle_start>`                                                                       The first point used to calculate the angle.
+
+:ref:`delete_original <pre_processing_delete_original>`                                                        Specify whether the original mesh is to be deleted.
+
+:ref:`delete_reflected <pre_processing_delete_reflected>`                                                     Specify whether the reflected mesh is to be deleted.
+
+:ref:`glue_copied <pre_processing_glue_copied>`                                                   Specify whether matching regions should be glued after the copy.
+
+:ref:`glue_reflected <pre_processing_glue_reflected>`                                       Specify whether matching regions should be glued after the reflection.
+
+:ref:`glue_strategy <pre_processing_glue_strategy>`                                                                   The strategy for gluing transformed regions.
+
+:ref:`nonuniform_scale <pre_processing_nonuniform_scale>`                                                                            The non-uniform scale vector.
+
+:ref:`normal <pre_processing_normal>`                                                                          The normal vector for the Reflection specification.
+
+:ref:`number_of_copies <pre_processing_number_of_copies>`                                                                        The number of transformed copies.
+
+:ref:`option <pre_processing_option>`                                                     The type of transformation ('Turbo Rotation', 'Rotation', 'Translation',
+
+:ref:`passages_in_360 <pre_processing_passages_in_360>`                                                            The number of passages in the full 360 degrees.
+
+:ref:`passages_per_mesh <pre_processing_passages_per_mesh>`                                                           The number of passages in the mesh location.
+
+:ref:`passages_to_model <pre_processing_passages_to_model>`                                                                       The number of passages to model.
+
+:ref:`point_1 <pre_processing_point_1>`                                                                          The first point for the reflection specification.
+
+:ref:`point_2 <pre_processing_point_2>`                                                                         The second point for the reflection specification.
+
+:ref:`point_3 <pre_processing_point_3>`                                                                          The third point for the reflection specification.
+
+:ref:`point <pre_processing_point>`                                                                                    The point for the reflection specification.
+
+:ref:`preserve_assembly_name_strategy <pre_processing_preserve_assembly_name_strategy>`                                The strategy for preserving assembly names.
+
+:ref:`principal_axis <pre_processing_principal_axis>`                                                                    The principal axis used for the rotation.
+
+:ref:`reference_coord_frame <pre_processing_reference_coord_frame>`                          The coordinate frame used to specify the transformation. This is only
+
+:ref:`reflection_method <pre_processing_reflection_method>`                                                                Specify how the reflection takes place.
+
+:ref:`reflection_option <pre_processing_reflection_option>`                                                           Specify how the reflection plane is defined.
+
+:ref:`rotation_angle_option <pre_processing_rotation_angle_option>`                                                                  Specify the type of rotation.
+
+:ref:`rotation_angle <pre_processing_rotation_angle>`                                                                                  Specify the rotation angle.
+
+:ref:`rotation_axis_begin <pre_processing_rotation_axis_begin>`                                                              The root of the rotation axis vector.
+
+:ref:`rotation_axis_end <pre_processing_rotation_axis_end>`                                                                   The tip of the rotation axis vector.
+
+:ref:`rotation_offset_angle <pre_processing_rotation_offset_angle>`                                    Specify the offset angle for rotation copy transformations.
+
+:ref:`rotation_option <pre_processing_rotation_option>`                                                                              Specify the type of rotation.
+
+:ref:`scale_method <pre_processing_scale_method>`                                                                             Specify how the scaling takes place.
+
+:ref:`scale_option <pre_processing_scale_option>`                                                                                     Specify the type of scaling.
+
+:ref:`scale_origin <pre_processing_scale_origin>`                                                                                The position of the scale origin.
+
+:ref:`target_location <pre_processing_target_location>`                                   The mesh to transform. This should only need to be specified if multiple
+
+:ref:`theta_offset <pre_processing_theta_offset>`                                                                         The offset angle of the first component.
+
+:ref:`transform_targets_independently <pre_processing_transform_targets_independently>`                Specify whether each location is transformed independently.
+
+:ref:`translation_deltas <pre_processing_translation_deltas>`                                                                              The translation offset.
+
+:ref:`translation_option <pre_processing_translation_option>`                                                                     Specify the type of translation.
+
+:ref:`translation_root <pre_processing_translation_root>`                                                                      The root of the translation vector.
+
+:ref:`translation_tip <pre_processing_translation_tip>`                                                                         The tip of the translation vector.
+
+:ref:`uniform_scale <pre_processing_uniform_scale>`                                                                                              The scale factor.
+
+:ref:`use_coord_frame <pre_processing_use_coord_frame>`                                                      This enables the ``reference_coord_frame`` parameter.
+
+:ref:`use_multiple_copy <pre_processing_use_multiple_copy>`                                               Specify if the mesh is to be copied as opposed to moved.
+
+:ref:`x <pre_processing_x>`                                                                                    The X position for the reflection plane definition.
+
+:ref:`y <pre_processing_y>`                                                                                    The Y position for the reflection plane definition.
+
+:ref:`z <pre_processing_z>`                                                                                    The Z position for the reflection plane definition.
+
+=======================================================================================   ========================================================================
+
+.. rubric:: Included in:
+
+=============================================   ============================
+
+Parent                                                               Summary
+
+=============================================   ============================
+:ref:`mesh_child <pre_processing_mesh_child>`   'child_object_type' of mesh.
+
+=============================================   ============================
+

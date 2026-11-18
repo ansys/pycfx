@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_heating_value_1:
+
+heating_value
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.heating_value_1.heating_value
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================   ================================================================================================
+
+Attribute                                                                                                                                                      Summary
+
+===================================================================   ================================================================================================
+:ref:`option <pre_processing_option_34>`                                                                                                   The 'Heating Value' option.
+
+:ref:`heating_value <pre_processing_heating_value>`                   Heating Value, the heat released on combustion of unit mass of fuel (on an "As Received" basis).
+
+:ref:`reference_temperature <pre_processing_reference_temperature>`                                                                 'Reference Temperature' parameter.
+
+:ref:`reference_pressure <pre_processing_reference_pressure>`                                                                          'Reference Pressure' parameter.
+
+:ref:`moisture_latent_heat <pre_processing_moisture_latent_heat>`                                                                                Moisture latent heat.
+
+===================================================================   ================================================================================================
+
+.. rubric:: Included in:
+
+===========================================================   ====================================================
+
+Parent                                                                                                     Summary
+
+===========================================================   ====================================================
+:ref:`material_analysis <pre_processing_material_analysis>`   Proximate and ultimate analysis of hydrocarbon fuel.
+
+===========================================================   ====================================================
+

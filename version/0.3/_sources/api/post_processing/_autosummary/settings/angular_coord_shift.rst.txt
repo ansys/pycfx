@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_angular_coord_shift:
+
+angular_coord_shift
+===================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.angular_coord_shift.angular_coord_shift
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==============================================   ============================
+
+Parent                                                                Summary
+
+==============================================   ============================
+:ref:`view_child <post_processing_view_child>`   'child_object_type' of view.
+
+==============================================   ============================
+

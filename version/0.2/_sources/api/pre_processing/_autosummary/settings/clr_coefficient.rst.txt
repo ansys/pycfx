@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_clr_coefficient:
+
+clr_coefficient
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.clr_coefficient.clr_coefficient
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================================   ===================================
+
+Parent                                                                                                    Summary
+
+===========================================================================   ===================================
+:ref:`reattachment_modification <pre_processing_reattachment_modification>`   'REATTACHMENT MODIFICATION' object.
+
+===========================================================================   ===================================
+

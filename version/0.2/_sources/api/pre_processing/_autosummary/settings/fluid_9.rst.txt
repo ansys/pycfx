@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_fluid_9:
+
+fluid
+=====
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fluid_9.fluid
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`fluid_child <pre_processing_fluid_child_9>`
+
+
+.. rubric:: Included in:
+
+=============================================================   ====================================
+
+Parent                                                                                       Summary
+
+=============================================================   ====================================
+:ref:`source_point_child <pre_processing_source_point_child>`   'child_object_type' of source_point.
+
+=============================================================   ====================================
+

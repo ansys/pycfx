@@ -1,0 +1,32 @@
+:orphan:
+
+.. _post_processing_symbol_child:
+
+symbol_child
+============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.symbol_child.symbol_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+================================================   ==================================
+
+Attribute                                                                     Summary
+
+================================================   ==================================
+:ref:`symbol_type <post_processing_symbol_type>`   The category a symbol falls under.
+
+================================================   ==================================
+
+.. rubric:: Included in:
+
+========================================   ===============
+
+Parent                                             Summary
+
+========================================   ===============
+:ref:`symbol <post_processing_symbol_2>`   'symbol' child.
+
+========================================   ===============
+

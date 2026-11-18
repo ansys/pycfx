@@ -1,0 +1,23 @@
+:orphan:
+
+.. _post_processing_view:
+
+view
+====
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.view.view
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==================================   ===================================
+
+Parent                                                           Summary
+
+==================================   ===================================
+:ref:`hide <post_processing_hide>`   Hide the object in a given view(s).
+
+:ref:`show <post_processing_show>`   Show the object in a given view(s).
+
+==================================   ===================================
+

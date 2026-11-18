@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_option_286:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_286.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================   ===================================
+
+Parent                                                            Summary
+
+===================================   ===================================
+:ref:`soot <pre_processing_soot>`     Defines the initialization of Soot.
+
+:ref:`soot <pre_processing_soot_1>`   Defines the initialization of Soot.
+
+===================================   ===================================
+

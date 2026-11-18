@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_absorption_coefficient:
+
+absorption_coefficient
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.absorption_coefficient.absorption_coefficient
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   =======================================================
+
+Parent                                                                                                                    Summary
+
+=======================================================================   =======================================================
+:ref:`absorption_coefficient <pre_processing_absorption_coefficient_1>`   Specifies how the absorption coefficient is calculated.
+
+:ref:`gray_gas_child <pre_processing_gray_gas_child>`                                            'child_object_type' of gray_gas.
+
+=======================================================================   =======================================================
+

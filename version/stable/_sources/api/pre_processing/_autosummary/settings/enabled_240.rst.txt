@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_240:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_240.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================   ===================================
+
+Parent                                                                                        Summary
+
+===============================================================   ===================================
+:ref:`termination_control <pre_processing_termination_control>`   Termination conditions for context.
+
+===============================================================   ===================================
+

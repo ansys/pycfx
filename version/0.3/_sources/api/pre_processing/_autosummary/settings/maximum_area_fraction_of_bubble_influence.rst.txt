@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_maximum_area_fraction_of_bubble_influence:
+
+maximum_area_fraction_of_bubble_influence
+=========================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.maximum_area_fraction_of_bubble_influence.maximum_area_fraction_of_bubble_influence
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================   =================================
+
+Parent                                                                                      Summary
+
+===============================================================   =================================
+:ref:`wall_boiling_model <pre_processing_wall_boiling_model_1>`   Specifies the wall boiling model.
+
+===============================================================   =================================
+

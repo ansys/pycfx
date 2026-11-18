@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_monitor_statistics:
+
+monitor_statistics
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.monitor_statistics.monitor_statistics
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================   =====================================================================================================================
+
+Attribute                                                                                                                                                                                 Summary
+
+=========================================================================   =====================================================================================================================
+:ref:`enabled <pre_processing_enabled_210>`                                                                                                                 Enable the MONITOR STATISTICS object.
+
+:ref:`option <pre_processing_option_414>`                                                                                                                        The 'Monitor Statistics' option.
+
+:ref:`statistics_list <pre_processing_statistics_list>`                                                                                                              'Statistics List' parameter.
+
+:ref:`allow_running_statistics <pre_processing_allow_running_statistics>`   Specifies whether running statistics are allowed and values are returned before the statistical interval is complete.
+
+:ref:`interval_definition <pre_processing_interval_definition>`                                                                                    Defines the statistical window for mon points.
+
+=========================================================================   =====================================================================================================================
+
+.. rubric:: Included in:
+
+===============================================================   =====================================
+
+Parent                                                                                          Summary
+
+===============================================================   =====================================
+:ref:`monitor_point_child <pre_processing_monitor_point_child>`   'child_object_type' of monitor_point.
+
+===============================================================   =====================================
+

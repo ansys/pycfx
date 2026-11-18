@@ -1,0 +1,32 @@
+:orphan:
+
+.. _pre_processing_import_mesh:
+
+import_mesh
+===========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.import_mesh.import_mesh
+    :show-inheritance:
+
+.. rubric:: Arguments
+
+=============================================   ======================
+
+Argument                                                       Summary
+
+=============================================   ======================
+:ref:`file_name <pre_processing_file_name_1>`   Name of the mesh file.
+
+=============================================   ======================
+
+.. rubric:: Included in:
+
+=================================   =========================================================
+
+Parent                                                                                Summary
+
+=================================   =========================================================
+:ref:`file <pre_processing_file>`   File-related operations for a CFX pre-processing session.
+
+=================================   =========================================================
+

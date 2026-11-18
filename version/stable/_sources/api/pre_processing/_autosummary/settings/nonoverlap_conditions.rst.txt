@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_nonoverlap_conditions:
+
+nonoverlap_conditions
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.nonoverlap_conditions.nonoverlap_conditions
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================   =============================================================
+
+Attribute                                                                                                                 Summary
+
+=================================================================   =============================================================
+:ref:`enabled <pre_processing_enabled_138>`                                              Enable the NONOVERLAP CONDITIONS object.
+
+:ref:`boundary_type <pre_processing_boundary_type>`                                                                Boundary Type.
+
+:ref:`boundary_conditions <pre_processing_boundary_conditions_5>`   Specifies boundary conditions for all equations being solved.
+
+:ref:`fluid <pre_processing_fluid_5>`                                                              A container for Fluid objects.
+
+:ref:`solid <pre_processing_solid_1>`                                                              A container for Solid objects.
+
+=================================================================   =============================================================
+
+.. rubric:: Included in:
+
+=====================================================   ================================
+
+Parent                                                                           Summary
+
+=====================================================   ================================
+:ref:`boundary_child <pre_processing_boundary_child>`   'child_object_type' of boundary.
+
+=====================================================   ================================
+

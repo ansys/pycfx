@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_fluid_7:
+
+fluid
+=====
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fluid_7.fluid
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`fluid_child <pre_processing_fluid_child_7>`
+
+
+.. rubric:: Included in:
+
+=====================================================================   ========================================
+
+Parent                                                                                                   Summary
+
+=====================================================================   ========================================
+:ref:`injection_region_child <pre_processing_injection_region_child>`   'child_object_type' of injection_region.
+
+=====================================================================   ========================================
+

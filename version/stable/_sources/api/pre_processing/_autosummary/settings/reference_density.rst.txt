@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_reference_density:
+
+reference_density
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.reference_density.reference_density
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   ==================================================
+
+Parent                                                                                                               Summary
+
+=======================================================================   ==================================================
+:ref:`size_group_distribution <pre_processing_size_group_distribution>`   Defines the size groups for a polydispersed fluid.
+
+=======================================================================   ==================================================
+

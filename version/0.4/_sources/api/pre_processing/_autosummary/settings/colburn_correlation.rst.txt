@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_colburn_correlation:
+
+colburn_correlation
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.colburn_correlation.colburn_correlation
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================   =================================
+
+Attribute                                                                             Summary
+
+=========================================================   =================================
+:ref:`option <pre_processing_option_239>`                   The 'Colburn Correlation' option.
+
+:ref:`colburn_j_factor <pre_processing_colburn_j_factor>`                   Colburn j factor.
+
+=========================================================   =================================
+
+.. rubric:: Included in:
+
+=======================================================================================   ===============================================
+
+Parent                                                                                                                            Summary
+
+=======================================================================================   ===============================================
+:ref:`shell_heat_transfer_coefficient <pre_processing_shell_heat_transfer_coefficient>`   Specifies shell side heat transfer coefficient.
+
+=======================================================================================   ===============================================
+

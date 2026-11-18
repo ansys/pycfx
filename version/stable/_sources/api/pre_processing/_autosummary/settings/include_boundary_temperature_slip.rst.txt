@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_include_boundary_temperature_slip:
+
+include_boundary_temperature_slip
+=================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.include_boundary_temperature_slip.include_boundary_temperature_slip
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   =============================================================
+
+Parent                                                                                                                          Summary
+
+=======================================================================   =============================================================
+:ref:`thermal_radiation_model <pre_processing_thermal_radiation_model>`   Defines the Thermal Radiation model to be used in the domain.
+
+=======================================================================   =============================================================
+

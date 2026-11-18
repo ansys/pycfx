@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_char_product_ratio:
+
+char_product_ratio
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.char_product_ratio.char_product_ratio
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================   ======================================================================
+
+Attribute                                                                                                                              Summary
+
+=====================================================================   ======================================================================
+:ref:`pre_exponential_factor <pre_processing_pre_exponential_factor>`                      Pre-exponential factor for Arrhenius reaction rate.
+
+:ref:`temperature_exponent <pre_processing_temperature_exponent>`                                            'Temperature Exponent' parameter.
+
+:ref:`reaction_activation <pre_processing_reaction_activation>`         Defines reaction energy/temperature for Arrhenius type reaction rates.
+
+=====================================================================   ======================================================================
+
+.. rubric:: Included in:
+
+=========================================================================   ==================================
+
+Parent                                                                                                 Summary
+
+=========================================================================   ==================================
+:ref:`multiphase_reaction_rate <pre_processing_multiphase_reaction_rate>`   'MULTIPHASE REACTION RATE' object.
+
+=========================================================================   ==================================
+

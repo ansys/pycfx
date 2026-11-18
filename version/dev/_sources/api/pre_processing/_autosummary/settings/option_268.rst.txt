@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_268:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_271.option_268.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================   =====================================
+
+Parent                                                                                              Summary
+
+===================================================================   =====================================
+:ref:`periodic_displacement <pre_processing_periodic_displacement>`   Defines displacement for mesh motion.
+
+===================================================================   =====================================
+

@@ -1,0 +1,44 @@
+:orphan:
+
+.. _pre_processing_domain_models:
+
+domain_models
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.domain_models.domain_models
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================   ==================================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                        Summary
+
+===================================================================   ==================================================================================================================================================================================================================
+:ref:`use_gt_suite_coupling <pre_processing_use_gt_suite_coupling>`                                                                                                                                                                                   'Use GT SUITE Coupling' parameter.
+
+:ref:`gt_suite_coupling <pre_processing_gt_suite_coupling>`                                                                                                                                                                                                  'GT SUITE COUPLING' object.
+
+:ref:`reference_pressure <pre_processing_reference_pressure_1>`                                                                                                                                                                               Sets the Reference Pressure in the Domain.
+
+:ref:`domain_motion <pre_processing_domain_motion>`                   Defines the motion of a mesh relative to a stationary coordinate frame. NOTE - Speed and Direction, Specified Displacement and General Motion Options are not supported for domains other than the immersed solid.
+
+:ref:`buoyancy_model <pre_processing_buoyancy_model>`                                                                                                                                                                     Defines type of buoyancy model and gravity vector in a domain.
+
+:ref:`mesh_deformation <pre_processing_mesh_deformation>`                                                                                                                                                                                    Defines the method used to deform the mesh.
+
+:ref:`passage_definition <pre_processing_passage_definition>`                                                                                                                                                                                               'PASSAGE DEFINITION' object.
+
+===================================================================   ==================================================================================================================================================================================================================
+
+.. rubric:: Included in:
+
+=================================================   ==============================
+
+Parent                                                                     Summary
+
+=================================================   ==============================
+:ref:`domain_child <pre_processing_domain_child>`   'child_object_type' of domain.
+
+=================================================   ==============================
+

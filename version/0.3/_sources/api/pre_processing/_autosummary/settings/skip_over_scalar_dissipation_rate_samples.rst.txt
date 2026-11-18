@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_skip_over_scalar_dissipation_rate_samples:
+
+skip_over_scalar_dissipation_rate_samples
+=========================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.skip_over_scalar_dissipation_rate_samples.skip_over_scalar_dissipation_rate_samples
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================   ================================
+
+Parent                                                                           Summary
+
+=====================================================   ================================
+:ref:`reaction_child <pre_processing_reaction_child>`   'child_object_type' of reaction.
+
+=====================================================   ================================
+

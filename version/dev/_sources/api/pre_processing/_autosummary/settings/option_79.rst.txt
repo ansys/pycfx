@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_option_79:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_271.option_79.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================   =====================================================================
+
+Parent                                                                                                                Summary
+
+=====================================================   =====================================================================
+:ref:`time_duration <pre_processing_time_duration>`     Specifies the length of time to be simulated in a transient analysis.
+
+:ref:`time_duration <pre_processing_time_duration_1>`   Specifies the length of time to be simulated in a transient analysis.
+
+=====================================================   =====================================================================
+

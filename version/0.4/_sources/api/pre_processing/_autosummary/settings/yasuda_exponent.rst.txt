@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_yasuda_exponent:
+
+yasuda_exponent
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.yasuda_exponent.yasuda_exponent
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================================   ==================================================================
+
+Parent                                                                                                                                           Summary
+
+===================================================================================   ==================================================================
+:ref:`non_newtonian_viscosity_model <pre_processing_non_newtonian_viscosity_model>`   Hold the details for an advanced description of dynamic viscosity.
+
+===================================================================================   ==================================================================
+

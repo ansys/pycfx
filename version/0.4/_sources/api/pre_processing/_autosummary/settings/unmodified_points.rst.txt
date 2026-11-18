@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_unmodified_points:
+
+unmodified_points
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.unmodified_points.unmodified_points
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================   ====================================
+
+Attribute                                                                  Summary
+
+===========================================   ====================================
+:ref:`enabled <pre_processing_enabled_248>`   Enable the UNMODIFIED POINTS object.
+
+:ref:`option <pre_processing_option_467>`          The 'Unmodified Points' option.
+
+===========================================   ====================================
+
+.. rubric:: Included in:
+
+=======================================================================   =================================
+
+Parent                                                                                              Summary
+
+=======================================================================   =================================
+:ref:`operating_point_changes <pre_processing_operating_point_changes>`   'OPERATING POINT CHANGES' object.
+
+=======================================================================   =================================
+

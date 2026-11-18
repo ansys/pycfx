@@ -1,0 +1,27 @@
+:orphan:
+
+.. _post_processing_boundary_values:
+
+boundary_values
+===============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.boundary_values.boundary_values
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==============================================================================   ============================================
+
+Parent                                                                                                                Summary
+
+==============================================================================   ============================================
+:ref:`vector_variable_child <post_processing_vector_variable_child>`                  'child_object_type' of vector_variable.
+
+:ref:`scalar_variable_child <post_processing_scalar_variable_child>`                  'child_object_type' of scalar_variable.
+
+:ref:`user_scalar_variable_child <post_processing_user_scalar_variable_child>`   'child_object_type' of user_scalar_variable.
+
+:ref:`user_vector_variable_child <post_processing_user_vector_variable_child>`   'child_object_type' of user_vector_variable.
+
+==============================================================================   ============================================
+

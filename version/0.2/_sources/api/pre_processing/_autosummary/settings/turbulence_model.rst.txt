@@ -1,0 +1,124 @@
+:orphan:
+
+.. _pre_processing_turbulence_model:
+
+turbulence_model
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.turbulence_model.turbulence_model
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================================   ==========================================================================================================================================
+
+Attribute                                                                                                                                                                                                            Summary
+
+===============================================================================   ==========================================================================================================================================
+:ref:`homogeneous_model <pre_processing_homogeneous_model>`                                                                                                               Specifies whether the model is homogeneous or not.
+
+:ref:`option <pre_processing_option_117>`                                                                                                                                                     The 'Turbulence Model' option.
+
+:ref:`model_version <pre_processing_model_version>`                               SST-SAS model version, features of version 2007: squared length scale ratio, high wave number damping, different model coefficient values.
+
+:ref:`jet_coefficient <pre_processing_jet_coefficient>`                                                                                                                                          GEKO free coefficient Cjet.
+
+:ref:`near_wall_coefficient <pre_processing_near_wall_coefficient>`                                                                                                                               GEKO free coefficient Cnw.
+
+:ref:`separation_coefficient <pre_processing_separation_coefficient>`                                                                                                                            GEKO free coefficient Csep.
+
+:ref:`eddy_length_scale <pre_processing_eddy_length_scale>`                                                                                                                                   'Eddy Length Scale' parameter.
+
+:ref:`velocity_scale <pre_processing_velocity_scale>`                                                                                                                                            'Velocity Scale' parameter.
+
+:ref:`eddy_viscosity <pre_processing_eddy_viscosity>`                                            Specify the eddy viscosity used with the selected turbulence model. Omission of this parameter implies the default formula.
+
+:ref:`smagorinsky_model_constant <pre_processing_smagorinsky_model_constant>`                                                                                                        'Smagorinsky Model Constant' parameter.
+
+:ref:`bc_tki_factor <pre_processing_bc_tki_factor>`                                                                                                Factor for turbulence intensity for "Autocompute Length" turbulence BC's.
+
+:ref:`betastar_coefficient <pre_processing_betastar_coefficient>`                                                                                                BetaStar k-Omega or SMC-Omega turbulence model coefficient.
+
+:ref:`cmu_coefficient <pre_processing_cmu_coefficient>`                                                                                                                                    Cmu turbulence model coefficient.
+
+:ref:`cnu1_coefficient <pre_processing_cnu1_coefficient>`                                                                                                         Cnu1 coefficient of the Spalart-Allmaras turbulence model.
+
+:ref:`compressible_production <pre_processing_compressible_production>`                                                                  1.0=analytical; 3.0=bounded for shocks (compressible turbulence production factor).
+
+:ref:`a1_coefficient <pre_processing_a1_coefficient>`                                                                                                                                                  A1 model coefficient.
+
+:ref:`limit_turbulent_timescale <pre_processing_limit_turbulent_timescale>`                                                                                                   Limit k/eps scale for k and epsilon equations.
+
+:ref:`dynamic_bulk_viscosity <pre_processing_dynamic_bulk_viscosity>`                                          Dynamic bulk viscosity (lambda+2/3 mu). Excluding this parameter recovers Stokes' hypothesis (lambda=2/3 mu).
+
+:ref:`dynmc_minimum <pre_processing_dynmc_minimum>`                                                                                                                      Minimum value of the LES dynamic model coefficient.
+
+:ref:`dynmc_maximum <pre_processing_dynmc_maximum>`                                                                                                                      Maximum value of the LES dynamic model coefficient.
+
+:ref:`wale_model_constant <pre_processing_wale_model_constant>`                                                                                                               Calibration coefficient of the LES WALE model.
+
+:ref:`mixing_coefficient <pre_processing_mixing_coefficient>`                                                                                                                                    GEKO free coefficient Cmix.
+
+:ref:`buoyancy_turbulence <pre_processing_buoyancy_turbulence>`                                                                                              Controls turbulence production and dissipation due to buoyancy.
+
+:ref:`sas_coefficients <pre_processing_sas_coefficients>`                                                                                                           Parameters of the SAS source term in the omega equation.
+
+:ref:`transitional_turbulence <pre_processing_transitional_turbulence>`                                                                                                       Defines the model for transitional turbulence.
+
+:ref:`turbulence_wall_damping <pre_processing_turbulence_wall_damping>`                                                                                                              Sets the turbulence wall damping model.
+
+:ref:`k_coefficients <pre_processing_k_coefficients>`                                                                                      Controls model coefficients for the Turbulence Kinetic Energy transport equation.
+
+:ref:`earsm_coefficients <pre_processing_earsm_coefficients>`                                                                                  Controls model coefficients for the explicit algebraic Reynolds stress model.
+
+:ref:`eddy_viscosity_coefficients <pre_processing_eddy_viscosity_coefficients>`                            Controls model coefficients for the Eddy Viscosity transport equation with the Spalart-Allmaras turbulence model.
+
+:ref:`epsilon_coefficients <pre_processing_epsilon_coefficients>`                                                                        Controls model coefficients for the Turbulence Eddy Dissipation transport equation.
+
+:ref:`rng_epsilon_coefficients <pre_processing_rng_epsilon_coefficients>`                                                    Controls model coefficients for the Turbulence Eddy Dissipation transport equation (RNG model).
+
+:ref:`omega_coefficients <pre_processing_omega_coefficients>`                                                                              Controls model coefficients for the Turbulence Eddy Frequency transport equation.
+
+:ref:`k_omega_regime <pre_processing_k_omega_regime>`                                                                                                  Controls Menter turbulence model coefficients for the k-Omega regime.
+
+:ref:`k_epsilon_regime <pre_processing_k_epsilon_regime>`                                                                                            Controls Menter turbulence model coefficients for the k-Epsilon regime.
+
+:ref:`geko_coefficients <pre_processing_geko_coefficients>`                                                                                             Provides auxiliary model coefficients for the GEKO turbulence model.
+
+:ref:`des_coefficients <pre_processing_des_coefficients>`                                                                                                   Controls blending between LES and RANS for DES turbulence model.
+
+:ref:`sbes_coefficients <pre_processing_sbes_coefficients>`                                                                                                Controls blending between LES and RANS for SBES turbulence model.
+
+:ref:`lrr_ip_rs_coefficients <pre_processing_lrr_ip_rs_coefficients>`                                          Controls model coefficients for the Reynolds Stress transport equations (simple pressure strain formulation).
+
+:ref:`rs_coefficients <pre_processing_rs_coefficients>`                                                       Controls model coefficients for the Reynolds Stress transport equations (general pressure strain formulation).
+
+:ref:`rs_epsilon_regime <pre_processing_rs_epsilon_regime>`                                                                            Controls Menter turbulence model coefficients for the Reynolds Stress-Epsilon regime.
+
+:ref:`rs_omega_regime <pre_processing_rs_omega_regime>`                                                                                  Controls Menter turbulence model coefficients for the Reynolds Stress-Omega regime.
+
+:ref:`production_limiter <pre_processing_production_limiter>`                                                                                                                                   'PRODUCTION LIMITER' object.
+
+:ref:`curvature_correction <pre_processing_curvature_correction>`                                                                                                                             'CURVATURE CORRECTION' object.
+
+:ref:`corner_correction <pre_processing_corner_correction>`                                                                                                                                      'CORNER CORRECTION' object.
+
+:ref:`reattachment_modification <pre_processing_reattachment_modification>`                                                                                                              'REATTACHMENT MODIFICATION' object.
+
+:ref:`high_lift_modification <pre_processing_high_lift_modification>`                                                                                                                       'HIGH LIFT MODIFICATION' object.
+
+:ref:`zonal_les_model <pre_processing_zonal_les_model>`                                                                                                                                            'ZONAL LES MODEL' object.
+
+===============================================================================   ==========================================================================================================================================
+
+.. rubric:: Included in:
+
+=================================================   ==============================================================================
+
+Parent                                                                                                                     Summary
+
+=================================================   ==============================================================================
+:ref:`fluid_models <pre_processing_fluid_models>`   Defines the model details that operate on individual fluids within the domain.
+
+=================================================   ==============================================================================
+

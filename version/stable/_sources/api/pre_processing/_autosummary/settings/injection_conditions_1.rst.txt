@@ -1,0 +1,44 @@
+:orphan:
+
+.. _pre_processing_injection_conditions_1:
+
+injection_conditions
+====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.injection_conditions_1.injection_conditions
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================   ========================================================
+
+Attribute                                                                                                            Summary
+
+=================================================================   ========================================================
+:ref:`flow_regime <pre_processing_flow_regime_1>`                            States if a boundary is subsonic or supersonic.
+
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum_4>`       Specifies conditions on Mass and Momentum at a boundary.
+
+:ref:`flow_direction <pre_processing_flow_direction_1>`                   Sets the velocity direction imposed at a boundary.
+
+:ref:`turbulence <pre_processing_turbulence_2>`                                 Sets conditions on turbulence at a boundary.
+
+:ref:`heat_transfer <pre_processing_heat_transfer_4>`                      Specifies heat transfer conditions at a boundary.
+
+:ref:`component <pre_processing_component_2>`                                             A container for Component objects.
+
+:ref:`additional_variable <pre_processing_additional_variable_4>`               A container for Additional Variable objects.
+
+=================================================================   ========================================================
+
+.. rubric:: Included in:
+
+=====================================================================   ========================================
+
+Parent                                                                                                   Summary
+
+=====================================================================   ========================================
+:ref:`injection_region_child <pre_processing_injection_region_child>`   'child_object_type' of injection_region.
+
+=====================================================================   ========================================
+

@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_gt_suite_material:
+
+gt_suite_material
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.gt_suite_material.gt_suite_material
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`gt_suite_material_child <pre_processing_gt_suite_material_child>`
+
+
+.. rubric:: Included in:
+
+=========================================================   ================================================================
+
+Parent                                                                                                               Summary
+
+=========================================================   ================================================================
+:ref:`material_mapping <pre_processing_material_mapping>`   Defines the physical models that are associated with boundaries.
+
+=========================================================   ================================================================
+

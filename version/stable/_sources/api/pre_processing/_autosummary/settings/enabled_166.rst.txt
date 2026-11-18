@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_166:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_166.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ====================================================================================================================
+
+Parent                                                                                                                                                                       Summary
+
+=============================================================   ====================================================================================================================
+:ref:`turbulence_control <pre_processing_turbulence_control>`   Sets the iteration number when the solver switches from Zero Equation turbulence model to the full turbulence model.
+
+=============================================================   ====================================================================================================================
+

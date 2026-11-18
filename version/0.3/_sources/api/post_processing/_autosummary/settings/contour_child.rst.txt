@@ -1,0 +1,113 @@
+:orphan:
+
+.. _post_processing_contour_child:
+
+contour_child
+=============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.contour_child.contour_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+========================================================================================   ======================================================================================================================================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                                                                                                                                                 Summary
+
+========================================================================================   ======================================================================================================================================================================================================================================================================================================================
+:ref:`apply_instancing_transform <post_processing_apply_instancing_transform>`                                                                                                                                                                                                                                                      Toggles the instancing transformation for this graphics object in the viewer.
+
+:ref:`clip_contour <post_processing_clip_contour>`                                                                                                                                                                                                                                                                                                                   Enables/disables clipping in a contour plot.
+
+:ref:`colour_map <post_processing_colour_map>`                                                                                                                                                                                                                                                                                                       The name of the colour map to use when colouring the object.
+
+:ref:`colour_scale <post_processing_colour_scale>`                                                                                                                                                                                                                                                  Sets whether to colour the object with a Linear or Logarithmic scale. By default, the colour scale is Linear.
+
+:ref:`colour_variable <post_processing_colour_variable>`                                                                                                                                                                                                                     The name of the variable to be used in colouring the object. Should be set equal to the name of a currently defined VARIABLE object.
+
+:ref:`colour_variable_boundary_values <post_processing_colour_variable_boundary_values>`                                                                                                                                                                                                           Sets the type of boundary values to be presented for colour variables in this object (Conservative or Hybrid).
+
+:ref:`constant_contour_colour <post_processing_constant_contour_colour>`                                                                                                                                                                                      If set to On, then the "Line Colour" parameter is used to determine the contour colour. Otherwise, the contour is coloured by the contour variable.
+
+:ref:`contour_range <post_processing_contour_range>`                                       Sets the method used to calculate a contour plot. "Global" uses the range of variable values in the problem domain. "Local" uses the range of values on the specified list of objects. "User Specified" uses Min and Max parameter value. "Value List" plots contours on the values specified in Value List parameter.
+
+:ref:`culling_mode <post_processing_culling_mode>`                                                                                                                                                                                                                                                                                                        Controls the face culling of this object in the viewer.
+
+:ref:`domain_list <post_processing_domain_list>`                                                                                                                                                                                                                                                                                                            The list of domains over which to define this object.
+
+:ref:`draw_contours <post_processing_draw_contours_1>`                                                                                                                                                                                                                                                                                                                                     'draw_contours' child.
+
+:ref:`font <post_processing_font>`                                                                                                                                                                                                                                                                                                                                             The font name for an item of text.
+
+:ref:`fringe_fill <post_processing_fringe_fill>`                                                                                                                                                                                                                                                                          If set to On, the space between contours in a contour plot is filled with fringe bands.
+
+:ref:`instancing_transform <post_processing_instancing_transform>`                                                                                                                                                                                                                                                                           Defines the TRANSFORM object that is used for the object instancing.
+
+:ref:`lighting <post_processing_lighting>`                                                                                                                                                                                                                                                                                                            Toggles the lighting of this graphics object in the viewer.
+
+:ref:`line_colour <post_processing_line_colour>`                                                                                                                                                                                                                A list of three numbers between 0 and 1, which represent the RGB (Red/Green/Blue) values to be used for colouring the lines on a graphics object.
+
+:ref:`line_colour_mode <post_processing_line_colour_mode>`                                                                                                                                                                                                                                                                                                          Determines where to get the line colour from.
+
+:ref:`line_width <post_processing_line_width>`                                                                                                                                                                                                                                                                                            Controls the width (in pixels) of lines drawn for this graphics object.
+
+:ref:`location_list <post_processing_location_list>`                                                                                                                                                                                                                                                                                                                     A comma delimited list of locator names.
+
+:ref:`max <post_processing_max>`                                                                                                                                                                                                                                                                                           The maximum value of a variable in the colour map when using a "User Specified" range.
+
+:ref:`min <post_processing_min>`                                                                                                                                                                                                                                                                                           The minimum value of a variable in the colour map when using a "User Specified" range.
+
+:ref:`number_of_contours <post_processing_number_of_contours>`                                                                                                                                                                                                                                                                                               Specifies number of contour lines in a contour plot.
+
+:ref:`show_numbers <post_processing_show_numbers>`                                                                                                                                                                                                                                                                                                                                     Toggles contour numbering.
+
+:ref:`specular_lighting <post_processing_specular_lighting>`                                                                                                                                                                                                                                                                                          Toggles the specular lighting of this object in the viewer.
+
+:ref:`surface_drawing <post_processing_surface_drawing>`                                                                                                                                                                                                                                                                                     Sets the algorithm used to shade the faces for this graphics object.
+
+:ref:`text_colour <post_processing_text_colour>`                                                                                                                                                                                                                                     A list of three numbers between 0 and 1, which represent the RGB (Red/Green/Blue) values to be used when colouring the text.
+
+:ref:`text_colour_mode <post_processing_text_colour_mode>`                                                                                                                                                                                                                                                                                                          Determines where to get the text colour from.
+
+:ref:`text_height <post_processing_text_height>`                                                                                                                                                                                                                                                                                                The height an item of text should be, proportional to the screen.
+
+:ref:`transparency <post_processing_transparency>`                                                                                                                                                                                                                                  Set between 0.0 (fully opaque) and 1.0 (fully transparent) to control the transparency of this graphics object in the viewer.
+
+:ref:`use_face_values <post_processing_use_face_values>`                                                                                                                                                                                                                                   Specifies whether Contours are computed using face values. If set to "false", Contours are computed using node values.
+
+:ref:`value_list <post_processing_value_list>`                                                                                                                                                                                                                            Specifies a list of variable values for a contour plot. In order for this list to be used, Contour Range has to be set to "Value List".
+
+:ref:`visibility <post_processing_visibility>`                                                                                                                                                                                                                                                                       Toggles the visibility of this graphics object in the viewer. THIS PARAMETER IS DEPRECATED!.
+
+:ref:`object_view_transform <post_processing_object_view_transform>`                                                                                                                                        This object contains object transformation info to be processed by the viewer. Like instance transform, this object should be associated with each geometry. It is usually specified as a sub-object.
+
+========================================================================================   ======================================================================================================================================================================================================================================================================================================================
+
+.. rubric:: Methods
+
+============================================   ========================================
+
+Method                                                                          Summary
+
+============================================   ========================================
+:ref:`hide <post_processing_hide>`                  Hide the object in a given view(s).
+
+:ref:`show <post_processing_show>`                  Show the object in a given view(s).
+
+:ref:`suspend <post_processing_suspend>`       Suspend immediate update for the object.
+
+:ref:`unsuspend <post_processing_unsuspend>`   Restore immediate update for the object.
+
+============================================   ========================================
+
+.. rubric:: Included in:
+
+========================================   ================
+
+Parent                                              Summary
+
+========================================   ================
+:ref:`contour <post_processing_contour>`   'contour' child.
+
+========================================   ================
+

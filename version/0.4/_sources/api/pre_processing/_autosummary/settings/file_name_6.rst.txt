@@ -1,0 +1,35 @@
+:orphan:
+
+.. _pre_processing_file_name_6:
+
+file_name
+=========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.file_name_6.file_name
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================================   ===========================================
+
+Parent                                                                                                                      Summary
+
+=====================================================================================   ===========================================
+:ref:`data_source <pre_processing_data_source>`                                                               'DATA SOURCE' object.
+
+:ref:`gt_suite_model_child <pre_processing_gt_suite_model_child>`                            'child_object_type' of gt_suite_model.
+
+:ref:`data_source <pre_processing_data_source_1>`                                                             'DATA SOURCE' object.
+
+:ref:`export_mapping <pre_processing_export_mapping>`                                                      'EXPORT MAPPING' object.
+
+:ref:`icem_cfd_geometry_control <pre_processing_icem_cfd_geometry_control>`             Add geometry controls for ICEM CFD meshing.
+
+:ref:`icem_cfd_mesh_control <pre_processing_icem_cfd_mesh_control>`                         Add mesh controls for ICEM CFD meshing.
+
+:ref:`initial_values_child <pre_processing_initial_values_child>`                            'child_object_type' of initial_values.
+
+:ref:`run_continuation_specification <pre_processing_run_continuation_specification>`      'RUN CONTINUATION SPECIFICATION' object.
+
+=====================================================================================   ===========================================
+

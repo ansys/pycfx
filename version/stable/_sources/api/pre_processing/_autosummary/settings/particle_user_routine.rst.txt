@@ -1,0 +1,37 @@
+:orphan:
+
+.. _pre_processing_particle_user_routine:
+
+particle_user_routine
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.particle_user_routine.particle_user_routine
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================================================   =================================================
+
+Parent                                                                                                                                    Summary
+
+=============================================================================================   =================================================
+:ref:`multiphase_reaction_rate <pre_processing_multiphase_reaction_rate>`                                      'MULTIPHASE REACTION RATE' object.
+
+:ref:`particle_additional_variable_model <pre_processing_particle_additional_variable_model>`   Specifies the particle additional variable model.
+
+:ref:`drag_coefficient_1 <pre_processing_drag_coefficient_1>`                                                          'DRAG COEFFICIENT' object.
+
+:ref:`particle_user_source <pre_processing_particle_user_source>`                                                  'PARTICLE USER SOURCE' object.
+
+:ref:`particle_breakup <pre_processing_particle_breakup>`                                                             Defines the breakup method.
+
+:ref:`particle_collision_model <pre_processing_particle_collision_model>`                          Defines the particle-particle collision model.
+
+:ref:`injection_method <pre_processing_injection_method>`                                                           Defines the injection method.
+
+:ref:`particle_wall_film_interaction <pre_processing_particle_wall_film_interaction>`             Specifies particle-wall film interaction model.
+
+:ref:`particle_user_wall_interaction <pre_processing_particle_user_wall_interaction>`                    'PARTICLE USER WALL INTERACTION' object.
+
+=============================================================================================   =================================================
+

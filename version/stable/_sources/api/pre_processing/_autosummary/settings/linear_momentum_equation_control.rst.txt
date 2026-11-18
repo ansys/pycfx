@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_linear_momentum_equation_control:
+
+linear_momentum_equation_control
+================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.linear_momentum_equation_control.linear_momentum_equation_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================   ==================================================================================
+
+Attribute                                                                                                                                                Summary
+
+===========================================================================   ==================================================================================
+:ref:`enabled <pre_processing_enabled_202>`                                                                  Enable the LINEAR MOMENTUM EQUATION CONTROL object.
+
+:ref:`newmark_gamma_coefficient <pre_processing_newmark_gamma_coefficient>`   Newmark Gamma Coefficient for Angular Momentum Equations of the rigid body solver.
+
+:ref:`newmark_beta_coefficient <pre_processing_newmark_beta_coefficient>`      Newmark Beta Coefficient for Angular Momentum Equations of the rigid body solver.
+
+===========================================================================   ==================================================================================
+
+.. rubric:: Included in:
+
+=============================================================   =================================================
+
+Parent                                                                                                    Summary
+
+=============================================================   =================================================
+:ref:`rigid_body_control <pre_processing_rigid_body_control>`   Holds objects that control the rigid body solver.
+
+=============================================================   =================================================
+

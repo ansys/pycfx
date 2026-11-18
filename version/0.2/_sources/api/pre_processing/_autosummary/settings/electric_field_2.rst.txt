@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_electric_field_2:
+
+electric_field
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.electric_field_2.electric_field
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================================   ======================================================
+
+Attribute                                                                                                                              Summary
+
+=====================================================================================   ======================================================
+:ref:`option <pre_processing_option_291>`                                                                         The 'Electric Field' option.
+
+:ref:`electric_field_interface_model <pre_processing_electric_field_interface_model>`   Electric field transfer models for a domain interface.
+
+=====================================================================================   ======================================================
+
+.. rubric:: Included in:
+
+=====================================================================   ========================================================
+
+Parent                                                                                                                   Summary
+
+=====================================================================   ========================================================
+:ref:`solid_interface_models <pre_processing_solid_interface_models>`   Holds the definition of models specific to an interface.
+
+=====================================================================   ========================================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_388:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_388.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================================   ============================================
+
+Parent                                                                                                               Summary
+
+=============================================================================   ============================================
+:ref:`transient_statistics_child <pre_processing_transient_statistics_child>`   'child_object_type' of transient_statistics.
+
+=============================================================================   ============================================
+

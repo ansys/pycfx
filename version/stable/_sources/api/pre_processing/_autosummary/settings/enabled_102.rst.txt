@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_102:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_102.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================   ==============================
+
+Parent                                                                                     Summary
+
+=================================================================   ==============================
+:ref:`particle_user_source <pre_processing_particle_user_source>`   'PARTICLE USER SOURCE' object.
+
+=================================================================   ==============================
+

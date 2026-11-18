@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_primary_extent:
+
+primary_extent
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_271.primary_extent.primary_extent
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================   =========================
+
+Parent                                                                      Summary
+
+=======================================================   =========================
+:ref:`injection_model <pre_processing_injection_model>`   'INJECTION MODEL' object.
+
+=======================================================   =========================
+

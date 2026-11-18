@@ -1,0 +1,42 @@
+:orphan:
+
+.. _pre_processing_configuration_execution_control:
+
+configuration_execution_control
+===============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.configuration_execution_control.configuration_execution_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================================   ==================================================
+
+Attribute                                                                                                                      Summary
+
+=================================================================================   ==================================================
+:ref:`enabled <pre_processing_enabled_224>`                                         Enable the CONFIGURATION EXECUTION CONTROL object.
+
+:ref:`solver_step_control <pre_processing_solver_step_control>`                                          'SOLVER STEP CONTROL' object.
+
+:ref:`partitioner_step_control <pre_processing_partitioner_step_control>`                           'PARTITIONER STEP CONTROL' object.
+
+:ref:`interpolator_step_control <pre_processing_interpolator_step_control>`                        'INTERPOLATOR STEP CONTROL' object.
+
+:ref:`executable_selection <pre_processing_executable_selection>`                                       'EXECUTABLE SELECTION' object.
+
+:ref:`initial_values_specification <pre_processing_initial_values_specification>`               'INITIAL VALUES SPECIFICATION' object.
+
+=================================================================================   ==================================================
+
+.. rubric:: Included in:
+
+===============================================================   =====================================
+
+Parent                                                                                          Summary
+
+===============================================================   =====================================
+:ref:`configuration_child <pre_processing_configuration_child>`   'child_object_type' of configuration.
+
+===============================================================   =====================================
+

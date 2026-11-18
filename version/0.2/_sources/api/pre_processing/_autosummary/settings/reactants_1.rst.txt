@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_reactants_1:
+
+reactants
+=========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.reactants_1.reactants
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================   =======================================
+
+Attribute                                                                                 Summary
+
+=======================================================   =======================================
+:ref:`option <pre_processing_option_42>`                                  The 'Reactants' option.
+
+:ref:`materials_list <pre_processing_materials_list>`                 'Materials List' parameter.
+
+:ref:`child_material <pre_processing_child_material_3>`   A container for Child Material objects.
+
+=======================================================   =======================================
+
+.. rubric:: Included in:
+
+=======================================================================================   ===================================================================
+
+Parent                                                                                                                                                Summary
+
+=======================================================================================   ===================================================================
+:ref:`stoichiometric_mixture_fraction <pre_processing_stoichiometric_mixture_fraction>`   Defines the stoichiometric mixture fraction for a Flamelet library.
+
+=======================================================================================   ===================================================================
+

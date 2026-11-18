@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_time_chart_keep_single_case:
+
+time_chart_keep_single_case
+===========================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.time_chart_keep_single_case.time_chart_keep_single_case
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+================================================   =============================
+
+Parent                                                                   Summary
+
+================================================   =============================
+:ref:`chart_child <post_processing_chart_child>`   'child_object_type' of chart.
+
+================================================   =============================
+

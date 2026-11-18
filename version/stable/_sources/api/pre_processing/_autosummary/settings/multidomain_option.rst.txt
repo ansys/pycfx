@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_multidomain_option:
+
+multidomain_option
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.multidomain_option.multidomain_option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================================   ==================================
+
+Parent                                                                                                   Summary
+
+===========================================================================   ==================================
+:ref:`partitioner_step_control <pre_processing_partitioner_step_control>`     'PARTITIONER STEP CONTROL' object.
+
+:ref:`partitioner_step_control <pre_processing_partitioner_step_control_1>`   'PARTITIONER STEP CONTROL' object.
+
+===========================================================================   ==================================
+

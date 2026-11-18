@@ -1,0 +1,27 @@
+:orphan:
+
+.. _pre_processing_area_fraction:
+
+area_fraction
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.area_fraction.area_fraction
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================================   ===============================================================================================================
+
+Parent                                                                                                                                                                              Summary
+
+=========================================================================   ===============================================================================================================
+:ref:`shell_side_area_fraction <pre_processing_shell_side_area_fraction>`                                                                Holds the definition of shell fluid area fraction.
+
+:ref:`tube_side_area_fraction <pre_processing_tube_side_area_fraction>`                                                                   Holds the definition of tube fluid area fraction.
+
+:ref:`contact_area_model <pre_processing_contact_area_model_1>`                                                                       Specifies fluid-solid contact area for a given fluid.
+
+:ref:`wall_contact_area <pre_processing_wall_contact_area>`                 Specifies fluid-wall contact area for a given fluid under the WALL CONTACT MODEL: Option=Specify Area Fraction.
+
+=========================================================================   ===============================================================================================================
+

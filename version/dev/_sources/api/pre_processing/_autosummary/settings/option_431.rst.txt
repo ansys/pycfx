@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_431:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_271.option_431.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================   ========================================
+
+Parent                                                                                             Summary
+
+===============================================================   ========================================
+:ref:`linear_acceleration <pre_processing_linear_acceleration>`   Defines the initial rigid body velocity.
+
+===============================================================   ========================================
+

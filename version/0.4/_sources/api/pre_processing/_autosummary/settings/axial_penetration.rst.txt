@@ -1,0 +1,32 @@
+:orphan:
+
+.. _pre_processing_axial_penetration:
+
+axial_penetration
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.axial_penetration.axial_penetration
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================   ===============================
+
+Attribute                                                           Summary
+
+=========================================   ===============================
+:ref:`option <pre_processing_option_399>`   The 'Axial Penetration' option.
+
+=========================================   ===============================
+
+.. rubric:: Included in:
+
+=================================================================================================   ======================================================
+
+Parent                                                                                                                                             Summary
+
+=================================================================================================   ======================================================
+:ref:`transient_particle_diagnostics_child <pre_processing_transient_particle_diagnostics_child>`   'child_object_type' of transient_particle_diagnostics.
+
+=================================================================================================   ======================================================
+

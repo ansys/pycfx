@@ -1,0 +1,32 @@
+:orphan:
+
+.. _pre_processing_solid_child_1:
+
+solid_child
+===========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.solid_child_1.solid_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================   =============================================================
+
+Attribute                                                                                                                 Summary
+
+=================================================================   =============================================================
+:ref:`boundary_conditions <pre_processing_boundary_conditions_7>`   Specifies boundary conditions for all equations being solved.
+
+=================================================================   =============================================================
+
+.. rubric:: Included in:
+
+=====================================   ==============================
+
+Parent                                                         Summary
+
+=====================================   ==============================
+:ref:`solid <pre_processing_solid_1>`   A container for Solid objects.
+
+=====================================   ==============================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_additional_timestep_files:
+
+additional_timestep_files
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.additional_timestep_files.additional_timestep_files
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==============================================   ============================
+
+Parent                                                                Summary
+
+==============================================   ============================
+:ref:`case_child <post_processing_case_child>`   'child_object_type' of case.
+
+==============================================   ============================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_relative_pressure_in_gas:
+
+relative_pressure_in_gas
+========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.relative_pressure_in_gas.relative_pressure_in_gas
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ========================================================
+
+Parent                                                                                                         Summary
+
+===========================================================   ========================================================
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum>`   Specifies conditions on Mass and Momentum at a boundary.
+
+===========================================================   ========================================================
+

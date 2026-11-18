@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_ca1_constant:
+
+ca1_constant
+============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.ca1_constant.ca1_constant
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================================   =======================================================================
+
+Parent                                                                                                                                      Summary
+
+=========================================================================   =======================================================================
+:ref:`particle_primary_breakup <pre_processing_particle_primary_breakup>`   Defines the primary break-up model used to determine spray atomization.
+
+=========================================================================   =======================================================================
+

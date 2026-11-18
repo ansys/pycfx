@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_electrical_permittivity_1:
+
+electrical_permittivity
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.electrical_permittivity_1.electrical_permittivity
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================   ==========================================
+
+Attribute                                                                                                    Summary
+
+=======================================================================   ==========================================
+:ref:`enabled <pre_processing_enabled_17>`                                Enable the ELECTRICAL PERMITTIVITY object.
+
+:ref:`option <pre_processing_option_28>`                                       The 'Electrical Permittivity' option.
+
+:ref:`electrical_permittivity <pre_processing_electrical_permittivity>`         'Electrical Permittivity' parameter.
+
+=======================================================================   ==========================================
+
+.. rubric:: Included in:
+
+=============================================================   ========================================================================================================================================================================================================================================
+
+Parent                                                                                                                                                                                                                                                                                           Summary
+
+=============================================================   ========================================================================================================================================================================================================================================
+:ref:`properties <pre_processing_properties>`                                                                                                                                                                                            Holds the definition of all physical properties for a material.
+
+:ref:`mixture_properties <pre_processing_mixture_properties>`   Used as a container for specifying bulk properties of both fixed and variable composition mixtures. Ideal Mixture is the default rule for all properties. Individual properties can be overridden using the singleton for that property.
+
+=============================================================   ========================================================================================================================================================================================================================================
+
