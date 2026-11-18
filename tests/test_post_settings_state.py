@@ -20,6 +20,8 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+import pytest
+
 from ansys.cfx.core.session_post import PostProcessing
 from ansys.cfx.core.utils.cfx_version import CFXVersion
 
@@ -689,6 +691,9 @@ def test_set_var(pypost: PostProcessing, pytestconfig, capsys):
 
     The test includes systematic coverage of all the parameter types used by CFD-Post,
     plus related tests for object state."""
+
+    if pypost.get_cfx_version() == CFXVersion.v271:
+        pytest.skip("This test is temporarily excluded in Release 27.1.")
 
     # Load the file twice so that we have multiple domains
     # PostProcessing doesn't support multifile=append, so do it via CCL submission

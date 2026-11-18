@@ -92,7 +92,7 @@ def _set_container_image_env_vars():
 _set_container_image_env_vars()
 
 # Latest released CFX version
-CFX_RELEASE_VERSION = "26.1.0"
+CFX_RELEASE_VERSION = "27.1.0"
 
 # Current dev CFX version
 CFX_DEV_VERSION = "27.2.0"
