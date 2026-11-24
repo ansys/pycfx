@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_periodic_model:
+
+periodic_model
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.periodic_model.periodic_model
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   ===========================================
+
+Parent                                                                                          Summary
+
+=========================================================   ===========================================
+:ref:`mesh_deformation <pre_processing_mesh_deformation>`   Defines the method used to deform the mesh.
+
+=========================================================   ===========================================
+

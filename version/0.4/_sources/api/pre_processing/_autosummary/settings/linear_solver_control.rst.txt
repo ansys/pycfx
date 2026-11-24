@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_linear_solver_control:
+
+linear_solver_control
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.linear_solver_control.linear_solver_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================   ========================================
+
+Attribute                                                                                        Summary
+
+=============================================================   ========================================
+:ref:`enabled <pre_processing_enabled_206>`                     Enable the LINEAR SOLVER CONTROL object.
+
+:ref:`option <pre_processing_option_383>`                            The 'Linear Solver Control' option.
+
+:ref:`optimization_level <pre_processing_optimization_level>`            'Optimization Level' parameter.
+
+=============================================================   ========================================
+
+.. rubric:: Included in:
+
+=======================================================   ====================================================================================
+
+Parent                                                                                                                                 Summary
+
+=======================================================   ====================================================================================
+:ref:`solver_control <pre_processing_solver_control_1>`   Holds all objects that control discretization and execution of the solution process.
+
+=======================================================   ====================================================================================
+

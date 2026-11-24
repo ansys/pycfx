@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_boundary_2:
+
+boundary
+========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.boundary_2.boundary
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=======================================================================   ======================================================================================
+
+Parent                                                                                                                                                   Summary
+
+=======================================================================   ======================================================================================
+:ref:`location_type <pre_processing_location_type_1>`                     Defines the type of location, physics or mesh regions, to compute aerodynamic damping.
+
+:ref:`icem_cfd_part_map_child <pre_processing_icem_cfd_part_map_child>`                                                'child_object_type' of icem_cfd_part_map.
+
+=======================================================================   ======================================================================================
+

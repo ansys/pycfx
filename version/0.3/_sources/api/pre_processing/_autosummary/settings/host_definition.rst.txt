@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_host_definition:
+
+host_definition
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.host_definition.host_definition
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`host_definition_child <pre_processing_host_definition_child>`
+
+
+.. rubric:: Included in:
+
+===================================================================   ===============================
+
+Parent                                                                                        Summary
+
+===================================================================   ===============================
+:ref:`parallel_host_library <pre_processing_parallel_host_library>`   'PARALLEL HOST LIBRARY' object.
+
+===================================================================   ===============================
+

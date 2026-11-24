@@ -1,0 +1,91 @@
+:orphan:
+
+.. _post_processing_viewport_manager:
+
+viewport_manager
+================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.viewport_manager.viewport_manager
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+==========================================================================   ===============================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                            Summary
+
+==========================================================================   ===============================================================================================================================================================
+:ref:`background_colour <post_processing_background_colour>`                                                                                                                 Defines the R, G and B values for the viewer background colour.
+
+:ref:`background_colour_2 <post_processing_background_colour_2>`                                                                                 Defines the R, G and B values for the second viewer background colour (used for gradients).
+
+:ref:`background_colour_type <post_processing_background_colour_type>`                                                                                                Specifies the type of background colour gradient to use in the viewer.
+
+:ref:`background_image <post_processing_background_image>`                                                                                                                                                      The predefined image to use.
+
+:ref:`background_image_file <post_processing_background_image_file>`                                                                                                                        The image file to use for the viewer background.
+
+:ref:`background_image_mapping <post_processing_background_image_mapping>`                      Flat - image is mapped as a flat background; Spherical - image is mapped to a background sphere (must have 2x1 width to height pixel ratio).
+
+:ref:`background_image_type <post_processing_background_image_type>`                                                                                                                                               The type of image to use.
+
+:ref:`background_type <post_processing_background_type>`                                                                                                                              Specifies the type of background to use in the viewer.
+
+:ref:`global_edge_colour <post_processing_global_edge_colour>`                                                                                                                                Defines the global colour used for mesh edges.
+
+:ref:`global_text_colour <post_processing_global_text_colour>`                                                                                                                              Defines the global colour used for Text objects.
+
+:ref:`maximized_viewport <post_processing_maximized_viewport>`                                                     If set to a viewport number (1-4), the viewport will be resized to fill up the screen, regardless of the viewport layout.
+
+:ref:`synchronize_camera <post_processing_synchronize_camera>`                                                                                                                Specifies if cameras in the active views will be synchronized.
+
+:ref:`synchronize_visibility <post_processing_synchronize_visibility>`                                                                                        Specifies if visibility of an object in the active views will be synchronized.
+
+:ref:`view_length_units <post_processing_view_length_units>`                                                                                                                                                    Length units used in viewer.
+
+:ref:`viewer_camera_z <post_processing_viewer_camera_z>`                                                                                                                   Specifies the distance from the scene origin to the screen plane.
+
+:ref:`viewer_eye_point <post_processing_viewer_eye_point>`                                                                                                                           Specifies whether to place the viewer in a Stereo mode.
+
+:ref:`viewer_eye_separation <post_processing_viewer_eye_separation>`         Specifies the distance between the eyes for Stereo Mode. A larger number will increase the stereo effect, and a smaller number will decrease the stereo effect.
+
+:ref:`viewport_1_view <post_processing_viewport_1_view>`                                                                                                                                  Specifies the VIEW that Viewport 1 should display.
+
+:ref:`viewport_2_view <post_processing_viewport_2_view>`                                                                                                                                  Specifies the VIEW that Viewport 2 should display.
+
+:ref:`viewport_3_view <post_processing_viewport_3_view>`                                                                                                                                  Specifies the VIEW that Viewport 3 should display.
+
+:ref:`viewport_4_view <post_processing_viewport_4_view>`                                                                                                                                  Specifies the VIEW that Viewport 4 should display.
+
+:ref:`viewport_layout <post_processing_viewport_layout>`                                                                                                                                                  Specifies the layout of viewports.
+
+:ref:`x_split <post_processing_x_split>`                                                                                                                                          The normalized location of the vertical viewport splitter.
+
+:ref:`y_split <post_processing_y_split>`                                                                                                                                        The normalized location of the horizontal viewport splitter.
+
+==========================================================================   ===============================================================================================================================================================
+
+.. rubric:: Methods
+
+============================================   ========================================
+
+Method                                                                          Summary
+
+============================================   ========================================
+:ref:`suspend <post_processing_suspend>`       Suspend immediate update for the object.
+
+:ref:`unsuspend <post_processing_unsuspend>`   Restore immediate update for the object.
+
+============================================   ========================================
+
+.. rubric:: Included in:
+
+========================================   =========================================
+
+Parent                                                                       Summary
+
+========================================   =========================================
+:ref:`results <post_processing_results>`   Encapsulates a CFX post-processing setup.
+
+========================================   =========================================
+

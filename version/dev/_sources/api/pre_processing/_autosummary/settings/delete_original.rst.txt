@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_delete_original:
+
+delete_original
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_271.delete_original.delete_original
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================   =========================================================================
+
+Parent                                                                                                                    Summary
+
+=====================================================   =========================================================================
+:ref:`transform_mesh <pre_processing_transform_mesh>`   Transform the mesh. Various types of transformation are available: 'Turbo
+
+=====================================================   =========================================================================
+

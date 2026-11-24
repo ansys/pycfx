@@ -1,0 +1,26 @@
+:orphan:
+
+.. _post_processing_injection_region:
+
+injection_region
+================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.injection_region.injection_region
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`injection_region_child <post_processing_injection_region_child>`
+
+
+.. rubric:: Included in:
+
+========================================   =========================================
+
+Parent                                                                       Summary
+
+========================================   =========================================
+:ref:`results <post_processing_results>`   Encapsulates a CFX post-processing setup.
+
+========================================   =========================================
+

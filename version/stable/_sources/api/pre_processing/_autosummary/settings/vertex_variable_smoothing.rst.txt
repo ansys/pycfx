@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_vertex_variable_smoothing:
+
+vertex_variable_smoothing
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.vertex_variable_smoothing.vertex_variable_smoothing
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================   ============================================
+
+Attribute                                                                          Summary
+
+===========================================   ============================================
+:ref:`enabled <pre_processing_enabled_178>`   Enable the VERTEX VARIABLE SMOOTHING object.
+
+:ref:`option <pre_processing_option_376>`          The 'Vertex Variable Smoothing' option.
+
+===========================================   ============================================
+
+.. rubric:: Included in:
+
+=========================================================   ==============================================================================
+
+Parent                                                                                                                             Summary
+
+=========================================================   ==============================================================================
+:ref:`particle_control <pre_processing_particle_control>`   Holds objects that control the execution and convergence of particle tracking.
+
+=========================================================   ==============================================================================
+

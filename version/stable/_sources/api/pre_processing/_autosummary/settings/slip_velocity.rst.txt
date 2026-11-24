@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_slip_velocity:
+
+slip_velocity
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.slip_velocity.slip_velocity
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================   ================================
+
+Attribute                                                                          Summary
+
+=======================================================   ================================
+:ref:`enabled <pre_processing_enabled_94>`                Enable the SLIP VELOCITY object.
+
+:ref:`slip_velocity_u <pre_processing_slip_velocity_u>`       'Slip Velocity U' parameter.
+
+:ref:`slip_velocity_v <pre_processing_slip_velocity_v>`       'Slip Velocity V' parameter.
+
+:ref:`slip_velocity_w <pre_processing_slip_velocity_w>`       'Slip Velocity W' parameter.
+
+=======================================================   ================================
+
+.. rubric:: Included in:
+
+=========================================================   =================================
+
+Parent                                                                                Summary
+
+=========================================================   =================================
+:ref:`component_child <pre_processing_component_child>`     'child_object_type' of component.
+
+:ref:`component_child <pre_processing_component_child_1>`   'child_object_type' of component.
+
+=========================================================   =================================
+

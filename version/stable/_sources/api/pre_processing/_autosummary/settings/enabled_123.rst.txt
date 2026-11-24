@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_123:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_123.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================   ==============================================================
+
+Parent                                                                                                       Summary
+
+===================================================   ==============================================================
+:ref:`sonic_limiter <pre_processing_sonic_limiter>`   States if a subsonic boundary should choke to remain subsonic.
+
+===================================================   ==============================================================
+

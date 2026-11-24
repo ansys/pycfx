@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_domain_search_control:
+
+domain_search_control
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.domain_search_control.domain_search_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================   ========================================
+
+Attribute                                                                                                Summary
+
+=====================================================================   ========================================
+:ref:`enabled <pre_processing_enabled_235>`                             Enable the DOMAIN SEARCH CONTROL object.
+
+:ref:`bounding_box_tolerance <pre_processing_bounding_box_tolerance>`        'Bounding Box Tolerance' parameter.
+
+=====================================================================   ========================================
+
+.. rubric:: Included in:
+
+===========================================================================   ===================================
+
+Parent                                                                                                    Summary
+
+===========================================================================   ===================================
+:ref:`interpolator_step_control <pre_processing_interpolator_step_control>`   'INTERPOLATOR STEP CONTROL' object.
+
+===========================================================================   ===================================
+

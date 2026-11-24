@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_buoyancy_turbulence:
+
+buoyancy_turbulence
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.buoyancy_turbulence.buoyancy_turbulence
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================   =======================================================================================
+
+Attribute                                                                                                                                                   Summary
+
+=========================================================================   =======================================================================================
+:ref:`option <pre_processing_option_118>`                                                                                         The 'Buoyancy Turbulence' option.
+
+:ref:`turbulent_schmidt_number <pre_processing_turbulent_schmidt_number>`            Turbulent Schmidt number for a quantity (density in buoyancy turbulence term).
+
+:ref:`dissipation_coefficient <pre_processing_dissipation_coefficient>`     Scale factor for buoyancy turbulence dissipation and particle induced turbulence terms.
+
+:ref:`directional_dissipation <pre_processing_directional_dissipation>`                         Flag controlling directional buoyancy turbulence dissipation model.
+
+=========================================================================   =======================================================================================
+
+.. rubric:: Included in:
+
+===========================================================   ===========================================================================
+
+Parent                                                                                                                            Summary
+
+===========================================================   ===========================================================================
+:ref:`turbulence_model <pre_processing_turbulence_model>`     Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+:ref:`turbulence_model <pre_processing_turbulence_model_1>`   Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+===========================================================   ===========================================================================
+

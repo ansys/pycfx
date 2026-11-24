@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_elapsed_wall_clock_time:
+
+elapsed_wall_clock_time
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.elapsed_wall_clock_time.elapsed_wall_clock_time
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================   ==========================================
+
+Attribute                                                                              Summary
+
+=================================================   ==========================================
+:ref:`enabled <pre_processing_enabled_196>`         Enable the ELAPSED WALL CLOCK TIME object.
+
+:ref:`option <pre_processing_option_380>`                The 'Elapsed Wall Clock Time' option.
+
+:ref:`elapsed_time <pre_processing_elapsed_time>`           Allowed wall clock time for a run.
+
+=================================================   ==========================================
+
+.. rubric:: Included in:
+
+=======================================================   ====================================================================================
+
+Parent                                                                                                                                 Summary
+
+=======================================================   ====================================================================================
+:ref:`solver_control <pre_processing_solver_control_1>`   Holds all objects that control discretization and execution of the solution process.
+
+=======================================================   ====================================================================================
+

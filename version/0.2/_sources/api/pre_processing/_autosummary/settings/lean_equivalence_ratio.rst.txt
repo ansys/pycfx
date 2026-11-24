@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_lean_equivalence_ratio:
+
+lean_equivalence_ratio
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.lean_equivalence_ratio.lean_equivalence_ratio
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================   =========================================
+
+Parent                                                                                              Summary
+
+===============================================================   =========================================
+:ref:`flammability_limits <pre_processing_flammability_limits>`   Equivalence ratio range for flammability.
+
+:ref:`fit_range <pre_processing_fit_range>`                        Equivalence ratio range for correlation.
+
+===============================================================   =========================================
+

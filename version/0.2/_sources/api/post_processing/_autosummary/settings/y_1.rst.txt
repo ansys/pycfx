@@ -1,0 +1,25 @@
+:orphan:
+
+.. _post_processing_y_1:
+
+y
+=
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.y_1.y
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==========================================================================================   ==================================================
+
+Parent                                                                                                                                  Summary
+
+==========================================================================================   ==================================================
+:ref:`domain_child <post_processing_domain_child>`                                                               'child_object_type' of domain.
+
+:ref:`default_instance_transform_child <post_processing_default_instance_transform_child>`   'child_object_type' of default_instance_transform.
+
+:ref:`instance_transform_child <post_processing_instance_transform_child>`                           'child_object_type' of instance_transform.
+
+==========================================================================================   ==================================================
+

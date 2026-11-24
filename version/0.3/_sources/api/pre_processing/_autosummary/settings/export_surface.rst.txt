@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_export_surface:
+
+export_surface
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.export_surface.export_surface
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`export_surface_child <pre_processing_export_surface_child>`
+
+
+.. rubric:: Included in:
+
+=================================================================   ======================================
+
+Parent                                                                                             Summary
+
+=================================================================   ======================================
+:ref:`export_results_child <pre_processing_export_results_child>`   'child_object_type' of export_results.
+
+=================================================================   ======================================
+

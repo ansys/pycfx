@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_377:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_377.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================================   =======================================================================
+
+Parent                                                                                                                                          Summary
+
+=============================================================================   =======================================================================
+:ref:`pressure_level_information <pre_processing_pressure_level_information>`   Sets the pressure level and location if not set by boundary conditions.
+
+=============================================================================   =======================================================================
+

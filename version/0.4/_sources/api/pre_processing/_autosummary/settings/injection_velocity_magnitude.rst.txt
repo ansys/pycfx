@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_injection_velocity_magnitude:
+
+injection_velocity_magnitude
+============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.injection_velocity_magnitude.injection_velocity_magnitude
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================   =============================
+
+Parent                                                                                  Summary
+
+===============================================================   =============================
+:ref:`injection_method <pre_processing_injection_method>`         Defines the injection method.
+
+:ref:`injection_velocity <pre_processing_injection_velocity>`      'INJECTION VELOCITY' object.
+
+:ref:`injection_velocity <pre_processing_injection_velocity_1>`    'INJECTION VELOCITY' object.
+
+===============================================================   =============================
+

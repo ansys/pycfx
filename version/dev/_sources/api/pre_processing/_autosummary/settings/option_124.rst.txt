@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_124:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_271.option_124.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================================   =================================================================
+
+Parent                                                                                                                          Summary
+
+===================================================================   =================================================================
+:ref:`roughness_correlation <pre_processing_roughness_correlation>`   Defines the correlation for onset of transition due to roughness.
+
+===================================================================   =================================================================
+

@@ -1,0 +1,72 @@
+:orphan:
+
+.. _pre_processing_reaction_child:
+
+reaction_child
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.reaction_child.reaction_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================================================   ================================================================================================================
+
+Attribute                                                                                                                                                                                                              Summary
+
+===========================================================================================================   ================================================================================================================
+:ref:`option <pre_processing_option_41>`                                                                                                                                                                The 'Reaction' option.
+
+:ref:`object_origin <pre_processing_object_origin>`                                                                                                                                     Where the Object definition came from.
+
+:ref:`reactions_list <pre_processing_reactions_list>`                                                                                                                                              'Reactions List' parameter.
+
+:ref:`library_file <pre_processing_library_file>`                                                                                                                                                    File holding the library.
+
+:ref:`materials_list <pre_processing_materials_list_1>`                                                                                                                                            'Materials List' parameter.
+
+:ref:`material_amount_option <pre_processing_material_amount_option>`                                                                                                                                  Material amount option.
+
+:ref:`reaction_description <pre_processing_reaction_description>`                                                                            Description of reaction, e.g. fuel and boundary conditions of a flamelet library.
+
+:ref:`long_name <pre_processing_long_name>`                                                                                                                                                             'Long Name' parameter.
+
+:ref:`additional_materials_list <pre_processing_additional_materials_list>`                                                                                                             'Additional Materials List' parameter.
+
+:ref:`skip_over_scalar_dissipation_rate_samples <pre_processing_skip_over_scalar_dissipation_rate_samples>`   Skip over leading N Scalar Dissipation Rate samples in Flamelet library (0 or 1 for CFX-TASCflow compatibility).
+
+:ref:`reactants <pre_processing_reactants>`                                                                                                                           Specifies the reactant materials in a chemical reaction.
+
+:ref:`products <pre_processing_products>`                                                                                                                              Defines the method of product generation in a reaction.
+
+:ref:`multiphase_reaction_rate <pre_processing_multiphase_reaction_rate>`                                                                                                                   'MULTIPHASE REACTION RATE' object.
+
+:ref:`heat_release_distribution <pre_processing_heat_release_distribution>`                                                                                                                'HEAT RELEASE DISTRIBUTION' object.
+
+:ref:`heat_release <pre_processing_heat_release>`                                                                                                                     Holds heat release information for multiphase reactions.
+
+:ref:`stoichiometric_mixture_fraction <pre_processing_stoichiometric_mixture_fraction>`                                                                    Defines the stoichiometric mixture fraction for a Flamelet library.
+
+:ref:`forward_reaction_rate <pre_processing_forward_reaction_rate>`                                                                                                                            'FORWARD REACTION RATE' object.
+
+:ref:`backward_reaction_rate <pre_processing_backward_reaction_rate>`                                                                                                      Defines the backwards rate for a chemical reaction.
+
+:ref:`third_body_term <pre_processing_third_body_term>`                                                                                                            Sets the Third Body (catalyst) term in a chemical reaction.
+
+:ref:`laminar_burning_velocity <pre_processing_laminar_burning_velocity_1>`                                                                Defines the laminar burning velocity for premixed or partially premixed combustion.
+
+:ref:`combustion_model <pre_processing_combustion_model>`                                                                                                                             Defines the combustion model to be used.
+
+===========================================================================================================   ================================================================================================================
+
+.. rubric:: Included in:
+
+=========================================   =================================
+
+Parent                                                                Summary
+
+=========================================   =================================
+:ref:`reaction <pre_processing_reaction>`   A container for Reaction objects.
+
+=========================================   =================================
+

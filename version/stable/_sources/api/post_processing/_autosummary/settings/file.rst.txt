@@ -1,0 +1,38 @@
+:orphan:
+
+.. _post_processing_file:
+
+file
+====
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.file.file
+    :show-inheritance:
+
+.. rubric:: Methods
+
+==================================================   ===================================
+
+Method                                                                           Summary
+
+==================================================   ===================================
+:ref:`load_results <post_processing_load_results>`                  Load a results file.
+
+:ref:`load_session <post_processing_load_session>`         Load a CFD-Post session file.
+
+:ref:`load_state <post_processing_load_state>`               Load a CFD-Post state file.
+
+:ref:`save_picture <post_processing_save_picture>`   Saves an image of the current view.
+
+==================================================   ===================================
+
+.. rubric:: Included in:
+
+======================================   ===========================================
+
+Parent                                                                       Summary
+
+======================================   ===========================================
+:ref:`root <ref_post_processing_root>`   Encapsulates a CFX post-processing session.
+
+======================================   ===========================================
+

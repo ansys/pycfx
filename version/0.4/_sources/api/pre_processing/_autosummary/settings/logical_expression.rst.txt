@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_logical_expression:
+
+logical_expression
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.logical_expression.logical_expression
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================================================   ===========================================
+
+Parent                                                                                                                      Summary
+
+=====================================================================================   ===========================================
+:ref:`conditional_connection_control <pre_processing_conditional_connection_control>`     Interface conditional connection control.
+
+:ref:`interrupt_condition_child <pre_processing_interrupt_condition_child>`             'child_object_type' of interrupt_condition.
+
+=====================================================================================   ===========================================
+

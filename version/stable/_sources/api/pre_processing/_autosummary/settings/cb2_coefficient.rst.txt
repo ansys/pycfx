@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_cb2_coefficient:
+
+cb2_coefficient
+===============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.cb2_coefficient.cb2_coefficient
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================================   =================================================================================================================
+
+Parent                                                                                                                                                                                      Summary
+
+===============================================================================   =================================================================================================================
+:ref:`eddy_viscosity_coefficients <pre_processing_eddy_viscosity_coefficients>`   Controls model coefficients for the Eddy Viscosity transport equation with the Spalart-Allmaras turbulence model.
+
+===============================================================================   =================================================================================================================
+

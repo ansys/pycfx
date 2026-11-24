@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_c_shielded_des:
+
+c_shielded_des
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.c_shielded_des.c_shielded_des
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   =================================================================
+
+Parent                                                                                                                  Summary
+
+===========================================================   =================================================================
+:ref:`des_coefficients <pre_processing_des_coefficients>`      Controls blending between LES and RANS for DES turbulence model.
+
+:ref:`sbes_coefficients <pre_processing_sbes_coefficients>`   Controls blending between LES and RANS for SBES turbulence model.
+
+===========================================================   =================================================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_passages_per_mesh:
+
+passages_per_mesh
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_271.passages_per_mesh.passages_per_mesh
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================   =========================================================================
+
+Parent                                                                                                                    Summary
+
+=====================================================   =========================================================================
+:ref:`transform_mesh <pre_processing_transform_mesh>`   Transform the mesh. Various types of transformation are available: 'Turbo
+
+=====================================================   =========================================================================
+

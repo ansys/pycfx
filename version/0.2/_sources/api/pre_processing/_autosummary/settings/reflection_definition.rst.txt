@@ -1,0 +1,48 @@
+:orphan:
+
+.. _pre_processing_reflection_definition:
+
+reflection_definition
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.reflection_definition.reflection_definition
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================   =======================================================================
+
+Attribute                                                                                                                             Summary
+
+===================================================================   =======================================================================
+:ref:`option <pre_processing_option_73>`                                                                  The 'Reflection Definition' option.
+
+:ref:`xvalue <pre_processing_xvalue>`                                 Input expression for vector VARIABLE component value in relevant units.
+
+:ref:`yvalue <pre_processing_yvalue>`                                 Input expression for vector VARIABLE component value in relevant units.
+
+:ref:`zvalue <pre_processing_zvalue>`                                 Input expression for vector VARIABLE component value in relevant units.
+
+:ref:`cartesian_coordinates <pre_processing_cartesian_coordinates>`                       Position <x,y,z> specified by cartesian components.
+
+:ref:`normal_direction <pre_processing_normal_direction>`                                                       'Normal Direction' parameter.
+
+:ref:`point_1 <pre_processing_point_1>`                                                                                  'Point 1' parameter.
+
+:ref:`point_2 <pre_processing_point_2>`                                                                                  'Point 2' parameter.
+
+:ref:`point_3 <pre_processing_point_3>`                                                                                  'Point 3' parameter.
+
+===================================================================   =======================================================================
+
+.. rubric:: Included in:
+
+=================================================================   ======================================
+
+Parent                                                                                             Summary
+
+=================================================================   ======================================
+:ref:`transformation_child <pre_processing_transformation_child>`   'child_object_type' of transformation.
+
+=================================================================   ======================================
+

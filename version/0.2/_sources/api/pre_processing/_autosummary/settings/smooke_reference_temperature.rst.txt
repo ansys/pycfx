@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_smooke_reference_temperature:
+
+smooke_reference_temperature
+============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.smooke_reference_temperature.smooke_reference_temperature
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================================   ====================================
+
+Parent                                                                                                   Summary
+
+=========================================================================   ====================================
+:ref:`laminar_flame_thickness <pre_processing_laminar_flame_thickness_1>`   Defines the laminar flame thickness.
+
+=========================================================================   ====================================
+

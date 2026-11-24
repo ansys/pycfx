@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_name_list:
+
+name_list
+=========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.name_list.name_list
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================   =========================
+
+Parent                                                    Summary
+
+=====================================   =========================
+:ref:`delete <pre_processing_delete>`   Delete specified objects.
+
+=====================================   =========================
+

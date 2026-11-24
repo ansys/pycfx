@@ -1,0 +1,52 @@
+:orphan:
+
+.. _pre_processing_remesh_child:
+
+remesh_child
+============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.remesh_child.remesh_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================   =============================================================
+
+Attribute                                                                                                                           Summary
+
+===========================================================================   =============================================================
+:ref:`option <pre_processing_option_446>`                                                                              The 'Remesh' option.
+
+:ref:`activation_condition_list <pre_processing_activation_condition_list>`                          'Activation Condition List' parameter.
+
+:ref:`location <pre_processing_location>`                                                                             'Location' parameter.
+
+:ref:`geometry_file <pre_processing_geometry_file>`                                                              'Geometry File' parameter.
+
+:ref:`mesh_replay_file <pre_processing_mesh_replay_file>`                                                     'Mesh Replay File' parameter.
+
+:ref:`external_command <pre_processing_external_command>`                     Add geometry control arguments for user defined replay files.
+
+:ref:`replacement_mesh_file <pre_processing_replacement_mesh_file>`                                      'Replacement Mesh File' parameter.
+
+:ref:`mesh_reload_options <pre_processing_mesh_reload_options>`                                            'Mesh Reload Options' parameter.
+
+:ref:`icem_cfd_geometry_control <pre_processing_icem_cfd_geometry_control>`                     Add geometry controls for ICEM CFD meshing.
+
+:ref:`icem_cfd_mesh_control <pre_processing_icem_cfd_mesh_control>`                                 Add mesh controls for ICEM CFD meshing.
+
+:ref:`scalar_parameter <pre_processing_scalar_parameter>`                                         A container for Scalar Parameter objects.
+
+===========================================================================   =============================================================
+
+.. rubric:: Included in:
+
+=====================================   ===============================
+
+Parent                                                          Summary
+
+=====================================   ===============================
+:ref:`remesh <pre_processing_remesh>`   A container for Remesh objects.
+
+=====================================   ===============================
+

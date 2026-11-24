@@ -1,0 +1,42 @@
+:orphan:
+
+.. _pre_processing_rigid_body_child:
+
+rigid_body_child
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.rigid_body_child.rigid_body_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================   =======================================================================================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                                                                               Summary
+
+=====================================================================   =======================================================================================================================================================================================================================================
+:ref:`mass <pre_processing_mass>`                                                                                                                                                                                                                                                           Mass of Rigid Body.
+
+:ref:`location <pre_processing_location>`                                                                                                                                                                                                                                                 'Location' parameter.
+
+:ref:`rigid_body_coord_frame <pre_processing_rigid_body_coord_frame>`   Coordinate frame for Rigid Body Simulations The default at the top level of the command data structure is Coord 0, that is no transformation. The default at lower levels is to inherit the value from objects higher up the structure.
+
+:ref:`mass_moment_of_inertia <pre_processing_mass_moment_of_inertia>`                                                                                                                                                                                                Defines rigid body mass moment of inertia.
+
+:ref:`dynamics <pre_processing_dynamics_1>`                                                                                                                                                                                                                             Defines rigid body dynamics attributes.
+
+:ref:`initial_conditions <pre_processing_initial_conditions_6>`                                                                                                                                                                 Holds the details of initial condition specification for one or more equations.
+
+=====================================================================   =======================================================================================================================================================================================================================================
+
+.. rubric:: Included in:
+
+===============================================   ===================================
+
+Parent                                                                        Summary
+
+===============================================   ===================================
+:ref:`rigid_body <pre_processing_rigid_body_1>`   A container for Rigid Body objects.
+
+===============================================   ===================================
+

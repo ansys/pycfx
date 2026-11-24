@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_332:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_332.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================================   ========================================================
+
+Parent                                                                                                                           Summary
+
+=============================================================================   ========================================================
+:ref:`mixture_fraction_variance <pre_processing_mixture_fraction_variance_1>`   Defines the initialization of mixture fraction variance.
+
+=============================================================================   ========================================================
+

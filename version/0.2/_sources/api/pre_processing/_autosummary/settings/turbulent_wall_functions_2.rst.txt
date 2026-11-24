@@ -1,0 +1,56 @@
+:orphan:
+
+.. _pre_processing_turbulent_wall_functions_2:
+
+turbulent_wall_functions
+========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.turbulent_wall_functions_2.turbulent_wall_functions
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================================================   ===========================================
+
+Attribute                                                                                                                           Summary
+
+=============================================================================================   ===========================================
+:ref:`enabled <pre_processing_enabled_78>`                                                      Enable the TURBULENT WALL FUNCTIONS object.
+
+:ref:`option <pre_processing_option_133>`                                                            The 'Turbulent Wall Functions' option.
+
+:ref:`wall_function_transfer_coefficient <pre_processing_wall_function_transfer_coefficient>`           Wall Function Transfer Coefficient.
+
+=============================================================================================   ===========================================
+
+.. rubric:: Included in:
+
+=============================================================================   ========================================================
+
+Parent                                                                                                                           Summary
+
+=============================================================================   ========================================================
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum>`                     Specifies conditions on Mass and Momentum at a boundary.
+
+:ref:`heat_transfer <pre_processing_heat_transfer>`                                    Specifies heat transfer conditions at a boundary.
+
+:ref:`additional_variable_child <pre_processing_additional_variable_child_5>`                'child_object_type' of additional_variable.
+
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum_1>`                   Specifies conditions on Mass and Momentum at a boundary.
+
+:ref:`heat_transfer <pre_processing_heat_transfer_1>`                                  Specifies heat transfer conditions at a boundary.
+
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum_2>`                   Specifies conditions on Mass and Momentum at a boundary.
+
+:ref:`heat_transfer <pre_processing_heat_transfer_2>`                                  Specifies heat transfer conditions at a boundary.
+
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum_3>`                   Specifies conditions on Mass and Momentum at a boundary.
+
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum_5>`                   Specifies conditions on Mass and Momentum at a boundary.
+
+:ref:`heat_transfer <pre_processing_heat_transfer_5>`                                  Specifies heat transfer conditions at a boundary.
+
+:ref:`additional_variable_child <pre_processing_additional_variable_child_7>`                'child_object_type' of additional_variable.
+
+=============================================================================   ========================================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_session_filename:
+
+session_filename
+================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.session_filename.session_filename
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+========================================   ==================================================
+
+Parent                                                                                Summary
+
+========================================   ==================================================
+:ref:`session <post_processing_session>`   Stores parameters used by the readsession command.
+
+========================================   ==================================================
+

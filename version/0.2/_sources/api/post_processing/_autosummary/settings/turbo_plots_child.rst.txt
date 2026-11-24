@@ -1,0 +1,36 @@
+:orphan:
+
+.. _post_processing_turbo_plots_child:
+
+turbo_plots_child
+=================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.turbo_plots_child.turbo_plots_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+==============================================================================================   =========================================
+
+Attribute                                                                                                                          Summary
+
+==============================================================================================   =========================================
+:ref:`turbo_hs_chart_compare_axis_option <post_processing_turbo_hs_chart_compare_axis_option>`    Turbo hub-to-shroud axis compare option.
+
+:ref:`turbo_hs_chart_display_option <post_processing_turbo_hs_chart_display_option>`             Turbo hub-to-shroud chart display option.
+
+:ref:`turbo_hs_chart_plot_type <post_processing_turbo_hs_chart_plot_type>`                          Turbo hub-to-shroud chart plot option.
+
+==============================================================================================   =========================================
+
+.. rubric:: Included in:
+
+================================================   ====================
+
+Parent                                                          Summary
+
+================================================   ====================
+:ref:`turbo_plots <post_processing_turbo_plots>`   'turbo_plots' child.
+
+================================================   ====================
+

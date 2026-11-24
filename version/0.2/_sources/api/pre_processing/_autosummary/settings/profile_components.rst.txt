@@ -1,0 +1,44 @@
+:orphan:
+
+.. _pre_processing_profile_components:
+
+profile_components
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.profile_components.profile_components
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================   ===============================================================
+
+Attribute                                                                                                                       Summary
+
+=====================================================================   ===============================================================
+:ref:`vector_type <pre_processing_vector_type>`                                                                'Vector Type' parameter.
+
+:ref:`profile_x_variable <pre_processing_profile_x_variable>`           The profile variable which forms the X component of the vector.
+
+:ref:`profile_y_variable <pre_processing_profile_y_variable>`           The profile variable which forms the Y component of the vector.
+
+:ref:`profile_z_variable <pre_processing_profile_z_variable>`           The profile variable which forms the Z component of the vector.
+
+:ref:`profile_r_variable <pre_processing_profile_r_variable>`                     The profile variable used for the vector r component.
+
+:ref:`profile_theta_variable <pre_processing_profile_theta_variable>`         The profile variable used for the vector theta component.
+
+:ref:`profile_axial_variable <pre_processing_profile_axial_variable>`         The profile variable used for the vector axial component.
+
+=====================================================================   ===============================================================
+
+.. rubric:: Included in:
+
+=====================================================   ========================
+
+Parent                                                                   Summary
+
+=====================================================   ========================
+:ref:`profile_vector <pre_processing_profile_vector>`   'PROFILE VECTOR' object.
+
+=====================================================   ========================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_interpolation_type:
+
+interpolation_type
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.interpolation_type.interpolation_type
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================================   ==================================
+
+Parent                                                                                                 Summary
+
+=========================================================================   ==================================
+:ref:`monitor_location_control <pre_processing_monitor_location_control>`   'MONITOR LOCATION CONTROL' object.
+
+=========================================================================   ==================================
+

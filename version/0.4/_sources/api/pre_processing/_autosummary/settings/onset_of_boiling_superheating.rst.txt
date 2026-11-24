@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_onset_of_boiling_superheating:
+
+onset_of_boiling_superheating
+=============================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.onset_of_boiling_superheating.onset_of_boiling_superheating
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================   =================================
+
+Parent                                                                                      Summary
+
+===============================================================   =================================
+:ref:`wall_boiling_model <pre_processing_wall_boiling_model_1>`   Specifies the wall boiling model.
+
+===============================================================   =================================
+

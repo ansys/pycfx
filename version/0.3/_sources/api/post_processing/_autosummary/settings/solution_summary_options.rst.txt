@@ -1,0 +1,57 @@
+:orphan:
+
+.. _post_processing_solution_summary_options:
+
+solution_summary_options
+========================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.solution_summary_options.solution_summary_options
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+====================================================================================   ==============================================================================
+
+Attribute                                                                                                                                                     Summary
+
+====================================================================================   ==============================================================================
+:ref:`include_in_report <post_processing_include_in_report_1>`                                                                             'include_in_report' child.
+
+:ref:`show_boundary_flow_summary <post_processing_show_boundary_flow_summary>`                             Indicates whether to show the Boundary Flow Summary Table.
+
+:ref:`show_force_and_torque_summary <post_processing_show_force_and_torque_summary>`   Indicates whether to show the Pressure & Viscous Force & Torque Summary Table.
+
+:ref:`show_forces <post_processing_show_forces>`                                        Indicates whether to show the Pressure & Viscous Forces in the Summary Table.
+
+:ref:`show_torques <post_processing_show_torques>`                                             Indicates whether to show the Pressure & Torques in the Summary Table.
+
+:ref:`this_exists <post_processing_this_exists>`                                                                         Indicates whether this object exists or not.
+
+====================================================================================   ==============================================================================
+
+.. rubric:: Methods
+
+============================================   ========================================
+
+Method                                                                          Summary
+
+============================================   ========================================
+:ref:`suspend <post_processing_suspend>`       Suspend immediate update for the object.
+
+:ref:`unsuspend <post_processing_unsuspend>`   Restore immediate update for the object.
+
+============================================   ========================================
+
+.. rubric:: Included in:
+
+========================================   =========================================
+
+Parent                                                                       Summary
+
+========================================   =========================================
+:ref:`results <post_processing_results>`   Encapsulates a CFX post-processing setup.
+
+:ref:`report <post_processing_report>`                           Defines the Report.
+
+========================================   =========================================
+

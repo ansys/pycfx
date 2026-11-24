@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_fluid_definition_child:
+
+fluid_definition_child
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.fluid_definition_child.fluid_definition_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===============================================================   ======================================
+
+Attribute                                                                                        Summary
+
+===============================================================   ======================================
+:ref:`option <pre_processing_option_84>`                                  The 'Fluid Definition' option.
+
+:ref:`material <pre_processing_material_1>`                                        'Material' parameter.
+
+:ref:`morphology <pre_processing_morphology_1>`                   Fluid morphology in multifluid models.
+
+:ref:`material_definition <pre_processing_material_definition>`            'MATERIAL DEFINITION' object.
+
+===============================================================   ======================================
+
+.. rubric:: Included in:
+
+=========================================================   =========================================
+
+Parent                                                                                        Summary
+
+=========================================================   =========================================
+:ref:`fluid_definition <pre_processing_fluid_definition>`   A container for Fluid Definition objects.
+
+=========================================================   =========================================
+

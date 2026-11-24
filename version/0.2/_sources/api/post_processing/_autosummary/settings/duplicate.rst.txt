@@ -1,0 +1,36 @@
+:orphan:
+
+.. _post_processing_duplicate:
+
+duplicate
+=========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.duplicate.duplicate
+    :show-inheritance:
+
+.. rubric:: Arguments
+
+================================   ===================================
+
+Argument                                                       Summary
+
+================================   ===================================
+:ref:`old <post_processing_old>`       Select the object to duplicate.
+
+:ref:`new <post_processing_new>`   Specify the name of the new object.
+
+================================   ===================================
+
+.. rubric:: Included in:
+
+============================================================   ===================================
+
+Parent                                                                                     Summary
+
+============================================================   ===================================
+:ref:`expressions <post_processing_expressions>`                              'expressions' child.
+
+:ref:`expressions_child <post_processing_expressions_child>`   'child_object_type' of expressions.
+
+============================================================   ===================================
+

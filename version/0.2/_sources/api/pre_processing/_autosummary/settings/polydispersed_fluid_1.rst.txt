@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_polydispersed_fluid_1:
+
+polydispersed_fluid
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.polydispersed_fluid_1.polydispersed_fluid
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`polydispersed_fluid_child <pre_processing_polydispersed_fluid_child>`
+
+
+.. rubric:: Included in:
+
+===========================================================   ==============================================================================
+
+Parent                                                                                                                               Summary
+
+===========================================================   ==============================================================================
+:ref:`multiphase_models <pre_processing_multiphase_models>`   Defines the overall models that control the interaction of two or more phases.
+
+===========================================================   ==============================================================================
+

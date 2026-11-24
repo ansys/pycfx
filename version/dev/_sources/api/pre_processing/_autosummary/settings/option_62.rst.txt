@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_62:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_271.option_62.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   ==========================
+
+Parent                                                                         Summary
+
+=========================================================   ==========================
+:ref:`point_definition <pre_processing_point_definition>`   'POINT DEFINITION' object.
+
+=========================================================   ==========================
+

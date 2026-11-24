@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_maximum_density_ratio:
+
+maximum_density_ratio
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.maximum_density_ratio.maximum_density_ratio
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ==================================================
+
+Parent                                                                                                     Summary
+
+=============================================================   ==================================================
+:ref:`free_surface_model <pre_processing_free_surface_model>`   Defines the type of free surface model to be used.
+
+:ref:`cavitation_model <pre_processing_cavitation_model>`                          Specifies the cavitation model.
+
+=============================================================   ==================================================
+

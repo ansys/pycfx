@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_243:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_243.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===================================================   =======================
+
+Parent                                                                Summary
+
+===================================================   =======================
+:ref:`area_porosity <pre_processing_area_porosity>`   'AREA POROSITY' object.
+
+===================================================   =======================
+

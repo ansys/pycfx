@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_dissipation_timescale:
+
+dissipation_timescale
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.dissipation_timescale.dissipation_timescale
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===============================================================================   =====================================================================================================================
+
+Parent                                                                                                                                                                                          Summary
+
+===============================================================================   =====================================================================================================================
+:ref:`dissipation_timescale_model <pre_processing_dissipation_timescale_model>`   Sets option for turbulence time scale in epsilon equation corresponding to particle-induced turbulence source terms .
+
+===============================================================================   =====================================================================================================================
+

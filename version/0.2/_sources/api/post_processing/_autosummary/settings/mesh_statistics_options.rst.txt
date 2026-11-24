@@ -1,0 +1,73 @@
+:orphan:
+
+.. _post_processing_mesh_statistics_options:
+
+mesh_statistics_options
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.mesh_statistics_options.mesh_statistics_options
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+============================================================================   ================================================================================
+
+Attribute                                                                                                                                               Summary
+
+============================================================================   ================================================================================
+:ref:`include_in_report <post_processing_include_in_report>`                                        Specifies whether to show this object in the Report or not.
+
+:ref:`show_connectivity_number <post_processing_show_connectivity_number>`      Indicates whether to show the Connectivity Number in the Mesh Statistics Table.
+
+:ref:`show_edge_length_ratio <post_processing_show_edge_length_ratio>`            Indicates whether to show the Edge Length Ratio in the Mesh Statistics Table.
+
+:ref:`show_element_volume_ratio <post_processing_show_element_volume_ratio>`   Indicates whether to show the Element Volume Ratio in the Mesh Statistics Table.
+
+:ref:`show_max_face_angle <post_processing_show_max_face_angle>`                 Indicates whether to show the Maximum Face Angle in the Mesh Statistics Table.
+
+:ref:`show_min_face_angle <post_processing_show_min_face_angle>`                 Indicates whether to show the Minimum Face Angle in the Mesh Statistics Table.
+
+:ref:`show_number_of_elements <post_processing_show_number_of_elements>`         Indicates whether to show the number of Elements in the Mesh Statistics Table.
+
+:ref:`show_number_of_hexahedra <post_processing_show_number_of_hexahedra>`      Indicates whether to show the number of Hexahedra in the Mesh Statistics Table.
+
+:ref:`show_number_of_nodes <post_processing_show_number_of_nodes>`                  Indicates whether to show the number of Nodes in the Mesh Statistics Table.
+
+:ref:`show_number_of_polyhedra <post_processing_show_number_of_polyhedra>`      Indicates whether to show the number of Polyhedra in the Mesh Statistics Table.
+
+:ref:`show_number_of_pyramids <post_processing_show_number_of_pyramids>`         Indicates whether to show the number of Pyramids in the Mesh Statistics Table.
+
+:ref:`show_number_of_tetrahedra <post_processing_show_number_of_tetrahedra>`   Indicates whether to show the number of Tetrahedra in the Mesh Statistics Table.
+
+:ref:`show_number_of_wedges <post_processing_show_number_of_wedges>`               Indicates whether to show the number of Wedges in the Mesh Statistics Table.
+
+:ref:`this_exists <post_processing_this_exists>`                                                                   Indicates whether this object exists or not.
+
+============================================================================   ================================================================================
+
+.. rubric:: Methods
+
+============================================   ========================================
+
+Method                                                                          Summary
+
+============================================   ========================================
+:ref:`suspend <post_processing_suspend>`       Suspend immediate update for the object.
+
+:ref:`unsuspend <post_processing_unsuspend>`   Restore immediate update for the object.
+
+============================================   ========================================
+
+.. rubric:: Included in:
+
+========================================   =========================================
+
+Parent                                                                       Summary
+
+========================================   =========================================
+:ref:`results <post_processing_results>`   Encapsulates a CFX post-processing setup.
+
+:ref:`report <post_processing_report>`                           Defines the Report.
+
+========================================   =========================================
+

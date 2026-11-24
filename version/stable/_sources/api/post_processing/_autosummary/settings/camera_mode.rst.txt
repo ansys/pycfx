@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_camera_mode:
+
+camera_mode
+===========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.camera_mode.camera_mode
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==============================================   ============================
+
+Parent                                                                Summary
+
+==============================================   ============================
+:ref:`view_child <post_processing_view_child>`   'child_object_type' of view.
+
+==============================================   ============================
+

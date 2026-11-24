@@ -1,0 +1,25 @@
+:orphan:
+
+.. _pre_processing_option_116:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_116.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================   =========================================================
+
+Parent                                                                                                                Summary
+
+=================================================================   =========================================================
+:ref:`heat_transfer_model <pre_processing_heat_transfer_model>`     Specifies the Heat Transfer Model to be used in a domain.
+
+:ref:`heat_transfer_model <pre_processing_heat_transfer_model_1>`   Specifies the Heat Transfer Model to be used in a domain.
+
+:ref:`heat_transfer_model <pre_processing_heat_transfer_model_2>`   Specifies the Heat Transfer Model to be used in a domain.
+
+=================================================================   =========================================================
+

@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_outflow_boundary:
+
+outflow_boundary
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.outflow_boundary.outflow_boundary
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================================   ============================================================
+
+Parent                                                                                                                               Summary
+
+=============================================================================   ============================================================
+:ref:`efficiency_output <pre_processing_efficiency_output>`                     Defines the type of efficiency computed during a solver run.
+
+:ref:`transient_blade_row_models <pre_processing_transient_blade_row_models>`                           'TRANSIENT BLADE ROW MODELS' object.
+
+=============================================================================   ============================================================
+

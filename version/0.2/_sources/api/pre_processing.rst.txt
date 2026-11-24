@@ -1,0 +1,7 @@
+.. _ref_pre_processing:
+
+pre_processing
+==============
+
+The pre_processing :ref:`ref_pre_processing_root` is the top-level PreProcessing object. It contains all
+other settings objects in a hierarchical structure.

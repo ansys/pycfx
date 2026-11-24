@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_option_32:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_32.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================   ==========================================
+
+Parent                                                                                 Summary
+
+=================================================   ==========================================
+:ref:`temperature <pre_processing_temperature_1>`   Defines the initialization of Temperature.
+
+:ref:`temperature <pre_processing_temperature_2>`   Defines the initialization of Temperature.
+
+=================================================   ==========================================
+

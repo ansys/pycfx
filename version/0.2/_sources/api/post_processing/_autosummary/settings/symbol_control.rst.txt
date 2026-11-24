@@ -1,0 +1,32 @@
+:orphan:
+
+.. _post_processing_symbol_control:
+
+symbol_control
+==============
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.symbol_control.symbol_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+================================================   =============================================
+
+Attribute                                                                                Summary
+
+================================================   =============================================
+:ref:`symbol_size <post_processing_symbol_size>`   A scaling factor for all symbols in the plot.
+
+================================================   =============================================
+
+.. rubric:: Included in:
+
+========================================   =========================================
+
+Parent                                                                       Summary
+
+========================================   =========================================
+:ref:`results <post_processing_results>`   Encapsulates a CFX post-processing setup.
+
+========================================   =========================================
+

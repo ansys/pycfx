@@ -1,0 +1,34 @@
+:orphan:
+
+.. _ref_pre_processing_root:
+
+root
+====
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.root.root
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================   =========================================================
+
+Attribute                                                                               Summary
+
+===================================   =========================================================
+:ref:`file <pre_processing_file>`     File-related operations for a CFX pre-processing session.
+
+:ref:`setup <pre_processing_setup>`                    Encapsulates a CFX pre-processing setup.
+
+===================================   =========================================================
+
+.. rubric:: Methods
+
+=================================   =============
+
+Method                                    Summary
+
+=================================   =============
+:ref:`exit <pre_processing_exit>`   Exit program.
+
+=================================   =============
+

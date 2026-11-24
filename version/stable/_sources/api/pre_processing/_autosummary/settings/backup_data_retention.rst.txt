@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_backup_data_retention:
+
+backup_data_retention
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.backup_data_retention.backup_data_retention
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================   ========================================
+
+Attribute                                                                      Summary
+
+===========================================   ========================================
+:ref:`enabled <pre_processing_enabled_167>`   Enable the BACKUP DATA RETENTION object.
+
+:ref:`option <pre_processing_option_365>`          The 'Backup Data Retention' option.
+
+===========================================   ========================================
+
+.. rubric:: Included in:
+
+===================================================================   ========================================================================================================
+
+Parent                                                                                                                                                                 Summary
+
+===================================================================   ========================================================================================================
+:ref:`dynamic_model_control <pre_processing_dynamic_model_control>`   Holds objects that control the temporary simplification of models to improve solver start-up robustness.
+
+===================================================================   ========================================================================================================
+

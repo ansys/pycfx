@@ -1,0 +1,64 @@
+:orphan:
+
+.. _pre_processing_velocity_excitation:
+
+velocity_excitation
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.velocity_excitation.velocity_excitation
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================   =======================================================================================================
+
+Attribute                                                                                                                                                                   Summary
+
+=========================================================================   =======================================================================================================
+:ref:`enabled <pre_processing_enabled_127>`                                                                                                  Enable the VELOCITY EXCITATION object.
+
+:ref:`option <pre_processing_option_275>`                                                                                                         The 'Velocity Excitation' option.
+
+:ref:`time_averaged_value <pre_processing_time_averaged_value>`                                                                Input expression for time averaged generic quantity.
+
+:ref:`time_averaged_xvalue <pre_processing_time_averaged_xvalue>`                                                       Input expression for time averaged generic vector quantity.
+
+:ref:`time_averaged_yvalue <pre_processing_time_averaged_yvalue>`                                                       Input expression for time averaged generic vector quantity.
+
+:ref:`time_averaged_zvalue <pre_processing_time_averaged_zvalue>`                                                       Input expression for time averaged generic vector quantity.
+
+:ref:`time_averaged_avalue <pre_processing_time_averaged_avalue>`                                                       Input expression for time averaged generic vector quantity.
+
+:ref:`time_averaged_rvalue <pre_processing_time_averaged_rvalue>`                                                       Input expression for time averaged generic vector quantity.
+
+:ref:`time_averaged_tvalue <pre_processing_time_averaged_tvalue>`                                                       Input expression for time averaged generic vector quantity.
+
+:ref:`velocity_axial_component <pre_processing_velocity_axial_component>`                                                                     'Velocity Axial Component' parameter.
+
+:ref:`velocity_r_component <pre_processing_velocity_r_component>`                                                                                 'Velocity r Component' parameter.
+
+:ref:`velocity_theta_component <pre_processing_velocity_theta_component>`                                                                     'Velocity Theta Component' parameter.
+
+:ref:`u <pre_processing_u>`                                                                                                                                          'U' parameter.
+
+:ref:`v <pre_processing_v>`                                                                                                                                          'V' parameter.
+
+:ref:`w <pre_processing_w>`                                                                                                                                          'W' parameter.
+
+:ref:`axis_definition <pre_processing_axis_definition_1>`                   Defines the axis for a cylindrical coordinate system or variables defined using cylindrical components.
+
+=========================================================================   =======================================================================================================
+
+.. rubric:: Included in:
+
+=====================================================================   =================================================================
+
+Parent                                                                                                                            Summary
+
+=====================================================================   =================================================================
+:ref:`acoustic_reflectivity <pre_processing_acoustic_reflectivity>`     Specifies acoustic reflection attributes of a boundary condition.
+
+:ref:`acoustic_reflectivity <pre_processing_acoustic_reflectivity_1>`   Specifies acoustic reflection attributes of a boundary condition.
+
+=====================================================================   =================================================================
+

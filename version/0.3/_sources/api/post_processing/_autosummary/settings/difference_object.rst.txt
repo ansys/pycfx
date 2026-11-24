@@ -1,0 +1,26 @@
+:orphan:
+
+.. _post_processing_difference_object:
+
+difference_object
+=================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.difference_object.difference_object
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`difference_object_child <post_processing_difference_object_child>`
+
+
+.. rubric:: Included in:
+
+========================================================   ===============================================================================================================================================
+
+Parent                                                                                                                                                                                             Summary
+
+========================================================   ===============================================================================================================================================
+:ref:`case_comparison <post_processing_case_comparison>`   This object contains information and settings for the comparison of two (for now) results files or timesteps. It is used by DATA READER object.
+
+========================================================   ===============================================================================================================================================
+

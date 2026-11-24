@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_transient_scheme_1:
+
+transient_scheme
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.transient_scheme_1.transient_scheme
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================   ==============================================
+
+Attribute                                                                                                        Summary
+
+=======================================================================   ==============================================
+:ref:`option <pre_processing_option_348>`                                                 The 'Transient Scheme' option.
+
+:ref:`timestep_initialisation <pre_processing_timestep_initialisation>`   Defines the timestep initialisation procedure.
+
+=======================================================================   ==============================================
+
+.. rubric:: Included in:
+
+=======================================================   ====================================================================================
+
+Parent                                                                                                                                 Summary
+
+=======================================================   ====================================================================================
+:ref:`solver_control <pre_processing_solver_control_1>`   Holds all objects that control discretization and execution of the solution process.
+
+=======================================================   ====================================================================================
+

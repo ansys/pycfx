@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_external_diffusion:
+
+external_diffusion
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.external_diffusion.external_diffusion
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================================   ==================================
+
+Attribute                                                                                                        Summary
+
+===================================================================================   ==================================
+:ref:`reference_dynamic_diffusivity <pre_processing_reference_dynamic_diffusivity>`       Reference dynamic diffusivity.
+
+:ref:`reference_temperature <pre_processing_reference_temperature>`                   'Reference Temperature' parameter.
+
+:ref:`temperature_exponent <pre_processing_temperature_exponent>`                      'Temperature Exponent' parameter.
+
+===================================================================================   ==================================
+
+.. rubric:: Included in:
+
+=========================================================================   ==================================
+
+Parent                                                                                                 Summary
+
+=========================================================================   ==================================
+:ref:`multiphase_reaction_rate <pre_processing_multiphase_reaction_rate>`   'MULTIPHASE REACTION RATE' object.
+
+=========================================================================   ==================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_ansys_installation_root:
+
+ansys_installation_root
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.ansys_installation_root.ansys_installation_root
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ============================
+
+Parent                                                                               Summary
+
+=============================================================   ============================
+:ref:`mfx_solver_control <pre_processing_mfx_solver_control>`   'MFX SOLVER CONTROL' object.
+
+=============================================================   ============================
+

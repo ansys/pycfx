@@ -1,0 +1,46 @@
+:orphan:
+
+.. _pre_processing_dynamic_variable_child:
+
+dynamic_variable_child
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.dynamic_variable_child.dynamic_variable_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================   ======================================================
+
+Attribute                                                                                                                Summary
+
+=======================================================================   ======================================================
+:ref:`option <pre_processing_option_364>`                                                         The 'Dynamic Variable' option.
+
+:ref:`number_of_control_steps <pre_processing_number_of_control_steps>`                     'Number of Control Steps' parameter.
+
+:ref:`initial_value <pre_processing_initial_value>`                                                   'Initial Value' parameter.
+
+:ref:`values <pre_processing_values>`                                                                        'Values' parameter.
+
+:ref:`save_intermediate_files <pre_processing_save_intermediate_files>`                     'Save Intermediate Files' parameter.
+
+:ref:`smooth_step_transitions <pre_processing_smooth_step_transitions>`                     'Smooth Step Transitions' parameter.
+
+:ref:`convergence_control <pre_processing_convergence_control_2>`         Holds basic parameters that affect solver convergence.
+
+:ref:`convergence_criteria <pre_processing_convergence_criteria_1>`       Specifies the criteria for final solution convergence.
+
+=======================================================================   ======================================================
+
+.. rubric:: Included in:
+
+=========================================================   =========================================
+
+Parent                                                                                        Summary
+
+=========================================================   =========================================
+:ref:`dynamic_variable <pre_processing_dynamic_variable>`   A container for Dynamic Variable objects.
+
+=========================================================   =========================================
+

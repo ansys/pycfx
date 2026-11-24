@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_operating_points:
+
+operating_points
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.operating_points.operating_points
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================   ======================================
+
+Attribute                                                                            Summary
+
+===================================================   ======================================
+:ref:`enabled <pre_processing_enabled_257>`              Enable the OPERATING POINTS object.
+
+:ref:`option <pre_processing_option_475>`                     The 'Operating Points' option.
+
+:ref:`table <pre_processing_table>`                                       'Table' parameter.
+
+:ref:`operating_map <pre_processing_operating_map>`   A container for Operating Map objects.
+
+===================================================   ======================================
+
+.. rubric:: Included in:
+
+=============================================================   =============================================
+
+Parent                                                                                                Summary
+
+=============================================================   =============================================
+:ref:`simulation_control <pre_processing_simulation_control>`   Container for all Simulation definition data.
+
+=============================================================   =============================================
+

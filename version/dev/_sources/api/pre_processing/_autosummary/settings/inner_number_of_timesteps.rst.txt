@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_inner_number_of_timesteps:
+
+inner_number_of_timesteps
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_271.inner_number_of_timesteps.inner_number_of_timesteps
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================================   ==============================================
+
+Parent                                                                                                                 Summary
+
+=============================================================================   ==============================================
+:ref:`double_interval_definition <pre_processing_double_interval_definition>`   Defines the statistical window for mon points.
+
+=============================================================================   ==============================================
+

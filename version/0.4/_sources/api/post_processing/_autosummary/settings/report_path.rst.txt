@@ -1,0 +1,21 @@
+:orphan:
+
+.. _post_processing_report_path:
+
+report_path
+===========
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.report_path.report_path
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+========================================   ===================
+
+Parent                                                 Summary
+
+========================================   ===================
+:ref:`publish <post_processing_publish>`   Defines the Report.
+
+========================================   ===================
+

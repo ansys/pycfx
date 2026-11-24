@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_use_multiple_copy:
+
+use_multiple_copy
+=================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_271.use_multiple_copy.use_multiple_copy
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=====================================================   =========================================================================
+
+Parent                                                                                                                    Summary
+
+=====================================================   =========================================================================
+:ref:`transform_mesh <pre_processing_transform_mesh>`   Transform the mesh. Various types of transformation are available: 'Turbo
+
+=====================================================   =========================================================================
+

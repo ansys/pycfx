@@ -1,0 +1,23 @@
+:orphan:
+
+.. _pre_processing_enabled_149:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_149.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=========================================================   ================================
+
+Parent                                                                               Summary
+
+=========================================================   ================================
+:ref:`momentum_source <pre_processing_momentum_source>`     Holds source terms for momentum.
+
+:ref:`momentum_source <pre_processing_momentum_source_1>`   Holds source terms for momentum.
+
+=========================================================   ================================
+

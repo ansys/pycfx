@@ -1,0 +1,23 @@
+:orphan:
+
+.. _post_processing_variable_data_filter_rule_list:
+
+variable_data_filter_rule_list
+==============================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.variable_data_filter_rule_list.variable_data_filter_rule_list
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+==========================================================   ===============================================================================================
+
+Parent                                                                                                                                               Summary
+
+==========================================================   ===============================================================================================
+:ref:`operating_points <post_processing_operating_points>`                                          Contains information related to operating point results.
+
+:ref:`response_surface <post_processing_response_surface>`   Controls response surface and response points generation related to an operating point results.
+
+==========================================================   ===============================================================================================
+

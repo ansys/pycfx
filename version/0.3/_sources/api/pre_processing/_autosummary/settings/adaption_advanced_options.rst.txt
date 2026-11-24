@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_adaption_advanced_options:
+
+adaption_advanced_options
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.adaption_advanced_options.adaption_advanced_options
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================================   ======================================
+
+Attribute                                                                                                    Summary
+
+===========================================================================   ======================================
+:ref:`node_allocation_parameter <pre_processing_node_allocation_parameter>`   'Node Allocation Parameter' parameter.
+
+:ref:`number_of_adaption_levels <pre_processing_number_of_adaption_levels>`   'Number of Adaption Levels' parameter.
+
+:ref:`adapt_to_geometry <pre_processing_adapt_to_geometry>`                           'Adapt To Geometry' parameter.
+
+===========================================================================   ======================================
+
+.. rubric:: Included in:
+
+===================================================   =======================
+
+Parent                                                                Summary
+
+===================================================   =======================
+:ref:`mesh_adaption <pre_processing_mesh_adaption>`   'MESH ADAPTION' object.
+
+===================================================   =======================
+

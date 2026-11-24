@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_coupling_step_control:
+
+coupling_step_control
+=====================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.coupling_step_control.coupling_step_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================================================   ==================================================
+
+Attribute                                                                                                                                        Summary
+
+===================================================================================================   ==================================================
+:ref:`maximum_number_of_coupling_iterations <pre_processing_maximum_number_of_coupling_iterations>`   'Maximum Number of Coupling Iterations' parameter.
+
+:ref:`minimum_number_of_coupling_iterations <pre_processing_minimum_number_of_coupling_iterations>`   'Minimum Number of Coupling Iterations' parameter.
+
+:ref:`solution_sequence_control <pre_processing_solution_sequence_control>`                                          'SOLUTION SEQUENCE CONTROL' object.
+
+===================================================================================================   ==================================================
+
+.. rubric:: Included in:
+
+=========================================================================================   ==========================================
+
+Parent                                                                                                                         Summary
+
+=========================================================================================   ==========================================
+:ref:`external_solver_coupling_control <pre_processing_external_solver_coupling_control>`   'EXTERNAL SOLVER COUPLING CONTROL' object.
+
+=========================================================================================   ==========================================
+

@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_spark_energy_1:
+
+spark_energy
+============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.spark_energy_1.spark_energy
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================================   ==========================
+
+Attribute                                                                              Summary
+
+=================================================================   ==========================
+:ref:`option <pre_processing_option_147>`                           The 'Spark Energy' option.
+
+:ref:`spark_energy <pre_processing_spark_energy>`                                Spark Energy.
+
+:ref:`electrode_efficiency <pre_processing_electrode_efficiency>`        Electrode Efficiency.
+
+:ref:`spark_energy_flux <pre_processing_spark_energy_flux>`                      Spark Energy.
+
+:ref:`duration <pre_processing_duration>`                                            Duration.
+
+=================================================================   ==========================
+
+.. rubric:: Included in:
+
+=====================================================   ==================================
+
+Parent                                                                             Summary
+
+=====================================================   ==================================
+:ref:`spark_ignition <pre_processing_spark_ignition>`   Controls the spark ignition model.
+
+=====================================================   ==================================
+

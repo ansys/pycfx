@@ -1,0 +1,26 @@
+:orphan:
+
+.. _post_processing_internal_contour:
+
+internal_contour
+================
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.internal_contour.internal_contour
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`internal_contour_child <post_processing_internal_contour_child>`
+
+
+.. rubric:: Included in:
+
+========================================================   ===============================================================================================================================================
+
+Parent                                                                                                                                                                                             Summary
+
+========================================================   ===============================================================================================================================================
+:ref:`case_comparison <post_processing_case_comparison>`   This object contains information and settings for the comparison of two (for now) results files or timesteps. It is used by DATA READER object.
+
+========================================================   ===============================================================================================================================================
+

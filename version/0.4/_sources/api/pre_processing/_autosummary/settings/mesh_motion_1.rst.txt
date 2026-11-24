@@ -1,0 +1,42 @@
+:orphan:
+
+.. _pre_processing_mesh_motion_1:
+
+mesh_motion
+===========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.mesh_motion_1.mesh_motion
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===================================================================   =======================================================================================================
+
+Attribute                                                                                                                                                             Summary
+
+===================================================================   =======================================================================================================
+:ref:`option <pre_processing_option_265>`                                                                                                           The 'Mesh Motion' option.
+
+:ref:`displacement <pre_processing_displacement>`                                                                                       Defines displacement for mesh motion.
+
+:ref:`periodic_displacement <pre_processing_periodic_displacement>`                                                                     Defines displacement for mesh motion.
+
+:ref:`axis_definition <pre_processing_axis_definition>`               Defines the axis for a cylindrical coordinate system or variables defined using cylindrical components.
+
+:ref:`location <pre_processing_location_1>`                                                                                                Defines locations for mesh motion.
+
+===================================================================   =======================================================================================================
+
+.. rubric:: Included in:
+
+=============================================================================   =============================================================
+
+Parent                                                                                                                                Summary
+
+=============================================================================   =============================================================
+:ref:`interface_conditions_child <pre_processing_interface_conditions_child>`                    'child_object_type' of interface_conditions.
+
+:ref:`boundary_conditions <pre_processing_boundary_conditions_5>`               Specifies boundary conditions for all equations being solved.
+
+=============================================================================   =============================================================
+

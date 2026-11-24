@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_domain_interface:
+
+domain_interface
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.domain_interface.domain_interface
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`domain_interface_child <pre_processing_domain_interface_child>`
+
+
+.. rubric:: Included in:
+
+=============================================   ============================
+
+Parent                                                               Summary
+
+=============================================   ============================
+:ref:`flow_child <pre_processing_flow_child>`   'child_object_type' of flow.
+
+=============================================   ============================
+

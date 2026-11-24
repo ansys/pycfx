@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_liquid_subcooling_scale:
+
+liquid_subcooling_scale
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.liquid_subcooling_scale.liquid_subcooling_scale
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================================   ===============================================================
+
+Parent                                                                                                                                  Summary
+
+=============================================================================   ===============================================================
+:ref:`bubble_departure_diameter <pre_processing_bubble_departure_diameter_1>`   Specifies bubble departure diameter for the wall boiling model.
+
+=============================================================================   ===============================================================
+

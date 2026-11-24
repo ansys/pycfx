@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_103:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_103.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================================   =============================================================
+
+Parent                                                                                                                                    Summary
+
+=================================================================================   =============================================================
+:ref:`false_timestep_linearisation <pre_processing_false_timestep_linearisation>`   Defines false timestep linearisation options for body forces.
+
+=================================================================================   =============================================================
+

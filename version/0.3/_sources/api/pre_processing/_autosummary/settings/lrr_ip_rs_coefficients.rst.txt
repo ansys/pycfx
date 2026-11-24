@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_lrr_ip_rs_coefficients:
+
+lrr_ip_rs_coefficients
+======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.lrr_ip_rs_coefficients.lrr_ip_rs_coefficients
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================   =============================================================
+
+Attribute                                                                                                                     Summary
+
+=====================================================================   =============================================================
+:ref:`enabled <pre_processing_enabled_66>`                                                  Enable the LRR IP RS COEFFICIENTS object.
+
+:ref:`c1_coefficient <pre_processing_c1_coefficient>`                                                           C1 model coefficient.
+
+:ref:`c2_coefficient <pre_processing_c2_coefficient>`                                                           C2 model coefficient.
+
+:ref:`turbulent_flux_closure <pre_processing_turbulent_flux_closure>`   Controls the turbulent flux closure for a transport equation.
+
+=====================================================================   =============================================================
+
+.. rubric:: Included in:
+
+===========================================================   ===========================================================================
+
+Parent                                                                                                                            Summary
+
+===========================================================   ===========================================================================
+:ref:`turbulence_model <pre_processing_turbulence_model>`     Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+:ref:`turbulence_model <pre_processing_turbulence_model_1>`   Specifies the turbulence model to be used for each fluid in a fluid domain.
+
+===========================================================   ===========================================================================
+

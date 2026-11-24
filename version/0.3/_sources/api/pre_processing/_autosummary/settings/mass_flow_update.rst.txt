@@ -1,0 +1,38 @@
+:orphan:
+
+.. _pre_processing_mass_flow_update:
+
+mass_flow_update
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.mass_flow_update.mass_flow_update
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================   ============================================================================================================================================================================
+
+Attribute                                                                                                                                                                                                                                    Summary
+
+=====================================================================   ============================================================================================================================================================================
+:ref:`enabled <pre_processing_enabled_125>`                                                                                                                                                                      Enable the MASS FLOW UPDATE object.
+
+:ref:`option <pre_processing_option_273>`                                                                                                                                                                             The 'Mass Flow Update' option.
+
+:ref:`pressure_profile_shape <pre_processing_pressure_profile_shape>`                                                                                                         Outlet boundary condition pressure profile for mass flow rate outlets.
+
+:ref:`pressure_profile_blend <pre_processing_pressure_profile_blend>`   Factor to blend between the specified pressure profile and a floating (implicit) pressure profile blend factor. 0.0 is fully implicit and 1.0 imposes the specified profile.
+
+=====================================================================   ============================================================================================================================================================================
+
+.. rubric:: Included in:
+
+===========================================================   ========================================================
+
+Parent                                                                                                         Summary
+
+===========================================================   ========================================================
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum>`   Specifies conditions on Mass and Momentum at a boundary.
+
+===========================================================   ========================================================
+

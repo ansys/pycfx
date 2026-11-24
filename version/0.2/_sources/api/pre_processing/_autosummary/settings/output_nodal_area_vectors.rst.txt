@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_output_nodal_area_vectors:
+
+output_nodal_area_vectors
+=========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.output_nodal_area_vectors.output_nodal_area_vectors
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=================================================================   ======================================
+
+Parent                                                                                             Summary
+
+=================================================================   ======================================
+:ref:`export_surface_child <pre_processing_export_surface_child>`   'child_object_type' of export_surface.
+
+=================================================================   ======================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_initial_volume_fraction_smoothing:
+
+initial_volume_fraction_smoothing
+=================================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.initial_volume_fraction_smoothing.initial_volume_fraction_smoothing
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ==========================================
+
+Parent                                                                                             Summary
+
+=============================================================   ==========================================
+:ref:`multiphase_control <pre_processing_multiphase_control>`   Defines multiphase solver control details.
+
+=============================================================   ==========================================
+

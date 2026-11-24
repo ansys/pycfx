@@ -1,0 +1,26 @@
+:orphan:
+
+.. _post_processing_symbol_2:
+
+symbol
+======
+
+.. autoclass:: ansys.cfx.core.generated.post_processing.settings_261.symbol_2.symbol
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`symbol_child <post_processing_symbol_child>`
+
+
+.. rubric:: Included in:
+
+========================================   =========================================
+
+Parent                                                                       Summary
+
+========================================   =========================================
+:ref:`results <post_processing_results>`   Encapsulates a CFX post-processing setup.
+
+========================================   =========================================
+

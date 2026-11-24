@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_433:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_271.option_433.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================================   ====================================
+
+Parent                                                                                                       Summary
+
+=============================================================================   ====================================
+:ref:`transient_blade_row_models <pre_processing_transient_blade_row_models>`   'TRANSIENT BLADE ROW MODELS' object.
+
+=============================================================================   ====================================
+

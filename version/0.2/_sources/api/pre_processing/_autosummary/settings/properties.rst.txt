@@ -1,0 +1,70 @@
+:orphan:
+
+.. _pre_processing_properties:
+
+properties
+==========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.properties.properties
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================================   ========================================================================================
+
+Attribute                                                                                                                                                    Summary
+
+=========================================================================   ========================================================================================
+:ref:`option <pre_processing_option_12>`                                                                                                    The 'Properties' option.
+
+:ref:`table_format <pre_processing_table_format>`                                                           Type of table format for specifying material properties.
+
+:ref:`table_name <pre_processing_table_name>`                                                Path and name of the file which contains tables of material properties.
+
+:ref:`component_name <pre_processing_component_name>`                                                                                    'Component Name' parameter.
+
+:ref:`rgp_liquid_properties <pre_processing_rgp_liquid_properties>`         Sets whether or not the saturation data or 2D table data are used for liquid properties.
+
+:ref:`equation_of_state <pre_processing_equation_of_state>`                                                                         Specifies the equation of state.
+
+:ref:`specific_heat_capacity <pre_processing_specific_heat_capacity_1>`                                          Specifies how specific heat capacity is calculated.
+
+:ref:`reference_state <pre_processing_reference_state>`                                                                     Sets the reference state for a material.
+
+:ref:`dynamic_viscosity <pre_processing_dynamic_viscosity_1>`                                     Hold the details for an advanced description of dynamic viscosity.
+
+:ref:`thermal_conductivity <pre_processing_thermal_conductivity_1>`                           Hold the details for an advanced descriptions of Thermal Conductivity.
+
+:ref:`thermal_expansivity <pre_processing_thermal_expansivity_1>`                                                                 Specifies the thermal expansivity.
+
+:ref:`refractive_index <pre_processing_refractive_index_1>`                                                           Specifies how the refractive index calculated.
+
+:ref:`absorption_coefficient <pre_processing_absorption_coefficient_1>`                                      Specifies how the absorption coefficient is calculated.
+
+:ref:`scattering_coefficient <pre_processing_scattering_coefficient_1>`                                      Specifies how the scattering coefficient is calculated.
+
+:ref:`entropy <pre_processing_entropy>`                                                                                                            'ENTROPY' object.
+
+:ref:`enthalpy <pre_processing_enthalpy>`                                                                                                         'ENTHALPY' object.
+
+:ref:`table_generation <pre_processing_table_generation_1>`                                                                               'TABLE GENERATION' object.
+
+:ref:`electrical_conductivity <pre_processing_electrical_conductivity_1>`                   Hold the details for an advanced description of electrical conductivity.
+
+:ref:`electrical_permittivity <pre_processing_electrical_permittivity_1>`                   Hold the details for an advanced description of Electrical Permittivity.
+
+:ref:`magnetic_permeability <pre_processing_magnetic_permeability_1>`                         Hold the details for an advanced description of magnetic permeability.
+
+=========================================================================   ========================================================================================
+
+.. rubric:: Included in:
+
+=====================================================   ================================
+
+Parent                                                                           Summary
+
+=====================================================   ================================
+:ref:`material_child <pre_processing_material_child>`   'child_object_type' of material.
+
+=====================================================   ================================
+

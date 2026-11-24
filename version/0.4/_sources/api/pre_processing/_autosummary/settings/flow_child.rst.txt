@@ -1,0 +1,54 @@
+:orphan:
+
+.. _pre_processing_flow_child:
+
+flow_child
+==========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.flow_child.flow_child
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=============================================================================   ====================================================================================
+
+Attribute                                                                                                                                                    Summary
+
+=============================================================================   ====================================================================================
+:ref:`solution_units <pre_processing_solution_units>`                                                              Sets the base solution units for the calculation.
+
+:ref:`analysis_type <pre_processing_analysis_type>`                                                               Controls if the simulation is Steady or Transient.
+
+:ref:`domain <pre_processing_domain>`                                                                                                A container for Domain objects.
+
+:ref:`domain_interface <pre_processing_domain_interface>`                                                                  A container for Domain Interface objects.
+
+:ref:`initialisation <pre_processing_initialisation_1>`                                                          Defines the initialisation of flow-field variables.
+
+:ref:`solver_control <pre_processing_solver_control_1>`                         Holds all objects that control discretization and execution of the solution process.
+
+:ref:`output_control <pre_processing_output_control>`                                 Holds object definitions that control output from the solver during execution.
+
+:ref:`expert_parameters <pre_processing_expert_parameters>`                               Hold advanced parameters used to control many aspects of solver operation.
+
+:ref:`cclsetup <pre_processing_cclsetup>`                                                   Internal parameter settings for CCL to solver data structure processing.
+
+:ref:`rigid_body <pre_processing_rigid_body_1>`                                                                                  A container for Rigid Body objects.
+
+:ref:`transient_blade_row_models <pre_processing_transient_blade_row_models>`                                                   'TRANSIENT BLADE ROW MODELS' object.
+
+:ref:`mesh_adaption <pre_processing_mesh_adaption>`                                                                                          'MESH ADAPTION' object.
+
+=============================================================================   ====================================================================================
+
+.. rubric:: Included in:
+
+=================================   =============================
+
+Parent                                                    Summary
+
+=================================   =============================
+:ref:`flow <pre_processing_flow>`   A container for Flow objects.
+
+=================================   =============================
+

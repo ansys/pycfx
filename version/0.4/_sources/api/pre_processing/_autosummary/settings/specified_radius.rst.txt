@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_specified_radius:
+
+specified_radius
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.specified_radius.specified_radius
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================================   ===================================
+
+Parent                                                                                                    Summary
+
+===========================================================================   ===================================
+:ref:`radial_reference_position <pre_processing_radial_reference_position>`   'RADIAL REFERENCE POSITION' object.
+
+===========================================================================   ===================================
+

@@ -1,0 +1,40 @@
+:orphan:
+
+.. _pre_processing_bulk_sources_1:
+
+bulk_sources
+============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.bulk_sources_1.bulk_sources
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+===========================================================   =========================================
+
+Attribute                                                                                       Summary
+
+===========================================================   =========================================
+:ref:`enabled <pre_processing_enabled_141>`                             Enable the BULK SOURCES object.
+
+:ref:`option <pre_processing_option_308>`                                    The 'Bulk Sources' option.
+
+:ref:`radiation_source <pre_processing_radiation_source_2>`   A container for Radiation Source objects.
+
+:ref:`momentum_source <pre_processing_momentum_source>`                Holds source terms for momentum.
+
+:ref:`equation_source <pre_processing_equation_source_3>`      A container for Equation Source objects.
+
+===========================================================   =========================================
+
+.. rubric:: Included in:
+
+=======================================================   =================================
+
+Parent                                                                              Summary
+
+=======================================================   =================================
+:ref:`subdomain_child <pre_processing_subdomain_child>`   'child_object_type' of subdomain.
+
+=======================================================   =================================
+

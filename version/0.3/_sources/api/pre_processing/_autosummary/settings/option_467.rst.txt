@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_option_467:
+
+option
+======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.option_467.option
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ===========================
+
+Parent                                                                            Summary
+
+===========================================================   ===========================
+:ref:`unmodified_points <pre_processing_unmodified_points>`   'UNMODIFIED POINTS' object.
+
+===========================================================   ===========================
+

@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_line_point_distribution:
+
+line_point_distribution
+=======================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.line_point_distribution.line_point_distribution
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=========================================================   =====================================
+
+Attribute                                                                                 Summary
+
+=========================================================   =====================================
+:ref:`option <pre_processing_option_65>`                    The 'Line Point Distribution' option.
+
+:ref:`number_of_points <pre_processing_number_of_points>`                       Number of points.
+
+=========================================================   =====================================
+
+.. rubric:: Included in:
+
+=============================================================   ============================
+
+Parent                                                                               Summary
+
+=============================================================   ============================
+:ref:`boundary_line_type <pre_processing_boundary_line_type>`   Defines the line properties.
+
+=============================================================   ============================
+

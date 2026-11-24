@@ -1,0 +1,34 @@
+:orphan:
+
+.. _pre_processing_user_routine_definitions:
+
+user_routine_definitions
+========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.user_routine_definitions.user_routine_definitions
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=================================================   ===========================================
+
+Attribute                                                                               Summary
+
+=================================================   ===========================================
+:ref:`enabled <pre_processing_enabled_27>`          Enable the USER ROUTINE DEFINITIONS object.
+
+:ref:`user_routine <pre_processing_user_routine>`         A container for User Routine objects.
+
+=================================================   ===========================================
+
+.. rubric:: Included in:
+
+=======================================   ===============================================================================
+
+Parent                                                                                                            Summary
+
+=======================================   ===============================================================================
+:ref:`library <pre_processing_library>`   Stores common object descriptions for reference in the main problem definition.
+
+=======================================   ===============================================================================
+

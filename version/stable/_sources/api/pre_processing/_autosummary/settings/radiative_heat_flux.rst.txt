@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_radiative_heat_flux:
+
+radiative_heat_flux
+===================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.radiative_heat_flux.radiative_heat_flux
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   =======================================================
+
+Parent                                                                                                        Summary
+
+===========================================================   =======================================================
+:ref:`thermal_radiation <pre_processing_thermal_radiation>`   Sets the conditions on Thermal Radiation at a boundary.
+
+===========================================================   =======================================================
+

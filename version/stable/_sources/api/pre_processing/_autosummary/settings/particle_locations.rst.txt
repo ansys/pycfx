@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_particle_locations:
+
+particle_locations
+==================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.particle_locations.particle_locations
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ===================================================================
+
+Parent                                                                                                                    Summary
+
+===========================================================   ===================================================================
+:ref:`particle_position <pre_processing_particle_position>`   Defines how particle positions are to be distributed on a boundary.
+
+===========================================================   ===================================================================
+

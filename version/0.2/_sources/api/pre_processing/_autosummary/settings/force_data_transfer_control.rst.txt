@@ -1,0 +1,36 @@
+:orphan:
+
+.. _pre_processing_force_data_transfer_control:
+
+force_data_transfer_control
+===========================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.force_data_transfer_control.force_data_transfer_control
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=======================================================================   ==============================================
+
+Attribute                                                                                                        Summary
+
+=======================================================================   ==============================================
+:ref:`enabled <pre_processing_enabled_200>`                               Enable the FORCE DATA TRANSFER CONTROL object.
+
+:ref:`under_relaxation_factor <pre_processing_under_relaxation_factor>`             'Under Relaxation Factor' parameter.
+
+:ref:`convergence_target <pre_processing_convergence_target>`                            'Convergence Target' parameter.
+
+=======================================================================   ==============================================
+
+.. rubric:: Included in:
+
+=======================================================================================================   ==================================================================================
+
+Parent                                                                                                                                                                               Summary
+
+=======================================================================================================   ==================================================================================
+:ref:`internal_coupling_data_transfer_control <pre_processing_internal_coupling_data_transfer_control>`   Define data transfer between internal solvers (flow solver and rigid body solver).
+
+=======================================================================================================   ==================================================================================
+

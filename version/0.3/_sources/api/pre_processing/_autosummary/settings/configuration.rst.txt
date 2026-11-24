@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_configuration:
+
+configuration
+=============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.configuration.configuration
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`configuration_child <pre_processing_configuration_child>`
+
+
+.. rubric:: Included in:
+
+===================================================================   =========================================
+
+Parent                                                                                                  Summary
+
+===================================================================   =========================================
+:ref:`configuration_control <pre_processing_configuration_control>`   The container for all Configuration data.
+
+===================================================================   =========================================
+

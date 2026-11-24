@@ -1,0 +1,26 @@
+:orphan:
+
+.. _pre_processing_initial_values:
+
+initial_values
+==============
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.initial_values.initial_values
+    :show-inheritance:
+
+.. rubric:: Named object type
+
+:ref:`initial_values_child <pre_processing_initial_values_child>`
+
+
+.. rubric:: Included in:
+
+=================================================================================   ======================================
+
+Parent                                                                                                             Summary
+
+=================================================================================   ======================================
+:ref:`initial_values_specification <pre_processing_initial_values_specification>`   'INITIAL VALUES SPECIFICATION' object.
+
+=================================================================================   ======================================
+

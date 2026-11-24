@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_coalescence_rate:
+
+coalescence_rate
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.coalescence_rate.coalescence_rate
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+===========================================================   ========================================================
+
+Parent                                                                                                         Summary
+
+===========================================================   ========================================================
+:ref:`coalescence_model <pre_processing_coalescence_model>`   Defines the coalescence model for a polydispersed fluid.
+
+===========================================================   ========================================================
+

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_file_path:
+
+file_path
+=========
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_271.file_path.file_path
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================   ============================
+
+Parent                                                               Summary
+
+=============================================   ============================
+:ref:`mesh_child <pre_processing_mesh_child>`   'child_object_type' of mesh.
+
+=============================================   ============================
+

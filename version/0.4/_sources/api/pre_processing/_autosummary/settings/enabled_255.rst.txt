@@ -1,0 +1,21 @@
+:orphan:
+
+.. _pre_processing_enabled_255:
+
+enabled
+=======
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.enabled_255.enabled
+    :show-inheritance:
+
+.. rubric:: Included in:
+
+=============================================================   ============================
+
+Parent                                                                               Summary
+
+=============================================================   ============================
+:ref:`mfx_solver_control <pre_processing_mfx_solver_control>`   'MFX SOLVER CONTROL' object.
+
+=============================================================   ============================
+

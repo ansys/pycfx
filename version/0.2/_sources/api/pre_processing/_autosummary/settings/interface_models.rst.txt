@@ -1,0 +1,52 @@
+:orphan:
+
+.. _pre_processing_interface_models:
+
+interface_models
+================
+
+.. autoclass:: ansys.cfx.core.generated.pre_processing.settings_261.interface_models.interface_models
+    :show-inheritance:
+
+.. rubric:: Attributes
+
+=====================================================================================   ===================================================================================================================
+
+Attribute                                                                                                                                                                                           Summary
+
+=====================================================================================   ===================================================================================================================
+:ref:`option <pre_processing_option_349>`                                                                                                                                    The 'Interface Models' option.
+
+:ref:`frame_change <pre_processing_frame_change>`                                       Defines the turbo interface/mixing model to be used on a domain interface where there is frame and/or pitch change.
+
+:ref:`pitch_change <pre_processing_pitch_change>`                                                                                         Defines how pitch change is calculated across a domain interface.
+
+:ref:`axis_definition <pre_processing_axis_definition>`                                             Defines the axis for a cylindrical coordinate system or variables defined using cylindrical components.
+
+:ref:`mass_and_momentum <pre_processing_mass_and_momentum_5>`                                                                                      Specifies conditions on Mass and Momentum at a boundary.
+
+:ref:`heat_transfer <pre_processing_heat_transfer_5>`                                                                                                     Specifies heat transfer conditions at a boundary.
+
+:ref:`thermal_radiation <pre_processing_thermal_radiation_2>`                                                                                       Sets the conditions on Thermal Radiation at a boundary.
+
+:ref:`electric_field <pre_processing_electric_field_1>`                                                                                                                            'ELECTRIC FIELD' object.
+
+:ref:`magnetic_field <pre_processing_magnetic_field_1>`                                                                                                                            'MAGNETIC FIELD' object.
+
+:ref:`additional_variable <pre_processing_additional_variable_7>`                                                                                              A container for Additional Variable objects.
+
+:ref:`conditional_connection_control <pre_processing_conditional_connection_control>`                                                                             Interface conditional connection control.
+
+=====================================================================================   ===================================================================================================================
+
+.. rubric:: Included in:
+
+=====================================================================   ========================================
+
+Parent                                                                                                   Summary
+
+=====================================================================   ========================================
+:ref:`domain_interface_child <pre_processing_domain_interface_child>`   'child_object_type' of domain_interface.
+
+=====================================================================   ========================================
+
